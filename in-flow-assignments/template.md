@@ -13,10 +13,10 @@
 ## Intermediate Stages
 
 
-## Completion
+## Stage Submissions
 
 
-## Peer-review
+## Peer-Review
 
 
 ## Grading

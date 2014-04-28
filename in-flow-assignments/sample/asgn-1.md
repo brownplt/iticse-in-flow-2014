@@ -21,12 +21,12 @@ correct rendering of human facial anatomy
 2-3 preliminary sketches illustrating different
 possible emotions in your portrait.
 
-## Completion
+## Stage Submissions
 
 Preliminary sketches should be brought to class the week
 before the assignment is due
 
-## Peer-review
+## Peer-Review
 
 Students will be broken into small groups.  Each group
 will hang all of its sketches on the wall and discuss them
