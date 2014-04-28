@@ -1,4 +1,4 @@
-# Drawing Anatomically Realistic Figures
+# Drawing a Self-Portrait
 
 ## Course Context
 
