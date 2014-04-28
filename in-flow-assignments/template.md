@@ -18,19 +18,28 @@ What is the purpose of giving this assignment?
 
 ## Intermediate Stages
 
-Identify one or more intermediate stages.
+Identify one or more intermediate stages that would
+yield reviewable artifacts.
+
 Each stage should be unambiguous to students.
-It might be defined by content, time, or both.
+(It might be defined by content, time, both, etc.)
+
+This is the key to adapting an assignment to
+in-flow peer-review.
 
 ## Stage Submissions
 
-At each intermediate stage, 
-what do you expect to be submitted?
+At each intermediate stage, what would you like
+submitted? Is this an expectation or preference?
 
 ## Peer-Review
 
-At each intermediate stage,
-how will peer-review be performed?
+At each intermediate stage, what will peer-review do?
+
+How many peers will review, and how?
+
+Include review prompts or rubrics that you would
+give to students.
 
 ## Grading
 
@@ -38,13 +47,12 @@ How do you anticipate the work done at the
 intermediate stages being assessed?
 (Assume limitless human and computer resources.)
 
-How will this assessment impact the final score
+(How) Will this assessment impact the final score
 on the assignment?
 
 Recall that at each stage, there are two kinds of work:
-that being submitted by the student and that being
-submitted by the peer-reviewers. Either or both could
-be considered for assessment.
+a student's submission, and the reviews of that submission
+by peers. Either or both could be considered for assessment.
 
 ## Thoughts
 
