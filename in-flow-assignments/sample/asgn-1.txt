@@ -1,4 +1,4 @@
-# Sample Assignment (from a studio art course)
+# Drawing Anatomically Realistic Figures
 
 ## Course Context
 
@@ -6,6 +6,7 @@ Most students are sophomore- or junior- level art students who have taken
 basic drawing and form classes in their first year, and are moving on
 to more focused courses.  This assignment is given in a course on drawing
 anatomically realistic figures.
+
 ## Assignment
 
 Draw a self-portrait on paper with pencil
