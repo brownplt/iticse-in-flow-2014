@@ -32,7 +32,7 @@ in-flow peer-review.
 At each intermediate stage, what would you like
 submitted? Is this an expectation or preference?
 
-## Peer-Review
+## Peer Review
 
 At each intermediate stage, what will peer-review do?
 
@@ -40,6 +40,16 @@ How many peers will review, and how?
 
 Include review prompts or rubrics that you would
 give to students.
+
+## Expert Review
+
+At each intermediate stage, will there also be
+review by experts (and who are they)?
+
+Recall that at each stage, there are two kinds of work:
+a student's submission, and the reviews of that submission
+by peers. Either or both could be considered for review.
+What rubric would you use for the expert review (if any)?
 
 ## Grading
 
