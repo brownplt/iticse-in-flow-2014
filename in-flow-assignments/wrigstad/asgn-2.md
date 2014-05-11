@@ -1,20 +1,23 @@
-# Assignment Name
+# Program 1
 
-What is the assignment called?
-A snappy codename may be useful for later discussions.
+The previous assignment I had was about helping students with synthesis. 
+This assignment instead focuses on aiding the design process. 
 
 ## Course Context
 
-Tell us something about the course:
-what level, what the students know, etc.
+See [asgn-1.md](https://github.com/brownplt/iticse-in-flow-2014/blob/master/in-flow-assignments/wrigstad/asgn-1.md).
 
 ## Assignment
 
-What is the assignment asking students to do?
+Implement a simple graphical Pong game in Java. [Text from actual assigment](https://github.com/TobiasWrigstad/ioopm/blob/master/uppgifter/fas1/sprint2/pong/uppgift.pdf). 
 
 ## Educational Goals
 
-What is the purpose of giving this assignment?
+Two kinds of goals:
+
+1. Students are expected to demonstrate that the understand imperative and OO-programming through the fulfilment of a large selection of goals. To do this, they have a large set of programming assignments to chose from. (This is just one of the 9 assigments in the Java part of the course.) In this respect, the educational goal-kind is to generate problems and situations in which to demonstrate certain subsets of the course's educational goals.
+2. To present students with difficult enough programming problems for design issues, debugging needs, etc. to surface. And to be a problem to which there is no single best solution. 
+
 
 ## Intermediate Stages
 
