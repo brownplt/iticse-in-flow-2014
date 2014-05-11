@@ -1,5 +1,7 @@
 # Assignment Name
 
+Snappy codename: "Achievement 1"
+
 Any assignment in the course Imperative and Object-Oriented
 Programming and Programming Methodology.
 
@@ -53,11 +55,7 @@ the department with professors roaming the halls, etc.
 5.) Design a presentation flow that shows how the goals are met. 
 6.) Hold the presentation before an examiner. 
 
-
-## Completion
-
-
-## Peer-review
+## Stage Submissions
 
 Peer-review could be used to feedback on the selection of goals
 (do these goals really belong together), and the selection of a
@@ -77,6 +75,26 @@ needed to be broken down some more to pay off in practise.
 
 The presentation outline that students develop to drive the oral
 presentation before the examiner of why/how they fulfill the goals
+
+
+## Peer Review
+
+Focusing on intermediate steps 1 and 2 above. Student always work
+in pairs. The peer review should be done by one other pair group.
+Let's call the pair doing the assigment work P1 and the review
+pair P2. P2 will recieve informal written documentation explaining
+the goals chosen by P1 and how that maps to some programming task
+they have chosen. P2 will deliver a more formal document
+(following some template given by teachers) that
+discusses/criticises P1's choices, and makes alternate
+suggestions. It could be that this feedback is delievered in
+person, with a TA present. (Cf Grading below.)
+
+
+## Expert Review
+
+Cf Grading below. The Expert is in this case a TA or teacher on
+the course.
 
 
 ## Grading
@@ -109,3 +127,4 @@ towards an already fullfilled goal, then we can hopefully focus
 more on the help, and less on the (fulfilled) goals. I think that
 we want to build up a culture using in-flow peer review, and that
 the process and the help should be its own reward.
+
