@@ -1,6 +1,4 @@
-# Assignment Name
-
-Snappy codename: "Achievement 1"
+# Achievement 1
 
 Any assignment in the course Imperative and Object-Oriented
 Programming and Programming Methodology.
