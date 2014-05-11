@@ -31,15 +31,15 @@ A set of 3-5 goals from a list of 77. Sadly, I only have this list
 in Swedish, or I would have linked to it. For concreteness, we can
 assume the following goals:
 
-1.) Use OO abstraction to hide implementation details behind
-    well-defined interfaces. 
-2.) Use inheritance, method specialisation and super calls in 
-    programs that use inheritance. 
-3.) Explain how inheritance can be used to separate concerns. 
-4.) Define loop-invariants for some important loops in a program
-    and reason about their correctness
-5.) Describe a class' class invariants and reason about how 
-    encapsulation helps protecting these invariants
+1. Use OO abstraction to hide implementation details behind
+   well-defined interfaces. 
+2. Use inheritance, method specialisation and super calls in 
+   programs that use inheritance. 
+3. Explain how inheritance can be used to separate concerns. 
+4. Define loop-invariants for some important loops in a program
+   and reason about their correctness
+5. Describe a class' class invariants and reason about how 
+   encapsulation helps protecting these invariants
 
 We can imagine that students choose to implement this as part of a
 MUD assignment in which they build a small MUD based on a map of
@@ -48,12 +48,12 @@ the department with professors roaming the halls, etc.
 
 ## Intermediate Stages
 
-1.) Select a number of educational goals that build a coherent package.
-2.) Choose a program to implement that encompasses these goals. 
-3.) Design the program. 
-4.) Implement the program. 
-5.) Design a presentation flow that shows how the goals are met. 
-6.) Hold the presentation before an examiner. 
+1. Select a number of educational goals that build a coherent package.
+2. Choose a program to implement that encompasses these goals. 
+3. Design the program. 
+4. Implement the program. 
+5. Design a presentation flow that shows how the goals are met. 
+6. Hold the presentation before an examiner. 
 
 ## Stage Submissions
 
