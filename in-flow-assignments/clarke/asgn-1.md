@@ -58,35 +58,74 @@ The requested functions should be submitted.
 
 _At each intermediate stage, what will peer-review do?_
 
-_How many peers will review, and how?_
+Perform a manual inspection of the code and specification to check
+for readability and (pervived) correctness.
 
-_Include review prompts or rubrics that you would give to students._
+_How many peers will review, and how?_
 
 Each pair of students working together could review one other assignments each, individually,
 thereby generating two batches of feedback for each submitted assignment.
 
+Rubric (on scale of 1-5, with 1 being appalling and 5 being amazing):
+
+* Does the code seem to be correct?
+* Does the specification make sense?
+* Does the code match the specification?
+* Do given examples satisfy specification?
 
 ## Expert Review
 
-_At each intermediate stage, will there also be review by experts (and who are they)?_
 
-_Recall that at each stage, there are two kinds of work: a student's submission, and the reviews of that submission by peers. Either or both could be considered for review. What rubric would you use for the expert review (if any)?_
+At this stage, the expert review could be undertaken by TAs. This review would check that the original submission is sufficiently sensible to warrent feedback, and that effort has been expended on providing feedback. Also checks should be made for grossly misleading feedback. These checks should be very lightweight, and are in place to ensure that 1) sufficient work went into the original submission, 2) that effort was put into giving feedback, and 3) that misguided feedback will not create problems.
+
+Rubric (on scale of 1-5, with 1 being appalling and 5 being amazing):
+* Does the student's comments reflect that they have read and understood the given code and specification?
+* Are the comments likely to be good feedback?
+* Are the comments misleading?
+
+TA wil provide feedback only in last case, to avoid impact of misleading comments.
 
 ## Grading
 
-_How do you anticipate the work done at the intermediate stages being assessed?_
-_(Assume limitless human and computer resources.)_
 
-_(How) Will this assessment impact the final score on the assignment?_
 
-_Recall that at each stage, there are two kinds of work: a student's submission, and the reviews of that submission by peers. Either or both could be considered for assessment._
+Students and teachers alike have access to a system called the Student Portal.
+Students will submit their intermediate assignments to the student portal.
+These will be redistributed to other students (functionality already exists),
+who will then provide feedback. This can then be checked by the TAs and 
+passed on to original students. The feedback can then be returned to the
+students.
+
+It is not entirely clear how the assessment will impact the final score.
+On one hand, it needs to be assessed to ensure that students do submit
+and that they make an effort, but we need to avoid punishing them if they
+do make an effort and do a poor job (it will be their first time).
+
+This actually applies equally well to both the original submission and the feedback.
+
+Most likely, we will grade this using a single bit -- done sufficently well or not done.
+If they do not do it sufficiently well, they fail the whole assignment.
+(Note that the bar will be pretty low.)
+
+The student's assignment itself will not be graded, except to ensure that what has
+been submitted is of sufficient quality to receive feedback.
+**Uncertain, feedback please **
+
 
 ## Thoughts
 
-_Any and all thoughts you have (including whether an in-flow peer-review process even makes sense for this assignment)._
+This is a good assignment for peer review. In a sense, tutorial sessions are already provided for students seeking assistence, but this would not involve a review of their code, as such – that said, they are 4 hour long sessions, so students could get some feedback if they can get enough TA time. 
 
 In-flow peer review will have a clear impact on the time pressure students will experience. A positive side effect is that the system will actually help students start early, and thus have a better chance of doing a good job. My course accounts for 2/3 of students' load, so we have good knowledge of what their overall load is and can readily make adjustments to avoid too much pressure.
 
-My main concern is about cheating. If a student sees one assignment while trying to complete her own, what is to stop her using what she has seen to improve her own solution. She can just copy it off the screen – that said, we do use tools for checking for plagiarism.
+My main concern is  cheating. If a student sees one assignment while trying to complete her own, what is to stop her using what she has seen to improve her own solution. She can just copy it off the screen – that said, we do use tools for checking for plagiarism.
 
+Another concern is turn-around time. Delays in providing feedback and/or grading the assignments will have a negative impact on students, who may actually be waiting for the feedback before they proceed with their work (conjecture).
+
+Avoiding misleading feedback seems to be an issue.
+
+Grading formative assessment is a tough one. We grade it only to ensure that students do it,
+but we also don't want to punish students who have done the original assignment poorly, as
+we want the feedback to truly help them. (How can one tell the difference between a 
+low-effort submission and a high-effort, low comprension submission?)
 
