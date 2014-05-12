@@ -1,16 +1,35 @@
 # Assignment Name
 
-What is the assignment called?
-A snappy codename may be useful for later discussions.
+"I can write programs"
 
 ## Course Context
 
-Tell us something about the course:
-what level, what the students know, etc.
+This is a first year course of 150 aruswnra. It's the first serious programming 
+course, offered to CS, IT and some engineering students. Students have encountered 
+Python briefly, but they are not expected to know much about programming. 
+They will have had an introduction to computer science. The course is 
+based on a functional language (Standard ML, but Haskell in the future). 
+Students typically have no experience with functional programming, 
+and this levels the playing field.
 
 ## Assignment
 
-What is the assignment asking students to do?
+The assignment asks students two write a collection of functions to
+solve a relatively small problem. Students are expected to write
+appropriate helper functions, to document their code in terms of
+informal pre- and post-conditions, examples, and so forth.
+Submitted solutions are expected to satisfy the supplied test suite.
+
+
+Submitted solutions are automatically tested against a different
+test suite. Code and comments are then inspected by TAs – each 
+TA grades about 14 assignments.
+
+One lab session is devoted to the assignment about 1 week before it is due.
+
+Students who fail the assignment are obliged to attend a special tutorial
+that will essentially tell them how to solve the problem. Students may
+then resubmit to obtain a maximum of a passing grade for the assignment.
 
 ## Educational Goals
 
