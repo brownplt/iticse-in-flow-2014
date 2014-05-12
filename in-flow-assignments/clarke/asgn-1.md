@@ -1,6 +1,6 @@
 # Assignment Name
 
-"I can write programs"
+Pinball Wizard!
 
 ## Course Context
 
@@ -16,8 +16,9 @@ and this levels the playing field.
 
 The assignment asks students two write a collection of functions to
 solve a relatively small problem -- tracking a pinball through
-a grid consisting of bumpers, checking well-formedness of the
-input, ... Students are expected to write appropriate helper functions, to document their code in terms of
+a grid containing some  bumpers positioned at 45 degrees, 
+checking well-formedness of the input data and so forth, ... 
+Students are expected to write appropriate helper functions, to document their code in terms of
 informal pre- and post-conditions, examples, and so forth.
 Submitted solutions are expected to satisfy the supplied test suite.
 
@@ -57,11 +58,9 @@ The requested functions should be submitted.
 ## Peer Review
 
 _At each intermediate stage, what will peer-review do?_
+At peer review stage, students will perform a manual inspection of 
+the code and specification to check for readability and (perceived) correctness.
 
-Perform a manual inspection of the code and specification to check
-for readability and (pervived) correctness.
-
-_How many peers will review, and how?_
 
 Each pair of students working together could review one other assignments each, individually,
 thereby generating two batches of feedback for each submitted assignment.
@@ -109,7 +108,6 @@ If they do not do it sufficiently well, they fail the whole assignment.
 
 The student's assignment itself will not be graded, except to ensure that what has
 been submitted is of sufficient quality to receive feedback.
-**Uncertain, feedback please **
 
 
 ## Thoughts
