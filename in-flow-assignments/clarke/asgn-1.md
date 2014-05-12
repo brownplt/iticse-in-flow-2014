@@ -4,7 +4,7 @@
 
 ## Course Context
 
-This is a first year course of 150 aruswnra. It's the first serious programming 
+This is a first year course of 150 students. It's the first serious programming 
 course, offered to CS, IT and some engineering students. Students have encountered 
 Python briefly, but they are not expected to know much about programming. 
 They will have had an introduction to computer science. The course is 
@@ -25,6 +25,8 @@ Submitted solutions are automatically tested against a different
 test suite. Code and comments are then inspected by TAs – each 
 TA grades about 14 assignments.
 
+Three weeks are alotted to complete the assignment.
+
 One lab session is devoted to the assignment about 1 week before it is due.
 
 Students who fail the assignment are obliged to attend a special tutorial
@@ -33,18 +35,17 @@ then resubmit to obtain a maximum of a passing grade for the assignment.
 
 ## Educational Goals
 
-What is the purpose of giving this assignment?
+The eductational goal is to test students mastery of basic programming
+constructs, their ability to break a problem down into smaller, solvable
+units, and to write coherent specifications of the functions that solve
+the problem.
 
 ## Intermediate Stages
 
-Identify one or more intermediate stages that would
-yield reviewable artifacts.
-
-Each stage should be unambiguous to students.
-(It might be defined by content, time, both, etc.)
-
-This is the key to adapting an assignment to
-in-flow peer-review.
+After either 1 or 2 weeks (or both) students could submit their current
+version of the assignment. Typically, the assignment is broken into 
+several functions of increasing difficult, so students could submit
+some of those functions week t-2 and and another batch at week t-3.
 
 ## Stage Submissions
 
