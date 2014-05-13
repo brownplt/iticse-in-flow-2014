@@ -5,8 +5,11 @@ A snappy codename may be useful for later discussions.
 
 ## Course Context
 
-Tell us something about the course:
-what level, what the students know, etc.
+This assignment fits our "Programming Fundamentals II" (PF2) second-semester Bachelor course at the University of Lugano (http://boole.inf.usi.ch/pf2-2014/index.html). At the start of the course students are expected to know Python (from the first semester programming course), and throughout this course they learn object-oriented programming in Java. We use a "Conversational Classroom" approach to teaching. Concurrently to PF2 students also take "Software Ateliner II" (SA2), which includes a group programming project during the second half of the semester. This year those projects are based on Android.
+
+We usually have between 15 and 40 students (due to administrative reasons students who failed the first semester programming course start taking PF2, and they usually either drop out or fail in the end, significantly reducing the number of students over the course of the semester).
+
+We usually have two teaching assistants (PhD students who TA in addition to being RAs) for this course, plus two TAs for the concurrent programming project.
 
 ## Assignment
 
