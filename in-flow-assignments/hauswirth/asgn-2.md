@@ -5,8 +5,11 @@ A snappy codename may be useful for later discussions.
 
 ## Course Context
 
-Tell us something about the course:
-what level, what the students know, etc.
+This assignment fits our "Software Performance" (SP) Masters course at the University of Lugano (http://boole.inf.usi.ch/sp-2013/index.html). The course teaches how the various layers of a computer system interact and affect the resulting performance. It performs two cuts down the system stack: one about the "state" and the other about the "behavior" of a system. The discussion of "state" investigates memory usage of applications, leak detection, garbage collection, virtual memory management, and cache performance. The discussion of "behavior" investigates call graphs, dynamic class loading, shared libraries and dynamic linking, control flow graphs, exception handling, compiler optimizations, and branch prediction. The course uses Java virtual machines and their internal operation as a running example and teaches basic static and dynamic program analysis techniques. Given the quantitative aspects of performance, the course introduces basic instrumentation and measurement tools, experimentation and evaluation approaches, and data analysis and visualization techniques.
+
+Concurrently most SP students also take "Software Performance Lab" (SP Lab), which includes an indivudual programming project during the second half of the semester. Last year the projects involved modifications to the Jikes RVM or to Jikes RDB (http://sape.inf.usi.ch/rdb).
+
+We usually have between 5 and 15 students, and we have one TA for SP and another TA for the SP Lab. The TAs usually are PhD students who also perform research in the systems area.
 
 ## Assignment
 
