@@ -47,7 +47,9 @@ about the material, and to tick off the various goals that they need to accompli
 
 ## Educational Goals
 
-_What is the purpose of giving this assignment?_
+The goal of the assignment is to have students design a large software system
+incrementally, to plan this design process, to reflect on what they are
+doing and why, and to incrementally improve their design and process.
 
 ## Intermediate Stages
 
@@ -63,30 +65,57 @@ for peer feedback. Perhaps the 3rd and 5th would be best.
 
 _At each intermediate stage, what would you like submitted? Is this an expectation or preference?_
 
+At each intermediate state, students submit their current design documents. 
+This is a preference --- the feedback is for their benefit.
+
+(On the other hand, weaker students tend to be the ones who need feedback the 
+most, and they are likely to not take full advantage of an optional submission
+point.)
+
 ## Peer Review
 
-_At each intermediate stage, what will peer-review do?_
+The goal of peer review will be to allow groups to evaluate and provide feedback to improve
+other group's designs.
 
-_How many peers will review, and how?_
+Each group will be reviewed by one other group. (Probablly) there will be a mutual review of
+each others work, which could even form the basis for a discussion (though with 8-10 people
+in the room, this might not be feasible).
 
-_Include review prompts or rubrics that you would give to students._
+The discussion will take place during a weekly meeting. 1/3 of the meeting will be devoted
+to one team providing feedback on the other teams design, 1/3 for doing the reverse, and
+1/3 for any discussion that might ensure, including resolving any misunderstandings in
+concepts or requirements.
+
+Rubric:
+- Are all elements of the design document comprehensible, following UML conventions, etc?
+- Does the design adequately cover the stated use cases?
+- Does the design adhere to the GRASP design principles?
 
 ## Expert Review
 
-_At each intermediate stage, will there also be review by experts (and who are they)?_
+Weekly meetings will alternate between expert review meetings and peer review meetings.
+At the peer review meeting, the experts (TAs) will act mainly as moderators.
 
-_Recall that at each stage, there are two kinds of work: a student's submission, and the reviews of that submission by peers. Either or both could be considered for review. What rubric would you use for the expert review (if any)?_
+At the end of the meeting, the TA will give comments on the feedback given.
+
+Rubric:
+- Was feedback issued based on principles of design evaluation covered in the course?
+- Was the feedback useful?
+- Did the feedback identify trivial or more serious problems?
 
 ## Grading
 
-_How do you anticipate the work done at the  intermediate stages being assessed? (Assume limitless human and computer resources.)_
+The work will be assessed during meetings. One of the goals that the students need to tick off will 
+correspond to "providing feedback on another teams assignment". This could be broken into a number
+of different levels, corresponding to the level of feedback: superficial, decent, extensive.
 
-_(How) Will this assessment impact the final score on the assignment?_
+As providing feedback corresponds to one of the tick-off-able goals, the quality of the feedback
+will effect their grade. Ultimately, students need to decide in advance how much effort they need
+to put into this based on which grade they are aiming for.
 
-_Recall that at each stage, there are two kinds of work: a student's submission, and the reviews of that submission by peers. Either or both could be considered for assessment._
+As lots of rounds of feedback are provided and students' submissions are not directly assessed,
+goals are, students' submissions are not considered.
 
 ## Thoughts
-
-_Any and all thoughts you have (including whether an in-flow peer-review process even makes sense for this assignment)._
 
 As this is a design exercise, details of designs should diverge fairly rapidly, so the cheating concerns had with other assignments are less of a concern. Indeed, students are tested by the TA orally, so any copying needs to come with appropriate understanding.
