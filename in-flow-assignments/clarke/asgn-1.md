@@ -14,11 +14,11 @@ and this levels the playing field.
 
 ## Assignment
 
-The assignment asks students two write a collection of functions to
+The assignment asks students too write a collection of functions to
 solve a relatively small problem -- tracking a pinball through
 a grid containing some  bumpers positioned at 45 degrees, 
 checking well-formedness of the input data and so forth, ... 
-Students are expected to write appropriate helper functions, to document their code in terms of
+Students are expected to write appropriate helper functions, to document their code using of
 informal pre- and post-conditions, examples, and so forth.
 Submitted solutions are expected to satisfy the supplied test suite.
 
@@ -27,7 +27,7 @@ Submitted solutions are automatically tested against a different
 test suite. Code and comments are then inspected by TAs – each 
 TA grades about 14 assignments.
 
-Three weeks are alotted to complete the assignment. Assignments are
+Two or three weeks are alotted to complete the assignment. Assignments are
 completed in pairs.
 
 One lab session is devoted to the assignment about 1 week before it is due.
@@ -57,7 +57,6 @@ The requested functions should be submitted.
 
 ## Peer Review
 
-_At each intermediate stage, what will peer-review do?_
 At peer review stage, students will perform a manual inspection of 
 the code and specification to check for readability and (perceived) correctness.
 
@@ -82,7 +81,7 @@ Rubric (on scale of 1-5, with 1 being appalling and 5 being amazing):
 * Are the comments likely to be good feedback?
 * Are the comments misleading?
 
-TA wil provide feedback only in last case, to avoid impact of misleading comments.
+TA wil provide feedback only in last case, to avoid misleading comments having any lasting impact.
 
 ## Grading
 
