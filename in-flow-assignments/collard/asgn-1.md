@@ -1,6 +1,5 @@
 # Assignment Name
 
-What is the assignment called?
 Join Lists (aka Ropes)
 
 ## Course Context
