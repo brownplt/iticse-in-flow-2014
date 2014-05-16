@@ -21,54 +21,42 @@ Two kinds of goals:
 
 ## Intermediate Stages
 
-Identify one or more intermediate stages that would
-yield reviewable artifacts.
+1. Program architecture (what are the key components, how do they interact, etc. on a very high-level)
+2. Data structure design (classes, what are the actual interfaces between different modules)
+3. Design of tests
+4. First draft implementation (including tests)
+5. Second draft implementation  (including tests)
+6. "Finished" implementation (including tests)
 
-Each stage should be unambiguous to students.
-(It might be defined by content, time, both, etc.)
-
-This is the key to adapting an assignment to
-in-flow peer-review.
+In practise, 2 and 3 must probably be baked into a single stage, and 4-6 too. Students have roughly three weeks at 66% pace to complete the assignment, and too many intermediate stages might introduce more overhead than help. 
 
 ## Stage Submissions
 
-At each intermediate stage, what would you like
-submitted? Is this an expectation or preference?
+1. Program architecture can be a quite simple sketch and accompanying explanations. This should fit on 1 piece of paper (back and front). 
+
+2 and 3.) might be code skeletons and high-level descriptions of test cases respectively. 
+
+4 through 6.) might be implementations at varying degrees of completion. 
 
 ## Peer Review
 
-At each intermediate stage, what will peer-review do?
+1.) The peer review can be a discussion where the reviewers try to check that all key components are present, and that the necessary information is available through the suggested chain of communication in the system. 
 
-How many peers will review, and how?
+2 and 3.) The peer review could focus on the test cases, and whether the suggested tests are reasonably complete, and motivated.
 
-Include review prompts or rubrics that you would
-give to students.
+4 through 6.) The peer review could be structured as a code review, looking in detail at some key piece of code, to see whether the written code uses reasonable naming, structure, indentation, is correct, etc. It will be hard to determine whether the code is correct since the specifications for each part will generally be vague. 
+
 
 ## Expert Review
 
-At each intermediate stage, will there also be
-review by experts (and who are they)?
+Expert reviews at each step will not scale up well. To this end, checklists could be produced to guide the reviewing students in their task and serve as the "expert's voice", but this feels quite weak. One possibility to facilitate scaling is to (randomly) pick one the intermediate stages and review the peer review. This would introduce some expert feedback in the review process which both student pairs could learn from. 
 
-Recall that at each stage, there are two kinds of work:
-a student's submission, and the reviews of that submission
-by peers. Either or both could be considered for review.
-What rubric would you use for the expert review (if any)?
 
 ## Grading
 
-How do you anticipate the work done at the 
-intermediate stages being assessed?
-(Assume limitless human and computer resources.)
+The use of in-flow peer assessment should preferably be integrated in the goal system at different levels required so that students get to "tick something off" as a reward for good peer review. (Or not, if the job was not well done.) 
 
-(How) Will this assessment impact the final score
-on the assignment?
-
-Recall that at each stage, there are two kinds of work:
-a student's submission, and the reviews of that submission
-by peers. Either or both could be considered for assessment.
 
 ## Thoughts
 
-Any and all thoughts you have (including whether
-an in-flow peer-review process even makes sense
-for this assignment).
+I feel a bit uninspired writing this. In hindsight, the final project would make a better candidate for peer review since the students will know more about the subject at this point. On the other hand, having a dialogue with others as part of an implementation will certainly be beneficial, for example by stimulating reflection. 
