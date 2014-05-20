@@ -1,71 +1,57 @@
 # Assignment Name
-
-What is the assignment called?
-A snappy codename may be useful for later discussions.
+Maze Solver
 
 ## Course Context
 
-Tell us something about the course:
-what level, what the students know, etc.
+This is a sophmore level computer science course titled Programming Methodology.
+
+At this point, the majority of students have taken Introduction to Programming in Java and a course covering Object Oriented Data Structures in Java.
+
+In this course, most students will be seeing Scala and functional programming for the first time.
 
 ## Assignment
 
-What is the assignment asking students to do?
+Students will be asked to write a maze solver using a variant of Dijkstra's
+algorithm. Given a list of directions, an actor moves through the maze. If the
+actor hits a wall, it dies. In addition to basic MOVE directions there will also
+be TURN directions which will require additional information to be stored while
+traversing the graph.
 
 ## Educational Goals
 
-What is the purpose of giving this assignment?
+Reason about Graphs in Scala aswell as transforming Dijkstra's to accomodate
+their needs.
 
 ## Intermediate Stages
 
-Identify one or more intermediate stages that would
-yield reviewable artifacts.
-
-Each stage should be unambiguous to students.
-(It might be defined by content, time, both, etc.)
-
-This is the key to adapting an assignment to
-in-flow peer-review.
+1. Write a datatypes / functions for constructing a Maze
+2. Write a datatypes / functions for traversing a Maze
+3. Write a function that produces a list of directions that successfully traverses a Maze
 
 ## Stage Submissions
 
-At each intermediate stage, what would you like
-submitted? Is this an expectation or preference?
+This is a one week assignment. Stages 1 and 2 will be due together 4 days into
+the week and stage 3 will be due at the end of the week.
 
 ## Peer Review
 
-At each intermediate stage, what will peer-review do?
+Students will review 2 - 3 other students submissions for stages 1 and 2. If the
+datatypes are not defined with all of the information needed to produce a valid
+solution, they can get feedback that will help them when they are trying to
+produce the solver.
 
-How many peers will review, and how?
+Possible Rubric:
 
-Include review prompts or rubrics that you would
-give to students.
+* Are the construction functions correct? If not, provide examples where they do not work.
+
+* Are the traversal functions correct? If not, provide examples where they do not work.
 
 ## Expert Review
 
-At each intermediate stage, will there also be
-review by experts (and who are they)?
-
-Recall that at each stage, there are two kinds of work:
-a student's submission, and the reviews of that submission
-by peers. Either or both could be considered for review.
-What rubric would you use for the expert review (if any)?
+None.
 
 ## Grading
 
-How do you anticipate the work done at the 
-intermediate stages being assessed?
-(Assume limitless human and computer resources.)
-
-(How) Will this assessment impact the final score
-on the assignment?
-
-Recall that at each stage, there are two kinds of work:
-a student's submission, and the reviews of that submission
-by peers. Either or both could be considered for assessment.
+TODO
 
 ## Thoughts
-
-Any and all thoughts you have (including whether
-an in-flow peer-review process even makes sense
-for this assignment).
