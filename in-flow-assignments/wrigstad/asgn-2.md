@@ -1,22 +1,33 @@
 # Program 1
 
-The previous assignment I had was about helping students with synthesis. 
-This assignment instead focuses on aiding the design process. 
 
 ## Course Context
 
-See [asgn-1.md](https://github.com/brownplt/iticse-in-flow-2014/blob/master/in-flow-assignments/wrigstad/asgn-1.md).
+2nd year programming course teaching imperative and object-oriented programming to students who know how to program in ML in a functional style. About 50% know imperative programming from extra-curricular activities, but not all.
 
 ## Assignment
 
 Implement a simple graphical Pong game in Java. [Text from actual assigment](https://github.com/TobiasWrigstad/ioopm/blob/master/uppgifter/fas1/sprint2/pong/uppgift.pdf). 
 
+Here is my summary of the text in the link: 
+
+"Implement a model for the game Pong. Use Model-view-controller. We supply the graphical user interface.
+The assignment will have you implementing a larger interface on your own, and in the process navigate 
+relevant parts of the Java API, and use classes from the Java API such as Set, Point, and Dimension."
+
+In the course, where I am currently giving this assignment, students are given a huge list of educational goals, and must complete these goals in terms of a number of programming assignments that they can choose from. Mapping educational goals to programs and building coherent packages of educational goals are part of the problem. A key idea is to put learning front and center, and not as a side-effect of having written a certain program.
+
+However, in this text, I am not focussing on the assignment as a constructor for situations relevant for demonstrating educational goals, but as a tool for understanding the design process, programming methodology and get savvy with tools. 
+
+
 ## Educational Goals
 
 Two kinds of goals:
 
-1. Students are expected to demonstrate that the understand imperative and OO-programming through the fulfilment of a large selection of goals. To do this, they have a large set of programming assignments to chose from. (This is just one of the 9 assigments in the Java part of the course.) In this respect, the educational goal-kind is to generate problems and situations in which to demonstrate certain subsets of the course's educational goals.
+1. Students are expected to demonstrate that the understand imperative and OO-programming through the fulfilment of a large selection of goals. To do this, they have a large set of programming assignments to chose from. (This is just one of the 9 assigments in the 6-week Java part of the course.) In this respect, the educational goal-kind is to generate problems and situations in which to demonstrate certain subsets of the course's educational goals.
 2. To present students with difficult enough programming problems for design issues, debugging needs, etc. to surface. And to be a problem to which there is no single best solution. 
+
+As already statet, here I want to focus on the second kind. 
 
 
 ## Intermediate Stages
