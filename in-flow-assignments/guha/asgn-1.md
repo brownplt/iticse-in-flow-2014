@@ -1,36 +1,47 @@
 # Assignment Name
 
-What is the assignment called?
-A snappy codename may be useful for later discussions.
+measuretrees
 
 ## Course Context
 
-Tell us something about the course:
-what level, what the students know, etc.
+To be offered for the first time in Fall 2014. This is a third-semester
+course on ``programming methodology'' using Scala. The students have
+one year of Java experience. This is the 4th homework assignment in
+the course. Students have been exposed to functional programming
+(i.e., structural recursion, recursive data types, and higher-order functions) 
+for three weeks when this assignment is released.
 
 ## Assignment
 
-What is the assignment asking students to do?
+Students are provided an three implementation of maps: sorted association lists,
+(unbalanced) binary search trees, and AVL trees. These data structures and
+algorithms have been presented in class. Students have to build the framework
+to benchmark their performance.
 
 ## Educational Goals
 
-What is the purpose of giving this assignment?
+- Observe, empirically, the running time of O(n) and O(log n) algorithms to
+  insert and lookup elements in a map.
+- Writing recursive functions: e.g., generate random/ordered lists of numbers,
+  insert a list of values into aforementioned data structures, and lookup a list of 
+  values.
+- Writing higher-order functions: functions to insert values into lists/BST/AVL
+  vary only in the type and the name of the insert function. Identify the template
+  and abstract into a higher-order function.
 
 ## Intermediate Stages
 
-Identify one or more intermediate stages that would
-yield reviewable artifacts.
+1. Write a higher-order function that calculates the time needed to execute another
+   function, averaged over N runs.
+2. Write a function to generate a list of N integers that are random/ordered.
+3. Write a function to insert N values into a map data structure.
+4. Write a benchmark that using above functions that plots running times.
 
-Each stage should be unambiguous to students.
-(It might be defined by content, time, both, etc.)
-
-This is the key to adapting an assignment to
-in-flow peer-review.
 
 ## Stage Submissions
 
-At each intermediate stage, what would you like
-submitted? Is this an expectation or preference?
+All expectations:
+
 
 ## Peer Review
 
