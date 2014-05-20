@@ -34,49 +34,41 @@ to benchmark their performance.
 1. Write a higher-order function that calculates the time needed to execute another
    function, averaged over N runs.
 2. Write a function to generate a list of N integers that are random/ordered.
-3. Write a function to insert N values into a map data structure.
+3. Write functions to insert/lookup N values into map data structures.
 4. Write a benchmark that using above functions that plots running times.
 
 
 ## Stage Submissions
 
-All expectations:
+Assignment is out on Tuesday and due next Tuesday.
+
+- Submit 1--3 above by Sunday. 
+- Submit 4 by Tuesday
 
 
 ## Peer Review
 
-At each intermediate stage, what will peer-review do?
+Students peer review each others' solutions to stage 3. The goal is to
+determine if the reviewee has used functional abstraction appropriately, or if
+they've naively cut-and-paste their insert/lookup function three times.
 
-How many peers will review, and how?
+Possible prompt:
 
-Include review prompts or rubrics that you would
-give to students.
+- We've seen several examples of higher-order functions in class. Could this code
+  be made any shorter and simpler using higher-order functions?
 
 ## Expert Review
 
-At each intermediate stage, will there also be
-review by experts (and who are they)?
-
-Recall that at each stage, there are two kinds of work:
-a student's submission, and the reviews of that submission
-by peers. Either or both could be considered for review.
-What rubric would you use for the expert review (if any)?
+No expert review.
 
 ## Grading
 
-How do you anticipate the work done at the 
-intermediate stages being assessed?
-(Assume limitless human and computer resources.)
-
-(How) Will this assessment impact the final score
-on the assignment?
-
-Recall that at each stage, there are two kinds of work:
-a student's submission, and the reviews of that submission
-by peers. Either or both could be considered for assessment.
+This is probably the first assignment that uses in-flow review. I may
+not want review quality to affect grades.
 
 ## Thoughts
 
-Any and all thoughts you have (including whether
-an in-flow peer-review process even makes sense
-for this assignment).
+The goal stage 3 is to recognize a pattern and create the right abstraction. I could
+give them the signature for the higher-order functions they need, but that would
+eliminate a good deal of thinking.
+
