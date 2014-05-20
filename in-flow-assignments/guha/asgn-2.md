@@ -1,71 +1,63 @@
 # Assignment Name
 
-What is the assignment called?
-A snappy codename may be useful for later discussions.
+scripting
 
 ## Course Context
 
-Tell us something about the course:
-what level, what the students know, etc.
+See asgn-1.md for course context. This is the final assignment
+in the same course.
 
 ## Assignment
 
-What is the assignment asking students to do?
+Students have to writer a parser to parse records from a made-up file format,
+map each record to a reasonable type and write functions to answer queries
+over the data. A likely data source is publicly available
+campaign finance information. Likely queries include questions such
+as, "who received the most money?"
 
 ## Educational Goals
 
-What is the purpose of giving this assignment?
+- Primary goal: Learn how to parse data with parser combinators.
+- Reinforcement: Implement group/order/filter queries using Scala collections.
+- Extra credit: implement indexes to speed up certain queries.
 
 ## Intermediate Stages
 
-Identify one or more intermediate stages that would
-yield reviewable artifacts.
-
-Each stage should be unambiguous to students.
-(It might be defined by content, time, both, etc.)
-
-This is the key to adapting an assignment to
-in-flow peer-review.
+1. Write a parser.
+2. Write several small examples of valid and invalid files.
+3. Write and test query functions over small examples.
+4. Test parser and query functions on real data.
 
 ## Stage Submissions
 
-At each intermediate stage, what would you like
-submitted? Is this an expectation or preference?
+Assignment is out Tuesday and due the next Tuesday.
 
+- Stage 1--2 due on Friday.
+- Stage 3--4 due Tuesday.
+-
 ## Peer Review
 
-At each intermediate stage, what will peer-review do?
+The parser should be robust and not accept invalid inputs. This will be
+students' first experience programming with regular expressions and
+a DSL. I expect students will be able to review each others completed
+parsers and suggest bug fixes or cleaner implementations.
 
-How many peers will review, and how?
-
-Include review prompts or rubrics that you would
-give to students.
+Prompt: Is this parser correct and clear? Can it be refactored
+to make it easier to understand?
 
 ## Expert Review
 
-At each intermediate stage, will there also be
-review by experts (and who are they)?
-
-Recall that at each stage, there are two kinds of work:
-a student's submission, and the reviews of that submission
-by peers. Either or both could be considered for review.
-What rubric would you use for the expert review (if any)?
+No expert review.
 
 ## Grading
 
-How do you anticipate the work done at the 
-intermediate stages being assessed?
-(Assume limitless human and computer resources.)
+Parsers can be automatically tested with hand-crafted bad input.
 
-(How) Will this assessment impact the final score
-on the assignment?
-
-Recall that at each stage, there are two kinds of work:
-a student's submission, and the reviews of that submission
-by peers. Either or both could be considered for assessment.
+We'll grade parsers twice: before and after review. Exact weights
+to be determined. I'm not sure how to give students credit for
+providing good reviews. Have other students review reviews? Sounds
+messsy and easily gameable.
 
 ## Thoughts
 
-Any and all thoughts you have (including whether
-an in-flow peer-review process even makes sense
-for this assignment).
+No more thoughts.
