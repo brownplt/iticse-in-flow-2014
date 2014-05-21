@@ -1,71 +1,84 @@
 # Assignment Name
 
-What is the assignment called?
-A snappy codename may be useful for later discussions.
-
+Programming 1 - Marked Exercise A
 ## Course Context
 
-Tell us something about the course:
-what level, what the students know, etc.
+The course is a CS1 objects early course using Bluej and java
 
 ## Assignment
 
-What is the assignment asking students to do?
+The assignment requires students to create objects and call methods, add fields and simple methods to a class
 
 ## Educational Goals
 
-What is the purpose of giving this assignment?
+After this set of exercises students will be able to:
+•	Create objects using the BlueJ class and object bench
+•	Call methods using the BlueJ object bench
+•	Call a method that requires an object as a parameter using the BlueJ object bench
+•	Zip and submit a file
 
 ## Intermediate Stages
 
-Identify one or more intermediate stages that would
-yield reviewable artifacts.
+This group of tasks is one in a set of 5 exercises cumulatively bulding in scope and difficulty.  While a succesful method call might be seen as an intermediate step at a micro level, completion of the group of tasks for exercise A is a better intermediate step which could be reviewed as a whole prior to starting exercise B.  
 
-Each stage should be unambiguous to students.
-(It might be defined by content, time, both, etc.)
 
-This is the key to adapting an assignment to
-in-flow peer-review.
 
 ## Stage Submissions
 
-At each intermediate stage, what would you like
-submitted? Is this an expectation or preference?
+Students are given a simple Bluej project to begin with.  A zip file with the project code, and a  word document containing 2 screenshots (of output printed to screen and a Bluej screen) are submitted at the end of the exercise
 
 ## Peer Review
 
-At each intermediate stage, what will peer-review do?
-
-How many peers will review, and how?
-
-Include review prompts or rubrics that you would
-give to students.
+currently there is no peer review although it could be incorporated
 
 ## Expert Review
 
-At each intermediate stage, will there also be
-review by experts (and who are they)?
-
-Recall that at each stage, there are two kinds of work:
-a student's submission, and the reviews of that submission
-by peers. Either or both could be considered for review.
-What rubric would you use for the expert review (if any)?
+The exercises are currently graded by Teaching assistants or lecturer 
 
 ## Grading
 
-How do you anticipate the work done at the 
-intermediate stages being assessed?
-(Assume limitless human and computer resources.)
+prior to completing the marked sets of exercises, students must complete and have signed off a set of lab tasks (which are formative zero weighted activities) 
 
-(How) Will this assessment impact the final score
-on the assignment?
+The exercises fall within the grading schedule below
 
-Recall that at each stage, there are two kinds of work:
-a student's submission, and the reviews of that submission
-by peers. Either or both could be considered for assessment.
+Assignment 1  | Marked Exercise A 	|9 March	        |10
+Assignment 2  | Marked Exercise B	  |30 March	        |20
+Assignment 3  | Marked Exercise C	  |11 May	          |20
+In-Lecture Quiz	                    |Fortnightly	    |10
+Final Examination 		                                |40
+
+Total                                                 |100
+
+Grading Rubric:
+
+Project compiles
+Code layout good
+Programming standards applied
+No unnecessary fields added
+
+1.	Q1 –Q7
+	Answered correctly
+2.	Output terminal is correct
+	Objects are named correctly
+	Displays a object bench & printed console
+3.	Add getGDP field
+	Named correctly
+	return type (int)
+	No parameter
+4.	Add harvest method
+	One parameter (type int)
+	public type
+	Increases the crop reserve correctly
+5.	Add setCurrency method
+	No return type (void)
+	public type
+	Correctly changes the type of currency
+6.	Add a satisfactionRating field
+	data type int
+	private field
+	Named correctly
+	Initialised to 100
 
 ## Thoughts
 
-Any and all thoughts you have (including whether
-an in-flow peer-review process even makes sense
-for this assignment).
+Pair programming could usefully augment this assessment scheme, as could the use of peerwise.  Some equivalent to code inspections that might work for such simple pieces of code would be a good idea too, perhaps conducted in groups or by the whole  class in a smallish closed lab session. 
