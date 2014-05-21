@@ -4,8 +4,7 @@ scripting
 
 ## Course Context
 
-See asgn-1.md for course context. This is the final assignment
-in the same course.
+To be offered for the first time in Fall 2014. This is a third-semester course on ``programming methodology'' using Scala. The students have one year of Java experience. This is the final homework assignment in the course.
 
 ## Assignment
 
