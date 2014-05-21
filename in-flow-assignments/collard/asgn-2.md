@@ -52,6 +52,8 @@ None.
 
 ## Grading
 
-TODO
+Stages 1 and 2 will be graded once pre-review. Then Stages 1, 2, and 3 will be graded post review. The weight for these stages still needs to be determined.
 
 ## Thoughts
+
+No additional thoughts.
