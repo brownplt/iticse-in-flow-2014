@@ -41,13 +41,14 @@ prior to completing the marked sets of exercises, students must complete and hav
 
 The exercises fall within the grading schedule below
 
-Assignment 1  | Marked Exercise A 	|9 March	        |10
-Assignment 2  | Marked Exercise B	  |30 March	        |20
-Assignment 3  | Marked Exercise C	  |11 May	          |20
-In-Lecture Quiz	                    |Fortnightly	    |10
-Final Examination 		                                |40
-
-Total                                                 |100
+Assignment |   | Date/Frequency | Percentage
+-----------|---|----------------|-----------
+Assignment 1  | Marked Exercise A 	| 9 March	        | 10
+Assignment 2  | Marked Exercise B	  | 30 March	        | 20
+Assignment 3  | Marked Exercise C	  | 11 May	          | 20
+In-Lecture Quiz	|                    | Fortnightly	    | 10
+Final Examination | |		                                | 40
+*Total* | |                                                | 100
 
 Grading Rubric:
 
