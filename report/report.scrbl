@@ -12,6 +12,23 @@ What is in-flow peer reviewing?
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+@section{Learning Goals}
+
+What learning outcomes do we expect from in-flow peer review?
+
+Does it (merely) help students understand existing assignments better?
+
+Can it fill a void in some curricula/assignments, causing kinds of learning
+that wouldn't happen otherwise (writing skills, critical thinking skills)?
+
+What other techniques accomplish the same things, without being categorized as
+in-flow peer review per se.  For example, what does in-flow peer review do that
+after-the-fact review does not do: both clearly encourage critical thinking and
+writing skills?  This is a comparative question, but helps nail down the goals
+of in-flow in particular.
+
+@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 @section{Pedagogic Rationale}
 
 Partial lit review justifying the idea
@@ -38,9 +55,15 @@ What are the logistics challenges identified by the WG?
 
 @section{Assessment of Student Work}
 
-@subsection{Designing Review Rubrics}
+@subsection{Designing review rubrics}
 
-@subsection{Designing Feedback Forms}
+@subsection{Designing feedback forms}
+
+@subsection{How and whether to assess reviews}
+
+@subsection{Impact of reviews on reviewee's grade}
+
+@subsection{Accounting for the impact of seeing other students' work mid-assignment}
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -65,6 +88,8 @@ know about in-flow peer review?
 
 @item{What are the right metrics for this?}
 
+@item{What other strategies can we compare in-flow peer review to?}
+
 ]
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -76,10 +101,16 @@ a dumping ground for work we want to cover somewhere.
 
 @itemlist[
 
-@item{Contributing Student Pedagogy}
+@item{Contributing Student Pedagogy (see ITiCSE WG 2008)}
+
+@item{Computer-mediated communication in collaborative educational settings (see ITiCSE WG 1997)}
 
 ]
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 @section{Conclusion}
+
+@section{Appendix --- Case Studies}
+
+
