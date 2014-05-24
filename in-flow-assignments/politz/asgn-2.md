@@ -79,33 +79,33 @@ under test (the first 10 questions).
 
 1. Review grade
 
-An automated program will inspect the line-number marked tests in each review
-for accuracy against the student's test suite.  We can do this by having a
-stable of broken implementations, one for each “coverage” criteria, that
-detects if a student wrote a test for a particular case.
+  An automated program will inspect the line-number marked tests in each review
+  or accuracy against the student's test suite.  We can do this by having a
+  stable of broken implementations, one for each “coverage” criteria, that
+  detects if a student wrote a test for a particular case.
 
-This lets us automatically grade the quantititative part of the review, and
-give a score to the reviewer based on what proportion of the tests they
-identified as being present (and at the right line) or absent.
+  This lets us automatically grade the quantititative part of the review, and
+  give a score to the reviewer based on what proportion of the tests they
+  identified as being present (and at the right line) or absent.
 
-We will not give any points for the qualitative (open-response) part of the
-review.
+  We will not give any points for the qualitative (open-response) part of the
+  review.
 
 2. Tests grade
 
-The same automated tools can be used to grade the test suite itself, giving
-credit for the number of noticed broken implementations, and also deducting
-points for incorrect test cases.
+  The same automated tools can be used to grade the test suite itself, giving
+  credit for the number of noticed broken implementations, and also deducting
+  points for incorrect test cases.
 
-If the student resubmitted a new test suite after review, that is graded by the
-automated tool as well, and their total test suite grade is a weighted sum of
-70% initial submission, 30% final submission.
+  If the student resubmitted a new test suite after review, that is graded by the
+  automated tool as well, and their total test suite grade is a weighted sum of
+  70% initial submission, 30% final submission.
 
 3. Implementation grade
 
-We will do a simple automated grading that runs the students' implementation
-against a test suite of our design, and give credit based on how many tests it
-passes.
+  We will do a simple automated grading that runs the students' implementation
+  against a test suite of our design, and give credit based on how many tests it
+  passes.
 
 
 The total grade will be 25% review grade, 40% tests grade, and 35%
