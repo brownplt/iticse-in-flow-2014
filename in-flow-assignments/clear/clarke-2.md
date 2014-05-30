@@ -1,7 +1,4 @@
-# Are there things your assignments could do better based on reading this?
+This assignment description does not seem to contain any in-flow peer review, and is rather a description of a traditional assignment.
 
-# Are there things this assignment could do better based on your assignments?
-
-# Any other comments on course structure?
-
-# Looking ahead to including these in a report, any writing comments?
+One point made was that pair programming could usefully augment in-flow peer review, as both are based on the use of peers. 
+It would be useful to elaborate how this would work.
