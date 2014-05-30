@@ -10,4 +10,6 @@ goals, but are also different.
 writing (Clear) has review writing. Software design (Clarke) has design reviews. etc. By exploiting
 this correspondence, one gets to teach two skills for one.
 
+0. To reuse peers or to not reuse peers for different rounds of reviews of the same assignment.
+
 
