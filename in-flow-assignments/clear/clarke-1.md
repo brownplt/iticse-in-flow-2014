@@ -14,7 +14,7 @@ that not meeting runs smoothly and that no misleading feedback is followed.
 # Any other comments on course structure?
 
 There are a lot of submission steps, which could be quite onerous for students (and staff) to manage, especially
-whens students are sick and miss something.
+when students are sick and miss something.
 
 
 # Looking ahead to including these in a report, any writing comments?
