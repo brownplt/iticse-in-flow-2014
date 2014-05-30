@@ -18,4 +18,7 @@ scenarios that seem difficult at first.
 ## Fear of students being rude/abrasive/offensive, or high consequences for it
 
 
+## Opens the possibility of cheating
+
+
 
