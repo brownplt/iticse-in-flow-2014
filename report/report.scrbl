@@ -47,6 +47,10 @@ What are the logistics challenges identified by the WG?
 
 @item{Motivating Students}
 
+Matthias Hauswirth notes:
+
+I just started reading "Punished by Rewards" by Alfie Kohn. Really interesting deconstruction of "pop behaviorism", targeting three contexts: workplace, parenting, and education. [...] peer reviews can either serve as "rewards" (summative assessment in the form of scores/grades) or as constructive feedback (formative assessment). It might make sense to discuss the latter at the workshop.
+
 @item{Finding the Sweet Spot in how much to structure assignments}
 
 ]
