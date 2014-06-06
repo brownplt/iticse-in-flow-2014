@@ -93,4 +93,12 @@ programs; these seem to mostly discuss the cognitive process of looking at and
 possibly running a program to explore it, but not understanding it by writing
 an explanation of it.
 
+## Industrial Peer Review Practice
+
+Peer review in industry is typically in-flow.  To what extent are the practices discussed in this WG similar to those used in industry?  Which industrial techniques make sense in pedagogic settings?
+
+Convergent contemporary software peer review practices
+Peter C. Rigby and Christian Bird
+ESEC/FSE 2013
+http://dl.acm.org/citation.cfm?id=2491444
 
