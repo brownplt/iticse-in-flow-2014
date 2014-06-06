@@ -53,6 +53,8 @@ I just started reading "Punished by Rewards" by Alfie Kohn. Really interesting d
 
 @item{Finding the Sweet Spot in how much to structure assignments}
 
+@item{Providing Students Feedback on Reviewing}
+
 ]
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -65,9 +67,22 @@ I just started reading "Punished by Rewards" by Alfie Kohn. Really interesting d
 
 @subsection{How and whether to assess reviews}
 
+Class size is clearly a factor here.  If someone wants to use
+peer-review to help provide human feedback in large courses, then
+giving expert feedback on reviewing might not be feasible.  Are there
+ways to give some feedback on reviews in a lightweight manner?
+
 @subsection{Impact of reviews on reviewee's grade}
 
 @subsection{Accounting for the impact of seeing other students' work mid-assignment}
+
+@subsection{Relating auto-grading and in-flow peer review}
+
+When assignment steps can be graded automatically, how much feedback
+should go to students and/or reviewers alongside the peer-written
+reviews?  Giving auto-grade results could lead to reviewers putting in
+less effort (thus masking situations in which the auto-grading missed
+something important).
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 

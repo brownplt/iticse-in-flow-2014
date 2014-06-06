@@ -72,6 +72,16 @@ collective ideas.  Each group will submit a joint response to stage 3.
 Each student will then peer-review the stage 3 submission from one
 other group.
 
+[Added after receiving Ville's comments] The double-blind structure
+for the early stages reflects my concern that reviewing might be
+biased by knowing who did the work.  The scenarios I worry about are
+similar to those that arise in conference reviewing, though I expect
+students have less experience (and hence maturity) in dealing with
+those situations.  I also feel that sharing the identities puts the
+burden on the course staff to create groups that exclude roommates,
+close friends, etc.  If the early stages are blind, we can let the
+software handle the review assignments.
+
 For stages 1 and 2, rubrics would ask students to comment on whether
 the outline missed any significant sources of attacks, and whether the
 specific tasks targeted the goals in the outline.  Students would not
@@ -115,3 +125,11 @@ Peer-review seems to fit this assignment well because the assignment
 has natural high-level artifacts (the attack plans) to review, and a
 way to scope an early deadline (blackbox) around a reasonably complete
 initial artifact.
+
+Ville's comments asked why I didn't have students review their
+black-box strategies in light of the white-box ones: basically,
+reflect on what black-box attacks (if any) would have uncovered the
+white-box issue.  That's a good and interesting idea, and I could
+certainly see adding this to the assignment outside of the
+working-group context.  Left the assignment for the working-group
+unedited since I don't think this change affects peer-review.
