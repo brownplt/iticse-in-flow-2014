@@ -69,6 +69,8 @@ Currently there are 6 or 7 meetings with TAs. Two or three of these could be bor
 for peer feedback. Perhaps the 3rd and 5th would be best.
 
 
+**Add in** _Is there any consideration of teamwork and how that might be assessed? Maybe a summative assessment based on quality of the review or inspection could also be considered, to address the need for intermediate deliverables to be made visible. This could be applied at individual, pair or team level_
+
 ## Stage Submissions
 
 
