@@ -39,6 +39,7 @@ then resubmit to obtain a maximum of a passing grade for the assignment.
 (Other students may of course attend the special tutorials, though resubmission
 cannot improve their grade, so is pointless.)
 
+**Something about format of specifications**
 
 ## Educational Goals
 
@@ -59,9 +60,10 @@ version of the assignment.
 ## Stage Submissions
 
 Typically, the assignment is broken into several functions of increasing difficulty.
-Students could submit some of those functions week _t-2_ and and another batch at week _t-1_.
+Students could submit some of those functions, determined by teaching staff, 
+at week _t-2_ and the next batch at week _t-1_.
 
-The requested functions should be submitted. 
+Submission is mandatory.
 
 ## Peer Review
 
@@ -71,7 +73,8 @@ the code and pre- and post-conditions to check for readability and (perceived) c
 Each pair of students working together could review one other assignments each, individually,
 thereby generating two batches of feedback for each submitted assignment.
 
-Rubric: provide free form comments on the following topics:
+Rubric: Provide free form comments on the following topics. 
+Provide examples that demonstrate the incorrectness of code or specifications.
 
 * The correctness of the assignment. Which parts seem to be correct, which parts are wrong, and which parts are difficult to assess? Suggest improvements for the parts that are not correct.
 * The pre- and post-condition specifications. How well do these match the description provided? How easy are these to understand? What simplifications and improvements are possible? 
@@ -108,7 +111,7 @@ except to ensure that what has been submitted is of sufficient quality to
 receive feedback.
 
 Thus the only requirements for the intermediate submission are that students
-participate adequately. 
+participate adequately. Grades are based entirely on the final submissions.
 
 Students will have the opportunity to improve their assignment based on
 the feedback received. 
