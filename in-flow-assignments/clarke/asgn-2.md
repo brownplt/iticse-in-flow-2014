@@ -4,8 +4,8 @@ Advanced Dungeons and Design (AD&D)
 
 ## Course Context
 
-This is the only assignment for the fourth year (first masters year) course
-_Advanced Software Design_. This course is offered to a variety of CS, IT and 
+This assigment is the only assessment for the fourth year/first masters course
+_Advanced Software Design_. The course is offered to a of CS, IT and 
 other interested students. Students are required to have roughly 2 years worth
 of CS units under the belt, including a second year course on object-oriented
 programming. 
@@ -13,42 +13,46 @@ programming.
 The course is essentially about object-oriented design, software architecture, design patterns, refactoring,
 UML, and it is the first course in which they do a largish design project.
 
-Students learn (or receive a refresher) on iterative development methods.
-They learn about some principles of good (OO) design which they need to
-apply in their design. They learn about design evaluation and refactoring,
-as design evaluation and  improvement (due to changing requirements, 
-additional use cases, feedback!) are key parts of the course.
+Students learn (or receive a refresher) on iterative development methods,
+some principles of good (OO) design, design evaluation and refactoring.
+Design evaluation and  improvement -- essentially feedback and responding
+to feedback -- are key features of the course.
 
 Although the course is about design, assessment is not based (exclusively) on the quality of
-their final designs. Instead, students are given a list of goals (related to various
-aspects of design) that they need to tick off. Students tick off goals by performing
-some design work (fleshing out an architecture, employing design patterns, etc),
+students' final designs. Instead, students need to tick of a list of goals related to various
+aspects of design. Students tick goals off by performing some design work 
+(fleshing out an architecture, employing design patterns, etc),
 and then convincing TAs that the work they have done and the understanding they 
-have gained allow the goal to be ticked off. Goals are partitioned according to
+have gained satisfy the selected goal. Goals are partitioned according to
 the possible grades students may obtain (3, 4, 5). In order to get a particular grade,
-students need to tick off all goals for that grade (and lower grades). Each
-topic covered by goals will come in a number of variants of increasing sophistication, to
-cover the different grades, so that students can tick off all lower graded goals 
-while ticking off a higher graded goal. Groups of goals can be ticked off together.
-This gives students the opportunity to reflect on their work and, in effect,
-plan their own assessment. 
+students need to tick off all goals for that grade (and lower grades). 
+Goals are designed so that students electing to tick off a particular grade 5 goal,
+can also tick off the corresponding grade 3 and 4 goals at the same time. In addition,
+students can group goals together to reduce their overall workload. This ultimately
+requires that students reflect on their work and plan their own assessment.
+
+Students work in teams and typically tick off goals in teams, but students may opt
+out or may be judged by the TA to inadequately satisfy the goal. There are no free-riders.
+
+Some of the goals are related to teamwork, evaluating designs and providing feedback,
+and acting upon feedback given.
 
 
 ## Assignment
 
 Students are given a detailed description of a Dungeon-based board game and they are required
-to design and implement a mobile-app+server based on this description, following an iterative development methodology.
-The key documents are a description of the game rules and a description of what the client wants.
-(Students are also given the list of goals they need to tick-off, and instructions on how
-this particular assessment mechanism works.)
-Some specific functionality is marked as being important and others, such as support for
-mobility, are required to achieve higher grades.
-Students need to derive their own use cases from these documents (though in future years
-we may change this). 
+to design and implement (in part) a mobile-app+server based on this description, following 
+an iterative development methodology.
+The key documents students receive are a description of the game rules, a description of what the client wants,
+the list of goals they need to tick-off, and instructions on how the assessment mechanism works.
 
 The assignment is deliberately designed to be too large to complete in the time 
 available, thus forcing students to select sensible and managable chunks to
 design, as would happen in a real world iterative development team.
+Some specific functionality is marked as being important, such as some aspects crucial
+for game play, and others, such as support for mobility, are required to achieve higher grades.
+Students need to derive their own use cases from these documents (though in future years
+we may change this). 
 
 Students meet weekly with a TA to discuss their evolving design, to ask questions
 about the material, and to tick off the various goals that they need to accomplish.
@@ -57,19 +61,15 @@ about the material, and to tick off the various goals that they need to accompli
 
 The goal of the assignment is to have students design a large software system
 incrementally, to plan this design process, to reflect on what they are
-doing and why, to evaluate designs and to incrementally improve their design and process.
+doing and why, to evaluateand provide feedback on designs,
+and to incrementally improve their design and process.
 
 ## Intermediate Stages
 
-Students already meet with TAs once per week. Some of these meeting could be changed so that
-one group gives another group feedback, or groups give each other feedback, under the guidance
-of the TA. 
-
-Currently there are 6 or 7 meetings with TAs. Two or three of these could be borrowed
-for peer feedback. Perhaps the 3rd and 5th would be best.
-
-
-**Add in** _Is there any consideration of teamwork and how that might be assessed? Maybe a summative assessment based on quality of the review or inspection could also be considered, to address the need for intermediate deliverables to be made visible. This could be applied at individual, pair or team level_
+Students meet with TAs once per week. There are seven meetings in total.
+Two of these meetings (#3 and #5) will be devoted to peer feedback.
+In such peer feedback meetings, two groups will meet with a TA. The groups will 
+give each other feedback, under the moderation of the TA. 
 
 ## Stage Submissions
 
