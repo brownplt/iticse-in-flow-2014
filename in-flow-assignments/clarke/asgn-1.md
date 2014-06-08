@@ -53,14 +53,16 @@ aspects of the assignment (possibly as a learning agreement).
 
 ## Intermediate Stages
 
+
+
 After either 1 or 2 weeks (or both) students could submit their current
 version of the assignment. 
 
 ## Stage Submissions
 
-Typically, the assignment is broken into several functions of increasing difficulty.
-Students could submit some of those functions, determined by teaching staff, 
-at week _t-2_ and the next batch at week _t-1_.
+Typically, the assignment is broken into sets of functions of increasing difficulty,
+determined by the instructor.
+Students could submit some of those functions at week _t-2_ and the next batch at week _t-1_.
 
 Submission is mandatory.
 
@@ -115,7 +117,7 @@ except to ensure that what has been submitted is of sufficient quality to
 receive feedback.
 
 Thus the only requirements for the intermediate submission are that students
-participate adequately. Grades are based entirely on the final submissions.
+participate adequately. Grades are based entirely on the complete final submissions.
 
 Students will have the opportunity to improve their assignment based on
 the feedback received. 
@@ -125,13 +127,14 @@ the feedback received.
 
 This is a good assignment for peer review. In a sense, tutorial sessions are already provided for students seeking assistence, but this would not involve a review of their code, as such – that said, they are 4 hour long sessions, so students could get some feedback if they can get enough TA time. 
 
-In-flow peer review will have a clear impact on the time pressure students experience. A positive side effect is that the system will actually encourage students to start early, and thus have a better chance of doing a good job. My course accounts for 2/3 of students' load, so we have good knowledge of what their overall workload is at any time and can readily make adjustments to avoid too much pressure.
+In-flow peer review will have a clear impact on the time pressure students experience. A positive side effect is that the system will actually encourage students to start early, and thus have a better chance of doing a good job. My course accounts for 2/3 of mstudents' load, so we have good knowledge of what their overall workload is at any time and can readily make adjustments to avoid too much pressure.
 
 My main concern is cheating. If a student sees one assignment while trying to complete her own, what is to stop her using what she has seen to improve her own solution. She can just copy it off the screen. To counter this after the fact, we extensively use plagiarism detection tools – these catch enough students during the first assignment to highly discourage the whole class from cheating in subsequent assignments.
 
 Another concern is turn-around time. Delays in providing feedback and/or grading the assignments will have a negative impact on students, who may actually be waiting for the feedback before they proceed with their work (conjecture).
+Time to provide feedback can be made short and have strict deadlines to mediate this concern.
 
-Avoiding misleading feedback seems to be an issue. We address this by getting a TA to check and identify such feedback.
+Avoiding misleading feedback seems to be an issue. We address this by ensuring that students get feedback from multiple students and by getting a TA to check and identify misleading feedback.
 
 Whether or not to grading formative feedback is a tough choice. We make it mandatory to ensure that students do it. 
 We don't grade the initial submissions as we also don't want to punish students who have done the  assignment poorly, as
