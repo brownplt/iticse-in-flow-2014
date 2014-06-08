@@ -74,12 +74,8 @@ give each other feedback, under the moderation of the TA.
 ## Stage Submissions
 
 
-At each intermediate state, students submit their current design documents. 
-This is a preference --- the feedback is for their benefit.
-
-(On the other hand, weaker students tend to be the ones who need feedback the 
-most, and they are likely to not take full advantage of an optional submission
-point.)
+At each intermediate stage, students submit their current design documents. 
+This is mandatory. No specific constraints are imposed on the submission.
 
 ## Peer Review
 
@@ -96,32 +92,33 @@ to one team providing feedback on the other teams design, 1/3 for doing the reve
 concepts or requirements.
 
 
-**FIX NOT YES NO**
-Rubric: provide specific comments on design documents based on the following:
-- Are all elements of the design document comprehensible, following UML conventions, etc?
-- Does the design adequately cover the stated use cases?
-- Does the design adhere to the GRASP design principles?
-- Have students selected the right part of the big system to focus current design efforts on or
-have they selected some peripheral or easy elements only?
+Rubric: provide specific comments on design documents based on the following aspects
+- Comprehensibility, following conventions, quality of documentation
+- How well the designs cover the selected use cases
+- Adherence of design to the GRASP design principles
+- The subset of complete system chosen as current design effort - core elements or perhipheral, easy elements?
+- Provide concrete examples to support each point.
 
 ## Expert Review
 
 Weekly meetings will alternate between expert review meetings and peer review meetings.
+At expert meetings, TAs will give feedback, mainly by answering student questions and
+by assessing students as they tick off goals.
+
 At the peer review meeting, the experts (TAs) will act mainly as moderators.
+At the end of the meeting, the TA will give comments on the feedback given
+based on the following rubric. (Other feedback may be given on designs.)
 
-At the end of the meeting, the TA will give comments on the feedback given.
-
-**FIX NOT YES NO**
 Rubric:
-- Was feedback issued based on principles of design evaluation covered in the course?
-- Was the feedback useful?
+- How well did the feedback follow principles of design evaluation?
+- How was the feedback received?
 - Did the feedback identify trivial or more serious problems?
 
 ## Grading
 
 The work will be assessed during meetings. One of the goals that the students need to tick off will 
 correspond to "providing feedback on another teams assignment". This could be broken into a number
-of different levels, corresponding to the level of feedback: superficial, decent, extensive.
+of different levels, corresponding to the level of feedback provided: superficial, decent, extensive.
 
 As providing feedback corresponds to one of the tick-off-able goals, the quality of the feedback
 will effect their grade. Ultimately, students need to decide in advance how much effort they need
@@ -132,19 +129,19 @@ GRASP principles .... Some concern teamwork, and others concern modifying design
 feedback received.
 
 As lots of rounds of feedback are provided already and students' submissions are not directly assessed,
-goals are, students' submissions are not considered.
+goals are, students' submissions are not considered most of the time when ticking of goals.
 
 Grading typically occurs in groups but each individual needs to be involved in the presentation
-of each goal in order to show that they can tick it off. This requires planning in advance for
-the team. 
+for each goal. This requires planning in advance for the team to avoid one member doing all
+the talking and preventing others from ticking off the goal. 
 
 ## Thoughts
 
-As this is a design exercise, details of designs should diverge fairly rapidly,  thus cheating is less of a concern. Indeed, students are tested by the TA orally, so any copying needs to come with appropriate understanding (and understanding is the ultimate goal, of course).
+The assessment is a design exercise and details of designs should diverge fairly rapidly, making cheating is less of a concern. Indeed, students are tested by the TA orally, so any copying needs to come with appropriate understanding (and understanding is the ultimate goal). Thus students are also given the opportunity to learn by seeing other students' designs.
 
-One concern with having optional submissions is that weaker students, who presumably would benefit more
-from feedback, are less likely to be in a position to have their submissions ready (conjecture).
-But making the  submissions mandatory goes against one of the other pedagogic goals of this assignment,
+The choice between optional and mandatory submission was tricky. Weaker students may opt out of the
+feedback step, though they are the ones most likely to benefit. 
+Making the  submissions mandatory goes against one of the other pedagogic goals of this assignment,
 namely to get students to plan their own submissions.
 
 One concern is that students could copy feedback from others, thereby increasing their chance of getting
