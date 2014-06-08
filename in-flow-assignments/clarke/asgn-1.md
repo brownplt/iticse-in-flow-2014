@@ -39,7 +39,6 @@ then resubmit to obtain a maximum of a passing grade for the assignment.
 (Other students may of course attend the special tutorials, though resubmission
 cannot improve their grade, so is pointless.)
 
-**Something about format of specifications**
 
 ## Educational Goals
 
@@ -55,7 +54,7 @@ aspects of the assignment (possibly as a learning agreement).
 ## Intermediate Stages
 
 After either 1 or 2 weeks (or both) students could submit their current
-version of the assignment.
+version of the assignment. 
 
 ## Stage Submissions
 
@@ -80,6 +79,11 @@ Provide examples that demonstrate the incorrectness of code or specifications.
 * The pre- and post-condition specifications. How well do these match the description provided? How easy are these to understand? What simplifications and improvements are possible? 
 * How well the code matches the pre- and post-condition specifications. 
 * How well the provided examples satisfy the given specification.
+
+
+If two intermediate feedback stages are used, different students will be assigned
+different reviewers to increase the diversity of feedback.
+
 
 ## Expert Review
 
@@ -123,7 +127,7 @@ This is a good assignment for peer review. In a sense, tutorial sessions are alr
 
 In-flow peer review will have a clear impact on the time pressure students experience. A positive side effect is that the system will actually encourage students to start early, and thus have a better chance of doing a good job. My course accounts for 2/3 of students' load, so we have good knowledge of what their overall workload is at any time and can readily make adjustments to avoid too much pressure.
 
-My main concern ischeating. If a student sees one assignment while trying to complete her own, what is to stop her using what she has seen to improve her own solution. She can just copy it off the screen. To counter this after the fact, we extensively use plagiarism detection tools – these catch enough students during the first assignment to highly discourage the whole class from cheating in subsequent assignments.
+My main concern is cheating. If a student sees one assignment while trying to complete her own, what is to stop her using what she has seen to improve her own solution. She can just copy it off the screen. To counter this after the fact, we extensively use plagiarism detection tools – these catch enough students during the first assignment to highly discourage the whole class from cheating in subsequent assignments.
 
 Another concern is turn-around time. Delays in providing feedback and/or grading the assignments will have a negative impact on students, who may actually be waiting for the feedback before they proceed with their work (conjecture).
 
@@ -135,3 +139,4 @@ we want the feedback to truly help them. The challenge is determining the differ
 
 Another challenge is avoiding students doing nothing (or just the bare minimum) to get access to the feedback phase and hence access to other students' assignment.
 
+Proving two rounds of feedback may be too much for such a small assignment, especially considering that this increases the opportunities for seeing and copying other students' code.
