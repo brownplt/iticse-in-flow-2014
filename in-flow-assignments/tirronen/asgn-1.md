@@ -43,6 +43,8 @@ programming activities.
 
 ## Intermediate Stages
 
+The exercise consist of six steps:
+
 1) The first working draft of the application.
 2) The rudimentary attack modelling with attack trees.
 3) Securing the application according to OWASP top ten.
@@ -50,6 +52,22 @@ programming activities.
 5) Applying static analysis tools to the application.
 6) A review on the differences of the secured application
    versus original. 
+
+The number of steps for one exercise might lead to fatigue on part of the
+students. For example, it is conceivable that such a large number of reviews is
+perceived to unbeareably delay and interrupt the students work. 
+
+We included a few practical factors migitate getting tired of the exercise.
+First, each of the stages is presented to the student as a new exercise and
+second, the exercise is spread out throughout the course so that the first step
+is taken on the first week, while the last one is returned at the end of the
+course. This division into smaller and more concrete parts might help students
+to perceive the exercise as a string of related exercises instead of one
+monotonous one, which is constantly delayed by the review stages.
+
+Also, by prescheduling the review sessions, we can also reduce the time
+spent on organising the various reviews on the part of the students.
+
 
 ## Stage Submissions
 
@@ -79,6 +97,7 @@ programming activities.
        and usefulness of the process.
 6) A short essay. 
 
+
 ## Peer Review
 
 I originally planned to have live peer reviews. In general,
@@ -89,6 +108,14 @@ attention to things they missed, but others didn't. I also
 think it would be possible for the students to shortly 
 present the results of their review for the whole group.
 
+It appears to me that live peer review sessions must be scheduled as a part of
+the course events in the same way the other supervised sessions are. Otherwise
+students will have timetabling issues that prevent them from working
+efficiently. In practise, booking a single, large, classroom for the review
+sessions at the start of the course seems to be an adequate solution for this.
+All student groups can review their work at the same time and the timetabling issues
+vanish.
+
 Due to practical constraints I believe the review groups
 are limited to 3-4 students each. Otherwise we will run
 out of time.
@@ -98,10 +125,9 @@ At this point, I can't yet think of other prompts than
 
 ## Expert Review
 
-There will not be an expert review due constraints of
-time and scarcity of available experts. I intend
-to participate as much as possible in the peer review
-process, but I certainly cannot review all solutions.
+There will not be an expert review due time constraints and scarcity of
+available experts. I intend to participate as much as possible in the peer
+review process, but I certainly cannot review all solutions.
 
 As stated earlier, I'll try to have students give a short
 verbal summary of the review process. This will give me a
@@ -123,7 +149,7 @@ students can gain up to 3 points for each phase:
 * Assignment submitted, review taken, and effort
   spent (3pt).
 
-The first criteria is checked automatically and the second
+The first criterion is checked automatically and the second
 and the third are evaluated by me based on how the review
 process goes. Having students affect each others grades
 directly is a no-go: I don't have resources to ensure that
@@ -141,7 +167,51 @@ Klug, B.].)
 The process I have in mind seems somewhat fragile and
 it seems to require a full student buy-in to work at all. 
 
-On the happier side of things, the course takes place 
-between 27.5 and 12.6, which means that I can make
-surveys and short experiments before ITICSE so we can
-have some preliminary data to support our thinking there.
+(Here is a short log of how the first practical run of the exercise. Ie.
+informal notes which might be interesting, but which are not requested in the
+assignment.)
+
+A version of the assignment was presented to students at summer 2014
+and 16(will change) students attempted it. The following informal
+observations were made:
+
+* General
+     - The strict schedule caused some students to not only do the
+       programming exercise sloppily but to do the consecutive assignments 
+       in a perceived hurry. 
+     - The 3 week intensive course format is not really suitable
+       for this kind of an exercise as it allows too little time
+       to react to student answers.
+     - I had the students propose a grading based on the scale described
+       above. I was very strict on that the grading was just a suggestion
+       and would be rechecked by me. This practise did not work. Diligent
+       (female, I might add) students got poor grades from their peers for
+       almost perfect work whereas other students got perfect grades for 
+       truly poor work.
+     - The live review sessions *seem* to work well enough and majority of
+       students seem to engage in meaningful discussions. Whether these discussions
+       are purely descriptive or actually helpful remains to be seen.
+     - There is a slight difficulty with the live reviews, that is, the student
+       groups have not been very good at discussing their thoughts after the
+       review. Perhaps they have just been describing their own work and have not
+       actively engaged in the review process. This hints that leaving the review
+       assignment as implicit instead of grading it as a separate assignment might
+       not be the best practise.
+* Phase 2
+     - Due to a bug in the exercise description, almost no student returned
+       more than one attack tree. 
+     - The most apparent failure point was that students returned answers that
+       were on a very general level. That is, many of the attack trees presented
+       could have been produced by an average layman. It is clear that these students
+       did neither invest time on the exercise nor gain any benefit of it. (The
+       exercise also asked to review how useful the trees were and there seems to
+       be a correlation between negative views and superficial modelling.)
+* Phase 3
+     - The exercise returns were slightly lackluster.
+     - The students actually told me not to interrupt them when I asked
+       how the peer review was going. Atleast they show an interest to each others
+       answers. 
+     - It seems that without exact questions, the students still cannot properly
+       summarise the reviews. Instead of having the groups report their work things
+       might work better if individual students could report their experiences. This
+       is constrained by available time and teacher resources, however.
