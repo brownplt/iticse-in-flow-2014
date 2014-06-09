@@ -73,6 +73,35 @@ http://scitation.aip.org/content/aapt/journal/ajp/69/9/10.1119/1.1374249
 
 
 
+Specifically about communication and the social climate in CS:
+
+Communication in computer science classrooms: understanding defensive climates as a means of creating supportive behaviors, http://dl.acm.org/citation.cfm?id=1060073
+
+
+
+This paper explores benefits of fine-arts style classes, like talking about
+your work more, being forced to present to peers:
+
+What can computer science learn from a fine arts approach to teaching?  http://dl.acm.org/citation.cfm?id=1047482
+
+
+
+Survey/analysis of cooperative learning techniques:
+
+Cooperative Learning in Computer-based Instruction. http://link.springer.com/article/10.1007/BF02298155
+Cooperative Learning Methods: A Meta-Analysis. http://www.tablelearning.com/uploads/File/EXHIBIT-B.pdf
+
+
+
+Peer mentoring in general is brought up in socializing contexts.  It has a
+different flavor than IFPR or even PR, because often the mentor is a different
+kind of peer (senior mentors a freshman, for example):
+
+A Mentor Program in CS1.  http://dl.acm.org/citation.cfm?id=544420
+
+
+
+
 ## Program comprehension
 
 The WG on program comprehension is good to read, because it also shows what a
@@ -102,3 +131,8 @@ Peter C. Rigby and Christian Bird
 ESEC/FSE 2013
 http://dl.acm.org/citation.cfm?id=2491444
 
+## Communication and Explanation
+
+The effectiveness of explanations (with oneself, with others):
+
+http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.167.3716
