@@ -127,6 +127,16 @@ Related work discussion should address:
 @item{Guidelines for good rubrics (Klemmer?)}
 ]
 
+To read:
+
+Klemmer and others on accuracy/rubrics: @url{http://dl.acm.org/citation.cfm?id=2505057} and @url{http://hci.stanford.edu/publications/paper.php?id=209}
+
+The notion of a Pedagogic Code Review with a moderator and a detailed plan for
+what to look for in a review: @url{http://dl.acm.org/citation.cfm?id=1734324},
+@url{http://dl.acm.org/citation.cfm?id=1508972}
+
+Comparing students to experts in writing reviews: @url{https://www.sciencedirect.com/science/article/pii/S0959475209000747}
+
 @subsubsection{Learning By Example}
 
 @relworkfill{Summarize related work on learning by example}
@@ -137,6 +147,14 @@ Discussion here needs to cover things like :
 @item{How similar do the examples need to be?}
 @item{What scaffolding (i.e., review questions) foster learning from examples?}
 ]
+
+To read:
+
+Klemmer and others: @url{http://hci.stanford.edu/publications/2012/RepeatedExamplesCogSci2012/RepeatedExamplesCogSci2012.pdf}
+
+In PeerWise, students created and reviewed one anothers' multiple-choice
+questions, which has elements both of learning by example and of review:
+@url{http://dl.acm.org.revproxy.brown.edu/citation.cfm?id=1404526&CFID=472720597&CFTOKEN=32164599}
 
 @subsubsection{Meta-cognitive Reflection}
 
@@ -205,6 +223,18 @@ Related work discussion should address:
 @item{How do people uncover the structure of a program?}
 ]
 
+To read:
+
+
+The WG on program comprehension: @url{http://dl.acm.org/citation.cfm?id=1971687}
+
+Several of the program comprehension works they reviewed:
+
+@url{http://dl.acm.org/citation.cfm?id=169088},
+@url{http://dl.acm.org/citation.cfm?id=322685&CFID=472720597&CFTOKEN=32164599},
+@url{http://www.cs.kent.edu/~jmaletic/Prog-Comp/Papers/soloway84.pdf},
+@url{http://www.sciencedirect.com/science/article/pii/016412128790032X}
+
 (What implications does this have for the experience level at which
 students can meaningfully engage in ifpr?  They need certain maturity
 to chunk, but chunking isn't necessarily needed on small programs.)
@@ -260,8 +290,18 @@ See ITiCSE WG 2008
 @itemlist[
 @item{Pair Programming}
 @item{Computer-mediated communication in collaborative educational settings (see ITiCSE WG 1997)}
-@item{???}
+@item{Peer mentoring (across different class groups, but still the goal is socializing)}
 ]
+
+To read:
+
+Specifically about communication and the social climate in CS: @url{http://dl.acm.org/citation.cfm?id=1060073}
+
+By the same authors, thoughts on using collaboration/peer learning to mitigate
+defensive social climates:  @url{http://dl.acm.org/citation.cfm?id=1047482}
+
+Peer mentoring: A Mentor Program in CS1.  @url{http://dl.acm.org/citation.cfm?id=544420}
+
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
