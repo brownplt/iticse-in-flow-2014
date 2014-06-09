@@ -13,13 +13,50 @@ All of our names go in here
 
 What is in-flow peer reviewing?
 
-In-flow changes the motivation from being purely extrisnic (eg, "this
-will be graded") to intrinsic -- this does not necessarily improve the
-quality of feedback, but it should at least improve the desire to
-comprehend (and some students will realize that providing good
-feedback forces even better comprehension).
+Peer-review has been employed for various reasons in Computer Science
+courses.  This is a cite to Topping@~cite["topping-peer-review98"],
+just to test the bibtex framework.  @fill{say more}
 
-In-flow also emphasizes _comparative_ examination (of structure, tests, etc.)
+This working group explored a particular variant of peer-review called
+@italic{in-flow peer review} @~cite["politz-ct-iticse14"].  In this
+model, peer review occurs while an assignment is in progress, before
+the student submits his work for final grading by the course staff.
+Reviewing in-flow stands to benefit students in various ways: it can
+flag misunderstandings of problem specifications, help students
+confront alternative design decisions early on, and help teach
+students what ideas are worth borrowing from existing solutions.
+
+In giving students access to the work of others during an assignment
+period, in-flow reviewing changes the incentives for students to
+engage in peer review; this in turn potentially impacts their
+motivation with a review process, both as givers and receivers of
+reviews.  In-flow reviewing also emphasizes @italic{comparative}
+examination (of structure, tests, etc) against a student's own work.
+These seemingly subtle shifts could have interesting implications for
+how instructors employ peer review in courses.
+
+Several challenges arise with this model, including figuring out how
+to decompose assignments for meaningful reviews, how to prevent
+students from gaming the process to avoid doing their own work, and
+how to help students not be led astray by weak or inaccurate reviews.
+
+This report summarizes activities of a working group around the
+promises and pitfalls of in-flow peer-review in computer science
+classes.  The group members represented several countries and taught
+various courses at various levels (though the majority taught courses
+related to programming, programming languages, or various aspects of
+software development).  Prior to the group's in-person meeting, each
+group member created two assignments for in-flow peer-review.  These
+case studies, which appear in the appendix (Section
+@secref["s:case-studies"]), formed the basis of many 
+of our discussions.
+
+
+Within the various case studies from the working group, students were
+asked to produce code, produce test-suites, produce security-testing
+plans, plan large projects, @fill{}.
+
+
 
 @subsection{Assumptions}
 
@@ -58,9 +95,14 @@ Several surveys and papers provide an overview of the peer-reivew
 literature.  We provide a light overview of general trends here,
 focusing on efforts on the features that are more unique to in-flow.
 
+Can it fill a void in some curricula/assignments, causing kinds of learning
+that wouldn't happen otherwise (writing skills, critical thinking skills)?
+
 @subsection{Engaging Students in Learning}
 
 @relworkfill{Summarize work on Contributing Student Pedagogy}
+
+See ITiCSE WG 2008
 
 @subsection{Encouraging Self-Reflection}
 
@@ -103,51 +145,37 @@ Relwork discussion should address:
 
 @section{Learning Objectives}
 
-As a pedagogic device, in-flow peer-review targets particular learning
-objectives on the parts of students.  A broad pedagogic goal of
-"engaging students in learning", for example, has particular
-manifestations in the context of in-flow peer review.
-
-The primary goal of in-flow reviewing is to help students reflect on
-their work while it is in progress.  When looking at an individual
-instance of in-flow peer review, our key question is therefore 
-"what do students need to reflect on in order to improve their work?"
-Our discussions of related literature around student learning
-objectives thus focus on what students need to reflect on, and how to
-best enable students to do that reflection.
-
-Can it fill a void in some curricula/assignments, causing kinds of learning
-that wouldn't happen otherwise (writing skills, critical thinking skills)?
-
-What other techniques accomplish the same things, without being categorized as
-in-flow peer review per se.  For example, what does in-flow peer review do that
-after-the-fact review does not do: both clearly encourage critical thinking and
-writing skills?  This is a comparative question, but helps nail down the goals
-of in-flow in particular.
-
-Within the various case studies from the working group, students were
-asked to produce code, produce test-suites, produce security-testing
-plans, plan large projects, @fill{}.
-
-Potential learning goals for in-flow peer-review include:
+The process of in-flow peer review asks students (implicitly or
+explicitly) to perform several tasks, including:
 
 @itemlist[
-@item{Learning how to read and comprehend submissions by others}
-@item{Learning how to compare the behavior of different programs}
-@item{Learning how to evaluate submissions by others}
-@item{Improve students' appreciation of the benefits of
-structure/documentation of code
-  -- both by getting poor reviews, and by seeing the mess of others}
-@item{Improve students' ability to test code}
-@item{Forcing students to reflect on (their own) design choices}
-@item{Learning new programming techniques by example}
-@item{Improvement in confidence and self-efficacy in your work}
-@item{Learning how to provide feedback to others}
-@item{Learning how to evaluate feedback
-  -- this is a difference between in-flow and typical homework grading}
-@item{Learning to use what one has learned from reading others' work to
-improve one's own}
+@item{Assess whether another's work satisfies problem requirements}
+@item{Extract high-level design choices from anothers' work}
+@item{Compare others' high-level design choices to their own}
+@item{Decide whether to adopt or ignore particular feedback}
+@item{Provide actionable feedback to others}
 ]
+
+The first and last of these tasks arise in all forms of peer-review;
+the rest are more specific to in-flow review (or other models in which
+students get to revise their work based on feedback).
+
+The specific nature of these tasks changes depending on the artifact
+under evaluation.  For example, evaluating a program that implements a
+particular algorithm requires different techniques than evaluating a
+plan for executing a large software project.
+
+The reviewing rubrics needed for these tasks can differ widely.
+Rubrics for assessing whether work satisfies requirements, for
+example, might give students a list of requirements to examine.
+Rubrics for contrasting with another student's design choices need to
+ask more abstract questions about the structure of a problem
+solution. 
+
+Some of the related work around student learning through peer-review
+is independent of the artifact under evaluation, while others arise
+only with particular artifacts.  The rest of this section explore
+related work that arises in both situations.
 
 @subsection{Learning By Example}
 
@@ -159,6 +187,13 @@ Discussion here needs to cover things like :
 @item{How similar do the examples need to be?}
 @item{What scaffolding (i.e., review questions) foster learning from examples?}
 ]
+
+@subsection{Meta-cognitive Reflection}
+
+@subsection{Intrinsic Motivation}
+
+By enabling reviews to impact grades, in-flow peer review shifts
+students' motivation for engaging in the process.  
 
 @subsection{Comprehending Program Structure}
 
@@ -184,6 +219,30 @@ Related work discussion should address:
 students can meaningfully engage in ifpr?  They need certain maturity
 to chunk, but chunking isn't necessarily needed on small programs.)
 
+@subsection{Misc older material to work in}
+
+In-flow changes the motivation from being purely extrisnic (eg, "this
+will be graded") to intrinsic -- this does not necessarily improve the
+quality of feedback, but it should at least improve the desire to
+comprehend (and some students will realize that providing good
+feedback forces even better comprehension).
+
+Potential learning goals for in-flow peer-review include:
+
+@itemlist[
+@item{Learning how to read and comprehend submissions by others}
+@item{Learning how to compare the behavior of different programs}
+@item{Improve students' appreciation of the benefits of
+structure/documentation of code
+  -- both by getting poor reviews, and by seeing the mess of others}
+@item{Improve students' ability to test code}
+@item{Forcing students to reflect on (their own) design choices}
+@item{Learning new programming techniques by example}
+@item{Improvement in confidence and self-efficacy in your work}
+@item{Learning how to evaluate feedback
+  -- this is a difference between in-flow and typical homework grading}
+]
+
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 @section{Challenges and Issues}
@@ -203,8 +262,6 @@ I just started reading "Punished by Rewards" by Alfie Kohn. Really interesting d
 @subsection{Finding the Sweet Spot in how much to structure assignments}
 
 @subsection{Providing Students Feedback on Reviewing}
-
-]
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -271,12 +328,6 @@ that of the person you review
 
 @section{Related Work}
 
-There is significant literature on peer review, both within and beyond
-Computer Science.  As this working group is focused on
-@italic{in-flow} peer review, we provide only a brief overview of
-general peer-review literature.  We then focus on papers and ideas
-that pertain particularly to the in-flow aspects.
-
 Where do we need people doing reading for the WG?
 
 - Program comprehension from the perspective of comparative evaluation
@@ -287,18 +338,12 @@ understanding of the problem specification
 - Learning by example
 - Industrial peer-review practices and their relationship
 
-@subsection{General Peer Review}
-
-This is a cite to Topping@~cite["topping-peer-review98"], just to test the bibtex framework.
-
 @subsection{STUFF TO WORK IN}
 
 Many of these may end up covered in other sections.  For now, this is
 a dumping ground for work we want to cover somewhere.
 
 @itemlist[
-
-@item{Contributing Student Pedagogy (see ITiCSE WG 2008)}
 
 @item{Computer-mediated communication in collaborative educational settings (see ITiCSE WG 1997)}
 
@@ -310,6 +355,6 @@ a dumping ground for work we want to cover somewhere.
 
 @(generate-bib)
 
-@section{Appendix --- Case Studies}
+@section{Appendix --- Case Studies}[#:tag "s:case-studies"]
 
 
