@@ -57,7 +57,7 @@ The number of steps for one exercise might lead to fatigue on part of the
 students. For example, it is conceivable that such a large number of reviews is
 perceived to unbeareably delay and interrupt the students work. 
 
-We included a few practical factors migitate getting tired of the exercise.
+We included a few practical factors mitigate getting tired of the exercise.
 First, each of the stages is presented to the student as a new exercise and
 second, the exercise is spread out throughout the course so that the first step
 is taken on the first week, while the last one is returned at the end of the
@@ -65,9 +65,8 @@ course. This division into smaller and more concrete parts might help students
 to perceive the exercise as a string of related exercises instead of one
 monotonous one, which is constantly delayed by the review stages.
 
-Also, by prescheduling the review sessions, we can also reduce the time
-spent on organising the various reviews on the part of the students.
-
+Also, by scheduling the review sessions at the start of the course can reduce
+the time spent on organising the various reviews on the part of the students.
 
 ## Stage Submissions
 
