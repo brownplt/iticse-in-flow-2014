@@ -56,62 +56,100 @@ Within the various case studies from the working group, students were
 asked to produce code, produce test-suites, produce security-testing
 plans, plan large projects, @fill{}.
 
-
-
-@subsection{Assumptions}
-
-Our discussion is framed by an assumption that students want to get as
-many points as possible for their work, within reasonable bounds on
-time and effort.  While some students are motivated simply by learning
-more and improving their skills, we assume that the potential to
-impact grades incentivizes students to engage more with in-flow
-feedback than with post-submission feedback.  Whether reviews
-themselves need to be graded is a separate question, which we discuss
-in this report.
-
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-@section{Pedagogic Rationale}
+@section{Background and Context}
 
-Peer review in general (not just in-flow review) has several pedagogic
-motivations:
+In-flow peer review targets various student-oriented learning
+objectives and instructor-facing pedagogic goals.  It is framed by
+extensive industrial practice, as well as a significant body of prior
+work on student learning in computing.  This section identifies
+various contextual factors and summarizes prior work around each one.
+These will set the stage for later discussion of the case studies
+developed by working group members and the issues that arise around
+in-flow peer review.
+
+@subsection{Learning Objectives}
+
+In-flow peer review arises from a desire to help students learn review
+skills common to software-development practice, while simultaneously
+drawing on reviews to improve their understanding and performance on
+ongoing assignments.  The process of in-flow peer review asks students
+(implicitly or explicitly) to perform several tasks, including:
 
 @itemlist[
-@item{Engage students more in learning}
-@item{Improve students' communication skills}
-@item{Increasing social interaction, thus making programming a more
-social activity}
-@item{Provide human feedback more scalably than expert assessment}
+@item{Assess whether another's work satisfies problem requirements}
+@item{Provide actionable feedback to others}
+@item{Extract high-level design choices from anothers' work}
+@item{Compare others' high-level design choices and practices to their own}
+@item{Decide whether to adopt or ignore particular feedback}
 ]
 
-The in-flow context has additional pedagogic motivations:
+In the context of working on these tasks, peer-review has other
+potential benefits, including
 
 @itemlist[
-@item{Helping students improve their performance on an open assignment}
-@item{Re-examining plagiarism issues by moving the problem}
+@item{Helping students gain confidence and self-efficacy in their
+work}
 ]
 
-Several surveys and papers provide an overview of the peer-reivew
-literature.  We provide a light overview of general trends here,
-focusing on efforts on the features that are more unique to in-flow.
+The first two tasks arise in all forms of peer-review; the rest are
+more specific to in-flow review (or other models in which students get
+to revise their work based on feedback).  The first two tasks affect
+students' roles as reviewers, while the rest affect their roles as
+reviewees.
 
-Can it fill a void in some curricula/assignments, causing kinds of learning
-that wouldn't happen otherwise (writing skills, critical thinking skills)?
+The reviewing rubrics needed for these tasks can differ widely.
+Rubrics for assessing whether work satisfies requirements, for
+example, might give students a list of requirements to examine.
+Rubrics for contrasting with another student's design choices need to
+ask more abstract questions about the structure of a problem
+solution. 
 
-@subsection{Engaging Students in Learning}
+The specific nature of these tasks changes depending on the artifact
+under evaluation.  For example, evaluating a program that implements a
+particular algorithm requires different techniques than evaluating a
+plan for executing a large software project. 
 
-@relworkfill{Summarize work on Contributing Student Pedagogy}
+The rest of this section presents background and related work
+pertinent to these tasks, with an emphasis on the in-flow context when
+appropriate.  Some related work is specific to particular kinds of
+artifacts, while other work would apply to any reviewed artifact.
 
-See ITiCSE WG 2008
+@subsubsection{Helping Students Be Successful Reviewers}
 
-@subsection{Encouraging Self-Reflection}
+@relworkfill{Related work on what makes students successful at
+reviewing}
 
-@relworkfill{Summarize work on getting students to reflect on their work}
+Related work discussion should address:
+@itemlist[
+@item{Arguments for providing structured rubrics}
+@item{Guidelines for good rubrics (Klemmer?)}
+]
 
-Naturally, the object of the reflection influences techniques for
-effective reflection.  We will come back to that elsewhere in the report.
+@subsubsection{Learning By Example}
 
-@subsection{Shifting from Extrinsic to Intrinsic Motivation}
+@relworkfill{Summarize related work on learning by example}
+
+Discussion here needs to cover things like :
+@itemlist[
+@item{How many examples does one need to see before learning occurs?}
+@item{How similar do the examples need to be?}
+@item{What scaffolding (i.e., review questions) foster learning from examples?}
+]
+
+@subsubsection{Meta-cognitive Reflection}
+
+@relworkfill{Summarize related work on meta-cognitive reflection}
+
+Discussion here needs to cover things like :
+@itemlist[
+@item{What kinds of questions encourage reflection?}
+]
+
+@subsubsection{Shifting from Extrinsic to Intrinsic Motivation}
+
+@fill{This section still being fleshed out structurally}
 
 In-flow peer review assumes that giving students feedback on their
 work while it is in progress (i.e., while they can still impact
@@ -123,79 +161,31 @@ gets better" (though note that the extrinsic/intrinsic shift here is
 happening in two different roles -- review author and review recipient
 -- have to sort that out).
 
-@subsection{Industrial Peer-Review Practice}
+In-flow changes the motivation from being purely extrisnic (eg, "this
+will be graded") to intrinsic -- this does not necessarily improve the
+quality of feedback, but it should at least improve the desire to
+comprehend (and some students will realize that providing good
+feedback forces even better comprehension).
 
-Code review is an essential component of industrial
-software-development practice.  Industrial peer review is inherently
-in-flow, as reviews are conducted on a regular basis during product
-development.  The industrial product-development lifecycle is longer
-than that in many courses, but best practices in industrial peer
-review are still useful context for this report.
+Our discussion is framed by an assumption that students want to get as
+many points as possible for their work, within reasonable bounds on
+time and effort.  While some students are motivated simply by learning
+more and improving their skills, we assume that the potential to
+impact grades incentivizes students to engage more with in-flow
+feedback than with post-submission feedback.  Whether reviews
+themselves need to be graded is a separate question, which we discuss
+in this report.
 
-@relworkfill{Summarize related work on industrial code review}
+Matthias Hauswirth notes:
 
-Relwork discussion should address:
-@itemlist[
-@item{Best practices around live versus online}
-@item{Best practices on point at which to do review}
-@item{Any particulars on the issues that review focuses on?}
-]
+I just started reading "Punished by Rewards" by Alfie Kohn. Really
+interesting deconstruction of "pop behaviorism", targeting three
+contexts: workplace, parenting, and education. [...] peer reviews can
+either serve as "rewards" (summative assessment in the form of
+scores/grades) or as constructive feedback (formative assessment). It
+might make sense to discuss the latter at the workshop. 
 
-@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-@section{Learning Objectives}
-
-The process of in-flow peer review asks students (implicitly or
-explicitly) to perform several tasks, including:
-
-@itemlist[
-@item{Assess whether another's work satisfies problem requirements}
-@item{Extract high-level design choices from anothers' work}
-@item{Compare others' high-level design choices to their own}
-@item{Decide whether to adopt or ignore particular feedback}
-@item{Provide actionable feedback to others}
-]
-
-The first and last of these tasks arise in all forms of peer-review;
-the rest are more specific to in-flow review (or other models in which
-students get to revise their work based on feedback).
-
-The specific nature of these tasks changes depending on the artifact
-under evaluation.  For example, evaluating a program that implements a
-particular algorithm requires different techniques than evaluating a
-plan for executing a large software project.
-
-The reviewing rubrics needed for these tasks can differ widely.
-Rubrics for assessing whether work satisfies requirements, for
-example, might give students a list of requirements to examine.
-Rubrics for contrasting with another student's design choices need to
-ask more abstract questions about the structure of a problem
-solution. 
-
-Some of the related work around student learning through peer-review
-is independent of the artifact under evaluation, while others arise
-only with particular artifacts.  The rest of this section explore
-related work that arises in both situations.
-
-@subsection{Learning By Example}
-
-@relworkfill{Summarize related work on learning by example}
-
-Discussion here needs to cover things like :
-@itemlist[
-@item{How many examples does one need to see before learning occurs?}
-@item{How similar do the examples need to be?}
-@item{What scaffolding (i.e., review questions) foster learning from examples?}
-]
-
-@subsection{Meta-cognitive Reflection}
-
-@subsection{Intrinsic Motivation}
-
-By enabling reviews to impact grades, in-flow peer review shifts
-students' motivation for engaging in the process.  
-
-@subsection{Comprehending Program Structure}
+@subsubsection{Comprehending Program Structure}
 
 For in-flow assignments centered around programming, one goal of
 peer-review is to help students reflect on their code structure.
@@ -219,29 +209,90 @@ Related work discussion should address:
 students can meaningfully engage in ifpr?  They need certain maturity
 to chunk, but chunking isn't necessarily needed on small programs.)
 
-@subsection{Misc older material to work in}
+@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-In-flow changes the motivation from being purely extrisnic (eg, "this
-will be graded") to intrinsic -- this does not necessarily improve the
-quality of feedback, but it should at least improve the desire to
-comprehend (and some students will realize that providing good
-feedback forces even better comprehension).
+@subsection{Additional Pedagogic Rationale}
 
-Potential learning goals for in-flow peer-review include:
+Peer review in general has several pedagogic motivations beyond the
+student-oriented learning objectives of the previous section.  These
+include: 
 
 @itemlist[
-@item{Learning how to read and comprehend submissions by others}
-@item{Learning how to compare the behavior of different programs}
-@item{Improve students' appreciation of the benefits of
-structure/documentation of code
-  -- both by getting poor reviews, and by seeing the mess of others}
-@item{Improve students' ability to test code}
-@item{Forcing students to reflect on (their own) design choices}
-@item{Learning new programming techniques by example}
-@item{Improvement in confidence and self-efficacy in your work}
-@item{Learning how to evaluate feedback
-  -- this is a difference between in-flow and typical homework grading}
+@item{Engaging students more in their own learning}
+@item{Improving students' communication skills}
+@item{Increasing social interaction, thus making programming a more
+social activity}
+@item{Providing human feedback more scalably than with only expert
+assessment}
 ]
+
+The in-flow context has additional pedagogic motivations:
+
+@itemlist[
+@item{Helping students improve their performance on an open assignment}
+@item{Re-examining plagiarism issues by moving the problem}
+]
+
+The rest of this section describes frameworks and ideas around these
+pedagogic goals.  Some of these issues leave significant open
+questions in the design of in-flow peer review experiences; we discuss
+those issues more extensively later in the report.
+
+@subsubsection{Engaging Students in Learning}
+
+@relworkfill{Summarize work on Contributing Student Pedagogy}
+
+See ITiCSE WG 2008
+
+@subsubsection{Providing Feedback on Reviews}
+
+@relworkfill{Summarize work on review feedback}
+
+@itemlist[
+@item{What kind of feedback is useful?}
+@item{Do experts need to provide the feedback?}
+]
+
+@subsubsection{Increasing Socialization in Programming-Oriented Courses}
+
+@relworkfill{Work on creating socialization}
+
+@itemlist[
+@item{Pair Programming}
+@item{Computer-mediated communication in collaborative educational settings (see ITiCSE WG 1997)}
+@item{???}
+]
+
+@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+@subsection{Industrial Peer-Review Practice}
+
+Code review is an essential component of industrial
+software-development practice.  Industrial peer review is inherently
+in-flow, as reviews are conducted on a regular basis during product
+development.  The industrial product-development lifecycle is longer
+than that in many courses, but best practices in industrial peer
+review are still useful context for this report.
+
+@relworkfill{Summarize related work on industrial code review}
+
+Relwork discussion should address:
+@itemlist[
+@item{Best practices around live versus online}
+@item{Best practices on point at which to do review}
+@item{Any particulars on the issues that review focuses on?}
+]
+
+@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+@section{Case Studies in In-Flow Peer Review}
+
+In here, summarize the task we gave everyone prior to the meeting.
+Refer to appendix for the details.  
+
+Produce a table summarizing the key factors/features of the various
+studies: nature of artifact, grade level, decomposition, interesting
+ideas, etc. @fill{Create table}
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -254,10 +305,6 @@ What are the logistics challenges identified by the WG?
 @subsection{Avoiding Gaming the Assignment}
 
 @subsection{Motivating Students}
-
-Matthias Hauswirth notes:
-
-I just started reading "Punished by Rewards" by Alfie Kohn. Really interesting deconstruction of "pop behaviorism", targeting three contexts: workplace, parenting, and education. [...] peer reviews can either serve as "rewards" (summative assessment in the form of scores/grades) or as constructive feedback (formative assessment). It might make sense to discuss the latter at the workshop.
 
 @subsection{Finding the Sweet Spot in how much to structure assignments}
 
@@ -326,35 +373,10 @@ that of the person you review
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-@section{Related Work}
-
-Where do we need people doing reading for the WG?
-
-- Program comprehension from the perspective of comparative evaluation
-- Test comprehension from the perspective of enhancing your
-understanding of the problem specification
-- How do you motivate reflection?
-- How do you shift motivation from extrinsic to intrinsic factors?
-- Learning by example
-- Industrial peer-review practices and their relationship
-
-@subsection{STUFF TO WORK IN}
-
-Many of these may end up covered in other sections.  For now, this is
-a dumping ground for work we want to cover somewhere.
-
-@itemlist[
-
-@item{Computer-mediated communication in collaborative educational settings (see ITiCSE WG 1997)}
-
-]
-
-@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 @section{Conclusion}
 
 @(generate-bib)
 
-@section{Appendix --- Case Studies}[#:tag "s:case-studies"]
+@section[#:tag "s:case-studies"]{Appendix --- Case Studies}
 
 
