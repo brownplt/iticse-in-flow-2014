@@ -333,6 +333,13 @@ Relwork discussion should address:
 @item{Any particulars on the issues that review focuses on?}
 ]
 
+On OSS (Apache), all remote and distributed, good RQs about finding defects,
+size of review code unit, size of review team etc:
+@url{dl.acm.org/citation.cfm?id=1368162}
+
+A recent update on professional code review (ICSE 2013):
+@url{http://dl.acm.org/citation.cfm?id=2486882}
+
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 @section{Case Studies in In-Flow Peer Review}
