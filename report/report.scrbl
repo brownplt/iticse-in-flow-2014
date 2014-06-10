@@ -283,6 +283,16 @@ See ITiCSE WG 2008
 @item{Do experts need to provide the feedback?}
 ]
 
+Metareviewing to determine quality of reviews by Gehringer/Expertiza:
+@url{http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.416.228},
+@url{http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=5992285&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D5992285},
+@url{https://6c27b932-a-4ecc3149-s-sites.googlegroups.com/a/cspred.org/2010/proceedings/11-cspred2010_submission_3.pdf}
+
+Expertiza also mentions an explicit review of review phase in
+@url{http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.161.8397}, and
+@url{http://www.igi-global.com/chapter/monitoring-assessment-online-collaborative-environments/36844}
+might have even more on that.
+
 @subsubsection{Increasing Socialization in Programming-Oriented Courses}
 
 @relworkfill{Work on creating socialization}
@@ -382,6 +392,10 @@ something important).
 @section{Options for Decomposing Problems for In-Flow Peer Review}
 
 Much of this will be collated from the initial assignments we proposed.
+
+How to assign reviewers: random, let students pick, same reviewer for whole
+assignment, assigned by instructor, etc.  Related work:
+@url{dl.acm.org/citation.cfm?id=2215100&CFID=353776286&CFTOKEN=25368603}
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 

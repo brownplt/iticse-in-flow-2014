@@ -85,6 +85,10 @@ your work more, being forced to present to peers:
 What can computer science learn from a fine arts approach to teaching?  http://dl.acm.org/citation.cfm?id=1047482
 
 
+Motivating collaborative learning:
+
+Collaborative learning: towards a solution for novice programmers. http://dl.acm.org/citation.cfm?id=1379264
+
 
 Survey/analysis of cooperative learning techniques:
 
