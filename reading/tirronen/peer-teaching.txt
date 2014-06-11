@@ -1,0 +1,10 @@
+Assignment: Provide a summary of peer teaching based on the work of Eric Mazur
+(e.g.
+http://scitation.aip.org/content/aapt/journal/ajp/69/9/10.1119/1.1374249) and
+its application in CS (http://www.peerinstruction4cs.org/latest-research/).
+Pick one or two papers that are representative and sumarrize
+
+
+Fill in a summary for a related work section, and for your fellow WG members:
+
+<fill in here>

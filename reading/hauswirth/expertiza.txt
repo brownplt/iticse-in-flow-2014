@@ -1,0 +1,14 @@
+Assignment: Search about Expertiza, and find out what they do for
+review-of-review, and how they to automatic evaluation of reviews.  Some links
+to get started are below, but you don't have to read them all, we're
+specifically looking for how this project handles feedback on reviews and
+evaluation of reviews
+
+http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.161.8397
+http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.416.228
+http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=5992285&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D5992285
+
+
+Fill in a summary for a related work section, and for your fellow WG members:
+
+<fill in here>
