@@ -59,7 +59,7 @@ plans, plan large projects, @fill{}.
 
 The College Board 
 
-AP® Computer Science Principles 
+AP Computer Science Principles 
 
 Draft Curriculum Framework 
 
@@ -82,13 +82,13 @@ work that others have produced.
 
 Students are expected to:
 
- Evaluate a proposed solution to a problem;
+Evaluate a proposed solution to a problem;
 
- Locate and correct errors;
+Locate and correct errors;
 
- Explain how an artifact functions; and
+Explain how an artifact functions; and
 
- Justify appropriateness and correctness.
+Justify appropriateness and correctness.
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
