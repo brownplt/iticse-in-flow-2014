@@ -141,16 +141,26 @@ Comparing students to experts in writing reviews: @url{https://www.sciencedirect
 
 @relworkfill{Summarize related work on learning by example}
 
+In in-flow peer review, students have the opportunity to take what they learn
+from examples of others' work and apply it to their own.
+
+Kulkarni et al @~cite["klemmer-examples"] discuss changes in creative output
+between subjects who varying amounts of examples, and diversity in examples,
+prior to creating their own artwork.  Subjects seeing more diverse examples
+created artwork with more unique features than subjects seeing a less diverse
+set or fewer examples.  Students who see more examples from others, especially
+when already primed to think about the same problem, may similarly have more
+options to draw on in their solution, rather than only using whatever
+techniques they would have tried in their initial submission.
+
+The PeerWise
+
 Discussion here needs to cover things like :
 @itemlist[
 @item{How many examples does one need to see before learning occurs?}
 @item{How similar do the examples need to be?}
 @item{What scaffolding (i.e., review questions) foster learning from examples?}
 ]
-
-To read:
-
-Klemmer and others: @url{http://hci.stanford.edu/publications/2012/RepeatedExamplesCogSci2012/RepeatedExamplesCogSci2012.pdf}
 
 In PeerWise, students created and reviewed one anothers' multiple-choice
 questions, which has elements both of learning by example and of review:
@@ -164,6 +174,29 @@ Discussion here needs to cover things like :
 @itemlist[
 @item{What kinds of questions encourage reflection?}
 ]
+
+One goal of in-flow review is to encourage reflection @emph{while in the
+middle of an assignment}.  Meta-cognitive reflection of techniques and
+approaches has been studied as an important part of the learning process, and
+others have found effective reviewing and prompting strategies for encouraging
+reflection that IFPR can learn from.
+
+Davis and Linn @~cite["davis-reflection-prompts"] use explicit self-review
+prompts at different stages of assignments given to eighth graders.  For
+example, in one assignment, students had to perform a repeated task (designing
+clothing and environments to help cold-blooded aliens survive).  They compared
+responses to direct prompts submitted along with a design, like “Our design
+will work well because...”, to prompts designed to encourage reflection after
+the fact---“Our design could be better if we...”--- and plan-ahead prompts
+designed to cause reflection during the assignment---“In thinking about doing
+our design, we need to think about...”  Their sample size was small, and they
+did not find a significant difference in design quality between the direct and
+reflective prompts.  They did find that students gave better explanations when
+given the reflective prompts, but the difference could easily be attributed to
+the small sample size.
+
+
+
 
 @subsubsection{Shifting from Extrinsic to Intrinsic Motivation}
 
@@ -339,6 +372,28 @@ size of review code unit, size of review team etc:
 
 A recent update on professional code review (ICSE 2013):
 @url{http://dl.acm.org/citation.cfm?id=2486882}
+
+@subsection{Existing Uses of In-flow Peer Review}
+
+Others have used strategies for peer review that fall under the umbrella of
+in-flow peer review, even though they did not go by that name.
+
+For example, in the implementation of a multi-stage compiler, students in
+Søndergaard's course review one another's work between stages
+@~cite{sondergaard-peer-review-compilers09}.  The evaluation in that work was
+only in the form of surveys after the assignment, but shows generally positive
+attitudes from students indicating that they felt the review had helped.
+
+Expertiza @~cite{gehringer-expertiza-approach} is discussed in @ref{relwork
+for review-of-review}, and is used for large, multi-stage collaborative
+projects in which students build and review smaller components that build up
+the whole.  This includes assessment and review of the reviews themselves as
+an explicit motivator for performing the review.  It is notable that in
+Expertiza, students often review other students' components of a larger whole,
+which can be a task that the reviewer didn't complete him or herself.  In many
+of our case studies of in-flow review, students review an instance of the
+@emph{same} work that they just did themselves @fill{check that this is
+accurate after going through the case studies}.
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
