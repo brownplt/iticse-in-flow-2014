@@ -56,6 +56,40 @@ Within the various case studies from the working group, students were
 asked to produce code, produce test-suites, produce security-testing
 plans, plan large projects, @fill{}.
 
+
+The College Board 
+
+AP® Computer Science Principles 
+
+Draft Curriculum Framework 
+
+February 2014
+
+https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxjc3ByaW5jaXBsZXNwaWxvdGlpfGd4OjJkYjcyODI3ZDQ1ZGVlMGE
+
+Six major computational thinking skills. Number 4 (on pg 5):
+
+P4: Analyzing problems and artifacts
+
+The results and artifacts of computation and the computational
+techniques and strategies that generate them can be understood both
+intrinsically for what they are as well as for what they produce. They
+can also be analyzed and evaluated by applying aesthetic,
+mathematical, pragmatic, and other criteria. Students in this course
+design and produce solutions, models, and artifacts, and they evaluate
+and analyze their own computational work as well as the computational
+work that others have produced.
+
+Students are expected to:
+
+ Evaluate a proposed solution to a problem;
+
+ Locate and correct errors;
+
+ Explain how an artifact functions; and
+
+ Justify appropriateness and correctness.
+
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 @section{Background and Context}
