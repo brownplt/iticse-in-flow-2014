@@ -229,6 +229,19 @@ reflective prompts.  They did find that students gave better explanations when
 given the reflective prompts, but the difference could easily be attributed to
 the small sample size.
 
+Frederiksen and White have done a series of studies on @emph{reflective
+assessment} and @emph{reflective collaboration} in middle school science
+classes @~cite["white-reflective-affordances"
+"frederiksen-reflective-collaboration"].  In an online environment, students
+work on mock experiments using a scientific-method like flow for a project:
+they start with an initial inquiry, form hypotheses, analyze mock data, and
+draw conclusions.  In between steps, they are asked questions that urge them
+to reflect on their work: why they think a hypothesis is true, if they are
+being meticulous in analyzing their results, and more.  They are also given
+the opportunity to assess the work of other students in the form of ratings.
+@fill{Any studies where they ask the reflective questions about the other
+students?}
+
 
 
 
