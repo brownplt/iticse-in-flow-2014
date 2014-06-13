@@ -9,36 +9,94 @@
 
 All of our names go in here
 
-@section{Introduction}
-
-What is in-flow peer reviewing?
+@section{In-Flow Peer-Reviewing}
 
 Peer-review has been employed for various reasons in Computer Science
-courses.  This is a cite to Topping@~cite["topping-peer-review98"],
-just to test the bibtex framework.  @fill{say more}
+courses@~cite["topping-peer-review98"]. It is a mechanism for having
+students read each others' work, learn how to give feedback, and even
+to help with assessment. Indeed, of the six major computational
+thinking skills listed in the current draft of the AP Computer
+Science Principles curriculum [CITE], the fourth is:
+@;https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxjc3ByaW5jaXBsZXNwaWxvdGlpfGd4OjJkYjcyODI3ZDQ1ZGVlMGE
+@nested[#:style 'inset]{
+P4: Analyzing problems and artifacts
+
+The results and artifacts of computation and the computational
+techniques and strategies that generate them can be understood both
+intrinsically for what they are as well as for what they produce. They
+can also be analyzed and evaluated by applying aesthetic,
+mathematical, pragmatic, and other criteria. Students in this course
+design and produce solutions, models, and artifacts, and they evaluate
+and analyze their own computational work as well as the computational
+work that others have produced.
+
+Students are expected to:
+@itemize[
+
+@item{Evaluate a proposed solution to a problem;}
+
+@item{Locate and correct errors;}
+
+@item{Explain how an artifact functions; and}
+
+@item{Justify appropriateness and correctness.}
+
+]
+}
+Peer review clearly has a role to play in developing each of these
+skills. Students are forced to read and evaluate proposed (partial)
+solutions, try to at least locate (if not offer corrections to)
+errors, offer their explanations for what an artifact is doing
+(especially if it does not match the expectations set by the problem),
+and justify their views on the appropriateness and correctness of
+presented solutions
 
 This working group explored a particular variant of peer-review called
 @italic{in-flow peer review} @~cite["politz-ct-iticse14"].  In this
 model, peer review occurs while an assignment is in progress, before
-the student submits his work for final grading by the course staff.
-Reviewing in-flow stands to benefit students in various ways: it can
-flag misunderstandings of problem specifications, help students
-confront alternative design decisions early on, and help teach
-students what ideas are worth borrowing from existing solutions.
+students submit their work for final grading. Performing peer-review
+in-flow has several potential benefits:
+@itemize[
 
-In giving students access to the work of others during an assignment
-period, in-flow reviewing changes the incentives for students to
-engage in peer review; this in turn potentially impacts their
-motivation with a review process, both as givers and receivers of
-reviews.  In-flow reviewing also emphasizes @italic{comparative}
-examination (of structure, tests, etc) against a student's own work.
-These seemingly subtle shifts could have interesting implications for
-how instructors employ peer review in courses.
+@item{It helps students better understand the problem
+specification. If the work they see others doing is inconsistent with
+their understanding, one or the other (or both!) might be confused. It
+is better to discover this while the assignment is in progress than
+after it's over.}
+
+@item{Students are motivated to read feedback they get since it can
+affect the performance of their current assignment. In contrast,
+feedback given when the assignment is over may get less attention if
+students have moved on to other assignments.}
+
+@item{Students might find ideas that help them improve their own
+solutions.}
+
+@item{The process can also help identify mistakes or ambiguities in
+problem statements while it is still meaningful to address them for
+the current group of students.}
+
+@item{Letting students see the work others are doing seems to enable
+plagiarism. In fact, we view this as a feature. When a student sees
+another's work, they do not know the quality of the work they see: it
+could be better than their own work, but it could also be
+worse. Therefore, what it forces on students is the need to exercise
+@emph{judgment}.}
+
+@item{It further emphasizes the @emph{comparative} examination of work
+against a student's own.}
+
+]
+Giving authors the ability to respond to reviews further reinforces
+the AP CS Principles quoted above.
 
 Several challenges arise with this model, including figuring out how
 to decompose assignments for meaningful reviews, how to prevent
-students from gaming the process to avoid doing their own work, and
-how to help students not be led astray by weak or inaccurate reviews.
+students from gaming the process to avoid doing their own work, how to
+minimize the extra time this takes to complete homeworks, and how to
+help students not be led astray by weak or inaccurate reviews.  As a
+result, these seemingly subtle shifts could have interesting
+implications for how instructors employ peer review in courses.
 
 This report summarizes activities of a working group around the
 promises and pitfalls of in-flow peer-review in computer science
@@ -65,30 +123,6 @@ Draft Curriculum Framework
 
 February 2014
 
-https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxjc3ByaW5jaXBsZXNwaWxvdGlpfGd4OjJkYjcyODI3ZDQ1ZGVlMGE
-
-Six major computational thinking skills. Number 4 (on pg 5):
-
-P4: Analyzing problems and artifacts
-
-The results and artifacts of computation and the computational
-techniques and strategies that generate them can be understood both
-intrinsically for what they are as well as for what they produce. They
-can also be analyzed and evaluated by applying aesthetic,
-mathematical, pragmatic, and other criteria. Students in this course
-design and produce solutions, models, and artifacts, and they evaluate
-and analyze their own computational work as well as the computational
-work that others have produced.
-
-Students are expected to:
-
-Evaluate a proposed solution to a problem;
-
-Locate and correct errors;
-
-Explain how an artifact functions; and
-
-Justify appropriateness and correctness.
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
