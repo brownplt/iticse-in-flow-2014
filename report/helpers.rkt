@@ -4,7 +4,7 @@
 
 (provide relworkfill
 	 fill
-   ref)
+   ref itemize enumerate)
 
 (define (relworkfill . contents)
   (bold (cons "RELWORK-TODO: " contents)))
@@ -14,3 +14,7 @@
 
 (define (ref . contents)
   (bold (cons "REF:" contents)))
+
+(define (enumerate . t)
+  (apply itemlist #:style 'ordered t))
+
