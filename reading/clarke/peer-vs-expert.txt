@@ -1,3 +1,18 @@
 Reference: http://www.sciencedirect.com/science/article/pii/S0959475209000747
 
 Fill in a summary for a related work section, and for your fellow WG members:
+
+(Note: I made quite extensive notes on the paper but lost it somewhere but
+lost it somewhere between Sweden and Italy, possibly Copenhagen. Here
+is a first approximation of the paper. I'll try to do better when I return
+home.)
+
+The paper compares three approaches to giving feedback on written assignments
+in a psychology course: feedback from a single peer, feedback from a single
+topic expert, and feedback from multiple peers. The results indicate that
+feedback from multiple peers results in better quality revisions than
+feedback from an expert, with feedback from a single peer being the worse.
+The hypothesised reason for this was that peers gave feedback that was 
+phrased in terms that students could more easily comprehend.  
+It certainly would be interesting to see whether the same results applied
+to programming assignments.
