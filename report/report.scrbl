@@ -1,4 +1,4 @@
-#lang scribble/base
+#lang scribble/sigplan @noqcourier
 
 @(require "bib.rkt"
           "helpers.rkt")
