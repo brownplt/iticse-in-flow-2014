@@ -476,6 +476,24 @@ of our case studies of in-flow review, students review an instance of the
 @emph{same} work that they just did themselves @fill{check that this is
 accurate after going through the case studies}.
 
+@subsection{Actionable Peer Review}
+
+Some other uses of peer review on large projects are related to in-flow peer
+review because they allow students to improve their work in response to
+review.  These uses don't necessarily stage assignments into reviewable
+pieces, instead performing review on entire intermediate artifacts.  For
+example, Clark has students exercise the functionality of one anothers'
+projects, and lets groups improve their work based on the feedback their
+classmates give them @~cite["clark-peer-testing-se-04"].  Similarly, Wang, et
+al., Zeller, and the Aropä system study assignment structures that allow
+students to update revisions of entire submissions that were reviewed by peers
+@~cite["wang-pcr" "zeller-read-review-00" "hamer-aropa"].  Other studies have
+students write test cases (or manually test) one another's work as part of a
+review @~cite["reily-aggregate-reviews09" "smith-peer-testing-icer12"].  These
+tests are most often on entire systems, rather than on pieces of a project
+that build up along with reviews.  Students do, however, have the chance to
+improve their projects in response to their peers' feedback.
+
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 @section{Case Studies in In-Flow Peer Review}
