@@ -279,7 +279,18 @@ students?}
 
 
 
-@subsubsection{Shifting from Extrinsic to Intrinsic Motivation}
+@subsubsection{Motivating Participation in Peer Review}
+
+Student motivation affects what they will gain from participating in
+peer review.  Peer review requires participation from students in two
+roles: reviewer (provider of feedback) and reviewee (recipient of
+feedback).  FILL HERE
+
+
+
+Motivational factors affect both roles that students
+adopt during peer review: as authors of reviews, and as recipients of
+reviews.  Peer
 
 @fill{This section still being fleshed out structurally}
 
