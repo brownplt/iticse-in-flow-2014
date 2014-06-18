@@ -3,11 +3,23 @@
 @(require "bib.rkt"
           "helpers.rkt")
 
-@title{Working Group Report on In-Flow Peer Review}
+@;;;; macros for document content
+@(define IFPR "IFPR")
 
-@section{Members}
+@;;;; DOCUMENT STARTS HERE ;;;;;;;;;;;;;;
 
-All of our names go in here
+@title{Methodology and Technology for In-Flow Peer Review}
+
+@(authorinfo "Dave Clarke" "" "")
+@(authorinfo "Tony Clear" "" "")
+@(authorinfo "Kathi Fisler" "WPI" "kfisler@cs.wpi.edu")
+@(authorinfo "Matthias Hauswirth" "" "")
+@(authorinfo "Shriram Krishnamurthi" "Brown University" "sk@cs.brown.edu")
+@(authorinfo "Joe Gibbs Politz" "Brown University" "joe@cs.brown.edu")
+@(authorinfo "Ville Tirronen" "" "")
+@(authorinfo "Tobias Wrigstad" "" "")
+
+@abstract{FILL LATER}
 
 @section{In-Flow Peer-Reviewing}
 
@@ -16,7 +28,7 @@ courses@~cite["topping-peer-review98"]. It is a mechanism for having
 students read each others' work, learn how to give feedback, and even
 to help with assessment. Indeed, of the six major computational
 thinking skills listed in the current draft of the AP Computer
-Science Principles curriculum [CITE], the fourth is:
+Science Principles curriculum @~cite["ap-principles"], the fourth is:
 @;https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxjc3ByaW5jaXBsZXNwaWxvdGlpfGd4OjJkYjcyODI3ZDQ1ZGVlMGE
 @nested[#:style 'inset]{
 P4: Analyzing problems and artifacts
@@ -86,6 +98,9 @@ worse. Therefore, what it forces on students is the need to exercise
 @item{It further emphasizes the @emph{comparative} examination of work
 against a student's own.}
 
+@item{It exposes students to a standard component of industrial
+software development.}  
+
 ]
 Giving authors the ability to respond to reviews further reinforces
 the AP CS Principles quoted above.
@@ -105,39 +120,13 @@ various courses at various levels (though the majority taught courses
 related to programming, programming languages, or various aspects of
 software development).  Prior to the group's in-person meeting, each
 group member created two assignments for in-flow peer-review.  These
-case studies, which appear in the appendix (Section
+case studies, which appear in the appendix (
 @secref["s:case-studies"]), formed the basis of many 
 of our discussions.
 
-
-Within the various case studies from the working group, students were
-asked to produce code, produce test-suites, produce security-testing
-plans, plan large projects, @fill{}.
-
-
-The College Board 
-
-AP Computer Science Principles 
-
-Draft Curriculum Framework 
-
-February 2014
-
-
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-@section{Background and Context}
-
-In-flow peer review targets various student-oriented learning
-objectives and instructor-facing pedagogic goals.  It is framed by
-extensive industrial practice, as well as a significant body of prior
-work on student learning in computing.  This section identifies
-various contextual factors and summarizes prior work around each one.
-These will set the stage for later discussion of the case studies
-developed by working group members and the issues that arise around
-in-flow peer review.
-
-@subsection{Learning Objectives}
+@section{Student Learning Objectives from @IFPR}
 
 In-flow peer review arises from a desire to help students learn review
 skills common to software-development practice, while simultaneously
@@ -183,6 +172,150 @@ The rest of this section presents background and related work
 pertinent to these tasks, with an emphasis on the in-flow context when
 appropriate.  Some related work is specific to particular kinds of
 artifacts, while other work would apply to any reviewed artifact.
+
+@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+@section{Instructor Goals from @IFPR}
+
+Peer review in general has several pedagogic motivations beyond the
+student-oriented learning objectives of the previous section.  These
+include: 
+
+@itemlist[
+@item{Engaging students more in their own learning}
+@item{Improving students' communication skills}
+@item{Increasing social interaction, thus making programming a more
+social activity}
+@item{Providing human feedback more scalably than with only expert
+assessment}
+]
+
+The in-flow context has additional pedagogic motivations:
+
+@itemlist[
+@item{Helping students improve their performance on an open assignment}
+@item{Re-examining plagiarism issues by moving the problem}
+]
+
+The rest of this section describes frameworks and ideas around these
+pedagogic goals.  Some of these issues leave significant open
+questions in the design of in-flow peer review experiences; we discuss
+those issues more extensively later in the report.
+
+@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+@section{Examples of @IFPR}
+
+INSERT SUMMARY TABLE
+
+[Table needs column for what has been used versus just proposed.]
+
+The case studies from working group members covered a variety of
+student levels and course types.  More interestingly, they varied
+widely in the kinds of artifacts and processes that they suggested for
+{@IFPR}.  Table @fill{ref} summarizes the key parameters of the case
+studies.  The full details appear in @secref["s:case-studies"]).
+
+@fill{Explain @IFPR applied to the case studies}
+
+@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+@section{Challenges and Issues}
+
+The working group identified a series of parameters, issues, and
+logistical questions that surround the idea of {@IFPR}.  
+
+@subsection{What Artifacts Should be Reviewed?}
+
+@subsection{How to Conduct Reviews}
+
+@itemlist[
+@item{How much to structure assignments?}
+@item{staged artifacts vs iterations on same artifact}
+
+@item{How to assign reviewers: random, let students pick, same reviewer for whole
+assignment, assigned by instructor, etc.  Related work:
+@url{dl.acm.org/citation.cfm?id=2215100&CFID=353776286&CFTOKEN=25368603}}
+]
+
+@subsubsection{Designing Reviewing Rubrics}
+
+@subsubsection{Designing Feedback Forms}
+
+@subsection{Grading Reviews}
+
+Class size is clearly a factor here.  If someone wants to use
+peer-review to help provide human feedback in large courses, then
+giving expert feedback on reviewing might not be feasible.  Are there
+ways to give some feedback on reviews in a lightweight manner?
+
+Should reviews affect assignment grades?
+
+Proposal: way to improve giving of feedback is to tie your grade to
+that of the person you review
+
+@subsubsection{Relating auto-grading and in-flow peer review}
+
+When assignment steps can be graded automatically, how much feedback
+should go to students and/or reviewers alongside the peer-written
+reviews?  Giving auto-grade results could lead to reviewers putting in
+less effort (thus masking situations in which the auto-grading missed
+something important).
+
+@subsection{Undesirable Student Behavior}
+
+@subsubsection{Plagiarism}
+
+@subsubsection{Avoiding Gaming the Assignment}
+
+@subsection{Mitigating the Costs}
+
+@subsection{Helping Students Benefit from the Process}
+
+@itemlist[
+@item{Getting students to take peer-comments seriously}
+@item{Motivating students}
+@item{Interaction between reviewing and developing student confidence}
+]
+
+@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+@section{Tool support for @IFPR}
+
+Describe Informa
+
+Describe CaptainTeach
+
+Describe PeerWise 
+
+@section{Desired Features in IFPR Tools}
+
+@section{Assessment of the In-Flow Model Itself}
+
+In-flow Peer Review is a pedagogic idea, and as such, should be
+subject to evaluation.  What would such an evaluation look like?  What
+are the challenges to doing such an assessment?  What do we want to
+know about in-flow peer review?
+
+@itemlist[
+
+@item{How to isolate effects of reviewing?}
+
+@item{How to tease out potential placebo effects?}
+
+@item{What are the right metrics for this?}
+
+@item{What other strategies can we compare in-flow peer review to?}
+
+]
+
+@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+@section{Related Work}
+
+@subsection{Dummy}
 
 @subsubsection{Helping Students Be Successful Reviewers}
 
@@ -247,17 +380,24 @@ One goal of in-flow review is to encourage reflection @emph{while in the
 middle of an assignment}.  Meta-cognitive reflection of techniques and
 approaches has been studied as an important part of the learning process, and
 others have found effective reviewing and prompting strategies for encouraging
-reflection that IFPR can learn from.
+reflection that @IFPR can learn from.
+
+@fill{UTF encodings broke in next paragraph}
 
 Davis and Linn @~cite["davis-reflection-prompts"] use explicit self-review
 prompts at different stages of assignments given to eighth graders.  For
 example, in one assignment, students had to perform a repeated task (designing
 clothing and environments to help cold-blooded aliens survive).  They compared
-responses to direct prompts submitted along with a design, like ‚ÄúOur design
-will work well because...‚Äù, to prompts designed to encourage reflection after
-the fact---‚ÄúOur design could be better if we...‚Äù--- and plan-ahead prompts
-designed to cause reflection during the assignment---‚ÄúIn thinking about doing
-our design, we need to think about...‚Äù  Their sample size was small, and they
+@;responses to direct prompts submitted along with a design, like ‚\200\234Our design
+@;will work well because...‚è†èΩ, to prompts designed to encourage reflection after
+@;the fact---Å‚è†èºOur design could be better if we...Å‚è†èΩ--- and plan-ahead prompts
+@;designed to cause reflection during the assignment---Å‚è†èºIn thinking about doing
+@;our design, we need to think about...Å‚è†èΩ  Their sample size was small, and they
+responses to direct prompts submitted along with a design, like "Our design
+will work well because...", to prompts designed to encourage reflection after
+the fact---"Our design could be better if we..."--- and plan-ahead prompts
+designed to cause reflection during the assignment---"In thinking about doing
+our design, we need to think about..." Their sample size was small, and they
 did not find a significant difference in design quality between the direct and
 reflective prompts.  They did find that students gave better explanations when
 given the reflective prompts, but the difference could easily be attributed to
@@ -366,33 +506,6 @@ to chunk, but chunking isn't necessarily needed on small programs.)
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-@subsection{Additional Pedagogic Rationale}
-
-Peer review in general has several pedagogic motivations beyond the
-student-oriented learning objectives of the previous section.  These
-include: 
-
-@itemlist[
-@item{Engaging students more in their own learning}
-@item{Improving students' communication skills}
-@item{Increasing social interaction, thus making programming a more
-social activity}
-@item{Providing human feedback more scalably than with only expert
-assessment}
-]
-
-The in-flow context has additional pedagogic motivations:
-
-@itemlist[
-@item{Helping students improve their performance on an open assignment}
-@item{Re-examining plagiarism issues by moving the problem}
-]
-
-The rest of this section describes frameworks and ideas around these
-pedagogic goals.  Some of these issues leave significant open
-questions in the design of in-flow peer review experiences; we discuss
-those issues more extensively later in the report.
-
 @subsubsection{Engaging Students in Learning}
 
 @relworkfill{Summarize work on Contributing Student Pedagogy}
@@ -470,8 +583,10 @@ A recent update on professional code review (ICSE 2013):
 Others have used strategies for peer review that fall under the umbrella of
 in-flow peer review, even though they did not go by that name.
 
+@fill{Re-UTF encode Sondergaard}
+
 For example, in the implementation of a multi-stage compiler, students in
-S√∏ndergaard's course review one another's work between stages
+Sondergaard's course review one another's work between stages
 @~cite{sondergaard-peer-review-compilers09}.  The evaluation in that work was
 only in the form of surveys after the assignment, but shows generally positive
 attitudes from students indicating that they felt the review had helped.
@@ -489,6 +604,8 @@ accurate after going through the case studies}.
 
 @subsection{Actionable Peer Review}
 
+@fill{re-UTF Aropa}
+
 Some other uses of peer review on large projects are related to in-flow peer
 review because they allow students to improve their work in response to
 review.  These uses don't necessarily stage assignments into reviewable
@@ -496,7 +613,7 @@ pieces, instead performing review on entire intermediate artifacts.  For
 example, Clark has students exercise the functionality of one anothers'
 projects, and lets groups improve their work based on the feedback their
 classmates give them @~cite["clark-peer-testing-se-04"].  Similarly, Wang, et
-al., Zeller, and the Arop√§ system study assignment structures that allow
+al., Zeller, and the Aropa system study assignment structures that allow
 students to update revisions of entire submissions that were reviewed by peers
 @~cite["wang-pcr" "zeller-read-review-00" "hamer-aropa"].  Other studies have
 students write test cases (or manually test) one another's work as part of a
@@ -504,98 +621,6 @@ review @~cite["reily-aggregate-reviews09" "smith-peer-testing-icer12"].  These
 tests are most often on entire systems, rather than on pieces of a project
 that build up along with reviews.  Students do, however, have the chance to
 improve their projects in response to their peers' feedback.
-
-@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-@section{Case Studies in In-Flow Peer Review}
-
-In here, summarize the task we gave everyone prior to the meeting.
-Refer to appendix for the details.  
-
-Produce a table summarizing the key factors/features of the various
-studies: nature of artifact, grade level, decomposition, interesting
-ideas, etc. @fill{Create table}
-
-@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-@section{Challenges and Issues}
-
-What are the logistics challenges identified by the WG?
-
-@subsection{Plagiarism}
-
-@subsection{Avoiding Gaming the Assignment}
-
-@subsection{Motivating Students}
-
-@subsection{Finding the Sweet Spot in how much to structure assignments}
-
-@subsection{Providing Students Feedback on Reviewing}
-
-@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-@section{Assessment of Student Work}
-
-@subsection{Designing review rubrics}
-
-@subsection{Designing feedback forms}
-
-@subsection{How and whether to assess reviews}
-
-Class size is clearly a factor here.  If someone wants to use
-peer-review to help provide human feedback in large courses, then
-giving expert feedback on reviewing might not be feasible.  Are there
-ways to give some feedback on reviews in a lightweight manner?
-
-@subsection{Impact of reviews on reviewee's grade}
-
-@subsection{Accounting for the impact of seeing other students' work mid-assignment}
-
-@subsection{Relating auto-grading and in-flow peer review}
-
-When assignment steps can be graded automatically, how much feedback
-should go to students and/or reviewers alongside the peer-written
-reviews?  Giving auto-grade results could lead to reviewers putting in
-less effort (thus masking situations in which the auto-grading missed
-something important).
-
-@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-@section{Options for Decomposing Problems for In-Flow Peer Review}
-
-Much of this will be collated from the initial assignments we proposed.
-
-How to assign reviewers: random, let students pick, same reviewer for whole
-assignment, assigned by instructor, etc.  Related work:
-@url{dl.acm.org/citation.cfm?id=2215100&CFID=353776286&CFTOKEN=25368603}
-
-@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-@section{Assessment of the In-Flow Model Itself}
-
-In-flow Peer Review is a pedagogic idea, and as such, should be
-subject to evaluation.  What would such an evaluation look like?  What
-are the challenges to doing such an assessment?  What do we want to
-know about in-flow peer review?
-
-@itemlist[
-
-@item{How to isolate effects of reviewing?}
-
-@item{How to tease out potential placebo effects?}
-
-@item{What are the right metrics for this?}
-
-@item{What other strategies can we compare in-flow peer review to?}
-
-]
-
-@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-@section{Miscellaneous Thoughts and Ideas}
-
-Proposal: way to improve giving of feedback is to tie your grade to
-that of the person you review
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
