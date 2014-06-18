@@ -315,30 +315,62 @@ know about in-flow peer review?
 
 @section{Related Work}
 
-@subsection{Dummy}
+@subsection{Meta-cognitive Reflection}
 
-@subsubsection{Helping Students Be Successful Reviewers}
+@relworkfill{Summarize related work on meta-cognitive reflection}
 
-@relworkfill{Related work on what makes students successful at
-reviewing}
-
-Related work discussion should address:
+Discussion here needs to cover things like :
 @itemlist[
-@item{Arguments for providing structured rubrics}
-@item{Guidelines for good rubrics (Klemmer?)}
+@item{What kinds of questions encourage reflection?}
 ]
 
-To read:
+One goal of in-flow review is to encourage reflection @emph{while in the
+middle of an assignment}.  Meta-cognitive reflection of techniques and
+approaches has been studied as an important part of the learning process, and
+others have found effective reviewing and prompting strategies for encouraging
+reflection that @IFPR can learn from.
 
-Klemmer and others on accuracy/rubrics: @url{http://dl.acm.org/citation.cfm?id=2505057} and @url{http://hci.stanford.edu/publications/paper.php?id=209}
+@fill{UTF encodings broke in next paragraph}
 
-The notion of a Pedagogic Code Review with a moderator and a detailed plan for
-what to look for in a review: @url{http://dl.acm.org/citation.cfm?id=1734324},
-@url{http://dl.acm.org/citation.cfm?id=1508972}
+Davis and Linn @~cite["davis-reflection-prompts"] use explicit self-review
+prompts at different stages of assignments given to eighth graders.  For
+example, in one assignment, students had to perform a repeated task (designing
+clothing and environments to help cold-blooded aliens survive).  They compared
+@;responses to direct prompts submitted along with a design, like Å‚\200\234Our design
+@;will work well because...Å‚èØÅ†èØÅΩ, to prompts designed to encourage reflection after
+@;the fact---è°Å‚èØÅ†èØÅºOur design could be better if we...è°Å‚èØÅ†èØÅΩ--- and plan-ahead prompts
+@;designed to cause reflection during the assignment---è°Å‚èØÅ†èØÅºIn thinking about doing
+@;our design, we need to think about...è°Å‚èØÅ†èØÅΩ  Their sample size was small, and they
+responses to direct prompts submitted along with a design, like "Our design
+will work well because...", to prompts designed to encourage reflection after
+the fact---"Our design could be better if we..."--- and plan-ahead prompts
+designed to cause reflection during the assignment---"In thinking about doing
+our design, we need to think about..." Their sample size was small, and they
+did not find a significant difference in design quality between the direct and
+reflective prompts.  They did find that students gave better explanations when
+given the reflective prompts, but the difference could easily be attributed to
+the small sample size.
 
-Comparing students to experts in writing reviews: @url{https://www.sciencedirect.com/science/article/pii/S0959475209000747}
+Frederiksen and White have done a series of studies on @emph{reflective
+assessment} and @emph{reflective collaboration} in middle school science
+classes @~cite["white-reflective-affordances"
+"frederiksen-reflective-collaboration"].  In an online environment, students
+work on mock experiments using a scientific-method like flow for a project:
+they start with an initial inquiry, form hypotheses, analyze mock data, and
+draw conclusions.  In between steps, they are asked questions that urge them
+to reflect on their work: why they think a hypothesis is true, if they are
+being meticulous in analyzing their results, and more.  They are also given
+the opportunity to assess the work of other students in the form of ratings.
+@fill{Any studies where they ask the reflective questions about the other
+students?}
 
-@subsubsection{Learning By Example}
+@subsection{Engaging Students in Learning}
+
+@relworkfill{Summarize work on Contributing Student Pedagogy}
+
+See ITiCSE WG 2008
+
+@subsection{Learning By Example}
 
 @relworkfill{Summarize related work on learning by example}
 
@@ -367,59 +399,7 @@ In PeerWise, students created and reviewed one anothers' multiple-choice
 questions, which has elements both of learning by example and of review:
 @url{http://dl.acm.org.revproxy.brown.edu/citation.cfm?id=1404526&CFID=472720597&CFTOKEN=32164599}
 
-@subsubsection{Meta-cognitive Reflection}
-
-@relworkfill{Summarize related work on meta-cognitive reflection}
-
-Discussion here needs to cover things like :
-@itemlist[
-@item{What kinds of questions encourage reflection?}
-]
-
-One goal of in-flow review is to encourage reflection @emph{while in the
-middle of an assignment}.  Meta-cognitive reflection of techniques and
-approaches has been studied as an important part of the learning process, and
-others have found effective reviewing and prompting strategies for encouraging
-reflection that @IFPR can learn from.
-
-@fill{UTF encodings broke in next paragraph}
-
-Davis and Linn @~cite["davis-reflection-prompts"] use explicit self-review
-prompts at different stages of assignments given to eighth graders.  For
-example, in one assignment, students had to perform a repeated task (designing
-clothing and environments to help cold-blooded aliens survive).  They compared
-@;responses to direct prompts submitted along with a design, like ‚\200\234Our design
-@;will work well because...‚è†èΩ, to prompts designed to encourage reflection after
-@;the fact---Å‚è†èºOur design could be better if we...Å‚è†èΩ--- and plan-ahead prompts
-@;designed to cause reflection during the assignment---Å‚è†èºIn thinking about doing
-@;our design, we need to think about...Å‚è†èΩ  Their sample size was small, and they
-responses to direct prompts submitted along with a design, like "Our design
-will work well because...", to prompts designed to encourage reflection after
-the fact---"Our design could be better if we..."--- and plan-ahead prompts
-designed to cause reflection during the assignment---"In thinking about doing
-our design, we need to think about..." Their sample size was small, and they
-did not find a significant difference in design quality between the direct and
-reflective prompts.  They did find that students gave better explanations when
-given the reflective prompts, but the difference could easily be attributed to
-the small sample size.
-
-Frederiksen and White have done a series of studies on @emph{reflective
-assessment} and @emph{reflective collaboration} in middle school science
-classes @~cite["white-reflective-affordances"
-"frederiksen-reflective-collaboration"].  In an online environment, students
-work on mock experiments using a scientific-method like flow for a project:
-they start with an initial inquiry, form hypotheses, analyze mock data, and
-draw conclusions.  In between steps, they are asked questions that urge them
-to reflect on their work: why they think a hypothesis is true, if they are
-being meticulous in analyzing their results, and more.  They are also given
-the opportunity to assess the work of other students in the form of ratings.
-@fill{Any studies where they ask the reflective questions about the other
-students?}
-
-
-
-
-@subsubsection{Motivating Participation in Peer Review}
+@subsection{Motivating Participation in Peer Review}
 
 Student motivation affects what they will gain from participating in
 peer review.  Peer review requires participation from students in two
@@ -468,7 +448,51 @@ either serve as "rewards" (summative assessment in the form of
 scores/grades) or as constructive feedback (formative assessment). It
 might make sense to discuss the latter at the workshop. 
 
-@subsubsection{Comprehending Program Structure}
+@subsection{Peer Assessment}
+
+Work by Mazur and Simon/Cutts gets discussed here
+
+@subsection{Helping Students Be Successful Reviewers}
+
+@relworkfill{Related work on what makes students successful at
+reviewing}
+
+Related work discussion should address:
+@itemlist[
+@item{Arguments for providing structured rubrics}
+@item{Guidelines for good rubrics (Klemmer?)}
+]
+
+To read:
+
+Klemmer and others on accuracy/rubrics: @url{http://dl.acm.org/citation.cfm?id=2505057} and @url{http://hci.stanford.edu/publications/paper.php?id=209}
+
+The notion of a Pedagogic Code Review with a moderator and a detailed plan for
+what to look for in a review: @url{http://dl.acm.org/citation.cfm?id=1734324},
+@url{http://dl.acm.org/citation.cfm?id=1508972}
+
+Comparing students to experts in writing reviews: @url{https://www.sciencedirect.com/science/article/pii/S0959475209000747}
+
+@subsection{Providing Feedback on Reviews}
+
+@relworkfill{Summarize work on review feedback}
+
+@itemlist[
+@item{What kind of feedback is useful?}
+@item{Do experts need to provide the feedback?}
+]
+
+Metareviewing to determine quality of reviews by Gehringer/Expertiza:
+@url{http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.416.228},
+@url{http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=5992285&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D5992285},
+@url{https://6c27b932-a-4ecc3149-s-sites.googlegroups.com/a/cspred.org/2010/proceedings/11-cspred2010_submission_3.pdf}
+
+Expertiza also mentions an explicit review of review phase in
+@url{http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.161.8397}, and
+@url{http://www.igi-global.com/chapter/monitoring-assessment-online-collaborative-environments/36844}
+might have even more on that.
+
+@subsection{Comprehending Program Structure}
 
 For in-flow assignments centered around programming, one goal of
 peer-review is to help students reflect on their code structure.
@@ -506,32 +530,7 @@ to chunk, but chunking isn't necessarily needed on small programs.)
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-@subsubsection{Engaging Students in Learning}
-
-@relworkfill{Summarize work on Contributing Student Pedagogy}
-
-See ITiCSE WG 2008
-
-@subsubsection{Providing Feedback on Reviews}
-
-@relworkfill{Summarize work on review feedback}
-
-@itemlist[
-@item{What kind of feedback is useful?}
-@item{Do experts need to provide the feedback?}
-]
-
-Metareviewing to determine quality of reviews by Gehringer/Expertiza:
-@url{http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.416.228},
-@url{http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=5992285&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D5992285},
-@url{https://6c27b932-a-4ecc3149-s-sites.googlegroups.com/a/cspred.org/2010/proceedings/11-cspred2010_submission_3.pdf}
-
-Expertiza also mentions an explicit review of review phase in
-@url{http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.161.8397}, and
-@url{http://www.igi-global.com/chapter/monitoring-assessment-online-collaborative-environments/36844}
-might have even more on that.
-
-@subsubsection{Increasing Socialization in Programming-Oriented Courses}
+@subsection{Increasing Socialization in Programming-Oriented Courses}
 
 @relworkfill{Work on creating socialization}
 
