@@ -6,3 +6,4 @@ you found from your assignment:
 3.	Clear, T. and Kassabova, D. A Course in Collaborative Computing: Collaborative Learning and Research with a Global Perspective. in Guzdial, M. and Fitzgerald, S. eds. Proceedings of the 39th ACM Technical Symposium on Computer Science Education, ACM, Portland, Oregon, 2008, 63-67.
 4.	Hamer, J., Sheard, J., Purchase, H. and Luxton-Reilly, A. Contributing student pedagogy. Computer Science Education, 22 (4). 315-318.
 5.	Denny, P. Motivating online collaborative learning Proceedings of the fifteenth annual conference on Innovation and technology in computer science education, ACM, Bilkent, Ankara, Turkey, 2010, 300-300.
+6. Hamer, J. (2009). Aropä and PeerWise: Supporting Student Contributed Pedagogy in Large Classes. Educause Australasia.
