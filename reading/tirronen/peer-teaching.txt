@@ -7,4 +7,40 @@ Pick one or two papers that are representative and sumarrize
 
 Fill in a summary for a related work section, and for your fellow WG members:
 
-<fill in here>
+
+# Short summary
+
+Peer Instruction (PI), which is a specific form of student centered pedagogy
+[3], has been shown to be a promising way for improve student performance [1]
+and engagement [2] both in introductory courses [1] and upper-division courses
+[6]. Peer instruction, as defined by Crouch et. al. [1], focuses on engaging
+students in activities that require them to apply the core concepts under study
+and to explain these concepts to their peers. Concretely, a class taught using
+PI principles can consist of short presentations, each of which focuses on a
+particular core concept and is tested by presenting students a conceptual
+question, which the students first solve individually and then discuss in
+groups. The PI pedagogies link with the concepts of blended learning and
+flipped classroom [4] in that PI requires students to study preparatory
+material before attending the class.
+
+# My, freeform, thoughts
+
+As a pedagogical approach, PI is not so very novel, but the relevant literature
+compensates this for being quite thorough. All in all, PI seems to be a tested
+and beneficial approach for classroom teaching. The difficulties of PI seem to
+lie in the implementation, as discussed by Crouch et.al [1], it seems that PI
+has it's own difficulties, which range from motivational to time management.
+Further in the literature surveyed here the social aspects of PI, which to me
+seem quite crucial for success, are largely elided.
+
+Related to our undertaking, the most interesting component of PI is the student
+peer discussions that are undertaken after presentation of each concept. This,
+however, is not peer review. 
+
+
+[1]: Peer instruction: Ten years of experience and results, Crouch & Mazur
+[2]: Student Experience in a Student-Centered Peer Instruction Classroom
+[3]: Peer Instruction: A Users Manual, Eric Mazur
+[4]:  How 'flipping'the classroom can improve the traditional lecture, Berret, 2012 (A better cite could be found?)
+[5]: Blended learning: Uncovering its transformative potential in higher education, Garrison, 2004 (This might also be replaced)
+[6]: Can Peer Instruction Be Effective in Upper Division Computer Science Courses, Lee, 2013

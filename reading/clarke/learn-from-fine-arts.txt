@@ -1,3 +1,16 @@
 Reference: http://dl.acm.org/citation.cfm?id=1047482
 
 Fill in a summary for a related work section, and for your fellow WG members:
+
+The paper describes the outcome of running an IT course more like a fine arts 
+course than a traditional engineering course. This included projects that were 
+more meaningful, public critique of results, and routing collaboration. 
+This approach created a classroom culture where learning is a social and community process, 
+rather than individualised, and the result was a greater retention of female students
+than the tranditional engineering teaching approach.
+
+The technique most relevant for in-flow peer review, though not completely the same,
+is the approach to knowledge sharing during lab work. Students actively sort help
+from any student, for example, by yelling questions out, resulting in a fluid exchange
+of ideas and techniques. Even though the projects considered in these labs were run in 
+an open, collaborative setting, cheating was avoiding by using individualised assignments.

@@ -1,2 +1,5 @@
 Fill in bibliographic information for other papers we should be reading that
 you found from your assignment:
+
+Talking about code: Integrating Pedagogical Code Reviews into Early Computing Courses, Hundhausen, 2013.
+- This seems to be exactly about what we are doing
