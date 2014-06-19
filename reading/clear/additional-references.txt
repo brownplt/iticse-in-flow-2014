@@ -1,3 +1,8 @@
 Fill in bibliographic information for other papers we should be reading that
 you found from your assignment:
 
+1.	Denny, P., Hamer, J., Luxton-Reilly, A. and Purchase, H. PeerWise: students sharing their multiple choice questions Proceedings of the Fourth international Workshop on Computing Education Research, ACM, Sydney, Australia, 2008, 51-58.
+2.	Hamer, J., Cutts, Q., Jackova, J., Luxton-Reilly, A., McCartney, R., Purchase, H., Riedesel, C., Saeli, M., Sanders, K. and Sheard, J. Contributing student pedagogy. SIGCSE Bull., 40 (4). 194-212.
+3.	Clear, T. and Kassabova, D. A Course in Collaborative Computing: Collaborative Learning and Research with a Global Perspective. in Guzdial, M. and Fitzgerald, S. eds. Proceedings of the 39th ACM Technical Symposium on Computer Science Education, ACM, Portland, Oregon, 2008, 63-67.
+4.	Hamer, J., Sheard, J., Purchase, H. and Luxton-Reilly, A. Contributing student pedagogy. Computer Science Education, 22 (4). 315-318.
+5.	Denny, P. Motivating online collaborative learning Proceedings of the fifteenth annual conference on Innovation and technology in computer science education, ACM, Bilkent, Ankara, Turkey, 2010, 300-300.
