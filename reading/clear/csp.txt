@@ -2,3 +2,12 @@ Reference: http://dl.acm.org/citation.cfm?id=1473242
 
 Fill in a summary for a related work section, and for your fellow WG members:
 
+The abstract of this paper is given below
+
+A Contributing Student Pedagogy (CSP) is a pedagogy that encourages students to contribute to the learning of others and to value the contributions of others. CSP in formal education is anticipatory of learning processes found in industry and research, in which the roles and responsibilities of 'teacher' and 'student' are fluid. Preparing students for this shift is one motivation for use of CSP. Further, CSP approaches are linked to constructivist and community theories of learning, and provide opportunities to engage students more deeply in subject material.
+
+In this paper we advance the concept of CSP and relate it to the particular needs of computer science. We present a number of characteristics of this approach, and use case studies from the available literature to illustrate these characteristics in practice. We discuss enabling technologies, provide guidance to instructors who would like to incorporate this approach in their teaching, and suggest some future directions for the study and evaluation of this technique. We conclude with an extensive bibliography of related research and case studies which exhibit elements of CSP.
+
+This paper arose from a 2008 ITiCSe WG so we should make clear that we are aware of its contents and how this WG relates to prior work.
+A later elaboration of the work in this paper was published in Computer Science Education in 2012.
+1.	Hamer, J., Sheard, J., Purchase, H. and Luxton-Reilly, A. Contributing student pedagogy. Computer Science Education, 22 (4). 315-318.
