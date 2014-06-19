@@ -7,3 +7,5 @@ you found from your assignment:
 4.	Hamer, J., Sheard, J., Purchase, H. and Luxton-Reilly, A. Contributing student pedagogy. Computer Science Education, 22 (4). 315-318.
 5.	Denny, P. Motivating online collaborative learning Proceedings of the fifteenth annual conference on Innovation and technology in computer science education, ACM, Bilkent, Ankara, Turkey, 2010, 300-300.
 6. Hamer, J. (2009). Aropä and PeerWise: Supporting Student Contributed Pedagogy in Large Classes. Educause Australasia.
+7. J. Hamer, C. Kell, and F. Spence. Peer assessment using Aropa. In Samuel Mann and Simon, eds., ACE’07: Ninth
+Australasian Computing Education Conference (66) 43–54, Ballarat, Victoria, February 2007. Australian Computer Society.
