@@ -17,7 +17,9 @@ Expertiza peer reviews are based on a rubric with numeric scores and further com
 
 Lakshmi and Gehringer [2] state that a review should "help the authors identify mistakes" and "help them learn possible ways of fixing them". They call the process of evaluating reviews "meta reviewing". They claim that manual meta reviewing "is (a) slow, (b) prone to errors, and (c) likely to be inconsistent". To provide consistent, bias-free meta reviews, they develop an automated meta reviewing tool, using the following metrics for how to assess reviews: "review relevance", "content type" (summative, problem detection, advisory), "tone" (positive, negative, neutral), "quantity", and "plagiarism". They evaluated their tool with a user experience study involving 24 participants and found "relevance" to be the most important and "quantity" to be the least important metric.
 
+
 Personal notes:
+
 I don't like Gehringer et al.'s [1] "spin" of this reducing the drudgery for instructors and TAs. I think it should focus on the improvement of learning instead! The idea of having students create problems (instead of solving them) is great and should stand on its own (without this "administrative" side benefit of reducing instructor load). 
 
 They seem to advocate that reviews are better written by humans(students), but meta-reviews are better done by automated tools. Given that meta-reviews are reviews, I wonder why not both kinds of reviews should be done by humans (or by automated tools). I am not sure I would trust the meta-reviews their tool produces, and I also don't know whether such "metric-based" meta-reviews are the most helpful (there's no constructive feedback, no comments, in such meta-reviews).
@@ -49,3 +51,12 @@ References:
 [VL95] Van Lehn, K. A., M. T. H. Chi, W. Baggett, and R. C. Murray. 1995. Progress report: Towards a theory of learning during tutoring. Pittsburgh, PA: Learning Research and Development Center, University of Pittsburgh.
 
 [R94] R.Rada, A.Michailidis, and W.Wang, “Collaborative hypermedia in a classroom setting,” J. Educ. Multimedia Hypermedia, vol. 3, pp. 21–36, January 1994.
+
+[QAZ10] Quinlan, T., Almond, R., Zapata, D. Assessing the Quality of Peer Feedback
+
+[GA10] Goldin, I., Ashley, K. (2010) Eliciting Informative Feedback in Peer Review: Importance of Problem-Specific Scaffolding. Proceedings of 10th International Conference on Intelligent Tutoring Systems. Pittsburgh, PA.
+
+[XLS10] Xiong, W., Litman, D., Schunn, C. (2010) Assessing Reviewers' Performance Based on Mining Problem Localization in Peer Review Data. Proceedings of 3rd International Conference on Educational Data Mining. Pittsburgh, PA.
+
+[XL10] Xiong, W., Litman, D. (2010) Identifying Problem Localization in Peer-Review Feedback. Proceedings of 10th International Conference on Intelligent Tutoring Systems. Pittsburgh, PA.
+
