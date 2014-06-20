@@ -20,7 +20,7 @@ Lakshmi and Gehringer [2] state that a review should "help the authors identify 
 Personal notes:
 I don't like Gehringer et al.'s [1] "spin" of this reducing the drudgery for instructors and TAs. I think it should focus on the improvement of learning instead! The idea of having students create problems (instead of solving them) is great and should stand on its own (without this "administrative" side benefit of reducing instructor load). 
 
-They advocate that reviews are better written by humans(students), but meta-reviews are better done by automated tools. Given that meta-reviews are reviews, I wonder why not both kinds of reviews should be done by humans (or by automated tools). I am not sure I would trust the meta-reviews their tool produces, and I also don't know whether such "metric-based" meta-reviews are the most helpful (there's no constructive feedback, no comments, in such meta-reviews).
+They seem to advocate that reviews are better written by humans(students), but meta-reviews are better done by automated tools. Given that meta-reviews are reviews, I wonder why not both kinds of reviews should be done by humans (or by automated tools). I am not sure I would trust the meta-reviews their tool produces, and I also don't know whether such "metric-based" meta-reviews are the most helpful (there's no constructive feedback, no comments, in such meta-reviews).
 
 Lakshmi and Gehringer [2] define reviews as "text-based feedback". I don't see why they would HAVE to be text based. It might be that other forms of representations (e.g., annotations, diagrams) might be more effective than simple text.
 
@@ -28,7 +28,7 @@ Interestingly, using Expertiza for code-review lead to mixed results [1].
 
 [2] provides discussion of related work including some papers I still need to look at.
 
-[4] was published at a "Workshop on Computer-Supported Peer Review in Education" (should check that out).
+[4] was published at a "Workshop on Computer-Supported Peer Review in Education" (http://www.cspred.org/) (should check that out).
 
 I haven't read [3] and [4] yet.
 
@@ -38,7 +38,7 @@ http://research.csc.ncsu.edu/efg/expertiza/papers/
 
 References:
 
-[1] Edward Gehringer and Luke Ehresman and Susan G. Conger and Prasad Wagle, "Reusable Learning Objects through Peer Review: The Experiza Approach"
+[1] Edward Gehringer, Luke Ehresman, Susan G. Conger, and Prasad Wagle Reusable learning objects through peer review: The Expertiza approach, Innovate: Journal of Online Education 3:5, June/July 2007
 
 [2] Lakshmi Ramach and Edward F. Gehringer, "A User Study on the Automated Assessment of Reviews"
 
