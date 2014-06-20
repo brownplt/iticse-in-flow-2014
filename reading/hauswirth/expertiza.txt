@@ -11,43 +11,41 @@ http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=5992285&url=http%3A%2F%2Fi
 
 Fill in a summary for a related work section, and for your fellow WG members:
 
-Expertiza, which grew out of an approach initiated in 1986, does not just include the idea of peer-review of peer-reviews, 
-but also the goal of students creating learning objects (examples, explanations, and exercises).
+Expertiza, which grew out of an approach initiated in 1986, does not just include the idea of review of peer-reviews, but also the goal of students creating learning objects (examples, explanations, and exercises).
 
-Expertiza peer reviews are based on a rubric with numeric scores and further comments. 
-Gehringer et al. [1] quote Van Lehn et al. [VL95] who say that students who assess their peers' work 
-benefit by (1) reviewing, (2) summarizing, (3) diagnosing misconceived knowledge, and 
-(4) considering deviations from the ideal. 
-Lakshmi and Gehringer [2] quote Rada et al. [R94], who 
-"found that students who evaluated their peers’ work were more likely to improve the quality of their own work 
-than those students who did not provide peer reviews."
+Expertiza peer reviews are based on a rubric with numeric scores and further comments. Gehringer et al. [1] quote Van Lehn et al. [VL95] who say that students who assess their peers' work benefit by (1) reviewing, (2) summarizing, (3) diagnosing misconceived knowledge, and (4) considering deviations from the ideal. Lakshmi and Gehringer [2] quote Rada et al. [R94], who "found that students who evaluated their peers’ work were more likely to improve the quality of their own work than those students who did not provide peer reviews."
 
-Lakshmi and Gehringer [2] state that a review should 
-"help the authors identify mistakes" and "help them learn possible ways of fixing them". 
-They call the process of evaluating reviews "meta reviewing". 
-They claim that manual meta reviewing "is (a) slow, (b) prone to errors, and (c) likely to be prone to errors". 
-To provide consistent, bias-free meta reviews, 
-they develop an automated meta reviewing tool, 
-using the following metrics for how to assess reviews: 
-"review relevance", "content type" (summative, problem detection, advisory), 
-"tone" (positive, negative, neutral), "quantity", and "plagiarism". 
-They evaluated their tool with a user experience study involving 24 participants and 
-found "relevance" to be the most important and "quantity" to be the least important metric.
+Lakshmi and Gehringer [2] state that a review should "help the authors identify mistakes" and "help them learn possible ways of fixing them". They call the process of evaluating reviews "meta reviewing". They claim that manual meta reviewing "is (a) slow, (b) prone to errors, and (c) likely to be inconsistent". To provide consistent, bias-free meta reviews, they develop an automated meta reviewing tool, using the following metrics for how to assess reviews: "review relevance", "content type" (summative, problem detection, advisory), "tone" (positive, negative, neutral), "quantity", and "plagiarism". They evaluated their tool with a user experience study involving 24 participants and found "relevance" to be the most important and "quantity" to be the least important metric.
 
 Personal notes:
-I don't like Gehringer et al.'s [1] "spin" of this reducing the drudgery for instructors and TAs. 
-I think it should focus on the improvement of learning instead! 
-The idea of having students create problems (instead of solving them) 
-is great and should stand on its own (without this "administrative" side benefit of reducing instructor load). 
+I don't like Gehringer et al.'s [1] "spin" of this reducing the drudgery for instructors and TAs. I think it should focus on the improvement of learning instead! The idea of having students create problems (instead of solving them) is great and should stand on its own (without this "administrative" side benefit of reducing instructor load). 
 
-Lakshmi and Gehringer [2] define reviews as "text-based feedback". 
-I don't see why they would HAVE to be text based. 
-It might be that other forms of representations (e.g., annotations, diagrams) 
-might be more effective than simple text.
+They advocate that reviews are better written by humans(students), but meta-reviews are better done by automated tools. Given that meta-reviews are reviews, I wonder why not both kinds of reviews should be done by humans (or by automated tools). I am not sure I would trust the meta-reviews their tool produces, and I also don't know whether such "metric-based" meta-reviews are the most helpful (there's no constructive feedback, no comments, in such meta-reviews).
+
+Lakshmi and Gehringer [2] define reviews as "text-based feedback". I don't see why they would HAVE to be text based. It might be that other forms of representations (e.g., annotations, diagrams) might be more effective than simple text.
 
 Interestingly, using Expertiza for code-review lead to mixed results [1].
 
 [2] provides discussion of related work including some papers I still need to look at.
 
-I haven't read [3] yet.
+[4] was published at a "Workshop on Computer-Supported Peer Review in Education" (should check that out).
 
+I haven't read [3] and [4] yet.
+
+There is a bibliography on the Expertiza web site:
+http://research.csc.ncsu.edu/efg/expertiza/papers/
+
+
+References:
+
+[1] Edward Gehringer and Luke Ehresman and Susan G. Conger and Prasad Wagle, "Reusable Learning Objects through Peer Review: The Experiza Approach"
+
+[2] Lakshmi Ramach and Edward F. Gehringer, "A User Study on the Automated Assessment of Reviews"
+
+[3] Lakshmi Ramachandran and Edward F. Gehringer, Automated assessment of review quality using latent semantic analysis, 11th IEEE International Conference on Learning Technologies, Athens, GA, July 6-8, 2011
+
+[4] Lakshmi Ramachandran and Edward F. Gehringer. Automating metareviewing, Workshop on Computer-Supported Peer Review in Education, associated with Intelligent Tutoring Systems 2010, Pittsburgh, PA, June 14, 2010.[Poster]
+
+[VL95] Van Lehn, K. A., M. T. H. Chi, W. Baggett, and R. C. Murray. 1995. Progress report: Towards a theory of learning during tutoring. Pittsburgh, PA: Learning Research and Development Center, University of Pittsburgh.
+
+[R94] R.Rada, A.Michailidis, and W.Wang, “Collaborative hypermedia in a classroom setting,” J. Educ. Multimedia Hypermedia, vol. 3, pp. 21–36, January 1994.
