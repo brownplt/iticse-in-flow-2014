@@ -3,3 +3,13 @@ you found from your assignment:
 
 Talking about code: Integrating Pedagogical Code Reviews into Early Computing Courses, Hundhausen, 2013.
 - This seems to be exactly about what we are doing
+
+
+Peer review negotiations: Revision activities in ESL writing instruction, Mendonca, 1994
+- Although peer review during process might be new for CSE, similar aspects
+  can be found elsewhere. The most natural place to search is writing 
+  instruction and here seems to be one article about the topic.
+
+The effectiveness of peer tutoring in further and higher education: A typology and review of the literature, Topping, 1916
+- I think terms like 'peer instruction', 'peer review', 'peer tutoring' should 
+  be glanced over if for not any other reason than to delieneate our topic.

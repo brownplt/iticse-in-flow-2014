@@ -32,12 +32,13 @@ complex and could be subverted by the students. From the assignment
 description, it is not entirely clear why the secrecy is in place.  Could
 relaxing this requirement make it easier to organize this exercise?
 
-# Looking ahead to including these in a report, any writing comments?
-
 One casual similarity between my work and yours is that we both eschew from
 providing expert review on the intermediate steps of the exercise. Perhaps
 this is just too costly for an ordinary course. Also, we both seem to slightly
 de-emphasize grading the reviews themselves.
+
+# Looking ahead to including these in a report, any writing comments?
+
 
 
 [^1]: Not a wolf, but just as dangerous.
