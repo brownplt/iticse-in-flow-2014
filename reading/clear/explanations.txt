@@ -4,3 +4,8 @@ Reference: http://onlinelibrary.wiley.com/doi/10.1207/s15516709cog1302_1/pdf
 Fill in a summary for a related work section, and for your fellow WG members:
 
 <fill in here>
+The abstract for this paper is excerpted below
+
+The present paper analyzes the self-generated explanations (from talk-aloud protocols) that “Good” and “Poor” students produce while studying worked-out examples of mechanics problems, and their subsequent reliance on examples during problem solving. We find that “Good” students learn with understanding: They generate many explanations which refine and expand the conditions for the action ports of the example solutions, and relate these actions to principles in the text. These self-explanations are guided by accurate monitoring of their own understanding and misunderstanding. Such learning results in example-independent knowledge and in a better understanding of the principles presented in the text. “Poor” students do not generate sufficient self-explanations, monitor their learning inaccurately, and subsequently rely heavily on examples. We then discuss the role of self-explanations in facilitating problem solving, as well as the adequacy of current Al models of explanation-based learning to account for these psychological findings.
+
+It appears that this set of findings suggest real learning value in students' meta-cognitive activity through verbalisation of their understandings.  This level of self reflection may well also apply in a context where they are  evaluating the work of peers, possibly where they are working in a similer zone of proximal distance.
