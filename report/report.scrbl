@@ -124,6 +124,22 @@ case studies, which appear in the appendix (
 @secref["s:case-studies"]), formed the basis of many 
 of our discussions.
 
+In-flow peer-review is an example of a Contributing Student Pedagogy
+(CSP), a pedagogy in which students (a) contribute to the learning of
+others and (b) value the contributions of other students.  A 2008
+ITiCSE working group report describes various facets of such
+pedagogies @~cite["cspwg-08"].  @IFPR targets the second criterion
+(valuing the contributions of other students) more than traditional,
+post-submission peer review.  Various parameters in implementations of
+@IFPR affect the extent to which students contribute to the learning
+of others in practice: shallow reviews, for example, arguably meet the
+letter but not the intent of a CSP.  Separately, @IFPR has goals
+beyond CSP: writing reviews offers benefits to the reviewer as much as
+the reviewee, and often the learning goals that inspire @IFPR (and
+peer-review in general) are more focused on the reviewer than the
+reviewee.  Nonetheless, many of the theoretical underpinnings of CSPs
+also apply to @IFPR, and thus affect the ideas in this report.
+
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 @section{Student Learning Objectives from @IFPR}
@@ -197,14 +213,30 @@ The in-flow context has additional pedagogic motivations:
 @item{Re-examining plagiarism issues by moving the problem}
 ]
 
-The rest of this section describes frameworks and ideas around these
-pedagogic goals.  Some of these issues leave significant open
-questions in the design of in-flow peer review experiences; we discuss
-those issues more extensively later in the report.
+@IFPR also offers various benefits to instructors.  Reading reviews
+provides a window into students' meta-cognitive development around the
+assignment content: a student can only comment on issues that she
+understands to be important.  @IFPR provides an opportunity to ask
+students to engage with course material from an additional angle,
+which increases students' contact with a topic and forces more active
+reflection.  Selecting artifacts worthy of this additional time can
+help instructors identify more cognitively-challenging portions of
+assignments.
+
+@IFPR satisfies different learning goals than live code review, which
+is part of many software-development courses.  Live code review
+focuses on code, whereas reading reviews gets better at students'
+metacognitive development.  IFPR is less intimidating than code
+review, as a student is not called upon to defend his own work.
+
+Also helps emphasis on writing as important in technical contexts.
+
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 @section{Examples of @IFPR}
+
+INSERT Github URL
 
 INSERT SUMMARY TABLE
 
@@ -222,12 +254,22 @@ studies.  The full details appear in @secref["s:case-studies"]).
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-@section{Challenges and Issues}
+@section{Parameters and Issues}
 
 The working group identified a series of parameters, issues, and
 logistical questions that surround the idea of {@IFPR}.  
 
 @subsection{What Artifacts Should be Reviewed?}
+
+The group identified four broad choices in the artifacts to be
+reviewed:
+
+@itemlist[
+@item{Multiple iterations of the same specific deliverable (like a paper)}
+@item{Multiple iterations of an evolving deliverable (like prototypes of a project)}
+@item{Separate deliverables that build on each other (subset of functions that build on each other)}
+@item{Incremental views of the same deliverable (datatypes, tests, code)}
+]
 
 @subsection{How to Conduct Reviews}
 
@@ -242,7 +284,27 @@ assignment, assigned by instructor, etc.  Related work:
 
 @subsubsection{Designing Reviewing Rubrics}
 
+@fill{summary of gdoc}
+
 @subsubsection{Designing Feedback Forms}
+
+@fill{summary of gdoc}
+
+@subsubsection{Anonymity}
+
+@fill{summary of gdoc}
+
+@subsubsection{Timing Reviewing}
+
+@fill{summary of gdoc}
+
+@subsubsection{The Role of Experts}
+
+@fill{summary of gdoc}
+
+@subsubsection{Does it make sense for non-majors?}
+
+@fill{summary of gdoc}
 
 @subsection{Grading Reviews}
 
@@ -268,9 +330,15 @@ something important).
 
 @subsubsection{Plagiarism}
 
+@fill{summary of gdoc}
+
 @subsubsection{Avoiding Gaming the Assignment}
 
+@fill{summary of gdoc}
+
 @subsection{Mitigating the Costs}
+
+@fill{summary of gdoc}
 
 @subsection{Helping Students Benefit from the Process}
 
@@ -279,6 +347,8 @@ something important).
 @item{Motivating students}
 @item{Interaction between reviewing and developing student confidence}
 ]
+
+@fill{summary of gdoc}
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -576,6 +646,8 @@ size of review code unit, size of review team etc:
 
 A recent update on professional code review (ICSE 2013):
 @url{http://dl.acm.org/citation.cfm?id=2486882}
+
+The SmartBear study, including the summary blog post.  
 
 @subsection{Existing Uses of In-flow Peer Review}
 
