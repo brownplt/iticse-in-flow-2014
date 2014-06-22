@@ -284,15 +284,15 @@ assignment, assigned by instructor, etc.  Related work:
 
 @subsubsection{Designing Reviewing Rubrics}
 
-@fill{summary of gdoc}
-
 @subsubsection{Designing Feedback Forms}
 
-@fill{summary of gdoc}
+@md-section["sections/rubrics.md"]
+
+@md-section["sections/feedback.md"]
 
 @subsubsection{Anonymity}
 
-@fill{summary of gdoc}
+@md-section["sections/anonymity.md"]
 
 @subsubsection{Timing Reviewing}
 
@@ -300,11 +300,19 @@ assignment, assigned by instructor, etc.  Related work:
 
 @subsubsection{The Role of Experts}
 
-@fill{summary of gdoc}
+@md-section["sections/expert-roles.md"]
 
 @subsubsection{Does it make sense for non-majors?}
 
-@fill{summary of gdoc}
+@md-section["sections/non-majors.md"]
+
+@subsubsection{Pair Programming and IFPR}
+
+@md-section["sections/pair-programming.md"]
+
+@subsubsection{Assigning Reviewers}
+
+@md-section["sections/assigning-reviewers.md"]
 
 @subsection{Grading Reviews}
 
@@ -328,17 +336,13 @@ something important).
 
 @subsection{Undesirable Student Behavior}
 
-@subsubsection{Plagiarism}
+@subsubsection{Plagiarism and Gaming the Assignment}
 
-@fill{summary of gdoc}
-
-@subsubsection{Avoiding Gaming the Assignment}
-
-@fill{summary of gdoc}
+@md-section["sections/plagiarism.md"]
 
 @subsection{Mitigating the Costs}
 
-@fill{summary of gdoc}
+@md-section["sections/mitigating-costs.md"]
 
 @subsection{Helping Students Benefit from the Process}
 
@@ -349,6 +353,10 @@ something important).
 ]
 
 @fill{summary of gdoc}
+
+@subsection{Evaluation and Analytics for IFPR}
+
+@md-section["sections/evaluation-analytics.md"]
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 

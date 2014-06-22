@@ -1,10 +1,14 @@
 #lang racket/base
 
-(require scribble/manual)
+(require scribble/manual markdown markdown/scrib)
 
 (provide relworkfill
 	 fill
-   ref itemize enumerate)
+   ref itemize enumerate
+   md-section)
+
+(define (md-section name)
+  (xexprs->scribble-pres (with-input-from-file name read-markdown)))
 
 (define (relworkfill . contents)
   (bold (cons "RELWORK-TODO: " contents)))
