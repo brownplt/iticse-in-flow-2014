@@ -18,7 +18,7 @@ As a broader educational goal, ethics and professionalism are meant to be covere
 
 Yet it must be acknowledged that at the introductory level students suffer from both confidence and maturity problems.  Nonetheless there are strategies that may help work towards a more open and professional approach to peer review.  Different courses may have different levels of visibility. The first time at an institution, it may be wise to “play it safe” with peer review (and conduct reviews anonymously).  But by junior/senior level, students are training to be professionals, and this is what professionals are expected to do.  
 
-Anonymity may have cultural connections at several levels: for students who come from a consensus-based national culture [cf. Hofstede, http://scholar.google.co.nz.ezproxy.aut.ac.nz/citations?user=Q2V0P6oAAAAJ&hl=en&oi=sra Leung, K., Bhagat, R., Buchan, N., Erez, M. and Gibson, C. Culture and international business: recent advances and their implications for future research. Journal of International Business Studies, 36. 357-378. etc.], where preserving harmony is a strong value and overt criticism can be considered offensive or cause a loss of face, a greater level of anonymity may be required at first for students to feel more at ease in speaking their minds.  
+Anonymity may have cultural connections at several levels: for students who come from a consensus-based national culture [cf. Hofstede, http://scholar.google.co.nz.ezproxy.aut.ac.nz/citations?user=Q2V0P6oAAAAJ&hl=en&oi=sra Leung et al., etc.], where preserving harmony is a strong value and overt criticism can be considered offensive or cause a loss of face, a greater level of anonymity may be required at first for students to feel more at ease in speaking their minds.  
 
 A converse cultural aspect may be in operation with non-anonymous contributions: if students know the other person, they may be less or more critical a priori, based upon judgements of the peer’s relative status or perceived expertise, rather than reviewing the material in its own right.
 
@@ -32,16 +32,5 @@ The group debated whether giving students choice in anonymization was a good or 
 
 It seemed inappropriate to adopt anonymity as the default model, since it could unwittingly set up the expectation in students that IFPR is dangerous.  It is recommended that the approach and the underlying goals and expectations be consciously introduced from the outset.  This could be talked about as explicitly and strongly as the discussions about plagiarism, with potential penalties for abuse of the system through lack of respect for one another. If deemed necessary, an initial anonymous phase could be contemplated from which instructors should migrate relatively quickly to an open peer review model, once students were comfortable with the process.
 
-Ref 
-@article{leung2005culture,
-  title={Culture and international business: recent advances and their implications for future research},
-  author={Leung, Kwok and Bhagat, Rabi S and Buchan, Nancy R and Erez, Miriam and Gibson, Cristina B},
-  journal={Journal of International Business Studies},
-  volume={36},
-  number={4},
-  pages={357--378},
-  year={2005},
-  publisher={Nature Publishing Group}
-}
 
 
