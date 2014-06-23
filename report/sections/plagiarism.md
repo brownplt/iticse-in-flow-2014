@@ -22,8 +22,6 @@ collaborative learning model, that’s not so much of a concern --- the main
 outcome is increased understanding.
 
 
-GRADE-BASED MITIGATION 
-
 
 The first way to mitigate this problem is using grading schemes,
 for example,  by setting up the grading so that there is a lower weight on 
@@ -42,8 +40,6 @@ The selected weighting will likely reflect social norms about individual vs coll
 and ultimately assessment can conflate/contradict the goals of IFPR.
 
 
-
-OTHER MITIGATIONS
 
 Providing an oral examination is one (time-consuming) way of solving the problem.
 This could consist of in-person code reviews which ask the student to explain their
