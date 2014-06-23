@@ -130,7 +130,7 @@ In-flow peer-review is an example of a Contributing Student Pedagogy
 (CSP), a pedagogy in which students (a) contribute to the learning of
 others and (b) value the contributions of other students.  A 2008
 ITiCSE working group report describes various facets of such
-pedagogies @~cite["cspwg-08"].  @IFPR targets the second criterion
+pedagogies@~cite["cspwg-08"].  @IFPR targets the second criterion
 (valuing the contributions of other students) more than traditional,
 post-submission peer review.  Various parameters in implementations of
 @IFPR affect the extent to which students contribute to the learning
@@ -156,17 +156,17 @@ focus on the following points:
 ]
 
 In addition, Section [ADD SECREF] provides a summary guide to how to
-get started with {@IFPR}, accounting for different course contexts.
+get started with @IFPR, accounting for different course contexts.
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 @section{Student Learning Objectives from @IFPR}
 
-In-flow peer review arises from a desire to help students learn review
-skills common to software-development practice, while simultaneously
-drawing on reviews to improve their understanding and performance on
-ongoing assignments.  The process of in-flow peer review asks students
-(implicitly or explicitly) to perform several tasks, including:
+In-flow peer review arises from a desire to help students learn
+several important skills, while leveraging ongoing assignments to
+motivate students to engage in reviewing.  The process of @IFPR asks
+students (implicitly or explicitly) to perform several tasks,
+including:
 
 @itemlist[
 @item{Assess whether another's work satisfies problem requirements}
@@ -254,25 +254,31 @@ Also helps emphasis on writing as important in technical contexts.
 
 @section{Examples of @IFPR}
 
-INSERT Github URL
-
-INSERT SUMMARY TABLE
-
-[Table needs column for what has been used versus just proposed.]
-
 @figure*{"tab:case-studies"
-         "summary of case studies"
+         @para{Summary of case studies}
  @tabular[#:style 'boxed
           #:sep @hspace[3]
    (list 
-     (list "Course" "Course Level" "Asgn" "Stages" "Rubrics" "Tried"))
+     (list @bold{Course} @bold{Course Level} @bold{Assignment}
+           @bold{Peer-Review Structure} @bold{Rubrics} @bold{Tried?})
+     (list "Software Security" 
+	   "Upper-level Undergrad/MS" 
+	   "Find ways to attack a web-based application"
+	   @(compound-paragraph (make-style #f '()) (list @(para "Students peer-review each others' strategies to attack the
+application in black box fashion.  After reviewing, students attack
+the application in white box fashion")))
+	   "[FILL]"
+	   "no")
+     )
 ]}
 
 The case studies from working group members covered a variety of
 student levels and course types.  More interestingly, they varied
 widely in the kinds of artifacts and processes that they suggested for
-{@IFPR}.  Table @fill{ref} summarizes the key parameters of the case
+{@IFPR}.  Table @fill{ref Fig 1} summarizes the key parameters of the case
 studies.  The full details appear in @secref["s:case-studies"]).
+
+INSERT Github URL
 
 @fill{Explain @IFPR applied to the case studies}
 
