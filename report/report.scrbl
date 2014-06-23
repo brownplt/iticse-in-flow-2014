@@ -21,7 +21,16 @@
 @(authorinfo "Ville Tirronen" "University of Jyväskylä" "ville.e.t.tirronen@jyu.fi")
 @(authorinfo "Tobias Wrigstad" "Uppsala Unviersitet" "tobias.wrigstad@it.uu.se")
 
-@abstract{FILL LATER}
+@abstract{Peer-review is a valuable tool that helps both the reviewee,
+who receives feedback about their work, and the reviewer, who sees
+different potential solutions and improves their ability to critique
+work. @emph{In-flow} peer-review (IFPR) is peer-review done while an
+assignment is in progress. Peer-review done during this time is likely
+to result in greater motivation for both reviewer and
+reviewee. IFPR induces many positive educational prospects, but
+also raises concerns. This working-group report summarizes @IFPR,
+and discusses several concrete concerns that are likely to arise when
+deploying IFPR.}
 
 @section{In-Flow Peer-Reviewing}
 
