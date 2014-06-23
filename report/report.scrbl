@@ -1,6 +1,8 @@
 #lang scribble/sigplan @noqcourier
 
-@(require "bib.rkt"
+@(require scribble/core
+          scriblib/figure
+	  "bib.rkt"
           "helpers.rkt")
 
 @;;;; macros for document content
@@ -140,6 +142,22 @@ peer-review in general) are more focused on the reviewer than the
 reviewee.  Nonetheless, many of the theoretical underpinnings of CSPs
 also apply to @IFPR, and thus affect the ideas in this report.
 
+@subsection{Discussion Highlights}
+
+Those interested in the highlights of our discussions may wish to
+focus on the following points:
+
+@itemlist[
+@item{The Learning Goals of {@IFPR}: [FILL] [ADD SECREF]}
+@item{The role of anonymity: [FILL] [ADD SECREF]}
+@item{The interactions between grading and motivation for reviewing:
+[FILL] [ADD SECREF]} 
+@item{... WHAT ELSE??? ...}
+]
+
+In addition, Section [ADD SECREF] provides a summary guide to how to
+get started with {@IFPR}, accounting for different course contexts.
+
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 @section{Student Learning Objectives from @IFPR}
@@ -242,6 +260,14 @@ INSERT SUMMARY TABLE
 
 [Table needs column for what has been used versus just proposed.]
 
+@figure*{"tab:case-studies"
+         "summary of case studies"
+ @tabular[#:style 'boxed
+          #:sep @hspace[3]
+   (list 
+     (list "Course" "Course Level" "Asgn" "Stages" "Rubrics" "Tried"))
+]}
+
 The case studies from working group members covered a variety of
 student levels and course types.  More interestingly, they varied
 widely in the kinds of artifacts and processes that they suggested for
@@ -325,6 +351,23 @@ Should reviews affect assignment grades?
 
 Proposal: way to improve giving of feedback is to tie your grade to
 that of the person you review
+
+The group frequently considered arguments from Kohn's "Punished by
+Rewards" [CITE], which argues that praise and rewards (such as grades)
+are ineffective and detrimental motivators.  Reasons for this include 1) rewards punish
+2) rewards rupture relationships
+3) rewards ignore reasons
+4) rewards discourage risk-taking
+5) rewards reduce intrinsic motivation.
+
+Proposed solutions generally have three components: 
+1) collaboration - enable the exchange of talent and resources, foster a sense of belonging
+2) content - let persons do something that is "meaningful" to them
+3) choice - don't try to "manipulate" the person
+
+In the context of @IFPR, peer reviews can either serve as "rewards"
+(summative assessment in the form of scores/grades) or as constructive
+feedback (formative assessment). [FILL]
 
 @subsubsection{Relating auto-grading and in-flow peer review}
 
@@ -442,12 +485,6 @@ the opportunity to assess the work of other students in the form of ratings.
 @fill{Any studies where they ask the reflective questions about the other
 students?}
 
-@subsection{Engaging Students in Learning}
-
-@relworkfill{Summarize work on Contributing Student Pedagogy}
-
-See ITiCSE WG 2008
-
 @subsection{Learning By Example}
 
 @relworkfill{Summarize related work on learning by example}
@@ -517,18 +554,30 @@ feedback than with post-submission feedback.  Whether reviews
 themselves need to be graded is a separate question, which we discuss
 in this report.
 
-Matthias Hauswirth notes:
 
-I just started reading "Punished by Rewards" by Alfie Kohn. Really
-interesting deconstruction of "pop behaviorism", targeting three
-contexts: workplace, parenting, and education. [...] peer reviews can
-either serve as "rewards" (summative assessment in the form of
-scores/grades) or as constructive feedback (formative assessment). It
-might make sense to discuss the latter at the workshop. 
+@subsection{Peer Instruction}
 
-@subsection{Peer Assessment}
+Peer Instruction (PI), which is a specific form of student centered
+pedagogy [Ville 3], has been shown to be a promising way for improve student
+performance @~cite["crouch-mazur-peer-instr-10-years"] and engagement
+@~cite["simon-peer-instruction-icer13"] both in introductory courses
+@~cite["crouch-mazur-peer-instr-10-years"] and upper-division courses
+@~cite["lee-peer-instr-upper-level-13"]. Peer instruction, as defined by Crouch
+et. al. @~cite["crouch-mazur-peer-instr-10-years"], focuses on
+engaging students in activities that require them to apply the core
+concepts under study and to explain these concepts to their
+peers. Concretely, a class taught using PI principles can consist of
+short presentations, each of which focuses on a particular core
+concept and is tested by presenting students a conceptual question,
+which the students first solve individually and then discuss in
+groups. The PI pedagogies link with the concepts of blended learning
+and flipped classroom [Ville 4] in that PI requires students to study
+preparatory material before attending the class.
 
-Work by Mazur and Simon/Cutts gets discussed here
+Related to our undertaking, the most interesting component of PI is
+the student peer discussions that are undertaken after presentation of
+each concept. This, however, is not peer review.
+
 
 @subsection{Helping Students Be Successful Reviewers}
 
@@ -559,6 +608,18 @@ Comparing students to experts in writing reviews: @url{https://www.sciencedirect
 @item{What kind of feedback is useful?}
 @item{Do experts need to provide the feedback?}
 ]
+
+Cho and MacArthur compare three approaches to giving feedback on
+written assignments in a psychology course: feedback from a single
+peer, feedback from a single topic expert, and feedback from multiple
+peers@~cite["cho-peer-expert-reviewing10"]. The results indicate that
+feedback from multiple peers results in better quality revisions than
+feedback from an expert, with feedback from a single peer being the
+worse.  The hypothesised reason for this was that peers gave feedback
+that was phrased in terms that students could more easily comprehend.
+It certainly would be interesting to see whether the same results
+applied to programming assignments.
+
 
 Metareviewing to determine quality of reviews by Gehringer/Expertiza:
 @url{http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.416.228},
@@ -618,12 +679,25 @@ to chunk, but chunking isn't necessarily needed on small programs.)
 @item{Peer mentoring (across different class groups, but still the goal is socializing)}
 ]
 
+Barker et al. describe the outcome of running an IT course more like a
+fine arts course than a traditional engineering course@~cite["barker-fine-arts-approach-cs05"]. This included
+projects that were more meaningful, public critique of results, and
+routing collaboration.  This approach created a classroom culture
+where learning is a social and community process, rather than
+individualised, and the result was a greater retention of female
+students than the tranditional engineering teaching approach.
+
+The technique most relevant for in-flow peer review, though not
+completely the same, is the approach to knowledge sharing during lab
+work. Students actively sort help from any student, for example, by
+yelling questions out, resulting in a fluid exchange of ideas and
+techniques. Even though the projects considered in these labs were run
+in an open, collaborative setting, cheating was avoiding by using
+individualised assignments.
+
 To read:
 
 Specifically about communication and the social climate in CS: @url{http://dl.acm.org/citation.cfm?id=1060073}
-
-By the same authors, thoughts on using collaboration/peer learning to mitigate
-defensive social climates:  @url{http://dl.acm.org/citation.cfm?id=1047482}
 
 Peer mentoring: A Mentor Program in CS1.  @url{http://dl.acm.org/citation.cfm?id=544420}
 
@@ -709,4 +783,7 @@ improve their projects in response to their peers' feedback.
 
 @section[#:tag "s:case-studies"]{Appendix --- Case Studies}
 
+[Have pulled in one for now, to see how our default formatting works
+-- need to fix this.]
 
+@md-section["../in-flow-assignments/fisler/asgn-1.md"]
