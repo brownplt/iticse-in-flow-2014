@@ -12,18 +12,20 @@
 
 @title{Methodology and Technology for In-Flow Peer Review}
 
-@(authorinfo "Dave Clarke" "" "")
-@(authorinfo "Tony Clear" "" "")
+@(authorinfo "Dave Clarke" "Uppsala Universitet" "dave.clarke@it.uu.se")
+@(authorinfo "Tony Clear" "Auckland University of Technology" "tony.clear@aut.ac.nz")
 @(authorinfo "Kathi Fisler" "WPI" "kfisler@cs.wpi.edu")
-@(authorinfo "Matthias Hauswirth" "" "")
+@(authorinfo "Matthias Hauswirth" "UniversitÃ  della Svizzera Italiana" "Matthias.Hauswirth@usi.ch")
 @(authorinfo "Shriram Krishnamurthi" "Brown University" "sk@cs.brown.edu")
 @(authorinfo "Joe Gibbs Politz" "Brown University" "joe@cs.brown.edu")
-@(authorinfo "Ville Tirronen" "" "")
-@(authorinfo "Tobias Wrigstad" "" "")
+@(authorinfo "Ville Tirronen" "University of JyvÃ¤skylÃ¤" "ville.e.t.tirronen@jyu.fi")
+@(authorinfo "Tobias Wrigstad" "Uppsala Unviersitet" "tobias.wrigstad@it.uu.se")
 
 @abstract{FILL LATER}
 
 @section{In-Flow Peer-Reviewing}
+
+For instance, if I want a @(string-normalize-nfc "Ã ")?
 
 Peer-review has been employed for various reasons in Computer Science
 courses@~cite["topping-peer-review98"]. It is a mechanism for having
@@ -457,11 +459,11 @@ Davis and Linn @~cite["davis-reflection-prompts"] use explicit self-review
 prompts at different stages of assignments given to eighth graders.  For
 example, in one assignment, students had to perform a repeated task (designing
 clothing and environments to help cold-blooded aliens survive).  They compared
-@;responses to direct prompts submitted along with a design, like â\200\234Our design
-@;will work well because...â¯ ¯½, to prompts designed to encourage reflection after
-@;the fact---¡â¯ ¯¼Our design could be better if we...¡â¯ ¯½--- and plan-ahead prompts
-@;designed to cause reflection during the assignment---¡â¯ ¯¼In thinking about doing
-@;our design, we need to think about...¡â¯ ¯½  Their sample size was small, and they
+@;responses to direct prompts submitted along with a design, like ï¿½ï¿½\200\234Our design
+@;will work well because...ï¿½â¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, to prompts designed to encourage reflection after
+@;the fact---ï¿½ï¿½ï¿½â¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Our design could be better if we...ï¿½ï¿½ï¿½â¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½--- and plan-ahead prompts
+@;designed to cause reflection during the assignment---ï¿½ï¿½ï¿½â¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½In thinking about doing
+@;our design, we need to think about...ï¿½ï¿½ï¿½â¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  Their sample size was small, and they
 responses to direct prompts submitted along with a design, like "Our design
 will work well because...", to prompts designed to encourage reflection after
 the fact---"Our design could be better if we..."--- and plan-ahead prompts
