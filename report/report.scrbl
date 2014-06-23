@@ -1,12 +1,72 @@
 #lang scribble/sigplan @noqcourier
 
+@;;; TODOs ;;;;;;
+@; Joe: Figure out why markdown files lose start-of-para indentation
+@; Shriram: Summary section
+@; Shriram: pull in case studies as subsections of appendix
+@; Joe: fill in remaining related work
+@; Kathi: pull in remaining gdoc content (that wasn't assigned out)
+@; Kathi: finish populating table
+@; someone: include markdown cites in dummy section so show up in bib
+
 @(require scribble/core
           scriblib/figure
+          scribble/decode
+          scribble/html-properties
+          scribble/latex-properties
 	  "bib.rkt"
           "helpers.rkt")
 
 @;;;; macros for document content
 @(define IFPR "IFPR")
+
+@;;;; table generation 
+
+@(define (add-width-wrappers col-widths rows)
+   (for/list ([cols (in-list rows)])
+     (for/list ([col-width (in-list col-widths)]
+                [col (in-list cols)]
+                [pos (in-naturals)])
+       (add-width-wrapper col-width col (zero? pos)))))
+
+@(define (add-width-wrapper w col first?)
+   (define macro-name (format "In~aColumn~a" w (if first? "F" "")))
+   ;; A TeX macro name cannot contain numbers, so replace digits with letters:
+   (define name (regexp-replace* #rx"[0-9]"
+                                 macro-name
+                                 (lambda (s) (string
+                                              (list-ref (string->list "zotTfFsSen")
+                                                        (string->number s))))))
+   ;; CSS to set the width for HTML output:
+   (define css-bytes (string->bytes/utf-8 
+                      (format ".~a { width: ~s; padding: 0ex; margin: 0ex; ~a }"
+                              name
+                              w
+                              ;; Except for first column, add margin and border
+                              ;; to the left edge:
+                              (if first?
+                                  "" 
+                                  (string-append "border-left: 1px solid black;"
+                                                 "margin-left: 1ex;"
+                                                 "padding-left: 1ex;")))))
+   ;; Macro to set the width for LaTeX output:
+   (define tex-bytes (string->bytes/utf-8 
+                      (format "\\newcommand{\\~a}[1]{~a\\parbox[t]{~a}{#1}}"
+                              name
+                              ;; Except for first column, add spacing and vline:
+                              (if first? "" "~ \\vline ~")
+                              w)))
+   ;; Produce a paragraph for the table cell; we rely on the fact that
+   ;; only one copy of literal bytes for `css-addition` or `tex-addition` will
+   ;; be included in the output:
+   (paragraph (style name ; used for CSS
+                     (list (box-mode* name) ; avoids a `minipage` wrapper in LaTeX
+                           (css-addition css-bytes) ; the generated CSS
+                           'command ; use generated TeX as command (not environment)
+                           (tex-addition tex-bytes))) ; generated TeX
+                     ;; Parse content as a paragraph:
+                     (decode-content col)))
+
 
 @;;;; DOCUMENT STARTS HERE ;;;;;;;;;;;;;;
 
@@ -187,14 +247,6 @@ including:
 @item{Decide whether to adopt or ignore particular feedback}
 ]
 
-In the context of working on these tasks, peer-review has other
-potential benefits, including
-
-@itemlist[
-@item{Helping students gain confidence and self-efficacy in their
-work}
-]
-
 The first two tasks arise in all forms of peer-review; the rest are
 more specific to in-flow review (or other models in which students get
 to revise their work based on feedback).  The first two tasks affect
@@ -213,18 +265,22 @@ under evaluation.  For example, evaluating a program that implements a
 particular algorithm requires different techniques than evaluating a
 plan for executing a large software project. 
 
-The rest of this section presents background and related work
-pertinent to these tasks, with an emphasis on the in-flow context when
-appropriate.  Some related work is specific to particular kinds of
-artifacts, while other work would apply to any reviewed artifact.
+In the context of Bloom's taxonomy [CITE], these tasks move students
+beyond "remember", "understand", and "apply" into "evaluate".  Put
+differently, they engage students in reflection and meta-cognitive
+thinking about their own work.  They also require students to
+articulate opinions on technical work.
+
+@IFPR has social benefits to individual students as well.  It should
+provide means for students to gain confidence and self-efficacy in
+their work, and in discussing the works of others.
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 @section{Instructor Goals from @IFPR}
 
-Peer review in general has several pedagogic motivations beyond the
-student-oriented learning objectives of the previous section.  These
-include: 
+Peer review in general has several pedagogic motivations beyond
+student-oriented learning objectives.  These include:
 
 @itemlist[
 @item{Engaging students more in their own learning}
@@ -234,6 +290,10 @@ social activity}
 @item{Providing human feedback more scalably than with only expert
 assessment}
 ]
+
+Engaging students from different cultures, particularly non-western
+students new to western classrooms, is another pedagogic outcome that
+can arise from {@IFPR}.
 
 The in-flow context has additional pedagogic motivations:
 
@@ -258,7 +318,21 @@ focuses on code, whereas reading reviews gets better at students'
 metacognitive development.  IFPR is less intimidating than code
 review, as a student is not called upon to defend his own work.
 
-Also helps emphasis on writing as important in technical contexts.
+Also helps emphasize on writing as important in technical contexts.
+
+@subsection{Interaction with Grading Mechanisms}
+
+IFPR may make work improve, but if grading is done on a curve, maybe
+it makes no difference, and the competitive element means students may
+be less motivated to participate.  In particular, grading on a curve
+could interact with @IFPR in three ways:
+
+@itemlist[
+@item{Demotivation --- it's not good to help others, because it can push them past you}
+@item{Unmotivating --- no reason to respond to feedback/work on reflection, because you can only do so well on the curve}
+@item{Destruction --- students can sabotage one another with bad
+feedback}
+]
 
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -267,21 +341,23 @@ Also helps emphasis on writing as important in technical contexts.
 
 @figure*{"tab:case-studies"
          @para{Summary of case studies}
- @tabular[#:style 'boxed
-          #:sep @hspace[3]
-   (list 
-     (list @bold{Course} @bold{Course Level} @bold{Assignment}
-           @bold{Peer-Review Structure} @bold{Rubrics} @bold{Tried?})
-     (list "Software Security" 
-	   "Upper-level Undergrad/MS" 
-	   "Find ways to attack a web-based application"
-	   @(compound-paragraph (make-style #f '()) (list @(para "Students peer-review each others' strategies to attack the
-application in black box fashion.  After reviewing, students attack
-the application in white box fashion")))
-	   "[FILL]"
-	   "no")
-     )
+ @tabular[
+  (add-width-wrappers
+   (list "1in" "1in" "1in" "2in" "1in" "1in") 
+   (list
+     (list @list{@bold{Course}} @list{@bold{Course Level}} @list{@bold{Assignment}}
+           @list{@bold{Peer-Review Structure}} @list{@bold{Rubrics}} @list{@bold{Tried?}})
+     (list @list{Software Security}
+	   @list{Upper-level Undergrad/MS}
+	   @list{Find ways to attack a web-based application}
+	   @list{Students peer-review each others' strategies to attack the
+                 application in black box fashion.  After reviewing, students attack
+		 the application in white box fashion}
+	   @list{[FILL]}
+	   @list{no})
+))
 ]}
+
 
 The case studies from working group members covered a variety of
 student levels and course types.  More interestingly, they varied
@@ -327,9 +403,9 @@ assignment, assigned by instructor, etc.  Related work:
 
 @subsubsection{Designing Reviewing Rubrics}
 
-@subsubsection{Designing Feedback Forms}
-
 @md-section["sections/rubrics.md"]
+
+@subsubsection{Designing Feedback Forms}
 
 @md-section["sections/feedback.md"]
 
@@ -339,7 +415,29 @@ assignment, assigned by instructor, etc.  Related work:
 
 @subsubsection{Timing Reviewing}
 
-@fill{summary of gdoc}
+Reviewing can happen synchronously or asynchronously across students.
+Synchronous reviewing occurs when all students submit work for review
+(and reviewing commences) at the same time; this model enables careful
+assignment of reviewers to work to review.  Asynchronous reviewing
+occurs when students submit work for review when it is ready, and
+different students are in different stages of review at the same
+time; this model gives students more control over their work time.
+
+The group discussed the relative merits of synchronous and
+asynchronous review.  Key arguments included:
+
+@itemlist[
+@item{The students who submit last might get the least feedback--and they may
+be the ones who need it most; this might be an argument for
+intermediate deadlines.}
+
+@item{The later the submission the less it's benefiting from in-flow}
+
+@item{Disorganized students who suffer from their disorganization
+might blame the review process for failure to improve their work}
+
+@item{Asynchronicity hinders collaboration}
+]
 
 @subsubsection{The Role of Experts}
 
