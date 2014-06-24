@@ -498,12 +498,12 @@ The source files are also available at [INSERT Github URL].
 @section{Parameters and Issues}
 
 The working group identified a series of parameters, issues, and
-logistical questions that surround the idea of {@IFPR}.  
+logistical questions that surround the idea of @|IFPR|.  
 
 @subsection{What Artifacts Should be Reviewed?}
 
 The group identified four broad choices in the artifacts to be
-reviewed:
+reviewed: 
 
 @itemlist[
 @item{Multiple iterations of the same specific deliverable (like a paper)}
@@ -512,18 +512,9 @@ reviewed:
 @item{Incremental views of the same deliverable (datatypes, tests, code)}
 ]
 
-@subsection{How to Conduct Reviews}
+[INSERT discussion of how much to structure assignments]
 
-@itemlist[
-@item{How much to structure assignments?}
-@item{staged artifacts vs iterations on same artifact}
-
-@item{How to assign reviewers: random, let students pick, same reviewer for whole
-assignment, assigned by instructor, etc.  Related work:
-@url{dl.acm.org/citation.cfm?id=2215100&CFID=353776286&CFTOKEN=25368603}
-Note that all of section 9 (Review Assignment) is currently about this topic.}
-
-]
+[INSERT more discussion of topic]
 
 @md-section["sections/rubrics.md"]
 
@@ -590,6 +581,9 @@ feedback}
 @; @subsection{Assigning Reviewers}
 
 @md-section["sections/assigning-reviewers.md"]
+
+Related work:
+@url{dl.acm.org/citation.cfm?id=2215100&CFID=353776286&CFTOKEN=25368603}
 
 @subsection{Grading Reviews}
 
