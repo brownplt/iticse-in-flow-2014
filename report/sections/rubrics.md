@@ -58,7 +58,7 @@ Rubrics for alibi
     will shift the blame from the student that found the bugs
     to the instructor that asked the questions. 
 
-Rubrics for conduts
+Rubrics for conduct
 :   Focusing on the strengths of the artefact under review can 
     also help unstuck students that fear critiquing works of 
     others, but also may be used as a tool to foster professional
