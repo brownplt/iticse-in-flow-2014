@@ -10,6 +10,7 @@
          scribble/html-properties
          scribble/manual
          scribble/decode
+         "bib.rkt"
          (only-in xml xexpr?))
 
 ;; Given a list of xexprs representing valid HTML, return a Scribble
@@ -66,6 +67,10 @@
       [`(sup () ,es ...) (superscript (xs->ps es))]
       [`(sub () ,es ...) (subscript (xs->ps es))]
       [`(hr ()) (apply centered (for/list ([_ 20]) 'mdash))] ;;better way?
+      [`(a ,(list-no-order `[href ,href]) "cite")
+       (~cite href)
+       #;(hyperlink #:style (core:style "anchor" (list (url-anchor name)))
+                  href (xs->ps es))]
       [`(a ,(list-no-order `[href ,href] `[name ,name]) ,es ...)
        (hyperlink #:style (core:style "anchor" (list (url-anchor name)))
                   href (xs->ps es))]
