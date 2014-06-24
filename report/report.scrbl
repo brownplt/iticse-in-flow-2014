@@ -90,7 +90,7 @@ and justify their views on the appropriateness and correctness of
 presented solutions
 
 This working group explored a particular variant of peer-review called
-@italic{in-flow peer review} @~cite["politz-ct-iticse14"].  In this
+@italic{in-flow peer review}@~cite["politz-ct-iticse14"].  In this
 model, peer review occurs while an assignment is in progress, before
 students submit their work for final grading. Performing peer-review
 in-flow has several potential benefits:
@@ -100,7 +100,7 @@ in-flow has several potential benefits:
 specification. If the work they see others doing is inconsistent with
 their understanding, one or the other (or both!) might be confused. It
 is better to discover this while the assignment is in progress than
-after it's over.}
+after it is over.}
 
 @item{Students are motivated to read feedback they get since it can
 affect the performance of their current assignment. In contrast,
@@ -761,7 +761,7 @@ reflection that @IFPR can learn from.
 
 @fill{UTF encodings broke in next paragraph}
 
-Davis and Linn @~cite["davis-reflection-prompts"] use explicit self-review
+Davis and Linn@~cite["davis-reflection-prompts"] use explicit self-review
 prompts at different stages of assignments given to eighth graders.  For
 example, in one assignment, students had to perform a repeated task (designing
 clothing and environments to help cold-blooded aliens survive).  They compared
@@ -782,7 +782,7 @@ the small sample size.
 
 Frederiksen and White have done a series of studies on @emph{reflective
 assessment} and @emph{reflective collaboration} in middle school science
-classes @~cite["white-reflective-affordances"
+classes@~cite["white-reflective-affordances"
 "frederiksen-reflective-collaboration"].  In an online environment, students
 work on mock experiments using a scientific-method like flow for a project:
 they start with an initial inquiry, form hypotheses, analyze mock data, and
@@ -800,7 +800,7 @@ students?}
 In in-flow peer review, students have the opportunity to take what they learn
 from examples of others' work and apply it to their own.
 
-Kulkarni et al @~cite["klemmer-examples"] discuss changes in creative output
+Kulkarni et al@~cite["klemmer-examples"] discuss changes in creative output
 between subjects who varying amounts of examples, and diversity in examples,
 prior to creating their own artwork.  Subjects seeing more diverse examples
 created artwork with more unique features than subjects seeing a less diverse
@@ -867,11 +867,11 @@ in this report.
 
 Peer Instruction (PI), which is a specific form of student centered
 pedagogy [Ville 3], has been shown to be a promising way for improve student
-performance @~cite["crouch-mazur-peer-instr-10-years"] and engagement
+performance@~cite["crouch-mazur-peer-instr-10-years"] and engagement
 @~cite["simon-peer-instruction-icer13"] both in introductory courses
 @~cite["crouch-mazur-peer-instr-10-years"] and upper-division courses
 @~cite["lee-peer-instr-upper-level-13"]. Peer instruction, as defined by Crouch
-et. al. @~cite["crouch-mazur-peer-instr-10-years"], focuses on
+et. al.@~cite["crouch-mazur-peer-instr-10-years"], focuses on
 engaging students in activities that require them to apply the core
 concepts under study and to explain these concepts to their
 peers. Concretely, a class taught using PI principles can consist of
@@ -1052,7 +1052,7 @@ Sondergaard's course review one another's work between stages
 only in the form of surveys after the assignment, but shows generally positive
 attitudes from students indicating that they felt the review had helped.
 
-Expertiza @~cite{gehringer-expertiza-approach} is discussed in @ref{relwork
+Expertiza@~cite{gehringer-expertiza-approach} is discussed in @ref{relwork
 for review-of-review}, and is used for large, multi-stage collaborative
 projects in which students build and review smaller components that build up
 the whole.  This includes assessment and review of the reviews themselves as
@@ -1073,12 +1073,12 @@ review.  These uses don't necessarily stage assignments into reviewable
 pieces, instead performing review on entire intermediate artifacts.  For
 example, Clark has students exercise the functionality of one anothers'
 projects, and lets groups improve their work based on the feedback their
-classmates give them @~cite["clark-peer-testing-se-04"].  Similarly, Wang, et
+classmates give them@~cite["clark-peer-testing-se-04"].  Similarly, Wang, et
 al., Zeller, and the Aropa system study assignment structures that allow
 students to update revisions of entire submissions that were reviewed by peers
 @~cite["wang-pcr" "zeller-read-review-00" "hamer-aropa"].  Other studies have
 students write test cases (or manually test) one another's work as part of a
-review @~cite["reily-aggregate-reviews09" "smith-peer-testing-icer12"].  These
+review@~cite["reily-aggregate-reviews09" "smith-peer-testing-icer12"].  These
 tests are most often on entire systems, rather than on pieces of a project
 that build up along with reviews.  Students do, however, have the chance to
 improve their projects in response to their peers' feedback.
