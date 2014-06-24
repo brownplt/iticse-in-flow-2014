@@ -347,21 +347,6 @@ review, as a student is not called upon to defend his own work.
 
 Also helps emphasize on writing as important in technical contexts.
 
-@subsection{Interaction with Grading Mechanisms}
-
-IFPR may make work improve, but if grading is done on a curve, maybe
-it makes no difference, and the competitive element means students may
-be less motivated to participate.  In particular, grading on a curve
-could interact with @IFPR in three ways:
-
-@itemlist[
-@item{Demotivation --- it's not good to help others, because it can push them past you}
-@item{Unmotivating --- no reason to respond to feedback/work on reflection, because you can only do so well on the curve}
-@item{Destruction --- students can sabotage one another with bad
-feedback}
-]
-
-
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 @section{Examples of @IFPR}
@@ -589,6 +574,20 @@ might blame the review process for failure to improve their work}
 @subsubsection{The Role of Experts}
 
 @md-section["sections/expert-roles.md"]
+
+@subsubsection{Interaction with Grading Mechanisms}
+
+IFPR may make work improve, but if grading is done on a curve, maybe
+it makes no difference, and the competitive element means students may
+be less motivated to participate.  In particular, grading on a curve
+could interact with @IFPR in three ways:
+
+@itemlist[
+@item{Demotivation --- it's not good to help others, because it can push them past you}
+@item{Unmotivating --- no reason to respond to feedback/work on reflection, because you can only do so well on the curve}
+@item{Destruction --- students can sabotage one another with bad
+feedback}
+]
 
 @subsubsection{Does it make sense for non-majors?}
 
