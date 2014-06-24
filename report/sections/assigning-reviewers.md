@@ -1,8 +1,4 @@
-(NOTE: This is raw text which has not been edited and might
- badly traumatize a native speaker. It'll be fixed when I've
- gone over my second section, -- Ville)
-
-# Review assignment
+## Assigning Reviewers
 
 Different ways of assigning reviewers can be used affect many aspects of the
 IFPR process. For example, the review assignment process can have an effect on
@@ -38,7 +34,7 @@ points in the design space of in-flow review with associated
 benefits and disadvantages that the practitioner needs to be
 aware.
 
-## Random assignment
+### Random assignment
  
 Random selections are effectively the easiest method of reviewer
 assignment, but in an in-flow setting, random selections will be
@@ -48,7 +44,7 @@ from students that also submitted early. This effect can be
 detrimental on some contexts and need to be migitated with
 intermediate deadlines that avoid biasing.
 
-## Temporal order
+### Temporal order
 
 Assigning reviewers by temporal order maximises the throughput
 of the in-flow review system. 
@@ -57,7 +53,7 @@ Note to Kathi, Joe and Shriram: you tried this with captain teach,
 and we did not discuss it much during the WG. I think you might want 
 to expand on this.
 
-## Predefined
+### Predefined
 
 Predefined review assignments and review schedule can allow the IFPR
 practitioner to have a fixed timetable. Although a predefined timetable
@@ -74,7 +70,7 @@ as drop outs can require rescheduling.
 Prescheduling is also the recommended way of supporting live review
 sessions, which could be otherwise tedious to arrange.
 
-## Stratified
+### Stratified
 
 Online stratified selection can be seen as an alternative to predefining
 reviewing schedule. The IFPR process allows the teacher to collect 
@@ -92,7 +88,7 @@ dependent (CITE Fincher&Petre) and it is not immedatedly clear
 that the task performance is an indicator to performance as
 a reviewer. (CITE Schunn)
 
-## Market model
+### Market model
 
 Assigning reviewers with a market scheme attaches external value on doing
 reviews and cost to consuming the reviews.  This model awknowledges that
@@ -123,7 +119,7 @@ considered from the perspective of the culture in which the education
 takes place and from the perspective of the educational philosophy
 employed.
 
-## Persistence as a modifier.
+### Persistence as a modifier
 
 The in-flow process often requires multiple review tasks to be completed during
 a single exercise, which gives rise to the design decision whether to make new

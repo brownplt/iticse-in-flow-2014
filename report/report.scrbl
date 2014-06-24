@@ -533,19 +533,17 @@ Note that all of section 9 (Review Assignment) is currently about this topic.}
 
 ]
 
-@subsubsection{Designing Reviewing Rubrics}
-
 @md-section["sections/rubrics.md"]
 
-@subsubsection{Designing Feedback Forms}
+@subsection{Designing Feedback Forms}
 
 @md-section["sections/feedback.md"]
 
-@subsubsection{Anonymity}
+@subsection{Anonymity}
 
 @md-section["sections/anonymity.md"]
 
-@subsubsection{Timing Reviewing}
+@subsection{Timing Reviewing}
 
 Reviewing can happen synchronously or asynchronously across students.
 Synchronous reviewing occurs when all students submit work for review
@@ -571,11 +569,11 @@ might blame the review process for failure to improve their work}
 @item{Asynchronicity hinders collaboration}
 ]
 
-@subsubsection{The Role of Experts}
+@subsection{The Role of Experts}
 
 @md-section["sections/expert-roles.md"]
 
-@subsubsection{Interaction with Grading Mechanisms}
+@subsection{Interaction with Grading Mechanisms}
 
 IFPR may make work improve, but if grading is done on a curve, maybe
 it makes no difference, and the competitive element means students may
@@ -589,15 +587,15 @@ could interact with @IFPR in three ways:
 feedback}
 ]
 
-@subsubsection{Does it make sense for non-majors?}
+@subsection{Does it make sense for non-majors?}
 
 @md-section["sections/non-majors.md"]
 
-@subsubsection{Pair Programming and IFPR}
+@subsection{Pair Programming and IFPR}
 
 @md-section["sections/pair-programming.md"]
 
-@subsubsection{Assigning Reviewers}
+@; @subsection{Assigning Reviewers}
 
 @md-section["sections/assigning-reviewers.md"]
 
@@ -658,7 +656,7 @@ something important).
 
 @fill{summary of gdoc}
 
-@subsection{Evaluation and Analytics for IFPR}
+@section{Evaluation and Analytics for IFPR}
 
 @md-section["sections/evaluation-analytics.md"]
 

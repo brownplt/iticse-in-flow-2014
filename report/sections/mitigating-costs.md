@@ -17,7 +17,7 @@ learning goals associated with IFPR, such as goals about reflection
 and and review skills, are not free in sense of student or teacher
 workload. 
 
-## Moderators of teacher workload
+### Moderators of teacher workload
 
 The working group found two primary moderators for teacher workload. The
 primary mitigator is, somewhat, naturally, to use a software system
@@ -37,7 +37,7 @@ costs can increase significantly, especially in large classes.
 However, peer review in general can help to reduce teaching assistants
 workload by moving some of their tasks to students.
 
-## Moderators of student workload
+### Moderators of student workload
 
 There are also two primary moderators for student workloads. Firstly,
 the review assignment itself will increase the cognitive load of the
@@ -56,7 +56,7 @@ complex problems easier by allowing students to share of parts
 of the their solutions during the review process (cf. zone of 
 proximal development).
 
-#TODO:
+### TODO:
 
 Add something about the set-up costs?
 
