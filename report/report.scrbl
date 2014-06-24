@@ -199,10 +199,14 @@ least relative to attaining a particular level of quality. [REF]}
 
 @section{Terminology}
 
-@figure*{"i:terminology"
-         @(para "Illustration of key terminology")
-  @(image #:scale 0.5 "images/terminology/Slide1.png")
-}
+@(figure* "i:terminology"
+          "Illustration of Key Terminology"
+          (image #:scale 0.5 "images/terminology/Slide1.png"))
+
+@;@figure*{"i:terminology"
+@;         @(para "Illustration of key terminology")
+@;  @(image #:scale 0.5 "images/terminology/Slide1.png")
+@;}
 
 Throughout this report, we use the following terminology for the
 various artifacts, roles, and aspects of @IFPR (@(figure-ref
