@@ -224,7 +224,7 @@ least relative to attaining a particular level of quality. [REF]}
 }
 
 Throughout this report, we use the following terminology for the
-various artifacts, roles, and aspects of @IFPR (@(elemref
+various artifacts, roles, and aspects of @IFPR (@(figure-ref
 "i:terminology") illustrates these graphically):
 
 @itemlist[
