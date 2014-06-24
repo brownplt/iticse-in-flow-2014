@@ -16,7 +16,7 @@ As a broader educational goal, ethics and professionalism are meant to be covere
 
 Yet it must be acknowledged that at the introductory level students suffer from both confidence and maturity problems.  Nonetheless there are strategies that may help work towards a more open and professional approach to peer review.  Different courses may have different levels of visibility. The first time at an institution, it may be wise to “play it safe” with peer review (and conduct reviews anonymously).  But by junior/senior level, students are training to be professionals, and this is what professionals are expected to do.  
 
-Anonymity may have cultural connections at several levels: for students who come from a consensus-based national culture [cf. Hofstede, http://scholar.google.co.nz.ezproxy.aut.ac.nz/citations?user=Q2V0P6oAAAAJ&hl=en&oi=sra Leung et al., etc.], where preserving harmony is a strong value and overt criticism can be considered offensive or cause a loss of face, a greater level of anonymity may be required at first for students to feel more at ease in speaking their minds.  
+Anonymity may have cultural connections at several levels: for students who come from a consensus-based national culture[cite](ghgjh:cult-org), where preserving harmony is a strong value and overt criticism can be considered offensive or cause a loss of face, a greater level of anonymity may be required at first for students to feel more at ease in speaking their minds.  
 
 A converse cultural aspect may be in operation with non-anonymous contributions: if students know the other person, they may be less or more critical a priori, based upon judgements of the peer’s relative status or perceived expertise, rather than reviewing the material in its own right.
 
