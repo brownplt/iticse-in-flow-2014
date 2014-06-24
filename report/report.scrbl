@@ -203,11 +203,6 @@ least relative to attaining a particular level of quality. [REF]}
           "Illustration of Key Terminology"
           (image #:scale 0.5 "images/terminology/Slide1.png"))
 
-@;@figure*{"i:terminology"
-@;         @(para "Illustration of key terminology")
-@;  @(image #:scale 0.5 "images/terminology/Slide1.png")
-@;}
-
 Throughout this report, we use the following terminology for the
 various artifacts, roles, and aspects of @IFPR (@(figure-ref
 "i:terminology") illustrates these graphically):
@@ -344,8 +339,8 @@ assignments.
 
 @section{Examples of @IFPR}
 
-@figure*{"fig:case-studies"
-         @para{Summary of case studies}
+@(figure* "fig:case-studies"
+          "Summary of Case Studies"
  @tabular[
   (add-width-wrappers
    (list "1in" "1in" "2in" "2in") 
@@ -480,7 +475,7 @@ assignments.
 			   identation, etc }
 	   )
 ))
-]}
+])
 
 The case studies from working group members covered a variety of
 student levels and course types.  More interestingly, they varied
