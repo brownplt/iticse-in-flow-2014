@@ -1,5 +1,3 @@
-Should reviews be anonymous (to students, to faculty)?
-
 There are several issues relating to anonymity and privacy which come to the fore in peer review settings.  Developing a culture of positive and constructive critique, where students can both give and take feedback positively can take time and require a degree of practice.  While the broader aim may be to develop a positive, supportive and professional approach to peer review, there may be a need to provide some initial shielding from scrutiny for students who are new to the institution or the practice.  Some of the options, their respective benefits and downsides are presented in this section.
 
 There are varying degrees of anonymity that may be adopted.  For instance the reviews could be anonymous to either students or faculty (or alternatively to both, or neither). Each of the review authors and work authors/review recipients could be anonymous.  
@@ -22,7 +20,7 @@ Anonymity may have cultural connections at several levels: for students who come
 
 A converse cultural aspect may be in operation with non-anonymous contributions: if students know the other person, they may be less or more critical a priori, based upon judgements of the peer’s relative status or perceived expertise, rather than reviewing the material in its own right.
 
-There may be value in revealing the identity after a first review has been submitted, where a reveal-on-submit strategy may be good for avoiding initial bias but encouraging later collaboration.  For instance see Kathi’s case study [ ref??] on staged anonymity; at first anonymous, then groups review one another once formed, which is identifiable and social.
+There may be value in revealing the identity after a first review has been submitted, where a reveal-on-submit strategy may be good for avoiding initial bias but encouraging later collaboration.  For instance see Kathi’s case study [CITE] on staged anonymity; at first anonymous, then groups review one another once formed, which is identifiable and social.
 
 At some institutions such as Brown University, anonymity is already questionable, because students are acting as TAs for one another anyway, and know about one another’s performance. Culturally at Brown, it does not fit with the institutional and student culture to have anonymity on who is reading your code.
 

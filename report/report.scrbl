@@ -517,9 +517,38 @@ reviewed:
 
 @md-section["sections/rubrics.md"]
 
-@subsection{Designing Feedback Forms}
+To read:
+
+Klemmer and others on accuracy/rubrics: @url{http://dl.acm.org/citation.cfm?id=2505057} and @url{http://hci.stanford.edu/publications/paper.php?id=209}
+
+The notion of a Pedagogic Code Review with a moderator and a detailed plan for
+what to look for in a review: @url{http://dl.acm.org/citation.cfm?id=1734324},
+@url{http://dl.acm.org/citation.cfm?id=1508972}
+
+Comparing students to experts in writing reviews: @url{https://www.sciencedirect.com/science/article/pii/S0959475209000747}
+
+@subsection{Feedback On Reviews}
 
 @md-section["sections/feedback.md"]
+
+Cho and MacArthur compare three approaches to giving feedback on
+written assignments in a psychology course: feedback from a single
+peer, feedback from a single topic expert, and feedback from multiple
+peers@~cite["cho-peer-expert-reviewing10"]. The results indicate that
+feedback from multiple peers results in better quality revisions than
+feedback from an expert, with feedback from a single peer being the
+worse.  The hypothesised reason for this was that peers gave feedback
+that was phrased in terms that students could more easily comprehend.
+It certainly would be interesting to see whether the same results
+applied to programming assignments.
+
+
+@;Metareviewing to determine quality of reviews by Gehringer/Expertiza:
+@;@url{http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.416.228},
+@;@url{http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=5992285&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D5992285},
+@;@url{https://6c27b932-a-4ecc3149-s-sites.googlegroups.com/a/cspred.org/2010/proceedings/11-cspred2010_submission_3.pdf}
+
+Expertiza@~cite["gehringer-expertiza-approach"] also mentions an explicit review of review phase.
 
 @subsection{Anonymity}
 
@@ -569,13 +598,18 @@ could interact with @IFPR in three ways:
 feedback}
 ]
 
+Another grading interaction concerns automatic grading, an
+increasingly common practice in Computer Science courses.  
+When assignment steps can be graded automatically, how much feedback
+should go to students and/or reviewers alongside the peer-written
+reviews?  Giving auto-grade results could lead to reviewers putting in
+less effort (thus masking situations in which the auto-grading missed
+something important). [FILL]
+
+
 @subsection{Does it make sense for non-majors?}
 
 @md-section["sections/non-majors.md"]
-
-@subsection{Pair Programming and IFPR}
-
-@md-section["sections/pair-programming.md"]
 
 @; @subsection{Assigning Reviewers}
 
@@ -613,23 +647,7 @@ In the context of @IFPR, peer reviews can either serve as "rewards"
 (summative assessment in the form of scores/grades) or as constructive
 feedback (formative assessment). [FILL]
 
-@subsubsection{Relating auto-grading and in-flow peer review}
-
-When assignment steps can be graded automatically, how much feedback
-should go to students and/or reviewers alongside the peer-written
-reviews?  Giving auto-grade results could lead to reviewers putting in
-less effort (thus masking situations in which the auto-grading missed
-something important).
-
-@subsubsection{Comparison to Live Code Review}
-
-@IFPR satisfies different learning goals than live code review, which
-is part of many software-development courses.  Live code review
-focuses on code, whereas reading reviews gets better at students'
-metacognitive development.  IFPR is less intimidating than code
-review, as a student is not called upon to defend his own work.
-
-o@subsection{Undesirable Student Behavior}
+@subsection{Undesirable Student Behavior}
 
 @subsubsection{Plagiarism and Gaming the Assignment}
 
@@ -686,7 +704,50 @@ know about in-flow peer review?
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-@section{Related Work}
+@section{Related Code Review Practices}
+
+@subsection{Pair Programming and IFPR}
+
+@md-section["sections/pair-programming.md"]
+
+@subsection{Industrial Peer-Review Practice}
+
+Code review is an essential component of industrial
+software-development practice.  Industrial peer review is inherently
+in-flow, as reviews are conducted on a regular basis during product
+development.  The industrial product-development lifecycle is longer
+than that in many courses, but best practices in industrial peer
+review are still useful context for this report.
+
+@relworkfill{Summarize related work on industrial code review}
+
+Relwork discussion should address:
+@itemlist[
+@item{Best practices around live versus online}
+@item{Best practices on point at which to do review}
+@item{Any particulars on the issues that review focuses on?}
+]
+
+On OSS (Apache), all remote and distributed, good RQs about finding defects,
+size of review code unit, size of review team etc:
+@url{dl.acm.org/citation.cfm?id=1368162}
+
+A recent update on professional code review (ICSE 2013):
+@url{http://dl.acm.org/citation.cfm?id=2486882}
+
+The SmartBear study, including the summary blog post.  
+
+[FILL related work summary on industrial code review]
+
+@subsubsection{Comparison to Live Code Review}
+
+@IFPR satisfies different learning goals than live code review, which
+is part of many software-development courses.  Live code review
+focuses on code, whereas reading reviews gets better at students'
+metacognitive development.  IFPR is less intimidating than code
+review, as a student is not called upon to defend his own work.
+
+@section{Additional Related Work}
 
 @subsection{Meta-cognitive Reflection}
 
@@ -753,8 +814,6 @@ when already primed to think about the same problem, may similarly have more
 options to draw on in their solution, rather than only using whatever
 techniques they would have tried in their initial submission.
 
-The PeerWise
-
 Discussion here needs to cover things like :
 @itemlist[
 @item{How many examples does one need to see before learning occurs?}
@@ -762,50 +821,8 @@ Discussion here needs to cover things like :
 @item{What scaffolding (i.e., review questions) foster learning from examples?}
 ]
 
-In PeerWise, students created and reviewed one anothers' multiple-choice
-questions, which has elements both of learning by example and of review:
-@url{http://dl.acm.org.revproxy.brown.edu/citation.cfm?id=1404526&CFID=472720597&CFTOKEN=32164599}
-
-@subsection{Motivating Participation in Peer Review}
-
-Student motivation affects what they will gain from participating in
-peer review.  Peer review requires participation from students in two
-roles: reviewer (provider of feedback) and reviewee (recipient of
-feedback).  FILL HERE
-
-
-
-Motivational factors affect both roles that students
-adopt during peer review: as authors of reviews, and as recipients of
-reviews.  Peer
-
-@fill{This section still being fleshed out structurally}
-
-In-flow peer review assumes that giving students feedback on their
-work while it is in progress (i.e., while they can still impact
-grades) will encourage them to take more from the reviews (from the
-recipient perspective).  Thus, in-flow is trying to affect a shift
-from the extrinsic motivation of "write this review for a grade" to
-the intrinstic motivation of "engage in this process so my own grade
-gets better" (though note that the extrinsic/intrinsic shift here is
-happening in two different roles -- review author and review recipient
--- have to sort that out).
-
-In-flow changes the motivation from being purely extrisnic (eg, "this
-will be graded") to intrinsic -- this does not necessarily improve the
-quality of feedback, but it should at least improve the desire to
-comprehend (and some students will realize that providing good
-feedback forces even better comprehension).
-
-Our discussion is framed by an assumption that students want to get as
-many points as possible for their work, within reasonable bounds on
-time and effort.  While some students are motivated simply by learning
-more and improving their skills, we assume that the potential to
-impact grades incentivizes students to engage more with in-flow
-feedback than with post-submission feedback.  Whether reviews
-themselves need to be graded is a separate question, which we discuss
-in this report.
-
+In PeerWise@~cite["denny-peerwise08"], students created and reviewed one anothers' multiple-choice
+questions, which has elements both of learning by example and of review.
 
 @subsection{Peer Instruction}
 
@@ -829,59 +846,6 @@ preparatory material before attending the class.
 Related to our undertaking, the most interesting component of PI is
 the student peer discussions that are undertaken after presentation of
 each concept. This, however, is not peer review.
-
-
-@subsection{Helping Students Be Successful Reviewers}
-
-@relworkfill{Related work on what makes students successful at
-reviewing}
-
-Related work discussion should address:
-@itemlist[
-@item{Arguments for providing structured rubrics}
-@item{Guidelines for good rubrics (Klemmer?)}
-]
-
-To read:
-
-Klemmer and others on accuracy/rubrics: @url{http://dl.acm.org/citation.cfm?id=2505057} and @url{http://hci.stanford.edu/publications/paper.php?id=209}
-
-The notion of a Pedagogic Code Review with a moderator and a detailed plan for
-what to look for in a review: @url{http://dl.acm.org/citation.cfm?id=1734324},
-@url{http://dl.acm.org/citation.cfm?id=1508972}
-
-Comparing students to experts in writing reviews: @url{https://www.sciencedirect.com/science/article/pii/S0959475209000747}
-
-@subsection{Providing Feedback on Reviews}
-
-@relworkfill{Summarize work on review feedback}
-
-@itemlist[
-@item{What kind of feedback is useful?}
-@item{Do experts need to provide the feedback?}
-]
-
-Cho and MacArthur compare three approaches to giving feedback on
-written assignments in a psychology course: feedback from a single
-peer, feedback from a single topic expert, and feedback from multiple
-peers@~cite["cho-peer-expert-reviewing10"]. The results indicate that
-feedback from multiple peers results in better quality revisions than
-feedback from an expert, with feedback from a single peer being the
-worse.  The hypothesised reason for this was that peers gave feedback
-that was phrased in terms that students could more easily comprehend.
-It certainly would be interesting to see whether the same results
-applied to programming assignments.
-
-
-Metareviewing to determine quality of reviews by Gehringer/Expertiza:
-@url{http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.416.228},
-@url{http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=5992285&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D5992285},
-@url{https://6c27b932-a-4ecc3149-s-sites.googlegroups.com/a/cspred.org/2010/proceedings/11-cspred2010_submission_3.pdf}
-
-Expertiza also mentions an explicit review of review phase in
-@url{http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.161.8397}, and
-@url{http://www.igi-global.com/chapter/monitoring-assessment-online-collaborative-environments/36844}
-might have even more on that.
 
 @subsection{Comprehending Program Structure}
 
@@ -926,7 +890,6 @@ to chunk, but chunking isn't necessarily needed on small programs.)
 @relworkfill{Work on creating socialization}
 
 @itemlist[
-@item{Pair Programming}
 @item{Computer-mediated communication in collaborative educational settings (see ITiCSE WG 1997)}
 @item{Peer mentoring (across different class groups, but still the goal is socializing)}
 ]
@@ -956,33 +919,6 @@ Peer mentoring: A Mentor Program in CS1.  @url{http://dl.acm.org/citation.cfm?id
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-@subsection{Industrial Peer-Review Practice}
-
-Code review is an essential component of industrial
-software-development practice.  Industrial peer review is inherently
-in-flow, as reviews are conducted on a regular basis during product
-development.  The industrial product-development lifecycle is longer
-than that in many courses, but best practices in industrial peer
-review are still useful context for this report.
-
-@relworkfill{Summarize related work on industrial code review}
-
-Relwork discussion should address:
-@itemlist[
-@item{Best practices around live versus online}
-@item{Best practices on point at which to do review}
-@item{Any particulars on the issues that review focuses on?}
-]
-
-On OSS (Apache), all remote and distributed, good RQs about finding defects,
-size of review code unit, size of review team etc:
-@url{dl.acm.org/citation.cfm?id=1368162}
-
-A recent update on professional code review (ICSE 2013):
-@url{http://dl.acm.org/citation.cfm?id=2486882}
-
-The SmartBear study, including the summary blog post.  
-
 @subsection{Existing Uses of In-flow Peer Review}
 
 Others have used strategies for peer review that fall under the umbrella of
@@ -996,7 +932,7 @@ Sondergaard's course review one another's work between stages
 only in the form of surveys after the assignment, but shows generally positive
 attitudes from students indicating that they felt the review had helped.
 
-Expertiza@~cite{gehringer-expertiza-approach} is discussed in @ref{relwork
+Expertiza@~cite["gehringer-expertiza-approach"] is discussed in @ref{relwork
 for review-of-review}, and is used for large, multi-stage collaborative
 projects in which students build and review smaller components that build up
 the whole.  This includes assessment and review of the reviews themselves as
