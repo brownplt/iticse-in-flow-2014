@@ -589,7 +589,9 @@ reviewed:
 
 @item{How to assign reviewers: random, let students pick, same reviewer for whole
 assignment, assigned by instructor, etc.  Related work:
-@url{dl.acm.org/citation.cfm?id=2215100&CFID=353776286&CFTOKEN=25368603}}
+@url{dl.acm.org/citation.cfm?id=2215100&CFID=353776286&CFTOKEN=25368603}
+Note that all of section 9 (Review Assignment) is currently about this topic.}
+
 ]
 
 @subsubsection{Designing Reviewing Rubrics}
