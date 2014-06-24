@@ -310,17 +310,14 @@ Peer review in general has several pedagogic motivations beyond
 student-oriented learning objectives.  These include:
 
 @itemlist[
-@item{Engaging students more in their own learning}
-@item{Improving students' communication skills}
+@item{Emphasizing the importance of writing in technical contexts}
 @item{Increasing social interaction, thus making programming a more
 social activity}
 @item{Providing human feedback more scalably than with only expert
 assessment}
+@item{Fostering engagement of students from different cultures,
+particularly non-western students who are new to western classrooms}
 ]
-
-Engaging students from different cultures, particularly non-western
-students new to western classrooms, is another pedagogic outcome that
-can arise from {@IFPR}.
 
 The in-flow context has additional pedagogic motivations:
 
@@ -329,7 +326,7 @@ The in-flow context has additional pedagogic motivations:
 @item{Re-examining plagiarism issues by moving the problem}
 ]
 
-@IFPR also offers various benefits to instructors.  Reading reviews
+In general, reading reviews
 provides a window into students' meta-cognitive development around the
 assignment content: a student can only comment on issues that she
 understands to be important.  @IFPR provides an opportunity to ask
@@ -339,13 +336,12 @@ reflection.  Selecting artifacts worthy of this additional time can
 help instructors identify more cognitively-challenging portions of
 assignments.
 
+[MOVE THIS]
 @IFPR satisfies different learning goals than live code review, which
 is part of many software-development courses.  Live code review
 focuses on code, whereas reading reviews gets better at students'
 metacognitive development.  IFPR is less intimidating than code
 review, as a student is not called upon to defend his own work.
-
-Also helps emphasize on writing as important in technical contexts.
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
