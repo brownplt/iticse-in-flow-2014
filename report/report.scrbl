@@ -227,6 +227,12 @@ focus on the following points:
 In addition, Section [ADD SECREF] provides a summary guide to how to
 get started with @IFPR, accounting for different course contexts.
 
+@section{Terminology}
+
+@figure*{"i:terminology"
+  @(image #:scale 0.5 "images/terminology/Slide1.png")
+}
+
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 @section{Student Learning Objectives from @IFPR}
