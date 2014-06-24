@@ -5,7 +5,7 @@ In this section, we discuss different aspects of using rubrics to
 guide and influence the review work, and to facilitate comparison,
 automatic checking, etc. A live demonstration of for example how
 to do a code review is a form of scaffolding on the process-level,
-but does drive content as specficially as rubrics. Regardless of
+but does drive content as specifically as rubrics. Regardless of
 how reviewing is introduced and scaffolded, it is important to
 allot time to deal with misconceptions on how to create a review
 as part of the course design. 
@@ -51,7 +51,7 @@ Rubrics for focus
     to ensure relevance of the review for the reviewee.  
 
 Rubrics for alibi
-:   Rubrics can be great tools to establish alibies for students 
+:   Rubrics can be great tools to establish alibis for students 
     who fear criticising works of others, because of cultural 
     values, self-image, etc. For example, being asked to point
     out one part which could be done better, or identify errors
@@ -74,16 +74,16 @@ Rubrics for time-boxing
 Evolution of Rubrics
 --------------------
 
-Althought there are things to say for consistency, rubrics need
+Although there are things to say for consistency, rubrics need
 not stay the same throughout a course, and definitely not when
-used througout a curriculum. 
+used throughout a curriculum. 
 
 For example, it is possible to gradually transition rubrics from
 specific to general as students mature as reviewers. We make an
 analogy to conference reviewing -- often less mature PC members
 like that reviews are made up of many small steps which are tied
 to specific questions, but experienced PC members often develop a
-more free-form format and percieve structure in reviews as an
+more free-form format and perceive structure in reviews as an
 obstacle. 
 
 On a similar note, it is also possible to transition rubrics from
