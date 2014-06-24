@@ -4,17 +4,15 @@
 
 # Review assignment
 
-The inflow aspect requires review to be done promptly, which constrains
-the review assignment to schemes that are fast and pose light load on the
-students. Regardless, different ways of assigning reviews can moderate
-various aspects of the review work, such as the student workload and
-minority acceptance.
-
-The in-flow peer review emphasizes that the review process must be
-observed from two perspectives: from that of the of the student
-receiving the review, but also from the the perspective of the 
-person doing the reviewing, who is also seen as a a beneficiary of 
-this process. 
+Different ways of assigning reviewers can be used affect many aspects of the
+IFPR process. For example, the review assignment process can have an effect on
+student workload, the professional identity of the students, and performance of
+minorities. Furthermore, the in-flow process requires the reviews to be done
+promptly, which restricts the review assignment schemes to those that pose
+light load on the students. Also, the review assignments must be observed from
+two perspectives: from the perspective of the student receiving the review and
+from the perspective of the reviewer, who is also seen as beneficiary of this
+process. 
 
 The working group identified 5 different assignment patterns
 that fit within the constraints of the in-flow:

@@ -8,6 +8,7 @@
 @; Kathi: pull in remaining gdoc content (that wasn't assigned out)
 @; Kathi: finish populating table
 @; someone: include markdown cites in dummy section so show up in bib
+@; someone: fix quotes (replace " with `` and '')
 
 @(require scribble/core
           scriblib/figure
@@ -92,8 +93,6 @@ and discusses numerous dimensions of the process, each of which
 alleviate some problems while raising associated concerns.}
 
 @section{In-Flow Peer-Reviewing}
-
-For instance, if I want a @(string-normalize-nfc "à")?
 
 Peer-review has been employed for various reasons in Computer Science
 courses@~cite["topping-peer-review98"]. It is a mechanism for having
@@ -232,9 +231,11 @@ not just a way to scale your course (the anti MOOC perspective)
 In addition, Section [ADD SECREF] provides a summary guide to how to
 get started with @IFPR, accounting for different course contexts.
 
-@subsection{Glossary}
+@section{Terminology}
 
-[INSERT SUMMARY PICTURE]
+@figure*{"i:terminology"
+  @(image #:scale 0.5 "images/terminology/Slide1.png")
+}
 
 @itemlist[
 @item{Overall assignment with possibly many reviewable parts: exercise}
