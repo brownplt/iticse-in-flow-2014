@@ -1,6 +1,6 @@
 #lang racket/base
 
-(require scribble/manual markdown markdown/scrib)
+(require scribble/manual markdown "./scrib.rkt")
 
 (provide relworkfill
 	 fill
