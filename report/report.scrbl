@@ -15,6 +15,7 @@
           scribble/decode
           scribble/html-properties
           scribble/latex-properties
+ 	  "tables.rkt"	
 	  "bib.rkt"
           "helpers.rkt")
 
@@ -22,52 +23,6 @@
 @(define IFPR "IFPR")
 
 @;;;; table generation 
-
-@(define (add-width-wrappers col-widths rows)
-   (for/list ([cols (in-list rows)])
-     (for/list ([col-width (in-list col-widths)]
-                [col (in-list cols)]
-                [pos (in-naturals)])
-       (add-width-wrapper col-width col (zero? pos)))))
-
-@(define (add-width-wrapper w col first?)
-   (define macro-name (format "In~aColumn~a" w (if first? "F" "")))
-   ;; A TeX macro name cannot contain numbers, so replace digits with letters:
-   (define name (regexp-replace* #rx"[0-9]"
-                                 macro-name
-                                 (lambda (s) (string
-                                              (list-ref (string->list "zotTfFsSen")
-                                                        (string->number s))))))
-   ;; CSS to set the width for HTML output:
-   (define css-bytes (string->bytes/utf-8 
-                      (format ".~a { width: ~s; padding: 0ex; margin: 0ex; ~a }"
-                              name
-                              w
-                              ;; Except for first column, add margin and border
-                              ;; to the left edge:
-                              (if first?
-                                  "" 
-                                  (string-append "border-left: 1px solid black;"
-                                                 "margin-left: 1ex;"
-                                                 "padding-left: 1ex;")))))
-   ;; Macro to set the width for LaTeX output:
-   (define tex-bytes (string->bytes/utf-8 
-                      (format "\\newcommand{\\~a}[1]{~a\\parbox[t]{~a}{#1}}"
-                              name
-                              ;; Except for first column, add spacing and vline:
-                              (if first? "" "~ \\vline ~")
-                              w)))
-   ;; Produce a paragraph for the table cell; we rely on the fact that
-   ;; only one copy of literal bytes for `css-addition` or `tex-addition` will
-   ;; be included in the output:
-   (paragraph (style name ; used for CSS
-                     (list (box-mode* name) ; avoids a `minipage` wrapper in LaTeX
-                           (css-addition css-bytes) ; the generated CSS
-                           'command ; use generated TeX as command (not environment)
-                           (tex-addition tex-bytes))) ; generated TeX
-                     ;; Parse content as a paragraph:
-                     (decode-content col)))
-
 
 @;;;; DOCUMENT STARTS HERE ;;;;;;;;;;;;;;
 
@@ -390,6 +345,38 @@ feedback}
    (list
      (list @list{@bold{Course}} @list{@bold{Course Level}} @list{@bold{Assignment}}
            @list{@bold{Peer-Review Structure}} @list{@bold{Rubrics}} @list{@bold{Tried?}})
+     (list @list{CS1}
+	   @list{First-Year Undergrad}
+	   @list{Write code and assertions for various components of a pinball game}
+	   @list{Submit work so far on subset of functions designated by instructor}
+	   @list{readability, correctness, free-form comments}
+	   @list{no}
+	   )
+     (list @list{Advanced Sofware Design}
+	   @list{Upper undergrad/MS} 
+	   @list{design and partly implement a mobile-app+server for a
+			game, following iterative development.
+			Students must choose which stated asgn goals
+			to cover in the (inadequate) time provided.}  
+	   @list{submit design documents so far}
+	   @list{free-form on comprehensibility, quality of
+			   documentation, coverage of use cases,
+			   adherence to design principles, choice of
+			   subsystem to implement.  Concrete examples
+			   required to illustrate each point. }
+	   @list{no}
+	   )
+     (list @list{Collaborative Computing}
+	   @list{MS}
+	   @list{Collaboratively produce a research article}
+	   @list{drafts of article}
+	   @list{Conference paper reviewing rubric, with questions on
+			    suitability for audience, originality and
+			    demonstrated knowledge in contribution,
+			    eveidence for arguments, methods,
+			    presentation, etc. }
+	   @list{yes}
+	   )
      (list @list{Software Security}
 	   @list{Upper-level Undergrad/MS}
 	   @list{Find ways to attack a web-based application}
@@ -397,10 +384,130 @@ feedback}
                  application in black box fashion.  After reviewing, students attack
 		 the application in white box fashion}
 	   @list{[FILL]}
-	   @list{no})
+	   @list{no}
+	   )
+     (list @list{Software Modeling and Verification}
+	   @list{Upper-level undergrad/MS}
+	   @list{Use formal verification to find flaws in a protocol
+		     design.  Peer-reviewed portion focuses on
+		     building models of the protocol's environment,
+		     which in turn drives verification. }
+	   @list{submit proposed environment model and desired properties that should/should not hold under this model}
+	   @list{assess whether model conforms to problem, whether
+			model supports/masks the properties provided
+			with the model.  Comment on good/bad features
+			of this model. }
+	   @list{no}
+	   )
+     (list @list{Programming Fundamentals 2}
+	   @list{Second semester undergraduate}
+	   @list{Classroom clicker assignment on if-statements}
+	   @list{Draw CFGs for code snippets}
+	   @list{Boolean assessment of whether CFG is accurate}
+	   @list{yes}
+	   )
+     (list @list{Software Performance}
+	   @list{MS level}
+	   @list{Develop an extension to the jikes visual debugger}
+	   @list{proposal, prototypes, final artifact}
+	   @list{comment on one thing they particularly like, and one
+			 aspect that could be improved.  Prototype
+			 evaluations follow in-class presentations by
+			 each team on their prototype.  Final artifact
+			 review assesses usability, extensibility, and
+			 documentation }
+	   @list{yes(?)}
+	   )
+     (list @list{Computing for Social Sciences and Humanities}
+	   @list{Undergraduate}
+	   @list{Cluster data on voting records (US Senate) to identify senators with similar ideology}
+	   @list{submit code and tests for instructor-defined subsets of overall functionality}
+	   @list{Provide scores from 0 to 100 on each of (a) whether
+			 tests meaningfully capture the assignment
+			 purpose, and (b) whether code performs the
+			 corresponding computation correctly. }
+	   @list{no}
+	   )
+     (list @list{Logic for System Modelling}
+	   @list{Upper-level undergraduate/MS}
+	   @list{Write a relational (Alloy) model of an elevator}
+	   @list{model data components, describe desired properties of model, initial model of elevator operations}
+	   @list{components/properties missing? components/properties
+				       reasonable?  Is operational
+				       model suitably operational or
+				       too declarative?} 
+	   @list{similar}
+	   )
+     (list @list{Advanced CS1 with Data Structures}
+	   @list{First-year undergrad}
+	   @list{Design a data structure for incremental and
+			functional updates on trees}
+	   @list{datatype definition with instances of the data, test cases, complete programs}
+	   @list{can data structure support required operations within
+		     time bounds, missing interesting examples of
+		     data, coverage of tests, correctness of tests }
+	   @list{yes}
+	   )
+     (list @list{Programming Languages}
+	   @list{upper-level undergraduate/Graduate}
+	   @list{Provide a test suite and implementation for a type checker}
+	   @list{tests, then implementation (no synchronized deadlines, but must occur in order)}
+	   @list{Set of ~10 specific questions about test coverage
+		     (provide no or line number with the test), plus
+		     free-form comments on style or organization of
+		     test suite.  No peer review on implementations. }
+	   @list{yes}
+	   )
+     (list @list{Software Security}
+	   @list{MS level}
+	   @list{Students implement simple on-line web-app on a strict timetable, then apply article on attack trees to their program}
+	   @list{initial program, attack trees, secured app. result of
+			 using fuzzing tools, results of using static
+			 analysis tools, review differences between
+			 original and secured application }
+	   @list{Free-form comparison to what was done in own solution}
+	   @list{no}
+	   )
+     (list @list{Introduction to Functional Programming}
+	   @list{mostly upper-level undergrad/MS}
+	   @list{Boggle: write program to find all valid words in 4x4 grid}
+	   @list{identify tasks to finding one word, *decompose
+			  overall problem into tasks (with quickcheck
+							   assertions), implement, *test} 
+	   @list{check decomposition makes sense, presenting
+		       alternative if own differs from reviewed one;
+		       try own test suite on the code being reviewed }
+	   @list{no}
+	   )
+     (list @list{Imperative and OO Programming Methodology}
+	   @list{2nd year}
+	   @list{implement program that satisfies a student-selected set of learning goals}
+	   @list{*choose goals, *choose program that satifies goals,
+			 design program, implement program, design
+			 presentation on how program achieves goals,
+			 give presentation }
+	   @list{template provided by instructors, question of whether this should be in-person or written}
+	   @list{no}
+	   )
+     (list @list{Imperative and OO Programming Methodology}
+	   @list{2nd year}
+	   @list{Implement simple Pong game in model-view-controller style}
+	   @list{identify component, design data structure 
+			  (classes and interfaces), design tests, two
+			  draft implementations, final
+			  implementationidentify component, design
+			  data structure (classes and interfaces),
+			  design tests, two draft implementations,
+			  final implementation } 
+	   @list{questions about whether key components are present;
+			   whether tests are reasonably complete and
+			   motivated; checking for good code
+			   properties such as naming,structure,
+			   identation, etc }
+	   @list{no}
+	   )
 ))
 ]}
-
 
 The case studies from working group members covered a variety of
 student levels and course types.  More interestingly, they varied

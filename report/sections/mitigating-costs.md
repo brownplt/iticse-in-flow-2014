@@ -1,5 +1,3 @@
-# Migating the Costs
-
 IFPR can impose extra costs both to the teaching staff and to the students taking
 part in the process. Firstly, the increased learning attained by IFPR be 
 commensurate with the learning benefits. Secondly, it must be appraised whether
