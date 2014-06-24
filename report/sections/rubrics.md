@@ -159,13 +159,6 @@ and correctness of outputs.
 For writing, good rubrics include completion, timeliness, value of
 contributions.
 
-* Things I might leave out for those who know it better
-** see Klemmer’s paper for Coursera
-*** http://www.cogsci.ucsd.edu/~mboyle/COGS1/readings/Klemmer-COGS1-Peer%20and%20self%20assesment%20in%20massive%20online%20classes.pdf
-** what Jay McCarthy did
-** Reference to track down (SK): Instructor sees a bug, writes a test case, and runs test case on all other submissions
+see Klemmer’s paper for Coursera[cite](kwl...:peer-self-assess-mooc)
 
-%%% Local Variables: ***
-%%% mode: org ***
-%%% ispell-local-dictionary: "british"  ***
-%%% End: ***
+Reference to track down: Instructor sees a bug, writes a test case, and runs test case on all other submissions

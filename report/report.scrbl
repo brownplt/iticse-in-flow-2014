@@ -489,7 +489,7 @@ have been used in actual courses; the rest are hypothetical uses
 proposed by working group members, based on exercises in their current
 courses.
 
-The full case-study descriptions appear in @secref["s:case-studies"]).
+The full case-study descriptions appear in @secref["s:case-studies"].
 The source files are also available at
 @(url "https://github.com/brownplt/iticse-in-flow-2014/tree/master/in-flow-assignments").
 
@@ -520,13 +520,14 @@ reviewed:
 
 To read:
 
-Klemmer and others on accuracy/rubrics: @url{http://dl.acm.org/citation.cfm?id=2505057} and @url{http://hci.stanford.edu/publications/paper.php?id=209}
+Klemmer and others on accuracy/rubrics: @~cite["kwl...:peer-self-assess-mooc"]
 
 The notion of a Pedagogic Code Review with a moderator and a detailed plan for
-what to look for in a review: @url{http://dl.acm.org/citation.cfm?id=1734324},
-@url{http://dl.acm.org/citation.cfm?id=1508972}
+what to look for
+@~cite["hundhausen-pcr-toce13"]
 
 Comparing students to experts in writing reviews: @url{https://www.sciencedirect.com/science/article/pii/S0959475209000747}
+[Currently DOES NOT LOAD, so not moved into bib file]
 
 @subsection{Feedback On Reviews}
 
@@ -543,11 +544,8 @@ that was phrased in terms that students could more easily comprehend.
 It certainly would be interesting to see whether the same results
 applied to programming assignments.
 
-
-@;Metareviewing to determine quality of reviews by Gehringer/Expertiza:
-@;@url{http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.416.228},
-@;@url{http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=5992285&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D5992285},
-@;@url{https://6c27b932-a-4ecc3149-s-sites.googlegroups.com/a/cspred.org/2010/proceedings/11-cspred2010_submission_3.pdf}
+Metareviewing to determine quality of reviews by in Expertiza@~cite["gehringer-expertiza-approach"].
+@~cite["rg:auto-assess-rev-lsa"]
 
 Expertiza@~cite["gehringer-expertiza-approach"] also mentions an explicit review of review phase.
 
@@ -617,7 +615,7 @@ something important). [FILL]
 @md-section["sections/assigning-reviewers.md"]
 
 Related work:
-@url{dl.acm.org/citation.cfm?id=2215100&CFID=353776286&CFTOKEN=25368603}
+@~cite["Papadopoulos:2012:IPR:2215076.2215100"]
 
 @subsection{Grading Reviews}
 
@@ -883,14 +881,7 @@ Related work discussion should address:
 To read:
 
 
-The WG on program comprehension: @url{http://dl.acm.org/citation.cfm?id=1971687}
-
-Several of the program comprehension works they reviewed:
-
-@url{http://dl.acm.org/citation.cfm?id=169088},
-@url{http://dl.acm.org/citation.cfm?id=322685&CFID=472720597&CFTOKEN=32164599},
-@url{http://www.cs.kent.edu/~jmaletic/Prog-Comp/Papers/soloway84.pdf},
-@url{http://www.sciencedirect.com/science/article/pii/016412128790032X}
+The WG on program comprehension@~cite["Schulte:2010:IPC:1971681.1971687"]
 
 (What implications does this have for the experience level at which
 students can meaningfully engage in ifpr?  They need certain maturity
@@ -925,7 +916,7 @@ individualised assignments.
 
 To read:
 
-Specifically about communication and the social climate in CS: @url{http://dl.acm.org/citation.cfm?id=1060073}
+Specifically about communication and the social climate in CS@~cite["Garvin-Doxas:2004:CCS:1060071.1060073"]
 
 Peer mentoring: A Mentor Program in CS1.  @url{http://dl.acm.org/citation.cfm?id=544420}
 
