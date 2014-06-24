@@ -174,7 +174,10 @@ software development.}
 
 ]
 Giving authors the ability to respond to reviews further reinforces
-the AP CS Principles quoted above.
+the AP CS Principles quoted above. In particular, then, IFPR should be
+viewed not only as a way to scale grading (which is a use of
+peer-review by some MOOCs [CITE]), but as a critical educational
+process in its own right.
 
 Several challenges arise with this model, including figuring out how
 to decompose assignments for meaningful reviews, how to prevent
@@ -211,25 +214,63 @@ peer-review in general) are more focused on the reviewer than the
 reviewee.  Nonetheless, many of the theoretical underpinnings of CSPs
 also apply to @IFPR, and thus affect the ideas in this report.
 
-@subsection{Discussion Highlights}
+@section{A Guide to IFPR for the Busy}
 
-Those interested in the highlights of our discussions may wish to
-focus on the following points:
-
+IFPR is a mechanism open to many policies. These policies are a
+function of a course's goals, student maturity, cultural context, and
+more. Therefore, an instructor who chooses to use IFPR will have to
+make several decisions that determine exactly what form of IFPR they
+employ. This section briefly outlines some of these decision points,
+with references to the rest of the document for more details:
 @itemlist[
-@item{The Learning Goals of {@IFPR}: [FILL] [ADD SECREF]}
-@item{The role of anonymity: [FILL] [ADD SECREF]}
-@item{The interactions between grading and motivation for reviewing:
-[FILL] [ADD SECREF]} 
-@item{Having students write explicitly about how integrated reviews
-into their revisions} 
-@item{... WHAT ELSE??? ...}
+
+@item{The choice of artifacts. How should an assignment be broken down
+into multiple stages? Even in a programming assignment, there are many
+choices: tests before code; data structures before tests; design
+documents and architectural specifications before code; multiple
+iterations of code; and so on. [REF]}
+
+@item{The distribution of reviewing. E.g.: Should reviewing be
+distributed in order of submission? Randomly? Between students of
+similar or opposite attainment levels? [REF]}
+
+@item{The use of rubrics. On the one hand, rubrics for reviewing guide
+the reviewer and may result in more concrete, actionable outcomes. On
+the other hand, a rubric can result in less constructive engagement
+and may result in important issues being missed. [REF]}
+
+@item{The choice of review ``technology''. Should reviewing by
+mediated by a computer application or should it be done face-to-face
+(perhaps as a small group meeting around a table)? [REF]}
+
+@item{The role of anonymity. When, if ever, should authors and
+reviewers know about each others' identity? Using single- and
+double-blind reviewing systems introduces trade-offs between
+protecting students' identity, creating the potential for abuse, and
+introducing them to norms of professional behavior, all of which need
+to be taken into account. [REF]}
+
+@item{The role of experts. Experts can play any number of roles from
+being entirely hands-off and treating this as an entirely student-run
+process (presumably after introducing the process and its purpose) to
+intervening only periodically to constantly monitoring and even
+grading the responses. [REF]}
+
+@item{Suitability for non-majors. While IFPR is easy to justify for
+majors because of its correspondence to industrial practice
+(code-reviews), does it make sense to use in a course for non-majors?
+[REF]}
+
+@item{The relationship to pair-programming. Pair-programming might
+appear to also be a kind of IFPR---indeed, an extreme version of
+it. However, the two processes are somewhat different and
+complementary. [REF]}
+
+@item{Workload considerations. IFPR clearly adds some effort to the
+process of doing assignments, but may also reduce some effort, at
+least relative to attaining a particular level of quality. [REF]}
+
 ]
-
-not just a way to scale your course (the anti MOOC perspective)
-
-In addition, Section [ADD SECREF] provides a summary guide to how to
-get started with @IFPR, accounting for different course contexts.
 
 @section{Terminology}
 
