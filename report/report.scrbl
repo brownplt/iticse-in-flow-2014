@@ -93,8 +93,6 @@ alleviate some problems while raising associated concerns.}
 
 @section{In-Flow Peer-Reviewing}
 
-For instance, if I want a @(string-normalize-nfc "à")?
-
 Peer-review has been employed for various reasons in Computer Science
 courses@~cite["topping-peer-review98"]. It is a mechanism for having
 students read each others' work, learn how to give feedback, and even
