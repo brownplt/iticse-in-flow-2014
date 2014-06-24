@@ -222,11 +222,30 @@ focus on the following points:
 @item{The role of anonymity: [FILL] [ADD SECREF]}
 @item{The interactions between grading and motivation for reviewing:
 [FILL] [ADD SECREF]} 
+@item{Having students write explicitly about how integrated reviews
+into their revisions} 
 @item{... WHAT ELSE??? ...}
 ]
 
+not just a way to scale your course (the anti MOOC perspective)
+
 In addition, Section [ADD SECREF] provides a summary guide to how to
 get started with @IFPR, accounting for different course contexts.
+
+@subsection{Glossary}
+
+[INSERT SUMMARY PICTURE]
+
+@itemlist[
+@item{Overall assignment with possibly many reviewable parts: exercise}
+@item{Subparts for which reviewable work will get submitted: stage} 
+@item{Thing being reviewed: submission (may include
+performance/presentation)}
+@item{Feedback on review: meta-review}
+@item{Assignment of reviewers to submissions: reviewing assignment}
+@item{Person who produces submissions: author (also review recipient)}
+@item{Person who produces review: reviewer}
+]
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
