@@ -83,7 +83,8 @@ solutions, try to at least locate (if not offer corrections to)
 errors, offer their explanations for what an artifact is doing
 (especially if it does not match the expectations set by the problem),
 and justify their views on the appropriateness and correctness of
-presented solutions
+presented solutions.  Giving authors the ability to respond to reviews
+further reinforces the quoted principles.
 
 This working group explored a particular variant of peer-review called
 @italic{in-flow peer review}@~cite["politz-ct-iticse14"].  In this
@@ -107,7 +108,7 @@ students have moved on to other assignments.}
 plagiarism. In fact, we view this as a feature. When a student sees
 another's work, they do not know the quality of the work they see: it
 could be better than their own work, but it could also be
-worse. Therefore, what it forces on students is the need to exercise
+worse. Therefore, structured appropriately, it forces on students is the need to exercise
 @emph{judgment}.}
 
 @item{It further emphasizes the @emph{comparative} examination of work
@@ -117,19 +118,15 @@ against a student's own.}
 software development.}  
 
 ]
-Giving authors the ability to respond to reviews further reinforces
-the AP CS Principles quoted above. In particular, then, IFPR should be
-viewed not only as a way to scale grading (which is a use of
-peer-review by some MOOCs [CITE]), but as a critical educational
-process in its own right.
 
 Several challenges arise with this model, including figuring out how
 to decompose assignments for meaningful reviews, how to prevent
 students from gaming the process to avoid doing their own work, how to
 minimize the extra time this takes to complete homeworks, and how to
-help students not be led astray by weak or inaccurate reviews.  As a
-result, these seemingly subtle shifts could have interesting
-implications for how instructors employ peer review in courses.
+help students not be led astray by weak or inaccurate reviews.
+Considering the potential learning objectives of @IFPR, rather than
+viewing it merely as a way to scale grading (a use of peer-review in
+MOOCs [CITE]), adds subtlety to all of these questions.  
 
 This report summarizes activities of a working group around the
 promises and pitfalls of in-flow peer-review in computer science
@@ -138,27 +135,11 @@ various courses at various levels (though the majority taught courses
 related to programming, programming languages, or various aspects of
 software development).  Prior to the group's in-person meeting, each
 group member created two assignments for in-flow peer-review.  These
-case studies, which appear in the appendix (
-@secref["s:case-studies"]), formed the basis of many 
+case studies, which appear in the appendix
+(@secref["s:case-studies"]), formed the basis of many  
 of our discussions.
 
-In-flow peer-review is an example of a Contributing Student Pedagogy
-(CSP), a pedagogy in which students (a) contribute to the learning of
-others and (b) value the contributions of other students.  A 2008
-ITiCSE working group report describes various facets of such
-pedagogies@~cite["cspwg-08"].  @IFPR targets the second criterion
-(valuing the contributions of other students) more than traditional,
-post-submission peer review.  Various parameters in implementations of
-@IFPR affect the extent to which students contribute to the learning
-of others in practice: shallow reviews, for example, arguably meet the
-letter but not the intent of a CSP.  Separately, @IFPR has goals
-beyond CSP: writing reviews offers benefits to the reviewer as much as
-the reviewee, and often the learning goals that inspire @IFPR (and
-peer-review in general) are more focused on the reviewer than the
-reviewee.  Nonetheless, many of the theoretical underpinnings of CSPs
-also apply to @IFPR, and thus affect the ideas in this report.
-
-@section{A Guide to IFPR for the Busy}
+@section{An @IFPR Roadmap}
 
 IFPR is a mechanism open to many policies. These policies are a
 function of a course's goals, student maturity, cultural context, and
@@ -259,7 +240,9 @@ expected to produce reviews for each submission.}
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-@section{Student Learning Objectives from @IFPR}
+@section{Educational Goals of @IFPR}
+
+@subsection{Student Learning Objectives}
 
 In-flow peer review arises from a desire to help students learn
 several important skills, while leveraging ongoing assignments to
@@ -303,9 +286,25 @@ articulate opinions on technical work.
 provide means for students to gain confidence and self-efficacy in
 their work, and in discussing the works of others.
 
+In-flow peer-review is an example of a Contributing Student Pedagogy
+(CSP), a pedagogy in which students (a) contribute to the learning of
+others and (b) value the contributions of other students.  A 2008
+ITiCSE working group report describes various facets of such
+pedagogies@~cite["cspwg-08"].  @IFPR targets the second criterion
+(valuing the contributions of other students) more than traditional,
+post-submission peer review.  Various parameters in implementations of
+@IFPR affect the extent to which students contribute to the learning
+of others in practice: shallow reviews, for example, arguably meet the
+letter but not the intent of a CSP.  Separately, @IFPR has goals
+beyond CSP: writing reviews offers benefits to the reviewer as much as
+the reviewee, and often the learning goals that inspire @IFPR (and
+peer-review in general) are more focused on the reviewer than the
+reviewee.  Nonetheless, many of the theoretical underpinnings of CSPs
+also apply to @IFPR, and thus affect the ideas in this report.
+
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-@section{Instructor Goals from @IFPR}
+@subsection{Instructor Goals}
 
 Peer review in general has several pedagogic motivations beyond
 student-oriented learning objectives.  These include:
