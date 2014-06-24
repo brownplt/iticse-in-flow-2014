@@ -336,25 +336,18 @@ reflection.  Selecting artifacts worthy of this additional time can
 help instructors identify more cognitively-challenging portions of
 assignments.
 
-[MOVE THIS]
-@IFPR satisfies different learning goals than live code review, which
-is part of many software-development courses.  Live code review
-focuses on code, whereas reading reviews gets better at students'
-metacognitive development.  IFPR is less intimidating than code
-review, as a student is not called upon to defend his own work.
-
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 @section{Examples of @IFPR}
 
-@figure*{"tab:case-studies"
+@figure*{"fig:case-studies"
          @para{Summary of case studies}
  @tabular[
   (add-width-wrappers
    (list "1in" "1in" "2in" "2in") 
    (list
-     (list @list{@bold{Course}} @list{@bold{Assignment}}
-           @list{@bold{Peer-Review Structure}} @list{@bold{Rubrics}} @list{@bold{Tried?}})
+     (list @list{@bold{Course and Level}} @list{@bold{Exercise}}
+           @list{@bold{Submissions}} @list{@bold{Review Criteria}})
      (list @list{CS1}
 	   @list{Write code and assertions for various components of a pinball game}
 	   @list{Submit work so far on subset of functions designated by instructor}
@@ -488,14 +481,17 @@ review, as a student is not called upon to defend his own work.
 The case studies from working group members covered a variety of
 student levels and course types.  More interestingly, they varied
 widely in the kinds of artifacts and processes that they suggested for
-{@IFPR}.  Table @fill{ref Fig 1} summarizes the key parameters of the case
-studies.  The full details appear in @secref["s:case-studies"]).
+@|IFPR|.  @(Figure-ref "fig:case-studies") summarizes the key
+parameters of the case studies.  The table lists the name and level of
+the course, describes the assignment in which @IFPR was used,
+describes the submissions that were reviewed, and describes the review
+criteria for submissions.  Courses with [*] after their descriptions
+have been used in actual courses; the rest are hypothetical uses
+proposed by working group members, based on exercises in their current
+courses.
 
-INSERT Github URL
-
-@fill{Explain @IFPR applied to the case studies}
-
-@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+The full case-study descriptions appear in @secref["s:case-studies"]).
+The source files are also available at [INSERT Github URL].
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -632,7 +628,15 @@ reviews?  Giving auto-grade results could lead to reviewers putting in
 less effort (thus masking situations in which the auto-grading missed
 something important).
 
-@subsection{Undesirable Student Behavior}
+@subsubsection{Comparison to Live Code Review}
+
+@IFPR satisfies different learning goals than live code review, which
+is part of many software-development courses.  Live code review
+focuses on code, whereas reading reviews gets better at students'
+metacognitive development.  IFPR is less intimidating than code
+review, as a student is not called upon to defend his own work.
+
+o@subsection{Undesirable Student Behavior}
 
 @subsubsection{Plagiarism and Gaming the Assignment}
 
