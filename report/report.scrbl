@@ -490,7 +490,8 @@ proposed by working group members, based on exercises in their current
 courses.
 
 The full case-study descriptions appear in @secref["s:case-studies"]).
-The source files are also available at [INSERT Github URL].
+The source files are also available at
+@(url "https://github.com/brownplt/iticse-in-flow-2014/tree/master/in-flow-assignments").
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
