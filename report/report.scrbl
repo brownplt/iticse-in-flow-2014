@@ -8,6 +8,7 @@
 @; Kathi: pull in remaining gdoc content (that wasn't assigned out)
 @; Kathi: finish populating table
 @; someone: include markdown cites in dummy section so show up in bib
+@; someone: fix quotes (replace " with `` and '')
 
 @(require scribble/core
           scriblib/figure
