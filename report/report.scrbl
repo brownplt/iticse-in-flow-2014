@@ -1,13 +1,9 @@
 #lang scribble/sigplan @noqcourier
 
 @;;; TODOs ;;;;;;
-@; Joe: Figure out why markdown files lose start-of-para indentation
-@; Shriram: Summary section
 @; Shriram: pull in case studies as subsections of appendix
 @; Joe: fill in remaining related work
 @; Kathi: pull in remaining gdoc content (that wasn't assigned out)
-@; Kathi: finish populating table
-@; someone: include markdown cites in dummy section so show up in bib
 @; someone: fix quotes (replace " with `` and '')
 
 @(require scribble/core
@@ -106,13 +102,6 @@ after it is over.}
 affect the performance of their current assignment. In contrast,
 feedback given when the assignment is over may get less attention if
 students have moved on to other assignments.}
-
-@item{Students might find ideas that help them improve their own
-solutions.}
-
-@item{The process can also help identify mistakes or ambiguities in
-problem statements while it is still meaningful to address them for
-the current group of students.}
 
 @item{Letting students see the work others are doing seems to enable
 plagiarism. In fact, we view this as a feature. When a student sees
@@ -382,156 +371,123 @@ feedback}
          @para{Summary of case studies}
  @tabular[
   (add-width-wrappers
-   (list "1in" "1in" "1in" "2in" "1in" "1in") 
+   (list "1in" "1in" "2in" "2in") 
    (list
-     (list @list{@bold{Course}} @list{@bold{Course Level}} @list{@bold{Assignment}}
+     (list @list{@bold{Course}} @list{@bold{Assignment}}
            @list{@bold{Peer-Review Structure}} @list{@bold{Rubrics}} @list{@bold{Tried?}})
      (list @list{CS1}
-	   @list{First-Year Undergrad}
 	   @list{Write code and assertions for various components of a pinball game}
 	   @list{Submit work so far on subset of functions designated by instructor}
 	   @list{readability, correctness, free-form comments}
-	   @list{no}
 	   )
-     (list @list{Advanced Sofware Design}
-	   @list{Upper undergrad/MS} 
-	   @list{design and partly implement a mobile-app+server for a
-			game, following iterative development.
-			Students must choose which stated asgn goals
-			to cover in the (inadequate) time provided.}  
+     (list @list{Advanced Sofware Design (upper undergrad/MS)}
+	   @list{design and partly implement a mobile app+server for a
+			game, using iterative development, and
+			choosing a subset of asgmt goals to cover.}  
 	   @list{submit design documents so far}
 	   @list{free-form on comprehensibility, quality of
 			   documentation, coverage of use cases,
 			   adherence to design principles, choice of
 			   subsystem to implement.  Concrete examples
 			   required to illustrate each point. }
-	   @list{no}
 	   )
-     (list @list{Collaborative Computing}
-	   @list{MS}
-	   @list{Collaboratively produce a research article}
+     (list @list{Collaborative Computing (MS)}
+	   @list{Collaboratively produce a research article [*]}
 	   @list{drafts of article}
 	   @list{Conference paper reviewing rubric, with questions on
 			    suitability for audience, originality and
 			    demonstrated knowledge in contribution,
 			    eveidence for arguments, methods,
 			    presentation, etc. }
-	   @list{yes}
 	   )
-     (list @list{Software Security}
-	   @list{Upper-level Undergrad/MS}
+     (list @list{Software Security (upper undergrad/MS)}
 	   @list{Find ways to attack a web-based application}
 	   @list{Students peer-review each others' strategies to attack the
                  application in black box fashion.  After reviewing, students attack
 		 the application in white box fashion}
-	   @list{[FILL]}
-	   @list{no}
+	   @list{free-form comments on comprehensiveness of attack plans}
 	   )
-     (list @list{Software Modeling and Verification}
-	   @list{Upper-level undergrad/MS}
-	   @list{Use formal verification to find flaws in a protocol
-		     design.  Peer-reviewed portion focuses on
-		     building models of the protocol's environment,
-		     which in turn drives verification. }
+     (list @list{Software Modeling and Verification (upper undergrad/MS)}
+	   @list{Use model checking to find flaws in a protocol.}
 	   @list{submit proposed environment model and desired properties that should/should not hold under this model}
 	   @list{assess whether model conforms to problem, whether
 			model supports/masks the properties provided
 			with the model.  Comment on good/bad features
 			of this model. }
-	   @list{no}
 	   )
-     (list @list{Programming Fundamentals 2}
-	   @list{Second semester undergraduate}
-	   @list{Classroom clicker assignment on if-statements}
+     (list @list{Programming Fundamentals 2 (2nd semester undergrad)}
+	   @list{Classroom clicker assignment on if-statements [*]}
 	   @list{Draw CFGs for code snippets}
 	   @list{Boolean assessment of whether CFG is accurate}
-	   @list{yes}
 	   )
-     (list @list{Software Performance}
-	   @list{MS level}
-	   @list{Develop an extension to the jikes visual debugger}
+     (list @list{Software Performance (MS)}
+	   @list{Develop an extension to the jikes visual debugger [???]}
 	   @list{proposal, prototypes, final artifact}
 	   @list{comment on one thing they particularly like, and one
 			 aspect that could be improved.  Prototype
 			 evaluations follow in-class presentations by
-			 each team on their prototype.  Final artifact
+			 each team.  Final artifact
 			 review assesses usability, extensibility, and
 			 documentation }
-	   @list{yes(?)}
 	   )
-     (list @list{Computing for Social Sciences and Humanities}
-	   @list{Undergraduate}
+     (list @list{Computing for Social Sciences and Humanities (undergrad)}
 	   @list{Cluster data on voting records (US Senate) to identify senators with similar ideology}
 	   @list{submit code and tests for instructor-defined subsets of overall functionality}
 	   @list{Provide scores from 0 to 100 on each of (a) whether
 			 tests meaningfully capture the assignment
 			 purpose, and (b) whether code performs the
 			 corresponding computation correctly. }
-	   @list{no}
 	   )
-     (list @list{Logic for System Modelling}
-	   @list{Upper-level undergraduate/MS}
-	   @list{Write a relational (Alloy) model of an elevator}
+     (list @list{Logic for System Modelling (upper undergrad/MS)}
+	   @list{Write a relational (Alloy) model of an elevator [~]}
 	   @list{model data components, describe desired properties of model, initial model of elevator operations}
 	   @list{components/properties missing? components/properties
 				       reasonable?  Is operational
 				       model suitably operational or
 				       too declarative?} 
-	   @list{similar}
 	   )
      (list @list{Advanced CS1 with Data Structures}
-	   @list{First-year undergrad}
 	   @list{Design a data structure for incremental and
-			functional updates on trees}
+			functional updates on trees [*]}
 	   @list{datatype definition with instances of the data, test cases, complete programs}
 	   @list{can data structure support required operations within
 		     time bounds, missing interesting examples of
 		     data, coverage of tests, correctness of tests }
-	   @list{yes}
 	   )
-     (list @list{Programming Languages}
-	   @list{upper-level undergraduate/Graduate}
-	   @list{Provide a test suite and implementation for a type checker}
+     (list @list{Programming Languages (upper undergrad/grad)}
+	   @list{Provide a test suite and implementation for a type
+			 checker [*]}
 	   @list{tests, then implementation (no synchronized deadlines, but must occur in order)}
-	   @list{Set of ~10 specific questions about test coverage
-		     (provide no or line number with the test), plus
+	   @list{Set of ~10 specific questions about test coverage, plus
 		     free-form comments on style or organization of
 		     test suite.  No peer review on implementations. }
-	   @list{yes}
 	   )
-     (list @list{Software Security}
-	   @list{MS level}
-	   @list{Students implement simple on-line web-app on a strict timetable, then apply article on attack trees to their program}
-	   @list{initial program, attack trees, secured app. result of
+     (list @list{Software Security (MS)}
+	   @list{Implement simple on-line web-app on a strict
+			   timetable, then create attack trees for it}
+	   @list{initial program, attack trees, secured app, result of
 			 using fuzzing tools, results of using static
 			 analysis tools, review differences between
 			 original and secured application }
 	   @list{Free-form comparison to what was done in own solution}
-	   @list{no}
 	   )
-     (list @list{Introduction to Functional Programming}
-	   @list{mostly upper-level undergrad/MS}
-	   @list{Boggle: write program to find all valid words in 4x4 grid}
-	   @list{identify tasks to finding one word, *decompose
-			  overall problem into tasks (with quickcheck
-							   assertions), implement, *test} 
+     (list @list{Introduction to Functional Programming (upper undergrad/MS)}
+	   @list{Boggle: find all valid words in 4x4 grid}
+	   @list{decomposition of overall problem into tasks 
+			       (with quickcheck assertions), tests} 
 	   @list{check decomposition makes sense, presenting
 		       alternative if own differs from reviewed one;
 		       try own test suite on the code being reviewed }
-	   @list{no}
 	   )
-     (list @list{Imperative and OO Programming Methodology}
-	   @list{2nd year}
+     (list @list{Imperative and OO Programming Methodology (2nd year)}
 	   @list{implement program that satisfies a student-selected set of learning goals}
 	   @list{*choose goals, *choose program that satifies goals,
 			 design program, implement program, design
 			 presentation on how program achieves goals,
 			 give presentation }
 	   @list{template provided by instructors, question of whether this should be in-person or written}
-	   @list{no}
 	   )
-     (list @list{Imperative and OO Programming Methodology}
-	   @list{2nd year}
+     (list @list{Imperative and OO Programming Methodology (2nd year)}
 	   @list{Implement simple Pong game in model-view-controller style}
 	   @list{identify component, design data structure 
 			  (classes and interfaces), design tests, two
@@ -545,7 +501,6 @@ feedback}
 			   motivated; checking for good code
 			   properties such as naming,structure,
 			   identation, etc }
-	   @list{no}
 	   )
 ))
 ]}
