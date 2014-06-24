@@ -26,7 +26,7 @@
 
 @;;;; DOCUMENT STARTS HERE ;;;;;;;;;;;;;;
 
-@title{Methodology and Technology for In-Flow Peer Review}
+@title{In-Flow Peer Review}
 
 @(authorinfo "Dave Clarke" "Uppsala Universitet" "dave.clarke@it.uu.se")
 @(authorinfo "Tony Clear" "Auckland University of Technology" "tony.clear@aut.ac.nz")
