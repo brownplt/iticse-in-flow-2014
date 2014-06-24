@@ -1,8 +1,4 @@
-(NOTE: This is raw text which has not been edited and might
- badly traumatize a native speaker. It'll be fixed when I've
- gone over my second section, -- Ville)
-
-# Review assignment
+## Assigning Reviewers
 
 Different ways of assigning reviewers can be used affect many aspects of the
 IFPR process. For example, the review assignment process can have an effect on
@@ -37,7 +33,7 @@ Each of the assignment patterns represent different point in the design space
 of in-flow review process. In the following sections, we discuss the benefits
 and disadvantages that these patterns have.
 
-## Random assignment
+### Random assignment
  
 Random selections are the simplest method for reviewer assignment. In an
 in-flow setting, however, random selections will be biased according to when
@@ -46,7 +42,7 @@ likely to receive work to be reviewed from students who also submitted early.
 This effect can be detrimental in some contexts and can be migitated with
 intermediate deadlines that avoid biasing.
 
-## Temporal order
+### Temporal order
 
 Assigning reviewers by temporal order maximises the throughput
 of the in-flow review system. 
@@ -55,7 +51,7 @@ of the in-flow review system.
 and we did not discuss it much during the WG. I think you might want 
 to expand on this.)
 
-## Predefined
+### Predefined
 
 Predefined review assignments can allow the IFPR practitioner to have a fixed
 schedule, which can be used to ensure that ensures that reviews are assigned
@@ -69,7 +65,7 @@ review sessions are planned, the recommended way of arranging them is to
 schedule them early on.  On the negative side, predefined schedule can be more
 fragile in face of changes, such students leaving the course.
 
-## Stratified
+### Stratified
 
 Online stratified selection can be seen as an alternative to predefining
 reviewing schedule. The IFPR process allows the teacher to collect
@@ -86,7 +82,7 @@ deciding which sort of pairing should be preferred over another is context
 dependent (CITE Fincher&Petre).  It is also not clear that the task
 performance is an indicator to performance as a reviewer. (CITE Schunn)
 
-## Market model
+### Market model
 
 Assigning reviewers with a market scheme attaches an external benefit on
 writing reviews and an external cost to consuming the reviews.  This model
@@ -117,7 +113,7 @@ doing so must be considered from the perspective of the culture in which the
 education takes place and from the perspective of the educational philosophy
 employed.
 
-## Persistence as a modifier
+### Persistence as a modifier
 
 The in-flow process often requires multiple review tasks to be completed during
 a single exercise, which gives rise to the design decision whether to make new
