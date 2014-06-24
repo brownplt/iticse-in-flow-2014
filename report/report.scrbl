@@ -234,18 +234,42 @@ get started with @IFPR, accounting for different course contexts.
 @section{Terminology}
 
 @figure*{"i:terminology"
+         @(para "Illustration of key terminology")
   @(image #:scale 0.5 "images/terminology/Slide1.png")
 }
 
+Throughout this report, we use the following terminology for the
+various artifacts, roles, and aspects of @IFPR (@(elemref
+"i:terminology") illustrates these graphically):
+
 @itemlist[
-@item{Overall assignment with possibly many reviewable parts: exercise}
-@item{Subparts for which reviewable work will get submitted: stage} 
-@item{Thing being reviewed: submission (may include
-performance/presentation)}
-@item{Feedback on review: meta-review}
-@item{Assignment of reviewers to submissions: reviewing assignment}
-@item{Person who produces submissions: author (also review recipient)}
-@item{Person who produces review: reviewer}
+@item{An @emph{exercise} is a problem set or assignment associated
+with a course; it may consist of multiple independent subproblems.}
+
+@item{A @emph{stage} is a problem or task within an exercise that will
+be sent out for peer review.}
+
+@item{A piece of work on which a student will be reviewed is called a
+@emph{submission}: this could be a piece of code, a paper, a
+presentation, or any other work on which peers will provide feedback.}
+
+@item{The @emph{author} of a submission is the student who did the
+work associated with the submission (and who presumably would receive
+any grade associated with the submission, as well as any reviews about
+the submission).}
+
+@item{A @emph{review} is written by a @emph{reviewer} and responds to
+a specific submission.}
+
+@item{A @emph{meta-review} contains feedback on a review: this could
+be a grade of a review produced by course staff, feedback from the
+original submission author back to the reviewer, or any other
+commentary on the contents of a review.  The provider of a meta-review
+is called a @emph{respondant}.}
+
+@item{A @emph{reviewing assignment} indicates which reviewers are
+expected to produce reviews for each submission.}
+
 ]
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
