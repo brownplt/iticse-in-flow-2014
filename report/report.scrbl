@@ -658,50 +658,62 @@ feedback (formative assessment). [FILL]
 
 @md-section["sections/mitigating-costs.md"]
 
-@subsection{Helping Students Benefit from the Process}
+@subsection{Bringing Students Along}
+
+One challenge of peer review in general lies in getting students to
+value the contributions of their peers.  Peer evaluations contradict
+the model students are used to of the instructor as the trusted,
+knowledgeable authority.  In addition, many students aren't initially
+comfortable acting as reviewers, so a desire for harmony may hinder
+their ability to produce effective reviews at first.  These two
+dimensions--taking the reviews seriously and taking act of reviewing
+seriously--differ in force and mitigations.
+
+When students are in the role of reviewers, instructors may need to
+consider how to balance anonymity in reviewing with the need to engage
+students in the professional practice of reviewing.  When dealing with
+students from non-western cultures, explicit reminders that review is
+part of working in western culture.
+
+When students are in the role of receiving reviews, instructors should
+require students to demonstrate engagement with the reviews.  Asking
+students to indicate how they used reviews in revising their work is
+one option.  Students may need explicit instructions on how to read
+reviews; this might also help them cope with criticisms.  For some
+students, peer review may be their first time getting negative
+feedback; instructors should make response to review a positive
+activity.  For students whose work was strong and did not yield
+actionable reviews, an instructor could ask "what have you learned
+from looking at others' solutions?" Perhaps this is something you do
+on a couple of assignments, to satisfy the goal of helping them learn
+to self-reflect.
+ 
+Specific suggestions for students included:
 
 @itemlist[
-@item{Getting students to take peer-comments seriously}
-@item{Motivating students}
-@item{Interaction between reviewing and developing student confidence}
+@item{When you get a criticism, go back to other reviews -- are you
+getting the same mistake over and over?  }
+
+@item{Have a cooling-off period if you get negative reviews -- you may
+view them more positively with a little passage of time}
+
+@item{Do you see a contradiction in your reviews.  }
+
+@item{How will you avoid making these mistakes again in the future?
+look at the review, break out the actionable items, prioritize}
+
+@item{Remind them that the goal of this is to improve the work --- be
+hard on the issue, soft on the people}
+
 ]
 
-@fill{summary of gdoc}
+If students remain skeptical of the value of peer-review, a mid-course
+survey on the value of reviewing might help convey the experiences of
+others.  This also sets a culture of peer-review as a collective effort.
 
 @section{Evaluation and Analytics for IFPR}
 
 @md-section["sections/evaluation-analytics.md"]
-
-@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-@section{Tool support for @IFPR}
-
-Describe Informa
-
-Describe CaptainTeach
-
-Describe PeerWise 
-
-@section{Desired Features in IFPR Tools}
-
-@section{Assessment of the In-Flow Model Itself}
-
-In-flow Peer Review is a pedagogic idea, and as such, should be
-subject to evaluation.  What would such an evaluation look like?  What
-are the challenges to doing such an assessment?  What do we want to
-know about in-flow peer review?
-
-@itemlist[
-
-@item{How to isolate effects of reviewing?}
-
-@item{How to tease out potential placebo effects?}
-
-@item{What are the right metrics for this?}
-
-@item{What other strategies can we compare in-flow peer review to?}
-
-]
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -944,6 +956,10 @@ of our case studies of in-flow review, students review an instance of the
 @emph{same} work that they just did themselves @fill{check that this is
 accurate after going through the case studies}.
 
+[INSERT CaptainTeach]
+
+[INSERT Informa]
+
 @subsection{Actionable Peer Review}
 
 @fill{re-UTF Aropa}
@@ -968,11 +984,13 @@ improve their projects in response to their peers' feedback.
 
 @section{Conclusion}
 
+[FILL]
+
 @(generate-bib)
 
 @section[#:tag "s:case-studies"]{Appendix --- Case Studies}
 
-[Have pulled in one for now, to see how our default formatting works
--- need to fix this.]
+[Have pulled in one detailed case study for now -- rest will be added
+once we decide which parts to retain for the report]
 
 @md-section["../in-flow-assignments/fisler/asgn-1.md"]
