@@ -1,5 +1,4 @@
-Rubrics
-=======
+## Rubrics
 
 In this section, we discuss different aspects of using rubrics to
 guide and influence the review work, and to facilitate comparison,
@@ -29,8 +28,7 @@ considered a part of the "formal review" to lower the overhead on
 the reviewee's side when there is more focus on the reviewer.
 
 
-Design Parameters of Rubrics
-----------------------------
+### Design Parameters of Rubrics
 
 In addition to the initial question of who is the review for, we
 have so far identified a number of design parameters for reviews.
@@ -71,8 +69,7 @@ Rubrics for time-boxing
     artefact rather than focusing on just a subset. 
 
 
-Evolution of Rubrics
---------------------
+### Evolution of Rubrics
 
 Although there are things to say for consistency, rubrics need
 not stay the same throughout a course, and definitely not when
@@ -95,8 +92,7 @@ until a certain level of mastery is achieved are the able to go in
 an make detailed reviews about specific aspects of an artefact.
 
 
-Pros and Cons of Rubrics
-------------------------
+### Pros and Cons of Rubrics
 
 An important aspects of rubrics is their usage to carry data.
 While very detailed and fixed rubrics can be bad in certain ways,
@@ -130,8 +126,7 @@ particular review: who is it for, what is the intended outcome,
 etc.
 
 
-Specific Forms of Reviews
--------------------------
+### Specific Forms of Reviews
 
 As was noted above, input from the reviewee (e.g., on where the
 review should focus) might increase the relevance of the review
@@ -164,13 +159,6 @@ and correctness of outputs.
 For writing, good rubrics include completion, timeliness, value of
 contributions.
 
-* Things I might leave out for those who know it better
-** see Klemmer’s paper for Coursera
-*** http://www.cogsci.ucsd.edu/~mboyle/COGS1/readings/Klemmer-COGS1-Peer%20and%20self%20assesment%20in%20massive%20online%20classes.pdf
-** what Jay McCarthy did
-** Reference to track down (SK): Instructor sees a bug, writes a test case, and runs test case on all other submissions
+see Klemmer’s paper for Coursera[cite](kwl...:peer-self-assess-mooc)
 
-%%% Local Variables: ***
-%%% mode: org ***
-%%% ispell-local-dictionary: "british"  ***
-%%% End: ***
+Reference to track down: Instructor sees a bug, writes a test case, and runs test case on all other submissions

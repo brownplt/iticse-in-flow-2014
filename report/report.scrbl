@@ -1,13 +1,9 @@
 #lang scribble/sigplan @noqcourier
 
 @;;; TODOs ;;;;;;
-@; Joe: Figure out why markdown files lose start-of-para indentation
-@; Shriram: Summary section
 @; Shriram: pull in case studies as subsections of appendix
 @; Joe: fill in remaining related work
 @; Kathi: pull in remaining gdoc content (that wasn't assigned out)
-@; Kathi: finish populating table
-@; someone: include markdown cites in dummy section so show up in bib
 @; someone: fix quotes (replace " with `` and '')
 
 @(require scribble/core
@@ -87,10 +83,11 @@ solutions, try to at least locate (if not offer corrections to)
 errors, offer their explanations for what an artifact is doing
 (especially if it does not match the expectations set by the problem),
 and justify their views on the appropriateness and correctness of
-presented solutions
+presented solutions.  Giving authors the ability to respond to reviews
+further reinforces the quoted principles.
 
 This working group explored a particular variant of peer-review called
-@italic{in-flow peer review} @~cite["politz-ct-iticse14"].  In this
+@italic{in-flow peer review}@~cite["politz-ct-iticse14"].  In this
 model, peer review occurs while an assignment is in progress, before
 students submit their work for final grading. Performing peer-review
 in-flow has several potential benefits:
@@ -100,25 +97,18 @@ in-flow has several potential benefits:
 specification. If the work they see others doing is inconsistent with
 their understanding, one or the other (or both!) might be confused. It
 is better to discover this while the assignment is in progress than
-after it's over.}
+after it is over.}
 
 @item{Students are motivated to read feedback they get since it can
 affect the performance of their current assignment. In contrast,
 feedback given when the assignment is over may get less attention if
 students have moved on to other assignments.}
 
-@item{Students might find ideas that help them improve their own
-solutions.}
-
-@item{The process can also help identify mistakes or ambiguities in
-problem statements while it is still meaningful to address them for
-the current group of students.}
-
 @item{Letting students see the work others are doing seems to enable
 plagiarism. In fact, we view this as a feature. When a student sees
 another's work, they do not know the quality of the work they see: it
 could be better than their own work, but it could also be
-worse. Therefore, what it forces on students is the need to exercise
+worse. Therefore, structured appropriately, it forces on students is the need to exercise
 @emph{judgment}.}
 
 @item{It further emphasizes the @emph{comparative} examination of work
@@ -128,19 +118,15 @@ against a student's own.}
 software development.}  
 
 ]
-Giving authors the ability to respond to reviews further reinforces
-the AP CS Principles quoted above. In particular, then, IFPR should be
-viewed not only as a way to scale grading (which is a use of
-peer-review by some MOOCs [CITE]), but as a critical educational
-process in its own right.
 
 Several challenges arise with this model, including figuring out how
 to decompose assignments for meaningful reviews, how to prevent
 students from gaming the process to avoid doing their own work, how to
 minimize the extra time this takes to complete homeworks, and how to
-help students not be led astray by weak or inaccurate reviews.  As a
-result, these seemingly subtle shifts could have interesting
-implications for how instructors employ peer review in courses.
+help students not be led astray by weak or inaccurate reviews.
+Considering the potential learning objectives of @IFPR, rather than
+viewing it merely as a way to scale grading (a use of peer-review in
+MOOCs [CITE]), adds subtlety to all of these questions.  
 
 This report summarizes activities of a working group around the
 promises and pitfalls of in-flow peer-review in computer science
@@ -149,27 +135,11 @@ various courses at various levels (though the majority taught courses
 related to programming, programming languages, or various aspects of
 software development).  Prior to the group's in-person meeting, each
 group member created two assignments for in-flow peer-review.  These
-case studies, which appear in the appendix (
-@secref["s:case-studies"]), formed the basis of many 
+case studies, which appear in the appendix
+(@secref["s:case-studies"]), formed the basis of many  
 of our discussions.
 
-In-flow peer-review is an example of a Contributing Student Pedagogy
-(CSP), a pedagogy in which students (a) contribute to the learning of
-others and (b) value the contributions of other students.  A 2008
-ITiCSE working group report describes various facets of such
-pedagogies@~cite["cspwg-08"].  @IFPR targets the second criterion
-(valuing the contributions of other students) more than traditional,
-post-submission peer review.  Various parameters in implementations of
-@IFPR affect the extent to which students contribute to the learning
-of others in practice: shallow reviews, for example, arguably meet the
-letter but not the intent of a CSP.  Separately, @IFPR has goals
-beyond CSP: writing reviews offers benefits to the reviewer as much as
-the reviewee, and often the learning goals that inspire @IFPR (and
-peer-review in general) are more focused on the reviewer than the
-reviewee.  Nonetheless, many of the theoretical underpinnings of CSPs
-also apply to @IFPR, and thus affect the ideas in this report.
-
-@section{A Guide to IFPR for the Busy}
+@section{An @IFPR Roadmap}
 
 IFPR is a mechanism open to many policies. These policies are a
 function of a course's goals, student maturity, cultural context, and
@@ -229,13 +199,12 @@ least relative to attaining a particular level of quality. [REF]}
 
 @section{Terminology}
 
-@figure*{"i:terminology"
-         @(para "Illustration of key terminology")
-  @(image #:scale 0.5 "images/terminology/Slide1.png")
-}
+@(figure* "i:terminology"
+          "Illustration of Key Terminology"
+          (image #:scale 0.5 "images/terminology/Slide1.png"))
 
 Throughout this report, we use the following terminology for the
-various artifacts, roles, and aspects of @IFPR (@(elemref
+various artifacts, roles, and aspects of @IFPR (@(figure-ref
 "i:terminology") illustrates these graphically):
 
 @itemlist[
@@ -270,7 +239,9 @@ expected to produce reviews for each submission.}
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-@section{Student Learning Objectives from @IFPR}
+@section{Educational Goals of @IFPR}
+
+@subsection{Student Learning Objectives}
 
 In-flow peer review arises from a desire to help students learn
 several important skills, while leveraging ongoing assignments to
@@ -314,25 +285,38 @@ articulate opinions on technical work.
 provide means for students to gain confidence and self-efficacy in
 their work, and in discussing the works of others.
 
+In-flow peer-review is an example of a Contributing Student Pedagogy
+(CSP), a pedagogy in which students (a) contribute to the learning of
+others and (b) value the contributions of other students.  A 2008
+ITiCSE working group report describes various facets of such
+pedagogies@~cite["cspwg-08"].  @IFPR targets the second criterion
+(valuing the contributions of other students) more than traditional,
+post-submission peer review.  Various parameters in implementations of
+@IFPR affect the extent to which students contribute to the learning
+of others in practice: shallow reviews, for example, arguably meet the
+letter but not the intent of a CSP.  Separately, @IFPR has goals
+beyond CSP: writing reviews offers benefits to the reviewer as much as
+the reviewee, and often the learning goals that inspire @IFPR (and
+peer-review in general) are more focused on the reviewer than the
+reviewee.  Nonetheless, many of the theoretical underpinnings of CSPs
+also apply to @IFPR, and thus affect the ideas in this report.
+
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-@section{Instructor Goals from @IFPR}
+@subsection{Instructor Goals}
 
 Peer review in general has several pedagogic motivations beyond
 student-oriented learning objectives.  These include:
 
 @itemlist[
-@item{Engaging students more in their own learning}
-@item{Improving students' communication skills}
+@item{Emphasizing the importance of writing in technical contexts}
 @item{Increasing social interaction, thus making programming a more
 social activity}
 @item{Providing human feedback more scalably than with only expert
 assessment}
+@item{Fostering engagement of students from different cultures,
+particularly non-western students who are new to western classrooms}
 ]
-
-Engaging students from different cultures, particularly non-western
-students new to western classrooms, is another pedagogic outcome that
-can arise from {@IFPR}.
 
 The in-flow context has additional pedagogic motivations:
 
@@ -341,7 +325,7 @@ The in-flow context has additional pedagogic motivations:
 @item{Re-examining plagiarism issues by moving the problem}
 ]
 
-@IFPR also offers various benefits to instructors.  Reading reviews
+In general, reading reviews
 provides a window into students' meta-cognitive development around the
 assignment content: a student can only comment on issues that she
 understands to be important.  @IFPR provides an opportunity to ask
@@ -351,187 +335,131 @@ reflection.  Selecting artifacts worthy of this additional time can
 help instructors identify more cognitively-challenging portions of
 assignments.
 
-@IFPR satisfies different learning goals than live code review, which
-is part of many software-development courses.  Live code review
-focuses on code, whereas reading reviews gets better at students'
-metacognitive development.  IFPR is less intimidating than code
-review, as a student is not called upon to defend his own work.
-
-Also helps emphasize on writing as important in technical contexts.
-
-@subsection{Interaction with Grading Mechanisms}
-
-IFPR may make work improve, but if grading is done on a curve, maybe
-it makes no difference, and the competitive element means students may
-be less motivated to participate.  In particular, grading on a curve
-could interact with @IFPR in three ways:
-
-@itemlist[
-@item{Demotivation --- it's not good to help others, because it can push them past you}
-@item{Unmotivating --- no reason to respond to feedback/work on reflection, because you can only do so well on the curve}
-@item{Destruction --- students can sabotage one another with bad
-feedback}
-]
-
-
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 @section{Examples of @IFPR}
 
-@figure*{"tab:case-studies"
-         @para{Summary of case studies}
+@(figure* "fig:case-studies"
+          "Summary of Case Studies"
  @tabular[
   (add-width-wrappers
-   (list "1in" "1in" "1in" "2in" "1in" "1in") 
+   (list "1in" "1in" "2in" "2in") 
    (list
-     (list @list{@bold{Course}} @list{@bold{Course Level}} @list{@bold{Assignment}}
-           @list{@bold{Peer-Review Structure}} @list{@bold{Rubrics}} @list{@bold{Tried?}})
+     (list @list{@bold{Course and Level}} @list{@bold{Exercise}}
+           @list{@bold{Submissions}} @list{@bold{Review Criteria}})
      (list @list{CS1}
-	   @list{First-Year Undergrad}
 	   @list{Write code and assertions for various components of a pinball game}
 	   @list{Submit work so far on subset of functions designated by instructor}
 	   @list{readability, correctness, free-form comments}
-	   @list{no}
 	   )
-     (list @list{Advanced Sofware Design}
-	   @list{Upper undergrad/MS} 
-	   @list{design and partly implement a mobile-app+server for a
-			game, following iterative development.
-			Students must choose which stated asgn goals
-			to cover in the (inadequate) time provided.}  
+     (list @list{Advanced Sofware Design (upper undergrad/MS)}
+	   @list{design and partly implement a mobile app+server for a
+			game, using iterative development, and
+			choosing a subset of asgmt goals to cover.}  
 	   @list{submit design documents so far}
 	   @list{free-form on comprehensibility, quality of
 			   documentation, coverage of use cases,
 			   adherence to design principles, choice of
 			   subsystem to implement.  Concrete examples
 			   required to illustrate each point. }
-	   @list{no}
 	   )
-     (list @list{Collaborative Computing}
-	   @list{MS}
-	   @list{Collaboratively produce a research article}
+     (list @list{Collaborative Computing (MS)}
+	   @list{Collaboratively produce a research article [*]}
 	   @list{drafts of article}
 	   @list{Conference paper reviewing rubric, with questions on
 			    suitability for audience, originality and
 			    demonstrated knowledge in contribution,
 			    eveidence for arguments, methods,
 			    presentation, etc. }
-	   @list{yes}
 	   )
-     (list @list{Software Security}
-	   @list{Upper-level Undergrad/MS}
+     (list @list{Software Security (upper undergrad/MS)}
 	   @list{Find ways to attack a web-based application}
 	   @list{Students peer-review each others' strategies to attack the
                  application in black box fashion.  After reviewing, students attack
 		 the application in white box fashion}
-	   @list{[FILL]}
-	   @list{no}
+	   @list{free-form comments on comprehensiveness of attack plans}
 	   )
-     (list @list{Software Modeling and Verification}
-	   @list{Upper-level undergrad/MS}
-	   @list{Use formal verification to find flaws in a protocol
-		     design.  Peer-reviewed portion focuses on
-		     building models of the protocol's environment,
-		     which in turn drives verification. }
+     (list @list{Software Modeling and Verification (upper undergrad/MS)}
+	   @list{Use model checking to find flaws in a protocol.}
 	   @list{submit proposed environment model and desired properties that should/should not hold under this model}
 	   @list{assess whether model conforms to problem, whether
 			model supports/masks the properties provided
 			with the model.  Comment on good/bad features
 			of this model. }
-	   @list{no}
 	   )
-     (list @list{Programming Fundamentals 2}
-	   @list{Second semester undergraduate}
-	   @list{Classroom clicker assignment on if-statements}
+     (list @list{Programming Fundamentals 2 (2nd semester undergrad)}
+	   @list{Classroom clicker assignment on if-statements [*]}
 	   @list{Draw CFGs for code snippets}
 	   @list{Boolean assessment of whether CFG is accurate}
-	   @list{yes}
 	   )
-     (list @list{Software Performance}
-	   @list{MS level}
-	   @list{Develop an extension to the jikes visual debugger}
+     (list @list{Software Performance (MS)}
+	   @list{Develop an extension to the jikes visual debugger [???]}
 	   @list{proposal, prototypes, final artifact}
 	   @list{comment on one thing they particularly like, and one
 			 aspect that could be improved.  Prototype
 			 evaluations follow in-class presentations by
-			 each team on their prototype.  Final artifact
+			 each team.  Final artifact
 			 review assesses usability, extensibility, and
 			 documentation }
-	   @list{yes(?)}
 	   )
-     (list @list{Computing for Social Sciences and Humanities}
-	   @list{Undergraduate}
+     (list @list{Computing for Social Sciences and Humanities (undergrad)}
 	   @list{Cluster data on voting records (US Senate) to identify senators with similar ideology}
 	   @list{submit code and tests for instructor-defined subsets of overall functionality}
 	   @list{Provide scores from 0 to 100 on each of (a) whether
 			 tests meaningfully capture the assignment
 			 purpose, and (b) whether code performs the
 			 corresponding computation correctly. }
-	   @list{no}
 	   )
-     (list @list{Logic for System Modelling}
-	   @list{Upper-level undergraduate/MS}
-	   @list{Write a relational (Alloy) model of an elevator}
+     (list @list{Logic for System Modelling (upper undergrad/MS)}
+	   @list{Write a relational (Alloy) model of an elevator [~]}
 	   @list{model data components, describe desired properties of model, initial model of elevator operations}
 	   @list{components/properties missing? components/properties
 				       reasonable?  Is operational
 				       model suitably operational or
 				       too declarative?} 
-	   @list{similar}
 	   )
      (list @list{Advanced CS1 with Data Structures}
-	   @list{First-year undergrad}
 	   @list{Design a data structure for incremental and
-			functional updates on trees}
+			functional updates on trees [*]}
 	   @list{datatype definition with instances of the data, test cases, complete programs}
 	   @list{can data structure support required operations within
 		     time bounds, missing interesting examples of
 		     data, coverage of tests, correctness of tests }
-	   @list{yes}
 	   )
-     (list @list{Programming Languages}
-	   @list{upper-level undergraduate/Graduate}
-	   @list{Provide a test suite and implementation for a type checker}
+     (list @list{Programming Languages (upper undergrad/grad)}
+	   @list{Provide a test suite and implementation for a type
+			 checker [*]}
 	   @list{tests, then implementation (no synchronized deadlines, but must occur in order)}
-	   @list{Set of ~10 specific questions about test coverage
-		     (provide no or line number with the test), plus
+	   @list{Set of ~10 specific questions about test coverage, plus
 		     free-form comments on style or organization of
 		     test suite.  No peer review on implementations. }
-	   @list{yes}
 	   )
-     (list @list{Software Security}
-	   @list{MS level}
-	   @list{Students implement simple on-line web-app on a strict timetable, then apply article on attack trees to their program}
-	   @list{initial program, attack trees, secured app. result of
+     (list @list{Software Security (MS)}
+	   @list{Implement simple on-line web-app on a strict
+			   timetable, then create attack trees for it}
+	   @list{initial program, attack trees, secured app, result of
 			 using fuzzing tools, results of using static
 			 analysis tools, review differences between
 			 original and secured application }
 	   @list{Free-form comparison to what was done in own solution}
-	   @list{no}
 	   )
-     (list @list{Introduction to Functional Programming}
-	   @list{mostly upper-level undergrad/MS}
-	   @list{Boggle: write program to find all valid words in 4x4 grid}
-	   @list{identify tasks to finding one word, *decompose
-			  overall problem into tasks (with quickcheck
-							   assertions), implement, *test} 
+     (list @list{Introduction to Functional Programming (upper undergrad/MS)}
+	   @list{Boggle: find all valid words in 4x4 grid}
+	   @list{decomposition of overall problem into tasks 
+			       (with quickcheck assertions), tests} 
 	   @list{check decomposition makes sense, presenting
 		       alternative if own differs from reviewed one;
 		       try own test suite on the code being reviewed }
-	   @list{no}
 	   )
-     (list @list{Imperative and OO Programming Methodology}
-	   @list{2nd year}
+     (list @list{Imperative and OO Programming Methodology (2nd year)}
 	   @list{implement program that satisfies a student-selected set of learning goals}
 	   @list{*choose goals, *choose program that satifies goals,
 			 design program, implement program, design
 			 presentation on how program achieves goals,
 			 give presentation }
 	   @list{template provided by instructors, question of whether this should be in-person or written}
-	   @list{no}
 	   )
-     (list @list{Imperative and OO Programming Methodology}
-	   @list{2nd year}
+     (list @list{Imperative and OO Programming Methodology (2nd year)}
 	   @list{Implement simple Pong game in model-view-controller style}
 	   @list{identify component, design data structure 
 			  (classes and interfaces), design tests, two
@@ -545,34 +473,37 @@ feedback}
 			   motivated; checking for good code
 			   properties such as naming,structure,
 			   identation, etc }
-	   @list{no}
 	   )
 ))
-]}
+])
 
 The case studies from working group members covered a variety of
 student levels and course types.  More interestingly, they varied
 widely in the kinds of artifacts and processes that they suggested for
-{@IFPR}.  Table @fill{ref Fig 1} summarizes the key parameters of the case
-studies.  The full details appear in @secref["s:case-studies"]).
+@|IFPR|.  @(Figure-ref "fig:case-studies") summarizes the key
+parameters of the case studies.  The table lists the name and level of
+the course, describes the assignment in which @IFPR was used,
+describes the submissions that were reviewed, and describes the review
+criteria for submissions.  Courses with [*] after their descriptions
+have been used in actual courses; the rest are hypothetical uses
+proposed by working group members, based on exercises in their current
+courses.
 
-INSERT Github URL
-
-@fill{Explain @IFPR applied to the case studies}
-
-@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+The full case-study descriptions appear in @secref["s:case-studies"].
+The source files are also available at
+@(url "https://github.com/brownplt/iticse-in-flow-2014/tree/master/in-flow-assignments").
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 @section{Parameters and Issues}
 
 The working group identified a series of parameters, issues, and
-logistical questions that surround the idea of {@IFPR}.  
+logistical questions that surround the idea of @|IFPR|.  
 
 @subsection{What Artifacts Should be Reviewed?}
 
 The group identified four broad choices in the artifacts to be
-reviewed:
+reviewed: 
 
 @itemlist[
 @item{Multiple iterations of the same specific deliverable (like a paper)}
@@ -581,30 +512,48 @@ reviewed:
 @item{Incremental views of the same deliverable (datatypes, tests, code)}
 ]
 
-@subsection{How to Conduct Reviews}
+[INSERT discussion of how much to structure assignments]
 
-@itemlist[
-@item{How much to structure assignments?}
-@item{staged artifacts vs iterations on same artifact}
-
-@item{How to assign reviewers: random, let students pick, same reviewer for whole
-assignment, assigned by instructor, etc.  Related work:
-@url{dl.acm.org/citation.cfm?id=2215100&CFID=353776286&CFTOKEN=25368603}}
-]
-
-@subsubsection{Designing Reviewing Rubrics}
+[INSERT more discussion of topic]
 
 @md-section["sections/rubrics.md"]
 
-@subsubsection{Designing Feedback Forms}
+To read:
+
+Klemmer and others on accuracy/rubrics: @~cite["kwl...:peer-self-assess-mooc"]
+
+The notion of a Pedagogic Code Review with a moderator and a detailed plan for
+what to look for
+@~cite["hundhausen-pcr-toce13"]
+
+Comparing students to experts in writing reviews: @url{https://www.sciencedirect.com/science/article/pii/S0959475209000747}
+[Currently DOES NOT LOAD, so not moved into bib file]
+
+@subsection{Feedback On Reviews}
 
 @md-section["sections/feedback.md"]
 
-@subsubsection{Anonymity}
+Cho and MacArthur compare three approaches to giving feedback on
+written assignments in a psychology course: feedback from a single
+peer, feedback from a single topic expert, and feedback from multiple
+peers@~cite["cho-peer-expert-reviewing10"]. The results indicate that
+feedback from multiple peers results in better quality revisions than
+feedback from an expert, with feedback from a single peer being the
+worse.  The hypothesised reason for this was that peers gave feedback
+that was phrased in terms that students could more easily comprehend.
+It certainly would be interesting to see whether the same results
+applied to programming assignments.
+
+Metareviewing to determine quality of reviews by in Expertiza@~cite["gehringer-expertiza-approach"].
+@~cite["rg:auto-assess-rev-lsa"]
+
+Expertiza@~cite["gehringer-expertiza-approach"] also mentions an explicit review of review phase.
+
+@subsection{Anonymity}
 
 @md-section["sections/anonymity.md"]
 
-@subsubsection{Timing Reviewing}
+@subsection{Timing Reviewing}
 
 Reviewing can happen synchronously or asynchronously across students.
 Synchronous reviewing occurs when all students submit work for review
@@ -630,21 +579,43 @@ might blame the review process for failure to improve their work}
 @item{Asynchronicity hinders collaboration}
 ]
 
-@subsubsection{The Role of Experts}
+@subsection{The Role of Experts}
 
 @md-section["sections/expert-roles.md"]
 
-@subsubsection{Does it make sense for non-majors?}
+@subsection{Interaction with Grading Mechanisms}
+
+IFPR may make work improve, but if grading is done on a curve, maybe
+it makes no difference, and the competitive element means students may
+be less motivated to participate.  In particular, grading on a curve
+could interact with @IFPR in three ways:
+
+@itemlist[
+@item{Demotivation --- it's not good to help others, because it can push them past you}
+@item{Unmotivating --- no reason to respond to feedback/work on reflection, because you can only do so well on the curve}
+@item{Destruction --- students can sabotage one another with bad
+feedback}
+]
+
+Another grading interaction concerns automatic grading, an
+increasingly common practice in Computer Science courses.  
+When assignment steps can be graded automatically, how much feedback
+should go to students and/or reviewers alongside the peer-written
+reviews?  Giving auto-grade results could lead to reviewers putting in
+less effort (thus masking situations in which the auto-grading missed
+something important). [FILL]
+
+
+@subsection{Does it make sense for non-majors?}
 
 @md-section["sections/non-majors.md"]
 
-@subsubsection{Pair Programming and IFPR}
-
-@md-section["sections/pair-programming.md"]
-
-@subsubsection{Assigning Reviewers}
+@; @subsection{Assigning Reviewers}
 
 @md-section["sections/assigning-reviewers.md"]
+
+Related work:
+@~cite["Papadopoulos:2012:IPR:2215076.2215100"]
 
 @subsection{Grading Reviews}
 
@@ -675,14 +646,6 @@ In the context of @IFPR, peer reviews can either serve as "rewards"
 (summative assessment in the form of scores/grades) or as constructive
 feedback (formative assessment). [FILL]
 
-@subsubsection{Relating auto-grading and in-flow peer review}
-
-When assignment steps can be graded automatically, how much feedback
-should go to students and/or reviewers alongside the peer-written
-reviews?  Giving auto-grade results could lead to reviewers putting in
-less effort (thus masking situations in which the auto-grading missed
-something important).
-
 @subsection{Undesirable Student Behavior}
 
 @subsubsection{Plagiarism and Gaming the Assignment}
@@ -693,322 +656,70 @@ something important).
 
 @md-section["sections/mitigating-costs.md"]
 
-@subsection{Helping Students Benefit from the Process}
+@subsection{Bringing Students Along}
+
+One challenge of peer review in general lies in getting students to
+value the contributions of their peers.  Peer evaluations contradict
+the model students are used to of the instructor as the trusted,
+knowledgeable authority.  In addition, many students aren't initially
+comfortable acting as reviewers, so a desire for harmony may hinder
+their ability to produce effective reviews at first.  These two
+dimensions--taking the reviews seriously and taking act of reviewing
+seriously--differ in force and mitigations.
+
+When students are in the role of reviewers, instructors may need to
+consider how to balance anonymity in reviewing with the need to engage
+students in the professional practice of reviewing.  When dealing with
+students from non-western cultures, explicit reminders that review is
+part of working in western culture.
+
+When students are in the role of receiving reviews, instructors should
+require students to demonstrate engagement with the reviews.  Asking
+students to indicate how they used reviews in revising their work is
+one option.  Students may need explicit instructions on how to read
+reviews; this might also help them cope with criticisms.  For some
+students, peer review may be their first time getting negative
+feedback; instructors should make response to review a positive
+activity.  For students whose work was strong and did not yield
+actionable reviews, an instructor could ask "what have you learned
+from looking at others' solutions?" Perhaps this is something you do
+on a couple of assignments, to satisfy the goal of helping them learn
+to self-reflect.
+ 
+Specific suggestions for students included:
 
 @itemlist[
-@item{Getting students to take peer-comments seriously}
-@item{Motivating students}
-@item{Interaction between reviewing and developing student confidence}
+@item{When you get a criticism, go back to other reviews -- are you
+getting the same mistake over and over?  }
+
+@item{Have a cooling-off period if you get negative reviews -- you may
+view them more positively with a little passage of time}
+
+@item{Do you see a contradiction in your reviews.  }
+
+@item{How will you avoid making these mistakes again in the future?
+look at the review, break out the actionable items, prioritize}
+
+@item{Remind them that the goal of this is to improve the work --- be
+hard on the issue, soft on the people}
+
 ]
 
-@fill{summary of gdoc}
+If students remain skeptical of the value of peer-review, a mid-course
+survey on the value of reviewing might help convey the experiences of
+others.  This also sets a culture of peer-review as a collective effort.
 
-@subsection{Evaluation and Analytics for IFPR}
+@section{Evaluation and Analytics for IFPR}
 
 @md-section["sections/evaluation-analytics.md"]
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-@section{Tool support for @IFPR}
+@section{Related Code Review Practices}
 
-Describe Informa
+@subsection{Pair Programming and IFPR}
 
-Describe CaptainTeach
-
-Describe PeerWise 
-
-@section{Desired Features in IFPR Tools}
-
-@section{Assessment of the In-Flow Model Itself}
-
-In-flow Peer Review is a pedagogic idea, and as such, should be
-subject to evaluation.  What would such an evaluation look like?  What
-are the challenges to doing such an assessment?  What do we want to
-know about in-flow peer review?
-
-@itemlist[
-
-@item{How to isolate effects of reviewing?}
-
-@item{How to tease out potential placebo effects?}
-
-@item{What are the right metrics for this?}
-
-@item{What other strategies can we compare in-flow peer review to?}
-
-]
-
-@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-@section{Related Work}
-
-@subsection{Meta-cognitive Reflection}
-
-@relworkfill{Summarize related work on meta-cognitive reflection}
-
-Discussion here needs to cover things like :
-@itemlist[
-@item{What kinds of questions encourage reflection?}
-]
-
-One goal of in-flow review is to encourage reflection @emph{while in the
-middle of an assignment}.  Meta-cognitive reflection of techniques and
-approaches has been studied as an important part of the learning process, and
-others have found effective reviewing and prompting strategies for encouraging
-reflection that @IFPR can learn from.
-
-@fill{UTF encodings broke in next paragraph}
-
-Davis and Linn @~cite["davis-reflection-prompts"] use explicit self-review
-prompts at different stages of assignments given to eighth graders.  For
-example, in one assignment, students had to perform a repeated task (designing
-clothing and environments to help cold-blooded aliens survive).  They compared
-@;responses to direct prompts submitted along with a design, like ��\200\234Our design
-@;will work well because...�⏯������, to prompts designed to encourage reflection after
-@;the fact---���⏯������Our design could be better if we...���⏯������--- and plan-ahead prompts
-@;designed to cause reflection during the assignment---���⏯������In thinking about doing
-@;our design, we need to think about...���⏯������  Their sample size was small, and they
-responses to direct prompts submitted along with a design, like "Our design
-will work well because...", to prompts designed to encourage reflection after
-the fact---"Our design could be better if we..."--- and plan-ahead prompts
-designed to cause reflection during the assignment---"In thinking about doing
-our design, we need to think about..." Their sample size was small, and they
-did not find a significant difference in design quality between the direct and
-reflective prompts.  They did find that students gave better explanations when
-given the reflective prompts, but the difference could easily be attributed to
-the small sample size.
-
-Frederiksen and White have done a series of studies on @emph{reflective
-assessment} and @emph{reflective collaboration} in middle school science
-classes @~cite["white-reflective-affordances"
-"frederiksen-reflective-collaboration"].  In an online environment, students
-work on mock experiments using a scientific-method like flow for a project:
-they start with an initial inquiry, form hypotheses, analyze mock data, and
-draw conclusions.  In between steps, they are asked questions that urge them
-to reflect on their work: why they think a hypothesis is true, if they are
-being meticulous in analyzing their results, and more.  They are also given
-the opportunity to assess the work of other students in the form of ratings.
-@fill{Any studies where they ask the reflective questions about the other
-students?}
-
-@subsection{Learning By Example}
-
-@relworkfill{Summarize related work on learning by example}
-
-In in-flow peer review, students have the opportunity to take what they learn
-from examples of others' work and apply it to their own.
-
-Kulkarni et al @~cite["klemmer-examples"] discuss changes in creative output
-between subjects who varying amounts of examples, and diversity in examples,
-prior to creating their own artwork.  Subjects seeing more diverse examples
-created artwork with more unique features than subjects seeing a less diverse
-set or fewer examples.  Students who see more examples from others, especially
-when already primed to think about the same problem, may similarly have more
-options to draw on in their solution, rather than only using whatever
-techniques they would have tried in their initial submission.
-
-The PeerWise
-
-Discussion here needs to cover things like :
-@itemlist[
-@item{How many examples does one need to see before learning occurs?}
-@item{How similar do the examples need to be?}
-@item{What scaffolding (i.e., review questions) foster learning from examples?}
-]
-
-In PeerWise, students created and reviewed one anothers' multiple-choice
-questions, which has elements both of learning by example and of review:
-@url{http://dl.acm.org.revproxy.brown.edu/citation.cfm?id=1404526&CFID=472720597&CFTOKEN=32164599}
-
-@subsection{Motivating Participation in Peer Review}
-
-Student motivation affects what they will gain from participating in
-peer review.  Peer review requires participation from students in two
-roles: reviewer (provider of feedback) and reviewee (recipient of
-feedback).  FILL HERE
-
-
-
-Motivational factors affect both roles that students
-adopt during peer review: as authors of reviews, and as recipients of
-reviews.  Peer
-
-@fill{This section still being fleshed out structurally}
-
-In-flow peer review assumes that giving students feedback on their
-work while it is in progress (i.e., while they can still impact
-grades) will encourage them to take more from the reviews (from the
-recipient perspective).  Thus, in-flow is trying to affect a shift
-from the extrinsic motivation of "write this review for a grade" to
-the intrinstic motivation of "engage in this process so my own grade
-gets better" (though note that the extrinsic/intrinsic shift here is
-happening in two different roles -- review author and review recipient
--- have to sort that out).
-
-In-flow changes the motivation from being purely extrisnic (eg, "this
-will be graded") to intrinsic -- this does not necessarily improve the
-quality of feedback, but it should at least improve the desire to
-comprehend (and some students will realize that providing good
-feedback forces even better comprehension).
-
-Our discussion is framed by an assumption that students want to get as
-many points as possible for their work, within reasonable bounds on
-time and effort.  While some students are motivated simply by learning
-more and improving their skills, we assume that the potential to
-impact grades incentivizes students to engage more with in-flow
-feedback than with post-submission feedback.  Whether reviews
-themselves need to be graded is a separate question, which we discuss
-in this report.
-
-
-@subsection{Peer Instruction}
-
-Peer Instruction (PI), which is a specific form of student centered
-pedagogy [Ville 3], has been shown to be a promising way for improve student
-performance @~cite["crouch-mazur-peer-instr-10-years"] and engagement
-@~cite["simon-peer-instruction-icer13"] both in introductory courses
-@~cite["crouch-mazur-peer-instr-10-years"] and upper-division courses
-@~cite["lee-peer-instr-upper-level-13"]. Peer instruction, as defined by Crouch
-et. al. @~cite["crouch-mazur-peer-instr-10-years"], focuses on
-engaging students in activities that require them to apply the core
-concepts under study and to explain these concepts to their
-peers. Concretely, a class taught using PI principles can consist of
-short presentations, each of which focuses on a particular core
-concept and is tested by presenting students a conceptual question,
-which the students first solve individually and then discuss in
-groups. The PI pedagogies link with the concepts of blended learning
-and flipped classroom [Ville 4] in that PI requires students to study
-preparatory material before attending the class.
-
-Related to our undertaking, the most interesting component of PI is
-the student peer discussions that are undertaken after presentation of
-each concept. This, however, is not peer review.
-
-
-@subsection{Helping Students Be Successful Reviewers}
-
-@relworkfill{Related work on what makes students successful at
-reviewing}
-
-Related work discussion should address:
-@itemlist[
-@item{Arguments for providing structured rubrics}
-@item{Guidelines for good rubrics (Klemmer?)}
-]
-
-To read:
-
-Klemmer and others on accuracy/rubrics: @url{http://dl.acm.org/citation.cfm?id=2505057} and @url{http://hci.stanford.edu/publications/paper.php?id=209}
-
-The notion of a Pedagogic Code Review with a moderator and a detailed plan for
-what to look for in a review: @url{http://dl.acm.org/citation.cfm?id=1734324},
-@url{http://dl.acm.org/citation.cfm?id=1508972}
-
-Comparing students to experts in writing reviews: @url{https://www.sciencedirect.com/science/article/pii/S0959475209000747}
-
-@subsection{Providing Feedback on Reviews}
-
-@relworkfill{Summarize work on review feedback}
-
-@itemlist[
-@item{What kind of feedback is useful?}
-@item{Do experts need to provide the feedback?}
-]
-
-Cho and MacArthur compare three approaches to giving feedback on
-written assignments in a psychology course: feedback from a single
-peer, feedback from a single topic expert, and feedback from multiple
-peers@~cite["cho-peer-expert-reviewing10"]. The results indicate that
-feedback from multiple peers results in better quality revisions than
-feedback from an expert, with feedback from a single peer being the
-worse.  The hypothesised reason for this was that peers gave feedback
-that was phrased in terms that students could more easily comprehend.
-It certainly would be interesting to see whether the same results
-applied to programming assignments.
-
-
-Metareviewing to determine quality of reviews by Gehringer/Expertiza:
-@url{http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.416.228},
-@url{http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=5992285&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D5992285},
-@url{https://6c27b932-a-4ecc3149-s-sites.googlegroups.com/a/cspred.org/2010/proceedings/11-cspred2010_submission_3.pdf}
-
-Expertiza also mentions an explicit review of review phase in
-@url{http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.161.8397}, and
-@url{http://www.igi-global.com/chapter/monitoring-assessment-online-collaborative-environments/36844}
-might have even more on that.
-
-@subsection{Comprehending Program Structure}
-
-For in-flow assignments centered around programming, one goal of
-peer-review is to help students reflect on their code structure.
-There is a rich literature on program comprehension (particularly
-contrasting experts and novices), but much of that focuses on
-understanding @italic{behavior} of a new program.  In the in-flow
-peer-review context, students already know the problem and (roughly)
-what the program is supposed to do.  Reading others' code therefore
-has different goals: notably, to understand the structure that someone
-else brought to the problem and to contrast that with one's own.
-
-@relworkfill{Discuss related work around comprehending code
-organization}
-
-Related work discussion should address:
-@itemlist[
-@item{How do people uncover the structure of a program?}
-]
-
-To read:
-
-
-The WG on program comprehension: @url{http://dl.acm.org/citation.cfm?id=1971687}
-
-Several of the program comprehension works they reviewed:
-
-@url{http://dl.acm.org/citation.cfm?id=169088},
-@url{http://dl.acm.org/citation.cfm?id=322685&CFID=472720597&CFTOKEN=32164599},
-@url{http://www.cs.kent.edu/~jmaletic/Prog-Comp/Papers/soloway84.pdf},
-@url{http://www.sciencedirect.com/science/article/pii/016412128790032X}
-
-(What implications does this have for the experience level at which
-students can meaningfully engage in ifpr?  They need certain maturity
-to chunk, but chunking isn't necessarily needed on small programs.)
-
-@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-@subsection{Increasing Socialization in Programming-Oriented Courses}
-
-@relworkfill{Work on creating socialization}
-
-@itemlist[
-@item{Pair Programming}
-@item{Computer-mediated communication in collaborative educational settings (see ITiCSE WG 1997)}
-@item{Peer mentoring (across different class groups, but still the goal is socializing)}
-]
-
-Barker et al. describe the outcome of running an IT course more like a
-fine arts course than a traditional engineering course@~cite["barker-fine-arts-approach-cs05"]. This included
-projects that were more meaningful, public critique of results, and
-routing collaboration.  This approach created a classroom culture
-where learning is a social and community process, rather than
-individualised, and the result was a greater retention of female
-students than the tranditional engineering teaching approach.
-
-The technique most relevant for in-flow peer review, though not
-completely the same, is the approach to knowledge sharing during lab
-work. Students actively sort help from any student, for example, by
-yelling questions out, resulting in a fluid exchange of ideas and
-techniques. Even though the projects considered in these labs were run
-in an open, collaborative setting, cheating was avoiding by using
-individualised assignments.
-
-To read:
-
-Specifically about communication and the social climate in CS: @url{http://dl.acm.org/citation.cfm?id=1060073}
-
-Peer mentoring: A Mentor Program in CS1.  @url{http://dl.acm.org/citation.cfm?id=544420}
-
-
-@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+@md-section["sections/pair-programming.md"]
 
 @subsection{Industrial Peer-Review Practice}
 
@@ -1037,6 +748,181 @@ A recent update on professional code review (ICSE 2013):
 
 The SmartBear study, including the summary blog post.  
 
+[FILL related work summary on industrial code review]
+
+@subsubsection{Comparison to Live Code Review}
+
+@IFPR satisfies different learning goals than live code review, which
+is part of many software-development courses.  Live code review
+focuses on code, whereas reading reviews gets better at students'
+metacognitive development.  IFPR is less intimidating than code
+review, as a student is not called upon to defend his own work.
+
+@section{Additional Related Work}
+
+@subsection{Meta-cognitive Reflection}
+
+@relworkfill{Summarize related work on meta-cognitive reflection}
+
+Discussion here needs to cover things like :
+@itemlist[
+@item{What kinds of questions encourage reflection?}
+]
+
+One goal of in-flow review is to encourage reflection @emph{while in the
+middle of an assignment}.  Meta-cognitive reflection of techniques and
+approaches has been studied as an important part of the learning process, and
+others have found effective reviewing and prompting strategies for encouraging
+reflection that @IFPR can learn from.
+
+@fill{UTF encodings broke in next paragraph}
+
+Davis and Linn@~cite["davis-reflection-prompts"] use explicit self-review
+prompts at different stages of assignments given to eighth graders.  For
+example, in one assignment, students had to perform a repeated task (designing
+clothing and environments to help cold-blooded aliens survive).  They compared
+@;responses to direct prompts submitted along with a design, like ��\200\234Our design
+@;will work well because...�⏯������, to prompts designed to encourage reflection after
+@;the fact---���⏯������Our design could be better if we...���⏯������--- and plan-ahead prompts
+@;designed to cause reflection during the assignment---���⏯������In thinking about doing
+@;our design, we need to think about...���⏯������  Their sample size was small, and they
+responses to direct prompts submitted along with a design, like "Our design
+will work well because...", to prompts designed to encourage reflection after
+the fact---"Our design could be better if we..."--- and plan-ahead prompts
+designed to cause reflection during the assignment---"In thinking about doing
+our design, we need to think about..." Their sample size was small, and they
+did not find a significant difference in design quality between the direct and
+reflective prompts.  They did find that students gave better explanations when
+given the reflective prompts, but the difference could easily be attributed to
+the small sample size.
+
+Frederiksen and White have done a series of studies on @emph{reflective
+assessment} and @emph{reflective collaboration} in middle school science
+classes@~cite["white-reflective-affordances"
+"frederiksen-reflective-collaboration"].  In an online environment, students
+work on mock experiments using a scientific-method like flow for a project:
+they start with an initial inquiry, form hypotheses, analyze mock data, and
+draw conclusions.  In between steps, they are asked questions that urge them
+to reflect on their work: why they think a hypothesis is true, if they are
+being meticulous in analyzing their results, and more.  They are also given
+the opportunity to assess the work of other students in the form of ratings.
+@fill{Any studies where they ask the reflective questions about the other
+students?}
+
+@subsection{Learning By Example}
+
+@relworkfill{Summarize related work on learning by example}
+
+In in-flow peer review, students have the opportunity to take what they learn
+from examples of others' work and apply it to their own.
+
+Kulkarni et al@~cite["klemmer-examples"] discuss changes in creative output
+between subjects who varying amounts of examples, and diversity in examples,
+prior to creating their own artwork.  Subjects seeing more diverse examples
+created artwork with more unique features than subjects seeing a less diverse
+set or fewer examples.  Students who see more examples from others, especially
+when already primed to think about the same problem, may similarly have more
+options to draw on in their solution, rather than only using whatever
+techniques they would have tried in their initial submission.
+
+Discussion here needs to cover things like :
+@itemlist[
+@item{How many examples does one need to see before learning occurs?}
+@item{How similar do the examples need to be?}
+@item{What scaffolding (i.e., review questions) foster learning from examples?}
+]
+
+In PeerWise@~cite["denny-peerwise08"], students created and reviewed one anothers' multiple-choice
+questions, which has elements both of learning by example and of review.
+
+@subsection{Peer Instruction}
+
+Peer Instruction (PI), which is a specific form of student centered
+pedagogy [Ville 3], has been shown to be a promising way for improve student
+performance@~cite["crouch-mazur-peer-instr-10-years"] and engagement
+@~cite["simon-peer-instruction-icer13"] both in introductory courses
+@~cite["crouch-mazur-peer-instr-10-years"] and upper-division courses
+@~cite["lee-peer-instr-upper-level-13"]. Peer instruction, as defined by Crouch
+et. al.@~cite["crouch-mazur-peer-instr-10-years"], focuses on
+engaging students in activities that require them to apply the core
+concepts under study and to explain these concepts to their
+peers. Concretely, a class taught using PI principles can consist of
+short presentations, each of which focuses on a particular core
+concept and is tested by presenting students a conceptual question,
+which the students first solve individually and then discuss in
+groups. The PI pedagogies link with the concepts of blended learning
+and flipped classroom [Ville 4] in that PI requires students to study
+preparatory material before attending the class.
+
+Related to our undertaking, the most interesting component of PI is
+the student peer discussions that are undertaken after presentation of
+each concept. This, however, is not peer review.
+
+@subsection{Comprehending Program Structure}
+
+For in-flow assignments centered around programming, one goal of
+peer-review is to help students reflect on their code structure.
+There is a rich literature on program comprehension (particularly
+contrasting experts and novices), but much of that focuses on
+understanding @italic{behavior} of a new program.  In the in-flow
+peer-review context, students already know the problem and (roughly)
+what the program is supposed to do.  Reading others' code therefore
+has different goals: notably, to understand the structure that someone
+else brought to the problem and to contrast that with one's own.
+
+@relworkfill{Discuss related work around comprehending code
+organization}
+
+Related work discussion should address:
+@itemlist[
+@item{How do people uncover the structure of a program?}
+]
+
+To read:
+
+
+The WG on program comprehension@~cite["Schulte:2010:IPC:1971681.1971687"]
+
+(What implications does this have for the experience level at which
+students can meaningfully engage in ifpr?  They need certain maturity
+to chunk, but chunking isn't necessarily needed on small programs.)
+
+@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+@subsection{Increasing Socialization in Programming-Oriented Courses}
+
+@relworkfill{Work on creating socialization}
+
+@itemlist[
+@item{Computer-mediated communication in collaborative educational settings (see ITiCSE WG 1997)}
+@item{Peer mentoring (across different class groups, but still the goal is socializing)}
+]
+
+Barker et al. describe the outcome of running an IT course more like a
+fine arts course than a traditional engineering course@~cite["barker-fine-arts-approach-cs05"]. This included
+projects that were more meaningful, public critique of results, and
+routing collaboration.  This approach created a classroom culture
+where learning is a social and community process, rather than
+individualised, and the result was a greater retention of female
+students than the tranditional engineering teaching approach.
+
+The technique most relevant for in-flow peer review, though not
+completely the same, is the approach to knowledge sharing during lab
+work. Students actively sort help from any student, for example, by
+yelling questions out, resulting in a fluid exchange of ideas and
+techniques. Even though the projects considered in these labs were run
+in an open, collaborative setting, cheating was avoiding by using
+individualised assignments.
+
+To read:
+
+Specifically about communication and the social climate in CS@~cite["Garvin-Doxas:2004:CCS:1060071.1060073"]
+
+Peer mentoring: A Mentor Program in CS1.  @url{http://dl.acm.org/citation.cfm?id=544420}
+
+
+@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 @subsection{Existing Uses of In-flow Peer Review}
 
 Others have used strategies for peer review that fall under the umbrella of
@@ -1050,7 +936,7 @@ Sondergaard's course review one another's work between stages
 only in the form of surveys after the assignment, but shows generally positive
 attitudes from students indicating that they felt the review had helped.
 
-Expertiza @~cite{gehringer-expertiza-approach} is discussed in @ref{relwork
+Expertiza@~cite["gehringer-expertiza-approach"] is discussed in @ref{relwork
 for review-of-review}, and is used for large, multi-stage collaborative
 projects in which students build and review smaller components that build up
 the whole.  This includes assessment and review of the reviews themselves as
@@ -1060,6 +946,10 @@ which can be a task that the reviewer didn't complete him or herself.  In many
 of our case studies of in-flow review, students review an instance of the
 @emph{same} work that they just did themselves @fill{check that this is
 accurate after going through the case studies}.
+
+[INSERT CaptainTeach]
+
+[INSERT Informa]
 
 @subsection{Actionable Peer Review}
 
@@ -1071,12 +961,12 @@ review.  These uses don't necessarily stage assignments into reviewable
 pieces, instead performing review on entire intermediate artifacts.  For
 example, Clark has students exercise the functionality of one anothers'
 projects, and lets groups improve their work based on the feedback their
-classmates give them @~cite["clark-peer-testing-se-04"].  Similarly, Wang, et
+classmates give them@~cite["clark-peer-testing-se-04"].  Similarly, Wang, et
 al., Zeller, and the Aropa system study assignment structures that allow
 students to update revisions of entire submissions that were reviewed by peers
 @~cite["wang-pcr" "zeller-read-review-00" "hamer-aropa"].  Other studies have
 students write test cases (or manually test) one another's work as part of a
-review @~cite["reily-aggregate-reviews09" "smith-peer-testing-icer12"].  These
+review@~cite["reily-aggregate-reviews09" "smith-peer-testing-icer12"].  These
 tests are most often on entire systems, rather than on pieces of a project
 that build up along with reviews.  Students do, however, have the chance to
 improve their projects in response to their peers' feedback.
@@ -1085,11 +975,13 @@ improve their projects in response to their peers' feedback.
 
 @section{Conclusion}
 
+[FILL]
+
 @(generate-bib)
 
 @section[#:tag "s:case-studies"]{Appendix --- Case Studies}
 
-[Have pulled in one for now, to see how our default formatting works
--- need to fix this.]
+[Have pulled in one detailed case study for now -- rest will be added
+once we decide which parts to retain for the report]
 
 @md-section["../in-flow-assignments/fisler/asgn-1.md"]

@@ -1,5 +1,3 @@
-Feedback on Reviews
-
 Reviews are potentially valuable for students, 
 because they may help them improve their artifacts or their performance. 
 The process of reviewing is also helpful for the reviewer, 
