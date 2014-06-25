@@ -4,21 +4,21 @@ and how they may work together, along three dimensions: responsibility, skills d
 
 
 Pair programming is a software development technique in which two programmers work together on
-the one computer **cite**. From one perspective, peer programming involves a lot of in-flow
+one computer **cite**. From one perspective, peer programming involves a lot of in-flow
 peer feedback, due to the nature of the working relationship. 
-The first main difference between the IFPR and PP is that in IFPR each student will 
+The first main difference between IFPR and PP is that in IFPR each student will 
 get multiple reviews from other students. But what about the case where students 
 give reviews pairwise, that is, when A reviews B and B  reviews A: 
 does this make IFPR closer to PP?
 The key difference in this case is that in PP both students are responsible for the
-quality of a *single* artefact, whereas in IFPR each student is responsible for
-his/her own artefact.  Ultimately, this means that the dynamics is totally different.
+quality of a *single* artifact, whereas in IFPR each student is responsible for
+his/her own artifact. This can naturally lead to a significant difference in motivation and responsibility.
 
 
 
 The skills required and developed in IFPR and in PP also differ. 
-PP deals primarily with the collaborative creation of an artefact.
-IFPR focuses also on the creation of an artefact, though less collaboratively
+PP deals primarily with the collaborative creation of an artifact.
+IFPR focuses also on the creation of an artifact, though less collaboratively
 as students do not work face-to-face,
 but also focuses on the high-level skill of performing reviews,
 which requires both program comprehension and judgement. 
@@ -26,21 +26,27 @@ These activities require
 students to take a higher-level perspective on the task at hand,
 including the difference between understanding one's own code and
 understanding the code of others.
-IFPR should also force students to make their work understandable by others,
-which in part may be precipitated by reading others code.
 IFPR also forces students to trade off work, namely, time spent on their own
 assignment versus time spend on doing reviews. This trade-off is not present in PP.
 To continue the analogy with academic paper writing and reviewing: PP is more
 like working as coauthors, whereas IFPR is more like the relationship
 between a journal paper reviewer and an author (especially if there are
-multiple IFPR phases).
+multiple IFPR stages).
 
+Due to the difference between solo and shared responsibility for the
+artifact, the dynamics of PP and IFPR differ. For one thing, due to
+the continuous communication required in PP, students are often
+immediately alerted to problems in program comprehension. In contrast,
+IFPR is separated by both space and time. As a result, programs can
+acquire significant accidental complexity. Students realize this, and
+thus learn about the difficulties of producing and reading code, both
+by trying to make sense out of the submissions of others and by seeing
+the feedback their own submissions receive.
 
-Due to the difference between solo and shared responsibility for the artefact, the dynamics
-of PP and IFPR differ. These differences are highlighted when  by considering the
-pairing of strong and weak students together.
-For instance, in PP if one student is stronger, then that student may drive the production
-of the artefact, or even take over the work, without the weaker student having the opportunity
+The differences in shared responsibility can also be seen when pairing
+students of different strengths. In PP, if one student is stronger, 
+that student may drive the production
+of the artifact, or even take over the work, without the weaker student having the opportunity
 to participate fully and thus the weaker student may not benefit from the experience.
 In IFPR, a strong student's assignment (and hence grade) is not affected by the weak student.
 The strong student is in a better position to help the weaker student; although though 
@@ -68,10 +74,10 @@ just focus on different skills.
 There are a number of ways that PP and IFPR could be combined. The most
 obvious one is that each team receives in-flow reviews from one or
 more other pairs. A more subtle one is to make pair programming more like
-IFPR, by offering continuous feedback, yet keeping two separate artefacts.
-In this case, the reviewer takes more responsibility for the other person's artefact. 
+IFPR, by offering continuous feedback, yet keeping two separate artifacts.
+In this case, the reviewer takes more responsibility for the other person's artifact. 
 It is questionable whether this is a good thing.  One can imagine that if a student's grade
-depends upon the quality of another student's artefact, then the best kind of feedback 
+depends upon the quality of another student's artifact, then the best kind of feedback 
 would be to  give a patch, that is, to provide replacement code. Such feedback is 
 unlikely to help the recipient's understanding.
 
