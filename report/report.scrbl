@@ -861,12 +861,13 @@ questions, which has elements both of learning by example and of review.
 @subsection{Peer Instruction}
 
 Peer Instruction (PI), which is a specific form of student centered
-pedagogy [Ville 3], has been shown to be a promising way for improve student
-performance@~cite["crouch-mazur-peer-instr-10-years"] and engagement
-@~cite["simon-peer-instruction-icer13"] both in introductory courses
-@~cite["crouch-mazur-peer-instr-10-years"] and upper-division courses
-@~cite["lee-peer-instr-upper-level-13"]. Peer instruction, as defined by Crouch
-et. al.@~cite["crouch-mazur-peer-instr-10-years"], focuses on
+pedagogy@~cite["mazur-peer-instr-book"], has been shown to be a promising way for improve student
+performance@~cite["crouch-mazur-peer-instr-10-years"] and
+engagement@~cite["simon-peer-instruction-icer13"] both in introductory
+courses@~cite["crouch-mazur-peer-instr-10-years"] and upper-division
+courses@~cite["lee-peer-instr-upper-level-13"]. Peer instruction, as
+defined by Crouch 
+et al.@~cite["crouch-mazur-peer-instr-10-years"], focuses on
 engaging students in activities that require them to apply the core
 concepts under study and to explain these concepts to their
 peers. Concretely, a class taught using PI principles can consist of
