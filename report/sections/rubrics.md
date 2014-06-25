@@ -1,21 +1,19 @@
-Rubrics serve two important goal in any form of peer review: they
-communicate expectations to students (serving as a form of
-scaffolding), and they help insure that all students receive a certain
-degree of feedback.  Overly structured reviews can also inadvertantly
-limit students to considering only those questions covered in the
-rubric.  This in turn fails to develop students' critical assessment
-skills.  The tradeoffs around designing rubrics must balance these
-tensions.
+Rubrics serve two important goals in any form of peer review: they
+communicate expectations to reviewers (serving as a form of
+scaffolding), and they help insure that all authors receive a certain
+degree of feedback.  While these goals suggest highly-structured
+rubrics, overly structured rubrics can limit reviewers' and authors'
+attention to the questions on the rubric.  They can also provide too
+much scaffolding, especially once students need to practice evaluating
+work from scratch. The tradeoffs around designing rubrics must balance
+these tensions.
 
-Rubric design must start from understanding the intent of including
-rubrics: is the goal foremost to increase the quality of the
-feedback to the reviewee, mostly to influence the thoughts of the
-reviewer, or a balance of both? Focus on the reviewer or the
-reviewee are not necessarily at odds with each other, but are also
-not necessarily achievable through the same means. For example,
-certain questions for the reviewer to ponder might not be
-considered a part of the "formal review" to lower the overhead on
-the reviewee's side when there is more focus on the reviewer.
+Rubric design must start from understanding the intent behind the
+rubrics.  This includes considering whether the rubrics are designed
+to target the reviewer, the author, or the instructor seeking to
+understand how students are performing.  These goals are not
+necessarily at odds with one another, but are not necessarily
+achievable through the same means.
 
 The working group identified several potential roles for rubrics:
 
@@ -33,22 +31,22 @@ The working group identified several potential roles for rubrics:
     For example, early in the course reviews can focus on functional
     aspects and gradually shift to non-functional aspects of code. 
     Students may also optionally ask for reviews with a certain 
-    focus when offering up artifacts for review. This might help
-    to ensure relevance of the review for the reviewee.  
+    focus when offering submissions for review. This might help
+    to ensure relevance of the review for the author. 
 
 *
 **Rubrics for alibi:**
-    Rubrics can be great tools to establish alibis for students 
+    Rubrics can be great tools to establish alibis for reviewers
     who fear criticising works of others, because of cultural 
-    values, self-image, etc. For example, being asked to point
+    values, self-image, or other factors.  For example, being asked to point
     out one part which could be done better, or identify errors
-    will shift the blame from the student that found the bugs
-    to the instructor that asked the questions. 
+    will shift the blame from the reviewer who found the bugs
+    to the instructor who provided the rubric. 
 
 *
 **Rubrics for conduct:**
-    Focusing on the strengths of the artifact under review can 
-    also help unstuck students that fear critiquing works of 
+    Focusing on the strengths of the submission under review can 
+    also help reviewers who fear critiquing works of 
     others, but also may be used as a tool to foster professional
     conduct. "Being hard on the issue but soft on the people" can 
     be learned this way. 
@@ -57,31 +55,53 @@ The working group identified several potential roles for rubrics:
 **Rubrics for time-boxing:**
     This is similar to Rubrics for focus, but here the goal is 
     to control how much time is spent on certain aspects of an 
-    artifact rather than focusing on just a subset. 
+    submission rather than focusing on just a subset. 
 
+Several design decisions affect rubrics around these choices, as
+discussed in the following subsections.
 
-### Evolution of Rubrics
+### Different Forms of Reviews
 
-Although there are things to say for consistency, rubrics need
-not stay the same throughout a course, and definitely not when
-used throughout a curriculum. 
+Reviews can take various forms, from written documents to verbal
+feedback, from paragraphs to small comments associated with particular
+fragments of prose or code, and from individual to group-wide
+feedback.  For written reviews, the group noted the general
+applicability of plain text, but noted that modern software tools
+(such as github) often enable target comments and conversations
+between authors and reviewers.  In some situations, a code patch might
+be an effective way to convey comments (though might not force the
+author to understand the comment deeply).
 
-For example, it is possible to gradually transition rubrics from
-specific to general as students mature as reviewers. We make an
-analogy to conference reviewing -- often less mature PC members
-like that reviews are made up of many small steps which are tied
-to specific questions, but experienced PC members often develop a
-more free-form format and perceive structure in reviews as an
-obstacle. 
+Face-to-face reviews might be intimidating, regardless of the
+involvement of experts. Non-expert TAs can be useful to moderate
+face-to-face reviews and enforce a civil tone. Face-to-face
+reviews clearly have the benefit of establishing a low-latency
+feedback loop, but takes practise to be time-effective. 
 
-On a similar note, it is also possible to transition rubrics from
-high-level to detailed as students mature as reviewers. While
-high-level reviews can of course require deeper insight to have a
-high quality, for students inexperienced in the subject, "low
-quality" high-level comments may still be very valuable, and not
-until a certain level of mastery is achieved are the able to go in
-an make detailed reviews about specific aspects of an artifact.
+### Evolution of and Variation Within Rubrics
 
+Evolving rubrics across a course or curriculum may offer a good
+balance between initial scaffolding (for reviewers and authors) and
+eventual opportunities for both groups to demonstrate critical
+thinking skills.  One model would evolve rubrics from having fairly
+targeted questions to asking broad questions: this model gradually
+removes scaffolding.  Another form of evolution starts with simple
+questions (such as "do these tests look correct") and progresses to
+questions on more subtle issues as students master more of the
+subject material.  
+
+A variation on evolving rubrics would allow different students to work
+with different review forms, depending on their ability as reviewers.
+This comment arose from the working group members' experience as PC
+members: members often found overly structured forms to be annoying,
+feeling they interfered with how they wanted to convey issues with a
+work.  
+
+A different form of variation might pose more questions to reviewers
+than are conveyed to authors.  This situation could make sense when
+the review is used to assess the reviewer's understanding of a work,
+or when too much information in a review might distract a novice
+student from the critical information in a review.
 
 ### Pros and Cons of Rubrics
 
@@ -103,10 +123,6 @@ sharing sufficiently general comments with the entire class or
 adding a rubric to all reviews which brings attention to the issue
 in subsequent reviews.
 
-On a similar note, peer review can be used to curate problems
-invented by students for a practice problem set, and practice
-problem set improved over years.
-
 Rubrics provide starting points for discussing reviews in class,
 and for helping students to talk about reviews as noted above. On
 the downside, rubrics can cause students to lock their mind to a
@@ -117,42 +133,6 @@ particular review: who is it for, what is the intended outcome,
 etc.
 
 
-### Specific Forms of Reviews
-
-As was noted above, input from the reviewee (e.g., on where the
-review should focus) might increase the relevance of the review
-for the student. On the side of the reviewer, similar buy-ins
-could be achieved by giving a selection of different sets of
-rubrics, thereby allowing for a choice of what is most effective
-for this situation/for me/etc. Also, getting a student to look at
-multiple sets of rubrics is likely to improve their review
-regardless of what format they pick or whether they roll their
-own. One specific possibility is to provide rubrics as free-form
-text, which may be removed, appended and changed freely.
-
-Face-to-face reviews might be intimidating, regardless of the
-involvement of experts. Non-expert TAs can be useful to moderate
-face-to-face reviews and enforce a civil tone. Face-to-face
-reviews clearly have the benefit of establishing a low-latency
-feedback loop, but takes practise to be time-effective. 
-
-Plain text is a very standard form of review, but may benefit from
-augmentation. For example, annotations like lines and arrows
-between places, highlighting problematic parts or stamping
-hieroglyphs with predefined semantics for common issues.
-
-For code, a patch might be a very suitable form of review,
-together with version control-like comments.
-
-For tests, good rubrics concern whether inputs are representative
-and correctness of outputs.
-
-For writing, good rubrics include completion, timeliness, value of
-contributions.
-
-see Klemmer’s paper for Coursera[cite](kwl...:peer-self-assess-mooc)
-
-Reference to track down: Instructor sees a bug, writes a test case, and runs test case on all other submissions
 
 
 

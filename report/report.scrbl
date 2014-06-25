@@ -1025,6 +1025,9 @@ improve their projects in response to their peers' feedback.
 
 [FILL]
 
+[DISCUSS that there is potential to go overboard with all of the
+suggestions here -- about picking right point in space.]
+
 @(generate-bib)
 
 @section[#:tag "s:case-studies"]{Appendix --- Case Studies}
