@@ -43,6 +43,13 @@ reviewee. This working-group report summarizes @IFPR,
 and discusses numerous dimensions of the process, each of which
 alleviate some problems while raising associated concerns.}
 
+@para{
+@bold{Note to reviewers:} This document is obviously very much a
+draft: expect some replication of context across sections
+(drafted by different authors), unresolved references, and looser
+prose than we expect for the final submission.
+}
+
 @section{In-Flow Peer-Reviewing}
 
 Peer-review has been employed for various reasons in Computer Science
@@ -109,7 +116,9 @@ plagiarism. In fact, we view this as a feature. When a student sees
 another's work, they do not know the quality of the work they see: it
 could be better than their own work, but it could also be
 worse. Therefore, structured appropriately, it forces on students is the need to exercise
-@emph{judgment}.}
+@emph{judgment}.  Further, the review process could potentially flag
+naive forms of plagiarism, allowing it to be addressed and resolved
+prior to final submission.}
 
 @item{It further emphasizes the @emph{comparative} examination of work
 against a student's own.}
@@ -241,51 +250,55 @@ expected to produce reviews for each submission.}
 
 @section{Educational Goals of @IFPR}
 
+Both peer review and the in-flow variant target a complex and
+interesting set of educational goals, some student focused and some
+instructor focused.  Working group members were surprised at the
+subtleties that these goals brought to questions about how to
+configure @|IFPR|.  Indeed, many found discussions of the educational
+goals (and their impacts) the most thought-provoking aspect of our
+discussions.  We lay out the goals here, referring back to them as we
+discuss configurations of @IFPR throughout the report.
+
 @subsection{Student Learning Objectives}
 
-In-flow peer review arises from a desire to help students learn
-several important skills, while leveraging ongoing assignments to
-motivate students to engage in reviewing.  The process of @IFPR asks
-students (implicitly or explicitly) to perform several tasks,
-including:
+Fundamentally, @IFPR fosters collaborative learning in which students
+can practice several critical skills:
 
 @itemlist[
-@item{Assess whether another's work satisfies problem requirements}
-@item{Provide actionable feedback to others}
-@item{Extract high-level design choices from anothers' work}
-@item{Compare others' high-level design choices and practices to their own}
-@item{Decide whether to adopt or ignore particular feedback}
+@item{Assessing whether another's work satisfies problem requirements}
+@item{Providing actionable, useful, and appropriate feedback to others}
+@item{Extracting high-level design choices from anothers' work}
+@item{Comparing others' high-level design choices and practices to one's own}
+@item{Deciding whether to adopt or ignore particular feedback or
+ideas}
+@item{Learning to value and grant authority to feedback from peers}
 ]
 
-The first two tasks arise in all forms of peer-review; the rest are
-more specific to in-flow review (or other models in which students get
-to revise their work based on feedback).  The first two tasks affect
-students' roles as reviewers, while the rest affect their roles as
-reviewees.
+The first two items arise primarily in students' role as reviewers,
+and are common to all forms of peer-review.  The remaining tasks arise
+more in students' role as recipients of reviews, and have more urgency
+in an in-flow context.  In the context of Bloom's taxonomy [CITE],
+these skills move students beyond "remember", "understand", and
+"apply" into "evaluate".  They engage students in reflection and
+meta-cognitive thinking about their own work, while also requiring
+students to be able to communicate technical issues clearly to others.
 
-The reviewing rubrics needed for these tasks can differ widely.
-Rubrics for assessing whether work satisfies requirements, for
-example, might give students a list of requirements to examine.
-Rubrics for contrasting with another student's design choices need to
-ask more abstract questions about the structure of a problem
-solution. 
+Beyond these goals, regular comparison of one's own work to that of
+others can help students calibrate their abilities.  In particular, it
+should provide means for students to gain confidence and self-efficacy
+in their work, and in discussing the works of others.
 
-The specific nature of these tasks changes depending on the artifact
-under evaluation.  For example, evaluating a program that implements a
-particular algorithm requires different techniques than evaluating a
-plan for executing a large software project. 
+The extent to which @IFPR targets these goals depends largely on the
+artifacts students are asked to review, the criteria or rubrics
+through which they produce reviews, the means through which students
+are expected to respond to reviews, and the feedback students receive
+on their reviews.  Some configurations of peer review, particularly
+those designed simply to scale grading, naturally and necessarily
+de-emphasize some of these goals.  @Secref["s:issues"] explores
+these tradeoffs in detail.
 
-In the context of Bloom's taxonomy [CITE], these tasks move students
-beyond "remember", "understand", and "apply" into "evaluate".  Put
-differently, they engage students in reflection and meta-cognitive
-thinking about their own work.  They also require students to
-articulate opinions on technical work.
-
-@IFPR has social benefits to individual students as well.  It should
-provide means for students to gain confidence and self-efficacy in
-their work, and in discussing the works of others.
-
-In-flow peer-review is an example of a Contributing Student Pedagogy
+The emphasis on collaboration in these goals illustrates that @IFPR is
+an example of a Contributing Student Pedagogy
 (CSP), a pedagogy in which students (a) contribute to the learning of
 others and (b) value the contributions of other students.  A 2008
 ITiCSE working group report describes various facets of such
@@ -301,39 +314,47 @@ peer-review in general) are more focused on the reviewer than the
 reviewee.  Nonetheless, many of the theoretical underpinnings of CSPs
 also apply to @IFPR, and thus affect the ideas in this report.
 
-@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 @subsection{Instructor Goals}
 
-Peer review in general has several pedagogic motivations beyond
-student-oriented learning objectives.  These include:
+From an instructor's perspective, @IFPR can target several
+objectives, including:
 
 @itemlist[
 @item{Emphasizing the importance of writing in technical contexts}
-@item{Increasing social interaction, thus making programming a more
-social activity}
-@item{Providing human feedback more scalably than with only expert
-assessment}
-@item{Fostering engagement of students from different cultures,
-particularly non-western students who are new to western classrooms}
-]
-
-The in-flow context has additional pedagogic motivations:
-
-@itemlist[
-@item{Helping students improve their performance on an open assignment}
+@item{Providing human feedback more scalably and more timely than with
+only expert assessment}
+@item{Providing an additional perspective on how students perceive
+course material, since students express their understanding
+differently than on their submissions}
+@item{Increasing social interaction within computing and programming,
+addressing a common misconception about working in the discipline}
+@item{Fostering engagement of and interaction between students from
+different cultures}
+@item{Helping students improve performance and learning while actively
+engaged with course material}
 @item{Re-examining plagiarism issues by moving the problem}
 ]
 
-In general, reading reviews
-provides a window into students' meta-cognitive development around the
-assignment content: a student can only comment on issues that she
-understands to be important.  @IFPR provides an opportunity to ask
-students to engage with course material from an additional angle,
-which increases students' contact with a topic and forces more active
-reflection.  Selecting artifacts worthy of this additional time can
-help instructors identify more cognitively-challenging portions of
-assignments.
+The first three objectives arise in most forms of peer-review.  The
+second two arise in general peer-review, though the immediacy of the
+in-flow context likely enhances their impact.  The last two are more
+directly associated with @|IFPR|.
+
+All of the working group members were interested in @IFPR more as a
+way to enhance students' learning than as a way to scale grading.
+Indeed, most members were open to (if not already) investing
+additional staff resources in making sure students were learning
+reviewing skills from a peer-review process.  The members were
+interested in the insights they could gain as instructors from
+attending to the third objective (though none believed that grading
+all of the reviews was scalable or cost-effective).
+
+The group also coalesced around the social benefits of peer review,
+seeing this as an important aspect of developing competant
+professionals.  Many of our discussions about giving review feedback
+and whether reviewing should be anonymous revolved around the impacts
+these issues could have on collaboration and socialization through
+peer review.
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -342,6 +363,8 @@ assignments.
 @(figure* "fig:case-studies"
           "Summary of Case Studies"
  @tabular[
+  #:style (style #f (list (attributes '((style . "border-collapse: collapse;")))))
+  #:column-properties (list (list (attributes '((style . "border: 1px solid black;")))))
   (add-width-wrappers
    (list "1in" "1in" "2in" "2in") 
    (list
@@ -495,7 +518,7 @@ The source files are also available at
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-@section{Parameters and Issues}
+@section{Parameters and Issues}[#:tag "s:issues"]
 
 The working group identified a series of parameters, issues, and
 logistical questions that surround the idea of @|IFPR|.  
