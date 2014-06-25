@@ -518,7 +518,7 @@ The source files are also available at
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-@section{Parameters and Issues}[#:tag "s:issues"]
+@section[#:tag "s:issues"]{Parameters and Issues}
 
 The working group identified a series of parameters, issues, and
 logistical questions that surround the idea of @|IFPR|.  

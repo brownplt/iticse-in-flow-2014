@@ -7,7 +7,7 @@ and reviewers will benefit from feedback on their reviews.
 Thus, while students benefit from reviews, 
 reviewers (who also may be students) benefit from meta-reviews.
 
-According to Ramachandran and Gehringer [RG] reviews consist of 
+According to Ramachandran and Gehringer[cite](rg:auto-assess-rev-lsa) reviews consist of 
 (1) summative, (2) problem detection, and (3) advisory content, 
 and meta-reviews can point out 
 to which degree a review contains each of these three types of contents. 
