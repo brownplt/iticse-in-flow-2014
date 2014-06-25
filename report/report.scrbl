@@ -43,11 +43,16 @@ reviewee. This working-group report summarizes @IFPR,
 and discusses numerous dimensions of the process, each of which
 alleviate some problems while raising associated concerns.}
 
+@para{}
+
 @para{
+
 @bold{Note to reviewers:} This document is obviously very much a
-draft: expect some replication of context across sections
-(drafted by different authors), unresolved references, and looser
-prose than we expect for the final submission.
+draft: expect some replication of context across sections (drafted by
+different authors), unresolved references, self-notes to authors, and
+loose prose.  We will rectify all of these before submitting the
+report for actual review.
+
 }
 
 @section{In-Flow Peer-Reviewing}
@@ -162,16 +167,20 @@ with references to the rest of the document for more details:
 into multiple stages? Even in a programming assignment, there are many
 choices: tests before code; data structures before tests; design
 documents and architectural specifications before code; multiple
-iterations of code; and so on. [REF]}
+iterations of code; and so on.  Some choices raise more concerns
+regarding plagiarism, while others only work under certain assumptions
+about software development methodologies. (@Secref["s:artifacts"])}
 
 @item{The distribution of reviewing. E.g.: Should reviewing be
 distributed in order of submission? Randomly? Between students of
-similar or opposite attainment levels? [REF]}
+similar or opposite attainment levels?  Synchronizing review across
+students enables more policies on reviewer assignments, but incurs
+overhead for students and staff through more course deadlines. [REF]}
 
 @item{The use of rubrics. On the one hand, rubrics for reviewing guide
 the reviewer and may result in more concrete, actionable outcomes. On
 the other hand, a rubric can result in less constructive engagement
-and may result in important issues being missed. [REF]}
+and may result in important issues being missed. (@Secref["s:rubrics"])}
 
 @item{The choice of review ``technology''. Should reviewing by
 mediated by a computer application or should it be done face-to-face
@@ -182,23 +191,29 @@ reviewers know about each others' identity? Using single- and
 double-blind reviewing systems introduces trade-offs between
 protecting students' identity, creating the potential for abuse, and
 introducing them to norms of professional behavior, all of which need
-to be taken into account. [REF]}
+to be taken into account.  Anonymity may enable more students to
+participate comfortably, at the cost of creating cultures of
+collaboration and professional working behavior. (@Secref["s:anon"])}
 
 @item{The role of experts. Experts can play any number of roles from
 being entirely hands-off and treating this as an entirely student-run
 process (presumably after introducing the process and its purpose) to
 intervening only periodically to constantly monitoring and even
-grading the responses. [REF]}
+grading the responses. These roles set different tones between
+students regarding expertise and authority, but also help set
+standards while students are new to the process. (@Secref["s:experts"])}
 
 @item{Suitability for non-majors. While IFPR is easy to justify for
 majors because of its correspondence to industrial practice
-(code-reviews), does it make sense to use in a course for non-majors?
-[REF]}
+(code-reviews), the industrial argument makes less sense for
+non-majors.  Objectives around collaboration and creating standards of
+evaluation, however, seem to apply to both majors and non-majors.
+(@Secref["s:nonmajors"])}
 
 @item{The relationship to pair-programming. Pair-programming might
 appear to also be a kind of IFPR---indeed, an extreme version of
 it. However, the two processes are somewhat different and
-complementary. [REF]}
+complementary. (@Secref["s:pairprog"])}
 
 @item{Workload considerations. IFPR clearly adds some effort to the
 process of doing assignments, but may also reduce some effort, at
@@ -523,7 +538,7 @@ The source files are also available at
 The working group identified a series of parameters, issues, and
 logistical questions that surround the idea of @|IFPR|.  
 
-@subsection{What Artifacts Should be Reviewed?}
+@subsection[#:tag "s:artifacts"]{What Artifacts Should be Reviewed?}
 
 The group identified four broad choices in the artifacts to be
 reviewed: 
@@ -538,6 +553,8 @@ reviewed:
 [INSERT discussion of how much to structure assignments]
 
 [INSERT more discussion of topic]
+
+@subsection[#:tag "s:rubrics"]{Designing Rubrics}
 
 @md-section["sections/rubrics.md"]
 
@@ -556,6 +573,13 @@ Comparing students to experts in writing reviews: @url{https://www.sciencedirect
 
 @md-section["sections/feedback.md"]
 
+A live demonstration of how
+to do a code review is a form of scaffolding on the process-level,
+but does drive content as specifically as rubrics. Regardless of
+how reviewing is introduced and scaffolded, it is important to
+allot time to deal with misconceptions on how to create a review
+as part of the course design. 
+
 Cho and MacArthur compare three approaches to giving feedback on
 written assignments in a psychology course: feedback from a single
 peer, feedback from a single topic expert, and feedback from multiple
@@ -571,74 +595,6 @@ Metareviewing to determine quality of reviews by in Expertiza@~cite["gehringer-e
 @~cite["rg:auto-assess-rev-lsa"]
 
 Expertiza@~cite["gehringer-expertiza-approach"] also mentions an explicit review of review phase.
-
-@subsection{Anonymity}
-
-@md-section["sections/anonymity.md"]
-
-@subsection{Timing Reviewing}
-
-Reviewing can happen synchronously or asynchronously across students.
-Synchronous reviewing occurs when all students submit work for review
-(and reviewing commences) at the same time; this model enables careful
-assignment of reviewers to work to review.  Asynchronous reviewing
-occurs when students submit work for review when it is ready, and
-different students are in different stages of review at the same
-time; this model gives students more control over their work time.
-
-The group discussed the relative merits of synchronous and
-asynchronous review.  Key arguments included:
-
-@itemlist[
-@item{The students who submit last might get the least feedback--and they may
-be the ones who need it most; this might be an argument for
-intermediate deadlines.}
-
-@item{The later the submission the less it's benefiting from in-flow}
-
-@item{Disorganized students who suffer from their disorganization
-might blame the review process for failure to improve their work}
-
-@item{Asynchronicity hinders collaboration}
-]
-
-@subsection{The Role of Experts}
-
-@md-section["sections/expert-roles.md"]
-
-@subsection{Interaction with Grading Mechanisms}
-
-IFPR may make work improve, but if grading is done on a curve, maybe
-it makes no difference, and the competitive element means students may
-be less motivated to participate.  In particular, grading on a curve
-could interact with @IFPR in three ways:
-
-@itemlist[
-@item{Demotivation --- it's not good to help others, because it can push them past you}
-@item{Unmotivating --- no reason to respond to feedback/work on reflection, because you can only do so well on the curve}
-@item{Destruction --- students can sabotage one another with bad
-feedback}
-]
-
-Another grading interaction concerns automatic grading, an
-increasingly common practice in Computer Science courses.  
-When assignment steps can be graded automatically, how much feedback
-should go to students and/or reviewers alongside the peer-written
-reviews?  Giving auto-grade results could lead to reviewers putting in
-less effort (thus masking situations in which the auto-grading missed
-something important). [FILL]
-
-
-@subsection{Does it make sense for non-majors?}
-
-@md-section["sections/non-majors.md"]
-
-@; @subsection{Assigning Reviewers}
-
-@md-section["sections/assigning-reviewers.md"]
-
-Related work:
-@~cite["Papadopoulos:2012:IPR:2215076.2215100"]
 
 @subsection{Grading Reviews}
 
@@ -668,6 +624,74 @@ Proposed solutions generally have three components:
 In the context of @IFPR, peer reviews can either serve as "rewards"
 (summative assessment in the form of scores/grades) or as constructive
 feedback (formative assessment). [FILL]
+
+@subsection[#:tag "s:anon"]{Anonymity}
+
+@md-section["sections/anonymity.md"]
+
+@subsection{Timing Reviewing}
+
+Reviewing can happen synchronously or asynchronously across students.
+Synchronous reviewing occurs when all students submit work for review
+(and reviewing commences) at the same time; this model enables careful
+assignment of reviewers to work to review.  Asynchronous reviewing
+occurs when students submit work for review when it is ready, and
+different students are in different stages of review at the same
+time; this model gives students more control over their work time.
+
+The group discussed the relative merits of synchronous and
+asynchronous review.  Key arguments included:
+
+@itemlist[
+@item{The students who submit last might get the least feedback--and they may
+be the ones who need it most; this might be an argument for
+intermediate deadlines.}
+
+@item{The later the submission the less it's benefiting from in-flow}
+
+@item{Disorganized students who suffer from their disorganization
+might blame the review process for failure to improve their work}
+
+@item{Asynchronicity hinders collaboration}
+]
+
+@subsection[#:tag "s:experts"]{The Role of Experts}
+
+@md-section["sections/expert-roles.md"]
+
+@subsection{Interaction with Grading Mechanisms}
+
+IFPR may make work improve, but if grading is done on a curve, maybe
+it makes no difference, and the competitive element means students may
+be less motivated to participate.  In particular, grading on a curve
+could interact with @IFPR in three ways:
+
+@itemlist[
+@item{Demotivation --- it's not good to help others, because it can push them past you}
+@item{Unmotivating --- no reason to respond to feedback/work on reflection, because you can only do so well on the curve}
+@item{Destruction --- students can sabotage one another with bad
+feedback}
+]
+
+Another grading interaction concerns automatic grading, an
+increasingly common practice in Computer Science courses.  
+When assignment steps can be graded automatically, how much feedback
+should go to students and/or reviewers alongside the peer-written
+reviews?  Giving auto-grade results could lead to reviewers putting in
+less effort (thus masking situations in which the auto-grading missed
+something important). [FILL]
+
+
+@subsection[#:tag "s:nonmajors"]{Does it make sense for non-majors?}
+
+@md-section["sections/non-majors.md"]
+
+@; @subsection{Assigning Reviewers}
+
+@md-section["sections/assigning-reviewers.md"]
+
+Related work:
+@~cite["Papadopoulos:2012:IPR:2215076.2215100"]
 
 @subsection{Undesirable Student Behavior}
 
@@ -740,7 +764,7 @@ others.  This also sets a culture of peer-review as a collective effort.
 
 @section{Related Code Review Practices}
 
-@subsection{Pair Programming and IFPR}
+@subsection[#:tag "s:pairprog"]{Pair Programming and IFPR}
 
 @md-section["sections/pair-programming.md"]
 
