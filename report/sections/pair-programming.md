@@ -4,7 +4,7 @@ and how they may work together, along three dimensions: responsibility, skills d
 
 
 Pair programming is a software development technique in which two programmers work together on
-one computer **cite**. From one perspective, peer programming involves a lot of in-flow
+one computer [CITE]. From one perspective, peer programming involves a lot of in-flow
 peer feedback, due to the nature of the working relationship. 
 The first main difference between IFPR and PP is that in IFPR each student will 
 get multiple reviews from other students. But what about the case where students 
@@ -54,7 +54,7 @@ the strong student may receive no beneficial comments, no harm will be done.
 With IFPR, any problems due to mismatched pairings can be alleviated
 by assigning multiple reviewers.
 In practice (in the authors' experience), in PP students often work alone even when expected to 
-work collaboratively **citation**.
+work collaboratively [CITE].
 With IFPR, students are compelled to review other students code.
 A final difference is that in IFPR it is easier to ignore the advice given than in PP.
 
@@ -90,7 +90,6 @@ especially for beginning and weak students.
 
 PROBABLY CUT
 
- **Probably cut the following paragraph**
 One interesting possibility is to use IFPR as a prelude to pair programming. That is,
 to get students working on their own assignment, giving each other feedback via IFPR, and
 then joining forces in a pair programming team in a later phase. That said, this
@@ -98,7 +97,4 @@ doesn't quite fit the pair programming model and iut is questionable why one wou
 to go through the IFPR hoops to get there.
 
 Too much pair programming leads to problems with students starting when working alone.
-
-We don’t think of Stack Overflow as pair programming.  
-So does IFPR sit between these two extremes?
 
