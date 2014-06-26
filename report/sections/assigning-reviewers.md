@@ -1,5 +1,3 @@
-## Assigning Reviewers
-
 Different ways of assigning reviewers can be used affect many aspects of the
 IFPR process. For example, the review assignment process can have an effect on
 student workload, the professional identity of the students, and performance of

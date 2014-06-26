@@ -3,8 +3,8 @@
 @;;; TODOs ;;;;;;
 @; Shriram: pull in case studies as subsections of appendix
 @; Joe: fill in remaining related work
-@; Kathi: pull in remaining gdoc content (that wasn't assigned out)
 @; someone: fix quotes (replace " with `` and '')
+@; normalize bib files: author naming convention, figure out order of entries
 
 @(require scribble/core
           scriblib/figure
@@ -175,7 +175,8 @@ about software development methodologies. (@Secref["s:artifacts"])}
 distributed in order of submission? Randomly? Between students of
 similar or opposite attainment levels?  Synchronizing review across
 students enables more policies on reviewer assignments, but incurs
-overhead for students and staff through more course deadlines. [REF]}
+overhead for students and staff through more course deadlines. 
+(@Secref["s:asgn-revs-timing"])} 
 
 @item{The use of rubrics. On the one hand, rubrics for reviewing guide
 the reviewer and may result in more concrete, actionable outcomes. On
@@ -569,6 +570,34 @@ what to look for
 Comparing students to experts in writing reviews: @url{https://www.sciencedirect.com/science/article/pii/S0959475209000747}
 [Currently DOES NOT LOAD, so not moved into bib file]
 
+@subsection[#:tag "s:asgn-revs-timing"]{Assigning Reviewers and Timing Reviewing}
+
+@md-section["sections/assigning-reviewers.md"]
+
+Reviewing can happen synchronously or asynchronously across students.
+Synchronous reviewing occurs when all students submit work for review
+(and reviewing commences) at the same time; this model enables careful
+assignment of reviewers to work to review.  Asynchronous reviewing
+occurs when students submit work for review when it is ready, and
+different students are in different stages of review at the same
+time; this model gives students more control over their work time.
+
+The group discussed the relative merits of synchronous and
+asynchronous review.  Key arguments included:
+
+@itemlist[
+@item{The students who submit last might get the least feedback--and they may
+be the ones who need it most; this might be an argument for
+intermediate deadlines.}
+
+@item{The later the submission the less it's benefiting from in-flow}
+
+@item{Disorganized students who suffer from their disorganization
+might blame the review process for failure to improve their work}
+
+@item{Asynchronicity hinders collaboration}
+]
+
 @subsection{Feedback On Reviews}
 
 @md-section["sections/feedback.md"]
@@ -629,32 +658,6 @@ feedback (formative assessment). [FILL]
 
 @md-section["sections/anonymity.md"]
 
-@subsection{Timing Reviewing}
-
-Reviewing can happen synchronously or asynchronously across students.
-Synchronous reviewing occurs when all students submit work for review
-(and reviewing commences) at the same time; this model enables careful
-assignment of reviewers to work to review.  Asynchronous reviewing
-occurs when students submit work for review when it is ready, and
-different students are in different stages of review at the same
-time; this model gives students more control over their work time.
-
-The group discussed the relative merits of synchronous and
-asynchronous review.  Key arguments included:
-
-@itemlist[
-@item{The students who submit last might get the least feedback--and they may
-be the ones who need it most; this might be an argument for
-intermediate deadlines.}
-
-@item{The later the submission the less it's benefiting from in-flow}
-
-@item{Disorganized students who suffer from their disorganization
-might blame the review process for failure to improve their work}
-
-@item{Asynchronicity hinders collaboration}
-]
-
 @subsection[#:tag "s:experts"]{The Role of Experts}
 
 @md-section["sections/expert-roles.md"]
@@ -685,10 +688,6 @@ something important). [FILL]
 @subsection[#:tag "s:nonmajors"]{Does it make sense for non-majors?}
 
 @md-section["sections/non-majors.md"]
-
-@; @subsection{Assigning Reviewers}
-
-@md-section["sections/assigning-reviewers.md"]
 
 Related work:
 @~cite["Papadopoulos:2012:IPR:2215076.2215100"]

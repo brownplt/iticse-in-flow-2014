@@ -1,35 +1,36 @@
-Reviews are potentially valuable for students, 
-because they may help them improve their artifacts or their performance. 
-The process of reviewing is also helpful for the reviewer, 
-because they learn how to critically assess and how to provide constructive feedback. 
-Producing high quality reviews is hard, 
-and reviewers will benefit from feedback on their reviews. 
-Thus, while students benefit from reviews, 
-reviewers (who also may be students) benefit from meta-reviews.
+Any use of peer-review must choose whether to include any grading or
+feedback on the review contents.  We use the term _meta-review_ to
+refer to any feedback on a review (because feedback can be considered
+a review of a review).  Feedback can take many forms: the author who
+received a review could report on whether the review was constructive
+or led to changes, course staff could formally grade reviews and
+return comments to the reviewer, or third parties could comment on the
+relative merits across a set of reviews.  Which model makes sense
+depends on factors including the learning objectives for @IFPR,
+features of peer-review software, and course logitics (such as staff
+size relative to student population).
+
+Much of the group's discussion around meta-reviewing applies to
+peer-review in general, rather than only @IFPR.  The @IFPR context is
+mostly relevant when considering whether reviews are sufficiently
+actionable to let students benefit from reviews to improve their own
+work.  We describe both general design decisions around meta-reviews
+and those particular to @IFPR in this section.
 
 According to Ramachandran and Gehringer[cite](rg:auto-assess-rev-lsa) reviews consist of 
-(1) summative, (2) problem detection, and (3) advisory content, 
-and meta-reviews can point out 
-to which degree a review contains each of these three types of contents. 
-Each of these types of review contents is valuable in its own way. 
+(1) summative, (2) problem detection, and (3) advisory content.
+Meta-reviews can report on each of these three types of contents, each
+of which is valuable in its own way.
 While summative contents can reflect a reviewer's understanding, 
 problem detection content directly helps a student to identify opportunities for improvement, 
-and advisory content points out in which ways students might improve. 
-Meta-reviews can include information on whether a review was helpful, 
-or on which parts of a review were helpful. 
-This information can be provided by the students receiving the review, 
-for example by highlighting each section of a review they found helpful. 
-This kind of information can help to train reviewers to not submit "brain dumps" 
-of everything that might possibly be wrong, 
-but to provide valuable but concise reviews. 
-Moreover, students can be asked to link subsequent changes to their artifacts to specific points in reviews, 
-similar to how software developers provide commit messages that link code changes to bug reports. 
-Given appropriate tool support, 
-the information also can be inferred automatically, 
-based on whether or how an student changed their artifact after reading the review, 
-or based on whether or not the quality of the artifact improved after the student read the review. 
-Finally, meta-reviews also can take the form of rebuttals, 
-and they can allow students to challenge the aspects of a review they disagree with.
+and advisory content points out ways in which students might improve. 
+Meta-reviews can include information on which parts of a review were
+constructive, and which led to actual changes.  Meta-reviews written
+by authors of submissions can also include rebuttals to aspects of a
+review: in @IFPR, such rebuttals can arise when students are debating
+the requirements of an exercise through the review process (a healthy
+outcome relative to the goals of @IFPR).
+
 
 While one generally may prefer to eliminate low quality contents in reviews, 
 in a pedagogical context also receiving some low quality review contents can be beneficial. 
@@ -40,9 +41,22 @@ Moreover, having a diversity of reviews,
 maybe even contradicting reviews, 
 can be a starting point for valuable discussions in class.
 
-While summative feedback on review quality may not be very valuable for the reviewer, 
-asking students to rate the reviews they receive on a Likert scale 
-can provide the instructor with insight needed to moderate the overall learning process.
+This kind of information can help to train reviewers to not submit "brain dumps" 
+of everything that might possibly be wrong, 
+but to provide valuable but concise reviews. 
+
+Instructors may seek to use meta-reviews to monitor the @IFPR process.
+Given the quicker turn-around times inherent to @IFPR, such monitoring
+benefits from tool support and structural elements of meta-reviews.
+For example, asking students to rate the reviews they receive on a
+simple Likert scale makes it easy for an instructor to focus on
+potentially problematic reviews without undue burden on the students.
+In some @IFPR configurations, software tools that include automatic
+grading could report partial information on whether student
+performance improves following the review phase.  Such information
+would be most useful for identifying cases in which poor work did not
+improve, prompting the instructor to check on whether the author had
+received useful and actionable advice through reviews.
 
 Meta-reviewing incurs a cost. 
 Whether or not meta-reviews are worth that cost depends on the learning goals: 
