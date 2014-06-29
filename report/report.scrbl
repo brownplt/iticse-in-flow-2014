@@ -1,10 +1,16 @@
 #lang scribble/sigplan @noqcourier
 
 @;;; TODOs ;;;;;;
-@; Shriram: pull in case studies as subsections of appendix
-@; Joe: fill in remaining related work
-@; someone: fix quotes (replace " with `` and '')
+@; pull in case studies as subsections of appendix
+@; fill in remaining related work
+@; fix quotes (replace " with `` and '')
 @; normalize bib files: author naming convention, figure out order of entries
+@; clean and condense case studies summary table to fit on a page
+@; fix Matthew's tables.rkt functions to generate table properly (or
+@;    pull it in as an image generated through normal latex
+@; finish tightening prose from the sections that the others drafted
+@; resolve remaining cite and ref markers
+@; send out to rest of WG in case anyone wants to comment
 
 @(require scribble/core
           scriblib/figure
