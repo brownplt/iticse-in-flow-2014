@@ -541,8 +541,12 @@ logistical questions that surround the idea of @|IFPR|.
 
 @subsection[#:tag "s:artifacts"]{What Artifacts Should be Reviewed?}
 
-The group identified four broad choices in the artifacts to be
-reviewed: 
+As the case studies in Figure [REF] show, @IFPR can be used with many
+different artifacts that might arise in a CS course.  Even once an
+instructor has identified the general class of artifacts to review
+(such as papers versus code), they can choose different ways to use
+@IFPR to build up to those artifacts.  The group identified four broad
+choices in the artifacts to be reviewed:
 
 @itemlist[
 @item{Multiple iterations of the same specific deliverable (like a paper)}
@@ -551,9 +555,23 @@ reviewed:
 @item{Incremental views of the same deliverable (datatypes, tests, code)}
 ]
 
-[INSERT discussion of how much to structure assignments]
+These choices affect various other course logistics.  Plagiarism is a
+bigger concern when @IFPR is used on multiple iterations of the same
+deliverable and all students submissions solve the same low-level
+problem (such as everyone submitting code for the same problems).
+Staging exercises through multiple views of the same problem (such as
+test cases followed by implementation) partly mitigates this problem).
 
-[INSERT more discussion of topic]
+The nature of artifact to review naturally affects the time required
+for review, as well as the amount of expert guidance required
+(students' will have more experience with evaluating some artifacts
+over others).  In turn, the course's learning objectives should guide
+the choice of artifacts: preparing students to participate in
+industrial code review, for example, will be better served by using
+@IFPR on code-based artifacts rather than written papers.
+
+The remaining issues sections will discuss interactions with choice of
+artifacts as appropriate.
 
 @subsection[#:tag "s:rubrics"]{Designing Rubrics}
 
