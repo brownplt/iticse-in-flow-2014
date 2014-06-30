@@ -11,6 +11,7 @@
 @; finish tightening prose from the sections that the others drafted
 @; resolve remaining cite and ref markers
 @; send out to rest of WG in case anyone wants to comment
+@; Ville said to cite Latham and Locke 1991 (on motivation?) check into it
 
 @(require scribble/core
           scriblib/figure
