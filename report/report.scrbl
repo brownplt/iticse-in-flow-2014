@@ -200,8 +200,9 @@ double-blind reviewing systems introduces trade-offs between
 protecting students' identity, creating the potential for abuse, and
 introducing them to norms of professional behavior, all of which need
 to be taken into account.  Anonymity may enable more students to
-participate comfortably, at the cost of creating cultures of
-collaboration and professional working behavior. (@Secref["s:anon"])}
+participate comfortably, at the cost of missed opportunities for creating
+cultures of collaboration and professional working behavior.
+(@Secref["s:anon"])}
 
 @item{The role of experts. Experts can play any number of roles from
 being entirely hands-off and treating this as an entirely student-run
@@ -262,7 +263,7 @@ a specific submission.}
 be a grade of a review produced by course staff, feedback from the
 original submission author back to the reviewer, or any other
 commentary on the contents of a review.  The provider of a meta-review
-is called a @emph{respondant}.}
+is called a @emph{respondent}.}
 
 @item{A @emph{reviewing assignment} indicates which reviewers are
 expected to produce reviews for each submission.}
@@ -342,13 +343,13 @@ also apply to @IFPR, and thus affect the ideas in this report.
 From an instructor's perspective, @IFPR can target several
 objectives, including:
 
-@itemlist[
+@itemlist[#:style 'ordered
 @item{Emphasizing the importance of writing in technical contexts}
 @item{Providing human feedback more scalably and more timely than with
 only expert assessment}
 @item{Providing an additional perspective on how students perceive
 course material, since students express their understanding
-differently than on their submissions}
+in a way other than just their assignment submissions}
 @item{Increasing social interaction within computing and programming,
 addressing a common misconception about working in the discipline}
 @item{Fostering engagement of and interaction between students from
@@ -489,6 +490,17 @@ peer review.
 			 original and secured application }
 	   @list{Free-form comparison to what was done in own solution}
 	   )
+))
+])
+
+@(figure* "fig:case-studies-cont"
+          "Summary of Case Studies"
+ @tabular[
+  #:style (style #f (list (attributes '((style . "border-collapse: collapse;")))))
+  #:column-properties (list (list (attributes '((style . "border: 1px solid black;")))))
+  (add-width-wrappers
+   (list "1in" "1in" "2in" "2in") 
+   (list
      (list @list{Introduction to Functional Programming (upper undergrad/MS)}
 	   @list{Boggle: find all valid words in 4x4 grid}
 	   @list{decomposition of overall problem into tasks 
@@ -520,9 +532,8 @@ peer review.
 			   properties such as naming,structure,
 			   identation, etc }
 	   )
-))
+  ))
 ])
-
 The case studies from working group members covered a variety of
 student levels and course types.  More interestingly, they varied
 widely in the kinds of artifacts and processes that they suggested for
@@ -1060,3 +1071,4 @@ suggestions here -- about picking right point in space.]
 once we decide which parts to retain for the report]
 
 @md-section["../in-flow-assignments/fisler/asgn-1.md"]
+
