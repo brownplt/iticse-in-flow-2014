@@ -6,16 +6,16 @@ received a review could report on whether the review was constructive
 or led to changes, course staff could formally grade reviews and
 return comments to the reviewer, or third parties could comment on the
 relative merits across a set of reviews.  Which model makes sense
-depends on factors including the learning objectives for @IFPR,
+depends on factors including the learning objectives for IFPR,
 features of peer-review software, and course logitics (such as staff
 size relative to student population).
 
 Much of the group's discussion around meta-reviewing applies to
-peer-review in general, rather than only @IFPR.  The @IFPR context is
+peer-review in general, rather than only IFPR.  The IFPR context is
 mostly relevant when considering whether reviews are sufficiently
 actionable to let students benefit from reviews to improve their own
 work.  We describe both general design decisions around meta-reviews
-and those particular to @IFPR in this section.
+and those particular to IFPR in this section.
 
 According to Ramachandran and Gehringer[cite](rg:auto-assess-rev-lsa) reviews consist of 
 (1) summative, (2) problem detection, and (3) advisory content.
@@ -27,9 +27,9 @@ and advisory content points out ways in which students might improve.
 Meta-reviews can include information on which parts of a review were
 constructive, and which led to actual changes.  Meta-reviews written
 by authors of submissions can also include rebuttals to aspects of a
-review: in @IFPR, such rebuttals can arise when students are debating
+review: in IFPR, such rebuttals can arise when students are debating
 the requirements of an exercise through the review process (a healthy
-outcome relative to the goals of @IFPR).
+outcome relative to the goals of IFPR).
 
 
 While one generally may prefer to eliminate low quality contents in reviews, 
@@ -45,13 +45,13 @@ This kind of information can help to train reviewers to not submit "brain dumps"
 of everything that might possibly be wrong, 
 but to provide valuable but concise reviews. 
 
-Instructors may seek to use meta-reviews to monitor the @IFPR process.
-Given the quicker turn-around times inherent to @IFPR, such monitoring
+Instructors may seek to use meta-reviews to monitor the IFPR process.
+Given the quicker turn-around times inherent to IFPR, such monitoring
 benefits from tool support and structural elements of meta-reviews.
 For example, asking students to rate the reviews they receive on a
 simple Likert scale makes it easy for an instructor to focus on
 potentially problematic reviews without undue burden on the students.
-In some @IFPR configurations, software tools that include automatic
+In some IFPR configurations, software tools that include automatic
 grading could report partial information on whether student
 performance improves following the review phase.  Such information
 would be most useful for identifying cases in which poor work did not
