@@ -302,8 +302,8 @@ The first two items arise primarily in students' role as reviewers,
 and are common to all forms of peer-review.  The remaining tasks arise
 more in students' role as recipients of reviews, and have more urgency
 in an in-flow context.  In the context of Bloom's taxonomy [CITE],
-these skills move students beyond "remember", "understand", and
-"apply" into "evaluate".  They engage students in reflection and
+these skills move students beyond ``remember'', ``understand'', and
+``apply'' into ``evaluate''.  They engage students in reflection and
 meta-cognitive thinking about their own work, while also requiring
 students to be able to communicate technical issues clearly to others.
 
@@ -673,8 +673,8 @@ Should reviews affect assignment grades?
 Proposal: way to improve giving of feedback is to tie your grade to
 that of the person you review
 
-The group frequently considered arguments from Kohn's "Punished by
-Rewards" [CITE], which argues that praise and rewards (such as grades)
+The group frequently considered arguments from Kohn's ``Punished by
+Rewards'' [CITE], which argues that praise and rewards (such as grades)
 are ineffective and detrimental motivators.  Reasons for this include 1) rewards punish
 2) rewards rupture relationships
 3) rewards ignore reasons
@@ -683,10 +683,10 @@ are ineffective and detrimental motivators.  Reasons for this include 1) rewards
 
 Proposed solutions generally have three components: 
 1) collaboration - enable the exchange of talent and resources, foster a sense of belonging
-2) content - let persons do something that is "meaningful" to them
-3) choice - don't try to "manipulate" the person
+2) content - let persons do something that is ``meaningful'' to them
+3) choice - don't try to ``manipulate'' the person
 
-In the context of @IFPR, peer reviews can either serve as "rewards"
+In the context of @IFPR, peer reviews can either serve as ``rewards''
 (summative assessment in the form of scores/grades) or as constructive
 feedback (formative assessment). [FILL]
 
@@ -763,8 +763,8 @@ reviews; this might also help them cope with criticisms.  For some
 students, peer review may be their first time getting negative
 feedback; instructors should make response to review a positive
 activity.  For students whose work was strong and did not yield
-actionable reviews, an instructor could ask "what have you learned
-from looking at others' solutions?" Perhaps this is something you do
+actionable reviews, an instructor could ask ``what have you learned
+from looking at others' solutions?'' Perhaps this is something you do
 on a couple of assignments, to satisfy the goal of helping them learn
 to self-reflect.
  
@@ -868,11 +868,11 @@ clothing and environments to help cold-blooded aliens survive).  They compared
 @;the fact---���⏯������Our design could be better if we...���⏯������--- and plan-ahead prompts
 @;designed to cause reflection during the assignment---���⏯������In thinking about doing
 @;our design, we need to think about...���⏯������  Their sample size was small, and they
-responses to direct prompts submitted along with a design, like "Our design
-will work well because...", to prompts designed to encourage reflection after
-the fact---"Our design could be better if we..."--- and plan-ahead prompts
-designed to cause reflection during the assignment---"In thinking about doing
-our design, we need to think about..." Their sample size was small, and they
+responses to direct prompts submitted along with a design, like ``Our design
+will work well because...'', to prompts designed to encourage reflection after
+the fact---``Our design could be better if we...''--- and plan-ahead prompts
+designed to cause reflection during the assignment---``In thinking about doing
+our design, we need to think about...'' Their sample size was small, and they
 did not find a significant difference in design quality between the direct and
 reflective prompts.  They did find that students gave better explanations when
 given the reflective prompts, but the difference could easily be attributed to
