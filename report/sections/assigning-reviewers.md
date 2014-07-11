@@ -113,7 +113,7 @@ data about and experience with their students, it may be clear that particular
 pairings of students are especially (in)effective.  If live review sessions
 are planned, the recommended way of arranging them is to schedule them early
 on, so a predefined assignment may be the only practical choice. On the
-negative side, predefined schedule can be more fragile in face of changes,
+negative side, a predefined schedule can be more fragile in face of changes,
 such students leaving the course.
 
 
@@ -134,7 +134,8 @@ However, the working group found several issues with the market model.
 First and foremost, introducing review markets creates a complex dynamic
 system involving people, making it probable that subtle
 changes produce significant and unexpected effects.  For example,
-assigning market value to reviews can emphasise external motivation (CITE
+assigning market value to reviews can emphasise external motivation
+[cite](deci-self-determination)(CITE
 Ryan&Deci, Klugg) on part of the students and de-emphasize the observed
 benefits of giving reviews. Another concrete effect that was observed by
 a working group member was that underlining the limitedness of the
