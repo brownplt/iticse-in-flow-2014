@@ -645,17 +645,6 @@ how reviewing is introduced and scaffolded, it is important to
 allot time to deal with misconceptions on how to create a review
 as part of the course design. 
 
-Cho and MacArthur compare three approaches to giving feedback on
-written assignments in a psychology course: feedback from a single
-peer, feedback from a single topic expert, and feedback from multiple
-peers@~cite["cho-peer-expert-reviewing10"]. The results indicate that
-feedback from multiple peers results in better quality revisions than
-feedback from an expert, with feedback from a single peer being the
-worse.  The hypothesised reason for this was that peers gave feedback
-that was phrased in terms that students could more easily comprehend.
-It certainly would be interesting to see whether the same results
-applied to programming assignments.
-
 Metareviewing to determine quality of reviews by in Expertiza@~cite["gehringer-expertiza-approach"].
 @~cite["rg:auto-assess-rev-lsa"]
 
@@ -663,19 +652,47 @@ Expertiza@~cite["gehringer-expertiza-approach"] also mentions an explicit review
 
 @subsection{Grading Reviews}
 
+Besides providing informative meta-reviews, 
+some educators might also wish to grade reviews. 
+Such grades for reviews might simply be based on whether or not a review was submitted, 
+or whether a review was submitted in a timely manner, 
+or they may be based on any of the criteria mentioned above. 
+Similarly, meta-reviews could be graded.
+
 Class size is clearly a factor here.  If someone wants to use
-peer-review to help provide human feedback in large courses, then
-giving expert feedback on reviewing might not be feasible.  Are there
-ways to give some feedback on reviews in a lightweight manner?
+peer-review to help scale human feedback in large courses, then
+giving expert feedback on reviewing might not be feasible.  In situations
+where an expert evaluation of the assignment is available (whether through
+auto-grading or by human TA), it should be possible to automate a
+meta-review that tells a student something about the quality of work they
+reviewed.  So, for instance, if a student indicates in a
+Likert scale that they "strongly agree" that a solution is correct, but the
+grade for the assignment they reviewed is low, the automated metareview can indicate that
+this review likely mis-evaluated the work under review.
 
-Should reviews affect assignment grades?
+At the extreme end of grading reviews, one option could make most of a
+student's grade be determined by the reviews that they wrote, rather than the
+code they submitted.  The idea here is that the student's reviews reflect
+their understanding of the assignment. As a result TAs would spend their time
+on meta reviews rather than grading code, focusing expert attention where it
+may be most valuable.
 
-Proposal: way to improve giving of feedback is to tie your grade to
-that of the person you review
+Another way to tie students' grades to the reviewing they did is to make
+students' grades depend on the 
+
+Proposal: way to improve giving of feedback is to tie the reviewer's grade to
+that of the reviewee's: the reviewer gets points for the final score or
+improvement in score of the reviewee's submission.  This motivates reviewers,
+but the rewards may be infrequent and depend more on the work ethic of the
+reviewee than the actual quality of the review.  It may be possible to use
+this as a bonus system, rather than as a formal part of the grade, to
+reduce unfairness and variance but encourage good reviewing extrinsically.
 
 The group frequently considered arguments from Kohn's ``Punished by
 Rewards'' [CITE], which argues that praise and rewards (such as grades)
-are ineffective and detrimental motivators.  Reasons for this include 1) rewards punish
+are ineffective and detrimental motivators.  Reasons for this include
+
+1) rewards punish
 2) rewards rupture relationships
 3) rewards ignore reasons
 4) rewards discourage risk-taking

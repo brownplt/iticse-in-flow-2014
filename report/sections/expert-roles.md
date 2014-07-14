@@ -102,11 +102,14 @@ that emphasis be placed on the former. To support such more
 constructive reviews a rubric could be adopted that talks positively
 about strengths and explanations as well as problems.
 
-As a deviation from standard practice, that could help emphasis the
-value and contribution of reviewing, one grading option could
-determine that most of a student's grade was based on the reviews that
-they wrote, rather than the code they submitted.  The idea behind this
-strategy would be that that the student's reviews reflect their
-understanding of the assignment. As a result TAs would spend their
-time on meta reviews rather than grading code.
+Cho and MacArthur compare three approaches to giving feedback on
+written assignments in a psychology course: feedback from a single
+peer, feedback from a single topic expert, and feedback from multiple
+peers [cite](cho-peer-expert-reviewing10). The results indicate that
+feedback from multiple peers results in better quality revisions than
+feedback from an expert, with feedback from a single peer being the
+worse.  The hypothesised reason for this was that peers gave feedback
+that was phrased in terms that students could more easily comprehend.
+It certainly would be interesting to see whether the same results
+applied to programming assignments.
 

@@ -1,5 +1,5 @@
 Any use of peer-review must choose whether to include any grading or
-feedback on the review contents.  We use the term _meta-review_ to
+feedback on the contents of reviews themselves.  We use the term _meta-review_ to
 refer to any feedback on a review (because feedback can be considered
 a review of a review).  Feedback can take many forms: the author who
 received a review could report on whether the review was constructive
@@ -7,11 +7,11 @@ or led to changes, course staff could formally grade reviews and
 return comments to the reviewer, or third parties could comment on the
 relative merits across a set of reviews.  Which model makes sense
 depends on factors including the learning objectives for IFPR,
-features of peer-review software, and course logitics (such as staff
+features of peer-review software, and course logistics (such as staff
 size relative to student population).
 
 Much of the group's discussion around meta-reviewing applies to
-peer-review in general, rather than only IFPR.  The IFPR context is
+peer-review in general, rather than only to IFPR.  The IFPR context is
 mostly relevant when considering whether reviews are sufficiently
 actionable to let students benefit from reviews to improve their own
 work.  We describe both general design decisions around meta-reviews
@@ -29,7 +29,10 @@ constructive, and which led to actual changes.  Meta-reviews written
 by authors of submissions can also include rebuttals to aspects of a
 review: in IFPR, such rebuttals can arise when students are debating
 the requirements of an exercise through the review process (a healthy
-outcome relative to the goals of IFPR).
+outcome relative to the goals of IFPR).  In the case of rebuttals and
+follow-ups, this blurs the line between collaboration and review, as students
+may end up coming to a shared understanding that may not have occurred with a
+single review step.
 
 
 While one generally may prefer to eliminate low quality contents in reviews, 
@@ -40,10 +43,10 @@ They will have to learn to triage review comments into those they will act upon 
 Moreover, having a diversity of reviews, 
 maybe even contradicting reviews, 
 can be a starting point for valuable discussions in class.
-
-This kind of information can help to train reviewers to not submit "brain dumps" 
+The act of triaging reviews themselves can train reviewers to not submit "brain dumps" 
 of everything that might possibly be wrong, 
-but to provide valuable but concise reviews. 
+but to provide valuable but concise reviews; the important metric is
+actionability, not volume of feedback.
 
 Instructors may seek to use meta-reviews to monitor the IFPR process.
 Given the quicker turn-around times inherent to IFPR, such monitoring
@@ -68,10 +71,4 @@ An alternative to providing meta-reviews for each review is to provide a few exa
 To not tempt students to simply reuse the best example review comments, 
 these exemplar reviews can come from an assignment that is different from the current assignment.
 
-Besides providing informative meta-reviews, 
-[educators believing in the value of extrinsic motivation :-) ] might also wish to grade reviews. 
-Such grades for reviews might simply be based on whether or not a review was submitted, 
-or whether a review was submitted in a timely manner, 
-or they may be based on any of the criteria mentioned above. 
-Similarly, meta-reviews could be graded, too.
 
