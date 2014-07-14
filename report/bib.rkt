@@ -20,8 +20,30 @@
                         #:volume 26
                         #:number "3 & 4")))
 
+(define expertiza
+  (make-bib
+    #:title "Reusable learning objects through peer review: The Expertiza approach"
+    #:author 
+      (authors (author-name "Lakshmi" "Ramachandran")
+               (author-name "Edward F." "Gehringer"))
+    #:date "2007"
+    #:location
+      (proceedings-location "Innovate: Journal of Online Education")))
+
+(define auto-meta-review
+  (make-bib
+    #:title "Automated Assessment of Review Quality Using Latent Semantic Analysis"
+    #:author
+      (authors (author-name "Lakshmi" "Ramachandran")
+               (author-name "Edward F." "Gehringer"))
+    #:date "2011"
+    #:location
+      (proceedings-location "IEEE International Conference on Advanced Learning Technologies")))
+
 (define special-keys
-  (hash "deci-self-determination" deci))
+  (hash "deci-self-determination" deci
+        "gehringer-expertiza-approach" expertiza
+        "rg:auto-assess-rev-lsa" auto-meta-review))
           
 (define-cite autobib-cite _ generate-bib #:style number-style)
 (define-bibtex-cite* "built-bib.bib" autobib-cite _ ~cite-id citet-id)
