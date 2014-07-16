@@ -945,14 +945,6 @@ types of industrial code review:
 }}
 
 
-@subsubsection{Comparison to Live Code Review}
-
-@IFPR satisfies different learning goals than live code review, which
-is part of many software-development courses.  Live code review
-focuses on code, whereas reading reviews gets better at students'
-metacognitive development.  IFPR is less intimidating than code
-review, as a student is not called upon to defend his own work.
-
 @section{Additional Related Work}
 
 @subsection{Meta-cognitive Reflection}
