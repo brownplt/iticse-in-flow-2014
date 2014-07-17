@@ -951,28 +951,30 @@ types of industrial code review:
 
 @relworkfill{Summarize related work on meta-cognitive reflection}
 
-Discussion here needs to cover things like :
-@itemlist[
-@item{What kinds of questions encourage reflection?}
-]
-
 One goal of in-flow review is to encourage reflection @emph{while in the
 middle of an assignment}.  Meta-cognitive reflection of techniques and
-approaches has been studied as an important part of the learning process, and
-others have found effective reviewing and prompting strategies for encouraging
-reflection that @IFPR can learn from.
+approaches has been studied as an important part of the learning process.
+Indeed, it has been indicated that one difference between experts in program
+comprehension and novices is the focus on
+metacognition@~cite["etelapelto-metacognition-comprehension"].  Others in
+different contexts have found effective reviewing and prompting strategies for
+encouraging reflection that @IFPR can learn from.
 
-@fill{UTF encodings broke in next paragraph}
+Palinscar and Brown study @emph{reciprocal teaching}, in which a teacher
+alternates with a student in a dialog that prompts for reflective activities,
+like generating summaries or clarifying confusing
+elements@~cite["palinscar-peer-teaching"].  They used reciprocal teaching with
+seventh graders struggling with reading comprehension, with an emphasis on
+letting students take over as the session progresses.  The entire point of the
+exercise is to encourage reflective activities in students, and similar
+prompts---for summarization or clarification---may lead students in @IFPR
+contexts to give reviews that cause more reflection, or more directly reflect
+themselves.
 
 Davis and Linn@~cite["davis-reflection-prompts"] use explicit self-review
 prompts at different stages of assignments given to eighth graders.  For
 example, in one assignment, students had to perform a repeated task (designing
 clothing and environments to help cold-blooded aliens survive).  They compared
-@;responses to direct prompts submitted along with a design, like ��\200\234Our design
-@;will work well because...�⏯������, to prompts designed to encourage reflection after
-@;the fact---���⏯������Our design could be better if we...���⏯������--- and plan-ahead prompts
-@;designed to cause reflection during the assignment---���⏯������In thinking about doing
-@;our design, we need to think about...���⏯������  Their sample size was small, and they
 responses to direct prompts submitted along with a design, like ``Our design
 will work well because...'', to prompts designed to encourage reflection after
 the fact---``Our design could be better if we...''--- and plan-ahead prompts
@@ -991,10 +993,31 @@ work on mock experiments using a scientific-method like flow for a project:
 they start with an initial inquiry, form hypotheses, analyze mock data, and
 draw conclusions.  In between steps, they are asked questions that urge them
 to reflect on their work: why they think a hypothesis is true, if they are
-being meticulous in analyzing their results, and more.  They are also given
-the opportunity to assess the work of other students in the form of ratings.
-@fill{Any studies where they ask the reflective questions about the other
-students?}
+being meticulous in analyzing their results, and more.  In addition, the
+environment contains simple autonomous agents, called advisors, that give
+automated feedback and suggestions to students.  They are also given the
+opportunity to assess the work of other students in a few ways: They can
+simply rate the contents, or they can make specific suggestions, like telling
+a student that they should pay attention to a particular advisor.  Finally,
+the course is complemented with role-playing activites where students take on
+the role of advisors, and give specific feedback − the advisors have specific
+flavors of feedback; an example in the paper is that a student acting as the
+```Skeptic' might [be asked to] say `I disagree' or `Prove it''' to another
+student's submission.
+
+In this report, we have focused on @IFPR for students that are mainly older
+than those in these studies, and this younger group is often addressed more
+directly by studies about explicit metacognition review prompts.  Other
+studies in higher education address discussion forums, journals and
+portfolios, and more to encourage self-reflection, but these ideas are less
+directly applicable to in-flow peer review.
+
+@fill{[FILL] discussion forums.
+Discussion here needs to cover things like :
+@itemlist[
+@item{What kinds of questions encourage reflection?}
+]
+}
 
 @subsection{Learning By Example}
 
