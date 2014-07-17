@@ -634,7 +634,7 @@ might blame the review process for failure to improve their work}
 @item{Asynchronicity hinders collaboration}
 ]
 
-@subsection{Feedback On Reviews}
+@subsection{Review Feedback and Meta-Reviewing}
 
 Any use of peer-review must choose whether to include any grading or feedback
 on the contents of reviews themselves.  We use the term @emph{meta-review} to
@@ -796,12 +796,29 @@ rather than as a formal part of the grade, to reduce unfairness and variance
 but encourage good reviewing extrinsically.
 
 
-@subsection{Interaction with Grading Mechanisms}
+@subsection{Grading IFPR Assignments}
 
-IFPR may make work improve, but if grading is done on a curve, maybe
-it makes no difference, and the competitive element means students may
-be less motivated to participate.  In particular, grading on a curve
-could interact with @IFPR in three ways:
+[REF grading reviews] touched briefly on the challenges and tradeoffs of
+grading reviews themselves, but in general, educators will have a new set of
+questions to answer about evaluating work done in the IFPR style, and giving
+summative feedback along with the peer review feedback.
+
+There are a few issues to consider:
+
+@itemlist[
+@item{
+Since there are potentially multiple submissions of the same or similar
+artifact, and students see examples of one another's work along the way, there
+is doubt about the provenance the work in the final submission, raising concerns about
+plagiarism.
+}
+
+@item{There can be many motivations for students to take the time to perform
+quality reviews for one another.  While grading reviews provides an obvious
+achievement-based motivation, there are others that might be more powerful: if
+simple philanthropy drives students to help one another, there may be no need
+for another motivator.  This can interact with, for example, grading on a
+curve, because it can be:
 
 @itemlist[
 @item{Demotivation --- it's not good to help others, because it can push them past you}
@@ -809,14 +826,18 @@ could interact with @IFPR in three ways:
 @item{Destruction --- students can sabotage one another with bad
 feedback}
 ]
+}
 
+@item{
 Another grading interaction concerns automatic grading, an
 increasingly common practice in Computer Science courses.  
 When assignment steps can be graded automatically, how much feedback
 should go to students and/or reviewers alongside the peer-written
 reviews?  Giving auto-grade results could lead to reviewers putting in
 less effort (thus masking situations in which the auto-grading missed
-something important). [FILL]
+something important).
+}
+]
 
 @subsection[#:tag "s:anon"]{Anonymity}
 
@@ -836,11 +857,93 @@ Related work:
 @~cite["Papadopoulos:2012:IPR:2215076.2215100"]
 
 
-@subsection{Undesirable Student Behavior}
+@subsection{Plagiarism and Gaming the Assignment}
 
-@subsubsection{Plagiarism and Gaming the Assignment}
+IFPR, like many course and assignment structures, requires careful mechanism
+design to ensure that students aren't incentivized towards detrimental
+behavior that lets them get a good grade at the cost of their (or others')
+education.
 
-@md-section["sections/plagiarism.md"]
+One of the most immediately problems with IFPR is that students necessarily
+are shown one another's work while in the middle of an assignment -- it is the
+definition of the technique that this happens.  Since the final submission
+happens after students have been exposed to other students' work, the IFPR
+educator immediately confronts the problem of determining how to evaluate the
+final submission.
+
+At the extreme, a student could submit an empty initial submission, copy what
+he sees during the reviewing phase, and submit the copied solution as their
+final solution.  In less extreme cases, students may copy all or part of
+another solution into their own after submitting an initial first try that
+they become convinced is incorrect.  There are a number of course and grading
+design decisions that can affect to what degree copying is a problem.
+
+@subsubsection{Variation in Assignments}
+
+One major factor in whether copying behavior is even a problem is how similar
+students' submissions are expected to be.  In many programming courses,
+students implement to the exact same algorithmic specification, and other than
+coding style issues, one implementation is just as good as another.  This is
+in contrast to other domains where peer review is often used, like creative or
+critical writing, in which students often write on different topics or choose
+different positions to represent on the same topic.
+
+One solution is then to provide different variants of a programming
+problem to different students, an approach taken by
+Zeller@~cite["zeller-read-review-00"], in which each student gets a variation
+on a theme, to avoid students reviewing another who is working on exactly the
+same problem.  Indeed, it is often possible to generate large numbers of
+different problems automatically from a specification, as Gulwani et al. have done for
+algebra problems and more@~cite["gulwani-algebra-problems"
+"gulwani-geometry-problems"].
+
+A drawback of variation in assignments is that it weakens one of the benefits
+of IFPR -- that students review the same problem they just saw!  Especially
+for beginning students, where program comprehension skills are still being
+learned, one goal of IFPR is to lessen the cognitive load of the comprehension
+task by having the student review code for a problem they already understand.
+If they have to internalize an additional problem description along with new
+code, this puts significantly more overhead into the reviewing process.
+
+Depending on the learning goals, it may be good for the reviewer to learn to
+incorporate ideas from different solutions into their own, since it requires a
+more abstract understanding of the techniques.  For earlier students, it may
+be enough of a challenge to recognize a good solution for the same problem and
+apply it to their own solution.  So depending on the use case, presenting a
+reviewer with solutions to the same or different problems may be effective.
+
+@subsubsection{Weighted Submission Grading}
+
+We believe that there is value in having students copy parts of other
+submissions that they see in order to improve their own work.  It happens all
+the time in professional software development, and the act of recognizing a
+good solution demonstrates understanding that is far beyond blind plagiarism.
+So we want students to take things from the examples they see and demonstrate
+that they learned from them -- there's also no guarantee that what they are
+seeing is correct, so blindly copying can hurt!
+
+However, wholesale copying should be discouraged, where a student submits an
+empty file and then simply copies the best of what they see.  In order to
+mitigate this, Politz et al. grade IFPR assignments by assigning heavier
+weights to initial submissions than to post-review submissions, so an initial
+program submission counts for 75% of the grade.  Students can still improve
+the 25%-weighted part of their score based on review feedback and copying
+others' solutions, but they can also hurt their score if they make incorrect
+changes.  Different weightings put different emphasis on the importance of
+review -- having the post-review score count for more might be acceptable in
+some classroom settings, and ultimately comes down to a choice about student
+maturity, class culture, and other course-specific factors.
+
+@subsubsection{Alternative or Supplemental Grading}
+
+Another solution to the grading problem is to supplement assignment grading
+with other techniques that cannot be copied, which works in many settings
+where plagiarism could be a potential problem.  For example, in an in-person
+code review of a student's solution, an instructor can quickly ascertain
+whether or not the student has simply copied something or actually understands
+the code they have submitted.  This can be done by, for example, asking the
+student to change their program to match a new specification, or asking them
+to understand some change to their submitted code.
 
 @subsection{Mitigating the Costs}
 
