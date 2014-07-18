@@ -88,7 +88,9 @@ reviewers with those students who have not received quality feedback.
 
 Other stratification schemes include assigning reviewers to authors based on their
 observed skill levels. This allows the teacher to assign performant students to
-review to the less performant students or vice versa. We however note that
+review to the less performant students or vice versa, which has been shown to
+be effective at raising acheivement on post-tests for low-performing
+students[cite](hooper-mixed-acheivement). We however note that
 deciding which sort of pairing should be preferred over another is context
 dependent (CITE Fincher&Petre).  It is also not clear that the task
 performance is an indicator to performance as a
