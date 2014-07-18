@@ -147,7 +147,12 @@ minimize the extra time this takes to complete homeworks, and how to
 help students not be led astray by weak or inaccurate reviews.
 Considering the potential learning objectives of @IFPR, rather than
 viewing it merely as a way to scale grading (a use of peer-review in
-MOOCs [CITE]), adds subtlety to all of these questions.  
+MOOCs@~cite["kwl...:peer-self-assess-mooc"]), adds subtlety to all of these
+questions.  Liu and Carless
+distinguish between @emph{peer feedback} and @emph{peer
+assessment}@~cite["liu-peer-feedback"], where the
+latter's goal is grading, and the former's is collaboration -- @IFPR is
+primarily focused on peer feedback, not peer assessment.
 
 This report summarizes activities of a working group around the
 promises and pitfalls of in-flow peer-review in computer science
@@ -1160,9 +1165,7 @@ In the context of @IFPR, peer reviews can either serve as ``rewards''
 (summative assessment in the form of scores/grades) or as constructive
 feedback (formative assessment). [FILL]
 
-@subsection{Meta-cognitive Reflection}
-
-@relworkfill{Summarize related work on meta-cognitive reflection}
+@subsection{Metacognitive Reflection}
 
 One goal of in-flow review is to encourage reflection @emph{while in the
 middle of an assignment}.  Meta-cognitive reflection of techniques and
@@ -1278,9 +1281,18 @@ groups. The PI pedagogies link with the concepts of blended learning
 and flipped classroom [Ville 4] in that PI requires students to study
 preparatory material before attending the class.
 
-Related to our undertaking, the most interesting component of PI is
-the student peer discussions that are undertaken after presentation of
-each concept. This, however, is not peer review.
+Related to our undertaking, the most interesting component of PI is the
+student peer discussions that are undertaken after presentation of each
+concept. This differs from (in-flow) peer review in that there isn't an
+submission in question that students are trying to improve.  The exercises are
+a vehicle for discussion, and the discussion is the end goal, not producing a
+quality submission.  Neither of these goals is necessarily more helpful than
+the other, but depending on expected outcomes, one can be more effective.  In
+programming and writing disciplines, for example, one explicit goal is to
+train students to produce quality programs and written work.  In mathematics
+or physics, it may be more important that students understand concepts and
+know how and where to apply them, rather than producing any particular
+artifact.
 
 @subsection{Comprehending Program Structure}
 
