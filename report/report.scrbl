@@ -390,152 +390,147 @@ peer review.
 @section{Examples of @IFPR}
 
 @(figure* "fig:case-studies"
-          "Summary of Case Studies"
+          "Summary of Case Studies: First-Year, Second-Year and Non-majors courses"
  @tabular[
   #:style (style #f (list (attributes '((style . "border-collapse: collapse;")))))
   #:column-properties (list (list (attributes '((style . "border: 1px solid black;")))))
   (add-width-wrappers
-   (list "1in" "1in" "2in" "2in") 
+   (list "1in" "1.5in" "2in" "2in") 
    (list
      (list @list{@bold{Course and Level}} @list{@bold{Exercise}}
            @list{@bold{Submissions}} @list{@bold{Review Criteria}})
+     (list @list{Computing for Social Sciences and Humanities (undergrad nonmajors)}
+	   @list{Cluster data on voting records (US Senate) to identify senators with similar ideology}
+	   @list{Code and tests for instructor-defined subsets of overall functionality}
+	   @list{Provide scores from 0 to 100 on each of (a) whether
+			 tests meaningfully capture the assignment
+			 purpose, and (b) whether code performs the
+			 corresponding computation correctly }
+	   )
      (list @list{CS1}
 	   @list{Write code and assertions for various components of a pinball game}
-	   @list{Submit work so far on subset of functions designated by instructor}
-	   @list{readability, correctness, free-form comments}
+	   @list{Work so far on subset of functions designated by instructor}
+	   @list{Rate readability and correctness; additional free-form comments}
+	   )
+     (list @list{Advanced CS1 with Data Structures}
+	   @list{Design a data structure for incremental and
+			functional updates on trees}
+	   @list{Datatype definition with instances of the data, test cases, complete programs}
+	   @list{Indicate whether (a) data structure can support required operations within
+		     time bounds, (b) interesting examples of
+		     data are missing, (c) tests offer good coverage and are correct }
+	   )
+     (list @list{Programming Fundamentals 2 (2nd semester undergrad)}
+	   @list{In-class clicker assignment to explain control-flow through if-statements}
+	   @list{CFGs for code snippets (drawn through custom software package)}
+	   @list{Provide yes/no assessment of whether CFG is accurate}
+	   )
+     (list @list{Imperative and OO Programming Methodology (2nd year)}
+	   @list{Implement a program that satisfies a student-selected set of learning goals}
+	   @list{Description of learning goals covered by program, program code, and
+			 give presentation on how program achieves goals }
+	   @list{Instructor-provided template on choice of goals, whether program satisfied them, and presentation quality }
+	   )
+     (list @list{Imperative and OO Programming Methodology (2nd year)}
+	   @list{Implement simple Pong game in model-view-controller style}
+	   @list{Tests, two draft implementations, and a final implementation }
+	   @list{questions about whether key components are present;
+			   whether tests are reasonably complete and
+			   motivated; whether good code practice followed (i.e., 
+			   naming, structure,
+			   identation) }
+	   )
+	))
+])
+
+@(figure* "fig:case-studies-cont"
+          "Summary of Case Studies: upper-level undergraduate and graduate courses"
+ @tabular[
+  #:style (style #f (list (attributes '((style . "border-collapse: collapse;")))))
+  #:column-properties (list (list (attributes '((style . "border: 1px solid black;")))))
+  (add-width-wrappers
+   (list "1in" "1.5in" "2in" "2in") 
+   (list
+     (list @list{@bold{Course and Level}} @list{@bold{Exercise}}
+           @list{@bold{Submissions}} @list{@bold{Review Criteria}})
+     (list @list{Introduction to Functional Programming (upper undergrad/MS)}
+	   @list{Implement Boggle (find all valid words in 4x4 grid)}
+	   @list{Decomposition of overall problem into tasks 
+			       (with quickcheck assertions), tests, code} 
+	   @list{check decomposition makes sense, presenting
+		       alternative if own differs from reviewed one;
+		       try own test suite on the code being reviewed }
 	   )
      (list @list{Advanced Sofware Design (upper undergrad/MS)}
-	   @list{design and partly implement a mobile app+server for a
-			game, using iterative development, and
-			choosing a subset of asgmt goals to cover.}  
-	   @list{submit design documents so far}
-	   @list{free-form on comprehensibility, quality of
+	   @list{Design and implement subset of a mobile app+server for a
+			game using iterative development }  
+	   @list{Design documents so far}
+	   @list{Free-form comments on comprehensibility, quality of
 			   documentation, coverage of use cases,
-			   adherence to design principles, choice of
-			   subsystem to implement.  Concrete examples
-			   required to illustrate each point. }
+			   adherence to design principles, and choice of
+			   subsystem to implement; concrete examples
+			   required to illustrate each point }
 	   )
      (list @list{Collaborative Computing (MS)}
-	   @list{Collaboratively produce a research article [*]}
-	   @list{drafts of article}
-	   @list{Conference paper reviewing rubric, with questions on
+	   @list{Collaboratively produce a research article}
+	   @list{Drafts of article}
+	   @list{Conference-paper reviewing rubric: questions on
 			    suitability for audience, originality and
 			    demonstrated knowledge in contribution,
 			    eveidence for arguments, methods,
 			    presentation, etc. }
 	   )
      (list @list{Software Security (upper undergrad/MS)}
-	   @list{Find ways to attack a web-based application}
-	   @list{Students peer-review each others' strategies to attack the
-                 application in black box fashion.  After reviewing, students attack
-		 the application in white box fashion}
-	   @list{free-form comments on comprehensiveness of attack plans}
+	   @list{Find ways to attack a web-based application
+                 (black-box, then white-box)}
+	   @list{Description of strategy to use in attacking
+                 the application in black-box fashion.}
+	   @list{Free-form comments on comprehensiveness and
+                 appropriateness of attack strategy}
 	   )
      (list @list{Software Modeling and Verification (upper undergrad/MS)}
-	   @list{Use model checking to find flaws in a protocol.}
-	   @list{submit proposed environment model and desired properties that should/should not hold under this model}
-	   @list{assess whether model conforms to problem, whether
+	   @list{Use model checking to find flaws in a protocol}
+	   @list{Proposed model of the system environment and desired properties that should (not) hold under this model}
+	   @list{Assess whether model conforms to problem and whether
 			model supports/masks the properties provided
-			with the model.  Comment on good/bad features
-			of this model. }
-	   )
-     (list @list{Programming Fundamentals 2 (2nd semester undergrad)}
-	   @list{Classroom clicker assignment on if-statements [*]}
-	   @list{Draw CFGs for code snippets}
-	   @list{Boolean assessment of whether CFG is accurate}
+			with the model; comment on good/bad features
+			of this model }
 	   )
      (list @list{Software Performance (MS)}
-	   @list{Develop an extension to the jikes visual debugger [???]}
-	   @list{proposal, prototypes, final artifact}
-	   @list{comment on one thing they particularly like, and one
-			 aspect that could be improved.  Prototype
-			 evaluations follow in-class presentations by
-			 each team.  Final artifact
-			 review assesses usability, extensibility, and
+	   @list{Develop an extension to the Jikes visual debugger}
+	   @list{Proposed extension, prototypes, final artifact}
+	   @list{Comment on one thing they particularly like and one
+			 aspect that could be improved; evaluate
+                         prototypes following in-class presentations by
+			 each team; review final artifact for
+			 usability, extensibility, and
 			 documentation }
 	   )
-     (list @list{Computing for Social Sciences and Humanities (undergrad)}
-	   @list{Cluster data on voting records (US Senate) to identify senators with similar ideology}
-	   @list{submit code and tests for instructor-defined subsets of overall functionality}
-	   @list{Provide scores from 0 to 100 on each of (a) whether
-			 tests meaningfully capture the assignment
-			 purpose, and (b) whether code performs the
-			 corresponding computation correctly. }
-	   )
      (list @list{Logic for System Modelling (upper undergrad/MS)}
-	   @list{Write a relational (Alloy) model of an elevator [~]}
-	   @list{model data components, describe desired properties of model, initial model of elevator operations}
-	   @list{components/properties missing? components/properties
-				       reasonable?  Is operational
-				       model suitably operational or
-				       too declarative?} 
-	   )
-     (list @list{Advanced CS1 with Data Structures}
-	   @list{Design a data structure for incremental and
-			functional updates on trees [*]}
-	   @list{datatype definition with instances of the data, test cases, complete programs}
-	   @list{can data structure support required operations within
-		     time bounds, missing interesting examples of
-		     data, coverage of tests, correctness of tests }
+	   @list{Write a relational (Alloy) model of an elevator}
+	   @list{Model of data components, description of desired properties of model, initial model of elevator operations}
+	   @list{Comment on whether components/properties are missing,
+                 whether they are reasonable, and whether model is
+		 suitably operational or too declarative} 
 	   )
      (list @list{Programming Languages (upper undergrad/grad)}
 	   @list{Provide a test suite and implementation for a type
-			 checker [*]}
-	   @list{tests, then implementation (no synchronized deadlines, but must occur in order)}
+			 checker}
+	   @list{Tests first, implementations later
+		 (submission deadlines not synchronized across students, but must occur
+		 in order per student)}
 	   @list{Set of ~10 specific questions about test coverage, plus
 		     free-form comments on style or organization of
-		     test suite.  No peer review on implementations. }
+		     test suite; no peer review on implementations }
 	   )
      (list @list{Software Security (MS)}
 	   @list{Implement simple on-line web-app on a strict
 			   timetable, then create attack trees for it}
-	   @list{initial program, attack trees, secured app, result of
-			 using fuzzing tools, results of using static
-			 analysis tools, review differences between
-			 original and secured application }
+	   @list{Initial program, attack trees, and secured
+		 application along with review of differences between original and
+		 secured application and results of using static
+		 analysis and fuzzing tools on the implementation}
 	   @list{Free-form comparison to what was done in own solution}
-	   )
-))
-])
-
-@(figure* "fig:case-studies-cont"
-          "Summary of Case Studies"
- @tabular[
-  #:style (style #f (list (attributes '((style . "border-collapse: collapse;")))))
-  #:column-properties (list (list (attributes '((style . "border: 1px solid black;")))))
-  (add-width-wrappers
-   (list "1in" "1in" "2in" "2in") 
-   (list
-     (list @list{Introduction to Functional Programming (upper undergrad/MS)}
-	   @list{Boggle: find all valid words in 4x4 grid}
-	   @list{decomposition of overall problem into tasks 
-			       (with quickcheck assertions), tests} 
-	   @list{check decomposition makes sense, presenting
-		       alternative if own differs from reviewed one;
-		       try own test suite on the code being reviewed }
-	   )
-     (list @list{Imperative and OO Programming Methodology (2nd year)}
-	   @list{implement program that satisfies a student-selected set of learning goals}
-	   @list{*choose goals, *choose program that satifies goals,
-			 design program, implement program, design
-			 presentation on how program achieves goals,
-			 give presentation }
-	   @list{template provided by instructors, question of whether this should be in-person or written}
-	   )
-     (list @list{Imperative and OO Programming Methodology (2nd year)}
-	   @list{Implement simple Pong game in model-view-controller style}
-	   @list{identify component, design data structure 
-			  (classes and interfaces), design tests, two
-			  draft implementations, final
-			  implementationidentify component, design
-			  data structure (classes and interfaces),
-			  design tests, two draft implementations,
-			  final implementation } 
-	   @list{questions about whether key components are present;
-			   whether tests are reasonably complete and
-			   motivated; checking for good code
-			   properties such as naming,structure,
-			   identation, etc }
 	   )
   ))
 ])
