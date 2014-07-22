@@ -24,12 +24,16 @@
                               (if first-col? "FC" "")
                               (if last-col? "LC" "")))
    ;; A TeX macro name cannot contain numbers, so replace digits with letters:
-   (define name (regexp-replace* #rx"[0-9]"
-                                 macro-name
-                                 (lambda (s) (string
-                                              (list-ref (string->list "zotTfFsSen")
-                                                        (string->number s))))))
-   ;; CSS to set the width for HTML output:
+   (define name 
+     (regexp-replace* #rx"[\\.]"
+                      (regexp-replace* #rx"[0-9]"
+                                       macro-name
+                                       (lambda (s) (string
+                                                    (list-ref (string->list "zotTfFsSen")
+                                                              (string->number s)))))
+                      (lambda (dot) "d")))
+                     
+     ;; CSS to set the width for HTML output:
    (define css-bytes (string->bytes/utf-8 
                       (format (string-append ".~a { width: ~s; }")
                               name
@@ -45,7 +49,7 @@
                               ;; The width:
                               w
                               ;; Except for last column, add spacing and vline after:
-                              (if first-col? "" "~ \\vline")
+                              (if last-col? "~ \\vline" "")
                               ;; For last row and column, hline after:
                               (if (and last-row? last-col?) "\\\\ \\hline" ""))))
    ;; Produce a paragraph for the table cell; we rely on the fact that
