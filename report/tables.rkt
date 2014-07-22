@@ -40,7 +40,7 @@
                               w)))
    ;; Macro to set the width for LaTeX output:
    (define tex-bytes (string->bytes/utf-8 
-                      (format "\\newcommand{\\~a}[1]{~a~a\\parbox[t]{~a}{#1}~a~a}"
+                      (format "\\newcommand{\\~a}[1]{~a~a\\parbox[t]{~a}{\\raggedright #1}~a~a}"
                               name
                               ;; Hack: add hline before first cell's content:
                               (if first-col? "\\hline" "")
@@ -48,7 +48,7 @@
                               (if first-col? "\\vline ~" "~ \\vline ~")
                               ;; The width:
                               w
-                              ;; Except for last column, add spacing and vline after:
+                              ;; for last column, add spacing and vline after:
                               (if last-col? "~ \\vline" "")
                               ;; For last row and column, hline after:
                               (if (and last-row? last-col?) "\\\\ \\hline" ""))))
