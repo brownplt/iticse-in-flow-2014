@@ -171,11 +171,21 @@ IFPR is a mechanism open to many policies. These policies are a
 function of a course's goals, student maturity, cultural context, and
 more. Therefore, an instructor who chooses to use IFPR will have to
 make several decisions that determine exactly what form of IFPR they
-employ. This section briefly outlines some of these decision points,
-with references to the rest of the document for more details:
+employ.
+This section briefly outlines some of these decision points,
+with references to the rest of the document for more details.
+
+@subsection{The @IFPR Process}
+
+@IFPR follows a particular process for assignments.  In order to have an
+in-flow component, the assignment requires at least one reviewable submission
+that occurs before the final deadline of the assignment.  This requires
+thinking through a few procedural questions that all in-flow assignments must
+address:
+
 @itemlist[
 
-@item{The choice of artifacts. How should an assignment be broken down
+@item{The choice of submissions. How should an assignment be broken down
 into multiple stages? Even in a programming assignment, there are many
 choices: tests before code; data structures before tests; design
 documents and architectural specifications before code; multiple
@@ -190,14 +200,25 @@ students enables more policies on reviewer assignments, but incurs
 overhead for students and staff through more course deadlines. 
 (@Secref["s:asgn-revs-timing"])} 
 
-@item{The use of rubrics. On the one hand, rubrics for reviewing guide
-the reviewer and may result in more concrete, actionable outcomes. On
-the other hand, a rubric can result in less constructive engagement
-and may result in important issues being missed. (@Secref["s:rubrics"])}
+@item{The manner in which reviews are conducted.  This includes the
+choice of review ``technology'': should reviewing by mediated by a computer
+application or should it be done face-to-face (perhaps as a small group
+meeting around a table).  This also includes the use of rubrics: On the one
+hand, rubrics for
+reviewing guide the reviewer and may result in more concrete, actionable
+outcomes. On the other hand, a rubric can result in less constructive
+engagement and may result in important issues being missed.
+(@Secref["s:rubrics"])}
 
-@item{The choice of review ``technology''. Should reviewing by
-mediated by a computer application or should it be done face-to-face
-(perhaps as a small group meeting around a table)? [REF]}
+]
+
+@subsection{Issues Surrounding @IFPR}
+
+There are a number of other cross-cutting issues that inform the choices made
+in the in-flow process,  and affect the appropriateness and effectiveness of
+@IFPR in particular contexts:
+
+@itemlist[
 
 @item{The role of anonymity. When, if ever, should authors and
 reviewers know about each others' identity? Using single- and
@@ -576,7 +597,7 @@ without reference to the submission under review), so these subsections may be
 difficult to understand in isolation.
 }
 
-@subsection[#:tag "s:artifacts"]{What Submissions Should be Reviewed?}
+@subsection[#:tag "s:artifacts"]{Choosing Submissions}
 
 As the case studies in Figure [REF] show, @IFPR can be used with many
 different kinds of submissions.  Even once an
@@ -598,7 +619,8 @@ that plagiarism can be more of a problem in programming tasks that are the
 same across students than in writing tasks where goals are less objective and
 more variance is expected.  Showing students entire solutions before the
 deadline exposes more opportunities for wholesale copying.  We discuss
-plagiarism (and mitigations) more in @secref["s:plagiarism"].}
+plagiarism (and mitigations) more in @secref["s:plagiarism"].  [FILL label
+case studies]}
 
 @item{Multiple iterations of an evolving deliverable:
 Some projects don't have drafts so much as an evolving set of specifications
@@ -608,6 +630,7 @@ discovered.  This is distinct from multiple iterations of the same deliverable
 because the goal itself changes along with the submission.  Both high-level
 feedback on the direction of the project and low-level implementation
 feedback can be helpful in this setting.
+[FILL label case studies]
 }
 
 @item{Separate deliverables that build on each other:
@@ -622,6 +645,7 @@ initial, pre-review submission as well as after.  Also, if the instructor
 decides on the decomposition, they have a lot of control over the path
 students take through the assignment, which can inform decisions about rubrics
 and feedback guidance.
+[FILL label case studies]
 }
 
 @item{Incremental views of the same deliverable:
@@ -634,7 +658,7 @@ assignment.  For example, an assignment might proceed with a test-first or
 test-last approach, with review before or after a test suite is written.  This
 focuses students on different aspects of the problem in their different stages
 of review.
-
+[FILL label case studies]
 }
 ]
 
@@ -645,21 +669,6 @@ over others).  In turn, the course's learning objectives should guide
 the choice of artifacts: preparing students to participate in
 industrial code review, for example, will be better served by using
 @IFPR on code-based artifacts rather than written papers.
-
-@subsection[#:tag "s:rubrics"]{Designing Rubrics}
-
-@md-section["sections/rubrics.md"]
-
-To read:
-
-Klemmer and others on accuracy/rubrics: @~cite["kwl...:peer-self-assess-mooc"]
-
-The notion of a Pedagogic Code Review with a moderator and a detailed plan for
-what to look for
-@~cite["hundhausen-pcr-toce13"]
-
-Comparing students to experts in writing reviews: @url{http://www.sciencedirect.com/science/article/pii/S0959475209000747}
-[Currently DOES NOT LOAD, so not moved into bib file]
 
 @subsection[#:tag "s:asgn-revs-timing"]{Assigning Reviewers and Timing Reviewing}
 
@@ -688,6 +697,22 @@ might blame the review process for failure to improve their work}
 
 @item{Asynchronicity hinders collaboration}
 ]
+
+
+@subsection[#:tag "s:rubrics"]{Performing Review}
+
+@md-section["sections/rubrics.md"]
+
+To read:
+
+Klemmer and others on accuracy/rubrics: @~cite["kwl...:peer-self-assess-mooc"]
+
+The notion of a Pedagogic Code Review with a moderator and a detailed plan for
+what to look for
+@~cite["hundhausen-pcr-toce13"]
+
+Comparing students to experts in writing reviews: @url{http://www.sciencedirect.com/science/article/pii/S0959475209000747}
+[Currently DOES NOT LOAD, so not moved into bib file]
 
 @subsection{Review Feedback and Meta-Reviewing}
 
