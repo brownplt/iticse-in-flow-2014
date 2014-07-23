@@ -410,7 +410,7 @@ peer review.
 
 @section{Examples of @IFPR}
 
-@(figure* "fig:case-studies"
+@(figure* "i:case-studies"
           "Summary of Case Studies: First-Year, Second-Year and Non-majors courses"
  @tabular[
   #:style (style #f (list (attributes '((style . "border-collapse: collapse;")))))
@@ -464,7 +464,7 @@ peer review.
 	))
 ])
 
-@(figure* "fig:case-studies-cont"
+@(figure* "i:case-studies-cont"
           "Summary of Case Studies: upper-level undergraduate and graduate courses"
  @tabular[
   #:style (style #f (list (attributes '((style . "border-collapse: collapse;")))))
@@ -558,7 +558,8 @@ peer review.
 The case studies from working group members covered a variety of
 student levels and course types.  More interestingly, they varied
 widely in the kinds of artifacts and processes that they suggested for
-@|IFPR|.  @(Figure-ref "fig:case-studies") summarizes the key
+@|IFPR|.  @(Figure-ref "i:case-studies") and @(figure-ref
+"i:case-studies-cont") summarize the key
 parameters of the case studies.  The table lists the name and level of
 the course, describes the assignment in which @IFPR was used,
 describes the submissions that were reviewed, and describes the review
@@ -597,9 +598,10 @@ without reference to the submission under review), so these subsections may be
 difficult to understand in isolation.
 }
 
-@subsection[#:tag "s:artifacts"]{Choosing Submissions}
+@subsection[#:tag "s:artifacts"]{Stages and Submissions}
 
-As the case studies in Figure [REF] show, @IFPR can be used with many
+As the case studies in @(figure-ref "i:case-studies") and @(figure-ref
+"i:case-studies-cont") show, @IFPR can be used with many
 different kinds of submissions.  Even once an
 instructor has identified the general class of artifacts to review
 (such as papers versus code), they can choose different ways to use
@@ -670,33 +672,169 @@ the choice of artifacts: preparing students to participate in
 industrial code review, for example, will be better served by using
 @IFPR on code-based artifacts rather than written papers.
 
-@subsection[#:tag "s:asgn-revs-timing"]{Assigning Reviewers and Timing Reviewing}
+@subsection[#:tag "s:asgn-revs-timing"]{Assigning and Scheduling Reviews}
 
-@md-section["sections/assigning-reviewers.md"]
+The @IFPR process requires both scheduling time into assignments for
+performing review, and assigning reviewers to artifacts for review.
 
-Reviewing can happen synchronously or asynchronously across students.
+@subsubsection[#:tag "s:scheduling"]{Scheduling Decisions}
+
+The major scheduling decision in @IFPR is whether reviewing happens
+@emph{synchronously} or @emph{asynchronously}.
+
 Synchronous reviewing occurs when all students submit work for review
-(and reviewing commences) at the same time; this model enables careful
-assignment of reviewers to work to review.  Asynchronous reviewing
+(and reviewing commences) at the same time.  Asynchronous reviewing
 occurs when students submit work for review when it is ready, and
 different students are in different stages of review at the same
-time; this model gives students more control over their work time.
-
-The group discussed the relative merits of synchronous and
-asynchronous review.  Key arguments included:
+time.  The two scheduling modes have several tradeoffs:
 
 @itemlist[
-@item{The students who submit last might get the least feedback--and they may
-be the ones who need it most; this might be an argument for
-intermediate deadlines.}
 
-@item{The later the submission the less it's benefiting from in-flow}
+@item{If all students are forced to submit before review starts, there is the
+full pool of reviews to draw from in any review assignment strategy
+(@secref["s:assigning"]).  In the asynchronous setting, students can only
+review submissions that occurred before theirs, which can skew the reviewing
+process if, for example, high-achieving students tend to submit early.}
 
-@item{Disorganized students who suffer from their disorganization
-might blame the review process for failure to improve their work}
+@item{With intermediate deadlines, all students have the same time to use
+review information.  If there are no intermediate deadlines, students who
+submit later have less time to use the information from the review process
+before the deadline.}
 
-@item{Asynchronicity hinders collaboration}
+@item{In the asynchronous setting, students who want to work at their own pace
+can, and the process doesn't stop them from continuing with their work.  With
+intermediate deadlines, a student cannot do the work on their own schedule.}
+
+@item{If reviews are available and presented to students immediately
+immediately after they submit, the problem is more likely to be fresh in their
+mind.  In the synchronous setting, there can be a longer gap between
+submission and review.  It's not clear if one is particularly better than the
+other -- coming back to a problem after not thinking about it for a while can
+be beneficial, but it also takes time to recall the problem and re-load it
+into working memory in order to perform review.}
+
+@item{Synchronous reviewing requires extra scheduling overhead that is likely
+to lengthen assignments for purely logistic reasons.  Asynchronous reviewing
+doesn't require extra scheduling work in the assignment, it just changes the
+kind of work students have to do.}
+
 ]
+
+With synchronous reviewing, there is an extra question of if there should be
+separate time set aside for reviewing in between submissions (with a review
+submission deadline), or if reviews can be completely in parallel with the
+next submission step.  This can affect the timeliness of reviews, which can
+affect how useful the review is to the reviewee as they move forward with the
+assignment.
+
+
+@subsubsection[#:tag "s:assigning"]{Assigning Reviewers to Submissions}
+
+Whether reviewing is synchronous or asynchronous, in order to perform review,
+the assignment needs to have a strategy for assigning students to review
+submissions.  As with other design decisions in @IFPR, any decision has
+tradeoffs and depends on course context and goals.  We identified both a
+number of methods for assigning submissions to students to review, and several
+miscellaneous modifiers that could apply.  We note when a particular strategy
+is more or less appropriate in synchronous or asynchronous settings, as well.
+
+@itemlist[
+  @item{@bold{Random Assignment}:
+  Perhaps the most obvious and simple method for reviewer assignment is random:
+  each reviewer is assigned one or more submissions at random to review.  There
+  are of course many types of randomness -- it is probably useful to ensure that
+  all submissions get the same number of reviews if possible, for example.  In
+  the asynchronous setting, the pool of reviews drawn from will necessarily be
+  smaller (since it only consists of already-submitted reviews), and this skews
+  the selection.  In an asynchronous setting, random assignment also lacks
+  temporal fairness -- the most recent submission isn't guaranteed to be
+  reviewed first, which can weaken the benefit of quick feedback in the
+  asynchronous model.
+  }
+
+@item{@bold{Temporal Assignment}
+
+Reviews can also be assigned in the order they were received.  It's not clear
+that this makes much sense for synchronous review, where temporal order is
+somewhat unrelated to motivations for assigning reviews.  However, in the
+asynchronous case, assigning reviews in the order submissions are received
+helps ensure that feedback happens as quickly as possible (assuming that
+students complete reviews at around the same rate).  We also note that if
+students are aware that temporal ordering is occurring, they can collude to
+time their submissions in order to ensure or avoid particular review pairings.
+Using a mix of randomness and temporal ordering could alleviate this somewhat,
+at some minor cost to review turnaround time.
+}
+
+@item{@bold{By Metric}
+
+There are a number of metrics that could be used to assign reviews with the
+goal of getting more effective feedback for students.  We identified at least:
+
+@itemlist[
+  @item{@bold{Achievement}: Students could be matched to other students with
+  similar or different levels of achievement on past assignments (or, if the
+  assignment can be evaluated automatically, even on the current assignment).
+  Existing research shows that on group work, pairing weak and strong students
+  can help the weak students (though the strong students don't do as well
+  either)@~cite["hooper-mixed-acheivement"].  The effects of such an
+  assignment are certainly course- and assignment- specific.}
+
+  @item{@bold{Prior Review Quality}: If the course tracks review quality
+  through meta-reviewing (@secref["s:meta-reviewing"]), the system could
+  assign consistently strong reviewers to weak work in order to maximize
+  improvement (again, ``weak work'' could be predicted by past achievement of
+  students, or by an automatic grading system).}
+
+  @item{@bold{Similarity Between Solutions}: Students acting as reviewers may
+  learn more from seeing a variety of solutions that are different from their
+  own.  They may also be more able to review solutions that are similar to
+  their own.  Depending on the assignment and learning goals, it could be
+  valuable to groups students based on solution approach or code similarity.}
+]
+
+We expect that by-metric assignments work best synchronously, because the it
+is difficult to perform the assignment until the metric can be measured for
+all students.  Doing a by-metric assignment of reviews asynchronously is
+possible if the metric is known before submission (e.g. if only using past
+submission performance), but it would result in some students waiting for
+their assigned-by-metric reviewee to submit.
+}
+
+@item{@bold{Student-chosen}
+
+Students could also be involved in choosing which submissions, or other
+students, they review.  For example, a simple model could have all submissions
+go into a publicly-visible pool of submissions, from which students choose
+submissions to review.  The assignment could require that students perform
+some number of reviews, and remove submissions from the pool once they have
+been reviewed enough times in order to avoid a small number of submissions
+getting more reviews than others.  This works with both asynchronous and
+synchronous-style scheduling, but can be problematic if the limits are too
+rigid and some students submit very late, so there aren't submissions
+available to review for even conscientious students.  A solution is to
+pre-seed the set of submissions with some instructor-provided submissions in
+order to ensure enough supply.
+
+Students could also choose partners for review independent of particular
+submissions.  It might be reasonable to switch to a student-chosen partner
+approach after having assignments with other review assignment strategies,
+once students have decided they enjoy collaborating together.  This also works
+fine in both synchronous and asynchronous styles -- students may even arrange
+to complete their work at a time convenient for their reviewer in order to get
+the most prompt feedback.
+
+All student-chosen strategies for review interact heavily with choices about
+anonymity of the review process, which we discuss in more detail in
+@secref["s:anon"].
+
+}
+
+]
+
+
+
+@;{@md-section["sections/assigning-reviewers.md"]}
 
 
 @subsection[#:tag "s:rubrics"]{Performing Review}
@@ -714,7 +852,7 @@ what to look for
 Comparing students to experts in writing reviews: @url{http://www.sciencedirect.com/science/article/pii/S0959475209000747}
 [Currently DOES NOT LOAD, so not moved into bib file]
 
-@subsection{Review Feedback and Meta-Reviewing}
+@subsection[#:tag "s:meta-reviewing"]{Review Feedback and Meta-Reviewing}
 
 Any use of peer-review must choose whether to include any grading or feedback
 on the contents of reviews themselves.  We use the term @emph{meta-review} to
