@@ -98,7 +98,10 @@ face-to-face meeting less intimidating.  Moderated review moves the process
 more towards a studio-like setting, and may be appropriate especially for
 teaching students what is involved in a constructive code review process.
 Hundhausen, Agrawal, and Agarwal discuss this kind of in-person review, dubbed
-*pedagogical code review*, in early courses [cite](hundhausen-pcr-toce13).
+*pedagogical code review*, in early courses [cite](hundhausen-pcr-toce13).  In
+pedagogical code review, a small group led by a moderator use a set of
+predefined coding practice guidelines to guide a group review of student
+programs.
 
 ### Evolution of and Variation Within Rubrics
 
@@ -158,13 +161,4 @@ questions the review asks. Again, the structure
 imposed should be guided by a close inspection of the goals of the
 particular review: who is it for, what is the intended outcome, and how will
 the review's contents be used.
-
-NOTE(joe): not sure what to do with this sentence:
-This can be mitigated by giving examples very different from the specific
-task.
-
-
-
-
-
 

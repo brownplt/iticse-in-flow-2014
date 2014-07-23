@@ -552,44 +552,99 @@ The source files are also available at
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-@section[#:tag "s:issues"]{Parameters and Issues}
+@section[#:tag "s:process"]{The In-Flow Process}
 
+There are a series of steps that are a part of any in-flow assignment, as
+illustrated in @(figure-ref "i:terminology").  This section lays out the
+process of submissions, reviews, and meta-reviews in more detail, along with
+the design decisions that the group identified for each activity.
+@Secref["s:issues"] continues by discussing issues that cross-cut the process.
+
+@;{
 The working group identified a series of parameters, issues, and
-logistical questions that surround the idea of @|IFPR|.  
+logistical questions that surround the idea of @|IFPR|.  In most cases, we
+don't expect that the discussion provides one answer for how to structure an
+@IFPR assignment or course.  Instead, we aim to lay out the design space of
+@IFPR so that researchers and practitioners can understand tradeoffs that they
+might otherwise not explicitly consider when setting up a study or assignment.
 
-@subsection[#:tag "s:artifacts"]{What Artifacts Should be Reviewed?}
+The design space of @IFPR is wide.  We attempt to start with necessary
+components of @IFPR to narrow our focus and set context, and then discuss
+issues within that context.  However, these design considerations are often
+heavily mutually referential (e.g. it is hard to discuss review rubrics
+without reference to the submission under review), so these subsections may be
+difficult to understand in isolation.
+}
+
+@subsection[#:tag "s:artifacts"]{What Submissions Should be Reviewed?}
 
 As the case studies in Figure [REF] show, @IFPR can be used with many
-different artifacts that might arise in a CS course.  Even once an
+different kinds of submissions.  Even once an
 instructor has identified the general class of artifacts to review
 (such as papers versus code), they can choose different ways to use
-@IFPR to build up to those artifacts.  The group identified four broad
+@IFPR to build up to final versions.  The group identified four broad
 choices in the artifacts to be reviewed:
 
 @itemlist[
-@item{Multiple iterations of the same specific deliverable (like a paper)}
-@item{Multiple iterations of an evolving deliverable (like prototypes of a project)}
-@item{Separate deliverables that build on each other (subset of functions that build on each other)}
-@item{Incremental views of the same deliverable (datatypes, tests, code)}
+
+@item{Multiple iterations of the same specific deliverable:
+This approach is the most similar to existing peer grading approaches, where
+an entire deliverable is presented for review.  This mirrors common practice
+in courses where students do peer review of written work, which is
+well-studied in contexts other than computer science.  Little extra work in
+assignment design is required to have students review drafts, so this provides
+a low-friction way to adapt an existing assignment for @|IFPR|. One consideration is
+that plagiarism can be more of a problem in programming tasks that are the
+same across students than in writing tasks where goals are less objective and
+more variance is expected.  Showing students entire solutions before the
+deadline exposes more opportunities for wholesale copying.  We discuss
+plagiarism (and mitigations) more in @secref["s:plagiarism"].}
+
+@item{Multiple iterations of an evolving deliverable:
+Some projects don't have drafts so much as an evolving set of specifications
+and deliverables.  For example, in a long-term software engineering project,
+the demands of the system may change over time as new requirements are
+discovered.  This is distinct from multiple iterations of the same deliverable
+because the goal itself changes along with the submission.  Both high-level
+feedback on the direction of the project and low-level implementation
+feedback can be helpful in this setting.
+}
+
+@item{Separate deliverables that build on each other:
+Often, programming assignments can be broken down into several
+subproblems, often expressed via decomposition into helper functions or
+separate classes.  If the assignment naturally lends itself to this kind of
+breakdown, a natural strategy for using in-flow review is to review the pieces
+individually, to catch mistakes in the components before composing them into a
+final solution.  This approach lends itself well to evaluation, as well,
+because the separate components can be assessed in isolation, and on the
+initial, pre-review submission as well as after.  Also, if the instructor
+decides on the decomposition, they have a lot of control over the path
+students take through the assignment, which can inform decisions about rubrics
+and feedback guidance.
+}
+
+@item{Incremental views of the same deliverable:
+Programming problems can have a number of distinct artifacts associated with
+them other than just code:  They have documentation, tests, specifications,
+underlying data representations, measurable behavior like time and memory
+complexity, visualizations, and more.  Having students produce different views
+on the same problem, with review in between, is another way to break up the
+assignment.  For example, an assignment might proceed with a test-first or
+test-last approach, with review before or after a test suite is written.  This
+focuses students on different aspects of the problem in their different stages
+of review.
+
+}
 ]
 
-These choices affect various other course logistics.  Plagiarism is a
-bigger concern when @IFPR is used on multiple iterations of the same
-deliverable and all students submissions solve the same low-level
-problem (such as everyone submitting code for the same problems).
-Staging exercises through multiple views of the same problem (such as
-test cases followed by implementation) partly mitigates this problem).
-
-The nature of artifact to review naturally affects the time required
+The nature of the reviewed submission naturally affects the time required
 for review, as well as the amount of expert guidance required
 (students' will have more experience with evaluating some artifacts
 over others).  In turn, the course's learning objectives should guide
 the choice of artifacts: preparing students to participate in
 industrial code review, for example, will be better served by using
 @IFPR on code-based artifacts rather than written papers.
-
-The remaining issues sections will discuss interactions with choice of
-artifacts as appropriate.
 
 @subsection[#:tag "s:rubrics"]{Designing Rubrics}
 
@@ -759,49 +814,16 @@ how reviewing is introduced and scaffolded, it is important to
 allot time to deal with misconceptions on how to create a review
 as part of the course design. 
 
-@subsubsection{Grading Reviews}
+@section[#:tag "s:issues"]{Parameters and Issues}
 
-Besides providing informative meta-reviews, 
-some educators might also wish to grade reviews. 
-Such grades for reviews might simply be based on whether or not a review was submitted, 
-or whether a review was submitted in a timely manner, 
-or they may be based on any of the criteria mentioned above. 
-Similarly, meta-reviews could be graded.
-
-Class size is clearly a factor here.  If someone wants to use
-peer-review to help scale human feedback in large courses, then
-giving expert feedback on reviewing might not be feasible.  In situations
-where an expert evaluation of the assignment is available (whether through
-auto-grading or by human TA), it should be possible to automate a
-meta-review that tells a student something about the quality of work they
-reviewed.  So, for instance, if a student indicates in a
-Likert scale that they "strongly agree" that a solution is correct, but the
-grade for the assignment they reviewed is low, the automated metareview can indicate that
-this review likely mis-evaluated the work under review.
-
-At the extreme end of grading reviews, one option could make most of a
-student's grade be determined by the reviews that they wrote, rather than the
-code they submitted.  The idea here is that the student's reviews reflect
-their understanding of the assignment. As a result TAs would spend their time
-on meta-reviews rather than grading code, focusing expert attention where it
-may be most valuable.
-
-Another way to tie students' grades to the reviewing they did is to make
-students' grades depend on the performance of the students they review: the
-reviewer gets points for the final score or improvement in score of the
-reviewee's submission.  This motivates reviewers, but the rewards may be
-infrequent and depend more on the work ethic of the reviewee than the actual
-quality of the review.  It may be possible to use this as a bonus system,
-rather than as a formal part of the grade, to reduce unfairness and variance
-but encourage good reviewing extrinsically.
-
+This section discusses issues in instantiating @IFPR in different course
+contexts relative to the process discussed in @secref["s:process"].
 
 @subsection{Grading IFPR Assignments}
 
-[REF grading reviews] touched briefly on the challenges and tradeoffs of
-grading reviews themselves, but in general, educators will have a new set of
-questions to answer about evaluating work done in the IFPR style, and giving
-summative feedback along with the peer review feedback.
+Educators have a new set of questions to answer about evaluating work done in
+the IFPR style, and giving summative feedback along with the peer review
+feedback.
 
 There are a few issues to consider:
 
@@ -839,6 +861,43 @@ something important).
 }
 ]
 
+@subsubsection{Grading Reviews}
+
+Besides providing informative meta-reviews, 
+some educators might also wish to grade reviews. 
+Such grades for reviews might simply be based on whether or not a review was submitted, 
+or whether a review was submitted in a timely manner, 
+or they may be based on any of the criteria mentioned above. 
+Similarly, meta-reviews could be graded.
+
+Class size is clearly a factor here.  If someone wants to use
+peer-review to help scale human feedback in large courses, then
+giving expert feedback on reviewing might not be feasible.  In situations
+where an expert evaluation of the assignment is available (whether through
+auto-grading or by human TA), it should be possible to automate a
+meta-review that tells a student something about the quality of work they
+reviewed.  So, for instance, if a student indicates in a
+Likert scale that they "strongly agree" that a solution is correct, but the
+grade for the assignment they reviewed is low, the automated metareview can indicate that
+this review likely mis-evaluated the work under review.
+
+At the extreme end of grading reviews, one option could make most of a
+student's grade be determined by the reviews that they wrote, rather than the
+code they submitted.  The idea here is that the student's reviews reflect
+their understanding of the assignment. As a result TAs would spend their time
+on meta-reviews rather than grading code, focusing expert attention where it
+may be most valuable.
+
+Another way to tie students' grades to the reviewing they did is to make
+students' grades depend on the performance of the students they review: the
+reviewer gets points for the final score or improvement in score of the
+reviewee's submission.  This motivates reviewers, but the rewards may be
+infrequent and depend more on the work ethic of the reviewee than the actual
+quality of the review.  It may be possible to use this as a bonus system,
+rather than as a formal part of the grade, to reduce unfairness and variance
+but encourage good reviewing extrinsically.
+
+
 @subsection[#:tag "s:anon"]{Anonymity}
 
 @md-section["sections/anonymity.md"]
@@ -857,7 +916,7 @@ Related work:
 @~cite["Papadopoulos:2012:IPR:2215076.2215100"]
 
 
-@subsection{Plagiarism and Gaming the Assignment}
+@subsection[#:tag "s:plagiarism"]{Plagiarism and Gaming the Assignment}
 
 IFPR, like many course and assignment structures, requires careful mechanism
 design to ensure that students aren't incentivized towards detrimental
@@ -1291,15 +1350,40 @@ artifact.
 
 @subsection{Comprehending Program Structure}
 
-For in-flow assignments centered around programming, one goal of
-peer-review is to help students reflect on their code structure.
+Program comprehension is at the same time a prerequisite and a learning goal
+of in-flow peer review of programming assignments.  Students need some ability
+to read code in order to provide a meaningful review to one another, but at
+the same time, IFPR can lessen the cognitive burden of comprehension by having
+students review problems that are conceptually close (or identical) to
+something the reader has just encountered.  The degree to which it tends
+toward one direction or another is a function of the experience level of the
+students and the goals of the particular course.
+
+In addition, for in-flow assignments centered around programming, one goal of
+peer-review is to help students reflect on their own code structure.
 There is a rich literature on program comprehension (particularly
 contrasting experts and novices), but much of that focuses on
-understanding @italic{behavior} of a new program.  In the in-flow
+understanding @italic{behavior} of a new program [CITE].  In the in-flow
 peer-review context, students already know the problem and (roughly)
 what the program is supposed to do.  Reading others' code therefore
 has different goals: notably, to understand the structure that someone
-else brought to the problem and to contrast that with one's own.
+else brought to the problem and to contrast that with one's own.  In addition,
+rather than trying to construct a meaning for a new program from scratch,
+students face the less burdensome task of asking if the program
+@emph{matches} an existing specification.
+
+Studies on program comphrehension comparing experts and novices have found
+that experts engage in more metacognitive
+behavior@~cite["etelapelto-metacognition-comprehension"], so the metacognitive
+context of review may put students in the right frame of mind to understand
+programs in the first place.  Other work on program comprehenseion suggests
+that the process has a lot to do with understanding the high-level plan of a
+program [CITE].  Since in the in-flow context students have at least
+constructed @emph{a} plan of their own for the same or a similar problem, they
+may at least be able to determine if the solution they are viewing matches
+their plan, or is doing something different.
+
+The degree to which IFPR helps with 
 
 @relworkfill{Discuss related work around comprehending code
 organization}
