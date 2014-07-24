@@ -1256,6 +1256,9 @@ some educators might also wish to grade reviews.
 Such grades for reviews might simply be based on whether or not a review was submitted, 
 or whether a review was submitted in a timely manner, 
 or they may be based on any of the criteria mentioned above. 
+Of our case studies, six (@bare-refs["clarke-asgn-2" "clear-asgn-1"
+"fisler-asgn-2" "politz-asgn-1" "wrigstad-asgn-1" "wrigstad-asgn-2"])
+explicitly tie reviews to the course or assignment grade in some form.
 Similarly, meta-reviews could be graded.
 
 Class size is clearly a factor here.  If someone wants to use
@@ -1892,10 +1895,4 @@ suggestions here -- about picking right point in space.]
 
 @(generate-bib)
 
-@section[#:tag "s:case-studies"]{Appendix --- Case Studies}
-
-[Have pulled in one detailed case study for now -- rest will be added
-once we decide which parts to retain for the report]
-
-@md-section["../in-flow-assignments/fisler/asgn-1.md"]
-
+@include-section["case-studies.scrbl"]

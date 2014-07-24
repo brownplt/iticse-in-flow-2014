@@ -280,9 +280,9 @@ for this assignment).
     student to actively participate in this process by strictly adhering to
     deadlines for the submission of drafts and reviews (or in the case of
     unavoidable and unforeseeable events, to promptly notify those impacted and
-    provide indicative dates by which the affected task will be completed). 
+    provide indicative dates by which the affected task will be completed) 
 
-    I (student name and id)…………………………………………………………….……………
+    I (student name and id)…………………………………………………………………………
 
 
     Date: ……………………………

@@ -1,10 +1,11 @@
 #lang racket/base
 
-(require scribble/manual markdown "./scrib.rkt")
+(require racket/list scribble/manual markdown "./scrib.rkt")
 
 (provide relworkfill
 	 fill
    ref itemize enumerate
+   bare-refs
    md-section)
 
 (define (md-section name)
@@ -22,3 +23,14 @@
 (define (enumerate . t)
   (apply itemlist #:style 'ordered t))
 
+(define (bare-refs . ss)
+  (define elts (map elemref ss))
+  (define l (length elts))
+  (cond
+    [(= l 0) (error "Zero refs given to bare-refs")]
+    [(= l 1) elts]
+    [(= l 2) (list (first elts) " and " (second elts))]
+    [(> l 2)
+     (append
+       (flatten (list (map (lambda (e) (list e ", ")) (take elts (sub1 l)))))
+       (list "and " (last elts)))]))
