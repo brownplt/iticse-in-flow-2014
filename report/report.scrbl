@@ -1256,7 +1256,7 @@ some educators might also wish to grade reviews.
 Such grades for reviews might simply be based on whether or not a review was submitted, 
 or whether a review was submitted in a timely manner, 
 or they may be based on any of the criteria mentioned above. 
-Of our case studies, six (@bare-refs["clarke-asgn-2" "clear-asgn-1"
+Of our case studies, six (@study-refs["clarke-asgn-2" "clear-asgn-1"
 "fisler-asgn-2" "politz-asgn-1" "wrigstad-asgn-1" "wrigstad-asgn-2"])
 explicitly tie reviews to the course or assignment grade in some form.
 Similarly, meta-reviews could be graded.

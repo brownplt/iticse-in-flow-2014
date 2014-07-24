@@ -5,7 +5,7 @@
 (provide relworkfill
 	 fill
    ref itemize enumerate
-   bare-refs
+   study-refs
    md-section)
 
 (define (md-section name)
@@ -23,7 +23,7 @@
 (define (enumerate . t)
   (apply itemlist #:style 'ordered t))
 
-(define (bare-refs . ss)
+(define (study-refs . ss)
   (define elts (map elemref ss))
   (define l (length elts))
   (cond
