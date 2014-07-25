@@ -1,7 +1,3 @@
-# Assignment Name
-
-Pinball Wizard!
-
 ## Course Context
 
 This is a first year course of 150 students. It's the first serious programming 
@@ -17,7 +13,7 @@ and this helps to level the playing field.
 The assignment asks students too write a collection of functions to
 solve a relatively small problem -- tracking a pinball through
 a grid containing some  bumpers positioned at 45 degrees, 
-checking well-formedness of the input data and so forth, ... 
+checking well-formedness of the input data and so forth.
 The names of and types of the functions are provided, in part
 to facilitate automatic testing. Students are expected to write 
 code for the functions and appropriate helper functions, to document their code using of

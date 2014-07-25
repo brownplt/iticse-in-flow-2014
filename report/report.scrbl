@@ -1295,7 +1295,155 @@ Klemmer and others on accuracy/rubrics: @~cite["kwl...:peer-self-assess-mooc"]
 
 @subsection[#:tag "s:anon"]{Anonymity}
 
-@md-section["sections/anonymity.md"]
+There are several issues relating to anonymity and privacy which come to the
+fore in peer review settings.  Developing a culture of positive and
+constructive critique, where students can both give and take feedback
+positively can take time and require a degree of practice.  While the broader
+aim may be to develop a positive, supportive and professional approach to peer
+review, there may be a need to provide some initial shielding from scrutiny
+for students who are new to the institution or the practice.  Some of the
+options, their respective benefits and downsides are presented in this
+section.
+
+@subsubsection{Types of Anonymity}
+
+There are varying degrees of anonymity that may be adopted.  For instance the
+reviews could be anonymous to either students or faculty (or alternatively to
+both, or neither). Each of the review authors and work authors/review
+recipients could be anonymous.  
+
+For example, in PeerWise@~cite["denny-peerwise08"], student submissions are
+ranked for quality and correctness and the content of the contributed
+questions is public.  In that case, not revealing contributor identities to
+peers is quite important, as this creates a degree of safety for the novice
+student contributor and the public ranking should be identified with the work
+and not with the student.  However the contributor identities are visible to
+the instructors as student contributions may be summatively graded.  A variant
+on this (similar to some conference reviewing models) could also see reviews
+made visible to all reviewers, which may help in establishing and reinforcing
+norms and standards and mitigate the risks of unduly harsh or abusive reviews. 
+
+In case study @study-refs["fisler-asgn-1"], anonymity is staged; at first
+anonymous, then groups review one another once formed, which is identifiable
+and social.  This lets students do a first round of reviewing to get
+comfortable with the process of feedback, and after has the benefits of
+encouraging professional collaboration.
+
+In total in our case studies, only two---@study-refs["fisler-asgn-2"
+"hauswirth-asgn-1"]---explicitly stated that reviews were anonymous.  Several
+(studies @study-refs["clarke-asgn-2" "hauswirth-asgn-2" "tirronen-asgn-1"
+"wrigstad-asgn-1" "wrigstad-asgn-2"]) had reviews that were in-person, and
+therefore cannot be anonymous.  The others left it unstated, and in different
+course contexts the assignments could very well be administered either way.
+
+@subsubsection{Upsides of Anonymity}
+
+At the introductory level students suffer from both confidence and maturity
+problems, making anonymous review an attractive option, at least initially.
+Students will not face personal embarrassment if others see work that they
+are not comfortable showing publicly, and anonymity gives reviewers the
+freedom to be more candid.
+
+In addition, students who know the student under review might make assumptions
+based on the student rather than the submission.  This could even cause
+students who consider themselves weaker to not question incorrect work that
+comes from a supposedly smart student.  Anonymity helps level the playing
+field in the face of such preconceptions.
+
+In general the group considers anonymity to be a less jarring initial option
+for @IFPR that is more likely to protect students that are new to the peer
+review process.  However, sharing identity during review has significant
+upsides in the right contexts, and anonymity isn't without its own problems.
+
+@subsubsection{Downsides of Anonymity}
+
+One of the downsides of anonymity is the scope for unwittingly enabling a
+culture of ‘flaming’ and online harassment to develop among some of the
+students.  Therefore if reviews are to be done anonymously, policies and
+techniques for reporting abuse, etc. should be in place.  It is not desirable
+to have students decide not to pursue the major due to feeling vulnerable, or
+unsafe.  Anonymous reviewing models demand a level of oversight, as there
+could be problems with harassment, etc., if reviews were not checked
+rigorously or students could not affirmatively report abuse.
+
+The potential for danger is greater if reviews are directly involved with
+grading, and therefore the impact of the reviews is heightened. The
+incorrectness of a review is mainly a concern if grades are involved,
+otherwise the student may just ignore it.  The validity of peer grading raises
+several additional questions.  In many respects this relates to the
+unsatisfactory aspects of peer assessment schemes in groupwork that ask group
+members to evaluate relative
+contributions@~cite["Clear:2010:TIM:1721933.1721938"].
+
+There are several potential gains from not being anonymous: students get
+feedback on what things to do together towards meeting goals, and this can
+create a culture of helping one another.  A review is a contribution, so
+students get to acknowledge people giving helpful feedback.  The course
+context may demand that students be visible and professional, so in that
+setting non-anonymity helps enforce a level of accountability for students,
+and an awareness that they will need to stand by their opinions and be
+prepared to justify them.  
+
+Open peer review can help with preparation for working in professional
+settings. Industrial code reviews are not done
+anonymously@~cite["Rombach:2008:IRP:1449603.1449609"]. Some code review is
+within a team, and some is from outside the team.  When industrial code review
+is performed by people outside the team, this can be a very testing process as
+there can be no assumption that reviewers have same vested interests.  
+
+There are other potential benefits to non-anonymity, which may result in
+enabling direct channels (outside the peer-review system) between students.
+It's not clear if this is a bad thing -- it may tell a student about peers
+they do or don’t want to work with in future, helping students identify
+collaborators or facilitate social/professional connections.
+Showing names would also allow for multiple rounds of clarification without
+support from a peer review tool.
+
+As a broader educational goal, ethics and professionalism are meant to be
+covered as part of our curricula@~cite["Fuller:2010:PDA:1709424.1709461"], and
+an open model for peer review gives a clear opportunity for enforcing
+appropriate behaviour.
+
+@subsubsection{Anonymity and Cultural Considerations}
+
+Anonymity may have cultural connections at several levels: for students who
+come from a consensus-based national culture@~cite["ghgjh:cult-org"], where
+preserving harmony is a strong value and overt criticism can be considered
+offensive or cause a loss of face, a greater level of anonymity may be
+required at first for students to feel more at ease in speaking their minds.  
+
+A converse cultural aspect may be in operation with non-anonymous
+contributions: if students know the other person, they may be less or more
+critical a priori, based upon judgements of the peer’s relative status or
+perceived expertise, rather than reviewing the material in its own right.
+
+At some institutions such as Brown University (where three of the group
+members have studied @IFPR), full anonymity is already hard to establish,
+because a robust undergraduate TA program means that students often act as TAs
+for one another independent of peer review, and know about one another’s
+performance.  At Brown, the institutional and student culture makes it
+commonplace to know who is reading your code.
+
+The group debated whether giving students choice in anonymization was a good
+idea, and concluded that it was not desirable because it
+encouraged hiding attitudes, and may make people justify being more
+objectionably critical because they were allowed to be anonymous.  A further
+negative was that it would not bring the shy students out (which is sometimes
+the educator’s goal).  It was concluded that the preferable approach was to
+make anonymity or identifiability a matter of policy, and educate students
+about the importance of professionalism in either case.
+
+
+
+Overall the group doesn't recommend that @IFPR practitioners adopt anonymity
+by default, but rather that they take course and culture into account.
+Overly stressing anonymity could unwittingly give the impression in students
+that peer review is dangerous.  We do recommend that in cases where work is
+identifiable, the underlying goals and expectations related to professionalism
+and community-building be consciously introduced to students from the outset.
+This could be talked about as explicitly and strongly as the discussions about
+plagiarism, with potential penalties for abuse of the system through lack of
+respect for one another.
 
 
 @subsection[#:tag "s:experts"]{The Role of Experts}

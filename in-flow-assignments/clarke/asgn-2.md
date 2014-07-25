@@ -124,9 +124,9 @@ As providing feedback corresponds to one of the tick-off-able goals, the quality
 will effect their grade. Ultimately, students need to decide in advance how much effort they need
 to put into this based on which grade they are aiming for.
 
-Other goals concern software design specific issues such as applying design patterns, applying 
-GRASP principles .... Some concern teamwork, and others concern modifying designs based on
-feedback received.
+Other goals concern software design specific issues such as applying design
+patterns and applying GRASP principles. Some concern teamwork, and others
+concern modifying designs based on feedback received.
 
 As lots of rounds of feedback are provided already and students' submissions are not directly assessed,
 goals are, students' submissions are not considered most of the time when ticking of goals.

@@ -1,7 +1,3 @@
-# Assignment Name
-
-Attacking Turnout
-
 ## Course Context
 
 The assignment is for an upper-level undergraduate course on software
