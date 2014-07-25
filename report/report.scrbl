@@ -34,7 +34,7 @@
 @(authorinfo "Dave Clarke" "Uppsala Universitet" "dave.clarke@it.uu.se")
 @(authorinfo "Tony Clear" "Auckland University of Technology" "tony.clear@aut.ac.nz")
 @(authorinfo "Kathi Fisler" "WPI" "kfisler@cs.wpi.edu")
-@(authorinfo "Matthias Hauswirth" "Università della Svizzera Italiana" "Matthias.Hauswirth@usi.ch")
+@(authorinfo "Matthias Hauswirth" "University of Lugano" "Matthias.Hauswirth@usi.ch")
 @(authorinfo "Shriram Krishnamurthi" "Brown University" "sk@cs.brown.edu")
 @(authorinfo "Joe Gibbs Politz" "Brown University" "joe@cs.brown.edu")
 @(authorinfo "Ville Tirronen" "University of Jyväskylä" "ville.e.t.tirronen@jyu.fi")
@@ -48,7 +48,7 @@ assignment is in progress. Peer-review done during this time is likely
 to result in greater motivation for both reviewer and
 reviewee. This working-group report summarizes @IFPR,
 and discusses numerous dimensions of the process, each of which
-alleviate some problems while raising associated concerns.}
+alleviates some problems while raising associated concerns.}
 
 @para{}
 
@@ -127,7 +127,7 @@ students have moved on to other assignments.}
 plagiarism. In fact, we view this as a feature. When a student sees
 another's work, they do not know the quality of the work they see: it
 could be better than their own work, but it could also be
-worse. Therefore, structured appropriately, it forces on students is the need to exercise
+worse. Therefore, structured appropriately, it forces on students the need to exercise
 @emph{judgment}.  Further, the review process could potentially flag
 naive forms of plagiarism, allowing it to be addressed and resolved
 prior to final submission.}
@@ -147,7 +147,7 @@ minimize the extra time this takes to complete homeworks, and how to
 help students not be led astray by weak or inaccurate reviews.
 Considering the potential learning objectives of @IFPR, rather than
 viewing it merely as a way to scale grading (a use of peer-review in
-MOOCs@~cite["kwl...:peer-self-assess-mooc"]), adds subtlety to all of these
+MOOCs@~cite["kwl...:peer-self-assess-mooc"]), @IFPR adds subtlety to all of these
 questions.  Liu and Carless
 distinguish between @emph{peer feedback} and @emph{peer
 assessment}@~cite["liu-peer-feedback"], where the
@@ -563,7 +563,7 @@ widely in the kinds of artifacts and processes that they suggested for
 parameters of the case studies.  The table lists the name and level of
 the course, describes the assignment in which @IFPR was used,
 describes the submissions that were reviewed, and describes the review
-criteria for submissions.  Courses with [*] after their descriptions
+criteria for submissions.  Assignments with [*] after their descriptions
 have been used in actual courses; the rest are hypothetical uses
 proposed by working group members, based on exercises in their current
 courses.
@@ -666,7 +666,7 @@ of review.
 
 The nature of the reviewed submission naturally affects the time required
 for review, as well as the amount of expert guidance required
-(students' will have more experience with evaluating some artifacts
+(students will have more experience with evaluating some artifacts
 over others).  In turn, the course's learning objectives should guide
 the choice of artifacts: preparing students to participate in
 industrial code review, for example, will be better served by using
@@ -706,7 +706,7 @@ can, and the process doesn't stop them from continuing with their work.  With
 intermediate deadlines, a student cannot do the work on their own schedule.}
 
 @item{If reviews are available and presented to students immediately
-immediately after they submit, the problem is more likely to be fresh in their
+after they submit, the problem is more likely to be fresh in their
 mind.  In the synchronous setting, there can be a longer gap between
 submission and review.  It's not clear if one is particularly better than the
 other -- coming back to a problem after not thinking about it for a while can
@@ -918,7 +918,7 @@ The working group identified several potential roles for rubrics:
     the student's career as a reviewer.  A beginning student who
     is learning to both read and write code might not know where
     to start in critiquing a program.  Prompting with specific questions
-    help in situations where students don't yet know how to structure a review
+    helps in situations where students don't yet know how to structure a review
     from scratch.
     }
 
