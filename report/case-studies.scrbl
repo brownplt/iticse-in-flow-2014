@@ -19,9 +19,40 @@
 [Have pulled in one detailed case study for now -- rest will be added
 once we decide which parts to retain for the report]
 
+@section{Case Study @next-study["krishnamurthi-asgn-1"]: Who is the Most Liberal/Conservative Senator?}
+
+@md-section["../in-flow-assignments/krishnamurthi/asgn-1.md"]
+
+
 @section{Case Study @next-study["clarke-asgn-1"]: Pinball Wizard!}
 
 @md-section["../in-flow-assignments/clarke/asgn-1.md"]
+
+
+@section{Case Study @next-study["politz-asgn-1"]: Functional Tree Updaters}
+
+@md-section["../in-flow-assignments/politz/asgn-1.md"]
+
+
+@section{Case Study @next-study["hauswirth-asgn-1"]: Iffy: In-Lecture Peer Review for Comprehending If Statements}
+
+@md-section["../in-flow-assignments/hauswirth/asgn-1.md"]
+
+
+@section{Case Study @next-study["wrigstad-asgn-1"]: Achievement 1}
+
+@md-section["../in-flow-assignments/wrigstad/asgn-1.md"]
+
+
+@section{Case Study @next-study["wrigstad-asgn-2"]: Program 1}
+
+@md-section["../in-flow-assignments/wrigstad/asgn-2.md"]
+
+
+@section{Case Study @next-study["tirronen-asgn-2"]: Boggle again}
+
+@md-section["../in-flow-assignments/tirronen/asgn-2.md"]
+
 
 @section{Case Study @next-study["clarke-asgn-2"]: Advanced Dungeons and Design (AD&D)}
 
@@ -32,41 +63,26 @@ once we decide which parts to retain for the report]
 
 @md-section["../in-flow-assignments/clear/asgn-1.md"]
 
-@section{Case Study @next-study["clear-asgn-2"]: Programming 1 - Marked Exercise A}
-
-@md-section["../in-flow-assignments/clear/asgn-2.md"]
-
 
 @section{Case Study @next-study["fisler-asgn-1"]: Attacking Turnout}
 
 @md-section["../in-flow-assignments/fisler/asgn-1.md"]
+
 
 @section{Case Study @next-study["fisler-asgn-2"]: Changing the Environment}
 
 @md-section["../in-flow-assignments/fisler/asgn-2.md"]
 
 
-@section{Case Study @next-study["hauswirth-asgn-1"]: Iffy: In-Lecture Peer Review for Comprehending If Statements}
-
-@md-section["../in-flow-assignments/hauswirth/asgn-1.md"]
-
 @section{Case Study @next-study["hauswirth-asgn-2"]: Pepr: Peer Project Review}
 
 @md-section["../in-flow-assignments/hauswirth/asgn-2.md"]
 
 
-@section{Case Study @next-study["krishnamurthi-asgn-1"]: Who is the Most Liberal/Conservative Senator?}
-
-@md-section["../in-flow-assignments/krishnamurthi/asgn-1.md"]
-
 @section{Case Study @next-study["krishnamurthi-asgn-2"]: A Hotel Elevator Controller}
 
 @md-section["../in-flow-assignments/krishnamurthi/asgn-2.md"]
 
-
-@section{Case Study @next-study["politz-asgn-1"]: Functional Tree Updaters}
-
-@md-section["../in-flow-assignments/politz/asgn-1.md"]
 
 @section{Case Study @next-study["politz-asgn-2"]: Simple Type Checker}
 
@@ -77,15 +93,10 @@ once we decide which parts to retain for the report]
 
 @md-section["../in-flow-assignments/tirronen/asgn-1.md"]
 
-@section{Case Study @next-study["tirronen-asgn-2"]: Boggle again}
-
-@md-section["../in-flow-assignments/tirronen/asgn-2.md"]
 
 
-@section{Case Study @next-study["wrigstad-asgn-1"]: Achievement 1}
+@;@section{Case Study @next-study["clear-asgn-2"]: Programming 1 - Marked Exercise A}
 
-@md-section["../in-flow-assignments/wrigstad/asgn-1.md"]
+@;@md-section["../in-flow-assignments/clear/asgn-2.md"]
 
-@section{Case Study @next-study["wrigstad-asgn-2"]: Program 1}
 
-@md-section["../in-flow-assignments/wrigstad/asgn-2.md"]
