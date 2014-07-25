@@ -416,11 +416,14 @@ peer review.
   #:style (style #f (list (attributes '((style . "border-collapse: collapse;")))))
   #:column-properties (list (list (attributes '((style . "border: 1px solid black;")))))
   (add-width-wrappers
-   (list "1in" "1.5in" "2in" "2in") 
+   (list ".15in" "1in" "1.5in" "1.75in" "2in") 
    (list
-     (list @list{@bold{Course and Level}} @list{@bold{Exercise}}
+     (list @list{@bold{#}}
+           @list{@bold{Course and Level}} @list{@bold{Exercise}}
            @list{@bold{Submissions}} @list{@bold{Review Criteria}})
-     (list @list{Computing for Social Sciences and Humanities (undergrad nonmajors)}
+     (list
+     @list[(study-refs "krishnamurthi-asgn-1")]
+     @list{Computing for Social Sciences and Humanities (undergrad nonmajors)}
 	   @list{Cluster data on voting records (US Senate) to identify senators with similar ideology}
 	   @list{Code and tests for instructor-defined subsets of overall functionality}
 	   @list{Provide scores from 0 to 100 on each of (a) whether
@@ -428,12 +431,16 @@ peer review.
 			 purpose, and (b) whether code performs the
 			 corresponding computation correctly }
 	   )
-     (list @list{CS1}
+     (list
+     @list[(study-refs "clarke-asgn-1")]
+     @list{CS1}
 	   @list{Write code and assertions for various components of a pinball game}
 	   @list{Work so far on subset of functions designated by instructor}
 	   @list{Rate readability and correctness; additional free-form comments}
 	   )
-     (list @list{Advanced CS1 with Data Structures}
+     (list
+     @list[(study-refs "politz-asgn-1")]
+     @list{Advanced CS1 with Data Structures}
 	   @list{Design a data structure for incremental and
 			functional updates on trees}
 	   @list{Datatype definition with instances of the data, test cases, complete programs}
@@ -441,18 +448,24 @@ peer review.
 		     time bounds, (b) interesting examples of
 		     data are missing, (c) tests offer good coverage and are correct }
 	   )
-     (list @list{Programming Fundamentals 2 (2nd semester undergrad)}
+     (list
+     @list[(study-refs "hauswirth-asgn-1")]
+     @list{Programming Fundamentals 2 (2nd semester undergrad)}
 	   @list{In-class clicker assignment to explain control-flow through if-statements}
 	   @list{CFGs for code snippets (drawn through custom software package)}
 	   @list{Provide yes/no assessment of whether CFG is accurate}
 	   )
-     (list @list{Imperative and OO Programming Methodology (2nd year)}
+     (list
+     @list[(study-refs "wrigstad-asgn-1")]
+     @list{Imperative and OO Programming Methodology (2nd year)}
 	   @list{Implement a program that satisfies a student-selected set of learning goals}
 	   @list{Description of learning goals covered by program, program code, and
 			 give presentation on how program achieves goals }
 	   @list{Instructor-provided template on choice of goals, whether program satisfied them, and presentation quality }
 	   )
-     (list @list{Imperative and OO Programming Methodology (2nd year)}
+     (list
+     @list[(study-refs "wrigstad-asgn-2")]
+     @list{Imperative and OO Programming Methodology (2nd year)}
 	   @list{Implement simple Pong game in model-view-controller style}
 	   @list{Tests, two draft implementations, and a final implementation }
 	   @list{questions about whether key components are present;
@@ -470,11 +483,13 @@ peer review.
   #:style (style #f (list (attributes '((style . "border-collapse: collapse;")))))
   #:column-properties (list (list (attributes '((style . "border: 1px solid black;")))))
   (add-width-wrappers
-   (list "1in" "1.5in" "2in" "2in") 
+   (list ".15in" "1in" "1.5in" "1.75in" "2in") 
    (list
-     (list @list{@bold{Course and Level}} @list{@bold{Exercise}}
+     (list @list{@bold{#}} @list{@bold{Course and Level}} @list{@bold{Exercise}}
            @list{@bold{Submissions}} @list{@bold{Review Criteria}})
-     (list @list{Introduction to Functional Programming (upper undergrad/MS)}
+     (list 
+     @list[(study-refs "tirronen-asgn-2")]
+     @list{Introduction to Functional Programming (upper undergrad/MS)}
 	   @list{Implement Boggle (find all valid words in 4x4 grid)}
 	   @list{Decomposition of overall problem into tasks 
 			       (with quickcheck assertions), tests, code} 
@@ -482,7 +497,9 @@ peer review.
 		       alternative if own differs from reviewed one;
 		       try own test suite on the code being reviewed }
 	   )
-     (list @list{Advanced Sofware Design (upper undergrad/MS)}
+     (list 
+     @list[(study-refs "clarke-asgn-2")]
+     @list{Advanced Sofware Design (upper undergrad/MS)}
 	   @list{Design and implement subset of a mobile app+server for a
 			game using iterative development }  
 	   @list{Design documents so far}
@@ -492,7 +509,9 @@ peer review.
 			   subsystem to implement; concrete examples
 			   required to illustrate each point }
 	   )
-     (list @list{Collaborative Computing (MS)}
+     (list
+     @list[(study-refs "clear-asgn-1")]
+     @list{Collaborative Computing (MS)}
 	   @list{Collaboratively produce a research article}
 	   @list{Drafts of article}
 	   @list{Conference-paper reviewing rubric: questions on
@@ -501,7 +520,9 @@ peer review.
 			    eveidence for arguments, methods,
 			    presentation, etc. }
 	   )
-     (list @list{Software Security (upper undergrad/MS)}
+     (list 
+     @list[(study-refs "fisler-asgn-1")]
+     @list{Software Security (upper undergrad/MS)}
 	   @list{Find ways to attack a web-based application
                  (black-box, then white-box)}
 	   @list{Description of strategy to use in attacking
@@ -509,7 +530,9 @@ peer review.
 	   @list{Free-form comments on comprehensiveness and
                  appropriateness of attack strategy}
 	   )
-     (list @list{Software Modeling and Verification (upper undergrad/MS)}
+     (list 
+     @list[(study-refs "fisler-asgn-2")]
+     @list{Software Modeling and Verification (upper undergrad/MS)}
 	   @list{Use model checking to find flaws in a protocol}
 	   @list{Proposed model of the system environment and desired properties that should (not) hold under this model}
 	   @list{Assess whether model conforms to problem and whether
@@ -517,7 +540,9 @@ peer review.
 			with the model; comment on good/bad features
 			of this model }
 	   )
-     (list @list{Software Performance (MS)}
+     (list 
+     @list[(study-refs "hauswirth-asgn-2")]
+     @list{Software Performance (MS)}
 	   @list{Develop an extension to the Jikes visual debugger}
 	   @list{Proposed extension, prototypes, final artifact}
 	   @list{Comment on one thing they particularly like and one
@@ -527,14 +552,18 @@ peer review.
 			 usability, extensibility, and
 			 documentation }
 	   )
-     (list @list{Logic for System Modelling (upper undergrad/MS)}
+     (list 
+     @list[(study-refs "krishnamurthi-asgn-2")]
+     @list{Logic for System Modelling (upper undergrad/MS)}
 	   @list{Write a relational (Alloy) model of an elevator}
 	   @list{Model of data components, description of desired properties of model, initial model of elevator operations}
 	   @list{Comment on whether components/properties are missing,
                  whether they are reasonable, and whether model is
 		 suitably operational or too declarative} 
 	   )
-     (list @list{Programming Languages (upper undergrad/grad)}
+     (list 
+     @list[(study-refs "politz-asgn-2")]
+     @list{Programming Languages (upper undergrad/grad)}
 	   @list{Provide a test suite and implementation for a type
 			 checker}
 	   @list{Tests first, implementations later
@@ -544,7 +573,9 @@ peer review.
 		     free-form comments on style or organization of
 		     test suite; no peer review on implementations }
 	   )
-     (list @list{Software Security (MS)}
+     (list
+     @list[(study-refs "tirronen-asgn-1")]
+     @list{Software Security (MS)}
 	   @list{Implement simple on-line web-app on a strict
 			   timetable, then create attack trees for it}
 	   @list{Initial program, attack trees, and secured
@@ -621,8 +652,12 @@ that plagiarism can be more of a problem in programming tasks that are the
 same across students than in writing tasks where goals are less objective and
 more variance is expected.  Showing students entire solutions before the
 deadline exposes more opportunities for wholesale copying.  We discuss
-plagiarism (and mitigations) more in @secref["s:plagiarism"].  [FILL label
-case studies]}
+plagiarism (and mitigations) more in @secref["s:plagiarism"].
+
+Case studies @study-refs["clear-asgn-1" "hauswirth-asgn-2" "wrigstad-asgn-2"]
+all had submission steps that were prototypes or drafts of the final product
+(in addition to other steps).
+}
 
 @item{Multiple iterations of an evolving deliverable:
 Some projects don't have drafts so much as an evolving set of specifications
@@ -632,7 +667,11 @@ discovered.  This is distinct from multiple iterations of the same deliverable
 because the goal itself changes along with the submission.  Both high-level
 feedback on the direction of the project and low-level implementation
 feedback can be helpful in this setting.
-[FILL label case studies]
+
+Case studies @study-refs["fisler-asgn-1" "hauswirth-asgn-2"
+"krishnamurthi-asgn-2" "tirronen-asgn-1"] have elements of this approach,
+where the deliverable's nature changes more over time, and inresponse to
+review.
 }
 
 @item{Separate deliverables that build on each other:
@@ -647,7 +686,9 @@ initial, pre-review submission as well as after.  Also, if the instructor
 decides on the decomposition, they have a lot of control over the path
 students take through the assignment, which can inform decisions about rubrics
 and feedback guidance.
-[FILL label case studies]
+
+Case studies @study-refs["clarke-asgn-1" "clarke-asgn-2" "krishnamurthi-asgn-1"
+"tirronen-asgn-1" "tirronen-asgn-2" "wrigstad-asgn-1"] use this approach.
 }
 
 @item{Incremental views of the same deliverable:
@@ -660,7 +701,11 @@ assignment.  For example, an assignment might proceed with a test-first or
 test-last approach, with review before or after a test suite is written.  This
 focuses students on different aspects of the problem in their different stages
 of review.
-[FILL label case studies]
+
+Case studies @study-refs["fisler-asgn-1" "krishnamurthi-asgn-2"
+"politz-asgn-1" "politz-asgn-2" "tirronen-asgn-1" "wrigstad-asgn-2"] take this
+approach, where submissions are different kinds of artifacts, but all
+contribute to the understanding of a single artifact.
 }
 ]
 
