@@ -1,23 +1,8 @@
 #lang scribble/base
 
-@(require scribble/core
-          scriblib/figure
-          scribble/decode
-          scribble/html-properties
-          scribble/latex-properties
- 	  "tables.rkt"	
-	  "bib.rkt"
-          "helpers.rkt")
+@(require scribble/core "helpers.rkt")
 
 @title[#:tag "s:case-studies"]{Appendix --- Case Studies}
-
-@(define study-counter! 0)
-@(define (next-study label)
-  (set! study-counter! (add1 study-counter!))
-  (elemtag label (number->string study-counter!)))
-
-[Have pulled in one detailed case study for now -- rest will be added
-once we decide which parts to retain for the report]
 
 @section{Case Study @next-study["krishnamurthi-asgn-1"]: Who is the Most Liberal/Conservative Senator?}
 

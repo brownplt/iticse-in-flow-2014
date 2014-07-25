@@ -5,7 +5,7 @@
 (provide relworkfill
 	 fill
    ref itemize enumerate
-   study-refs
+   next-study study-refs
    md-section)
 
 (define (md-section name)
@@ -23,8 +23,16 @@
 (define (enumerate . t)
   (apply itemlist #:style 'ordered t))
 
+(define study-map! (make-hash))
+(define study-counter! 0)
+(define (next-study label)
+  (set! study-counter! (add1 study-counter!))
+  (hash-set! study-map! label study-counter!)
+  (elemtag label (number->string study-counter!)))
+
 (define (study-refs . ss)
-  (define elts (map elemref ss))
+  (define sorted (sort ss (lambda (s1 s2) (< (hash-ref study-map! s1) (hash-ref study-map! s2)))))
+  (define elts (map elemref sorted))
   (define l (length elts))
   (cond
     [(= l 0) (error "Zero refs given to bare-refs")]
