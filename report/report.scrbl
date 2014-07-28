@@ -1148,6 +1148,37 @@ and those particular to IFPR in this section.
 There are several ways to structure the information in meta-reviews, and
 provide useful feedback to reviewers.
 
+Instructors or TAs could provide direct feedback to students on reviews, in
+order to repair incorrect advice and reinforce good behavior (case studies 
+@study-refs["fisler-asgn-2" "krishnamurthi-asgn-1" "krishnamurthi-asgn-2"]
+call out the importance of correcting faulty reviews explicitly).  
+Class size is clearly a factor here.  If someone wants to use
+peer-review to help scale human feedback in large courses, then
+giving expert feedback on reviewing might not be feasible.  In situations
+where an expert evaluation of the @emph{assignment} is available (whether through
+auto-grading or by human TA) and reviews
+are quantitative, it should be possible to automate a
+meta-review that tells a student something about the quality of work they
+reviewed.  So, for instance, if a student indicates in a
+Likert scale that they "strongly agree" that a solution is correct, but the
+grade for the assignment they reviewed is low, the automated meta-review can indicate that
+this review likely mis-evaluated the work under review.
+
+Another way to give feedback is by telling students about the correspondence
+between their evaluation of a submission those of other students.  For
+example, the SWoRD tool for peer review of writing tells student reviewers, on
+each criteria they reviewed, how they did relative to the average of other
+students' scores@~cite["cho-sword"].  An example of feedback that they show
+says ``Your ratings were too nice for this set of papers.  Your average rating
+was 6.50 and the group average was 5.23.'' This hints to the student that they
+may have missed something in their review.  This does run into issues of
+calibration and opinion -- just because a student disagrees with the average,
+it doesn't mean they are wrong!  They may have understood something the other
+reviewers didn't, in which case comparing their review to an expert's, or to a
+trusted automated process, may be more useful feedback.
+
+
+
 Nelson and Schunn describe a rubric for evaluating peer feedback in writing
 assignments, which includes criteria like the concreteness and actionability
 of the review, and whether it was generally positive or
@@ -1156,20 +1187,6 @@ assessment strategies for comments in online discussion forums used to discuss
 class content@~cite["swan-online-assessment"].  Though the discussions are not
 necessarily critiques of student work, they do have similar requirements for
 relevance, accuracy, and usefulness a focused topic.
-
-Another way to give feedback is by telling students about the correspondence
-between their evaluation of a submission and other evaluations, be they from
-experts, other students, or an automated process.  For example, the SWoRD tool
-for peer review of writing tells student reviewers, on each criteria they
-reviewed, how they did relative to the average of other students'
-scores@~cite["cho-sword"].  An example of feedback that they show says ``Your
-ratings were too nice for this set of papers.  Your average rating was 6.50
-and the group average was 5.23.'' This hints to the student that they may have
-missed something in their review.  This does run into issues of calibration
-and opinion -- just because a student disagrees with the average, it doesn't
-mean they are wrong!  They may have understood something the other reviewers
-didn't, in which case comparing their review to an expert's, or to a trusted
-automated process, may be more useful feedback.
 
 In a related approach, in CaptainTeach programming assignments, half the time
 students are assigned a known-good or known-bad solution to review,
@@ -1259,16 +1276,134 @@ Educators have a new set of questions to answer about evaluating work done in
 the IFPR style, and giving summative feedback along with the peer review
 feedback.
 
-There are a few issues to consider:
+@subsubsection[#:tag "s:plagiarism"]{IFPR and Plagiarism}
+
+IFPR, like many course and assignment structures, requires careful mechanism
+design to ensure that students aren't incentivized towards detrimental
+behavior that lets them get a good grade at the cost of their (or others')
+education.
+
+One of the most immediately problems with IFPR is that students necessarily
+are shown one another's work while in the middle of an assignment -- it is the
+definition of the technique that this happens.  Since the final submission
+happens after students have been exposed to other students' work, the IFPR
+educator immediately confronts the problem of determining how to evaluate the
+final submission.
+
+At the extreme, a student could submit an empty initial submission, copy what
+he sees during the reviewing phase, and submit the copied solution as their
+final solution.  In less extreme cases, students may copy all or part of
+another solution into their own after submitting an initial first try that
+they become convinced is incorrect.  There are a number of course and grading
+design decisions that can affect to what degree copying is a problem.
 
 @itemlist[
-@item{
-Since there are potentially multiple submissions of the same or similar
-artifact, and students see examples of one another's work along the way, there
-is doubt about the provenance the work in the final submission, raising concerns about
-plagiarism.
+
+@item{@bold{Variation in Assignments}:
+
+One major factor in whether copying behavior is even a problem is how similar
+students' submissions are expected to be.  In many programming courses,
+students implement to the exact same algorithmic specification, and other than
+coding style issues, one implementation is just as good as another.  This is
+in contrast to other domains where peer review is often used, like creative or
+critical writing, in which students often write on different topics or choose
+different positions to represent on the same topic.
+
+One solution is then to provide different variants of a programming
+problem to different students, an approach taken by
+Zeller@~cite["zeller-read-review-00"], in which each student gets a variation
+on a theme, to avoid students reviewing another who is working on exactly the
+same problem.  Indeed, it is often possible to generate large numbers of
+different problems automatically from a specification, as Gulwani et al. have done for
+algebra problems and more@~cite["gulwani-algebra-problems"
+"gulwani-geometry-problems"].
+
+A drawback of variation in assignments is that it weakens one of the benefits
+of IFPR -- that students review the same problem they just saw!  Especially
+for beginning students, where program comprehension skills are still being
+learned, one goal of IFPR is to lessen the cognitive load of the comprehension
+task by having the student review code for a problem they already understand.
+If they have to internalize an additional problem description along with new
+code, this puts significantly more overhead into the reviewing process.
+
+Depending on the learning goals, it may be good for the reviewer to learn to
+incorporate ideas from different solutions into their own, since it requires a
+more abstract understanding of the techniques.  For earlier students, it may
+be enough of a challenge to recognize a good solution for the same problem and
+apply it to their own solution.  So depending on the use case, presenting a
+reviewer with solutions to the same or different problems may be effective.
 }
 
+@item{@bold{Weighted Submission Grading}:
+
+We believe that there is value in having students copy parts of other
+submissions that they see in order to improve their own work.  It happens all
+the time in professional software development, and the act of recognizing a
+good solution demonstrates understanding that is far beyond blind plagiarism.
+So we want students to take things from the examples they see and demonstrate
+that they learned from them -- there's also no guarantee that what they are
+seeing is correct, so blindly copying can hurt!
+
+However, wholesale copying should be discouraged, where a student submits an
+empty file and then simply copies the best of what they see.  In order to
+mitigate this, Politz et al. grade IFPR assignments by assigning heavier
+weights to initial submissions than to post-review submissions, so an initial
+program submission counts for 75% of the grade.  Students can still improve
+the 25%-weighted part of their score based on review feedback and copying
+others' solutions, but they can also hurt their score if they make incorrect
+changes.  Different weightings put different emphasis on the importance of
+review -- having the post-review score count for more might be acceptable in
+some classroom settings, and ultimately comes down to a choice about student
+maturity, class culture, and other course-specific factors.
+}
+
+@item{@bold{Alternative or Supplemental Grading}
+
+Another solution to the grading problem is to supplement assignment grading
+with other techniques that cannot be copied, which works in many settings
+where plagiarism could be a potential problem.  For example, in an in-person
+code review of a student's solution, an instructor can quickly ascertain
+whether or not the student has simply copied something or actually understands
+the code they have submitted.  This can be done by, for example, asking the
+student to change their program to match a new specification, or asking them
+to understand some change to their submitted code.
+}
+]
+
+
+@subsubsection{Grading Reviews}
+
+Besides providing informative meta-reviews, 
+some educators might also wish to grade reviews. 
+Such grades for reviews might simply be based on whether or not a review was submitted, 
+or whether a review was submitted in a timely manner, 
+or they may be based on any of the criteria mentioned above. 
+Of our case studies, six (@study-refs["clarke-asgn-2" "clear-asgn-1"
+"fisler-asgn-2" "politz-asgn-1" "wrigstad-asgn-1" "wrigstad-asgn-2"])
+explicitly tie reviews to the course or assignment grade in some form.
+Similarly, meta-reviews could be graded, though no case study did so.
+
+At the extreme end of grading reviews, one option could make most of a
+student's grade be determined by the reviews that they wrote, rather than the
+code they submitted.  The idea here is that the student's reviews reflect
+their understanding of the assignment. As a result TAs would spend their time
+on meta-reviews rather than grading code, focusing expert attention where it
+may be most valuable.
+
+Another way to tie students' grades to the reviewing they did is to make
+students' grades depend on the performance of the students they review: the
+reviewer gets points for the final score or improvement in score of the
+reviewee's submission.  This motivates reviewers, but the rewards may be
+infrequent and depend more on the work ethic of the reviewee than the actual
+quality of the review.  It may be possible to use this as a bonus system,
+rather than as a formal part of the grade, to reduce unfairness and variance
+but encourage good reviewing extrinsically.
+
+To read:
+
+Klemmer and others on accuracy/rubrics: @~cite["kwl...:peer-self-assess-mooc"]
+
+@;{
 @item{There can be many motivations for students to take the time to perform
 quality reviews for one another.  While grading reviews provides an obvious
 achievement-based motivation, there are others that might be more powerful: if
@@ -1292,51 +1427,7 @@ reviews?  Giving auto-grade results could lead to reviewers putting in
 less effort (thus masking situations in which the auto-grading missed
 something important).
 }
-]
-
-@subsubsection{Grading Reviews}
-
-Besides providing informative meta-reviews, 
-some educators might also wish to grade reviews. 
-Such grades for reviews might simply be based on whether or not a review was submitted, 
-or whether a review was submitted in a timely manner, 
-or they may be based on any of the criteria mentioned above. 
-Of our case studies, six (@study-refs["clarke-asgn-2" "clear-asgn-1"
-"fisler-asgn-2" "politz-asgn-1" "wrigstad-asgn-1" "wrigstad-asgn-2"])
-explicitly tie reviews to the course or assignment grade in some form.
-Similarly, meta-reviews could be graded.
-
-Class size is clearly a factor here.  If someone wants to use
-peer-review to help scale human feedback in large courses, then
-giving expert feedback on reviewing might not be feasible.  In situations
-where an expert evaluation of the assignment is available (whether through
-auto-grading or by human TA), it should be possible to automate a
-meta-review that tells a student something about the quality of work they
-reviewed.  So, for instance, if a student indicates in a
-Likert scale that they "strongly agree" that a solution is correct, but the
-grade for the assignment they reviewed is low, the automated metareview can indicate that
-this review likely mis-evaluated the work under review.
-
-At the extreme end of grading reviews, one option could make most of a
-student's grade be determined by the reviews that they wrote, rather than the
-code they submitted.  The idea here is that the student's reviews reflect
-their understanding of the assignment. As a result TAs would spend their time
-on meta-reviews rather than grading code, focusing expert attention where it
-may be most valuable.
-
-Another way to tie students' grades to the reviewing they did is to make
-students' grades depend on the performance of the students they review: the
-reviewer gets points for the final score or improvement in score of the
-reviewee's submission.  This motivates reviewers, but the rewards may be
-infrequent and depend more on the work ethic of the reviewee than the actual
-quality of the review.  It may be possible to use this as a bonus system,
-rather than as a formal part of the grade, to reduce unfairness and variance
-but encourage good reviewing extrinsically.
-
-To read:
-
-Klemmer and others on accuracy/rubrics: @~cite["kwl...:peer-self-assess-mooc"]
-
+}
 
 @subsection[#:tag "s:anon"]{Anonymity}
 
@@ -1506,94 +1597,6 @@ Comparing students to experts in writing reviews: @url{http://www.sciencedirect.
 Related work:
 @~cite["Papadopoulos:2012:IPR:2215076.2215100"]
 
-
-@subsection[#:tag "s:plagiarism"]{Plagiarism and Gaming the Assignment}
-
-IFPR, like many course and assignment structures, requires careful mechanism
-design to ensure that students aren't incentivized towards detrimental
-behavior that lets them get a good grade at the cost of their (or others')
-education.
-
-One of the most immediately problems with IFPR is that students necessarily
-are shown one another's work while in the middle of an assignment -- it is the
-definition of the technique that this happens.  Since the final submission
-happens after students have been exposed to other students' work, the IFPR
-educator immediately confronts the problem of determining how to evaluate the
-final submission.
-
-At the extreme, a student could submit an empty initial submission, copy what
-he sees during the reviewing phase, and submit the copied solution as their
-final solution.  In less extreme cases, students may copy all or part of
-another solution into their own after submitting an initial first try that
-they become convinced is incorrect.  There are a number of course and grading
-design decisions that can affect to what degree copying is a problem.
-
-@subsubsection{Variation in Assignments}
-
-One major factor in whether copying behavior is even a problem is how similar
-students' submissions are expected to be.  In many programming courses,
-students implement to the exact same algorithmic specification, and other than
-coding style issues, one implementation is just as good as another.  This is
-in contrast to other domains where peer review is often used, like creative or
-critical writing, in which students often write on different topics or choose
-different positions to represent on the same topic.
-
-One solution is then to provide different variants of a programming
-problem to different students, an approach taken by
-Zeller@~cite["zeller-read-review-00"], in which each student gets a variation
-on a theme, to avoid students reviewing another who is working on exactly the
-same problem.  Indeed, it is often possible to generate large numbers of
-different problems automatically from a specification, as Gulwani et al. have done for
-algebra problems and more@~cite["gulwani-algebra-problems"
-"gulwani-geometry-problems"].
-
-A drawback of variation in assignments is that it weakens one of the benefits
-of IFPR -- that students review the same problem they just saw!  Especially
-for beginning students, where program comprehension skills are still being
-learned, one goal of IFPR is to lessen the cognitive load of the comprehension
-task by having the student review code for a problem they already understand.
-If they have to internalize an additional problem description along with new
-code, this puts significantly more overhead into the reviewing process.
-
-Depending on the learning goals, it may be good for the reviewer to learn to
-incorporate ideas from different solutions into their own, since it requires a
-more abstract understanding of the techniques.  For earlier students, it may
-be enough of a challenge to recognize a good solution for the same problem and
-apply it to their own solution.  So depending on the use case, presenting a
-reviewer with solutions to the same or different problems may be effective.
-
-@subsubsection{Weighted Submission Grading}
-
-We believe that there is value in having students copy parts of other
-submissions that they see in order to improve their own work.  It happens all
-the time in professional software development, and the act of recognizing a
-good solution demonstrates understanding that is far beyond blind plagiarism.
-So we want students to take things from the examples they see and demonstrate
-that they learned from them -- there's also no guarantee that what they are
-seeing is correct, so blindly copying can hurt!
-
-However, wholesale copying should be discouraged, where a student submits an
-empty file and then simply copies the best of what they see.  In order to
-mitigate this, Politz et al. grade IFPR assignments by assigning heavier
-weights to initial submissions than to post-review submissions, so an initial
-program submission counts for 75% of the grade.  Students can still improve
-the 25%-weighted part of their score based on review feedback and copying
-others' solutions, but they can also hurt their score if they make incorrect
-changes.  Different weightings put different emphasis on the importance of
-review -- having the post-review score count for more might be acceptable in
-some classroom settings, and ultimately comes down to a choice about student
-maturity, class culture, and other course-specific factors.
-
-@subsubsection{Alternative or Supplemental Grading}
-
-Another solution to the grading problem is to supplement assignment grading
-with other techniques that cannot be copied, which works in many settings
-where plagiarism could be a potential problem.  For example, in an in-person
-code review of a student's solution, an instructor can quickly ascertain
-whether or not the student has simply copied something or actually understands
-the code they have submitted.  This can be done by, for example, asking the
-student to change their program to match a new specification, or asking them
-to understand some change to their submitted code.
 
 @subsection{Mitigating the Costs}
 
