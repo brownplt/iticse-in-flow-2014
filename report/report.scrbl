@@ -442,7 +442,7 @@ peer review.
      @list[(study-refs "politz-asgn-1")]
      @list{Advanced CS1 with Data Structures}
 	   @list{Design a data structure for incremental and
-			functional updates on trees}
+			functional updates on trees [*]}
 	   @list{Datatype definition with instances of the data, test cases, complete programs}
 	   @list{Indicate whether (a) data structure can support required operations within
 		     time bounds, (b) interesting examples of
@@ -451,7 +451,7 @@ peer review.
      (list
      @list[(study-refs "hauswirth-asgn-1")]
      @list{Programming Fundamentals 2 (2nd semester undergrad)}
-	   @list{In-class clicker assignment to explain control-flow through if-statements}
+	   @list{In-class clicker assignment to explain control-flow through if-statements [*]}
 	   @list{CFGs for code snippets (drawn through custom software package)}
 	   @list{Provide yes/no assessment of whether CFG is accurate}
 	   )
@@ -512,7 +512,7 @@ peer review.
      (list
      @list[(study-refs "clear-asgn-1")]
      @list{Collaborative Computing (MS)}
-	   @list{Collaboratively produce a research article}
+	   @list{Collaboratively produce a research article [*]}
 	   @list{Drafts of article}
 	   @list{Conference-paper reviewing rubric: questions on
 			    suitability for audience, originality and
@@ -555,7 +555,7 @@ peer review.
      (list 
      @list[(study-refs "krishnamurthi-asgn-2")]
      @list{Logic for System Modelling (upper undergrad/MS)}
-	   @list{Write a relational (Alloy) model of an elevator}
+	   @list{Write a relational (Alloy) model of an elevator [*]}
 	   @list{Model of data components, description of desired properties of model, initial model of elevator operations}
 	   @list{Comment on whether components/properties are missing,
                  whether they are reasonable, and whether model is
@@ -565,7 +565,7 @@ peer review.
      @list[(study-refs "politz-asgn-2")]
      @list{Programming Languages (upper undergrad/grad)}
 	   @list{Provide a test suite and implementation for a type
-			 checker}
+			 checker [*]}
 	   @list{Tests first, implementations later
 		 (submission deadlines not synchronized across students, but must occur
 		 in order per student)}
