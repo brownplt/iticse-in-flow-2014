@@ -1119,6 +1119,13 @@ pedagogical code review, a small group led by a moderator use a set of
 predefined coding practice guidelines to guide a group review of student
 programs.
 
+Reviews may also be augmented with information beyond the original submission.
+For example, if an automatic grade is available, the reviewer could be shown
+(some of) the output of that process in order to focus and guide their
+feedback.  This could target the review at particular known issues, but it
+could have the downside of reviewers only focusing on the issues that
+auto-grading revealed, masking situations in which the auto-grading missed
+something important.
 
 
 
@@ -1399,35 +1406,41 @@ quality of the review.  It may be possible to use this as a bonus system,
 rather than as a formal part of the grade, to reduce unfairness and variance
 but encourage good reviewing extrinsically.
 
+@subsubsection{Interaction with Curve Grading}
+
+The group noted that @IFPR (like other collaborative course structures)
+interacts poorly with grading strategies that evaluate students relative to
+one another.  This is because it conflicts with students' motivations to help
+one another improve their work.  The working group identified three distinct
+ways in which the conflict could manifest:
+
+@itemlist[
+
+@item{@bold{Demotivating}: There is disincentive to do good review, because it
+can push others past oneself in achievement, adversely affecting one's own
+grade.}
+
+@item{@bold{Destructive}: Instead of just being apathetic about review,
+students could even sabotage one another with bad feedback,
+hoping to reduce others' scores to actively improve their own.}
+
+@item{@bold{Unmotivating}: Since the curve puts a limit on how much one can
+achieve, there is a disincentive to @emph{respond} to feedback or reflect
+(e.g. especially for high-achieving students, there's little reason to take
+feedback seriously)
+}
+
+]
+
+No one in the group traditionally graded any courses they taugh in a relative
+style, so we didn't anticipate any of these particular problems in our
+courses.  However, we all noted that collaboration in general and IFPR in
+particular were dissonant with grading on a curve.
+
 To read:
 
 Klemmer and others on accuracy/rubrics: @~cite["kwl...:peer-self-assess-mooc"]
 
-@;{
-@item{There can be many motivations for students to take the time to perform
-quality reviews for one another.  While grading reviews provides an obvious
-achievement-based motivation, there are others that might be more powerful: if
-simple philanthropy drives students to help one another, there may be no need
-for another motivator.  This can interact with, for example, grading on a
-curve, because it can be:
-
-@itemlist[
-@item{Demotivation --- it's not good to help others, because it can push them past you}
-@item{Unmotivating --- no reason to respond to feedback/work on reflection, because you can only do so well on the curve}
-@item{Destruction --- students can sabotage one another with bad feedback}
-]
-}
-
-@item{
-Another grading interaction concerns automatic grading, an
-increasingly common practice in Computer Science courses.  
-When assignment steps can be graded automatically, how much feedback
-should go to students and/or reviewers alongside the peer-written
-reviews?  Giving auto-grade results could lead to reviewers putting in
-less effort (thus masking situations in which the auto-grading missed
-something important).
-}
-}
 
 @subsection[#:tag "s:anon"]{Anonymity}
 
