@@ -869,6 +869,13 @@ fine in both synchronous and asynchronous styles -- students may even arrange
 to complete their work at a time convenient for their reviewer in order to get
 the most prompt feedback.
 
+Papadopoulos et al. explored different strategies for assigning students in
+peer review in a computer science course on
+networking@~cite["Papadopoulos:2012:IPR:2215076.2215100"].  They find that
+students who select their peers freely perform better (according to experts
+rating the utility and clarity of reviews) than pairs where the students were
+assigned (randomly) by the instructors beforehand.
+
 All student-chosen strategies for review interact heavily with choices about
 anonymity of the review process, which we discuss in more detail in
 @secref["s:anon"].
@@ -876,6 +883,8 @@ anonymity of the review process, which we discuss in more detail in
 }
 
 ]
+
+
 
 In addition to these strategies, there are a few other factors for educators
 to consider in assigning reviews:
@@ -1725,10 +1734,58 @@ to important aspects of the review itself.
 
 @subsection[#:tag "s:nonmajors"]{Does it make sense for non-majors?}
 
-@md-section["sections/non-majors.md"]
+When instructing computer science majors, reviews of code can be
+motivated by their resemblance to code reviews and similar
+activities in the software profession, even though this may not be
+the actual driver behind their inclusion in a course. When using
+in-flow peer review with non-majors, such motivations might work
+less well due to a disconnect between the students and the IT
+profession. Regardless of the future profession, we view the
+reviewing skill as an important one and note that reviewing comes
+in naturally in a number of fields, from academic writing to
+zoology, but also in the students' everyday lives in reviews of
+movies and restaurants on websites, etc.
 
-Related work:
-@~cite["Papadopoulos:2012:IPR:2215076.2215100"]
+We frame in-flow peer reviewing as a technique for improving
+learning based on timely feedback throughout a process. This can
+be different from a means of quality assurance of a final
+artifact, or a technique for learning to produce and consume
+reviews, although these concepts arise naturally in a setting
+where in-flow peer review is used. Knowing how to
+produce and consume reviews is a useful skill in its own right,
+regardless of the profession or the context in which it is used.
+On this note, using reviews in classes with a diverse student
+population will have the additional benefit of producing more
+diverse reviews. In many cases, for example GUI mockups, this is
+highly desirable. Therefore, whether or not a student will face a
+review professionally is not necessary for @IFPR to be useful.
+
+Tests are useful for non-majors to review as they are often
+less tangled with complicated ``non-functional aspects'' of the problem such
+as memory management, performance, or code elegance. We also envision that
+non-majors reviewing code
+might reduce ``code fear'' by making code less magical and
+establishing that code can be wrong. This is also related to the
+``community of practice'' of programming in that students are seeking to
+join the broader community of programmers by taking a CS course in the first place.
+Giving non-majors a sense of what code---and programmers---are
+doing might teach respect for code and programming, while not
+necessarily trying to make students into professional programmers. Many
+programmers are managed by non-programmer experts in other fields who could
+benefit from an understanding of practices surrounding code. There are also cases where
+non-programmers must be able to read or relate to code to make
+sure that code follows complicated legal practices or financial
+algorithms.
+
+Finally, as an important aside, reviewing might help with
+retention especially by removing the stigma of computer science
+being an anti-social, ``in-human'' subject.
+Humanities people generally read more than they write -- as
+reviewing is more like reading, it might feel more comfortable for
+them than programming.  This could be a component of a CS course in the style
+of fine arts, which Barker et al. found to create a better community culture
+and encouraged retention of female students@~cite["barker-cs-fine-arts"].
+
 
 
 @subsection{Mitigating the Costs}
