@@ -46,7 +46,7 @@
         "rg:auto-assess-rev-lsa" auto-meta-review))
           
 (define-cite autobib-cite _ generate-bib #:style number-style)
-(define-bibtex-cite* "built-bib.bib" autobib-cite _ ~cite-id citet-id)
+(define-bibtex-cite* "inflow.bib" autobib-cite _ ~cite-id citet-id)
 
 (define (~cite . keys)
   (if (> (length keys) 1)
