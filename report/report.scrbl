@@ -1167,7 +1167,7 @@ auto-grading or by human TA) and reviews
 are quantitative, it should be possible to automate a
 meta-review that tells a student something about the quality of work they
 reviewed.  So, for instance, if a student indicates in a
-Likert scale that they "strongly agree" that a solution is correct, but the
+Likert scale that they ``strongly agree'' that a solution is correct, but the
 grade for the assignment they reviewed is low, the automated meta-review can indicate that
 this review likely mis-evaluated the work under review.
 
@@ -1271,6 +1271,32 @@ but does drive content as specifically as rubrics. Regardless of
 how reviewing is introduced and scaffolded, it is important to
 allot time to deal with misconceptions on how to create a review
 as part of the course design. 
+
+@;{
+
+In an extension of this practice instructors could ask students to
+grade a set of reviews of an assignment, or to write
+meta-reviews. This would form part of training students to identify
+good vs bad reviews.  It would also help students align themselves
+with quality work in the reviewing process. The comparative analysis
+of reviews would also seem valuable here.
+
+One member of the working group mentioned his experience  of asking students
+about the value of talking about design,
+which the students deemed valuable. From this and other experiences
+with their students, the working group members believe that students
+value the learning benefits of the meta-cognitive and reflective
+activity, which is involved in peer review.  In this process it is
+important to consider reviewing's two roles from a student perspective
+- demonstrating the student's own understanding as well as providing
+feedback to help another student. One of the weaknesses of reviewing a
+fine piece of work is that it is not clear to students how and what to
+critique.  To mitigate "Looks Good to Me" reviews on good work, it is recommend
+that emphasis be placed on the former. To support such more
+constructive reviews a rubric could be adopted that talks positively
+about strengths and explanations as well as problems.
+
+}
 
 @section[#:tag "s:issues"]{Parameters and Issues}
 
@@ -1432,14 +1458,32 @@ feedback seriously)
 
 ]
 
-No one in the group traditionally graded any courses they taugh in a relative
+No one in the group traditionally graded any courses they taught in a relative
 style, so we didn't anticipate any of these particular problems in our
 courses.  However, we all noted that collaboration in general and IFPR in
 particular were dissonant with grading on a curve.
 
-To read:
+@subsubsection{Peer Assessment and @IFPR}
 
-Klemmer and others on accuracy/rubrics: @~cite["kwl...:peer-self-assess-mooc"]
+We noted earlier the distinction Liu and Carless highlight betweenbetween
+@emph{peer feedback} and @emph{peer assessment}@~cite["liu-peer-feedback"],
+where the latter's goal is grading.  One motivation for using peer review is
+to scale or augment grading by having students grade one another.  It has been
+shown by Kulkarni et al. that, with careful rubric and mechanism design, peer
+grading can produce similar results as TA grading in MOOCs
+@~cite["kwl...:peer-self-assess-mooc"].
+
+Our discussion in designing @IFPR assignments have not assumed that reviews
+would be used for grading, but that doesn't mean that they couldn't.  We note
+mainly that it changes the motivation structure of @|IFPR|.  For example, a
+student who is afraid of affecting their peers' grades with negative feedback
+may be more hesitant to give that feedback.  There are obvious issues with
+curve grading and peer assessment.  Finally, in contexts where students are
+still learning to review and give feedback, inaccurate reviews are expected
+and an important part of the learning process, but probably should not be used
+for grading purposes.  Using peer review for grading should be adopted with
+care, and practicioners should carefully consider its effects on the other
+design decisions discussed in this report.
 
 
 @subsection[#:tag "s:anon"]{Anonymity}
@@ -1582,8 +1626,6 @@ the educator’s goal).  It was concluded that the preferable approach was to
 make anonymity or identifiability a matter of policy, and educate students
 about the importance of professionalism in either case.
 
-
-
 Overall the group doesn't recommend that @IFPR practitioners adopt anonymity
 by default, but rather that they take course and culture into account.
 Overly stressing anonymity could unwittingly give the impression in students
@@ -1597,10 +1639,91 @@ respect for one another.
 
 @subsection[#:tag "s:experts"]{The Role of Experts}
 
-Comparing students to experts in writing reviews: @url{http://www.sciencedirect.com/science/article/pii/S0959475209000747}
-[Currently DOES NOT LOAD, so not moved into bib file]
 
-@md-section["sections/expert-roles.md"]
+Peer review can sometimes usefully be complemented with expert review.
+However there are several arguments for and against combining the two.
+Potential benefits of expert review include: moderating conflicts between
+reviewers and reviewees; facilitating contribution and collaboration;
+overcoming cultural adjustment problems; and providing exemplars of good work
+and good reviewing.
+
+@itemlist[
+@item{@bold{Experts as Moderators and Facilitators}
+Experts can act as moderators to make sure that issues and
+conflicts that arise, whether in a live situation or asynchronously, can be dealt with by an
+authority figure.  As moderators, experts do not take
+on the role of reviewers, which keeps
+students in charge of the feedback itself.  So
+moderation is a form of process rather than content expertise (akin to
+pedagogical code reviews@~cite["hundhausen-pcr-toce13"], which are led by an
+expert moderator).
+Another form of process expertise arises when experts are present not
+for moderation but as facilitators.  Students who are not
+sure of themselves may not contribute much; experts can assist in getting
+students to contribute, and push the idea of review as a
+learning process, in addition to acting as figures of objective authority on
+grading.
+
+Expert reviewers can help address the cultural adjustment issues where
+students devalue the opinions of their peers and overvalue the
+opinions of instructors.  They can also offset deficiencies in the
+knowledge and insight of students who are themselves adjusting to the
+process of giving informed critiques, and ensure that some
+knowledgeable, high quality feedback is received.
+}
+
+@item{@bold{Perception and Quality of Expert Review}
+
+Another issue with expert review (especially instructor or TA provided) is
+that it my have unwarranted special status in students' minds -- feedback from
+experts may be interpreted as ``more relevant for my grade'', and hence more
+likely to be acted upon.  This last concern is called out explicitly by case
+study @study-refs["clear-asgn-1"], in which students produce a peer-reviewed
+research article, and in the past often discounted peer feedback in favor of
+instructor-provided comments.  Cho and MacArthur hide the provenance of
+expert- vs. peer-provided reviews in order to study whether expert review is
+in fact more effective at improving students'
+grades@~cite["cho-peer-expert-reviewing10"], 
+
+Cho and MacArthur compare three approaches to giving feedback on
+written assignments in a psychology course: feedback from a single
+peer, feedback from a single topic expert, and feedback from multiple
+peers@~cite["cho-peer-expert-reviewing10"]. The results indicate that
+feedback from multiple peers results in better quality revisions than
+feedback from an expert, with feedback from a single peer being the
+worst.  The hypothesised reason for this was that peers gave feedback
+that was phrased in terms that students could more easily comprehend.
+It certainly would be interesting to see whether the same results
+applied to programming assignments.
+}
+
+@item{@bold{Expert-provided Exemplars and Models}
+
+In IFPR the goal is to avoid attaching the idea of constructive review
+to an expert being present. However, an expert can provide models for
+review that students can follow. So one strategy would have experts
+give examples, or be present for some (early) sessions and not
+others. These exemplars and supports represent a form of scaffolding
+reviewing.
+
+In discussion among the working group members, the idea of an
+"Editor's picks" option was discussed, where good examples were
+highlighted.  TAs might monitor reviews and post a handful of really
+good ones for the entire class.  This was considered to be a potential
+problem in terms of punishment/reward, because it externally rewards
+good examples, and reinforces an extrinsic motivational model [CITE].
+However, things that might not be selected for profiling would not
+necessarily be bad, but just not picked.  Yet students do want
+examples of how it should be done.  Meta reviews may offer a solution
+to the problem of "giving rewards" through an approach such as 'editor
+picks', or choosing solutions to display. In providing meta-reviews it
+will be important to explain to students specifically why something is
+considered good/bad.  The positive aspect in this approach is that
+showing exemplars shifts the emphasis from quality of person
+(reviewer)/authority of person to authority of the work.
+}
+]
+
 
 
 @subsection[#:tag "s:nonmajors"]{Does it make sense for non-majors?}
