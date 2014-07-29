@@ -1706,23 +1706,20 @@ give examples, or be present for some (early) sessions and not
 others. These exemplars and supports represent a form of scaffolding
 reviewing.
 
-In discussion among the working group members, the idea of an
-"Editor's picks" option was discussed, where good examples were
-highlighted.  TAs might monitor reviews and post a handful of really
-good ones for the entire class.  This was considered to be a potential
-problem in terms of punishment/reward, because it externally rewards
-good examples, and reinforces an extrinsic motivational model [CITE].
-However, things that might not be selected for profiling would not
-necessarily be bad, but just not picked.  Yet students do want
-examples of how it should be done.  Meta reviews may offer a solution
-to the problem of "giving rewards" through an approach such as 'editor
-picks', or choosing solutions to display. In providing meta-reviews it
-will be important to explain to students specifically why something is
-considered good/bad.  The positive aspect in this approach is that
-showing exemplars shifts the emphasis from quality of person
-(reviewer)/authority of person to authority of the work.
-}
-]
+The working group members discussed an ``Editor's picks'' option, where
+instructors and TAs highlight good examples of reviews for others to learn
+from.  TAs might monitor reviews and post a handful of high-quality ones for
+the entire class.  As a tweak to avoid simply externally rewarding good
+examples (which comes with the downsides of extrinsic motivation
+@~cite["punished-by-rewards"]), the reviews picked don't necessarily all need
+to be objectively good.  Instead, the editor's picks could highlight
+interesting reviews, and what is interesting (or could be better!) about them.
+Students then learn specifically why something is considered good or bad in a
+review, and can apply that knowledge to their own reviewing.  The process of
+breaking down the review shifts the emphasis from quality of reviewer
+to important aspects of the review itself.
+
+} ]
 
 
 
