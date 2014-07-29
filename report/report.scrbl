@@ -1762,7 +1762,11 @@ review professionally is not necessary for @IFPR to be useful.
 
 Tests are useful for non-majors to review as they are often
 less tangled with complicated ``non-functional aspects'' of the problem such
-as memory management, performance, or code elegance. We also envision that
+as memory management, performance, or code elegance.
+Case study
+@study-refs["krishnamurthi-asgn-1"] features an
+assignment from a course designed explicitly for non-majors, with review of
+tests. We also envision that
 non-majors reviewing code
 might reduce ``code fear'' by making code less magical and
 establishing that code can be wrong. This is also related to the
@@ -1788,26 +1792,87 @@ and encouraged retention of female students@~cite["barker-cs-fine-arts"].
 
 
 
-@subsection{Mitigating the Costs}
+@subsection{Costs and Mitigations}
 
-@md-section["sections/mitigating-costs.md"]
+IFPR can impose extra costs on both the teaching staff and the students taking
+part in the process, and the pracititioner must appraise whether the
+implementation costs, such as extra scheduling and expert support, are
+commensurate to the learning benefits and whether such costs can be mitigated
+by larger one time investments, such as software systems.
+
+To evaluate these costs, the practitioner needs to make an informed decision on
+the goal of adopting IFPR. If the goal is merely to save teacher resources by
+offloading some of the work to the students, it is much more critical to focus
+on allaying ongoing implementation costs than when IFPR is intended drive a
+change in the pedagogy of the course. In the latter case, the practitioner may
+be willing to accept much higher costs than otherwise. For example, to ensure
+that students benefit from the reviews, the practitioner must allocate extra
+time during which students may revise their work, which may require reducing
+the number of assignments in the course, or altering existing assignments.
+Also, the additional learning
+goals associated with IFPR, such as fostering reflection and review skills, are
+not free in sense of student or teacher workload. 
+
+@subsubsection{Moderators of teacher workload}
+
+The working group found two primary moderators for teacher workload. The
+primary mitigator is to use a software system such as
+CaptainTeach@~cite["politz-ct-iticse14"] to
+handle the routine tasks like the reviewer assignments and to implement the
+necessary means of monitoring the IFPR process. 
+
+Depending on available resources, such software systems can be designed to
+perform advanced tasks, such as giving basic feedback on review quality by
+comparing reviews between students@~cite["cho-sword"] or
+through use of machine learning methods@~cite["rg:auto-assess-rev-lsa"], to
+aggregate student responses for discussion@~cite["hauswirth-informa"] or to
+maximize variety of review tasks by using static analysis tools to appraise
+source code similarity.
+
+The different roles of teaching assistants can either increase or allay the
+IFPR costs: if the teaching assistants are required to moderate the review
+process, the costs can increase significantly in large classes.  However, peer
+review can help to reduce workload of the teaching assistants by providing
+another means---peer review---for students to ask questions and get feedback.
+In this sense, if @IFPR is used without adding any new summative assessment
+steps, it can take work off of the teaching staff.
+
+@subsubsection{Moderators of student workload}
+
+There are also two primary moderators for student workloads. Firstly,
+the review assignment itself can increase the cognitive load of the
+students when it is done in an in-flow setting by
+forcing students to switch between very different tasks, such as
+to and fro from programming to reviewing.
+
+The second primary moderator for student workloads is available the tool
+support, which can have significant effect on student productivity. A review
+system integrated with the IDE can be significantly cheaper to use than a
+review system that requires manual operation.
+
+Further, it can be possible to moderate student workloads by careful exercise
+design, such as attempting to make complex problems easier by allowing students
+to share of parts of the their solutions during the review process (cf. zone of
+proximal development).
+
 
 @subsection{Bringing Students Along}
 
 One challenge of peer review in general lies in getting students to
-value the contributions of their peers.  Peer evaluations contradict
+value the contributions of their peers.  Peer evaluations potentially contradict
 the model students are used to of the instructor as the trusted,
 knowledgeable authority.  In addition, many students aren't initially
-comfortable acting as reviewers, so a desire for harmony may hinder
+comfortable acting as reviewers (and giving criticism to one another!), so a desire for harmony may hinder
 their ability to produce effective reviews at first.  These two
 dimensions--taking the reviews seriously and taking act of reviewing
 seriously--differ in force and mitigations.
 
-When students are in the role of reviewers, instructors may need to
-consider how to balance anonymity in reviewing with the need to engage
-students in the professional practice of reviewing.  When dealing with
-students from non-western cultures, explicit reminders that review is
-part of working in western culture.
+When students are in the role of reviewers, instructors may need to consider
+how to balance anonymity in reviewing with the need to engage students in the
+professional practice of reviewing (@secref["s:anon"]).  When addressing
+students coming from cultures that don't emphasize review and criticism,
+explicit reminders that review is part of the working programmer's life in
+western culture can be helpful.
 
 When students are in the role of receiving reviews, instructors should
 require students to demonstrate engagement with the reviews.  Asking
@@ -1822,22 +1887,24 @@ from looking at others' solutions?'' Perhaps this is something you do
 on a couple of assignments, to satisfy the goal of helping them learn
 to self-reflect.
  
-Specific suggestions for students included:
+Specific suggestions for students include:
 
 @itemlist[
-@item{When you get a criticism, go back to other reviews -- are you
-getting the same mistake over and over?  }
+@item{When you receive criticism, go back to other reviews -- are you
+making the same mistake over and over?}
 
 @item{Have a cooling-off period if you get negative reviews -- you may
-view them more positively with a little passage of time}
+view them more positively with a little passage of time.}
 
-@item{Do you see a contradiction in your reviews.  }
+@item{Do you see a contradiction in your reviews?  Maybe one of the reviewers
+is wrong, or maybe your work isn't clear enough. }
 
 @item{How will you avoid making these mistakes again in the future?
-look at the review, break out the actionable items, prioritize}
+Look at the review, break out the actionable items, prioritize. }
 
-@item{Remind them that the goal of this is to improve the work --- be
-hard on the issue, soft on the people}
+@item{Are you taking the review personall?  Remember that the review is about
+the work (and improving it!) not about you -- the ability to recognize your
+weaknesses and improve them is incredibly valuable. }
 
 ]
 
@@ -1845,9 +1912,46 @@ If students remain skeptical of the value of peer-review, a mid-course
 survey on the value of reviewing might help convey the experiences of
 others.  This also sets a culture of peer-review as a collective effort.
 
-@section{Evaluation and Analytics for IFPR}
+@subsection{Evaluation and Analytics for @IFPR}
 
-@md-section["sections/evaluation-analytics.md"]
+The large number of reviews produced in @IFPR, especially in large classes,
+can make it challenging for an instructor to monitor students' progress and to
+support their learning.  Instructors benefit from knowing whether there are
+students who consistently write weak or strong reviews, superficial or sloppy
+reviews, or misleading or overly generous reviews.  They also benefit from
+realizing misconceptions that reoccur across many reviewers, which may be
+rectified with further explanations in class.
+
+To achieve these goals, 
+instructors can benefit from organizing submissions or reviews in various ways. 
+One such way is to allow instructors to associate arbitrary tags with each submission or review, 
+such as ``sloppy'' or ``discuss in class'', ``ignore'', ``insufficient test
+coverage'', or ``misunderstood requirement B''. 
+Instructors can then search or group submissions and reviews by tags, 
+or use tags as categories when producing analytical visualizations. 
+Tags can be visible only to instructors, or instructors can make tags visible to authors or reviewers. 
+Another way to organize submissions or reviews is to cluster them automatically by various criteria, 
+similar to Expertiza's automatic meta-reviewing
+categories@~cite["rg:auto-assess-rev-lsa"]. 
+Example criteria include the length of the reviews or their tone
+(``positive'', ``neutral'', or ``negative''), 
+which may be detectable automatically using natural language processing techniques. 
+Based on this automatic and manual organization, 
+instructors can identify recurring misconceptions, 
+or they can select representative exemplars of reviews to be presented in class. 
+Finally, the information in reviews (e.g., feedback in each rubric, or scores on Likert scales) 
+can be used to organize submissions, 
+and information in meta-reviews can be used to organize reviews.
+
+Instructors as well as students can benefit from analytic visualizations or dashboards. 
+Visualizations presenting activity over time can help to understand the timeliness of reviews 
+or a student's progress over time in terms of the quality of their submissions or their reviews. 
+Visualizations of reviewer-author relationships, 
+which can include various historic aspects, 
+such as the quality of their past submissions or the usefulness of their past reviews, 
+can help with reviewer assignment.  
+Visualizations superimposing reviews on top of submissions or meta-reviews on top of reviews 
+can provide a compact picture of a certain artifact to authors, reviewers, or instructors.
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -1955,29 +2059,6 @@ number of lines of code under review and the length of the review session,
 their study recommends ``the single best piece of advice we can give is 
 to review between 100 and 300 lines of code at a time and spend 30-60 minutes
 to review it.''
-
-@;{five different
-types of industrial code review:
-
-@itemize{
-  
-  @item{@emph{Formal reviews}, which }
-
-  @item{@emph{Over-the-shoulder reviews}, which are informal, ad hoc reviews
-  conducted in-person over the author's workstation.}
-
-  @item{@emph{E-mail pass-around reviews}, in which the files are gathered up
-  and sent around to colleagues for informal review.}
-
-  @item{@emph{Tool-assisted reviews}, which provides automated assistance in
-  gathering artifacts for review, and centralizes the review process itself
-  in order to keep track of who is reviewing what, which files have been
-  reviewed and which are outstanding in the review process, and more.}
-
-  @item{@emph{Pair programming}, which we distinguish from in-flow peer
-  review [REF], but which does provide a kind of immediate, constant review.}
-
-}}
 
 
 @section{Additional Related Work}
@@ -2274,10 +2355,28 @@ improve their projects in response to their peers' feedback.
 
 @section{Conclusion}
 
-[FILL]
+In-flow peer review is a rich design space for courses and assignments.  It
+motivates peer feedback that is more actionable than in reviews that happen
+after assignments are due.  It leverages the fact that many problems, both
+programming and otherwise, can be broken up into several steps that occur at
+key moments for triggering reflection, and uses those moments for reflection
+as vehicles for peer feedback.  It encourages reflective and critical thinking
+in both reviewers and reviewees, and prepares students for professional
+activities in judging others' work and incorporating feedback into their own.
 
-[DISCUSS that there is potential to go overboard with all of the
-suggestions here -- about picking right point in space.]
+@IFPR has a lot in common with existing peer review approaches, and in
+collaborative and participatory pedagogic styles in general.  All of those
+benefits, from enhancing a sense of community to improving communication
+skills, are also goals of @IFPR by design.  The main new idea is to cause
+students to engage in the collaborative process more by making it a more
+integrated part of the assignment process.
+
+This report outlines a large space for designing in-flow peer review
+assignments.  We encourage practitioners to consider many of these factors,
+but not to be intimidated by them, or be concerned that there are too many
+challenges to tackle in adopting @IFPR.  The main idea is just to pick good
+moments for reflection in the middle of assignments, and use those moments to
+get the most out of peer feedback (which we already know has many benefits).
 
 @(generate-bib)
 
