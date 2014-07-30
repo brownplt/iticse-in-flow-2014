@@ -1277,7 +1277,7 @@ these exemplar reviews can come from an assignment that is different from the cu
 
 A live demonstration of how
 to do a code review is a form of scaffolding on the process-level,
-but does drive content as specifically as rubrics. Regardless of
+but does not drive content as specifically as rubrics. Regardless of
 how reviewing is introduced and scaffolded, it is important to
 allot time to deal with misconceptions on how to create a review
 as part of the course design. 
@@ -1310,16 +1310,15 @@ about strengths and explanations as well as problems.
 
 @section[#:tag "s:issues"]{Parameters and Issues}
 
-This section discusses issues in instantiating @IFPR in different course
-contexts relative to the process discussed in @secref["s:process"].
+Several issues and parameters cross-cut the stages of the @IFPR
+process discussed in @secref["s:process"].  Questions about preventing
+plagiarism, integrating @IFPR with course-level grading, deciding
+where to use anonymity, involving experts, making @IFPR relevant for
+non-majors, engaging students in the process, and identifying software
+needs all guide one's particular configuration of IFPR.  We discuss
+each of these issues in turn.
 
-@subsection{Grading IFPR Assignments}
-
-Educators have a new set of questions to answer about evaluating work done in
-the IFPR style, and giving summative feedback along with the peer review
-feedback.
-
-@subsubsection[#:tag "s:plagiarism"]{IFPR and Plagiarism}
+@subsection[#:tag "s:plagiarism"]{IFPR and Plagiarism}
 
 IFPR, like many course and assignment structures, requires careful mechanism
 design to ensure that students aren't incentivized towards detrimental
@@ -1338,12 +1337,11 @@ he sees during the reviewing phase, and submit the copied solution as his own
 final solution.  In less extreme cases, a student may copy all or part of
 another solution into her own after submitting an initial first try that
 she becomes convinced is incorrect.  There are a number of course- and 
-grading-design decisions that can affect the degree to which copying is a problem.
+grading-design decisions that can affect the degree to which copying is a problem:
 
 @itemlist[
 
 @item{@bold{Variation in Assignments}:
-
 One major factor in whether copying is even a problem is how similar
 students' submissions are expected to be.  In many programming courses,
 students implement to the exact same algorithmic specification; other than
@@ -1378,7 +1376,6 @@ reviewer with solutions to the same or different problems may be effective.
 }
 
 @item{@bold{Weighted Submission Grading}:
-
 There is often value in having students copy parts of other
 submissions that they see in order to improve their own work.  It happens all
 the time in professional software development, and the act of recognizing a
@@ -1400,8 +1397,7 @@ some classroom settings, and ultimately comes down to a choice about student
 maturity, class culture, and other course-specific factors.
 }
 
-@item{@bold{Alternative or Supplemental Grading}
-
+@item{@bold{Alternative or Supplemental Grading}:
 Another solution to the grading problem is to supplement assignment grading
 with other techniques that cannot be copied.  For example, in an in-person
 code review of a student's solution, an instructor can quickly ascertain
@@ -1412,34 +1408,59 @@ to understand a proposed change to her submitted code.
 }
 ]
 
+@subsection{Interaction with Course-Level Grading}
 
-@subsubsection{Grading Reviews}
+Instructors must determine the extent to which IFPR activites impact
+course grades, and the mechanisms through which they do so.  
+@Secref["s:intro"] noted Liu and Carless' distinction between
+@emph{peer feedback} and @emph{peer assessment}@~cite["liu-peer-feedback"],
+where the latter's goal is grading.  Most of the working group
+discussion focused on peer-feedback (which fit the course contexts of
+the participants), though we gave some attention to peer-assessment
+(more often proposed to address grading at scale in large courses).  
 
-Besides providing informative meta-reviews, 
-some educators might also wish to grade reviews. 
-Such grades for reviews might simply be based on whether or not a review was submitted, 
-or whether a review was submitted in a timely manner, 
-or they may be based on any of the criteria mentioned above. 
+@subsubsection{Peer Assessment and @IFPR}
+
+Kulkarni et al. have shown that, with careful rubric and mechanism
+design, peer
+assessment can produce similar results to TA grading in MOOCs@~cite["kwl...:peer-self-assess-mooc"].
+Peer assessment changes the motivation structure of @|IFPR|.  For example, a
+student who is afraid of affecting their peers' grades with negative feedback
+may be more hesitant to give that feedback.  In contexts where students are
+still learning to review and give feedback, inaccurate reviews are expected
+and an important part of the learning process: in this case, reviews probably should not be used
+for grading purposes.  Using peer review for grading should be adopted with
+care, and practicioners should carefully consider its effects on the other
+design decisions discussed in this report.
+
+@subsubsection{Should Reviews Be Graded?}
+
+Although @secref["s:meta-reviewing"] discussed various forms of
+feedback on reviews, it did not discuss whether reviews should be
+assigned scores that affect students' course grades.  Grading schemes
+can range from checkbox-style points for submitting reviews (without
+grading content), to more detailed assessments.   
 Of our case studies, six (@study-refs["clarke-asgn-2" "clear-asgn-1"
 "fisler-asgn-2" "politz-asgn-1" "wrigstad-asgn-1" "wrigstad-asgn-2"])
 explicitly tie reviews to the course or assignment grade in some form.
-Similarly, meta-reviews could be graded, though no case study did so.
+No case study discussed grading meta-reviews.
 
-At the extreme end of grading reviews, one option could make most of a
-student's grade be determined by the reviews that they wrote, rather than the
-code they submitted.  The idea here is that the student's reviews reflect
-their understanding of the assignment. As a result TAs would spend their time
-on meta-reviews rather than grading code, focusing expert attention where it
-may be most valuable.
+In general, the group members were reluctant to ascribe grades to
+reviews (as opposed to giving meta-reviews, which the group strongly
+endorsed).  The group shared concerns that having reviews influence
+course grades (beyond required participation) would misdirect student
+motivation for reviewing@~cite["punished-by-rewards"].
 
-Another way to tie students' grades to the reviewing they did is to make
-students' grades depend on the performance of the students they review: the
-reviewer gets points for the final score or improvement in score of the
-reviewee's submission.  This motivates reviewers, but the rewards may be
-infrequent and depend more on the work ethic of the reviewee than the actual
-quality of the review.  It may be possible to use this as a bonus system,
-rather than as a formal part of the grade, to reduce unfairness and variance
-but encourage good reviewing extrinsically.
+Nonetheless, the group did discuss options for having reviews figure
+into grades.  We discussed basing assignment grades on reviews rather
+than on the work submitted (on the grounds that reviews reflect
+students' understanding of the assignment): this would allocate staff
+grading time to meta-reviews rather than to code, which could be more
+valuable (as some, though not all, aspects of code can be assessed
+automatically).  We also discussed basing students' grades on the
+improvements that their reviews inspired in the work of others, but
+felt the nuances (submissions with little room for improvement,
+students who chose not to act on reviews) made this infeasible.
 
 @subsubsection{Interaction with Curve Grading}
 
@@ -1471,25 +1492,6 @@ No one in the group used relative grading in their own courses,
 so we lacked first-hand experience in mitigating these problems in
 that context.
 
-@subsubsection{Peer Assessment and @IFPR}
-
-@Secref["s:intro"] noted Liu and Carless' distinction between
-@emph{peer feedback} and @emph{peer assessment}@~cite["liu-peer-feedback"],
-where the latter's goal is grading.  One motivation for using peer review is
-to scale or augment grading by having students grade one another.  It has been
-shown by Kulkarni et al. that, with careful rubric and mechanism design, peer
-grading can produce similar results as TA grading in MOOCs@~cite["kwl...:peer-self-assess-mooc"].
-
-Our discussions of designing @IFPR assignments did not assume that reviews
-would be used for grading, but that doesn't mean that they couldn't.  We note
-mainly that it changes the motivation structure of @|IFPR|.  For example, a
-student who is afraid of affecting their peers' grades with negative feedback
-may be more hesitant to give that feedback.  In contexts where students are
-still learning to review and give feedback, inaccurate reviews are expected
-and an important part of the learning process, but probably should not be used
-for grading purposes.  Using peer review for grading should be adopted with
-care, and practicioners should carefully consider its effects on the other
-design decisions discussed in this report.
 
 
 @subsection[#:tag "s:anon"]{Anonymity}
