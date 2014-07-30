@@ -95,6 +95,13 @@ and justify their views on the appropriateness and correctness of
 presented solutions.  Giving authors the ability to respond to reviews
 further reinforces the quoted principles.
 
+Peer review has uses beyond merely evaluating programs.  Writing benefits from
+peer review, as do other artifacts that aren't just programs, like design
+diagrams, test suites, formal models, documentation, and presentations.  All
+of these artifacts are also fair game for peer review in computer science
+courses and more, and peer review addresses similar underlying learning goals
+of evaluation and explanation of existing work.
+
 This working group explored a particular variant of peer-review called
 @italic{in-flow peer review}@~cite["politz-ct-iticse14"].  In this
 model, peer review occurs while an assignment is in progress, before
@@ -109,18 +116,17 @@ is better to discover this while the assignment is in progress than
 after it is over.}
 
 @item{Students are motivated to read feedback they get since it can
-affect the performance of their current assignment. In contrast,
+affect their performance on the current assignment. In contrast,
 feedback given when the assignment is over may get less attention if
 students have moved on to other assignments.}
 
-@item{Letting students see the work others are doing seems to enable
-plagiarism. In fact, we view this as a feature. When a student sees
+@item{Students can apply what they learn from seeing examples
+of one anothers' work, and also learn to exercise judgment when evaluating
+existing solution.  When a student sees
 another's work, they do not know the quality of the work they see: it
 could be better than their own work, but it could also be
-worse. Therefore, structured appropriately, it forces on students the need to exercise
-@emph{judgment}.  Further, the review process could potentially flag
-naive forms of plagiarism, allowing it to be addressed and resolved
-prior to final submission.}
+worse.  This takes some potential problems with plagiarism and turns them into a
+part of the learning process.}
 
 @item{It further emphasizes the @emph{comparative} examination of work
 against a student's own.}
@@ -149,19 +155,20 @@ promises and pitfalls of in-flow peer-review in computer science
 classes.  The group members represented several countries and taught
 various courses at various levels (though the majority taught courses
 related to programming, programming languages, or various aspects of
-software development).  Prior to the group's in-person meeting, each
+software development).  We arrived at several different learning objectives an
+instructor might have for using peer review in a course (@secref["s:goals"])
+that drove our discussion.  In addition, prior to the group's in-person meeting, each
 group member created two assignments for in-flow peer-review.  These
 case studies, which appear in the appendix
-(@secref["s:case-studies"]), formed the basis of many  
+(@secref["s:case-studies"]), also helped to form the basis of many  
 of our discussions.
 
 @section{An @IFPR Roadmap}
 
-IFPR is a mechanism open to many policies. These policies are a
+@IFPR is a mechanism open to many policies. These policies are a
 function of a course's goals, student maturity, cultural context, and
-more. Therefore, an instructor who chooses to use IFPR will have to
-make several decisions that determine exactly what form of IFPR they
-employ.
+more. Therefore, an instructor who chooses to use @IFPR will have to
+make several decisions about exactly what form they will employ.
 This section briefly outlines some of these decision points,
 with references to the rest of the document for more details.
 
@@ -183,7 +190,7 @@ iterations of code; and so on.  Some choices raise more concerns
 regarding plagiarism, while others only work under certain assumptions
 about software development methodologies. (@Secref["s:artifacts"])}
 
-@item{The distribution of reviewing. E.g.: Should reviewing be
+@item{The distribution of reviewing. Should reviewing be
 distributed in order of submission? Randomly? Between students of
 similar or opposite attainment levels?  Synchronizing review across
 students enables more policies on reviewer assignments, but incurs
@@ -193,7 +200,7 @@ overhead for students and staff through more course deadlines.
 @item{The manner in which reviews are conducted.  This includes the
 choice of review ``technology'': should reviewing by mediated by a computer
 application or should it be done face-to-face (perhaps as a small group
-meeting around a table).  This also includes the use of rubrics: On the one
+meeting around a table)?  This also includes the use of rubrics: On the one
 hand, rubrics for
 reviewing guide the reviewer and may result in more concrete, actionable
 outcomes. On the other hand, a rubric can result in less constructive
@@ -288,7 +295,7 @@ expected to produce reviews for each submission.}
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-@section{Educational Goals of @IFPR}
+@section[#:tag "s:goals"]{Educational Goals of @IFPR}
 
 Both peer review and the in-flow variant target a complex and
 interesting set of educational goals, some student focused and some
@@ -412,7 +419,7 @@ peer review.
            @list{@bold{Course and Level}} @list{@bold{Exercise}}
            @list{@bold{Submissions}} @list{@bold{Review Criteria}})
      (list
-     @list[(study-refs "krishnamurthi-asgn-1")]
+     @list[(next-study "krishnamurthi-asgn-1")]
      @list{Computing for Social Sciences and Humanities (undergrad nonmajors)}
 	   @list{Cluster data on voting records (US Senate) to identify senators with similar ideology}
 	   @list{Code and tests for instructor-defined subsets of overall functionality}
@@ -422,14 +429,14 @@ peer review.
 			 corresponding computation correctly }
 	   )
      (list
-     @list[(study-refs "clarke-asgn-1")]
+     @list[(next-study "clarke-asgn-1")]
      @list{CS1}
 	   @list{Write code and assertions for various components of a pinball game}
 	   @list{Work so far on subset of functions designated by instructor}
 	   @list{Rate readability and correctness; additional free-form comments}
 	   )
      (list
-     @list[(study-refs "politz-asgn-1")]
+     @list[(next-study "politz-asgn-1")]
      @list{Advanced CS1 with Data Structures}
 	   @list{Design a data structure for incremental and
 			functional updates on trees [*]}
@@ -439,14 +446,14 @@ peer review.
 		     data are missing, (c) tests offer good coverage and are correct }
 	   )
      (list
-     @list[(study-refs "hauswirth-asgn-1")]
+     @list[(next-study "hauswirth-asgn-1")]
      @list{Programming Fundamentals 2 (2nd semester undergrad)}
 	   @list{In-class clicker assignment to explain control-flow through if-statements [*]}
 	   @list{CFGs for code snippets (drawn through custom software package)}
 	   @list{Provide yes/no assessment of whether CFG is accurate}
 	   )
      (list
-     @list[(study-refs "wrigstad-asgn-1")]
+     @list[(next-study "wrigstad-asgn-1")]
      @list{Imperative and OO Programming Methodology (2nd year)}
 	   @list{Implement a program that satisfies a student-selected set of learning goals}
 	   @list{Description of learning goals covered by program, program code, and
@@ -454,7 +461,7 @@ peer review.
 	   @list{Instructor-provided template on choice of goals, whether program satisfied them, and presentation quality }
 	   )
      (list
-     @list[(study-refs "wrigstad-asgn-2")]
+     @list[(next-study "wrigstad-asgn-2")]
      @list{Imperative and OO Programming Methodology (2nd year)}
 	   @list{Implement simple Pong game in model-view-controller style}
 	   @list{Tests, two draft implementations, and a final implementation }
@@ -478,7 +485,7 @@ peer review.
      (list @list{@bold{#}} @list{@bold{Course and Level}} @list{@bold{Exercise}}
            @list{@bold{Submissions}} @list{@bold{Review Criteria}})
      (list 
-     @list[(study-refs "tirronen-asgn-2")]
+     @list[(next-study "tirronen-asgn-2")]
      @list{Introduction to Functional Programming (upper undergrad/MS)}
 	   @list{Implement Boggle (find all valid words in 4x4 grid)}
 	   @list{Decomposition of overall problem into tasks 
@@ -488,7 +495,7 @@ peer review.
 		       try own test suite on the code being reviewed }
 	   )
      (list 
-     @list[(study-refs "clarke-asgn-2")]
+     @list[(next-study "clarke-asgn-2")]
      @list{Advanced Sofware Design (upper undergrad/MS)}
 	   @list{Design and implement subset of a mobile app+server for a
 			game using iterative development }  
@@ -500,7 +507,7 @@ peer review.
 			   required to illustrate each point }
 	   )
      (list
-     @list[(study-refs "clear-asgn-1")]
+     @list[(next-study "clear-asgn-1")]
      @list{Collaborative Computing (MS)}
 	   @list{Collaboratively produce a research article [*]}
 	   @list{Drafts of article}
@@ -511,7 +518,7 @@ peer review.
 			    presentation, etc. }
 	   )
      (list 
-     @list[(study-refs "fisler-asgn-1")]
+     @list[(next-study "fisler-asgn-1")]
      @list{Software Security (upper undergrad/MS)}
 	   @list{Find ways to attack a web-based application
                  (black-box, then white-box)}
@@ -521,7 +528,7 @@ peer review.
                  appropriateness of attack strategy}
 	   )
      (list 
-     @list[(study-refs "fisler-asgn-2")]
+     @list[(next-study "fisler-asgn-2")]
      @list{Software Modeling and Verification (upper undergrad/MS)}
 	   @list{Use model checking to find flaws in a protocol}
 	   @list{Proposed model of the system environment and desired properties that should (not) hold under this model}
@@ -531,7 +538,7 @@ peer review.
 			of this model }
 	   )
      (list 
-     @list[(study-refs "hauswirth-asgn-2")]
+     @list[(next-study "hauswirth-asgn-2")]
      @list{Software Performance (MS)}
 	   @list{Develop an extension to the Jikes visual debugger}
 	   @list{Proposed extension, prototypes, final artifact}
@@ -543,7 +550,7 @@ peer review.
 			 documentation }
 	   )
      (list 
-     @list[(study-refs "krishnamurthi-asgn-2")]
+     @list[(next-study "krishnamurthi-asgn-2")]
      @list{Logic for System Modelling (upper undergrad/MS)}
 	   @list{Write a relational (Alloy) model of an elevator [*]}
 	   @list{Model of data components, description of desired properties of model, initial model of elevator operations}
@@ -552,7 +559,7 @@ peer review.
 		 suitably operational or too declarative} 
 	   )
      (list 
-     @list[(study-refs "politz-asgn-2")]
+     @list[(next-study "politz-asgn-2")]
      @list{Programming Languages (upper undergrad/grad)}
 	   @list{Provide a test suite and implementation for a type
 			 checker [*]}
@@ -564,7 +571,7 @@ peer review.
 		     test suite; no peer review on implementations }
 	   )
      (list
-     @list[(study-refs "tirronen-asgn-1")]
+     @list[(next-study "tirronen-asgn-1")]
      @list{Software Security (MS)}
 	   @list{Implement simple on-line web-app on a strict
 			   timetable, then create attack trees for it}
@@ -591,7 +598,8 @@ courses.
 
 The full case-study descriptions appear in @secref["s:case-studies"].
 The source files are also available at
-@(url "https://github.com/brownplt/iticse-in-flow-2014/tree/master/in-flow-assignments").
+@(smaller (url
+"https://github.com/brownplt/iticse-in-flow-2014/tree/master/in-flow-assignments")).
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -740,7 +748,7 @@ before the deadline.}
 can, and the process doesn't stop them from continuing with their work.  With
 intermediate deadlines, a student cannot do the work on their own schedule.}
 
-@item{If reviews are available and presented to students immediately
+@item{If reviews are available and presented to students 
 after they submit, the problem is more likely to be fresh in their
 mind.  In the synchronous setting, there can be a longer gap between
 submission and review.  It's not clear if one is particularly better than the
@@ -755,7 +763,7 @@ kind of work students have to do.}
 
 ]
 
-With synchronous reviewing, there is an extra question of if there should be
+With synchronous reviewing, there is an extra question of whether there should be
 separate time set aside for reviewing in between submissions (with a review
 submission deadline), or if reviews can be completely in parallel with the
 next submission step.  This can affect the timeliness of reviews, which can
@@ -787,8 +795,7 @@ is more or less appropriate in synchronous or asynchronous settings, as well.
   asynchronous model.
   }
 
-@item{@bold{Temporal Assignment}
-
+@item{@bold{Temporal Assignment}:
 Reviews can also be assigned in the order they were received.  It's not clear
 that this makes much sense for synchronous review, where temporal order is
 somewhat unrelated to motivations for assigning reviews.  However, in the
@@ -801,8 +808,7 @@ Using a mix of randomness and temporal ordering could alleviate this somewhat,
 at some minor cost to review turnaround time.
 }
 
-@item{@bold{By Metric}
-
+@item{@bold{By Metric}:
 There are a number of metrics that could be used to assign reviews with the
 goal of getting more effective feedback for students.  We identified at least:
 
@@ -836,8 +842,7 @@ submission performance), but it would result in some students waiting for
 their assigned-by-metric reviewee to submit.
 }
 
-@item{@bold{Student-chosen}
-
+@item{@bold{Student-chosen}:
 Students could also be involved in choosing which submissions, or other
 students, they review.  For example, a simple model could have all submissions
 go into a publicly-visible pool of submissions, from which students choose
@@ -947,6 +952,7 @@ much scaffolding, especially once students need to practice evaluating
 work from scratch. The tradeoffs around designing rubrics must balance
 these tensions.
 
+
 Rubric design must consider the rubrics' utility for
 the reviewer, the author, and the instructor seeking to
 understand how students are performing.  These goals are not
@@ -1021,7 +1027,7 @@ The working group identified several potential roles for rubrics:
     }
 ]
 
-@bold{Evolution of and Variation Within Rubrics}
+
 Evolving rubrics across a course or curriculum may offer a good
 balance between initial scaffolding (for reviewers and authors) and
 eventual opportunities for both groups to demonstrate critical
@@ -1047,7 +1053,7 @@ the review is used to assess the reviewer's understanding of a work,
 or when too much information in a review might distract the author
 from the critical information in a review.
 
-@bold{Pros and Cons of Rubrics} 
+
 Reviews contain information that can be used to learn about students'
 understanding and evaluate student work.
 Detailed and fixed rubrics can facilitate data mining and comparison between
@@ -1115,7 +1121,7 @@ face-to-face meeting less intimidating.  Moderated review moves the process
 more towards a studio-like setting, and may be appropriate especially for
 teaching students what is involved in a constructive code review process.
 Hundhausen, Agrawal, and Agarwal discuss this kind of in-person review, dubbed
-*pedagogical code review*, in early courses@~cite["hundhausen-pcr-toce13"].  In
+@emph{pedagogical code review}, in early courses@~cite["hundhausen-pcr-toce13"].  In
 pedagogical code review, a small group led by a moderator use a set of
 predefined coding practice guidelines to guide a group review of student
 programs.
@@ -1127,8 +1133,6 @@ feedback.  This could target the review at particular known issues, but it
 could have the downside of reviewers only focusing on the issues that
 auto-grading revealed, masking situations in which the auto-grading missed
 something important.
-
-
 
 
 @subsection[#:tag "s:meta-reviewing"]{Review Feedback and Meta-Reviewing}
@@ -1151,7 +1155,7 @@ actionable to let students benefit from them to improve their own
 work.  This section describes both general design decisions around meta-reviews
 and those particular to IFPR.
 
-@subsubsection["Types of Meta-Reviewing"]
+@subsubsection[#:tag "s:meta-reviewing-types"]{Types of Meta-Reviewing}
 
 There are several ways to structure the information in meta-reviews, and
 provide useful feedback to reviewers.
@@ -2168,7 +2172,7 @@ opportunity to assess the work of other students in a few ways: They can
 simply rate the contents, or they can make specific suggestions, like telling
 a student that they should pay attention to a particular advisor.  Finally,
 the course is complemented with role-playing activites where students take on
-the role of advisors, and give specific feedback − the advisors have specific
+the role of advisors, and give specific feedback -- the advisors have specific
 flavors of feedback; an example in the paper is that a student acting as the
 ```Skeptic' might [be asked to] say `I disagree' or `Prove it''' to another
 student's submission.
@@ -2319,13 +2323,13 @@ where learning is a social and community process, rather than
 individualised, and the result was a greater retention of female
 students than the tranditional engineering teaching approach.
 
-The technique most relevant for in-flow peer review, though not
-completely the same, is the approach to knowledge sharing during lab
-work. Students actively sort help from any student, for example, by
-yelling questions out, resulting in a fluid exchange of ideas and
-techniques. Even though the projects considered in these labs were run
-in an open, collaborative setting, cheating was avoiding by using
-individualised assignments.
+The technique from Barker et al. most relevant for in-flow peer review, though
+not completely the same, is the approach to knowledge sharing during lab work.
+Students actively sort help from any student, for example, by yelling
+questions out, resulting in a fluid exchange of ideas and techniques. Even
+though the projects considered in these labs were run in an open,
+collaborative setting, cheating was avoiding by using individualised
+assignments.
 
 To read:
 
@@ -2349,21 +2353,27 @@ Sondergaard's course review one another's work between stages
 only in the form of surveys after the assignment, but shows generally positive
 attitudes from students indicating that they felt the review had helped.
 
-Expertiza@~cite["gehringer-expertiza-approach"] is discussed in @ref{relwork
-for review-of-review}, and is used for large, multi-stage collaborative
+Expertiza@~cite["gehringer-expertiza-approach"] is discussed in
+@secref["s:meta-reviewing-types"], and is used for large, multi-stage collaborative
 projects in which students build and review smaller components that build up
 the whole.  This includes assessment and review of the reviews themselves as
 an explicit motivator for performing the review.  It is notable that in
 Expertiza, students often review other students' components of a larger whole,
-which can be a task that the reviewer didn't complete him or herself.  In many
-of our case studies of in-flow review, students review an instance of the
-@emph{same} work that they just did themselves @fill{check that this is
-accurate after going through the case studies}.
+which can be a task that the reviewer didn't complete him or herself.  In
+several
+of our case studies (@study-refs["krishnamurthi-asgn-1"
+"politz-asgn-1"
+"hauswirth-asgn-1"
+"krishnamurthi-asgn-2"
+"politz-asgn-2"
+]), students review an instance of the
+@emph{same} work that they just did themselves.
 
 [INSERT CaptainTeach]
 
 Informa's ``Solve and Evaluate'' approach integrates a simple form of peer
-review into a software-based class room response system. During a lecture the
+review into a software-based class room response
+system@~cite["hauswirth-informa"]. During a lecture the
 instructor poses a problem, and each student solves it by creating a solution
 in Informa. Informa is not limited to multiple-choice problems, but it allows
 a variety of problem types, including free text (e.g., code snippets), or
@@ -2393,9 +2403,10 @@ pieces, instead performing review on entire intermediate artifacts.  For
 example, Clark has students exercise the functionality of one anothers'
 projects, and lets groups improve their work based on the feedback their
 classmates give them@~cite["clark-peer-testing-se-04"].  Similarly, Wang, et
-al., Zeller, and the Aropa system study assignment structures that allow
+al., Zeller, Papadopoulos et al., and the Aropa system use assignment structures that allow
 students to update revisions of entire submissions that were reviewed by peers
-@~cite["wang-pcr" "zeller-read-review-00" "hamer-aropa"].  Other studies have
+@~cite["wang-pcr" "zeller-read-review-00" "hamer-aropa"
+"Papadopoulos:2012:IPR:2215076.2215100"].  Other studies have
 students write test cases (or manually test) one another's work as part of a
 review@~cite["reily-aggregate-reviews09" "smith-peer-testing-icer12"].  These
 tests are most often on entire systems, rather than on pieces of a project
@@ -2431,4 +2442,4 @@ get the most out of peer feedback (which we already know has many benefits).
 
 @(generate-bib)
 
-@include-section["case-studies.scrbl"]
+@;@include-section["case-studies.scrbl"]
