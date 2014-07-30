@@ -159,9 +159,9 @@ software development).  We arrived at several different learning objectives an
 instructor might have for using peer review in a course (@secref["s:goals"])
 that drove our discussion.  In addition, prior to the group's in-person meeting, each
 group member created two assignments for in-flow peer-review.  These
-case studies, which appear in the appendix
-(@secref["s:case-studies"]), also helped to form the basis of many  
-of our discussions.
+case studies, which are summarized in two figures
+(@figure-ref["i:case-studies"], @figure-ref["i:case-studies-cont"]), also
+helped to form the basis of many  of our discussions.
 
 @section{An @IFPR Roadmap}
 
@@ -324,7 +324,8 @@ ideas}
 The first two items arise primarily in students' role as reviewers,
 and are common to all forms of peer-review.  The remaining tasks arise
 more in students' role as recipients of reviews, and have more urgency
-in an in-flow context.  In the context of Bloom's taxonomy [CITE],
+in an in-flow context.  In the context of Bloom's
+taxonomy@~cite["bloom-taxonomy"],
 these skills move students beyond ``remember'', ``understand'', and
 ``apply'' into ``evaluate''.  They engage students in reflection and
 meta-cognitive thinking about their own work, while also requiring
@@ -596,10 +597,10 @@ have been used in actual courses; the rest are hypothetical uses
 proposed by working group members, based on exercises in their current
 courses.
 
-The full case-study descriptions appear in @secref["s:case-studies"].
-The source files are also available at
+The source files of the case studies are available at
 @(smaller (url
 "https://github.com/brownplt/iticse-in-flow-2014/tree/master/in-flow-assignments")).
+[FILL mapping from table to assignments]
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -2198,25 +2199,49 @@ Discussion here needs to cover things like:
 In in-flow peer review, students have the opportunity to take what they learn
 from examples of others' work and apply it to their own.
 
-Kulkarni et al@~cite["klemmer-examples"] discuss changes in creative output
-between subjects who varying amounts of examples, and diversity in examples,
-prior to creating their own artwork.  Subjects seeing more diverse examples
-created artwork with more unique features than subjects seeing a less diverse
-set or fewer examples.  Students who see more examples from others, especially
-when already primed to think about the same problem, may similarly have more
-options to draw on in their solution, rather than only using whatever
-techniques they would have tried in their initial submission.
+There is a large body of work that studies learning from @emph{worked
+examples}@~cite["adrw:2000:worked-examples"], in which students learn solely
+or primarily from example solutions to problems with accompanying descriptions
+of the solution strategies used.  Worked examples are traditionally created by
+experts, and in @IFPR the examples students see come from their peers.  In
+addition, in @IFPR students see the examples @emph{after} they attempt the
+problem themselves.  Nevertheless, some of the recommendations of the worked
+examples literature may be relevant in the @IFPR setting: in a broad survey of
+worked examples research, Atkinson et al.
+recommend that students ``experience a variety of examples per problem type'',
+and that examples be presented in ``close proximity to matched
+problems''@~cite["adrw:2000:worked-examples"].  Both of these recommendations
+are consonant with strategies we have proposed for @IFPR assignments.  In
+addition, if a worked
+example would recommend breaking an assignment into several discrete pieces,
+this also suggests a natural split for the stages of an in-flow assignment.
 
-Discussion here needs to cover things like :
-@itemlist[
-@item{How many examples does one need to see before learning occurs?}
-@item{How similar do the examples need to be?}
-@item{What scaffolding (i.e., review questions) foster learning from examples?}
-]
+Chi et al. and Renkl studied the effects of asking students to provide
+talk-aloud self-explanations along with worked
+examples@~cite["cblrg:1989:self-explanations" "r:1997:self-explanations"], and
+found that students who were better at producing self-explanations of the
+examples performed better on post tests.  This correlation was deemed to be
+independent of many other factors, including domain knowledge of the students
+coming into the task.  A peer review is a kind of explanation, and may cause
+students to go through the same kind of reflective process when studying
+other students' examples.
+
+Kulkarni et al@~cite["klemmer-examples"] discuss changes in creative output
+between subjects who saw varying amounts of examples, and diversity in
+examples, prior to creating their own artwork.  Subjects seeing more diverse
+examples created artwork with more unique features than subjects seeing a less
+diverse set or fewer examples.  In an @IFPR setting, students who see examples
+from others, especially when already primed to think about the same problem,
+may similarly have more options to draw on in their solution, rather than only
+using whatever techniques they would have tried in their initial submission.
 
 In PeerWise@~cite["denny-peerwise08"], students created and reviewed one
 anothers' multiple-choice questions, which has elements both of learning by
-example and of review.
+example and of review.  They find that students who engaged with the system
+more---by contributing and explore more example questions than others (and
+more than they were required to by the course)---performed better than those
+who did not.  This suggests that exposure to more examples better prepared
+them for assessment.
 
 @subsection{Peer Instruction}
 
