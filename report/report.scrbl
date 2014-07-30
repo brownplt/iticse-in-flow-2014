@@ -976,12 +976,12 @@ The working group identified several potential roles for rubrics:
     A rubric can focus students'
     attention on different areas depending on the goals of an assignment and
     the reviews for it.  For example, it could prompt 
-    code-specific questions ("Is this code well-documented?", "Are
-    all the type annotations correct?", etc.), to problem-specific questions
-    ("Is there a test for a list with duplicate elements?", "Does this
-    program meet the problem specification for input X?", etc.), to prompts
-    that encourage actionable feedback ("Provide a test case that this
-    solution does not pass.").
+    code-specific questions (``Is this code well-documented?'', ``Are
+    all the type annotations correct?'', etc.), to problem-specific questions
+    (``Is there a test for a list with duplicate elements?'', ``Does this
+    program meet the problem specification for input X?'', etc.), to prompts
+    that encourage actionable feedback (``Provide a test case that this
+    solution does not pass.'').
     Students may also optionally ask for reviews with a certain 
     focus when offering submissions for review. This might help
     to ensure relevance of the review for the author. 
@@ -1014,7 +1014,7 @@ The working group identified several potential roles for rubrics:
     For example, forcing a review to contain comments on the strengths of the
     submission under review can soften other criticism.  When appropriate,
     rubrics can guide students towards more constructive language---for
-    example, "This could be done differently" vs. "This is wrong".
+    example, ``This could be done differently'' vs. ``This is wrong''.
     }
 
 @item{@bold{Rubrics for time management}:
@@ -1034,9 +1034,9 @@ eventual opportunities for both groups to demonstrate critical
 thinking skills.  One model would evolve rubrics from having fairly
 targeted questions to asking broad questions: this model gradually
 removes scaffolding.  Another form of evolution starts with concrete
-questions (such as "do these tests look correct") and progresses to
-questions on more abstract issues (such as "do these tests cover the space of
-possible inputs") as students master more of the
+questions (such as ``do these tests look correct'') and progresses to
+questions on more abstract issues (such as ``do these tests cover the space of
+possible inputs'') as students master more of the
 subject material.
 
 A variation on evolving rubrics would allow different students to work
@@ -1241,7 +1241,8 @@ They will have to learn to triage review comments into those they will act upon 
 Moreover, having a diversity of reviews, 
 maybe even contradicting reviews, 
 can be a starting point for valuable discussions in class.
-The act of triaging reviews themselves can train reviewers to not submit "brain dumps" 
+The act of triaging reviews themselves can train reviewers to not submit
+``brain dumps'' 
 of everything that might possibly be wrong, 
 but to provide valuable but concise reviews; the important metric is
 actionability, not volume of feedback.
@@ -1295,7 +1296,7 @@ important to consider reviewing's two roles from a student perspective
 - demonstrating the student's own understanding as well as providing
 feedback to help another student. One of the weaknesses of reviewing a
 fine piece of work is that it is not clear to students how and what to
-critique.  To mitigate "Looks Good to Me" reviews on good work, it is recommend
+critique.  To mitigate ``Looks Good to Me'' reviews on good work, it is recommend
 that emphasis be placed on the former. To support such more
 constructive reviews a rubric could be adopted that talks positively
 about strengths and explanations as well as problems.
