@@ -995,8 +995,9 @@ The working group identified several potential roles for rubrics:
     knowing what to write when reviewing good
     solutions@~cite["politz-ct-iticse14"].
     A rubric could explicitly prompt for feedback
-    even on good work (e.g. "What did you like about this submission?", "List
-    one thing you would change, regardless of correctness."), so that students
+    even on good work (e.g. ``What did you like about this submission?'', ``List
+    one thing you would change, regardless of correctness'', ``What should the
+    author @emph{not} change in this solution?''), so that students
     don't simply sign off on a solution as good enough without reflecting and
     providing some useful feedback.
 }
@@ -1088,7 +1089,8 @@ applicability of plain text, but noted that modern software tools
 (such as Github and other graphical version-control tools) enable targeted
 comments and conversations
 between authors and reviewers, down to the line number in a particular
-revision, which is more structure than a general, overall comment.
+revision. These conversations have more more structure than untargeted
+comments about the entire submission.
 
 In some situations, non-text artifacts can be effective, just as not all
 submissions need be code.  Code architecture diagrams can be critiqued and
@@ -1173,7 +1175,7 @@ this review likely mis-evaluated the work under review.
 Another way to give feedback is by telling students about the correspondence
 between their evaluation of a submission and those of other students.  For
 example, the SWoRD tool for peer review of writing tells student reviewers, on
-each criteria they reviewed, how they did relative to the average of other
+each criterion they reviewed, how they did relative to the average of other
 students' scores@~cite["cho-sword"].  An example of feedback that they show
 says ``Your ratings were too nice for this set of papers.  Your average rating
 was 6.50 and the group average was 5.23.'' This hints to the student that he
@@ -1191,14 +1193,15 @@ of the review, and whether it was generally positive or
 negative@~cite["nelson-feedback-rubric"].  Swan, Shen, and Hiltz study
 assessment strategies for comments in online discussion forums used to discuss
 class content@~cite["swan-online-assessment"].  Though the discussions are not
-necessarily critiques of student work, they do have similar requirements for
-relevance, accuracy, and usefulness a focused topic.
+necessarily critiques of student work---they are simply prompts for
+questions and comments---they do have similar requirements to reviews in
+relevance, accuracy, and focus.
 
 In a related approach, in CaptainTeach programming assignments, half the time
 students are assigned a known-good or known-bad solution to review,
 implemented by the course staff@~cite["politz-ct-iticse14"].  Students use a Likert
-scale in each review to indicate whether they think the program or tests they
-are reviewing is correct: if they give a strong score to a known-bad
+scale in each review to indicate whether they think the program or tests under
+review is correct: if they give a strong score to a known-bad
 solution, or a weak score to a known-good solution, they get immediate
 feedback telling them of the discrepancy.
 
@@ -1222,9 +1225,7 @@ The Expertiza peer review process contains an explicit review-of-review phase
 for collaborative work@~cite["gehringer-expertiza-approach"], and a related
 Expertiza tool attempts to give some more qualitative feedback automatically
 by a naturaly language analysis of student
-work@~cite["rg:auto-assess-rev-lsa"].  This automated tool uses an analysis of
-natural language to give automated feedback about the tone and quality of
-written feedback.
+work@~cite["rg:auto-assess-rev-lsa"].
 
 @subsubsection["Using Meta-Reviews"]
 
@@ -2361,7 +2362,25 @@ accurate after going through the case studies}.
 
 [INSERT CaptainTeach]
 
-[INSERT Informa]
+Informa's ``Solve and Evaluate'' approach integrates a simple form of peer
+review into a software-based class room response system. During a lecture the
+instructor poses a problem, and each student solves it by creating a solution
+in Informa. Informa is not limited to multiple-choice problems, but it allows
+a variety of problem types, including free text (e.g., code snippets), or
+drawings (e.g., diagrams of the structure or state of a program).  Students
+submit their solution as soon as they are done, and they immediately are
+assigned a solution of a peer for evaluation. They evaluate a solution simply
+by scoring it as correct or incorrect. In Informa, a key reason for including
+an evaluation phase is to keep the faster students engaged while the slower
+students are still solving the problem. While the peer review results are not
+shown to the authors of the submissions, they are used by the instructor to
+estimate the level of understanding of the class, and to focus the class
+discussion that follows the evaluation phase. A lecture using Informa often
+consists of multiple stages, and often the problems in subsequent stages build
+on each other (e.g., the first problem asks students to draw a control-flow
+graph of a program with conditionals, and the second problem asks for a
+control-flow graph including loops). In such a scenario, a lecture with
+Informa is an instance of in-flow peer review.
 
 @subsection{Actionable Peer Review}
 
