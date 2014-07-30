@@ -1974,22 +1974,6 @@ program.
 }
 ]
 
-There are a number of ways that PP and IFPR could be combined. One could have PP teams receiving in-flow reviews from other
-PP teams. A more subtle approach would make pair programming more like
-IFPR, by offering continuous feedback, yet keeping two separate artifacts.
-In this case, the reviewer takes more responsibility for the other person's artifact. 
-It is questionable whether this is a good thing.  One can imagine that if a student's grade
-depends upon the quality of another student's artifact, then the best kind of feedback 
-would be to give a patch, that is, to provide replacement code. Such feedback is 
-unlikely to help the recipient's understanding.
-
-It is worth considering whether there are differences between pair programming
-and pair writing (with review steps). One difference is that reviewers
-are likely to provide better feedback on writing than on code, as reading text
-is a preexisting skill whereas reading code is a new and difficult skill,
-especially for beginning and weak students.
-
-
 @subsection{Industrial Peer-Review Practice}
 
 Code review is an essential component of industrial
