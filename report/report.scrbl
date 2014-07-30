@@ -52,17 +52,7 @@ alleviates some problems while raising associated concerns.}
 
 @para{}
 
-@para{
-
-@bold{Note to reviewers:} This document is obviously very much a
-draft: expect some replication of context across sections (drafted by
-different authors), unresolved references, self-notes to authors, and
-loose prose.  We will rectify all of these before submitting the
-report for actual review.
-
-}
-
-@section{In-Flow Peer-Reviewing}
+@section[#:tag "s:intro"]{In-Flow Peer-Reviewing}
 
 Peer-review has been employed for various reasons in Computer Science
 courses@~cite["topping-peer-review98"]. It is a mechanism for having
@@ -1155,9 +1145,9 @@ staff size relative to student population).
 Much of the group's discussion around meta-reviewing applies to
 peer-review in general, rather than only to IFPR.  The IFPR context is
 mostly relevant when considering whether reviews are sufficiently
-actionable to let students benefit from reviews to improve their own
-work.  We describe both general design decisions around meta-reviews
-and those particular to IFPR in this section.
+actionable to let students benefit from them to improve their own
+work.  This section describes both general design decisions around meta-reviews
+and those particular to IFPR.
 
 @subsubsection["Types of Meta-Reviewing"]
 
@@ -1181,13 +1171,13 @@ grade for the assignment they reviewed is low, the automated meta-review can ind
 this review likely mis-evaluated the work under review.
 
 Another way to give feedback is by telling students about the correspondence
-between their evaluation of a submission those of other students.  For
+between their evaluation of a submission and those of other students.  For
 example, the SWoRD tool for peer review of writing tells student reviewers, on
 each criteria they reviewed, how they did relative to the average of other
 students' scores@~cite["cho-sword"].  An example of feedback that they show
 says ``Your ratings were too nice for this set of papers.  Your average rating
-was 6.50 and the group average was 5.23.'' This hints to the student that they
-may have missed something in their review.  This does run into issues of
+was 6.50 and the group average was 5.23.'' This hints to the student that he
+may have missed something in his review.  This does run into issues of
 calibration and opinion -- just because a student disagrees with the average,
 it doesn't mean they are wrong!  They may have understood something the other
 reviewers didn't, in which case comparing their review to an expert's, or to a
@@ -1206,9 +1196,9 @@ relevance, accuracy, and usefulness a focused topic.
 
 In a related approach, in CaptainTeach programming assignments, half the time
 students are assigned a known-good or known-bad solution to review,
-implemented by the course staff@~cite["politz-ct-iticse14"].  They have a Likert
-scale in their review to indicate whether they think the program or tests the
-are reviewing is correct, and if they give a strong score to a known-bad
+implemented by the course staff@~cite["politz-ct-iticse14"].  Students use a Likert
+scale in each review to indicate whether they think the program or tests they
+are reviewing is correct: if they give a strong score to a known-bad
 solution, or a weak score to a known-good solution, they get immediate
 feedback telling them of the discrepancy.
 
@@ -1216,8 +1206,8 @@ According to Ramachandran and Gehringer@~cite["rg:auto-assess-rev-lsa"]
 reviews consist of (1) summative, (2) problem detection, and (3) advisory
 content.  Meta-reviews can report on each of these three types of contents,
 each of which is valuable in its own way.  While summative contents can
-reflect a reviewer's understanding, problem detection content directly helps a
-student to identify opportunities for improvement, and advisory content points
+reflect a reviewer's understanding, problem-detection content directly helps a
+student identify opportunities for improvement, and advisory content points
 out ways in which students might improve.  Meta-reviews can include
 information on which parts of a review were constructive, and which led to
 actual changes.  Meta-reviews written by authors of submissions can also
@@ -1325,43 +1315,43 @@ design to ensure that students aren't incentivized towards detrimental
 behavior that lets them get a good grade at the cost of their (or others')
 education.
 
-One of the most immediately problems with IFPR is that students necessarily
-are shown one another's work while in the middle of an assignment -- it is the
-definition of the technique that this happens.  Since the final submission
+One of the most immediate problems with IFPR is that students necessarily
+are shown one another's work while in the middle of an assignment:
+this happens by definition of IFPR.  Since the final submission
 happens after students have been exposed to other students' work, the IFPR
-educator immediately confronts the problem of determining how to evaluate the
-final submission.
+educator must determine how to account for this exposure when
+assigning a grade to the final submission.
 
 At the extreme, a student could submit an empty initial submission, copy what
-he sees during the reviewing phase, and submit the copied solution as their
-final solution.  In less extreme cases, students may copy all or part of
-another solution into their own after submitting an initial first try that
-they become convinced is incorrect.  There are a number of course and grading
-design decisions that can affect to what degree copying is a problem.
+he sees during the reviewing phase, and submit the copied solution as his own
+final solution.  In less extreme cases, a student may copy all or part of
+another solution into her own after submitting an initial first try that
+she becomes convinced is incorrect.  There are a number of course- and 
+grading-design decisions that can affect the degree to which copying is a problem.
 
 @itemlist[
 
 @item{@bold{Variation in Assignments}:
 
-One major factor in whether copying behavior is even a problem is how similar
+One major factor in whether copying is even a problem is how similar
 students' submissions are expected to be.  In many programming courses,
-students implement to the exact same algorithmic specification, and other than
-coding style issues, one implementation is just as good as another.  This is
+students implement to the exact same algorithmic specification; other than
+coding-style issues, one implementation is just as good as another.  This is
 in contrast to other domains where peer review is often used, like creative or
 critical writing, in which students often write on different topics or choose
 different positions to represent on the same topic.
 
-One solution is then to provide different variants of a programming
-problem to different students, an approach taken by
-Zeller@~cite["zeller-read-review-00"], in which each student gets a variation
-on a theme, to avoid students reviewing another who is working on exactly the
+One approach is to provide different variants of a programming
+problem to different students: 
+Zeller@~cite["zeller-read-review-00"] gives each student a variation
+on a theme to avoid students reviewing another who is working on exactly the
 same problem.  Indeed, it is often possible to generate large numbers of
 different problems automatically from a specification, as Gulwani et al. have done for
 algebra problems and more@~cite["gulwani-algebra-problems"
 "gulwani-geometry-problems"].
 
 A drawback of variation in assignments is that it weakens one of the benefits
-of IFPR -- that students review the same problem they just saw!  Especially
+of IFPR -- having students review the same problem they are already thinking about!  Especially
 for beginning students, where program comprehension skills are still being
 learned, one goal of IFPR is to lessen the cognitive load of the comprehension
 task by having the student review code for a problem they already understand.
@@ -1378,23 +1368,23 @@ reviewer with solutions to the same or different problems may be effective.
 
 @item{@bold{Weighted Submission Grading}:
 
-We believe that there is value in having students copy parts of other
+There is often value in having students copy parts of other
 submissions that they see in order to improve their own work.  It happens all
 the time in professional software development, and the act of recognizing a
 good solution demonstrates understanding that is far beyond blind plagiarism.
-So we want students to take things from the examples they see and demonstrate
-that they learned from them -- there's also no guarantee that what they are
+Students should take things from the examples they see and demonstrate
+that they learned from them; however, a student has no guarantee that what he is
 seeing is correct, so blindly copying can hurt!
 
-However, wholesale copying should be discouraged, where a student submits an
-empty file and then simply copies the best of what they see.  In order to
-mitigate this, Politz et al. grade IFPR assignments by assigning heavier
-weights to initial submissions than to post-review submissions, so an initial
+However, wholesale copying (where a student submits an empty file then
+copies the best of what they see) should be discouraged.  In order to
+mitigate this, Politz et al.@~cite["politz-ct-iticse14"] grade IFPR assignments by assigning heavier
+weights to initial submissions than to post-review submissions: an initial
 program submission counts for 75% of the grade.  Students can still improve
 the 25%-weighted part of their score based on review feedback and copying
 others' solutions, but they can also hurt their score if they make incorrect
 changes.  Different weightings put different emphasis on the importance of
-review -- having the post-review score count for more might be acceptable in
+review. Having the post-review score count for more might be acceptable in
 some classroom settings, and ultimately comes down to a choice about student
 maturity, class culture, and other course-specific factors.
 }
@@ -1402,13 +1392,12 @@ maturity, class culture, and other course-specific factors.
 @item{@bold{Alternative or Supplemental Grading}
 
 Another solution to the grading problem is to supplement assignment grading
-with other techniques that cannot be copied, which works in many settings
-where plagiarism could be a potential problem.  For example, in an in-person
+with other techniques that cannot be copied.  For example, in an in-person
 code review of a student's solution, an instructor can quickly ascertain
-whether or not the student has simply copied something or actually understands
+whether the student has simply copied something or actually understands
 the code they have submitted.  This can be done by, for example, asking the
-student to change their program to match a new specification, or asking them
-to understand some change to their submitted code.
+student to change their program to match a new specification, or asking her
+to understand a proposed change to her submitted code.
 }
 ]
 
@@ -1445,7 +1434,7 @@ but encourage good reviewing extrinsically.
 
 The group noted that @IFPR (like other collaborative course structures)
 interacts poorly with grading strategies that evaluate students relative to
-one another.  This is because it conflicts with students' motivations to help
+one another.  Such strategies conflict with students' motivations to help
 one another improve their work.  The working group identified three distinct
 ways in which the conflict could manifest:
 
@@ -1467,27 +1456,24 @@ feedback seriously)
 
 ]
 
-No one in the group traditionally graded any courses they taught in a relative
-style, so we didn't anticipate any of these particular problems in our
-courses.  However, we all noted that collaboration in general and IFPR in
-particular were dissonant with grading on a curve.
+No one in the group used relative grading in their own courses, 
+so we lacked first-hand experience in mitigating these problems in
+that context.
 
 @subsubsection{Peer Assessment and @IFPR}
 
-We noted earlier the distinction Liu and Carless highlight betweenbetween
+@Secref["s:intro"] noted Liu and Carless' distinction between
 @emph{peer feedback} and @emph{peer assessment}@~cite["liu-peer-feedback"],
 where the latter's goal is grading.  One motivation for using peer review is
 to scale or augment grading by having students grade one another.  It has been
 shown by Kulkarni et al. that, with careful rubric and mechanism design, peer
-grading can produce similar results as TA grading in MOOCs
-@~cite["kwl...:peer-self-assess-mooc"].
+grading can produce similar results as TA grading in MOOCs@~cite["kwl...:peer-self-assess-mooc"].
 
-Our discussion in designing @IFPR assignments have not assumed that reviews
+Our discussions of designing @IFPR assignments did not assume that reviews
 would be used for grading, but that doesn't mean that they couldn't.  We note
 mainly that it changes the motivation structure of @|IFPR|.  For example, a
 student who is afraid of affecting their peers' grades with negative feedback
-may be more hesitant to give that feedback.  There are obvious issues with
-curve grading and peer assessment.  Finally, in contexts where students are
+may be more hesitant to give that feedback.  In contexts where students are
 still learning to review and give feedback, inaccurate reviews are expected
 and an important part of the learning process, but probably should not be used
 for grading purposes.  Using peer review for grading should be adopted with
@@ -1497,19 +1483,17 @@ design decisions discussed in this report.
 
 @subsection[#:tag "s:anon"]{Anonymity}
 
-There are several issues relating to anonymity and privacy which come to the
-fore in peer review settings.  Developing a culture of positive and
+Several issues relating to anonymity and privacy come to the
+fore in peer-review settings.  Developing a culture of positive and
 constructive critique, where students can both give and take feedback
 positively can take time and require a degree of practice.  While the broader
 aim may be to develop a positive, supportive and professional approach to peer
 review, there may be a need to provide some initial shielding from scrutiny
-for students who are new to the institution or the practice.  Some of the
-options, their respective benefits and downsides are presented in this
-section.
+for students who are new to the institution or the practice.  
 
 @subsubsection{Types of Anonymity}
 
-There are varying degrees of anonymity that may be adopted.  For instance the
+Varying degrees of anonymity may be adopted.  For instance, the
 reviews could be anonymous to either students or faculty (or alternatively to
 both, or neither). Each of the review authors and work authors/review
 recipients could be anonymous.  
@@ -1517,8 +1501,8 @@ recipients could be anonymous.
 For example, in PeerWise@~cite["denny-peerwise08"], student submissions are
 ranked for quality and correctness and the content of the contributed
 questions is public.  In that case, not revealing contributor identities to
-peers is quite important, as this creates a degree of safety for the novice
-student contributor and the public ranking should be identified with the work
+peers is important: this creates a degree of safety for the novice
+student contributor and helps identify the public ranking with the work
 and not with the student.  However the contributor identities are visible to
 the instructors as student contributions may be summatively graded.  A variant
 on this (similar to some conference reviewing models) could also see reviews
@@ -1531,12 +1515,12 @@ and social.  This lets students do a first round of reviewing to get
 comfortable with the process of feedback, and after has the benefits of
 encouraging professional collaboration.
 
-In total in our case studies, only two---@study-refs["fisler-asgn-2"
-"hauswirth-asgn-1"]---explicitly stated that reviews were anonymous.  Several
+In total in our case studies, only two (@study-refs["fisler-asgn-2"
+"hauswirth-asgn-1"]) explicitly stated that reviews were anonymous.  Several
 (studies @study-refs["clarke-asgn-2" "hauswirth-asgn-2" "tirronen-asgn-1"
 "wrigstad-asgn-1" "wrigstad-asgn-2"]) had reviews that were in-person, and
 therefore cannot be anonymous.  The others left it unstated, and in different
-course contexts the assignments could very well be administered either way.
+course contexts the assignments could be administered either way.
 
 @subsubsection{Upsides of Anonymity}
 
@@ -1553,7 +1537,7 @@ comes from a supposedly smart student.  Anonymity helps level the playing
 field in the face of such preconceptions.
 
 In general the group considers anonymity to be a less jarring initial option
-for @IFPR that is more likely to protect students that are new to the peer
+for @IFPR that is more likely to protect students who are new to the peer
 review process.  However, sharing identity during review has significant
 upsides in the right contexts, and anonymity isn't without its own problems.
 
@@ -1562,49 +1546,24 @@ upsides in the right contexts, and anonymity isn't without its own problems.
 One of the downsides of anonymity is the scope for unwittingly enabling a
 culture of ‘flaming’ and online harassment to develop among some of the
 students.  Therefore if reviews are to be done anonymously, policies and
-techniques for reporting abuse, etc. should be in place.  It is not desirable
-to have students decide not to pursue the major due to feeling vulnerable, or
-unsafe.  Anonymous reviewing models demand a level of oversight, as there
-could be problems with harassment, etc., if reviews were not checked
-rigorously or students could not affirmatively report abuse.
-
-The potential for danger is greater if reviews are directly involved with
-grading, and therefore the impact of the reviews is heightened. The
-incorrectness of a review is mainly a concern if grades are involved,
-otherwise the student may just ignore it.  The validity of peer grading raises
-several additional questions.  In many respects this relates to the
+techniques for reporting abuse and inappropriate behavior should be in
+place.  In general, the issues with anonymity relate to the
 unsatisfactory aspects of peer assessment schemes in groupwork that ask group
 members to evaluate relative
 contributions@~cite["Clear:2010:TIM:1721933.1721938"].
 
-There are several potential gains from not being anonymous: students get
-feedback on what things to do together towards meeting goals, and this can
-create a culture of helping one another.  A review is a contribution, so
-students get to acknowledge people giving helpful feedback.  The course
-context may demand that students be visible and professional, so in that
-setting non-anonymity helps enforce a level of accountability for students,
-and an awareness that they will need to stand by their opinions and be
-prepared to justify them.  
-
-Open peer review can help with preparation for working in professional
-settings. Industrial code reviews are not done
-anonymously@~cite["Rombach:2008:IRP:1449603.1449609"]. Some code review is
-within a team, and some is from outside the team.  When industrial code review
-is performed by people outside the team, this can be a very testing process as
-there can be no assumption that reviewers have same vested interests.  
-
-There are other potential benefits to non-anonymity, which may result in
-enabling direct channels (outside the peer-review system) between students.
-It's not clear if this is a bad thing -- it may tell a student about peers
-they do or don’t want to work with in future, helping students identify
-collaborators or facilitate social/professional connections.
-Showing names would also allow for multiple rounds of clarification without
-support from a peer review tool.
-
+The benefits of non-anonymity center mainly around creating
+collaborative cultures and helping students learn professional
+behavior.  Non-anonymity creates opportunities for students to acknowledge each
+others' contributions.
 As a broader educational goal, ethics and professionalism are meant to be
-covered as part of our curricula@~cite["Fuller:2010:PDA:1709424.1709461"], and
+covered as part of our curricula@~cite["Fuller:2010:PDA:1709424.1709461"];
 an open model for peer review gives a clear opportunity for enforcing
 appropriate behaviour.
+Industrial code reviews are not done
+anonymously@~cite["Rombach:2008:IRP:1449603.1449609"], so students
+gain relevant skills from learning to give and receive non-anonymous
+feedback. 
 
 @subsubsection{Anonymity and Cultural Considerations}
 
@@ -1658,6 +1617,7 @@ and good reviewing.
 
 @itemlist[
 @item{@bold{Experts as Moderators and Facilitators}
+
 Experts can act as moderators to make sure that issues and
 conflicts that arise, whether in a live situation or asynchronously, can be dealt with by an
 authority figure.  As moderators, experts do not take
@@ -1683,18 +1643,19 @@ knowledgeable, high quality feedback is received.
 
 @item{@bold{Perception and Quality of Expert Review}
 
-Another issue with expert review (especially instructor or TA provided) is
-that it my have unwarranted special status in students' minds -- feedback from
+Expert review (especially instructor or TA provided)
+may have unwarranted special status in students' minds: feedback from
 experts may be interpreted as ``more relevant for my grade'', and hence more
 likely to be acted upon.  This last concern is called out explicitly by case
 study @study-refs["clear-asgn-1"], in which students produce a peer-reviewed
 research article, and in the past often discounted peer feedback in favor of
-instructor-provided comments.  Cho and MacArthur hide the provenance of
+instructor-provided comments.  
+
+Cho and MacArthur hide the provenance of
 expert- vs. peer-provided reviews in order to study whether expert review is
 in fact more effective at improving students'
-grades@~cite["cho-peer-expert-reviewing10"], 
-
-Cho and MacArthur compare three approaches to giving feedback on
+grades@~cite["cho-peer-expert-reviewing10"].  
+They compare three approaches to giving feedback on
 written assignments in a psychology course: feedback from a single
 peer, feedback from a single topic expert, and feedback from multiple
 peers@~cite["cho-peer-expert-reviewing10"]. The results indicate that
@@ -1703,7 +1664,7 @@ feedback from an expert, with feedback from a single peer being the
 worst.  The hypothesised reason for this was that peers gave feedback
 that was phrased in terms that students could more easily comprehend.
 It certainly would be interesting to see whether the same results
-applied to programming assignments.
+apply to programming assignments.
 }
 
 @item{@bold{Expert-provided Exemplars and Models}
@@ -1795,66 +1756,32 @@ and encouraged retention of female students@~cite["barker-cs-fine-arts"].
 @subsection{Costs and Mitigations}
 
 IFPR can impose extra costs on both the teaching staff and the students taking
-part in the process, and the pracititioner must appraise whether the
-implementation costs, such as extra scheduling and expert support, are
-commensurate to the learning benefits and whether such costs can be mitigated
-by larger one time investments, such as software systems.
+part in the process.  Instructors must appraise whether these costs
+are commensurate with the learning benefits.  On the staff side,
+reviewing requires management of the process, adjusting assignment
+schedules to allow for reviewing, and overhead of assessing reviews.
+Software tools can automate much of the process management.
+Instructors may choose to not provide feedback on reviews.  There are
+also situations in which peer review reduces staff workload, by giving
+students an alternative channel for feedback on their work.
 
-To evaluate these costs, the practitioner needs to make an informed decision on
-the goal of adopting IFPR. If the goal is merely to save teacher resources by
-offloading some of the work to the students, it is much more critical to focus
-on allaying ongoing implementation costs than when IFPR is intended drive a
-change in the pedagogy of the course. In the latter case, the practitioner may
-be willing to accept much higher costs than otherwise. For example, to ensure
-that students benefit from the reviews, the practitioner must allocate extra
-time during which students may revise their work, which may require reducing
-the number of assignments in the course, or altering existing assignments.
-Also, the additional learning
-goals associated with IFPR, such as fostering reflection and review skills, are
-not free in sense of student or teacher workload. 
+On the student side, reviewing can increase cognitive load by forcing
+students to switch between very different tasks (programming and
+reviewing).  Tool support that integrates reviewing with the normal
+course IDE can mitigate some context switching.  Careful design of
+exercises is also important: allowing students to share parts of their
+solutions through reviewing can, for example, affect whether students
+stay in their zones of proximal development.
 
-@subsubsection{Moderators of teacher workload}
-
-The working group found two primary moderators for teacher workload. The
-primary mitigator is to use a software system such as
-CaptainTeach@~cite["politz-ct-iticse14"] to
-handle the routine tasks like the reviewer assignments and to implement the
-necessary means of monitoring the IFPR process. 
-
-Depending on available resources, such software systems can be designed to
-perform advanced tasks, such as giving basic feedback on review quality by
+In general, software tools for IFPR can play a significant role in
+both mitigating costs and adding value to the process.  Software
+systems could (a) give basic feedback on review quality by
 comparing reviews between students@~cite["cho-sword"] or
-through use of machine learning methods@~cite["rg:auto-assess-rev-lsa"], to
-aggregate student responses for discussion@~cite["hauswirth-informa"] or to
+through use of machine learning methods@~cite["rg:auto-assess-rev-lsa"], (b)
+aggregate student responses for discussion@~cite["hauswirth-informa"], or (c)
 maximize variety of review tasks by using static analysis tools to appraise
-source code similarity.
-
-The different roles of teaching assistants can either increase or allay the
-IFPR costs: if the teaching assistants are required to moderate the review
-process, the costs can increase significantly in large classes.  However, peer
-review can help to reduce workload of the teaching assistants by providing
-another means---peer review---for students to ask questions and get feedback.
-In this sense, if @IFPR is used without adding any new summative assessment
-steps, it can take work off of the teaching staff.
-
-@subsubsection{Moderators of student workload}
-
-There are also two primary moderators for student workloads. Firstly,
-the review assignment itself can increase the cognitive load of the
-students when it is done in an in-flow setting by
-forcing students to switch between very different tasks, such as
-to and fro from programming to reviewing.
-
-The second primary moderator for student workloads is available the tool
-support, which can have significant effect on student productivity. A review
-system integrated with the IDE can be significantly cheaper to use than a
-review system that requires manual operation.
-
-Further, it can be possible to moderate student workloads by careful exercise
-design, such as attempting to make complex problems easier by allowing students
-to share of parts of the their solutions during the review process (cf. zone of
-proximal development).
-
+source code similarity.  As IFPR matures, we would hope to see
+significant advances in the software to support the process.
 
 @subsection{Bringing Students Along}
 
@@ -1883,9 +1810,9 @@ students, peer review may be their first time getting negative
 feedback; instructors should make response to review a positive
 activity.  For students whose work was strong and did not yield
 actionable reviews, an instructor could ask ``what have you learned
-from looking at others' solutions?'' Perhaps this is something you do
-on a couple of assignments, to satisfy the goal of helping them learn
-to self-reflect.
+from looking at others' solutions?''  Hopefully, such activities on a
+few early assignments would help students develop self-reflection
+skills. 
  
 Specific suggestions for students include:
 
@@ -1912,7 +1839,7 @@ If students remain skeptical of the value of peer-review, a mid-course
 survey on the value of reviewing might help convey the experiences of
 others.  This also sets a culture of peer-review as a collective effort.
 
-@subsection{Evaluation and Analytics for @IFPR}
+@subsection{Software and Analytics for @IFPR}
 
 The large number of reviews produced in @IFPR, especially in large classes,
 can make it challenging for an instructor to monitor students' progress and to
