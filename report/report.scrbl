@@ -1136,9 +1136,9 @@ auto-grading revealed, masking situations in which the auto-grading missed
 something important.
 
 
-@subsection[#:tag "s:meta-reviewing"]{Review Feedback and Meta-Reviewing}
+@subsection[#:tag "s:meta-reviewing"]{Review Feedback (Meta-Reviewing)}
 
-Any use of peer-review must choose whether to include any grading or feedback
+Any use of peer-review must choose whether to include grading or feedback
 on the contents of reviews themselves.  We use the term @emph{meta-review} to
 refer to any feedback on a review (because feedback can be considered a review
 of a review).  Feedback can take many forms: the author who received a review
@@ -1147,68 +1147,8 @@ staff could formally grade reviews and return comments to the reviewer, or
 third parties could comment on the relative merits across a set of reviews.
 Which model makes sense depends on factors including the learning objectives
 for IFPR, features of peer-review software, and course logistics (such as
-staff size relative to student population).
-
-Much of the group's discussion around meta-reviewing applies to
-peer-review in general, rather than only to IFPR.  The IFPR context is
-mostly relevant when considering whether reviews are sufficiently
-actionable to let students benefit from them to improve their own
-work.  This section describes both general design decisions around meta-reviews
-and those particular to IFPR.
-
-@subsubsection[#:tag "s:meta-reviewing-types"]{Types of Meta-Reviewing}
-
-There are several ways to structure the information in meta-reviews, and
-provide useful feedback to reviewers.
-
-Instructors or TAs could provide direct feedback to students on reviews, in
-order to repair incorrect advice and reinforce good behavior (case studies 
-@study-refs["fisler-asgn-2" "krishnamurthi-asgn-1" "krishnamurthi-asgn-2"]
-call out the importance of correcting faulty reviews explicitly).  
-Class size is clearly a factor here.  If someone wants to use
-peer-review to help scale human feedback in large courses, then
-giving expert feedback on reviewing might not be feasible.  In situations
-where an expert evaluation of the @emph{assignment} is available (whether through
-auto-grading or by human TA) and reviews
-are quantitative, it should be possible to automate a
-meta-review that tells a student something about the quality of work they
-reviewed.  So, for instance, if a student indicates in a
-Likert scale that they ``strongly agree'' that a solution is correct, but the
-grade for the assignment they reviewed is low, the automated meta-review can indicate that
-this review likely mis-evaluated the work under review.
-
-Another way to give feedback is by telling students about the correspondence
-between their evaluation of a submission and those of other students.  For
-example, the SWoRD tool for peer review of writing tells student reviewers, on
-each criterion they reviewed, how they did relative to the average of other
-students' scores@~cite["cho-sword"].  An example of feedback that they show
-says ``Your ratings were too nice for this set of papers.  Your average rating
-was 6.50 and the group average was 5.23.'' This hints to the student that he
-may have missed something in his review.  This does run into issues of
-calibration and opinion -- just because a student disagrees with the average,
-it doesn't mean they are wrong!  They may have understood something the other
-reviewers didn't, in which case comparing their review to an expert's, or to a
-trusted automated process, may be more useful feedback.
-
-
-
-Nelson and Schunn describe a rubric for evaluating peer feedback in writing
-assignments, which includes criteria like the concreteness and actionability
-of the review, and whether it was generally positive or
-negative@~cite["nelson-feedback-rubric"].  Swan, Shen, and Hiltz study
-assessment strategies for comments in online discussion forums used to discuss
-class content@~cite["swan-online-assessment"].  Though the discussions are not
-necessarily critiques of student work---they are simply prompts for
-questions and comments---they do have similar requirements to reviews in
-relevance, accuracy, and focus.
-
-In a related approach, in CaptainTeach programming assignments, half the time
-students are assigned a known-good or known-bad solution to review,
-implemented by the course staff@~cite["politz-ct-iticse14"].  Students use a Likert
-scale in each review to indicate whether they think the program or tests under
-review is correct: if they give a strong score to a known-bad
-solution, or a weak score to a known-good solution, they get immediate
-feedback telling them of the discrepancy.
+staff size relative to student population).  Many of the issues here
+apply to peer-review in general, rather than only to IFPR.
 
 According to Ramachandran and Gehringer@~cite["rg:auto-assess-rev-lsa"]
 reviews consist of (1) summative, (2) problem detection, and (3) advisory
@@ -1226,6 +1166,70 @@ rebuttals and follow-ups, this blurs the line between collaboration and
 review, as students may end up coming to a shared understanding that may not
 have occurred with a single review step.
 
+@subsubsection[#:tag "s:meta-reviewing-types"]{Types of Meta-Reviewing}
+
+Around Ramachandran and Gehringer's framework, 
+there are several ways to structure the information in meta-reviews, and
+provide useful feedback to reviewers.
+
+@itemlist[
+
+@item{@bold{Direct feedback from course staff}: Feedback from
+instructors or TAs can 
+repair incorrect advice and reinforce good behavior (case studies 
+@study-refs["fisler-asgn-2" "krishnamurthi-asgn-1" "krishnamurthi-asgn-2"]
+call out the importance of correcting faulty reviews explicitly).  
+Class size is clearly a factor here.  If someone wants to use
+peer-review to help scale human feedback in large courses, then
+giving expert feedback on reviewing might not be feasible.}
+
+@item{@bold{Feedback based on assessment of submissions}: In situations
+where an expert evaluation of the @emph{assignment} is available (whether through
+auto-grading or by human TA) and reviews
+are quantitative, it should be possible to automate a
+meta-review that tells a reviewer something about the quality of work they
+reviewed.  For instance, if a student indicates in a
+Likert scale that they ``strongly agree'' that a solution is correct, but the
+grade for the assignment they reviewed is low, an automated meta-review can indicate that
+this review likely mis-evaluated the work under review.}
+
+@item{@bold{Reporting correspondence among reviews}: Reviewers could
+be told about the correspondence
+between their evaluation of a submission and those of other students.  For
+example, the SWoRD tool for peer review of writing tells student reviewers, on
+each criterion they reviewed, how they did relative to the average of other
+students' scores@~cite["cho-sword"].  An example of feedback that they show
+says ``Your ratings were too nice for this set of papers.  Your average rating
+was 6.50 and the group average was 5.23.'' This hints to the reviewer that he
+may have missed something in his review.  This does run into issues of
+calibration and opinion: just because a student disagrees with the average,
+it doesn't mean they are wrong!  The outlying reviewer may have understood something the other
+reviewers didn't, in which case comparing their review to an expert's, or to a
+trusted automated process, may be more useful feedback.}
+
+@item{@bold{Having students review submissions of known quality}:
+In CaptainTeach programming assignments, half the time
+students are asked to review a known-good or known-bad solution 
+(implemented by the course staff)@~cite["politz-ct-iticse14"].  Students use a Likert
+scale in each review to indicate whether they think the submission under
+review is correct: if a student gives a strong score to a known-bad
+solution, or a weak score to a known-good solution, she gets immediate
+feedback telling her of the discrepancy.
+}
+
+]
+
+Existing research has explored ways to provide or assess meta reviews.
+Nelson and Schunn describe a rubric for evaluating peer feedback in writing
+assignments, which includes criteria like the concreteness and actionability
+of the review, and whether it was generally positive or
+negative@~cite["nelson-feedback-rubric"].  Swan, Shen, and Hiltz study
+assessment strategies for comments in online discussion forums used to discuss
+class content@~cite["swan-online-assessment"].  Though the discussions are not
+necessarily critiques of student work---they are simply prompts for
+questions and comments---they do have similar requirements to reviews in
+relevance, accuracy, and focus.
+
 The Expertiza peer review process contains an explicit review-of-review phase
 for collaborative work@~cite["gehringer-expertiza-approach"], and a related
 Expertiza tool attempts to give some more qualitative feedback automatically
@@ -1234,8 +1238,8 @@ work@~cite["rg:auto-assess-rev-lsa"].
 
 @subsubsection["Using Meta-Reviews"]
 
-While one generally may prefer to eliminate low quality contents in reviews, 
-in a pedagogical context also receiving some low quality review contents can be beneficial. 
+While one generally may prefer to eliminate low-quality contents in reviews, 
+in a pedagogical context also receiving some low-quality review contents can be beneficial. 
 While in traditional educational settings students may trust all the feedback they receive from the instructor, 
 in IFPR students have to learn to assess the value of the reviews they receive. 
 They will have to learn to triage review comments into those they will act upon and those they will ignore. 
