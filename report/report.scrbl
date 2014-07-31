@@ -2169,9 +2169,11 @@ addition, if a worked
 example would recommend breaking an assignment into several discrete pieces,
 this also suggests a natural split for the stages of an in-flow assignment.
 
-Chi et al. and Renkl studied the effects of asking students to provide
+Chi et al.@~cite["cblrg:1989:self-explanations"] and
+Renkl@~cite["r:1997:self-explanations"] studied the effects of asking students
+to provide
 talk-aloud self-explanations along with worked
-examples@~cite["cblrg:1989:self-explanations" "r:1997:self-explanations"], and
+examples, and
 found that students who were better at producing self-explanations of the
 examples performed better on post tests.  This correlation was deemed to be
 independent of many other factors, including domain knowledge of the students

@@ -39,11 +39,51 @@
     #:date "2011"
     #:location
       (proceedings-location "IEEE International Conference on Advanced Learning Technologies")))
+ 
+(define renkl-1
+  (make-bib 
+    #:title "Learning from Examples: Instructional Principles from the Worked Examples Research"
+    #:author
+      (authors (author-name "Robert K." "Atkinson")
+               (author-name "Sharon J." "Derry")
+               (author-name "Alexander" "Renkl")
+               (author-name "Donald" "Wortham"))
+    #:date "2000"
+    #:location
+      (journal-location "Review of Educational Research"
+                        #:pages (list 181 214)
+                        #:volume 70
+                        #:number "2")))
+(define renkl-2
+  (make-bib 
+    #:title "Learning from Worked-Out Examples: A Study on Individual Differences"
+    #:author
+      (authors (author-name "Alexander" "Renkl"))
+    #:date "1997"
+    #:location
+      (journal-location "Cognitive Science"
+                        #:pages (list 1 19)
+                        #:volume 21)))
+
+(define miller
+  (make-bib
+    #:title "A Mentor Program in CS1"
+    #:author
+      (authors (author-name "Amanda" "Miller")
+               (author-name "Judy" "Kay"))
+    #:date "2002"
+    #:location
+      (proceedings-location  "ACM SIGCSE Conference on Innovation and Technology in Computer Science Education")))
+  
 
 (define special-keys
   (hash "deci-self-determination" deci
         "gehringer-expertiza-approach" expertiza
-        "rg:auto-assess-rev-lsa" auto-meta-review))
+        "rg:auto-assess-rev-lsa" auto-meta-review
+        "adrw:2000:worked-examples" renkl-1 
+        "r:1997:self-explanations" renkl-2 
+        "mk:2002:peer-mentor" miller
+        ))
           
 (define-cite autobib-cite _ generate-bib #:style number-style)
 (define-bibtex-cite* "inflow.bib" autobib-cite _ ~cite-id citet-id)
