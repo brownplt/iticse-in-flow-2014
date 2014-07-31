@@ -1096,7 +1096,7 @@ could have the downside of reviewers only focusing on the issues that
 auto-grading revealed, masking situations in which the auto-grading missed
 something important (Politz et al. observed cases in which reviewers 
 were more negative than grades from an instructor-provided test suite
-[CITE ICER]).  
+@~cite["politz-ct-icer14"]).
 
 Additional information for reviewers provides an implicit rubric,
 subject to the same tradeoffs we discussed regarding rubric structure.
@@ -2338,7 +2338,22 @@ of our case studies (@study-refs["krishnamurthi-asgn-1"
 ]), students review an instance of the
 @emph{same} work that they just did themselves.
 
-[INSERT CaptainTeach]
+CaptainTeach @~cite["politz-ct-iticse14"] supports in-flow peer review for
+programming assignments.  The Web-based tool supports test-first,
+data-structure-first, and one function at a time stagings of programming
+problems.  It uses asynchronous reviewing, where students see 2-3 reviews from
+the last students to submit, combined with known-good and known-bad solutions
+provided by the staff and randomly mixed in.  It supports a fixed set of
+open-ended review prompts combined with Likert scales for each of tests,
+implementation, and data structures.  Students were also allowed to give
+(optional) feedback on reviews they received.  Politz et al. report that
+students engaged with the process, submitting stages early enough to get
+reviews (more than 24 hours before the deadline), and receiving review
+feedback promptly (a few hours)@~cite["politz-ct-iticse14"].  In another
+analysis of data on reviews of test suites in CaptainTeach, Politz et al.
+report that students were more likely to add missing tests for a feature after
+review if they reviewed or were reviewed by a student who had tested for that
+feature@~cite["politz-ct-icer14"].
 
 Informa's ``Solve and Evaluate'' approach integrates a simple form of peer
 review into a software-based class room response
