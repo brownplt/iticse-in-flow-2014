@@ -336,7 +336,7 @@ others can help students calibrate their abilities.  In particular, it
 should provide means for students to gain confidence and self-efficacy
 in their work, and in discussing the works of others.
 
-The extent to which @IFPR targets these goals depends largely on the
+The extent to which @IFPR targets these goals depends significantly on the
 artifacts students are asked to review, the criteria or rubrics
 through which they produce reviews, the means through which students
 are expected to respond to reviews, and the feedback students receive
@@ -653,7 +653,8 @@ choices in the artifacts to be reviewed:
 This approach is the most similar to existing peer grading approaches, where
 an entire deliverable is presented for review.  This mirrors common practice
 in courses where students do peer review of written work, which is
-well-studied in contexts other than computer science.  Little extra work in
+well-studied in contexts other than computer science@~cite["cho-sword"
+"topping-peer-review98"].  Little extra work in
 assignment design is required to have students review drafts, so this provides
 a low-friction way to adapt an existing assignment for @|IFPR|. One consideration is
 that plagiarism can be more of a problem in programming tasks that are the
@@ -965,14 +966,14 @@ these tensions.
 Rubric design must consider the rubrics' utility for
 the reviewer, the author, and the instructor seeking to
 understand how students are performing.  These goals are not
-necessarily at odds with one another, but are not necessarily
-achievable through the same means.
+necessarily at odds with one another, but may conflict incidentally when
+picking a particular configuration of rubrics.
 
 The working group identified several potential roles for rubrics:
 
 @itemlist[
 
-@item{@bold{Rubrics as training wheels}:
+@item{@bold{Rubrics as scaffolding for reviews}:
     Rubrics help students learn how to construct good reviews,
     especially for students new to the process.
     A beginning student who
@@ -998,7 +999,7 @@ The working group identified several potential roles for rubrics:
     }
 
 @item{@bold{Rubrics as an alibi}:
-    Rubrics can be great tools to establish alibis for reviewers
+    Rubrics can be used as alibis for reviewers
     who fear criticizing works of others, because of cultural 
     values, self-image, or other factors.  For example, being asked to point
     out one part which could be done better, or to identify errors
@@ -1248,18 +1249,18 @@ work@~cite["rg:auto-assess-rev-lsa"].
 @subsubsection["Using Meta-Reviews"]
 
 While one generally may prefer to eliminate low-quality contents in reviews, 
-in a pedagogical context also receiving some low-quality review contents can be beneficial. 
+in a pedagogical context receiving some low-quality review contents can be beneficial. 
 While in traditional educational settings students may trust all the feedback they receive from the instructor, 
 in IFPR students have to learn to assess the value of the reviews they receive. 
 They will have to learn to triage review comments into those they will act upon and those they will ignore. 
 Moreover, having a diversity of reviews, 
-maybe even contradicting reviews, 
+maybe even contradictory ones, 
 can be a starting point for valuable discussions in class.
-The act of triaging reviews themselves can train reviewers to not submit
-``brain dumps'' 
-of everything that might possibly be wrong, 
-but to provide valuable but concise reviews; the important metric is
-actionability, not volume of feedback.
+Having to wade through
+reviews can implicitly train reviewers that they, in turn, should not
+submit ``brain dumps'' of everything they think of, but instead
+provide valuable and concise reviews: that the important metric is
+actionability, not volume.
 
 Instructors may seek to use meta-reviews to monitor the IFPR process.
 Given the quicker turn-around times inherent to IFPR, such monitoring
@@ -1334,9 +1335,8 @@ design to ensure that students aren't incentivized towards detrimental
 behavior that lets them get a good grade at the cost of their (or others')
 education.
 
-One of the most immediate problems with IFPR is that students necessarily
-are shown one another's work while in the middle of an assignment:
-this happens by definition of IFPR.  Since the final submission
+One of the most immediate problems with IFPR is that, by definition, students
+are shown one another's work while in the middle of an assignment.  Since the final submission
 happens after students have been exposed to other students' work, the IFPR
 educator must determine how to account for this exposure when
 assigning a grade to the final submission.
@@ -1378,10 +1378,9 @@ code, this puts significantly more overhead into the reviewing process.
 
 Depending on the learning goals, it may be good for the reviewer to learn to
 incorporate ideas from different solutions into their own, since it requires a
-more abstract understanding of the techniques.  For earlier students, it may
-be enough of a challenge to recognize a good solution for the same problem and
-apply it to their own solution.  So depending on the use case, presenting a
-reviewer with solutions to the same or different problems may be effective.
+more abstract understanding of the techniques.  For novices, it may
+be enough of a challenge to recognize a good solution
+apply it to their own.
 }
 
 @item{@bold{Weighted Submission Grading}:
@@ -1432,7 +1431,10 @@ the participants), though we gave some attention to peer-assessment
 
 Kulkarni et al. have shown that, with careful rubric and mechanism
 design, peer
-assessment can produce similar results to TA grading in MOOCs@~cite["kwl...:peer-self-assess-mooc"].
+assessment can produce similar results to TA grading in
+MOOCs@~cite["kwl...:peer-self-assess-mooc"], and Reily et al. report on the
+accuracy of a combination of peer reviews at assessing programming assignments
+@~cite["reily-aggregate-reviews09"].
 Peer assessment changes the motivation structure of @|IFPR|.  For example, a
 student who is afraid of affecting their peers' grades with negative feedback
 may be more hesitant to give that feedback.  In contexts where students are
@@ -1471,7 +1473,7 @@ improvements that their reviews inspired in the work of others, but
 felt the nuances (submissions with little room for improvement,
 students who chose not to act on reviews) made this infeasible.
 
-@subsubsection{Interaction with Curve Grading}
+@subsubsection{Interaction with Relative and Curve Grading}
 
 The group noted that @IFPR (like other collaborative course structures)
 interacts poorly with grading strategies that evaluate students relative to
@@ -1492,7 +1494,7 @@ hoping to reduce others' scores to actively improve their own.}
 @item{@bold{Unmotivating}: Since the curve puts a limit on how much one can
 achieve, there is a disincentive to @emph{respond} to feedback or reflect
 (e.g. especially for high-achieving students, there's little reason to take
-feedback seriously)
+feedback seriously).
 }
 
 ]
@@ -1562,7 +1564,7 @@ field in the face of such preconceptions.
 In general the group considers anonymity to be a less jarring initial option
 for @IFPR that is more likely to protect students who are new to the peer-review 
 process.  However, sharing identity during review has significant
-upsides in the right contexts, and anonymity isn't without its own problems.
+benefits in the right contexts, and anonymity isn't without its own problems.
 
 @subsubsection{Downsides of Anonymity}
 
@@ -1570,7 +1572,9 @@ Anonymity can unwittingly enable a
 culture of ‘flaming’ and online harassment to develop among some
 students.  Therefore if reviews are to be done anonymously, policies and
 techniques for reporting abuse and inappropriate behavior should be in
-place.  In general, the issues with anonymity relate to the
+place -- for example, an anonymous ``Flag abuse'' button in a Web interface
+that allows students to bring offensive or inappropriate content to the
+attention of the staff.  In general, the issues with anonymity relate to the
 unsatisfactory aspects of peer assessment schemes in groupwork that ask group
 members to evaluate relative
 contributions@~cite["Clear:2010:TIM:1721933.1721938"].
@@ -1737,7 +1741,7 @@ produce and consume reviews is a useful skill in its own right,
 regardless of the profession or the context in which it is used.
 On this note, using reviews in classes with a diverse student
 population will have the additional benefit of producing more
-diverse reviews. In many cases, for example GUI mockups, this is
+diverse reviews. In many cases, for such as GUI mockups, this is
 highly desirable. Therefore, whether or not a student will face a
 review professionally is not necessary for @IFPR to be useful.
 
@@ -1764,7 +1768,7 @@ algorithms.
 
 Finally, as an important aside, reviewing might help with
 retention especially by removing the stigma of computer science
-being an anti-social, ``in-human'' subject.
+being an anti-social, ``inhuman'' subject.
 Humanities people generally read more than they write -- as
 reviewing is more like reading, it might feel more comfortable for
 them than programming.  This could be a component of a CS course in the style
@@ -1777,8 +1781,8 @@ and encouraged retention of female students@~cite["barker-cs-fine-arts"].
 
 One challenge of peer review in general lies in getting students to
 value the contributions of their peers.  Peer evaluations potentially contradict
-a model students have of the instructor as the trusted,
-knowledgeable authority.  In addition, many students aren't initially
+a model students have of the instructor as the sole
+authority.  In addition, many students aren't initially
 comfortable acting as reviewers (and giving criticism to one another!), so a desire for harmony may hinder
 their ability to produce effective reviews at first.  These two
 dimensions--taking the reviews seriously and taking act of reviewing
@@ -1819,15 +1823,18 @@ is wrong, or maybe your work isn't clear enough. }
 @item{How will you avoid making these mistakes again in the future?
 Look at the review, break out the actionable items, prioritize. }
 
-@item{Are you taking the review personall?  Remember that the review is about
+@item{Are you taking the review personally?  Remember that the review is about
 the work (and improving it!) not about you -- the ability to recognize your
-weaknesses and improve them is incredibly valuable. }
+weaknesses and improve them is incredibly valuable.  This is an attitude
+encouraged by @emph{egoless
+programming}@~cite["w:psychology-computer-programming"]. }
 
 ]
 
 If students remain skeptical of the value of peer-review, a mid-course
 survey on the value of reviewing might help convey the experiences of
-others.  This also sets a culture of peer-review as a collective effort.
+others.  This also fosters a culture of peer-review as a collective effort
+rather than one of criticism, judgment, or assessment.
 
 @subsection{Software and Analytics for @IFPR}
 
