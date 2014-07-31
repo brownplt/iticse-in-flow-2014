@@ -614,7 +614,7 @@ The source files of the case studies are available at
 
 @section[#:tag "s:process"]{The In-Flow Process}
 
-There are a series of steps that are a part of any in-flow assignment, as
+Several steps are part of any in-flow assignment, as
 illustrated in @(figure-ref "i:terminology").  This section lays out the
 process of submissions, reviews, and meta-reviews in more detail, along with
 the design decisions that the group identified for each activity.
@@ -648,7 +648,7 @@ choices in the artifacts to be reviewed:
 
 @itemlist[
 
-@item{Multiple iterations of the same specific deliverable:
+@item{@bold{Multiple iterations of the same specific deliverable}:
 This approach is the most similar to existing peer grading approaches, where
 an entire deliverable is presented for review.  This mirrors common practice
 in courses where students do peer review of written work, which is
@@ -657,16 +657,14 @@ assignment design is required to have students review drafts, so this provides
 a low-friction way to adapt an existing assignment for @|IFPR|. One consideration is
 that plagiarism can be more of a problem in programming tasks that are the
 same across students than in writing tasks where goals are less objective and
-more variance is expected.  Showing students entire solutions before the
-deadline exposes more opportunities for wholesale copying.  We discuss
+more variance is expected.  We discuss
 plagiarism (and mitigations) more in @secref["s:plagiarism"].
 
 Case studies @study-refs["clear-asgn-1" "hauswirth-asgn-2" "wrigstad-asgn-2"]
-all had submission steps that were prototypes or drafts of the final product
-(in addition to other steps).
+included submission steps that were prototypes or drafts of the final product.
 }
 
-@item{Multiple iterations of an evolving deliverable:
+@item{@bold{Multiple iterations of an evolving deliverable}:
 Some projects don't have drafts so much as an evolving set of specifications
 and deliverables.  For example, in a long-term software engineering project,
 the demands of the system may change over time as new requirements are
@@ -677,19 +675,20 @@ feedback can be helpful in this setting.
 
 Case studies @study-refs["fisler-asgn-1" "hauswirth-asgn-2"
 "krishnamurthi-asgn-2" "tirronen-asgn-1"] have elements of this approach,
-where the deliverable's nature changes more over time, and inresponse to
+where the deliverable's nature changes more over time, and in response to
 review.
 }
 
-@item{Separate deliverables that build on each other:
+@item{@bold{Separate deliverables that build on each other}:
 Often, programming assignments can be broken down into several
 subproblems, often expressed via decomposition into helper functions or
 separate classes.  If the assignment naturally lends itself to this kind of
-breakdown, a natural strategy for using in-flow review is to review the pieces
-individually, to catch mistakes in the components before composing them into a
-final solution.  This approach lends itself well to evaluation, as well,
+breakdown, a natural strategy for using in-flow review is to review individual pieces,
+to catch mistakes in the components before composing them into a
+final solution.  This approach lends itself well to evaluation as well,
 because the separate components can be assessed in isolation, and on the
-initial, pre-review submission as well as after.  Also, if the instructor
+initial, pre-review submission as well as after final submission.
+Also, if the instructor (rather than the students)
 decides on the decomposition, they have a lot of control over the path
 students take through the assignment, which can inform decisions about rubrics
 and feedback guidance.
@@ -698,9 +697,9 @@ Case studies @study-refs["clarke-asgn-1" "clarke-asgn-2" "krishnamurthi-asgn-1"
 "tirronen-asgn-1" "tirronen-asgn-2" "wrigstad-asgn-1"] use this approach.
 }
 
-@item{Incremental views of the same deliverable:
+@item{@bold{Incremental views of the same deliverable}:
 Programming problems can have a number of distinct artifacts associated with
-them other than just code:  They have documentation, tests, specifications,
+them beyond code:  They have documentation, tests, specifications,
 underlying data representations, measurable behavior like time and memory
 complexity, visualizations, and more.  Having students produce different views
 on the same problem, with review in between, is another way to break up the
@@ -726,14 +725,13 @@ industrial code review, for example, will be better served by using
 
 @subsection[#:tag "s:asgn-revs-timing"]{Assigning and Scheduling Reviews}
 
-The @IFPR process requires both scheduling time into assignments for
+The @IFPR process requires both building time into assignments for
 performing review, and assigning reviewers to artifacts for review.
 
 @subsubsection[#:tag "s:scheduling"]{Scheduling Decisions}
 
 The major scheduling decision in @IFPR is whether reviewing happens
 @emph{synchronously} or @emph{asynchronously}.
-
 Synchronous reviewing occurs when all students submit work for review
 (and reviewing commences) at the same time.  Asynchronous reviewing
 occurs when students submit work for review when it is ready, and
@@ -742,7 +740,7 @@ time.  The two scheduling modes have several tradeoffs:
 
 @itemlist[
 
-@item{If all students are forced to submit before review starts, there is the
+@item{If all students are forced to submit before reviewing starts, there is the
 full pool of reviews to draw from in any review assignment strategy
 (@secref["s:assigning"]).  In the asynchronous setting, students can only
 review submissions that occurred before theirs, which can skew the reviewing
@@ -755,19 +753,19 @@ before the deadline.}
 
 @item{In the asynchronous setting, students who want to work at their own pace
 can, and the process doesn't stop them from continuing with their work.  With
-intermediate deadlines, a student cannot do the work on their own schedule.}
+intermediate deadlines, a student cannot do the work on her own schedule.}
 
 @item{If reviews are available and presented to students 
 after they submit, the problem is more likely to be fresh in their
 mind.  In the synchronous setting, there can be a longer gap between
 submission and review.  It's not clear if one is particularly better than the
-other -- coming back to a problem after not thinking about it for a while can
+other: coming back to a problem after not thinking about it for a while can
 be beneficial, but it also takes time to recall the problem and re-load it
 into working memory in order to perform review.}
 
 @item{Synchronous reviewing requires extra scheduling overhead that is likely
 to lengthen assignments for purely logistic reasons.  Asynchronous reviewing
-doesn't require extra scheduling work in the assignment, it just changes the
+doesn't require extra scheduling in the assignment, it just changes the
 kind of work students have to do.}
 
 ]
