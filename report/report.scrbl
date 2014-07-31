@@ -2323,10 +2323,8 @@ the same goals.
 Others have used strategies for peer review that fall under the umbrella of
 in-flow peer review, even though they did not go by that name.
 
-@fill{Re-UTF encode Sondergaard}
-
 For example, in the implementation of a multi-stage compiler, students in
-Sondergaard's course review one another's work between stages
+Søndergaard's course review one another's work between stages
 @~cite{sondergaard-peer-review-compilers09}.  The evaluation in that work was
 only in the form of surveys after the assignment, but shows generally positive
 attitudes from students indicating that they felt the review had helped.
@@ -2387,8 +2385,6 @@ Informa is an instance of in-flow peer review.
 
 @subsection{Actionable Peer Review}
 
-@fill{re-UTF Aropa}
-
 Some other uses of peer review on large projects are related to in-flow peer
 review because they allow students to improve their work in response to
 review.  These uses don't necessarily stage assignments into reviewable
@@ -2396,7 +2392,7 @@ pieces, instead performing review on entire intermediate artifacts.  For
 example, Clark has students exercise the functionality of one anothers'
 projects, and lets groups improve their work based on the feedback their
 classmates give them@~cite["clark-peer-testing-se-04"].  Similarly, Wang, et
-al., Zeller, Papadopoulos et al., and the Aropa system use assignment structures that allow
+al., Zeller, Papadopoulos et al., and the Aropä system use assignment structures that allow
 students to update revisions of entire submissions that were reviewed by peers
 @~cite["wang-pcr" "zeller-read-review-00" "hamer-aropa"
 "Papadopoulos:2012:IPR:2215076.2215100"].  Other studies have
