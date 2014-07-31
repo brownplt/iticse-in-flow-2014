@@ -368,7 +368,8 @@ tasks (programming and reviewing); depending on the timing of
 reviewing, this could affect students' cognitive load.  Careful design
 of exercises is important: allowing students to share parts of
 their solutions through reviewing can, for example, affect whether
-students stay in their zones of proximal development [CITE].
+students stay in their zones of proximal
+development@~cite["proximal-development"].
 
 @subsection{Instructor Goals}
 
@@ -417,7 +418,7 @@ peer review.
 @section{Examples of @IFPR}
 
 @(figure* "i:case-studies"
-          "Summary of case studies: first-year, second-year and non-majors courses"
+          "Summary of case studies: first-year, second-year and non-majors courses ([*] indicates use in an actual course)"
  @tabular[
   #:style (style #f (list (attributes '((style . "border-collapse: collapse;")))))
   #:column-properties (list (list (attributes '((style . "border: 1px solid black;")))))
@@ -484,7 +485,7 @@ peer review.
 ])
 
 @(figure* "i:case-studies-cont"
-          "Summary of case studies: upper-level undergraduate and graduate courses"
+          "Summary of case studies: upper-level undergraduate and graduate courses ([*] indicates use in an actual course)"
  @tabular[
   #:style (style #f (list (attributes '((style . "border-collapse: collapse;")))))
   #:column-properties (list (list (attributes '((style . "border: 1px solid black;")))))
@@ -930,7 +931,8 @@ to consider in assigning reviews:
 
 Other strategies for assigning reviewers to submissions exist.  We have 
 assumed that the reviewers are drawn from within the class
-(which may not be the case in a peer-mentoring situation [CITE]).  In a
+(which may not be the case in a peer-mentoring
+situation@~cite["mk:2002:peer-mentor"]).  In a
 class where there are communication or language barriers between students, it
 may also make sense to assign reviewers so that communication is maximized or
 the challenge of communicating in another language is maximized.  It may also
@@ -2066,24 +2068,21 @@ to review it.''
 
 @subsection{Intrinsic vs. Extrinsic Motivation}
 
-The group frequently considered arguments from Kohn's ``Punished by
-Rewards'' [CITE], which argues that praise and rewards (such as grades)
-are ineffective and detrimental motivators.  Reasons for this include
+A theme in this report is the tradeoffs between intrinsic and extrinsic
+motivation in particular assignment designs.  The group frequently considered
+arguments from Kohn's ``Punished by Rewards''@~cite["punished-by-rewards"],
+which argues that praise and rewards (such as grades) are ineffective and even
+demotivating.  Kohn claims that rewards effectively punish students who aren't
+rewarded, discourages risk-taking in students, devalues the reasoning behind a
+low or high grade since the grade is emphasized, and can create a bad
+relationship between teacher and student.
 
-1) rewards punish
-2) rewards rupture relationships
-3) rewards ignore reasons
-4) rewards discourage risk-taking
-5) rewards reduce intrinsic motivation.
-
-Proposed solutions generally have three components: 
-1) collaboration - enable the exchange of talent and resources, foster a sense of belonging
-2) content - let persons do something that is ``meaningful'' to them
-3) choice - don't try to ``manipulate'' the person
-
-In the context of @IFPR, peer reviews can either serve as ``rewards''
-(summative assessment in the form of scores/grades) or as constructive
-feedback (formative assessment). [FILL]
+One of the goals of @IFPR is to intrinsically motivate the review process,
+because it allows students to improve their own work, while the work is still
+a part of their assignment.  Regardless of the actual grading strategy used
+(and which happens after students' receive feedback), students get feedback
+that is separate from the summative assessment of their coursework to apply
+and improve their submission.
 
 @subsection{Metacognitive Reflection}
 
@@ -2141,22 +2140,7 @@ flavors of feedback; an example in the paper is that a student acting as the
 ```Skeptic' might [be asked to] say `I disagree' or `Prove it''' to another
 student's submission.
 
-In this report, we have focused on @IFPR for students that are mainly older
-than those in these studies, and this younger group is often addressed more
-directly by studies about explicit metacognition review prompts.  Other
-studies in higher education address discussion forums, journals and
-portfolios, and more to encourage self-reflection, but these ideas are less
-directly applicable to in-flow peer review.
-
-[FILL] discussion forums worth talking about?
-Discussion here needs to cover things like:
-@itemlist[
-@item{What kinds of questions encourage reflection?}
-]
-
-@subsection{Learning By Example}
-
-@relworkfill{Summarize related work on learning by example}
+@subsection{Learning From Examples}
 
 In in-flow peer review, students have the opportunity to take what they learn
 from examples of others' work and apply it to their own.
@@ -2222,7 +2206,8 @@ short presentations, each of which focuses on a particular core
 concept and is tested by presenting students a conceptual question,
 which the students first solve individually and then discuss in
 groups. The PI pedagogies link with the concepts of blended learning
-and flipped classroom [Ville 4] in that PI requires students to study
+and flipped classroom@~cite["bv:2013:flipped-classroom"] in that PI requires
+students to study
 preparatory material before attending the class.
 
 Related to our undertaking, the most interesting component of PI is the
@@ -2251,14 +2236,15 @@ students and the goals of the particular course.
 
 In addition, for in-flow assignments centered around programming, one goal of
 peer-review is to help students reflect on their own code structure.
-There is a rich literature on program comprehension (particularly
-contrasting experts and novices), but much of that focuses on
-understanding @italic{behavior} of a new program [CITE].  In the in-flow
+There is a rich literature on program comprehension (including contrasting
+experts and novices), but much of that focuses on
+understanding @italic{behavior} of a new
+program@~cite["Schulte:2010:IPC:1971681.1971687" "sk:1984:empirical-plans"
+"fws:1993:mental-representations"].  In the in-flow
 peer-review context, students already know the problem and (roughly)
 what the program is supposed to do.  Reading others' code therefore
 has different goals: notably, to understand the structure that someone
-else brought to the problem and to contrast that with one's own.  In addition,
-rather than trying to construct a meaning for a new program from scratch,
+else brought to the problem and to contrast that with one's own. As a result, 
 students face the less burdensome task of asking if the program
 @emph{matches} an existing specification.
 
@@ -2268,23 +2254,10 @@ behavior@~cite["etelapelto-metacognition-comprehension"], so the metacognitive
 context of review may put students in the right frame of mind to understand
 programs in the first place.  Other work on program comprehenseion suggests
 that the process has a lot to do with understanding the high-level plan of a
-program [CITE].  Since in the in-flow context students have at least
+program@~cite["sk:1984:empirical-plans"].  Since in the in-flow context students have at least
 constructed @emph{a} plan of their own for the same or a similar problem, they
 may at least be able to determine if the solution they are viewing matches
 their plan, or is doing something different.
-
-The degree to which IFPR helps with 
-
-@relworkfill{Discuss related work around comprehending code
-organization}
-
-Related work discussion should address:
-@itemlist[
-@item{How do people uncover the structure of a program?}
-]
-
-To read:
-
 
 The WG on program comprehension@~cite["Schulte:2010:IPC:1971681.1971687"]
 
@@ -2296,34 +2269,42 @@ to chunk, but chunking isn't necessarily needed on small programs.)
 
 @subsection{Increasing Socialization in Programming-Oriented Courses}
 
-@relworkfill{Work on creating socialization}
+@IFPR has potential to foster a collaborative and social atmosphere in
+programming assignments.  We discussed some of the motivations for a more
+social CS course when discussing @IFPR for non-majors
+(@secref["s:nonmajors"]).  There are other approaches to meeting these goals
+that @IFPR can learn from.
 
-@itemlist[
-@item{Computer-mediated communication in collaborative educational settings (see ITiCSE WG 1997)}
-@item{Peer mentoring (across different class groups, but still the goal is socializing)}
-]
-
-Barker et al. describe the outcome of running an IT course more like a
-fine arts course than a traditional engineering course@~cite["barker-fine-arts-approach-cs05"]. This included
-projects that were more meaningful, public critique of results, and
-routing collaboration.  This approach created a classroom culture
-where learning is a social and community process, rather than
-individualised, and the result was a greater retention of female
-students than the tranditional engineering teaching approach.
+Garvin-Doxas and Barker emphasize the importance of the classroom climate,
+emphasizing that courses that reward ``hero'' programmers and individual
+accomplishment give rise to a defensive atmosphere that can be
+counterproductive to learning for students with less prior
+ability@~cite["Garvin-Doxas:2004:CCS:1060071.1060073"].  In later work, Barker and
+Garvin-Doxas describe the outcome of running an IT course more like a fine
+arts course than a traditional engineering
+course@~cite["barker-fine-arts-approach-cs05"]. This included projects that
+were more meaningful, public critique of results, and routing collaboration.
+This approach created a classroom culture where learning is a social and
+community process, rather than isolated, and the result was a greater
+retention of female students than the traditional engineering teaching
+approach.
 
 The technique from Barker et al. most relevant for in-flow peer review, though
 not completely the same, is the approach to knowledge sharing during lab work.
 Students actively sort help from any student, for example, by yelling
 questions out, resulting in a fluid exchange of ideas and techniques. Even
 though the projects considered in these labs were run in an open,
-collaborative setting, cheating was avoiding by using individualised
+collaborative setting, cheating was avoiding by using individualized
 assignments.
 
-To read:
-
-Specifically about communication and the social climate in CS@~cite["Garvin-Doxas:2004:CCS:1060071.1060073"]
-
-Peer mentoring: A Mentor Program in CS1.  @url{http://dl.acm.org/citation.cfm?id=544420}
+Another working group discussed design decisions in computer-mediated
+collaborative (CMC) educational
+settings@~cite["wpacdklmssw:1997:computer-mediated-wg"].  That report
+emphasizes goals that CMC can help reach, including encouraging peer
+review, having teamwork experiences, developing self-confidence, and improving
+communication skills.  A course using @IFPR that performs review through an
+online tool is certainly an instance of a CMC setting, and addresses many of
+the same goals.
 
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
