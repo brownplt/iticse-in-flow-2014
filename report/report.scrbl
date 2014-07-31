@@ -362,6 +362,14 @@ peer-review in general) are more focused on the reviewer than the
 reviewee.  Nonetheless, many of the theoretical underpinnings of CSPs
 also apply to @IFPR, and thus affect the ideas in this report.
 
+Of course, IFPR also has the potential to interfere with student
+learning.  Reviewing asks students to switch between very different
+tasks (programming and reviewing); depending on the timing of
+reviewing, this could affect students' cognitive load.  Careful design
+of exercises is important: allowing students to share parts of
+their solutions through reviewing can, for example, affect whether
+students stay in their zones of proximal development [CITE].
+
 @subsection{Instructor Goals}
 
 From an instructor's perspective, @IFPR can target several
@@ -1497,21 +1505,22 @@ that context.
 @subsection[#:tag "s:anon"]{Anonymity}
 
 Several issues relating to anonymity and privacy come to the
-fore in peer-review settings.  Developing a culture of positive and
+fore with peer review.  Developing a culture of positive and
 constructive critique, where students can both give and take feedback
-positively can take time and require a degree of practice.  While the broader
+appropriately, can take time and require a degree of practice.  While the broader
 aim may be to develop a positive, supportive and professional approach to peer
 review, there may be a need to provide some initial shielding from scrutiny
 for students who are new to the institution or the practice.  
 
 @subsubsection{Types of Anonymity}
 
-Varying degrees of anonymity may be adopted.  For instance, the
-reviews could be anonymous to either students or faculty (or alternatively to
-both, or neither). Each of the review authors and work authors/review
-recipients could be anonymous.  
+Each of the IFPR roles---authors and reviewers---can be anonymous to
+either or both of other students and faculty.  Reasonable arguments
+can be made for each configuration, and different configurations have
+been used in practice.
 
-For example, in PeerWise@~cite["denny-peerwise08"], student submissions are
+In PeerWise@~cite["denny-peerwise08"], a system to which students
+submit proposed study questions on course material, student submissions are
 ranked for quality and correctness and the content of the contributed
 questions is public.  In that case, not revealing contributor identities to
 peers is important: this creates a degree of safety for the novice
@@ -1537,8 +1546,8 @@ course contexts the assignments could be administered either way.
 
 @subsubsection{Upsides of Anonymity}
 
-At the introductory level students suffer from both confidence and maturity
-problems, making anonymous review an attractive option, at least initially.
+At the introductory level, students suffer from both confidence and maturity
+problems, making anonymous review an attractive option (at least initially).
 Students will not face personal embarrassment if others see work that they
 are not comfortable showing publicly, and anonymity gives reviewers the
 freedom to be more candid.
@@ -1550,14 +1559,14 @@ comes from a supposedly smart student.  Anonymity helps level the playing
 field in the face of such preconceptions.
 
 In general the group considers anonymity to be a less jarring initial option
-for @IFPR that is more likely to protect students who are new to the peer
-review process.  However, sharing identity during review has significant
+for @IFPR that is more likely to protect students who are new to the peer-review 
+process.  However, sharing identity during review has significant
 upsides in the right contexts, and anonymity isn't without its own problems.
 
 @subsubsection{Downsides of Anonymity}
 
-One of the downsides of anonymity is the scope for unwittingly enabling a
-culture of ‘flaming’ and online harassment to develop among some of the
+Anonymity can unwittingly enable a
+culture of ‘flaming’ and online harassment to develop among some
 students.  Therefore if reviews are to be done anonymously, policies and
 techniques for reporting abuse and inappropriate behavior should be in
 place.  In general, the issues with anonymity relate to the
@@ -1622,15 +1631,14 @@ respect for one another.
 
 
 Peer review can sometimes usefully be complemented with expert review.
-However there are several arguments for and against combining the two.
+There are several arguments for and against combining the two.
 Potential benefits of expert review include: moderating conflicts between
 reviewers and reviewees; facilitating contribution and collaboration;
 overcoming cultural adjustment problems; and providing exemplars of good work
 and good reviewing.
 
 @itemlist[
-@item{@bold{Experts as Moderators and Facilitators}
-
+@item{@bold{Experts as Moderators and Facilitators}:
 Experts can act as moderators to make sure that issues and
 conflicts that arise, whether in a live situation or asynchronously, can be dealt with by an
 authority figure.  As moderators, experts do not take
@@ -1646,7 +1654,7 @@ students to contribute, and push the idea of review as a
 learning process, in addition to acting as figures of objective authority on
 grading.
 
-Expert reviewers can help address the cultural adjustment issues where
+Expert reviewers can help address cultural issues where
 students devalue the opinions of their peers and overvalue the
 opinions of instructors.  They can also offset deficiencies in the
 knowledge and insight of students who are themselves adjusting to the
@@ -1654,8 +1662,7 @@ process of giving informed critiques, and ensure that some
 knowledgeable, high quality feedback is received.
 }
 
-@item{@bold{Perception and Quality of Expert Review}
-
+@item{@bold{Perception and Quality of Expert Review}:
 Expert review (especially instructor or TA provided)
 may have unwarranted special status in students' minds: feedback from
 experts may be interpreted as ``more relevant for my grade'', and hence more
@@ -1680,8 +1687,7 @@ It certainly would be interesting to see whether the same results
 apply to programming assignments.
 }
 
-@item{@bold{Expert-provided Exemplars and Models}
-
+@item{@bold{Expert-provided Exemplars and Models}:
 In IFPR the goal is to avoid attaching the idea of constructive review
 to an expert being present. However, an expert can provide models for
 review that students can follow. So one strategy would have experts
@@ -1706,7 +1712,7 @@ to important aspects of the review itself.
 
 
 
-@subsection[#:tag "s:nonmajors"]{Does it make sense for non-majors?}
+@subsection[#:tag "s:nonmajors"]{Does IFPR Make Sense for Non-Majors?}
 
 When instructing computer science majors, reviews of code can be
 motivated by their resemblance to code reviews and similar
@@ -1766,41 +1772,11 @@ and encouraged retention of female students@~cite["barker-cs-fine-arts"].
 
 
 
-@subsection{Costs and Mitigations}
-
-IFPR can impose extra costs on both the teaching staff and the students taking
-part in the process.  Instructors must appraise whether these costs
-are commensurate with the learning benefits.  On the staff side,
-reviewing requires management of the process, adjusting assignment
-schedules to allow for reviewing, and overhead of assessing reviews.
-Software tools can automate much of the process management.
-Instructors may choose to not provide feedback on reviews.  There are
-also situations in which peer review reduces staff workload, by giving
-students an alternative channel for feedback on their work.
-
-On the student side, reviewing can increase cognitive load by forcing
-students to switch between very different tasks (programming and
-reviewing).  Tool support that integrates reviewing with the normal
-course IDE can mitigate some context switching.  Careful design of
-exercises is also important: allowing students to share parts of their
-solutions through reviewing can, for example, affect whether students
-stay in their zones of proximal development.
-
-In general, software tools for IFPR can play a significant role in
-both mitigating costs and adding value to the process.  Software
-systems could (a) give basic feedback on review quality by
-comparing reviews between students@~cite["cho-sword"] or
-through use of machine learning methods@~cite["rg:auto-assess-rev-lsa"], (b)
-aggregate student responses for discussion@~cite["hauswirth-informa"], or (c)
-maximize variety of review tasks by using static analysis tools to appraise
-source code similarity.  As IFPR matures, we would hope to see
-significant advances in the software to support the process.
-
 @subsection{Bringing Students Along}
 
 One challenge of peer review in general lies in getting students to
 value the contributions of their peers.  Peer evaluations potentially contradict
-the model students are used to of the instructor as the trusted,
+a model students have of the instructor as the trusted,
 knowledgeable authority.  In addition, many students aren't initially
 comfortable acting as reviewers (and giving criticism to one another!), so a desire for harmony may hinder
 their ability to produce effective reviews at first.  These two
@@ -1827,7 +1803,7 @@ from looking at others' solutions?''  Hopefully, such activities on a
 few early assignments would help students develop self-reflection
 skills. 
  
-Specific suggestions for students include:
+Specific advice one could give students includes:
 
 @itemlist[
 @item{When you receive criticism, go back to other reviews -- are you
@@ -1854,44 +1830,55 @@ others.  This also sets a culture of peer-review as a collective effort.
 
 @subsection{Software and Analytics for @IFPR}
 
-The large number of reviews produced in @IFPR, especially in large classes,
-can make it challenging for an instructor to monitor students' progress and to
-support their learning.  Instructors benefit from knowing whether there are
-students who consistently write weak or strong reviews, superficial or sloppy
-reviews, or misleading or overly generous reviews.  They also benefit from
-realizing misconceptions that reoccur across many reviewers, which may be
-rectified with further explanations in class.
+Good software tools are key to making IFPR manageable and informative
+for both students and course staff.  For students, tools that
+integrate reviewing with the IDE used for programming assignments, for
+example, mitigates some of the context switching that the process
+otherwise requires.  For staff, good tools not only manage the
+logistics of the process, but can also be instrumental in producing
+meta-reviews and in monitoring the effectiveness of IFPR.
 
-To achieve these goals, 
-instructors can benefit from organizing submissions or reviews in various ways. 
-One such way is to allow instructors to associate arbitrary tags with each submission or review, 
+Software
+systems could (a) give basic feedback on review quality by
+comparing reviews between students@~cite["cho-sword"] or
+through use of machine learning methods@~cite["rg:auto-assess-rev-lsa"], (b)
+aggregate student responses for discussion@~cite["hauswirth-informa"],
+(c) flag students who consistently write certain kinds of reviews
+(weak, strong, superficial, etc), or (d)
+maximize variety of review tasks by using static analysis tools to appraise
+source code similarity.  Some of these features are more sophisticated
+than those included in current peer-review platforms.
+
+Features for organizing submissions or reviews in various ways could
+help instructors run effective IFPR processes.  
+Software could allow instructors to associate arbitrary tags with each submission or review, 
 such as ``sloppy'' or ``discuss in class'', ``ignore'', ``insufficient test
 coverage'', or ``misunderstood requirement B''. 
-Instructors can then search or group submissions and reviews by tags, 
+Instructors could then search or group submissions and reviews by tags, 
 or use tags as categories when producing analytical visualizations. 
-Tags can be visible only to instructors, or instructors can make tags visible to authors or reviewers. 
-Another way to organize submissions or reviews is to cluster them automatically by various criteria, 
+Tags could be visible only to instructors, or instructors could make tags visible to authors or reviewers. 
+Another way to organize submissions or reviews would be to cluster them automatically by various criteria, 
 similar to Expertiza's automatic meta-reviewing
 categories@~cite["rg:auto-assess-rev-lsa"]. 
 Example criteria include the length of the reviews or their tone
 (``positive'', ``neutral'', or ``negative''), 
 which may be detectable automatically using natural language processing techniques. 
 Based on this automatic and manual organization, 
-instructors can identify recurring misconceptions, 
-or they can select representative exemplars of reviews to be presented in class. 
+instructors could identify recurring misconceptions, 
+or they could select representative exemplars of reviews to be presented in class. 
 Finally, the information in reviews (e.g., feedback in each rubric, or scores on Likert scales) 
-can be used to organize submissions, 
-and information in meta-reviews can be used to organize reviews.
+could be used to organize submissions, 
+and information in meta-reviews could be used to organize reviews.
 
-Instructors as well as students can benefit from analytic visualizations or dashboards. 
-Visualizations presenting activity over time can help to understand the timeliness of reviews 
+Instructors as well as students could benefit from analytic visualizations or dashboards. 
+Visualizations presenting activity over time could help to understand the timeliness of reviews 
 or a student's progress over time in terms of the quality of their submissions or their reviews. 
 Visualizations of reviewer-author relationships, 
-which can include various historic aspects, 
+which could include various historic aspects, 
 such as the quality of their past submissions or the usefulness of their past reviews, 
-can help with reviewer assignment.  
+could help with reviewer assignment.  
 Visualizations superimposing reviews on top of submissions or meta-reviews on top of reviews 
-can provide a compact picture of a certain artifact to authors, reviewers, or instructors.
+could provide a compact picture of a certain artifact to authors, reviewers, or instructors.
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
