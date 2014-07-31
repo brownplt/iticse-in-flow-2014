@@ -617,7 +617,7 @@ The source files of the case studies are available at
 and there are links for each in @figure-ref["i:case-study-links"].
 
 @(figure "i:case-study-links"
-         "Links to the full descriptions of case studies on the Web in (see
+         "Links to the full descriptions of case studies on the Web (see
          https://github.com/brownplt/iticse-in-flow-2014/tree/master/in-flow-assignments)."
    @tabular[
       #:style (style #f (list (attributes '((style . "border-collapse: collapse;")))))
@@ -2107,8 +2107,8 @@ to review it.''
 
 @subsection{Intrinsic vs. Extrinsic Motivation}
 
-A theme in this report is the tradeoffs between intrinsic and extrinsic
-motivation in particular assignment designs.  The group frequently considered
+Ways in which particular assignment designs tradeoff between intrinsic
+and extrinsic motivation have been a theme in this report.  The group frequently considered
 arguments from Kohn's ``Punished by Rewards''@~cite["punished-by-rewards"],
 which argues that praise and rewards (such as grades) are ineffective and even
 demotivating.  Kohn claims that rewards effectively punish students who aren't
@@ -2116,9 +2116,10 @@ rewarded, discourages risk-taking in students, devalues the reasoning behind a
 low or high grade since the grade is emphasized, and can create a bad
 relationship between teacher and student.
 
-One of the goals of @IFPR is to intrinsically motivate the review process,
-because it allows students to improve their own work, while the work is still
-a part of their assignment.  Regardless of the actual grading strategy used
+One of the goals of @IFPR is to intrinsically motivate the review process
+by allowing students to improve their own work while an assignment is
+in progress.
+Regardless of the actual grading strategy used
 (and which happens after students' receive feedback), students get feedback
 that is separate from the summative assessment of their coursework to apply
 and improve their submission.
