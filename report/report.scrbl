@@ -46,7 +46,7 @@ different potential solutions and improves their ability to critique
 work. @emph{In-flow} peer-review (IFPR) is peer-review done while an
 assignment is in progress. Peer-review done during this time is likely
 to result in greater motivation for both reviewer and
-reviewee. This working-group report summarizes @IFPR,
+reviewee. This working-group report summarizes @IFPR
 and discusses numerous dimensions of the process, each of which
 alleviates some problems while raising associated concerns.}
 
@@ -940,9 +940,10 @@ instructor and TA participation in reviews more in @secref["s:experts"].
 
 @subsection[#:tag "s:reviews"]{Performing Review}
 
-There are many options for the form and creation of a peer review.  Much of
-the discussion focused on @emph{review rubrics}, which can be used to guide
-feedback to specific features of the assignment and focus students.  We also
+Much of our discussion of how to conduct reviewing focused on 
+@emph{review rubrics}, which can be used to focus student 
+feedback on specific features of the assignment.  We considered
+whether information beyond submissions would help reviewers.  We also
 discussed several forms that reviews could take, noting that technology often
 guides programming courses towards text-based feedback.
 
@@ -950,8 +951,8 @@ guides programming courses towards text-based feedback.
 
 Rubrics serve two important goals in any form of peer review: they
 communicate expectations to reviewers (serving as a form of
-scaffolding), and they help ensure that all authors receive a certain
-level of quality in their feedback.  While these goals suggest highly-structured
+scaffolding), and they help foster a baseline of quality in all reviews.
+While these goals suggest highly-structured
 rubrics, overly structured rubrics can limit reviewers' and authors'
 attention to the questions on the rubric.  They can also provide too
 much scaffolding, especially once students need to practice evaluating
@@ -970,8 +971,9 @@ The working group identified several potential roles for rubrics:
 @itemlist[
 
 @item{@bold{Rubrics as training wheels}:
-    Rubrics can be great as training wheels, especially early in 
-    the student's career as a reviewer.  A beginning student who
+    Rubrics help students learn how to construct good reviews,
+    especially for students new to the process.
+    A beginning student who
     is learning to both read and write code might not know where
     to start in critiquing a program.  Prompting with specific questions
     helps in situations where students don't yet know how to structure a review
@@ -980,24 +982,24 @@ The working group identified several potential roles for rubrics:
 
 @item{@bold{Rubrics for focus}:
     A rubric can focus students'
-    attention on different areas depending on the goals of an assignment and
-    the reviews for it.  For example, it could prompt 
+    attention on different questions that reflect the goals of an assignment.
+    For example, it could prompt 
     code-specific questions (``Is this code well-documented?'', ``Are
-    all the type annotations correct?'', etc.), to problem-specific questions
+    all the type annotations correct?'', etc.), problem-specific questions
     (``Is there a test for a list with duplicate elements?'', ``Does this
-    program meet the problem specification for input X?'', etc.), to prompts
+    program meet the problem specification for input X?'', etc.), or questions
     that encourage actionable feedback (``Provide a test case that this
     solution does not pass.'').
     Students may also optionally ask for reviews with a certain 
     focus when offering submissions for review. This might help
-    to ensure relevance of the review for the author. 
+    ensure relevance of the review for the author. 
     }
 
 @item{@bold{Rubrics as an alibi}:
     Rubrics can be great tools to establish alibis for reviewers
     who fear criticizing works of others, because of cultural 
     values, self-image, or other factors.  For example, being asked to point
-    out one part which could be done better, or identify errors
+    out one part which could be done better, or to identify errors
     will shift the blame from the reviewer who found the bugs
     to the instructor who provided the rubric. 
     }
@@ -1036,10 +1038,10 @@ The working group identified several potential roles for rubrics:
 
 Evolving rubrics across a course or curriculum may offer a good
 balance between initial scaffolding (for reviewers and authors) and
-eventual opportunities for both groups to demonstrate critical
-thinking skills.  One model would evolve rubrics from having fairly
+eventual opportunities for both groups to demonstrate critical-thinking 
+skills.  One model would evolve rubrics from having fairly
 targeted questions to asking broad questions: this model gradually
-removes scaffolding.  Another form of evolution starts with concrete
+removes scaffolding.  Another model starts with concrete
 questions (such as ``do these tests look correct'') and progresses to
 questions on more abstract issues (such as ``do these tests cover the space of
 possible inputs'') as students master more of the
@@ -1059,37 +1061,45 @@ the review is used to assess the reviewer's understanding of a work,
 or when too much information in a review might distract the author
 from the critical information in a review.
 
-
-Reviews contain information that can be used to learn about students'
-understanding and evaluate student work.
-Detailed and fixed rubrics can facilitate data mining and comparison between
-reviews. For
-automatic grading of reviews, for instance, fixed structures are clearly 
-helpful. Inexperienced students may also benefit from structure when
-aggregating the feedback of multiple reviews, for example,
+Structure enable certain comparisons between reviews.  
+Inexperienced students may benefit from structure when
+aggregating the feedback of multiple reviews: for example, structure
+could help students 
 understanding that two or more reviews give
 contradictory advice. Two
 students discussing reviews (that they are making or have
 received) may be similarly helped by an imposed structure.
-Statistics or live dashboard reporting in a tool that collects and distributes
-reviews is also enabled by more structure.
+Certain kinds of structure can enable automated analysis of reviews,
+which can provide useful diagnostics to both instructors and students.
+Similarly, software tools have the potential to provide richer
+dashboards when review comments are structured.
 
-The ability to lift reviews (or rubrics, if these can be
-influenced by students) to the level of the class is another good
-example of rubrics for communication. Students or experts might
+Discussing reviews and rubrics with the entire class is another good
+example of using rubrics for communication. Students or experts might
 see common problems which should be communicated to all, either by
 sharing sufficiently general comments with the entire class or
 even adding an entry to a rubric which brings attention to the issue
 in subsequent reviews.
 
-Rubrics provide starting points for discussing reviews in class,
-and for helping students to talk about reviews as noted above. On
-the downside, rubrics can cause students to focus too narrowly on only the
-questions the review asks. Again, the structure
-imposed should be guided by a close inspection of the goals of the
-particular review: who is it for, what is the intended outcome, and how the
-review's contents will be used.
+@subsubsection{Information Provided to Reviewers}
 
+In some cases, reviewers can be provided with information beyond the
+submission.  When submissions are source code, for example, reviewers
+could be given both the submission and information about how the
+submission held up against an instructor-defined test suite (whether
+or not that information is available to the submission's author).  On
+the one hand, information such as a test-suite score may reduce the
+time burden of reviewing; on the other hand, it 
+could have the downside of reviewers only focusing on the issues that
+auto-grading revealed, masking situations in which the auto-grading missed
+something important (Politz et al. observed cases in which reviewers 
+were more negative than grades from an instructor-provided test suite
+[CITE ICER]).  
+
+Additional information for reviewers provides an implicit rubric,
+subject to the same tradeoffs we discussed regarding rubric structure.
+Instructors should bear this in mind when considering whether
+additional information is actually helpful to the overall process.
 
 @subsubsection{Forms of Reviews}
 
@@ -1105,7 +1115,7 @@ revision. These conversations have more more structure than untargeted
 comments about the entire submission.
 
 In some situations, non-text artifacts can be effective, just as not all
-submissions need be code.  Code architecture diagrams can be critiqued and
+submissions need to be code.  Code architecture diagrams can be critiqued and
 marked up with freehand annotations, pictures of the state of running program
 can be drawn, and even code patches can be an effective way to convey
 comments.  This is one case in which the default technology that authors of
@@ -1120,7 +1130,7 @@ students highlight portions of code that exhibited certain behavior or had a
 certain feature.  Both of these interfaces go beyond simple text or scalar
 feedback, and can be used to provide richer information in reviews.
 
-Face-to-face reviews are another form of review, whether solely between
+Face-to-face reviews are another form, whether solely between
 students or moderated by TAs or instructors.  Moderation can make arguments
 more constructive, guide discussion towards relevant points, and make a
 face-to-face meeting less intimidating.  Moderated review moves the process
@@ -1131,14 +1141,6 @@ Hundhausen, Agrawal, and Agarwal discuss this kind of in-person review, dubbed
 pedagogical code review, a small group led by a moderator use a set of
 predefined coding practice guidelines to guide a group review of student
 programs.
-
-Reviews may also be augmented with information beyond the original submission.
-For example, if an automatic grade is available, the reviewer could be shown
-(some of) the output of that process in order to focus and guide their
-feedback.  This could target the review at particular known issues, but it
-could have the downside of reviewers only focusing on the issues that
-auto-grading revealed, masking situations in which the auto-grading missed
-something important.
 
 
 @subsection[#:tag "s:meta-reviewing"]{Review Feedback (Meta-Reviewing)}
