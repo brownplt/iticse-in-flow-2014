@@ -2,14 +2,8 @@
 
 @;;; TODOs ;;;;;;
 @; pull in case studies as subsections of appendix
-@; fill in remaining related work
-@; fix quotes (replace " with `` and '')
 @; normalize bib files: author naming convention, figure out order of entries
-@; clean and condense case studies summary table to fit on a page
-@; fix Matthew's tables.rkt functions to generate table properly (or
-@;    pull it in as an image generated through normal latex
 @; finish tightening prose from the sections that the others drafted
-@; resolve remaining cite and ref markers
 @; send out to rest of WG in case anyone wants to comment
 @; Ville said to cite Latham and Locke 1991 (on motivation?) check into it
 
@@ -415,6 +409,15 @@ peer review.
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+@(define (study-row name number)
+  (define ref (format "~a-asgn-~a" name number))
+  (define link
+    (hyperlink
+      (format
+        "https://github.com/brownplt/iticse-in-flow-2014/tree/master/in-flow-assignments/~a/asgn-~a.md"
+        name number)
+      (format "~a/asgn-~a.md" name number)))
+  (list (list @study-refs[ref]) (list link)))
 @section{Examples of @IFPR}
 
 @(figure* "i:case-studies"
@@ -593,6 +596,8 @@ peer review.
 	   )
   ))
 ])
+
+
 The case studies from working group members covered a variety of
 student levels and course types.  More interestingly, they varied
 widely in the kinds of artifacts and processes that they suggested for
@@ -608,8 +613,35 @@ courses.
 
 The source files of the case studies are available at
 @(smaller (url
-"https://github.com/brownplt/iticse-in-flow-2014/tree/master/in-flow-assignments")).
-[FILL mapping from table to assignments]
+"https://github.com/brownplt/iticse-in-flow-2014/tree/master/in-flow-assignments")),
+and there are links for each in @figure-ref["i:case-study-links"].
+
+@(figure "i:case-study-links"
+         "Links to the full descriptions of case studies on the Web in (see
+         https://github.com/brownplt/iticse-in-flow-2014/tree/master/in-flow-assignments)."
+   @tabular[
+      #:style (style #f (list (attributes '((style . "border-collapse: collapse;")))))
+      #:column-properties (list (list (attributes '((style . "border: 1px solid black;")))))
+      (add-width-wrappers
+       (list "1in" "2in")
+       (list
+         (list (list @bold{Study #}) (list @bold{Link}))
+         (study-row "krishnamurthi" 1)
+         (study-row "clarke" 1)
+         (study-row "politz" 1)
+         (study-row "hauswirth" 1)
+         (study-row "wrigstad" 1)
+         (study-row "wrigstad" 2)
+         (study-row "tirronen" 2)
+         (study-row "clarke" 2)
+         (study-row "clear" 1)
+         (study-row "fisler" 1)
+         (study-row "fisler" 2)
+         (study-row "hauswirth" 2)
+         (study-row "krishnamurthi" 2)
+         (study-row "politz" 2)
+         (study-row "tirronen" 1)))
+   ])
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
