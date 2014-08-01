@@ -115,8 +115,8 @@ feedback given when the assignment is over may get less attention if
 students have moved on to other assignments.}
 
 @item{Students can apply what they learn from seeing examples
-of one anothers' work, and also learn to exercise judgment when evaluating
-existing solution.  When a student sees
+of one another's work, and also learn to exercise judgment when evaluating
+existing solutions.  When a student sees
 another's work, they do not know the quality of the work they see: it
 could be better than their own work, but it could also be
 worse.  This takes some potential problems with plagiarism and turns them into a
@@ -241,10 +241,6 @@ appear to also be a kind of IFPR---indeed, an extreme version of
 it. However, the two processes are somewhat different and
 complementary. (@Secref["s:pairprog"])}
 
-@item{Workload considerations. IFPR clearly adds some effort to the
-process of doing assignments, but may also reduce some effort, at
-least relative to attaining a particular level of quality. [REF]}
-
 ]
 
 @section{Terminology}
@@ -317,10 +313,10 @@ ideas}
 
 The first two items arise primarily in students' role as reviewers,
 and are common to all forms of peer-review.  The remaining tasks arise
-more in students' role as recipients of reviews, and have more urgency
+more in students' roles as recipients of reviews, and have more urgency
 in an in-flow context.  In the context of Bloom's
 taxonomy@~cite["bloom-taxonomy"],
-these skills move students beyond ``remember'', ``understand'', and
+these skills move students beyond ``remember,'' ``understand,'' and
 ``apply'' into ``evaluate''.  They engage students in reflection and
 meta-cognitive thinking about their own work, while also requiring
 students to be able to communicate technical issues clearly to others.
@@ -341,8 +337,8 @@ these tradeoffs in detail.
 
 The emphasis on collaboration in these goals illustrates that @IFPR is
 an example of a Contributing Student Pedagogy
-(CSP), a pedagogy in which students (a) contribute to the learning of
-others and (b) value the contributions of other students.  A 2008
+(CSP), a pedagogy in which students (1) contribute to the learning of
+others and (2) value the contributions of other students.  A 2008
 ITiCSE working group report describes various facets of such
 pedagogies@~cite["cspwg-08"].  @IFPR targets the second criterion
 (valuing the contributions of other students) more than traditional,
@@ -383,7 +379,9 @@ addressing a common misconception about working in the discipline}
 different cultures}
 @item{Helping students improve performance and learning while actively
 engaged with course material}
-@item{Re-examining plagiarism issues by moving the problem}
+@item{Re-examining plagiarism issues by casting the re-use of classmates'
+ideas and code in a positive light, and including grading mechanisms that take
+this into account}
 ]
 
 The first three objectives arise in most forms of peer-review.  The
@@ -401,7 +399,7 @@ attending to the third objective (though none believed that grading
 all of the reviews was scalable or cost-effective).
 
 The group also coalesced around the social benefits of peer review,
-seeing this as an important aspect of developing competant
+seeing this as an important aspect of developing competent
 professionals.  Many of our discussions about giving review feedback
 and whether reviewing should be anonymous revolved around the impacts
 these issues could have on collaboration and socialization through
@@ -614,34 +612,9 @@ courses.
 The source files of the case studies are available at
 @(smaller (url
 "https://github.com/brownplt/iticse-in-flow-2014/tree/master/in-flow-assignments")),
-and there are links for each in @figure-ref["i:case-study-links"].
+and there are links for each in @figure-ref["i:case-study-links"] in the
+appendix.
 
-@(figure "i:case-study-links"
-         "Links to the full descriptions of case studies on the Web (see
-         https://github.com/brownplt/iticse-in-flow-2014/tree/master/in-flow-assignments)."
-   @tabular[
-      #:style (style #f (list (attributes '((style . "border-collapse: collapse;")))))
-      #:column-properties (list (list (attributes '((style . "border: 1px solid black;")))))
-      (add-width-wrappers
-       (list "1in" "2in")
-       (list
-         (list (list @bold{Study #}) (list @bold{Link}))
-         (study-row "krishnamurthi" 1)
-         (study-row "clarke" 1)
-         (study-row "politz" 1)
-         (study-row "hauswirth" 1)
-         (study-row "wrigstad" 1)
-         (study-row "wrigstad" 2)
-         (study-row "tirronen" 2)
-         (study-row "clarke" 2)
-         (study-row "clear" 1)
-         (study-row "fisler" 1)
-         (study-row "fisler" 2)
-         (study-row "hauswirth" 2)
-         (study-row "krishnamurthi" 2)
-         (study-row "politz" 2)
-         (study-row "tirronen" 1)))
-   ])
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -851,7 +824,7 @@ at some minor cost to review turnaround time.
 
 @item{@bold{By Metric}:
 There are a number of metrics that could be used to assign reviews with the
-goal of getting more effective feedback for students.  We identified at least:
+goal of getting more effective feedback for students.  We identified:
 
 @itemlist[
   @item{@bold{Achievement}: Students could be matched to other students with
@@ -1056,7 +1029,7 @@ The working group identified several potential roles for rubrics:
     giving feedback, and help frame negative feedback in a constructive way.
     For example, forcing a review to contain comments on the strengths of the
     submission under review can soften other criticism.  When appropriate,
-    rubrics can guide students towards more constructive language---for
+    rubrics can guide students towards more constructive language -- for
     example, ``This could be done differently'' vs. ``This is wrong''.
     }
 
@@ -1096,7 +1069,7 @@ the review is used to assess the reviewer's understanding of a work,
 or when too much information in a review might distract the author
 from the critical information in a review.
 
-Structure enable certain comparisons between reviews.  
+Structure enables certain comparisons between reviews.  
 Inexperienced students may benefit from structure when
 aggregating the feedback of multiple reviews: for example, structure
 could help students 
@@ -1566,9 +1539,11 @@ on this (similar to some conference reviewing models) could also see reviews
 made visible to all reviewers, which may help in establishing and reinforcing
 norms and standards and mitigate the risks of unduly harsh or abusive reviews. 
 
-In case study @study-refs["fisler-asgn-1"], anonymity is staged; at first
-anonymous, then groups review one another once formed, which is identifiable
-and social.  This lets students do a first round of reviewing to get
+In case study @study-refs["fisler-asgn-1"], anonymity is staged: at first
+students review one another anonymously, then groups are formed and groups
+review one
+another, revealing identities and adding a social element.  This lets
+students do a first round of reviewing to get
 comfortable with the process of feedback, and after has the benefits of
 encouraging professional collaboration.
 
@@ -1702,7 +1677,7 @@ knowledgeable, high quality feedback is received.
 @item{@bold{Perception and Quality of Expert Review}:
 Expert review (especially instructor or TA provided)
 may have unwarranted special status in students' minds: feedback from
-experts may be interpreted as ``more relevant for my grade'', and hence more
+experts may be interpreted as ``more relevant for my grade,'' and hence more
 likely to be acted upon.  This last concern is called out explicitly by case
 study @study-refs["clear-asgn-1"], in which students produce a peer-reviewed
 research article, and in the past often discounted peer feedback in favor of
@@ -1817,8 +1792,8 @@ a model students have of the instructor as the sole
 authority.  In addition, many students aren't initially
 comfortable acting as reviewers (and giving criticism to one another!), so a desire for harmony may hinder
 their ability to produce effective reviews at first.  These two
-dimensions--taking the reviews seriously and taking act of reviewing
-seriously--differ in force and mitigations.
+dimensions---taking the reviews seriously and taking act of reviewing
+seriously---differ in force and mitigations.
 
 When students are in the role of reviewers, instructors may need to consider
 how to balance anonymity in reviewing with the need to engage students in the
@@ -1879,12 +1854,12 @@ logistics of the process, but can also be instrumental in producing
 meta-reviews and in monitoring the effectiveness of IFPR.
 
 Software
-systems could (a) give basic feedback on review quality by
+systems could (1) give basic feedback on review quality by
 comparing reviews between students@~cite["cho-sword"] or
-through use of machine learning methods@~cite["rg:auto-assess-rev-lsa"], (b)
+through use of machine learning methods@~cite["rg:auto-assess-rev-lsa"], (2)
 aggregate student responses for discussion@~cite["hauswirth-informa"],
-(c) flag students who consistently write certain kinds of reviews
-(weak, strong, superficial, etc), or (d)
+(3) flag students who consistently write certain kinds of reviews
+(weak, strong, superficial, etc), or (4)
 maximize variety of review tasks by using static analysis tools to appraise
 source code similarity.  Some of these features are more sophisticated
 than those included in current peer-review platforms.
@@ -1892,8 +1867,8 @@ than those included in current peer-review platforms.
 Features for organizing submissions or reviews in various ways could
 help instructors run effective IFPR processes.  
 Software could allow instructors to associate arbitrary tags with each submission or review, 
-such as ``sloppy'' or ``discuss in class'', ``ignore'', ``insufficient test
-coverage'', or ``misunderstood requirement B''. 
+such as ``sloppy'' or ``discuss in class,'' ``ignore,'' ``insufficient test
+coverage,'' or ``misunderstood requirement B.''
 Instructors could then search or group submissions and reviews by tags, 
 or use tags as categories when producing analytical visualizations. 
 Tags could be visible only to instructors, or instructors could make tags visible to authors or reviewers. 
@@ -1901,7 +1876,7 @@ Another way to organize submissions or reviews would be to cluster them automati
 similar to Expertiza's automatic meta-reviewing
 categories@~cite["rg:auto-assess-rev-lsa"]. 
 Example criteria include the length of the reviews or their tone
-(``positive'', ``neutral'', or ``negative''), 
+(``positive,'' ``neutral,'' or ``negative''), 
 which may be detectable automatically using natural language processing techniques. 
 Based on this automatic and manual organization, 
 instructors could identify recurring misconceptions, 
@@ -2126,9 +2101,9 @@ and improve their submission.
 
 @subsection{Metacognitive Reflection}
 
-One goal of in-flow review is to encourage reflection @emph{while in the
-middle of an assignment}.  Meta-cognitive reflection of techniques and
-approaches has been studied as an important part of the learning process.
+One goal of in-flow review is to encourage reflection while in the
+middle of an assignment.  Meta-cognitive reflection 
+has been studied as an important part of the learning process.
 Indeed, it has been indicated that one difference between experts in program
 comprehension and novices is the focus on
 metacognition@~cite["etelapelto-metacognition-comprehension"].  Others in
@@ -2152,8 +2127,8 @@ example, in one assignment, students had to perform a repeated task (designing
 clothing and environments to help cold-blooded aliens survive).  They compared
 responses to direct prompts submitted along with a design, like ``Our design
 will work well because...'', to prompts designed to encourage reflection after
-the fact---``Our design could be better if we...''--- and plan-ahead prompts
-designed to cause reflection during the assignment---``In thinking about doing
+the fact, like ``Our design could be better if we...'', and plan-ahead prompts
+designed to cause reflection during the assignment, like ``In thinking about doing
 our design, we need to think about...'' Their sample size was small, and they
 did not find a significant difference in design quality between the direct and
 reflective prompts.  They did find that students gave better explanations when
@@ -2171,7 +2146,7 @@ to reflect on their work: why they think a hypothesis is true, if they are
 being meticulous in analyzing their results, and more.  In addition, the
 environment contains simple autonomous agents, called advisors, that give
 automated feedback and suggestions to students.  They are also given the
-opportunity to assess the work of other students in a few ways: They can
+opportunity to assess the work of other students in a few ways: they can
 simply rate the contents, or they can make specific suggestions, like telling
 a student that they should pay attention to a particular advisor.  Finally,
 the course is complemented with role-playing activites where students take on
@@ -2183,24 +2158,26 @@ student's submission.
 @subsection{Learning From Examples}
 
 In in-flow peer review, students have the opportunity to take what they learn
-from examples of others' work and apply it to their own.
+from examples of others' work and apply it to their own.  There is existing
+research in how students take what they learn from existing examples (whether
+from peers or experts) and use it to learn principles they apply to new
+problems.
 
 There is a large body of work that studies learning from @emph{worked
 examples}@~cite["adrw:2000:worked-examples"], in which students learn solely
 or primarily from example solutions to problems with accompanying descriptions
-of the solution strategies used.  Worked examples are traditionally created by
+of the problem solving process used.  Worked examples are traditionally created by
 experts, and in @IFPR the examples students see come from their peers.  In
 addition, in @IFPR students see the examples @emph{after} they attempt the
-problem themselves.  Nevertheless, some of the recommendations of the worked
+problem themselves.  Finally, worked examples generally have explanations at a
+finer granularity than we would consider presenting peer review at.
+Nevertheless, some of the recommendations of the worked
 examples literature may be relevant in the @IFPR setting: in a broad survey of
 worked examples research, Atkinson et al.
 recommend that students ``experience a variety of examples per problem type'',
 and that examples be presented in ``close proximity to matched
 problems''@~cite["adrw:2000:worked-examples"].  Both of these recommendations
-are consonant with strategies we have proposed for @IFPR assignments.  In
-addition, if a worked
-example would recommend breaking an assignment into several discrete pieces,
-this also suggests a natural split for the stages of an in-flow assignment.
+are consonant with strategies we have proposed for @IFPR assignments.
 
 Chi et al.@~cite["cblrg:1989:self-explanations"] and
 Renkl@~cite["r:1997:self-explanations"] studied the effects of asking students
@@ -2214,8 +2191,8 @@ coming into the task.  A peer review is a kind of explanation, and may cause
 students to go through the same kind of reflective process when studying
 other students' examples.
 
-Kulkarni et al@~cite["klemmer-examples"] discuss changes in creative output
-between subjects who saw varying amounts of examples, and diversity in
+Kulkarni et al.@~cite["klemmer-examples"] discuss changes in creative output
+between subjects who saw varying numbers of examples, and diversity in
 examples, prior to creating their own artwork.  Subjects seeing more diverse
 examples created artwork with more unique features than subjects seeing a less
 diverse set or fewer examples.  In an @IFPR setting, students who see examples
@@ -2233,8 +2210,9 @@ them for assessment.
 
 @subsection{Peer Instruction}
 
-Peer Instruction (PI), which is a specific form of student centered
-pedagogy@~cite["mazur-peer-instr-book"], has been shown to be a promising way for improve student
+Peer Instruction (PI), which is a specific form of student-centered
+pedagogy@~cite["mazur-peer-instr-book"], has been shown to be a promising way
+to improve student
 performance@~cite["crouch-mazur-peer-instr-10-years"] and
 engagement@~cite["simon-peer-instruction-icer13"] both in introductory
 courses@~cite["crouch-mazur-peer-instr-10-years"] and upper-division
@@ -2245,16 +2223,13 @@ engaging students in activities that require them to apply the core
 concepts under study and to explain these concepts to their
 peers. Concretely, a class taught using PI principles can consist of
 short presentations, each of which focuses on a particular core
-concept and is tested by presenting students a conceptual question,
+concept, which is then tested by presenting students a conceptual question,
 which the students first solve individually and then discuss in
-groups. The PI pedagogies link with the concepts of blended learning
-and flipped classroom@~cite["bv:2013:flipped-classroom"] in that PI requires
-students to study
-preparatory material before attending the class.
+groups.
 
 Related to our undertaking, the most interesting component of PI is the
-student peer discussions that are undertaken after presentation of each
-concept. This differs from (in-flow) peer review in that there isn't an
+peer discussions that are undertaken after presentation of each
+concept. This differs from (in-flow) peer review in that there isn't a
 submission in question that students are trying to improve.  The exercises are
 a vehicle for discussion, and the discussion is the end goal, not producing a
 quality submission.  Neither of these goals is necessarily more helpful than
@@ -2280,32 +2255,26 @@ In addition, for in-flow assignments centered around programming, one goal of
 peer-review is to help students reflect on their own code structure.
 There is a rich literature on program comprehension (including contrasting
 experts and novices), but much of that focuses on
-understanding @italic{behavior} of a new
+understanding the @italic{behavior} of a new
 program@~cite["Schulte:2010:IPC:1971681.1971687" "sk:1984:empirical-plans"
-"fws:1993:mental-representations"].  In the in-flow
-peer-review context, students already know the problem and (roughly)
+"fws:1993:mental-representations"].  In the @IFPR context, students already know the problem and (roughly)
 what the program is supposed to do.  Reading others' code therefore
 has different goals: notably, to understand the structure that someone
-else brought to the problem and to contrast that with one's own. As a result, 
-students face the less burdensome task of asking if the program
+else brought to the problem and to contrast that with one's own. This is a
+less burdensome task than asking if the program
 @emph{matches} an existing specification.
 
 Studies on program comphrehension comparing experts and novices have found
 that experts engage in more metacognitive
 behavior@~cite["etelapelto-metacognition-comprehension"], so the metacognitive
 context of review may put students in the right frame of mind to understand
-programs in the first place.  Other work on program comprehenseion suggests
+programs in the first place.  Other work on program comprehension suggests
 that the process has a lot to do with understanding the high-level plan of a
 program@~cite["sk:1984:empirical-plans"].  Since in the in-flow context students have at least
 constructed @emph{a} plan of their own for the same or a similar problem, they
 may at least be able to determine if the solution they are viewing matches
 their plan, or is doing something different.
 
-The WG on program comprehension@~cite["Schulte:2010:IPC:1971681.1971687"]
-
-(What implications does this have for the experience level at which
-students can meaningfully engage in ifpr?  They need certain maturity
-to chunk, but chunking isn't necessarily needed on small programs.)
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -2333,7 +2302,7 @@ approach.
 
 The technique from Barker et al. most relevant for in-flow peer review, though
 not completely the same, is the approach to knowledge sharing during lab work.
-Students actively sort help from any student, for example, by yelling
+Students actively solicit help from any student, for example, by yelling
 questions out, resulting in a fluid exchange of ideas and techniques. Even
 though the projects considered in these labs were run in an open,
 collaborative setting, cheating was avoiding by using individualized
@@ -2356,17 +2325,16 @@ the same goals.
 Others have used strategies for peer review that fall under the umbrella of
 in-flow peer review, even though they did not go by that name.
 
-For example, in the implementation of a multi-stage compiler, students in
+In the implementation of a multi-stage compiler, students in
 Søndergaard's course review one another's work between stages
 @~cite{sondergaard-peer-review-compilers09}.  The evaluation in that work was
 only in the form of surveys after the assignment, but shows generally positive
 attitudes from students indicating that they felt the review had helped.
 
-Expertiza@~cite["gehringer-expertiza-approach"] is discussed in
-@secref["s:meta-reviewing-types"], and is used for large, multi-stage collaborative
-projects in which students build and review smaller components that build up
-the whole.  This includes assessment and review of the reviews themselves as
-an explicit motivator for performing the review.  It is notable that in
+Expertiza@~cite["gehringer-expertiza-approach"] (discussed in
+@secref["s:meta-reviewing-types"]) is used for large, multi-stage collaborative
+projects.  This includes assessment of the reviews themselves as
+an explicit motivator for giving good feedback.  It is notable that in
 Expertiza, students often review other students' components of a larger whole,
 which can be a task that the reviewer didn't complete him or herself.  In
 several
@@ -2380,12 +2348,12 @@ of our case studies (@study-refs["krishnamurthi-asgn-1"
 
 CaptainTeach @~cite["politz-ct-iticse14"] supports in-flow peer review for
 programming assignments.  The Web-based tool supports test-first,
-data-structure-first, and one function at a time stagings of programming
+data-structure-first, and one-function-at-a-time stagings of programming
 problems.  It uses asynchronous reviewing, where students see 2-3 reviews from
-the last students to submit, combined with known-good and known-bad solutions
-provided by the staff and randomly mixed in.  It supports a fixed set of
+the most recent students to submit, combined with random known-good and known-bad solutions
+provided by the staff.  It supports a fixed set of
 open-ended review prompts combined with Likert scales for each of tests,
-implementation, and data structures.  Students were also allowed to give
+implementation, and data structures.  Students are also allowed to give
 (optional) feedback on reviews they received.  Politz et al. report that
 students engaged with the process, submitting stages early enough to get
 reviews (more than 24 hours before the deadline), and receiving review
@@ -2399,14 +2367,14 @@ Informa's ``Solve and Evaluate'' approach integrates a simple form of peer
 review into a software-based class room response
 system@~cite["hauswirth-informa"]. During a lecture the
 instructor poses a problem, and each student solves it by creating a solution
-in Informa. Informa is not limited to multiple-choice problems, but it allows
+in Informa. Informa is not limited to multiple-choice problems; it also allows
 a variety of problem types, including free text (e.g., code snippets), or
 drawings (e.g., diagrams of the structure or state of a program).  Students
 submit their solution as soon as they are done, and they immediately are
 assigned a solution of a peer for evaluation. They evaluate a solution simply
 by scoring it as correct or incorrect. In Informa, a key reason for including
 an evaluation phase is to keep the faster students engaged while the slower
-students are still solving the problem. While the peer review results are not
+students are still solving the problem. While the results of peer review are not
 shown to the authors of the submissions, they are used by the instructor to
 estimate the level of understanding of the class, and to focus the class
 discussion that follows the evaluation phase. A lecture using Informa often
@@ -2425,10 +2393,11 @@ pieces, instead performing review on entire intermediate artifacts.  For
 example, Clark has students exercise the functionality of one anothers'
 projects, and lets groups improve their work based on the feedback their
 classmates give them@~cite["clark-peer-testing-se-04"].  Similarly, Wang, et
-al., Zeller, Papadopoulos et al., and the Aropä system use assignment structures that allow
-students to update revisions of entire submissions that were reviewed by peers
-@~cite["wang-pcr" "zeller-read-review-00" "hamer-aropa"
-"Papadopoulos:2012:IPR:2215076.2215100"].  Other studies have
+al.@~cite["wang-pcr"], Zeller@~cite["zeller-read-review-00"], Papadopoulos et
+al.@~cite["Papadopoulos:2012:IPR:2215076.2215100"], and the Aropä
+system@~cite[ "hamer-aropa"] use assignment structures that allow
+students to update revisions of entire submissions that were reviewed by
+peers.  Other studies have
 students write test cases (or manually test) one another's work as part of a
 review@~cite["reily-aggregate-reviews09" "smith-peer-testing-icer12"].  These
 tests are most often on entire systems, rather than on pieces of a project
@@ -2439,11 +2408,11 @@ improve their projects in response to their peers' feedback.
 
 @section{Conclusion}
 
-In-flow peer review is a rich design space for courses and assignments.  It
+There is a rich design space for courses and assignments.  It
 motivates peer feedback that is more actionable than in reviews that happen
 after assignments are due.  It leverages the fact that many problems, both
-programming and otherwise, can be broken up into several steps that occur at
-key moments for triggering reflection, and uses those moments for reflection
+programming and otherwise, can be split into several steps that occur at
+key moments for triggering reflection, and uses those moments
 as vehicles for peer feedback.  It encourages reflective and critical thinking
 in both reviewers and reviewees, and prepares students for professional
 activities in judging others' work and incorporating feedback into their own.
@@ -2451,17 +2420,46 @@ activities in judging others' work and incorporating feedback into their own.
 @IFPR has a lot in common with existing peer review approaches, and in
 collaborative and participatory pedagogic styles in general.  All of those
 benefits, from enhancing a sense of community to improving communication
-skills, are also goals of @IFPR by design.  The main new idea is to cause
-students to engage in the collaborative process more by making it a more
-integrated part of the assignment process.
+skills, are also goals of @IFPR.  The main new idea is to
+engage students in the collaborative process by better integrating into the
+flow of assignments.
 
 This report outlines a large space for designing in-flow peer review
 assignments.  We encourage practitioners to consider many of these factors,
-but not to be intimidated by them, or be concerned that there are too many
-challenges to tackle in adopting @|IFPR|.  The main idea is just to pick good
+but not to be intimidated by them, or to be concerned that there are too many
+challenges to tackle in adopting @|IFPR|.  The key task is just to pick good
 moments for reflection in the middle of assignments, and use those moments to
 get the most out of peer feedback (which we already know has many benefits).
 
 @(generate-bib)
 
 @;@include-section["case-studies.scrbl"]
+
+@section[#:tag "s:appendix"]{Appendix -- Links to Case Studies}
+
+@(figure "i:case-study-links"
+         "Links to the full descriptions of case studies on the Web in (see
+         https://github.com/brownplt/iticse-in-flow-2014/tree/master/in-flow-assignments)."
+   @tabular[
+      #:style (style #f (list (attributes '((style . "border-collapse: collapse;")))))
+      #:column-properties (list (list (attributes '((style . "border: 1px solid black;")))))
+      (add-width-wrappers
+       (list "1in" "2in")
+       (list
+         (list (list @bold{Study #}) (list @bold{Link}))
+         (study-row "krishnamurthi" 1)
+         (study-row "clarke" 1)
+         (study-row "politz" 1)
+         (study-row "hauswirth" 1)
+         (study-row "wrigstad" 1)
+         (study-row "wrigstad" 2)
+         (study-row "tirronen" 2)
+         (study-row "clarke" 2)
+         (study-row "clear" 1)
+         (study-row "fisler" 1)
+         (study-row "fisler" 2)
+         (study-row "hauswirth" 2)
+         (study-row "krishnamurthi" 2)
+         (study-row "politz" 2)
+         (study-row "tirronen" 1)))
+   ])
