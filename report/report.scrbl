@@ -304,7 +304,7 @@ can practice several critical skills:
 @itemlist[
 @item{Assessing whether another's work satisfies problem requirements}
 @item{Providing actionable, useful, and appropriate feedback to others}
-@item{Extracting high-level design choices from anothers' work}
+@item{Extracting high-level design choices from another's work}
 @item{Comparing others' high-level design choices and practices to one's own}
 @item{Deciding whether to adopt or ignore particular feedback or
 ideas}
@@ -431,7 +431,7 @@ peer review.
            @list{@bold{Submissions}} @list{@bold{Review Criteria}})
      (list
      @list[(next-study "krishnamurthi-asgn-1")]
-     @list{Computing for Social Sciences and Humanities (undergrad nonmajors)}
+     @list{Computing for Social Sciences and Humanities (undergrad non-majors)}
 	   @list{Cluster data on voting records (US Senate) to identify senators with similar ideology}
 	   @list{Code and tests for instructor-defined subsets of overall functionality}
 	   @list{Provide scores from 0 to 100 on each of (a) whether
@@ -500,14 +500,14 @@ peer review.
      @list{Introduction to Functional Programming (upper undergrad/MS)}
 	   @list{Implement Boggle (find all valid words in 4x4 grid)}
 	   @list{Decomposition of overall problem into tasks 
-			       (with quickcheck assertions), tests, code} 
+			       (with QuickCheck assertions), tests, code} 
 	   @list{check decomposition makes sense, presenting
 		       alternative if own differs from reviewed one;
 		       try own test suite on the code being reviewed }
 	   )
      (list 
      @list[(next-study "clarke-asgn-2")]
-     @list{Advanced Sofware Design (upper undergrad/MS)}
+     @list{Advanced Software Design (upper undergrad/MS)}
 	   @list{Design and implement subset of a mobile app+server for a
 			game using iterative development }  
 	   @list{Design documents so far}
@@ -525,7 +525,7 @@ peer review.
 	   @list{Conference-paper reviewing rubric: questions on
 			    suitability for audience, originality and
 			    demonstrated knowledge in contribution,
-			    eveidence for arguments, methods,
+			    evidence for arguments, methods,
 			    presentation, etc. }
 	   )
      (list 
@@ -921,7 +921,7 @@ to consider in assigning reviews:
   disjoint -- students may form pairs (or groups where everyone reviews
   everyone else) that review one another, or there may be only a one-way
   connection between reviewer and reviewee.  Mutual reviewing could provide
-  more concrete motivation (other than abstract altriusm or a grade), if
+  more concrete motivation (other than abstract altruism or a grade), if
   students are helping someone who is actively helping them in return.  Mutual
   reviewing can still retain anonymity.}
 
@@ -1297,32 +1297,6 @@ how reviewing is introduced and scaffolded, it is important to
 allot time to deal with misconceptions on how to create a review
 as part of the course design. 
 
-@;{
-
-In an extension of this practice instructors could ask students to
-grade a set of reviews of an assignment, or to write
-meta-reviews. This would form part of training students to identify
-good vs bad reviews.  It would also help students align themselves
-with quality work in the reviewing process. The comparative analysis
-of reviews would also seem valuable here.
-
-One member of the working group mentioned his experience  of asking students
-about the value of talking about design,
-which the students deemed valuable. From this and other experiences
-with their students, the working group members believe that students
-value the learning benefits of the meta-cognitive and reflective
-activity, which is involved in peer review.  In this process it is
-important to consider reviewing's two roles from a student perspective
-- demonstrating the student's own understanding as well as providing
-feedback to help another student. One of the weaknesses of reviewing a
-fine piece of work is that it is not clear to students how and what to
-critique.  To mitigate ``Looks Good to Me'' reviews on good work, it is recommend
-that emphasis be placed on the former. To support such more
-constructive reviews a rubric could be adopted that talks positively
-about strengths and explanations as well as problems.
-
-}
-
 @section[#:tag "s:issues"]{Parameters and Issues}
 
 Several issues and parameters cross-cut the stages of the @IFPR
@@ -1423,7 +1397,7 @@ to understand a proposed change to her submitted code.
 
 @subsection{Interaction with Course-Level Grading}
 
-Instructors must determine the extent to which IFPR activites impact
+Instructors must determine the extent to which IFPR activities impact
 course grades, and the mechanisms through which they do so.  
 @Secref["s:intro"] noted Liu and Carless' distinction between
 @emph{peer feedback} and @emph{peer assessment}@~cite["liu-peer-feedback"],
@@ -1446,7 +1420,7 @@ may be more hesitant to give that feedback.  In contexts where students are
 still learning to review and give feedback, inaccurate reviews are expected
 and an important part of the learning process: in this case, reviews probably should not be used
 for grading purposes.  Using peer review for grading should be adopted with
-care, and practicioners should carefully consider its effects on the other
+care, and practitioners should carefully consider its effects on the other
 design decisions discussed in this report.
 
 @subsubsection{Should Reviews Be Graded?}
@@ -1582,7 +1556,7 @@ techniques for reporting abuse and inappropriate behavior should be in
 place -- for example, an anonymous ``Flag abuse'' button in a Web interface
 that allows students to bring offensive or inappropriate content to the
 attention of the staff.  In general, the issues with anonymity relate to the
-unsatisfactory aspects of peer assessment schemes in groupwork that ask group
+unsatisfactory aspects of peer assessment schemes in group work that ask group
 members to evaluate relative
 contributions@~cite["Clear:2010:TIM:1721933.1721938"].
 
@@ -1859,7 +1833,7 @@ comparing reviews between students@~cite["cho-sword"] or
 through use of machine learning methods@~cite["rg:auto-assess-rev-lsa"], (2)
 aggregate student responses for discussion@~cite["hauswirth-informa"],
 (3) flag students who consistently write certain kinds of reviews
-(weak, strong, superficial, etc), or (4)
+(weak, strong, superficial, etc.), or (4)
 maximize variety of review tasks by using static analysis tools to appraise
 source code similarity.  Some of these features are more sophisticated
 than those included in current peer-review platforms.
@@ -1984,7 +1958,7 @@ Code review is an essential component of industrial
 software-development practice.  Industrial peer review is inherently
 in-flow, as reviews are conducted on a regular basis during
 development -- it would be odd indeed to only perform code review after a product
-had shipped to customers!  The industrial product-development lifecycle is longer
+had shipped to customers!  The industrial product-development life cycle is longer
 than that in many courses, but best practices in industrial peer
 review are still useful context for this report.
 
@@ -2022,7 +1996,7 @@ coming up spontaneously in interviews and in observations of reviewers.
 
 Fagan's seminal work on code inspections in an industrial
 setting@~cite["fagan-code-inspection"] finds that putting inspections at
-carefully-delineated points throughout a product's lifecycle can save time by
+carefully-delineated points throughout a product's life cycle can save time by
 fixing faults earlier, before other work builds on the buggy code.  In Fagan's
 experiments, there are three inspections: one after an initial design phase,
 one after initial coding, and one after unit testing and before system-wide
@@ -2044,7 +2018,7 @@ staging process.
 
 Fagan's original results are for @emph{formal code
 inspections}@~cite["fagan-code-inspection"], which consist of a
-meeting of several developers (including the orginal author), conducted with
+meeting of several developers (including the original author), conducted with
 prior preparation and with a separate @emph{reader}, separate from the author,
 who presents the work.  Defects' cause and detection are documented in detail,
 which acts as a sort of ``rubric'' for the code review.
@@ -2144,7 +2118,7 @@ automated feedback and suggestions to students.  They are also given the
 opportunity to assess the work of other students in a few ways: they can
 simply rate the contents, or they can make specific suggestions, like telling
 a student that they should pay attention to a particular advisor.  Finally,
-the course is complemented with role-playing activites where students take on
+the course is complemented with role-playing activities where students take on
 the role of advisors, and give specific feedback -- the advisors have specific
 flavors of feedback; an example in the paper is that a student acting as the
 ```Skeptic' might [be asked to] say `I disagree' or `Prove it''' to another
@@ -2196,7 +2170,7 @@ may similarly have more options to draw on in their solution, rather than only
 using whatever techniques they would have tried in their initial submission.
 
 In PeerWise@~cite["denny-peerwise08"], students created and reviewed one
-anothers' multiple-choice questions, which has elements both of learning by
+another's multiple-choice questions, which has elements both of learning by
 example and of review.  They find that students who engaged with the system
 more---by contributing and explore more example questions than others (and
 more than they were required to by the course)---performed better than those
@@ -2259,7 +2233,7 @@ else brought to the problem and to contrast that with one's own. This is a
 less burdensome task than asking if the program
 @emph{matches} an existing specification.
 
-Studies on program comphrehension comparing experts and novices have found
+Studies on program comprehension comparing experts and novices have found
 that experts engage in more metacognitive
 behavior@~cite["etelapelto-metacognition-comprehension"], so the metacognitive
 context of review may put students in the right frame of mind to understand
@@ -2385,7 +2359,7 @@ Some other uses of peer review on large projects are related to in-flow peer
 review because they allow students to improve their work in response to
 review.  These uses don't necessarily stage assignments into reviewable
 pieces, instead performing review on entire intermediate artifacts.  For
-example, Clark has students exercise the functionality of one anothers'
+example, Clark has students exercise the functionality of one another's
 projects, and lets groups improve their work based on the feedback their
 classmates give them@~cite["clark-peer-testing-se-04"].  Similarly, Wang, et
 al.@~cite["wang-pcr"], Zeller@~cite["zeller-read-review-00"], Papadopoulos et
