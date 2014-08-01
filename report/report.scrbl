@@ -1972,7 +1972,7 @@ Finally, with IFPR, students are compelled to review other students'
 code: they cannot ignore problems and let their partner do the work.  On the other
 hand, in IFPR it may be easier to ignore the advice given than in PP, because
 of the difference in ownership -- it is harder to argue that someone not make
-suggested changes to a shared program than to ignore the feedback on ones' own
+suggested changes to a shared program than to ignore the feedback on one's own
 program.
 
 }
@@ -2157,7 +2157,7 @@ student's submission.
 
 @subsection{Learning From Examples}
 
-In in-flow peer review, students have the opportunity to take what they learn
+In @IFPR, students have the opportunity to take what they learn
 from examples of others' work and apply it to their own.  There is existing
 research in how students take what they learn from existing examples (whether
 from peers or experts) and use it to learn principles they apply to new
@@ -2174,7 +2174,7 @@ finer granularity than we would consider presenting peer review at.
 Nevertheless, some of the recommendations of the worked
 examples literature may be relevant in the @IFPR setting: in a broad survey of
 worked examples research, Atkinson et al.
-recommend that students ``experience a variety of examples per problem type'',
+recommend that students ``experience a variety of examples per problem type,''
 and that examples be presented in ``close proximity to matched
 problems''@~cite["adrw:2000:worked-examples"].  Both of these recommendations
 are consonant with strategies we have proposed for @IFPR assignments.
@@ -2205,8 +2205,8 @@ anothers' multiple-choice questions, which has elements both of learning by
 example and of review.  They find that students who engaged with the system
 more---by contributing and explore more example questions than others (and
 more than they were required to by the course)---performed better than those
-who did not.  This suggests that exposure to more examples better prepared
-them for assessment.
+who did not.  However, it's not clear that the exposure to more examples
+caused the difference in performance.
 
 @subsection{Peer Instruction}
 
@@ -2346,7 +2346,7 @@ of our case studies (@study-refs["krishnamurthi-asgn-1"
 ]), students review an instance of the
 @emph{same} work that they just did themselves.
 
-CaptainTeach @~cite["politz-ct-iticse14"] supports in-flow peer review for
+CaptainTeach@~cite["politz-ct-iticse14"] supports in-flow peer review for
 programming assignments.  The Web-based tool supports test-first,
 data-structure-first, and one-function-at-a-time stagings of programming
 problems.  It uses asynchronous reviewing, where students see 2-3 reviews from
@@ -2420,14 +2420,14 @@ activities in judging others' work and incorporating feedback into their own.
 @IFPR has a lot in common with existing peer review approaches, and in
 collaborative and participatory pedagogic styles in general.  All of those
 benefits, from enhancing a sense of community to improving communication
-skills, are also goals of @IFPR.  The main new idea is to
+skills, are also goals of @|IFPR|.  The main new idea is to
 engage students in the collaborative process by better integrating into the
 flow of assignments.
 
 This report outlines a large space for designing in-flow peer review
 assignments.  We encourage practitioners to consider many of these factors,
 but not to be intimidated by them, or to be concerned that there are too many
-challenges to tackle in adopting @|IFPR|.  The key task is just to pick good
+challenges to tackle in adopting @|IFPR|.  The key task is to pick good
 moments for reflection in the middle of assignments, and use those moments to
 get the most out of peer feedback (which we already know has many benefits).
 
