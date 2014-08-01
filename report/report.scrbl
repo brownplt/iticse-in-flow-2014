@@ -2089,15 +2089,10 @@ which argues that praise and rewards (such as grades) are ineffective and even
 demotivating.  Kohn claims that rewards effectively punish students who aren't
 rewarded, discourages risk-taking in students, devalues the reasoning behind a
 low or high grade since the grade is emphasized, and can create a bad
-relationship between teacher and student.
-
-One of the goals of @IFPR is to intrinsically motivate the review process
-by allowing students to improve their own work while an assignment is
-in progress.
-Regardless of the actual grading strategy used
-(and which happens after students' receive feedback), students get feedback
-that is separate from the summative assessment of their coursework to apply
-and improve their submission.
+relationship between teacher and student. @IFPR is designed to
+increase intrinsic motivation for reviewing relative to traditional
+post-submission peer review.  The extent to which this shift occurs
+likely interacts with how the grading system treats reviewing.
 
 @subsection{Metacognitive Reflection}
 
@@ -2408,9 +2403,8 @@ improve their projects in response to their peers' feedback.
 
 @section{Conclusion}
 
-There is a rich design space for courses and assignments.  It
-motivates peer feedback that is more actionable than in reviews that happen
-after assignments are due.  It leverages the fact that many problems, both
+@IFPR is a highly-configurable mechanism for making peer review more actionable.
+It leverages the fact that many problems, both
 programming and otherwise, can be split into several steps that occur at
 key moments for triggering reflection, and uses those moments
 as vehicles for peer feedback.  It encourages reflective and critical thinking
@@ -2435,10 +2429,20 @@ get the most out of peer feedback (which we already know has many benefits).
 
 @;@include-section["case-studies.scrbl"]
 
-@section[#:tag "s:appendix"]{Appendix -- Links to Case Studies}
+@section[#:tag "s:appendix"]{Appendix -- Links to Case Study Details}
+
+For readers interested in the details of the case studies summarized
+in @(figure-ref "i:case-studies") and @(figure-ref
+"i:case-studies-cont"), the table in @figure-ref["i:case-study-links"]
+maps case-study numbers (from the leftmost column of the summary
+tables) to filenames within a public git repository.  The repository
+URL is in the figure caption.  Each detailed summary contains notes on
+how the case-study author envisions configuring @IFPR, including
+thoughts on problem staging, rubric design, and grading
+considerations.
 
 @(figure "i:case-study-links"
-         "Links to the full descriptions of case studies on the Web in (see
+         "Links to the full descriptions of case studies on the Web (see
          https://github.com/brownplt/iticse-in-flow-2014/tree/master/in-flow-assignments)."
    @tabular[
       #:style (style #f (list (attributes '((style . "border-collapse: collapse;")))))
