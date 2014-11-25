@@ -192,7 +192,7 @@ overhead for students and staff through more course deadlines.
 (@Secref["s:asgn-revs-timing"])} 
 
 @item{The manner in which reviews are conducted.  This includes the
-choice of review ``technology'': should reviewing by mediated by a computer
+choice of review ``technology'': should reviewing be mediated by a computer
 application or should it be done face-to-face (perhaps as a small group
 meeting around a table)?  This also includes the use of rubrics: On the one
 hand, rubrics for
@@ -801,7 +801,7 @@ is more or less appropriate in synchronous or asynchronous settings, as well.
   each reviewer is assigned one or more submissions at random to review.  There
   are of course many types of randomness; it is probably useful to ensure that
   all submissions get the same number of reviews, for example.  In
-  the asynchronous setting, the pool of reviewable submissions from will necessarily be
+  the asynchronous setting, the pool of reviewable submissions will necessarily be
   smaller (since only a subset of submissions have already come in); this skews
   the selection.  In an asynchronous setting, random assignment also lacks
   temporal fairness: the most recent submission isn't guaranteed to be
@@ -845,7 +845,7 @@ goal of getting more effective feedback for students.  We identified:
   learn more from reviewing a variety of solutions that are different from their
   own.  They may also be more able to review solutions that are similar to
   their own.  Depending on the assignment and learning goals, it could be
-  valuable to groups students based on solution approach or code similarity.}
+  valuable to group students based on solution approach or code similarity.}
 ]
 
 We expect that by-metric assignments work best synchronously, because it
@@ -902,10 +902,10 @@ to consider in assigning reviews:
 
   @item{@bold{Groups vs. individual}: The review assignment strategies in this
   section aren't limited to only pairs of reviewers and reviewees.  It would
-  be perfectly reasonable for a group of reviewers to all create a review
+  be perfectly reasonable for a group of reviewers to create a review
   together through discussion, whether online or in person.  The same
   parameters of randomness, temporality, and so on apply.  Anonymity is
-  possible but more difficult when a discussion between multiple students is
+  possible but more difficult when a discussion among multiple students is
   involved.  We discuss the contents of reviews and review discussions more in
   @secref["s:reviews"].}
 
@@ -1005,7 +1005,7 @@ The working group identified several potential roles for rubrics:
 
 @item{@bold{Rubrics as an alibi}:
     Rubrics can be used as alibis for reviewers
-    who fear criticizing works of others, because of cultural 
+    who fear criticizing works of others because of cultural 
     values, self-image, or other factors.  For example, being asked to point
     out one part which could be done better, or to identify errors
     will shift the blame from the reviewer who found the bugs
@@ -1050,14 +1050,14 @@ eventual opportunities for both groups to demonstrate critical-thinking
 skills.  One model would evolve rubrics from having fairly
 targeted questions to asking broad questions: this model gradually
 removes scaffolding.  Another model starts with concrete
-questions (such as ``do these tests look correct'') and progresses to
-questions on more abstract issues (such as ``do these tests cover the space of
+questions (such as ``Do these tests look correct'') and progresses to
+questions on more abstract issues (such as ``Do these tests cover the space of
 possible inputs'') as students master more of the
 subject material.
 
 A variation on evolving rubrics would allow different students to work
 with different review forms, depending on their ability as reviewers.
-This comment arose from the working group members' experience as PC
+This comment arose from the working group members' experience as conference program-committee
 members: members often found overly structured forms to be annoying,
 feeling they interfered with how they wanted to convey issues with a
 work.  However, they also noted that early on in their paper reviewing career,
@@ -1115,16 +1115,16 @@ Reviews can take various forms, from written documents to verbal
 feedback, from paragraphs to small comments associated with particular
 fragments of prose or code, and from individual to group-wide
 feedback.  For written reviews, the group noted the general
-applicability of plain text, but noted that modern software tools
+applicability of plain text, but modern software tools
 (such as Github and other graphical version-control tools) enable targeted
 comments and conversations
-between authors and reviewers, down to the line number in a particular
-revision. These conversations have more more structure than untargeted
+between authors and reviewers down to the line number in a particular
+revision. These conversations have more structure than untargeted
 comments about the entire submission.
 
-In some situations, non-text artifacts can be effective, just as not all
+In some situations, non-text artifacts can be effective, as not all
 submissions need to be code.  Code architecture diagrams can be critiqued and
-marked up with freehand annotations, pictures of the state of running program
+marked up with freehand annotations, pictures of the state of a running program
 can be drawn, and even code patches can be an effective way to convey
 comments.  This is one case in which the default technology that authors of
 tools for in-flow peer review might choose could be limiting.
@@ -1236,7 +1236,7 @@ feedback telling her of the discrepancy.
 
 Existing research has explored ways to provide or assess meta reviews.
 Nelson and Schunn describe a rubric for evaluating peer feedback in writing
-assignments, which includes criteria like the concreteness and actionability
+assignments which includes criteria like the concreteness and actionability
 of the review, and whether it was generally positive or
 negative@~cite["nelson-feedback-rubric"].  Swan, Shen, and Hiltz study
 assessment strategies for comments in online discussion forums used to discuss
@@ -1248,7 +1248,7 @@ relevance, accuracy, and focus.
 The Expertiza peer review process contains an explicit review-of-review phase
 for collaborative work@~cite["gehringer-expertiza-approach"], and a related
 Expertiza tool attempts to give some more qualitative feedback automatically
-by a naturaly language analysis of student
+by a natural-language analysis of student
 work@~cite["rg:auto-assess-rev-lsa"].
 
 @subsubsection["Using Meta-Reviews"]
@@ -1272,7 +1272,7 @@ Given the quicker turn-around times inherent to IFPR, such monitoring
 benefits from tool support and structural elements of meta-reviews.
 For example, asking students to rate the reviews they receive on a
 simple Likert scale makes it easy for an instructor to focus on
-potentially problematic reviews without undue burden on the students.
+potentially problematic reviews without imposing undue burden on the students.
 In some IFPR configurations, software tools that include automatic
 grading could report partial information on whether student
 performance improves following the review phase.  Such information
@@ -1330,7 +1330,7 @@ grading-design decisions that can affect the degree to which copying is a proble
 @itemlist[
 
 @item{@bold{Variation in Assignments}:
-One major factor in whether copying is even a problem is how similar
+One major factor in determining whether copying is even a problem is how similar
 students' submissions are expected to be.  In many programming courses,
 students implement to the exact same algorithmic specification; other than
 coding-style issues, one implementation is just as good as another.  This is
@@ -1338,7 +1338,7 @@ in contrast to other domains where peer review is often used, like creative or
 critical writing, in which students often write on different topics or choose
 different positions to represent on the same topic.
 
-One approach is to provide different variants of a programming
+One approach is to provide variants of a programming
 problem to different students: 
 Zeller@~cite["zeller-read-review-00"] gives each student a variation
 on a theme to avoid students reviewing another who is working on exactly the
@@ -1358,7 +1358,7 @@ code, this puts significantly more overhead into the reviewing process.
 Depending on the learning goals, it may be good for the reviewer to learn to
 incorporate ideas from different solutions into their own, since it requires a
 more abstract understanding of the techniques.  For novices, it may
-be enough of a challenge to recognize a good solution
+be enough of a challenge to recognize a good solution and
 apply it to their own.
 }
 
@@ -1378,7 +1378,7 @@ weights to initial submissions than to post-review submissions: an initial
 program submission counts for 75% of the grade.  Students can still improve
 the 25%-weighted part of their score based on review feedback and copying
 others' solutions, but they can also hurt their score if they make incorrect
-changes.  Different weightings put different emphasis on the importance of
+changes.  Different weightings put different emphases on the importance of
 review. Having the post-review score count for more might be acceptable in
 some classroom settings, and ultimately comes down to a choice about student
 maturity, class culture, and other course-specific factors.
@@ -1398,7 +1398,7 @@ to understand a proposed change to her submitted code.
 @subsection{Interaction with Course-Level Grading}
 
 Instructors must determine the extent to which IFPR activities impact
-course grades, and the mechanisms through which they do so.  
+course grades and the mechanisms through which they do so.  
 @Secref["s:intro"] noted Liu and Carless' distinction between
 @emph{peer feedback} and @emph{peer assessment}@~cite["liu-peer-feedback"],
 where the latter's goal is grading.  Most of the working group
@@ -1458,7 +1458,7 @@ The group noted that @IFPR (like other collaborative course structures)
 interacts poorly with grading strategies that evaluate students relative to
 one another.  Such strategies conflict with students' motivations to help
 one another improve their work.  The working group identified three distinct
-ways in which the conflict could manifest:
+ways in which the conflict could manifest itself:
 
 @itemlist[
 
@@ -1488,7 +1488,7 @@ that context.
 
 Several issues relating to anonymity and privacy come to the
 fore with peer review.  Developing a culture of positive and
-constructive critique, where students can both give and take feedback
+constructive critique where students can both give and take feedback
 appropriately, can take time and require a degree of practice.  While the broader
 aim may be to develop a positive, supportive and professional approach to peer
 review, there may be a need to provide some initial shielding from scrutiny
@@ -1553,7 +1553,7 @@ Anonymity can unwittingly enable a
 culture of ‘flaming’ and online harassment to develop among some
 students.  Therefore if reviews are to be done anonymously, policies and
 techniques for reporting abuse and inappropriate behavior should be in
-place -- for example, an anonymous ``Flag abuse'' button in a Web interface
+place -- for example, an anonymous ``Flag Abuse'' button in a Web interface
 that allows students to bring offensive or inappropriate content to the
 attention of the staff.  In general, the issues with anonymity relate to the
 unsatisfactory aspects of peer assessment schemes in group work that ask group
@@ -1576,7 +1576,7 @@ feedback.
 @subsubsection{Anonymity and Cultural Considerations}
 
 Anonymity may have cultural connections at several levels: for students who
-come from a consensus-based national culture@~cite["ghgjh:cult-org"], where
+come from a consensus-based national culture@~cite["ghgjh:cult-org"] where
 preserving harmony is a strong value and overt criticism can be considered
 offensive or cause a loss of face, a greater level of anonymity may be
 required at first for students to feel more at ease in speaking their minds.  
@@ -1722,7 +1722,7 @@ produce and consume reviews is a useful skill in its own right,
 regardless of the profession or the context in which it is used.
 On this note, using reviews in classes with a diverse student
 population will have the additional benefit of producing more
-diverse reviews. In many cases, for such as GUI mockups, this is
+diverse reviews. In many cases, such as for GUI mockups, this is
 highly desirable. Therefore, whether or not a student will face a
 review professionally is not necessary for @IFPR to be useful.
 
@@ -1766,7 +1766,7 @@ a model students have of the instructor as the sole
 authority.  In addition, many students aren't initially
 comfortable acting as reviewers (and giving criticism to one another!), so a desire for harmony may hinder
 their ability to produce effective reviews at first.  These two
-dimensions---taking the reviews seriously and taking act of reviewing
+dimensions---taking the reviews seriously and taking the act of reviewing
 seriously---differ in force and mitigations.
 
 When students are in the role of reviewers, instructors may need to consider
@@ -1805,7 +1805,7 @@ is wrong, or maybe your work isn't clear enough. }
 Look at the review, break out the actionable items, prioritize. }
 
 @item{Are you taking the review personally?  Remember that the review is about
-the work (and improving it!) not about you -- the ability to recognize your
+the work (and improving it!), not about you -- the ability to recognize your
 weaknesses and improve them is incredibly valuable.  This is an attitude
 encouraged by @emph{egoless
 programming}@~cite["w:psychology-computer-programming"]. }
@@ -1907,7 +1907,7 @@ that student may drive the production
 of the artifact, or even take over the work, without the weaker student having the opportunity
 to participate fully; thus, the weaker student may not benefit from the experience.
 In IFPR, a strong student's assignment (and hence grade) is not affected by the weak student.
-The strong student is in a better position to help the weaker student; although though 
+The strong student is in a better position to help the weaker student; although  
 the strong student may receive no beneficial comments, no harm will be done.
 With IFPR, any problems due to mismatched pairings can be alleviated
 by assigning multiple reviewers.
@@ -2129,7 +2129,7 @@ student's submission.
 In @IFPR, students have the opportunity to take what they learn
 from examples of others' work and apply it to their own.  There is existing
 research in how students take what they learn from existing examples (whether
-from peers or experts) and use it to learn principles they apply to new
+from peers or experts) and use it to learn principles they subsequently apply to new
 problems.
 
 There is a large body of work that studies learning from @emph{worked
@@ -2172,7 +2172,7 @@ using whatever techniques they would have tried in their initial submission.
 In PeerWise@~cite["denny-peerwise08"], students created and reviewed one
 another's multiple-choice questions, which has elements both of learning by
 example and of review.  They find that students who engaged with the system
-more---by contributing and explore more example questions than others (and
+more---by contributing and exploring more example questions than others (and
 more than they were required to by the course)---performed better than those
 who did not.  However, it's not clear that the exposure to more examples
 caused the difference in performance.
@@ -2274,7 +2274,7 @@ not completely the same, is the approach to knowledge sharing during lab work.
 Students actively solicit help from any student, for example, by yelling
 questions out, resulting in a fluid exchange of ideas and techniques. Even
 though the projects considered in these labs were run in an open,
-collaborative setting, cheating was avoiding by using individualized
+collaborative setting, cheating was avoided by using individualized
 assignments.
 
 Another working group discussed design decisions in computer-mediated
