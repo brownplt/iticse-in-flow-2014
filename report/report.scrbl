@@ -35,8 +35,8 @@
 @(authorinfo "Tobias Wrigstad" "Uppsala Unviersitet" "tobias.wrigstad@it.uu.se")
 
 @abstract{Peer-review is a valuable tool that helps both the reviewee,
-who receives feedback about their work, and the reviewer, who sees
-different potential solutions and improves their ability to critique
+who receives feedback about his work, and the reviewer, who sees
+different potential solutions and improves her ability to critique
 work. @emph{In-flow} peer-review (IFPR) is peer-review done while an
 assignment is in progress. Peer-review done during this time is likely
 to result in greater motivation for both reviewer and
@@ -117,8 +117,8 @@ students have moved on to other assignments.}
 @item{Students can apply what they learn from seeing examples
 of one another's work, and also learn to exercise judgment when evaluating
 existing solutions.  When a student sees
-another's work, they do not know the quality of the work they see: it
-could be better than their own work, but it could also be
+another's work, she does not know the quality of the work she sees: it
+could be better than her own work, but it could also be
 worse.  This takes some potential problems with plagiarism and turns them into a
 part of the learning process.}
 
@@ -236,14 +236,9 @@ non-majors.  Objectives around collaboration and creating standards of
 evaluation, however, seem to apply to both majors and non-majors.
 (@Secref["s:nonmajors"])}
 
-@item{The relationship to pair-programming. Pair-programming might
-appear to also be a kind of IFPR---indeed, an extreme version of
-it. However, the two processes are somewhat different and
-complementary. (@Secref["s:pairprog"])}
-
 ]
 
-@section{Terminology}
+@subsection{Terminology}
 
 @(figure* "i:terminology"
           "Illustration of Key Terminology"
@@ -1221,7 +1216,7 @@ was 6.50 and the group average was 5.23.'' This hints to the reviewer that he
 may have missed something in his review.  This does run into issues of
 calibration and opinion: just because a student disagrees with the average,
 it doesn't mean they are wrong!  The outlying reviewer may have understood something the other
-reviewers didn't, in which case comparing their review to an expert's, or to a
+reviewers didn't, in which case comparing his review to an expert's, or to a
 trusted automated process, may be more useful feedback.}
 
 @item{@bold{Having students review submissions of known quality}:
@@ -1358,10 +1353,10 @@ If they have to internalize an additional problem description along with new
 code, this puts significantly more overhead into the reviewing process.
 
 Depending on the learning goals, it may be good for the reviewer to learn to
-incorporate ideas from different solutions into their own, since it requires a
+incorporate ideas from different solutions into her own, since it requires a
 more abstract understanding of the techniques.  For novices, it may
 be enough of a challenge to recognize a good solution and
-apply it to their own.
+apply it to her own.
 }
 
 @item{@bold{Weighted Submission Grading}:
@@ -1392,7 +1387,7 @@ with other techniques that cannot be copied.  For example, in an in-person
 code review of a student's solution, an instructor can quickly ascertain
 whether the student has simply copied something or actually understands
 the code they have submitted.  This can be done by, for example, asking the
-student to change their program to match a new specification, or asking her
+student to change his program to match a new specification, or asking her
 to understand a proposed change to her submitted code.
 }
 ]
@@ -1417,7 +1412,7 @@ MOOCs@~cite["kwl...:peer-self-assess-mooc"], and Reily et al. report on the
 accuracy of a combination of peer reviews at assessing programming assignments
 @~cite["reily-aggregate-reviews09"].
 Peer assessment changes the motivation structure of @|IFPR|.  For example, a
-student who is afraid of affecting their peers' grades with negative feedback
+student who is afraid of affecting his peers' grades with negative feedback
 may be more hesitant to give that feedback.  In contexts where students are
 still learning to review and give feedback, inaccurate reviews are expected
 and an important part of the learning process: in this case, reviews probably should not be used
@@ -1631,18 +1626,20 @@ Experts can act as moderators to make sure that issues and
 conflicts that arise, whether in a live situation or asynchronously, can be dealt with by an
 authority figure.  As moderators, experts do not take
 on the role of reviewers, which keeps
-students in charge of the feedback itself.  So
-moderation is a form of process rather than content expertise (akin to
+students in charge of the feedback itself. 
+Moderation is thus a form of process- rather than content-expertise (akin to
 pedagogical code reviews@~cite["hundhausen-pcr-toce13"], which are led by an
-expert moderator).
-Another form of process expertise arises when experts are present not
-for moderation but as facilitators.  Students who are not
+expert moderator).  Experts may also act as
+facilitators of group discussion of work or reviews.  Students who are not
 sure of themselves may not contribute much; experts can assist in getting
 students to contribute, and push the idea of review as a
 learning process, in addition to acting as figures of objective authority on
-grading.
+grading. Facilitation is likely harder to integrate into @IFPR
+configurations in which students submit work and reviews
+asychnronously relative to one another.
 
-Expert reviewers can help address cultural issues where
+Whether acting as moderators or facilitations, 
+expert reviewers can help address cultural issues where
 students devalue the opinions of their peers and overvalue the
 opinions of instructors.  They can also offset deficiencies in the
 knowledge and insight of students who are themselves adjusting to the
@@ -1974,7 +1971,9 @@ effective reviewing practices.  By measuring defect rates found against the
 number of lines of code under review and the length of the review session,
 their study recommends ``the single best piece of advice we can give is 
 to review between 100 and 300 lines of code at a time and spend 30-60 minutes
-to review it.''
+to review it.''  While this advice may be appropriate for peer-review
+in upper-level or graduate courses, 
+this much code would likely overwhelm lower-level students.
 
 
 @section{Additional Related Work}
@@ -2134,10 +2133,12 @@ problems.
 There is a large body of work that studies learning from @emph{worked
 examples}@~cite["adrw:2000:worked-examples"], in which students learn solely
 or primarily from example solutions to problems with accompanying descriptions
-of the problem solving process used.  Worked examples are traditionally created by
-experts, and in @IFPR the examples students see come from their peers.  In
-addition, in @IFPR students see the examples @emph{after} they attempt the
-problem themselves.  Finally, worked examples generally have explanations at a
+of the problem solving process used.  Worked examples and peer
+solutions differ significantly.  Typically, worked examples are
+carefully crafted by experts to help students learn a problem-solving
+process.  In peer review, students see solutions produced by peers
+after attempting the problem themselves, not as part of learning how
+to do the problem. In addition, worked examples generally have explanations at a
 finer granularity than we would consider presenting peer review at.
 Nevertheless, some of the recommendations of the worked
 examples literature may be relevant in the @IFPR setting: in a broad survey of
