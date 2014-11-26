@@ -1873,15 +1873,113 @@ could provide a compact picture of a certain artifact to authors, reviewers, or 
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-@section{Related Code-Review Practices}
+@section{Industrial Code-Review Practice}
 
 Much of our discussion of @IFPR has revolved around code review, as programs
 are one of the most common artifacts in computer science courses.
-Given the rich history of industrial code-review practice, it is worth
-asking what @IFPR can learn from this practice.  We look at two forms
-of industrial code review: pair programming and peer code review.
+Given the rich history of code-review in industry, it is worth
+asking what @IFPR can learn from this practice.  
+Code review is an essential component of industrial
+software-development.  Industrial peer review is inherently
+in-flow, as reviews are conducted on a regular basis during
+development -- it would be odd indeed to only perform code review after a product
+had shipped to customers!  The industrial product-development life cycle is longer
+than that in many courses, but best practices in industrial peer
+review are still useful context for this report.
 
-@subsection[#:tag "s:pairprog"]{Pair Programming and IFPR}
+
+@subsection{Motivations for Industrial Code Review}
+
+Industrial code reviews differ in motivation from pedagogic code reviews.  The
+goal is often to reduce the defect rate before releasing software or
+committing to a design.  This is the primary measure of an effective review
+process in Fagan's seminal work@~cite["fagan-code-inspection"], in followup
+work to it@~cite["votta-meetings"], and also in some modern
+surveys tied to large case studies@~cite["smartbear-code-review"].  The goals
+of in-flow peer review in pedagogic settings are much broader than just
+finding bugs in peers' code, though finding problems is certainly one worthy
+cause for review.
+
+However, in one modern study that studies attitudes about code review in both
+developers and managers at Microsoft, researchers found that defect finding,
+while important, was only one of several top motivations developers saw for
+review@~cite["bacchelli-modern-code-review"].  Also scoring high in developer
+surveys as motivations for code review are general code improvement,
+suggesting and finding alternative solutions, knowledge transfer, and team
+awareness.  While performing reviews, developers indicated specific cases where
+they learned about a new API that they could use in their own code, or
+providing links to the code author with documentation of other alternatives,
+suggesting that these activities do indeed occur.
+
+Activites like knowledge transfer and dissemination of ideas are certainly
+goals of in-flow peer review, and in-flow strategies should consider ways to
+foster them.  Bachelli and Bird@~cite["bacchelli-modern-code-review"] note
+that these metrics are harder to measure than defect rate, but observe them
+coming up spontaneously in interviews and in observations of reviewers.
+
+@subsection{Staged Code Inspections}
+
+Fagan's seminal work on code inspections in an industrial
+setting@~cite["fagan-code-inspection"] finds that putting inspections at
+carefully-delineated points throughout a product's life cycle can save time by
+fixing faults earlier, before other work builds on the buggy code.  In Fagan's
+experiments, there are three inspections: one after an initial design phase,
+one after initial coding, and one after unit testing and before system-wide
+testing.  Experiments show that maximal productivity is reached by including
+only the first two inspection steps due to the high cost in developer time
+relative to the time saved by early detection, but that using the first two
+steps increases programmer productivity by 23%, according to their metrics.
+
+This result mirrors our intuitions about the value of staging assignments for
+review at points that are useful for catching and fixing misconceptions about
+the assignment.  Our primary goal is not simply to improve the programming
+output of students, however. We care about what they learn from seeing other
+examples, teaching them to effectively review others' code, and more.  Still,
+it is useful to consider that the in-flow experience is similar to effective
+industry practices, and note that professional developers benefit from the
+staging process.
+
+@subsection{Meetings vs. Asynchronous Code Review}
+
+Fagan's original results are for @emph{formal code
+inspections}@~cite["fagan-code-inspection"], which consist of a
+meeting of several developers (including the original author), conducted with
+prior preparation and with a separate @emph{reader}, separate from the author,
+who presents the work.  Defects' cause and detection are documented in detail,
+which acts as a sort of ``rubric'' for the code review.
+
+While formal code inspections demonstrably find valuable defects, it is not
+clear that the organization of a meeting is required in order to have a
+comparable effect.  Votta studied the necessity of meetings for code
+inspection, and found that the majority of defects---over 90%---were found in
+the @emph{preparation} for the meeting, rather than in the meeting
+itself@~cite["votta-meetings"].
+Votta concludes that much of the benefit of code review can be had without the
+overhead of scheduling in-person meetings.
+
+There is further research on this debate, but the only clear conclusion is
+that significant benefits of review remain even without in-person review.  In
+a pedagogic setting, in-person reviews may serve other goals, like training
+students to review, encouraging productive feedback, and supporting the social
+aspects of review.  However, industry research suggests that the overhead of
+scheduling and holding meetings isn't a prerequisite of effective reviews in
+professional settings.
+
+@subsection{What and How to Review}
+
+A large industrial case study on code review@~cite["smartbear-code-review"],
+which also documents a survey of code review in industry (including a longer
+discussion of formal vs. lightweight review), identifies guidelines for
+effective reviewing practices.  By measuring defect rates found against the
+number of lines of code under review and the length of the review session,
+their study recommends ``the single best piece of advice we can give is 
+to review between 100 and 300 lines of code at a time and spend 30-60 minutes
+to review it.''
+
+
+@section{Additional Related Work}
+
+@subsection[#:tag "s:pairprog"]{Pair Programming}
 
 Pair programming (henceforth PP) is a software-development technique
 in which two programmers work together on one computer.  PP involves
@@ -1954,107 +2052,6 @@ program.
 }
 ]
 
-@subsection{Industrial Peer-Review Practice}
-
-Code review is an essential component of industrial
-software-development practice.  Industrial peer review is inherently
-in-flow, as reviews are conducted on a regular basis during
-development -- it would be odd indeed to only perform code review after a product
-had shipped to customers!  The industrial product-development life cycle is longer
-than that in many courses, but best practices in industrial peer
-review are still useful context for this report.
-
-
-@subsubsection{Motivations for Industrial Code Review}
-
-Industrial code reviews differ in motivation from pedagogic code reviews.  The
-goal is often to reduce the defect rate before releasing software or
-committing to a design.  This is the primary measure of an effective review
-process in Fagan's seminal work@~cite["fagan-code-inspection"], in followup
-work to it@~cite["votta-meetings"], and also in some modern
-surveys tied to large case studies@~cite["smartbear-code-review"].  The goals
-of in-flow peer review in pedagogic settings are much broader than just
-finding bugs in peers' code, though finding problems is certainly one worthy
-cause for review.
-
-However, in one modern study that studies attitudes about code review in both
-developers and managers at Microsoft, researchers found that defect finding,
-while important, was only one of several top motivations developers saw for
-review@~cite["bacchelli-modern-code-review"].  Also scoring high in developer
-surveys as motivations for code review are general code improvement,
-suggesting and finding alternative solutions, knowledge transfer, and team
-awareness.  While performing reviews, developers indicated specific cases where
-they learned about a new API that they could use in their own code, or
-providing links to the code author with documentation of other alternatives,
-suggesting that these activities do indeed occur.
-
-Activites like knowledge transfer and dissemination of ideas are certainly
-goals of in-flow peer review, and in-flow strategies should consider ways to
-foster them.  Bachelli and Bird@~cite["bacchelli-modern-code-review"] note
-that these metrics are harder to measure than defect rate, but observe them
-coming up spontaneously in interviews and in observations of reviewers.
-
-@subsubsection{Staged Code Inspections}
-
-Fagan's seminal work on code inspections in an industrial
-setting@~cite["fagan-code-inspection"] finds that putting inspections at
-carefully-delineated points throughout a product's life cycle can save time by
-fixing faults earlier, before other work builds on the buggy code.  In Fagan's
-experiments, there are three inspections: one after an initial design phase,
-one after initial coding, and one after unit testing and before system-wide
-testing.  Experiments show that maximal productivity is reached by including
-only the first two inspection steps due to the high cost in developer time
-relative to the time saved by early detection, but that using the first two
-steps increases programmer productivity by 23%, according to their metrics.
-
-This result mirrors our intuitions about the value of staging assignments for
-review at points that are useful for catching and fixing misconceptions about
-the assignment.  Our primary goal is not simply to improve the programming
-output of students, however. We care about what they learn from seeing other
-examples, teaching them to effectively review others' code, and more.  Still,
-it is useful to consider that the in-flow experience is similar to effective
-industry practices, and note that professional developers benefit from the
-staging process.
-
-@subsubsection{Meetings vs. Asynchronous Code Review}
-
-Fagan's original results are for @emph{formal code
-inspections}@~cite["fagan-code-inspection"], which consist of a
-meeting of several developers (including the original author), conducted with
-prior preparation and with a separate @emph{reader}, separate from the author,
-who presents the work.  Defects' cause and detection are documented in detail,
-which acts as a sort of ``rubric'' for the code review.
-
-While formal code inspections demonstrably find valuable defects, it is not
-clear that the organization of a meeting is required in order to have a
-comparable effect.  Votta studied the necessity of meetings for code
-inspection, and found that the majority of defects---over 90%---were found in
-the @emph{preparation} for the meeting, rather than in the meeting
-itself@~cite["votta-meetings"].
-Votta concludes that much of the benefit of code review can be had without the
-overhead of scheduling in-person meetings.
-
-There is further research on this debate, but the only clear conclusion is
-that significant benefits of review remain even without in-person review.  In
-a pedagogic setting, in-person reviews may serve other goals, like training
-students to review, encouraging productive feedback, and supporting the social
-aspects of review.  However, industry research suggests that the overhead of
-scheduling and holding meetings isn't a prerequisite of effective reviews in
-professional settings.
-
-@subsubsection{What and How to Review}
-
-A large industrial case study on code review@~cite["smartbear-code-review"],
-which also documents a survey of code review in industry (including a longer
-discussion of formal vs. lightweight review), identifies guidelines for
-effective reviewing practices.  By measuring defect rates found against the
-number of lines of code under review and the length of the review session,
-their study recommends ``the single best piece of advice we can give is 
-to review between 100 and 300 lines of code at a time and spend 30-60 minutes
-to review it.''
-
-
-@section{Additional Related Work}
 
 @subsection{Intrinsic vs. Extrinsic Motivation}
 
