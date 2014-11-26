@@ -81,7 +81,7 @@ Students are expected to:
 ]
 }
 Peer review clearly has a role to play in developing each of these
-skills. Students are forced to read and evaluate proposed (partial)
+skills. Students are must read and evaluate proposed (partial)
 solutions, try to at least locate (if not offer corrections to)
 errors, offer their explanations for what an artifact is doing
 (especially if it does not match the expectations set by the problem),
@@ -288,8 +288,8 @@ expected to produce reviews for each submission.}
 @section[#:tag "s:goals"]{Educational Goals of @IFPR}
 
 Both peer review and the in-flow variant target a complex and
-interesting set of educational goals, some student focused and some
-instructor focused.  Working group members were surprised at the
+interesting set of educational goals, some student-focused and some
+instructor-focused.  Working group members were surprised at the
 subtleties that these goals brought to questions about how to
 configure @|IFPR|.  Indeed, many found discussions of the educational
 goals (and their impacts) the most thought-provoking aspect of our
@@ -312,9 +312,9 @@ ideas}
 ]
 
 The first two items arise primarily in students' role as reviewers,
-and are common to all forms of peer-review.  The remaining tasks arise
+and are common to all forms of peer-review.  The last two tasks arise
 more in students' roles as recipients of reviews, and have more urgency
-in an in-flow context.  In the context of Bloom's
+in an in-flow context.  The middle two arise in both roles.  In the context of Bloom's
 taxonomy@~cite["bloom-taxonomy"],
 these skills move students beyond ``remember,'' ``understand,'' and
 ``apply'' into ``evaluate''.  They engage students in reflection and
@@ -416,6 +416,7 @@ peer review.
         name number)
       (format "~a/asgn-~a.md" name number)))
   (list (list @study-refs[ref]) (list link)))
+
 @section{Examples of @IFPR}
 
 @(figure* "i:case-studies"
@@ -601,7 +602,8 @@ student levels and course types.  More interestingly, they varied
 widely in the kinds of artifacts and processes that they suggested for
 @|IFPR|.  @(Figure-ref "i:case-studies") and @(figure-ref
 "i:case-studies-cont") summarize the key
-parameters of the case studies.  The table lists the name and level of
+parameters of the case studies: the former covers introductory-level
+courses and the latter covers upper-level courses.  The table lists the name and level of
 the course, describes the assignment in which @IFPR was used,
 describes the submissions that were reviewed, and describes the review
 criteria for submissions.  Assignments with [*] after their descriptions
@@ -1123,9 +1125,9 @@ revision. These conversations have more structure than untargeted
 comments about the entire submission.
 
 In some situations, non-text artifacts can be effective, as not all
-submissions need to be code.  Code architecture diagrams can be critiqued and
+submissions need to be code.  Code-architecture diagrams can be critiqued and
 marked up with freehand annotations, pictures of the state of a running program
-can be drawn, and even code patches can be an effective way to convey
+can be drawn, and code patches can be used to convey
 comments.  This is one case in which the default technology that authors of
 tools for in-flow peer review might choose could be limiting.
 
@@ -1153,7 +1155,7 @@ programs.
 
 @subsection[#:tag "s:meta-reviewing"]{Review Feedback (Meta-Reviewing)}
 
-Any use of peer-review must choose whether to include grading or feedback
+Any instructor using peer-review must choose whether to include grading or feedback
 on the contents of reviews themselves.  We use the term @emph{meta-review} to
 refer to any feedback on a review (because feedback can be considered a review
 of a review).  Feedback can take many forms: the author who received a review
@@ -1227,7 +1229,7 @@ In CaptainTeach programming assignments, half the time
 students are asked to review a known-good or known-bad solution 
 (implemented by the course staff)@~cite["politz-ct-iticse14"].  Students use a Likert
 scale in each review to indicate whether they think the submission under
-review is correct: if a student gives a strong score to a known-bad
+review is correct. If a reviewer gives a strong score to a known-bad
 solution, or a weak score to a known-good solution, she gets immediate
 feedback telling her of the discrepancy.
 }
@@ -1372,7 +1374,7 @@ that they learned from them; however, a student has no guarantee that what he is
 seeing is correct, so blindly copying can hurt!
 
 However, wholesale copying (where a student submits an empty file then
-copies the best of what they see) should be discouraged.  In order to
+copies the best of what they see) should be discouraged (to say the least!).  In order to
 mitigate this, Politz et al.@~cite["politz-ct-iticse14"] grade IFPR assignments by assigning heavier
 weights to initial submissions than to post-review submissions: an initial
 program submission counts for 75% of the grade.  Students can still improve
@@ -1462,7 +1464,7 @@ ways in which the conflict could manifest itself:
 
 @itemlist[
 
-@item{@bold{Demotivating}: There is disincentive to do good review, because it
+@item{@bold{Demotivative}: There is disincentive to do good review, because it
 can push others past oneself in achievement, adversely affecting one's own
 grade.}
 
@@ -1470,7 +1472,7 @@ grade.}
 students could even sabotage one another with bad feedback,
 hoping to reduce others' scores to actively improve their own.}
 
-@item{@bold{Unmotivating}: Since the curve puts a limit on how much one can
+@item{@bold{Unmotivative}: Since the curve puts a limit on how much one can
 achieve, there is a disincentive to @emph{respond} to feedback or reflect
 (e.g. especially for high-achieving students, there's little reason to take
 feedback seriously).
@@ -1860,7 +1862,7 @@ could be used to organize submissions,
 and information in meta-reviews could be used to organize reviews.
 
 Instructors as well as students could benefit from analytic visualizations or dashboards. 
-Visualizations presenting activity over time could help to understand the timeliness of reviews 
+Visualizations presenting activity over time could help instructors understand the timeliness of reviews 
 or a student's progress over time in terms of the quality of their submissions or their reviews. 
 Visualizations of reviewer-author relationships, 
 which could include various historic aspects, 
@@ -2263,7 +2265,7 @@ ability@~cite["Garvin-Doxas:2004:CCS:1060071.1060073"].  In later work, Barker a
 Garvin-Doxas describe the outcome of running an IT course more like a fine
 arts course than a traditional engineering
 course@~cite["barker-fine-arts-approach-cs05"]. This included projects that
-were more meaningful, public critique of results, and routing collaboration.
+were more meaningful, public critique of results, and routine collaboration.
 This approach created a classroom culture where learning is a social and
 community process, rather than isolated, and the result was a greater
 retention of female students than the traditional engineering teaching
@@ -2398,6 +2400,17 @@ but not to be intimidated by them, or to be concerned that there are too many
 challenges to tackle in adopting @|IFPR|.  The key task is to pick good
 moments for reflection in the middle of assignments, and use those moments to
 get the most out of peer feedback (which we already know has many benefits).
+
+@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+@section{Acknowledgments}
+
+Many students and course staff participated in our experiments with
+peer review prior to the working group meeting. We appreciate their
+feedback, humor, and patience; their experiences influenced many
+working-group discussions.  Our reviewers provided extremely useful
+and detailed feedback.  We regret that the revision window was too
+narrow for us to incorporate more of their recommendations.
 
 @(generate-bib)
 
