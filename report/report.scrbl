@@ -341,7 +341,7 @@ an example of a Contributing Student Pedagogy
 (CSP), a pedagogy in which students (1) contribute to the learning of
 others and (2) value the contributions of other students.  A 2008
 ITiCSE working group report describes various facets of such
-pedagogies@~cite["cspwg-08"].  @IFPR targets the second criterion
+pedagogies@~cite["hcjlmprsss:2008:wg"].  @IFPR targets the second criterion
 (valuing the contributions of other students) more than traditional,
 post-submission peer review.  Various parameters in implementations of
 @IFPR affect the extent to which students contribute to the learning
@@ -1485,7 +1485,7 @@ Wessa et al.@~cite["wessa2009reproducible"] identify statistical
 measures of peer review process and demonstrate
 that@~cite["wessa2010reviewing"] these measurements can be used to
 built statistical models, and therefore automatic evaluations of
-reviews.  Theyprescribe that objective measures of review quality,
+reviews.  They prescribe that objective measures of review quality,
 such as word count and number of received and given reviews, can be
 used as basis for assessing overall student performance. Similar
 automated review process is proposed by Ramachandran et

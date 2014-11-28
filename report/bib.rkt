@@ -4,6 +4,27 @@
 
 (provide (all-defined-out))
 
+(define hcjlmprsss:2008:wg
+  (make-bib
+    #:author
+      (authors
+        (author-name "John" "Hamer")
+        (author-name "Quintin" "Cutts")
+        (author-name "Jana" "Jackova")
+        (author-name "Andrew" "Luxton-Reilly")
+        (author-name "Robert" "McCartney")
+        (author-name "Helen" "Purchase")
+        (author-name "Charles" "Riedesel")
+        (author-name "Mara" "Saeli")
+        (author-name "Kate" "Sanders")
+        (author-name "Judite" "Sheard"))
+    #:title
+      "Contributing Student Pedagogy"
+    #:location
+      (journal-location "SIGCSE Bulletin" #:pages (list 194 212) #:volume 40 #:number 4)
+    #:date 2008
+))
+
 (define hpld:2014:aehed
   (make-bib
     #:title "A comparison of peer and tutor feedback"
@@ -175,6 +196,7 @@
         "bloom-taxonomy" bloom
         "hmk:2005:australia-ed" hmk:2005:australia-ed
         "hpld:2014:aehed" hpld:2014:aehed
+        "hcjlmprsss:2008:wg" hcjlmprsss:2008:wg
         ))
           
 (define-cite autobib-cite _ generate-bib #:style number-style)
