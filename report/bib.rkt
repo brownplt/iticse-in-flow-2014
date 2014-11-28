@@ -4,6 +4,8 @@
 
 (provide (all-defined-out))
 
+(define j:toce "Transactions on Computing Education")
+
 (define hcjlmprsss:2008:wg
   (make-bib
     #:author
@@ -180,6 +182,55 @@
     #:location
       (book-location #:publisher "SmartBear Software")))
 
+(define dl:ijse:2000
+  (make-bib
+    #:author
+      (authors
+        (author-name "Elizabeth A." "Davis")
+        (author-name "Maria C." "Linn"))
+    #:title "Scaffolding students’ knowledge integration: prompts for reflection in KI"
+    #:date 2000
+    #:location
+      (journal-location
+        "International Journal of Science Education"
+        #:volume 22
+        #:number 8)))
+
+
+(define lgp:toce:2013
+  (make-bib
+    #:author
+      (authors
+        (author-name "Cynthia Baily" "Lee")
+        (author-name "Saturnino" "Garcia")
+        (author-name "Leo" "Porter"))
+    #:title "Can Peer Instruction Be Effective in Upper-division Computer Science Courses?"
+    #:date 2013
+    #:location
+      (journal-location
+        j:toce
+        #:pages (list 1 22)
+        #:volume 13
+        #:number 3)))
+
+;hundhausen-pcr-toce13,
+(define haa:toce:2013
+  (make-bib
+    #:title
+      "Talking About Code: Integrating Pedagogical Code Reviews into Early Computing Courses"
+    #:author
+      (authors
+        (author-name "Christopher D." "Hundhausen")
+        (author-name "Anukrati" "Agrawal")
+        (author-name "Pawan" "Agarwal"))
+    #:location
+      (journal-location
+        j:toce
+        #:volume 13
+        #:number 3)
+    #:date 2013))
+
+
 
 (define special-keys
   (hash "deci-self-determination" deci
@@ -197,6 +248,9 @@
         "hmk:2005:australia-ed" hmk:2005:australia-ed
         "hpld:2014:aehed" hpld:2014:aehed
         "hcjlmprsss:2008:wg" hcjlmprsss:2008:wg
+        "dl:ijse:2000" dl:ijse:2000
+        "lgp:toce:2013" lgp:toce:2013
+        "haa:toce:2013" haa:toce:2013
         ))
           
 (define-cite autobib-cite _ generate-bib #:style number-style)

@@ -1148,7 +1148,7 @@ face-to-face meeting less intimidating.  Moderated review moves the process
 more towards a studio-like setting, and may be appropriate especially for
 teaching students what is involved in a constructive code review process.
 Hundhausen, Agrawal, and Agarwal discuss this kind of in-person review, dubbed
-@emph{pedagogical code review}, in early courses@~cite["hundhausen-pcr-toce13"].  In
+@emph{pedagogical code review}, in early courses@~cite["haa:toce:2013"].  In
 pedagogical code review, a small group led by a moderator use a set of
 predefined coding practice guidelines to guide a group review of student
 programs.
@@ -1687,7 +1687,7 @@ authority figure.  As moderators, experts do not take
 on the role of reviewers, which keeps
 students in charge of the feedback itself. 
 Moderation is thus a form of process- rather than content-expertise (akin to
-pedagogical code reviews@~cite["hundhausen-pcr-toce13"], which are led by an
+pedagogical code reviews@~cite["haa:toce:2013"], which are led by an
 expert moderator).  Experts may also act as
 facilitators of group discussion of work or reviews.  Students who are not
 sure of themselves may not contribute much; experts can assist in getting
@@ -2209,7 +2209,7 @@ prompts---for summarization or clarification---may lead students in @IFPR
 contexts to give reviews that cause more reflection, or more directly reflect
 themselves.
 
-Davis and Linn@~cite["davis-reflection-prompts"] use explicit self-review
+Davis and Linn@~cite["dl:ijse:2000"] use explicit self-review
 prompts at different stages of assignments given to eighth graders.  For
 example, in one assignment, students had to perform a repeated task (designing
 clothing and environments to help cold-blooded aliens survive).  They compared
@@ -2294,7 +2294,7 @@ to improve student
 performance@~cite["crouch-mazur-peer-instr-10-years"] and
 engagement@~cite["simon-peer-instruction-icer13"] both in introductory
 courses@~cite["crouch-mazur-peer-instr-10-years"] and upper-division
-courses@~cite["lee-peer-instr-upper-level-13"]. Peer instruction, as
+courses@~cite["lgp:toce:2013"]. Peer instruction, as
 defined by Crouch 
 et al.@~cite["crouch-mazur-peer-instr-10-years"], focuses on
 engaging students in activities that require them to apply the core
