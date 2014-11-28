@@ -1891,7 +1891,8 @@ EasyChair@~cite["VoronkovX"], HotCRP@~cite["Kohler08"],
 CyberChair@~cite["VanDeStadtX"], START@~cite["GerberX"],
 Linklings@~cite["MontagueX"], and CONTINUE@~cite["Krishnamurthi03"].
 Some working group members had tried using conference managers for
-peer review, but found the fit to be problematic.
+peer review, but found the fit to be problematic unless the process
+matched that of conference reviews.
 
 Peer-review systems must support two distinct tasks: handling
 submissions and handling reviews.  For @IFPR, students must submit
@@ -1902,23 +1903,15 @@ from the same student over time.  Conference managers assume that
 submission deadlines are fixed and synchronous; this assumption is
 reflected in the synchronous assignment of papers to reviewers.
 Reviewers are typically given read access to all of the submitted
-papers, not just the subset that they are due to review.  These are
+papers, not just the subset that they are due to review (this sets
+aside conflict-of-interest, which is less of an issue in the pedagogic
+context).  These are
 two examples of configurations that instructors may wish to make in a
 pedagogic context that are inconsistent with the design of conference
 managers.  HotCRP@~cite["Kohler08"] does support more flexibility anonymity
 handling that most other tools: "selective reviewer anonymity" allows
 reviewers to explicitly decide on whether or not to keep their reviews
 anonymous.
-
-Fundamentally, the goals of the two processes are somewhat different:
-conference reviewing systems focus on summative feedback (having as
-their goal to produce a list of accepted papers), while educational
-peer-reviewing aims at providing formative feedback.  In addition, two
-standard features of conference managers, bidding on papers prior to
-review assignment and conflict-of-interest handling, are not
-particularly relevant in pedagogic settings.  These various
-misalignments add up to tools that are usually not well suited to
-pedagogic peer review.
 
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
