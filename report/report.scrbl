@@ -1489,7 +1489,7 @@ reviews.  Theyprescribe that objective measures of review quality,
 such as word count and number of received and given reviews, can be
 used as basis for assessing overall student performance. Similar
 automated review process is proposed by Ramachandran et
-al.@~cite["ramachandran2011automated"], who suggest metrics such as
+al.@~cite["rg:auto-assess-rev-lsa"], who suggest metrics such as
 content, tone and quantity of feedback to suitably represent a review.
 The group did not discuss automated assessment of reviews, though some
 members have looked informally at word counts in student reviews and
