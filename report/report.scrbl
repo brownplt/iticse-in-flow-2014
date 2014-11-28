@@ -1929,6 +1929,14 @@ could help with reviewer assignment.
 Visualizations superimposing reviews on top of submissions or meta-reviews on top of reviews 
 could provide a compact picture of a certain artifact to authors, reviewers, or instructors.
 
+Luxton-Reilly@~cite["Luxton_CSE_2009"] provides a systematic survey of
+tools for peer-assessment. The survey uses several key parameters to
+compare tools, such as the flexibilities of work flows, rubric
+designs, and the nature of evaluation supported.  The summary data in the
+survey is not sufficient to determine whether a given tool supports
+@IFPR, but the descriptions of individual tools contain details that
+may be useful in checking for @IFPR support.
+
 @subsubsection{Are Conference Managers Suitable?}
 
 Software tools for managing conference-paper submissions are designed
