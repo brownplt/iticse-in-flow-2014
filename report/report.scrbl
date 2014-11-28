@@ -806,7 +806,7 @@ is more or less appropriate in synchronous or asynchronous settings, as well.
   all submissions get the same number of reviews, for example.  In
   the asynchronous setting, the pool of reviewable submissions will necessarily be
   smaller (since only a subset of submissions have already come in); this skews
-  the selection.  In an asynchronous setting, random assignment also lacks
+  the selection.  In this setting, random assignment also lacks
   temporal fairness: the most recent submission isn't guaranteed to be
   reviewed first, which can weaken the benefit of quick feedback in the
   asynchronous model.
@@ -2495,6 +2495,22 @@ but not to be intimidated by them, or to be concerned that there are too many
 challenges to tackle in adopting @|IFPR|.  The key task is to pick good
 moments for reflection in the middle of assignments, and use those moments to
 get the most out of peer feedback (which we already know has many benefits).
+
+Not surprisingly, our discussions raised several questions for future
+research or in-class experimentation.  In addition to obvious
+questions about which configurations of @IFPR are most useful in
+various contexts, there are questions about overall logistics of
+@|IFPR|.  One of our reviewers posed two good examples:
+
+@itemlist[
+@item{How extensively should one incorporate @IFPR into a course in
+order to maximize the benefits?}
+
+@item{If the answer to the previous question includes multiple
+assignments, how can this be made to work in a single term (quarter or
+semester) without overstretching both the students and resources?}
+]
+We hope to see future projects and papers explore these and other questions.
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
