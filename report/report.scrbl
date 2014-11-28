@@ -157,6 +157,12 @@ case studies, which are summarized in two figures
 (@figure-ref["i:case-studies"], @figure-ref["i:case-studies-cont"]), also
 helped to form the basis of many  of our discussions.
 
+Although automated assessment tools provide a form of in-flow feedback
+to students, we focused our attention on person-to-person reviewing. 
+Automated approaches bypass having students write reviews; the members
+felt that writing reviews is sufficiently important that we retained
+it in all configurations of peer review discussed in this report.
+
 @section{An @IFPR Roadmap}
 
 @IFPR is a mechanism open to many policies. These policies are a
@@ -215,7 +221,7 @@ in the in-flow process,  and affect the appropriateness and effectiveness of
 reviewers know about each others' identity? Using single- and
 double-blind reviewing systems introduces trade-offs between
 protecting students' identity, creating the potential for abuse, and
-introducing them to norms of professional behavior, all of which need
+introducing students to norms of professional behavior, all of which need
 to be taken into account.  Anonymity may enable more students to
 participate comfortably, at the cost of missed opportunities for creating
 cultures of collaboration and professional working behavior.
@@ -380,7 +386,7 @@ this into account}
 ]
 
 The first three objectives arise in most forms of peer-review.  The
-second two arise in general peer-review, though the immediacy of the
+next two arise in general peer-review, though the immediacy of the
 in-flow context likely enhances their impact.  The last two are more
 directly associated with @|IFPR|.
 
@@ -389,9 +395,9 @@ way to enhance students' learning than as a way to scale grading.
 Indeed, most members were open to (if not already) investing
 additional staff resources in making sure students were learning
 reviewing skills from a peer-review process.  The members were
-interested in the insights they could gain as instructors from
-attending to the third objective (though none believed that grading
-all of the reviews was scalable or cost-effective).
+interested in the insights they could gain as instructors from reading
+students' reviews (as per the third objective), though none believed that grading
+all of the reviews was scalable or cost-effective.
 
 The group also coalesced around the social benefits of peer review,
 seeing this as an important aspect of developing competent
@@ -2054,6 +2060,13 @@ this much code would likely overwhelm lower-level students.
 
 @section{Additional Related Work}
 
+Pedagogic uses of peer review have a long history that predates
+in-flow reviewing or peer review in computing courses.  A survey of
+this history is beyond the scope of this document, though some relevant
+citations appear in other surveys@~cite["topping-peer-review98"].
+Here, we focus on more recent work in computing education and
+cognitive aspects of education that bear on in-flow peer review.
+
 @subsection[#:tag "s:pairprog"]{Pair Programming}
 
 Pair programming (henceforth PP) is a software-development technique
@@ -2224,18 +2237,6 @@ and that examples be presented in ``close proximity to matched
 problems''@~cite["adrw:2000:worked-examples"].  Both of these recommendations
 are consonant with strategies we have proposed for @IFPR assignments.
 
-Chi et al.@~cite["cblrg:1989:self-explanations"] and
-Renkl@~cite["r:1997:self-explanations"] studied the effects of asking students
-to provide
-talk-aloud self-explanations along with worked
-examples, and
-found that students who were better at producing self-explanations of the
-examples performed better on post tests.  This correlation was deemed to be
-independent of many other factors, including domain knowledge of the students
-coming into the task.  A peer review is a kind of explanation, and may cause
-students to go through the same kind of reflective process when studying
-other students' examples.
-
 Kulkarni et al.@~cite["klemmer-examples"] discuss changes in creative output
 between subjects who saw varying numbers of examples, and diversity in
 examples, prior to creating their own artwork.  Subjects seeing more diverse
@@ -2247,7 +2248,7 @@ using whatever techniques they would have tried in their initial submission.
 
 In PeerWise@~cite["denny-peerwise08"], students created and reviewed one
 another's multiple-choice questions, which has elements both of learning by
-example and of review.  They find that students who engaged with the system
+example and of review.  Denny et al. find that students who engaged with the system
 more---by contributing and exploring more example questions than others (and
 more than they were required to by the course)---performed better than those
 who did not.  However, it's not clear that the exposure to more examples
@@ -2465,7 +2466,7 @@ activities in judging others' work and incorporating feedback into their own.
 collaborative and participatory pedagogic styles in general.  All of those
 benefits, from enhancing a sense of community to improving communication
 skills, are also goals of @|IFPR|.  The main new idea is to
-engage students in the collaborative process by better integrating into the
+engage students in the collaborative process by better integrating feedback into the
 flow of assignments.
 
 This report outlines a large space for designing in-flow peer review
