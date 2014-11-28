@@ -1459,6 +1459,36 @@ improvements that their reviews inspired in the work of others, but
 felt the nuances (submissions with little room for improvement,
 students who chose not to act on reviews) made this infeasible.
 
+The group found relatively little in the literature on grading
+reviews.  Sims@~cite["sims1989student"] proposes grading the reviews
+according to compliance to the review writing guidelines.  The Review
+Quality Instrument (RQI) of van Rooyen et
+al.@~cite["van1999development"] is a simple, reliable, and valid scale
+for studying scientific peer review processes. The authors claim high
+internal consistency for RQI.  Trautman et al. propose using this
+framework for educational peer
+reviews@~cite["trautmann2009designing"], though note a significant
+limitation: the instrument gauges how well the reviewer has considered
+the key aspects of the work and less whether the review is accurate or
+correct.  They also question whether grading reviews might diminish
+the less tangible benefits of peer reviews such as increased
+motivation, ownership and increased interest in learning. This
+question is put forth as topic for research instead of a claim.
+
+Wessa et al.@~cite["wessa2009reproducible"] identify statistical
+measures of peer review process and demonstrate
+that@~cite["wessa2010reviewing"] these measurements can be used to
+built statistical models, and therefore automatic evaluations of
+reviews.  Theyprescribe that objective measures of review quality,
+such as word count and number of received and given reviews, can be
+used as basis for assessing overall student performance. Similar
+automated review process is proposed by Ramachandran et
+al.@~cite["ramachandran2011automated"], who suggest metrics such as
+content, tone and quantity of feedback to suitably represent a review.
+The group did not discuss automated assessment of reviews, though some
+members have looked informally at word counts in student reviews and
+found low correlation with the value of reviews.
+
 @subsubsection{Interaction with Relative and Curve Grading}
 
 The group noted that @IFPR (like other collaborative course structures)
