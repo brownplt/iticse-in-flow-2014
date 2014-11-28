@@ -174,6 +174,7 @@
         "mazur-peer-isntr-book" mazur
         "bloom-taxonomy" bloom
         "hmk:2005:australia-ed" hmk:2005:australia-ed
+        "hpld:2014:aehed" hpld:2014:aehed
         ))
           
 (define-cite autobib-cite _ generate-bib #:style number-style)
