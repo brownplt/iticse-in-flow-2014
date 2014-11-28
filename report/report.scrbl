@@ -97,7 +97,7 @@ courses and more, and peer review addresses similar underlying learning goals
 of evaluation and explanation of existing work.
 
 This working group explored a particular variant of peer-review called
-@italic{in-flow peer review}@~cite["politz-ct-iticse14"].  In this
+@italic{in-flow peer review}@~cite["ppkf:iticse:2014"].  In this
 model, peer review occurs while an assignment is in progress, before
 students submit their work for final grading. Performing peer-review
 in-flow has several potential benefits:
@@ -932,7 +932,7 @@ to consider in assigning reviews:
   more reviewed stages, reviewers can change at each stage, or continue to be
   the same throughout the process.  One study reports that, for assignments
   with more than 4-5 stages, switching authors at each stage made the reviewing
-  burden onerous@~cite["politz-ct-iticse14"].  Continuing to review the same
+  burden onerous@~cite["ppkf:iticse:2014"].  Continuing to review the same
   author's work may have lessened this burden, since the comprehension effort
   from earlier stages would carry over.}
 
@@ -1018,7 +1018,7 @@ The working group identified several potential roles for rubrics:
 @item{@bold{Rubrics for reviews of good solutions}:
     In at least one case of using IFPR in the classroom, students reported not
     knowing what to write when reviewing good
-    solutions@~cite["politz-ct-iticse14"].
+    solutions@~cite["ppkf:iticse:2014"].
     A rubric could explicitly prompt for feedback
     even on good work (e.g. ``What did you like about this submission?'', ``List
     one thing you would change, regardless of correctness'', ``What should the
@@ -1105,7 +1105,7 @@ could have the downside of reviewers only focusing on the issues that
 auto-grading revealed, masking situations in which the auto-grading missed
 something important (Politz et al. observed cases in which reviewers 
 were more negative than grades from an instructor-provided test suite
-@~cite["politz-ct-icer14"]).
+@~cite["pkf:icer:2014"]).
 
 Additional information for reviewers provides an implicit rubric,
 subject to the same tradeoffs we discussed regarding rubric structure.
@@ -1231,7 +1231,7 @@ trusted automated process, may be more useful feedback.}
 @item{@bold{Having students review submissions of known quality}:
 In CaptainTeach programming assignments, half the time
 students are asked to review a known-good or known-bad solution 
-(implemented by the course staff)@~cite["politz-ct-iticse14"].  Students use a Likert
+(implemented by the course staff)@~cite["ppkf:iticse:2014"].  Students use a Likert
 scale in each review to indicate whether they think the submission under
 review is correct. If a reviewer gives a strong score to a known-bad
 solution, or a weak score to a known-good solution, she gets immediate
@@ -1391,7 +1391,7 @@ seeing is correct, so blindly copying can hurt!
 
 However, wholesale copying (where a student submits an empty file then
 copies the best of what they see) should be discouraged (to say the least!).  In order to
-mitigate this, Politz et al.@~cite["politz-ct-iticse14"] grade IFPR assignments by assigning heavier
+mitigate this, Politz et al.@~cite["ppkf:iticse:2014"] grade IFPR assignments by assigning heavier
 weights to initial submissions than to post-review submissions: an initial
 program submission counts for 75% of the grade.  Students can still improve
 the 25%-weighted part of their score based on review feedback and copying
@@ -1478,7 +1478,7 @@ felt the nuances (submissions with little room for improvement,
 students who chose not to act on reviews) made this infeasible.
 
 The group found relatively little in the literature on grading
-reviews.  Sims@~cite["sims1989student"] proposes grading the reviews
+reviews.  Sims@~cite["s:jae:1989"] proposes grading the reviews
 according to compliance to the review writing guidelines.  The Review
 Quality Instrument (RQI) of van Rooyen et
 al.@~cite["van1999development"] is a simple, reliable, and valid scale
@@ -2004,8 +2004,8 @@ review are still useful context for this report.
 Industrial code reviews differ in motivation from pedagogic code reviews.  The
 goal is often to reduce the defect rate before releasing software or
 committing to a design.  This is the primary measure of an effective review
-process in Fagan's seminal work@~cite["fagan-code-inspection"], in followup
-work to it@~cite["votta-meetings"], and also in some modern
+process in Fagan's seminal work@~cite["f:ibmsys:1976"], in followup
+work to it@~cite["v:fse:1993"], and also in some modern
 surveys tied to large case studies@~cite["smartbear-code-review"].  The goals
 of in-flow peer review in pedagogic settings are much broader than just
 finding bugs in peers' code, though finding problems is certainly one worthy
@@ -2031,7 +2031,7 @@ coming up spontaneously in interviews and in observations of reviewers.
 @subsection{Staged Code Inspections}
 
 Fagan's seminal work on code inspections in an industrial
-setting@~cite["fagan-code-inspection"] finds that putting inspections at
+setting@~cite["f:ibmsys:1976"] finds that putting inspections at
 carefully-delineated points throughout a product's life cycle can save time by
 fixing faults earlier, before other work builds on the buggy code.  In Fagan's
 experiments, there are three inspections: one after an initial design phase,
@@ -2053,7 +2053,7 @@ staging process.
 @subsection{Meetings vs. Asynchronous Code Review}
 
 Fagan's original results are for @emph{formal code
-inspections}@~cite["fagan-code-inspection"], which consist of a
+inspections}@~cite["f:ibmsys:1976"], which consist of a
 meeting of several developers (including the original author), conducted with
 prior preparation and with a separate @emph{reader}, separate from the author,
 who presents the work.  Defects' cause and detection are documented in detail,
@@ -2064,7 +2064,7 @@ clear that the organization of a meeting is required in order to have a
 comparable effect.  Votta studied the necessity of meetings for code
 inspection, and found that the majority of defects---over 90%---were found in
 the @emph{preparation} for the meeting, rather than in the meeting
-itself@~cite["votta-meetings"].
+itself@~cite["v:fse:1993"].
 Votta concludes that much of the benefit of code review can be had without the
 overhead of scheduling in-person meetings.
 
@@ -2424,7 +2424,7 @@ of our case studies (@study-refs["krishnamurthi-asgn-1"
 ]), students review an instance of the
 @emph{same} work that they just did themselves.
 
-CaptainTeach@~cite["politz-ct-iticse14"] supports in-flow peer review for
+CaptainTeach@~cite["ppkf:iticse:2014"] supports in-flow peer review for
 programming assignments.  The Web-based tool supports test-first,
 data-structure-first, and one-function-at-a-time stagings of programming
 problems.  It uses asynchronous reviewing, where students see 2-3 reviews from
@@ -2435,11 +2435,11 @@ implementation, and data structures.  Students are also allowed to give
 (optional) feedback on reviews they received.  Politz et al. report that
 students engaged with the process, submitting stages early enough to get
 reviews (more than 24 hours before the deadline), and receiving review
-feedback promptly (a few hours)@~cite["politz-ct-iticse14"].  In another
+feedback promptly (a few hours)@~cite["ppkf:iticse:2014"].  In another
 analysis of data on reviews of test suites in CaptainTeach, Politz et al.
 report that students were more likely to add missing tests for a feature after
 review if they reviewed or were reviewed by a student who had tested for that
-feature@~cite["politz-ct-icer14"].
+feature@~cite["pkf:icer:2014"].
 
 Informa's ``Solve and Evaluate'' approach integrates a simple form of peer
 review into a software-based class room response

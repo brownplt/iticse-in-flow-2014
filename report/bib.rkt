@@ -4,7 +4,14 @@
 
 (provide (all-defined-out))
 
-(define j:toce "Transactions on Computing Education")
+(define toce "Transactions on Computing Education")
+
+(define iticse "Innovation and Technology in Computer Science Education")
+(define icer "International Computing Education Research")
+(define fse "Foundations of Software Engineering")
+
+(define (define-citation name bib)
+  (hash-set! special-keys name bib))
 
 (define hcjlmprsss:2008:wg
   (make-bib
@@ -208,7 +215,7 @@
     #:date 2013
     #:location
       (journal-location
-        j:toce
+        toce
         #:pages (list 1 22)
         #:volume 13
         #:number 3)))
@@ -225,34 +232,94 @@
         (author-name "Pawan" "Agarwal"))
     #:location
       (journal-location
-        j:toce
+        toce
         #:volume 13
         #:number 3)
     #:date 2013))
 
+;fagan-code-inspection
+(define f:ibmsys:1976
+  (make-bib
+    #:author (author-name "M. E." "Fagan")
+    #:title "Design and code inspections to reduce errors in program development"
+    #:location
+      (journal-location "IBM Systems Journal"
+        #:pages (list 182 211))
+    #:date 1976))
+
+
+(define v:fse:1993
+  (make-bib
+    #:author (author-name "Lawrence G." "Votta Jr.")
+    #:title "Does every inspection need a meeting?"
+    #:location (proceedings-location fse)
+    #:date 1993
+))
+
+;sims1989student
+(define s:jae:1989
+  (make-bib
+    #:title "Student peer review in the classroom: a teaching and grading tool"
+    #:author (author-name "Gerald K." "Sims")
+    #:location
+      (journal-location
+        "Journal of Agronomic Education"
+        #:volume 18
+        #:number 2
+        #:pages (list 105 108))
+    #:date 1989))
 
 
 (define special-keys
-  (hash "deci-self-determination" deci
-        "gehringer-expertiza-approach" expertiza
-        "rg:auto-assess-rev-lsa" auto-meta-review
-        "adrw:2000:worked-examples" renkl-1 
-        "r:1997:self-explanations" renkl-2 
-        "mk:2002:peer-mentor" miller
-        "w:psychology-computer-programming" psych-programming
-        "ghgjh:cult-org" geert
-        "punished-by-rewards" punished-by-rewards
-        "smartbear-code-review" smartbear
-        "mazur-peer-isntr-book" mazur
-        "bloom-taxonomy" bloom
-        "hmk:2005:australia-ed" hmk:2005:australia-ed
-        "hpld:2014:aehed" hpld:2014:aehed
-        "hcjlmprsss:2008:wg" hcjlmprsss:2008:wg
-        "dl:ijse:2000" dl:ijse:2000
-        "lgp:toce:2013" lgp:toce:2013
-        "haa:toce:2013" haa:toce:2013
-        ))
+  (make-hash (list
+        (cons "deci-self-determination" deci)
+        (cons "gehringer-expertiza-approach" expertiza)
+        (cons "rg:auto-assess-rev-lsa" auto-meta-review)
+        (cons "adrw:2000:worked-examples" renkl-1 )
+        (cons "r:1997:self-explanations" renkl-2 )
+        (cons "mk:2002:peer-mentor" miller)
+        (cons "w:psychology-computer-programming" psych-programming)
+        (cons "ghgjh:cult-org" geert)
+        (cons "punished-by-rewards" punished-by-rewards)
+        (cons "smartbear-code-review" smartbear)
+        (cons "mazur-peer-isntr-book" mazur)
+        (cons "bloom-taxonomy" bloom)
+        (cons "hmk:2005:australia-ed" hmk:2005:australia-ed)
+        (cons "hpld:2014:aehed" hpld:2014:aehed)
+        (cons "hcjlmprsss:2008:wg" hcjlmprsss:2008:wg)
+        (cons "dl:ijse:2000" dl:ijse:2000)
+        (cons "lgp:toce:2013" lgp:toce:2013)
+        (cons "haa:toce:2013" haa:toce:2013)
+        (cons "f:ibmsys:1976" f:ibmsys:1976)
+        (cons "v:fse:1993" v:fse:1993)
+        (cons "s:jae:1989" s:jae:1989)
+        )))
           
+(define-citation "ppkf:iticse:2014"
+  (make-bib
+    #:title "CaptainTeach: Multi-Stage, In-Flow Peer Review for Programming Assignments"
+    #:author
+      (authors
+        (author-name "Joe Gibbs" "Politz")
+        (author-name "Daniel" "Patterson")
+        (author-name "Shriram" "Krishnamurthi")
+        (author-name "Kathi" "Fisler"))
+    #:date "2014"
+    #:location
+      (proceedings-location iticse)))
+
+(define-citation "pkf:icer:2014"
+  (make-bib
+    #:title "In-flow Peer Review of Tests in Test-First Programming"
+    #:author
+      (authors
+        (author-name "Joe Gibbs" "Politz")
+        (author-name "Shriram" "Krishnamurthi")
+        (author-name "Kathi" "Fisler"))
+    #:date "2014"
+    #:location
+      (proceedings-location iticse)))
+
 (define-cite autobib-cite _ generate-bib #:style number-style)
 (define-bibtex-cite* "inflow.bib" autobib-cite _ ~cite-id citet-id)
 
