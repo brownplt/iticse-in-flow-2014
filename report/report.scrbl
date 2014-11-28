@@ -1257,6 +1257,17 @@ Expertiza tool attempts to give some more qualitative feedback automatically
 by a natural-language analysis of student
 work@~cite["rg:auto-assess-rev-lsa"].
 
+In Aropä, each review is ``an assignment in itself...  Reviews can thus be
+reviewed using all the facilities for normal assignments''~cite["hamer-aropa"].
+Based on this observation, Aropä's main workflow suggests two explicit kinds of
+meta-review.  First reviewees can @emph{rate} their reviews, which gives
+feedback on the perceived review quality.  Second, there is an explicit
+@emph{dispute} phase, in which the reviewee can disagree with the content of a
+review and request that the reviewer reconsider@~cite["hamer-aropa"], after
+which the reviewer can submit revised feedback.  This review-dispute-revise
+loop is, in effect, an in-flow review of the review, since the student writing
+the review gets feedback on multiple versions of the review.
+
 @subsubsection["Using Meta-Reviews"]
 
 While one generally may prefer to eliminate low-quality contents in reviews, 
