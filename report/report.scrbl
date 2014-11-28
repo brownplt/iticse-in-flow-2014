@@ -1213,7 +1213,10 @@ each criterion they reviewed, how they did relative to the average of other
 students' scores@~cite["cho-sword"].  An example of feedback that they show
 says ``Your ratings were too nice for this set of papers.  Your average rating
 was 6.50 and the group average was 5.23.'' This hints to the reviewer that he
-may have missed something in his review.  This does run into issues of
+may have missed something in his review.  This is related to Hamer et al.'s
+work on identifying ``rogue'' students in peer
+assessment@~cite["hmk:2005:australia-ed"], which is focused on identifying
+outliers' impact on grades.  This does run into issues of
 calibration and opinion: just because a student disagrees with the average,
 it doesn't mean they are wrong!  The outlying reviewer may have understood something the other
 reviewers didn't, in which case comparing his review to an expert's, or to a
@@ -1412,7 +1415,8 @@ MOOCs@~cite["kwl...:peer-self-assess-mooc"], and Reily et al. report on the
 accuracy of a combination of peer reviews at assessing programming assignments
 @~cite["reily-aggregate-reviews09"].  Hamer et al. describe a technique for
 deriving grades from weighted averages of peer assessments to identify ``rogue''
-reviewers and generate fair grades@~cite["hmk:2005:australia-ed"].  A common
+reviewers and generate grades that weight more apparently accurate students'
+assessments more heavily@~cite["hmk:2005:australia-ed"].  A common
 theme across these studies is that a combination of peers' assessments provides
 an accurate enough assessment, even if some particular students or reviews are
 inaccurate.
