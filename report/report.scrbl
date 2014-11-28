@@ -1410,15 +1410,21 @@ design, peer
 assessment can produce similar results to TA grading in
 MOOCs@~cite["kwl...:peer-self-assess-mooc"], and Reily et al. report on the
 accuracy of a combination of peer reviews at assessing programming assignments
-@~cite["reily-aggregate-reviews09"].
+@~cite["reily-aggregate-reviews09"].  Hamer et al. describe a technique for
+deriving grades from weighted averages of peer assessments to identify ``rogue''
+reviewers and generate fair grades@~cite["hmk:2005:australia-ed"].  A common
+theme across these studies is that a combination of peers' assessments provides
+an accurate enough assessment, even if some particular students or reviews are
+inaccurate.
+
 Peer assessment changes the motivation structure of @|IFPR|.  For example, a
-student who is afraid of affecting his peers' grades with negative feedback
-may be more hesitant to give that feedback.  In contexts where students are
-still learning to review and give feedback, inaccurate reviews are expected
-and an important part of the learning process: in this case, reviews probably should not be used
-for grading purposes.  Using peer review for grading should be adopted with
-care, and practitioners should carefully consider its effects on the other
-design decisions discussed in this report.
+student who is afraid of affecting his peers' grades with negative feedback may
+be more hesitant to give that feedback.  In contexts where students are still
+learning to review and give feedback, inaccurate reviews are expected and an
+important part of the learning process: in this case, reviews probably should
+not be used for grading purposes.  Using peer review for grading should be
+adopted with care, and practitioners should carefully consider its effects on
+the other design decisions discussed in this report.
 
 @subsubsection{Should Reviews Be Graded?}
 

@@ -4,6 +4,19 @@
 
 (provide generate-bib ~cite)
 
+(define hmk:2005:australia-ed
+  (make-bib
+    #:title "A method of automatic grade calibration in peer assessment"
+    #:author 
+      (authors
+        (author-name "John" "Hamer")
+        (author-name "Kenneth T. K." "Ma")
+        (author-name "Hugh H. F." "Kwong"))
+    #:location
+      (proceedings-location "Australasian Conference on Computing Education")
+    #:date 2005
+))
+
 (define deci
   (make-bib
     #:title
@@ -146,6 +159,7 @@
         "smartbear-code-review" smartbear
         "mazur-peer-isntr-book" mazur
         "bloom-taxonomy" bloom
+        "hmk:2005:australia-ed" hmk:2005:australia-ed
         ))
           
 (define-cite autobib-cite _ generate-bib #:style number-style)
