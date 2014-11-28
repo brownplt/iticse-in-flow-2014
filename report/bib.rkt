@@ -7,8 +7,10 @@
 (define toce "Transactions on Computing Education")
 
 (define iticse "Innovation and Technology in Computer Science Education")
+(define sigcse "Special Interest Group on Computer Science Education")
 (define icer "International Computing Education Research")
 (define fse "Foundations of Software Engineering")
+(define cscl "Computer Support for Collaborative Learning")
 
 (define (define-citation name bib)
   (hash-set! special-keys name bib))
@@ -319,6 +321,168 @@
     #:date "2014"
     #:location
       (proceedings-location iticse)))
+
+;crouch-mazur-peer-instr-10-years,
+(define-citation "cm:ajp:2001"
+  (make-bib
+    #:author
+      (authors
+        (author-name "Catherine H." "Crouch")
+        (author-name "Eric" "Mazur"))
+    #:title "Peer instruction: Ten years of experience and results"
+    #:location
+      (journal-location "American Journal of Physics"
+        #:volume 69
+        #:number 9
+        #:pages (list 970 977))
+    #:date 2001))
+
+
+;barker-fine-arts-approach-cs05,
+(define-citation "bgr:sigcse:2005"
+  (make-bib
+    #:author
+      (authors
+        (author-name "Lecia J." "Barker")
+        (author-name "Kathy" "Garvin-Doxas")
+        (author-name "Eric" "Roberts"))
+    #:title "What Can Computer Science Learn from a Fine Arts Approach to Teaching?"
+    #:location
+      (proceedings-location sigcse
+        #:pages (list 421 425))
+    #:date 2005
+  ))
+
+;chung2004promoting
+(define-citation "cc:ieti:2004"
+  (make-bib
+    #:author
+      (authors
+        (author-name "Jenny C. C." "Chung")
+        (author-name "Susanna M. K." "Chow"))
+    #:title "Promoting student learning through a student-centred problem-based learning subject curriculum"
+    #:location
+      (journal-location
+        "Innovations in Education and Teaching International"
+        #:volume 41
+        #:number 2
+        #:pages (list 157 168))
+    #:date 2004))
+
+;rick2006situating
+(define-citation "rg:ijcscl:2006"
+  (make-bib
+    #:title "Situating CoWeb: A scholarship of application"
+    #:author
+      (authors
+        (author-name "Jochen" "Rick")
+        (author-name "Mark" "Guzdial"))
+    #:location
+      (journal-location
+        "International Journal of Computer-Supported Collaborative Learning"
+        #:volume 1
+        #:number 1
+        #:pages (list 89 115))
+    #:date 2006))
+
+;nelson-feedback-rubric
+(define-citation "ns:is:2009"
+  (make-bib
+    #:author
+      (authors
+        (author-name "M. M." "Nelson")
+        (author-name "C. D." "Schunn"))
+    #:title "The nature of feedback: How different types of peer feedback affect writing performance" 
+    #:location
+      (journal-location "Instructional Science"
+        #:volume 27
+        #:number 4
+        #:pages (list 375 401))
+    #:date 2009))
+
+;Papadopoulos:2012:IPR:2215076.2215100
+(define-citation "pld:ce:2012"
+  (make-bib
+    #:author
+      (authors
+        (author-name "Pantelis M." "Papadopoulos")
+        (author-name "Thomas D." "Lagkas")
+        (author-name "Stavros N." "Demetriadis"))
+    #:title "How to Improve the Peer Review Method: Free-selection vs Assigned-pair Protocol Evaluated in a Computer Networking Course"
+    #:location
+      (journal-location "Computing & Education"
+        #:volume 59
+        #:number 2
+        #:pages (list 182 195))
+    #:date 2012))
+
+;trautmann2009designing,
+(define-citation "t:jcst:2009"
+  (make-bib
+    #:author (author-name "Nancy M." "Trautmann")
+    #:title "Designing Peer Review for Pedagogical Success: What Can We Learn from Professional Science?"
+    #:location
+      (journal-location "Journal of College Science Teaching"
+        #:volume 38
+        #:number 4
+        #:pages (list 14 19))
+    #:date 2009))
+
+;frederiksen-reflective-collaboration
+(define-citation "fw:cscl:1997"
+  (make-bib
+    #:author
+      (authors
+        (author-name "John R." "Frederiksen")
+        (author-name "Barbara Y." "White"))
+    #:title "Cognitive Facilitation: A Method for Promoting Reflective Collaboration"
+    #:location (proceedings-location cscl)
+    #:date 1997))
+
+;white-reflective-affordances,
+(define-citation "wffelc:icls:2002"
+  (make-bib
+    #:author
+      (authors
+        (author-name "Barbara Y." "White")
+        (author-name "John R." "Frederiksen")
+        (author-name "T." "Frederiksen")
+        (author-name "E." "Eslinger")
+        (author-name "A." "Collins"))
+    #:title "Inquiry Island: Affordances of a Multi-Agent Environment for Scientific Inquiry and Reflective Learning"
+    #:location
+      (proceedings-location "International Conference of the Learning Sciences (ICLS)")
+    #:date 2002))
+
+
+;van1999development,
+(define-citation "vbg:jce:1999"
+  (make-bib
+    #:author
+      (authors
+        (author-name "Susan" "van Rooyen")
+        (author-name "Nick" "Black")
+        (author-name "Fiona" "Godlee"))
+    #:title "Development of the review quality instrument (RQI) for assessing peer reviews of manuscripts"
+    #:location
+      (journal-location "Journal of Clinical Epidemiology"
+        #:volume 52
+        #:number 7
+        #:pages (list 625 629))
+    #:date 1999))
+
+;palinscar-peer-teaching,
+(define-citation "pb:ci:1984"
+  (make-bib
+    #:author
+      (authors
+        (author-name "Annemarie Sullivan" "Palinscar")
+        (author-name "Ann L." "Brown"))
+    #:title "Reciprocal Teaching of Comprehension-Fostering and Comprehension-Monitoring Activities"
+    #:location (journal-location "Cognition and Instruction"
+      #:pages (list 117 175))
+    #:date 1984))
+
 
 (define-cite autobib-cite _ generate-bib #:style number-style)
 (define-bibtex-cite* "inflow.bib" autobib-cite _ ~cite-id citet-id)

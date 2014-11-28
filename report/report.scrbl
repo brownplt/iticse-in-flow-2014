@@ -883,7 +883,7 @@ the most prompt feedback.
 
 Papadopoulos et al. explored different strategies for assigning students in
 peer review in a computer science course on
-networking@~cite["Papadopoulos:2012:IPR:2215076.2215100"].  They find that
+networking@~cite["pld:ce:2012"].  They find that
 students who select their peers freely perform better (according to experts
 rating the utility and clarity of reviews) than pairs where the students were
 assigned (randomly) by the instructors beforehand.
@@ -1244,7 +1244,7 @@ Existing research has explored ways to provide or assess meta reviews.
 Nelson and Schunn describe a rubric for evaluating peer feedback in writing
 assignments which includes criteria like the concreteness and actionability
 of the review, and whether it was generally positive or
-negative@~cite["nelson-feedback-rubric"].  Swan, Shen, and Hiltz study
+negative@~cite["ns:is:2009"].  Swan, Shen, and Hiltz study
 assessment strategies for comments in online discussion forums used to discuss
 class content@~cite["swan-online-assessment"].  Though the discussions are not
 necessarily critiques of student work---they are simply prompts for
@@ -1481,11 +1481,11 @@ The group found relatively little in the literature on grading
 reviews.  Sims@~cite["s:jae:1989"] proposes grading the reviews
 according to compliance to the review writing guidelines.  The Review
 Quality Instrument (RQI) of van Rooyen et
-al.@~cite["van1999development"] is a simple, reliable, and valid scale
+al.@~cite["vbg:jce:1999"] is a simple, reliable, and valid scale
 for studying scientific peer review processes. The authors claim high
 internal consistency for RQI.  Trautman et al. propose using this
 framework for educational peer
-reviews@~cite["trautmann2009designing"], though note a significant
+reviews@~cite["t:jcst:2009"], though note a significant
 limitation: the instrument gauges how well the reviewer has considered
 the key aspects of the work and less whether the review is accurate or
 correct.  They also question whether grading reviews might diminish
@@ -1537,7 +1537,7 @@ No one in the group used relative grading in their own courses,
 so we lacked first-hand experience in mitigating these problems in
 that context. Boud, Cohen and Sampson@~cite["boud1999peer"] discuss
 various tensions between standard assessment practices and learning
-from peers. Rick and Guzdial@~cite["rick2006situating"] discuss the
+from peers. Rick and Guzdial@~cite["rg:ijcscl:2006"] discuss the
 impact of curve-based grading on collaboration and peer learning.
 
 @subsection[#:tag "s:anon"]{Anonymity}
@@ -1824,7 +1824,7 @@ Humanities people generally read more than they write -- as
 reviewing is more like reading, it might feel more comfortable for
 them than programming.  This could be a component of a CS course in the style
 of fine arts, which Barker et al. found to create a better community culture
-and encouraged retention of female students@~cite["barker-cs-fine-arts"].
+and encouraged retention of female students@~cite["bgr:sigcse:2005"].
 
 
 
@@ -1845,7 +1845,7 @@ professional practice of reviewing (@secref["s:anon"]).  When addressing
 students coming from cultures that don't emphasize review and criticism,
 explicit reminders that review is part of the working programmer's life in
 western culture can be helpful.  Chung and
-Chow@~cite["chung2004promoting"] discuss such culture factors when
+Chow@~cite["cc:ieti:2004"] discuss such culture factors when
 discussing peer- and problem-based learning in a class in Hong Kong.
 
 When students are in the role of receiving reviews, instructors should
@@ -2201,7 +2201,7 @@ encouraging reflection that @IFPR can learn from.
 Palinscar and Brown study @emph{reciprocal teaching}, in which a teacher
 alternates with a student in a dialog that prompts for reflective activities,
 like generating summaries or clarifying confusing
-elements@~cite["palinscar-peer-teaching"].  They used reciprocal teaching with
+elements@~cite["pb:ci:1984"].  They used reciprocal teaching with
 seventh graders struggling with reading comprehension, with an emphasis on
 letting students take over as the session progresses.  The entire point of the
 exercise is to encourage reflective activities in students, and similar
@@ -2224,9 +2224,8 @@ given the reflective prompts, but the difference could easily be attributed to
 the small sample size.
 
 Frederiksen and White have done a series of studies on @emph{reflective
-assessment} and @emph{reflective collaboration} in middle school science
-classes@~cite["white-reflective-affordances"
-"frederiksen-reflective-collaboration"].  In an online environment, students
+assessment}@~cite["wffelc:icls:2002"] and @emph{reflective collaboration}@~cite["fw:cscl:1997"] in middle school science
+classes.  In an online environment, students
 work on mock experiments using a scientific-method like flow for a project:
 they start with an initial inquiry, form hypotheses, analyze mock data, and
 draw conclusions.  In between steps, they are asked questions that urge them
@@ -2291,12 +2290,12 @@ caused the difference in performance.
 Peer Instruction (PI), which is a specific form of student-centered
 pedagogy@~cite["mazur-peer-instr-book"], has been shown to be a promising way
 to improve student
-performance@~cite["crouch-mazur-peer-instr-10-years"] and
+performance@~cite["cm:ajp:2001"] and
 engagement@~cite["simon-peer-instruction-icer13"] both in introductory
-courses@~cite["crouch-mazur-peer-instr-10-years"] and upper-division
+courses@~cite["cm:ajp:2001"] and upper-division
 courses@~cite["lgp:toce:2013"]. Peer instruction, as
 defined by Crouch 
-et al.@~cite["crouch-mazur-peer-instr-10-years"], focuses on
+et al.@~cite["cm:ajp:2001"], focuses on
 engaging students in activities that require them to apply the core
 concepts under study and to explain these concepts to their
 peers. Concretely, a class taught using PI principles can consist of
@@ -2371,7 +2370,7 @@ counterproductive to learning for students with less prior
 ability@~cite["Garvin-Doxas:2004:CCS:1060071.1060073"].  In later work, Barker and
 Garvin-Doxas describe the outcome of running an IT course more like a fine
 arts course than a traditional engineering
-course@~cite["barker-fine-arts-approach-cs05"]. This included projects that
+course@~cite["bgr:sigcse:2005"]. This included projects that
 were more meaningful, public critique of results, and routine collaboration.
 This approach created a classroom culture where learning is a social and
 community process, rather than isolated, and the result was a greater
@@ -2472,7 +2471,7 @@ example, Clark has students exercise the functionality of one another's
 projects, and lets groups improve their work based on the feedback their
 classmates give them@~cite["clark-peer-testing-se-04"].  Similarly, Wang, et
 al.@~cite["wang-pcr"], Zeller@~cite["zeller-read-review-00"], Papadopoulos et
-al.@~cite["Papadopoulos:2012:IPR:2215076.2215100"], and the Aropä
+al.@~cite["pld:ce:2012"], and the Aropä
 system@~cite[ "hamer-aropa"] use assignment structures that allow
 students to update revisions of entire submissions that were reviewed by
 peers.  Other studies have
