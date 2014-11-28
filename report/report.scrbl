@@ -1715,8 +1715,20 @@ feedback from multiple peers results in better quality revisions than
 feedback from an expert, with feedback from a single peer being the
 worst.  The hypothesised reason for this was that peers gave feedback
 that was phrased in terms that students could more easily comprehend.
-It certainly would be interesting to see whether the same results
-apply to programming assignments.
+
+Hamer et al. investigate differences between reviews provided by peers and
+expert tutors on Matlab programming assignments in a peer assessment
+context@~cite["hpld:2014:aehed"].  They main significant difference they find
+is that tutors not only write longer feedback, but provide more @emph{specific
+negative} comments about inaccuracies in the program under review.  In
+addition, there were two kinds of feedback in the review
+rubric---@emph{correctness} and @emph{style}---the longer, more specific
+negative feedback tended to be in the correctness comments rather than style
+comments.  There was no significant difference in other features of review
+comments, like whether there was concrete, actionable advice for improving the
+program, if the review contained positive encouragement or reinforcement, or
+the final mark given by the tutor.
+
 }
 
 @item{@bold{Expert-provided Exemplars and Models}:

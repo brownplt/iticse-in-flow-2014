@@ -2,8 +2,22 @@
 
 (require scriblib/autobib scriblib/bibtex racket/list)
 
-(provide generate-bib ~cite)
+(provide (all-defined-out))
 
+(define hpld:2014:aehed
+  (make-bib
+    #:title "A comparison of peer and tutor feedback"
+    #:author
+      (authors
+        (author-name "John" "Hamer")
+        (author-name "Helen" "Purchase")
+        (author-name "Andrew" "Luxton-Reilly")
+        (author-name "Paul" "Denny"))
+    #:location
+      (proceedings-location "Assessment & Evaluation in Higher Education")
+    #:date 2014
+))
+          
 (define hmk:2005:australia-ed
   (make-bib
     #:title "A method of automatic grade calibration in peer assessment"
