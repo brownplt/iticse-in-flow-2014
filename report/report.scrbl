@@ -486,7 +486,7 @@ peer review.
 			   whether tests are reasonably complete and
 			   motivated; whether good code practice followed (i.e., 
 			   naming, structure,
-			   identation) }
+			   indentation) }
 	   )
 	))
 ])
@@ -696,12 +696,12 @@ review.
 @item{@bold{Separate deliverables that build on each other}:
 Often, programming assignments can be broken down into several
 subproblems, often expressed via decomposition into helper functions or
-separate classes.  If the assignment naturally lends itself to this kind of
+separate classes.  If the assignment naturally fits this kind of
 breakdown, a natural strategy for using in-flow review is to review individual pieces,
 to catch mistakes in the components before composing them into a
-final solution.  This approach lends itself well to evaluation as well,
-because the separate components can be assessed in isolation, and on the
-initial, pre-review submission as well as after final submission.
+final solution.  This approach lends itself well to detailed evaluation,
+because the separate components can be assessed in isolation, in both their
+pre-review state and their state after final submission.
 Also, if the instructor (rather than the students)
 decides on the decomposition, they have a lot of control over the path
 students take through the assignment, which can inform decisions about rubrics
@@ -2029,7 +2029,7 @@ they learned about a new API that they could use in their own code, or
 providing links to the code author with documentation of other alternatives,
 suggesting that these activities do indeed occur.
 
-Activites like knowledge transfer and dissemination of ideas are certainly
+Activities like knowledge transfer and dissemination of ideas are certainly
 goals of in-flow peer review, and in-flow strategies should consider ways to
 foster them.  Bachelli and Bird@~cite["bacchelli-modern-code-review"] note
 that these metrics are harder to measure than defect rate, but observe them
@@ -2526,7 +2526,7 @@ order to maximize the benefits?}
 
 @item{If the answer to the previous question includes multiple
 assignments, how can this be made to work in a single term (quarter or
-semester) without overstretching both the students and resources?}
+semester) without over-stretching both the students and resources?}
 ]
 We hope to see future projects and papers explore these and other questions.
 
