@@ -46,7 +46,7 @@ alleviates some problems while raising associated concerns.}
 
 @para{}
 
-@section[#:tag "s:intro"]{In-Flow Peer-Reviewing}
+@section[#:tag "s:intro"]{In-Flow Peer-Review}
 
 Peer-review has been employed for various reasons in Computer Science
 courses@~cite["topping-peer-review98"]. It is a mechanism for having
@@ -106,7 +106,7 @@ in-flow has several potential benefits:
 @item{It helps students better understand the problem
 specification. If the work they see others doing is inconsistent with
 their understanding, one or the other (or both!) might be confused. It
-is better to discover this while the assignment is in progress than
+is better to discover this while the assignment is in progress rather than
 after it is over.}
 
 @item{Students are motivated to read feedback they get since it can
@@ -125,7 +125,7 @@ part of the learning process.}
 @item{It further emphasizes the @emph{comparative} examination of work
 against a student's own.}
 
-@item{It exposes students to a standard component of industrial
+@item{It helps students develop skills in a standard component of industrial
 software development.}  
 
 ]
@@ -135,14 +135,8 @@ to decompose assignments for meaningful reviews, how to prevent
 students from gaming the process to avoid doing their own work, how to
 minimize the extra time this takes to complete homeworks, and how to
 help students not be led astray by weak or inaccurate reviews.
-Considering the potential learning objectives of @IFPR, rather than
-viewing it merely as a way to scale grading (a use of peer-review in
-MOOCs@~cite["kwl...:peer-self-assess-mooc"]), @IFPR adds subtlety to all of these
-questions.  Liu and Carless
-distinguish between @emph{peer feedback} and @emph{peer
-assessment}@~cite["liu-peer-feedback"], where the
-latter's goal is grading, and the former's is collaboration -- @IFPR is
-primarily focused on peer feedback, not peer assessment.
+Considering the potential learning objectives of @IFPR, these
+challenges seem worth tackling.
 
 This report summarizes activities of a working group around the
 promises and pitfalls of in-flow peer-review in computer science
@@ -157,11 +151,17 @@ case studies, which are summarized in two figures
 (@figure-ref["i:case-studies"], @figure-ref["i:case-studies-cont"]), also
 helped to form the basis of many  of our discussions.
 
-Although automated assessment tools provide a form of in-flow feedback
-to students, we focused our attention on person-to-person reviewing. 
-Automated approaches bypass having students write reviews; the members
-felt that writing reviews is sufficiently important that we retained
-it in all configurations of peer review discussed in this report.
+Several assumptions and decisions scoped our work.  We viewed @IFPR as
+a mechanism for achieving certain learning goals, not as a way to
+scale grading (a use of peer-review in
+MOOCs@~cite["kwl...:peer-self-assess-mooc"]).  We focused on
+person-to-person reviewing, rather than consider automated assessment
+tools that also provide a form of in-flow feedback to students.  The
+members wanted to understand the benefits of writing reviews, a task which
+automated feedback tools eclipse.  We also focused on 
+@emph{peer feedback} rather than @emph{peer assessment}; Liu and
+Carless@~cite["liu-peer-feedback"] describe the latter as targeting
+grading while the former targets collaboration.
 
 @section{An @IFPR Roadmap}
 
@@ -244,7 +244,7 @@ evaluation, however, seem to apply to both majors and non-majors.
 
 ]
 
-@subsection{Terminology}
+@subsection[#:tag "s:terms"]{Terminology}
 
 @(figure* "i:terminology"
           "Illustration of Key Terminology"
@@ -252,7 +252,7 @@ evaluation, however, seem to apply to both majors and non-majors.
 
 Throughout this report, we use the following terminology for the
 various artifacts, roles, and aspects of @IFPR (@(figure-ref
-"i:terminology") illustrates these graphically):
+"i:terminology") illustrates these terms and their dependencies graphically):
 
 @itemlist[
 @item{An @emph{exercise} is a problem set or assignment associated
@@ -283,6 +283,10 @@ is called a @emph{respondent}.}
 expected to produce reviews for each submission.}
 
 ]
+The figure does not attempt to capture temporal ordering among the
+components of @|IFPR|.  As we shall see, different configurations of
+@IFPR engender different temporal orders of reviewing events across
+students.  
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -478,7 +482,7 @@ peer review.
      @list{Imperative and OO Programming Methodology (2nd year)}
 	   @list{Implement simple Pong game in model-view-controller style}
 	   @list{Tests, two draft implementations, and a final implementation }
-	   @list{questions about whether key components are present;
+	   @list{Questions about whether key components are present;
 			   whether tests are reasonably complete and
 			   motivated; whether good code practice followed (i.e., 
 			   naming, structure,
@@ -503,7 +507,7 @@ peer review.
 	   @list{Implement Boggle (find all valid words in 4x4 grid)}
 	   @list{Decomposition of overall problem into tasks 
 			       (with QuickCheck assertions), tests, code} 
-	   @list{check decomposition makes sense, presenting
+	   @list{Check decomposition makes sense, presenting
 		       alternative if own differs from reviewed one;
 		       try own test suite on the code being reviewed }
 	   )
@@ -651,7 +655,7 @@ As the case studies in @(figure-ref "i:case-studies") and @(figure-ref
 "i:case-studies-cont") show, @IFPR can be used with many
 different kinds of submissions.  Even once an
 instructor has identified the general class of artifacts to review
-(such as papers versus code), they can choose different ways to use
+(such as papers versus code), she can choose different ways to use
 @IFPR to build up to final versions.  The group identified four broad
 choices in the artifacts to be reviewed:
 
@@ -675,7 +679,7 @@ included submission steps that were prototypes or drafts of the final product.
 }
 
 @item{@bold{Multiple iterations of an evolving deliverable}:
-Some projects don't have drafts so much as an evolving set of specifications
+Some projects don't have drafts as much as an evolving set of specifications
 and deliverables.  For example, in a long-term software engineering project,
 the demands of the system may change over time as new requirements are
 discovered.  This is distinct from multiple iterations of the same deliverable
@@ -735,16 +739,17 @@ industrial code review, for example, will be better served by using
 
 @subsection[#:tag "s:asgn-revs-timing"]{Assigning and Scheduling Reviews}
 
-The @IFPR process requires both building time into assignments for
-performing review, and assigning reviewers to artifacts for review.
+The @IFPR process requires building time into assignments for
+performing review, and deciding how to assign reviewers to artifacts
+for review.  We discuss each in turn.
 
 @subsubsection[#:tag "s:scheduling"]{Scheduling Decisions}
 
 The major scheduling decision in @IFPR is whether reviewing happens
 @emph{synchronously} or @emph{asynchronously}.
-Synchronous reviewing occurs when all students submit work for review
+Synchronous reviewing occurs when all authors submit their work for review
 (and reviewing commences) at the same time.  Asynchronous reviewing
-occurs when students submit work for review when it is ready, and
+occurs when authors submit their work for review when it is ready, and
 different students are in different stages of review at the same
 time.  The two scheduling modes have several tradeoffs:
 
@@ -762,8 +767,9 @@ submit later have less time to use the information from the review process
 before the deadline.}
 
 @item{In the asynchronous setting, students who want to work at their own pace
-can, and the process doesn't stop them from continuing with their work.  With
-intermediate deadlines, a student cannot do the work on her own schedule.}
+can, and the process doesn't discourage them from continuing with
+their work while they await reviews.  With
+intermediate deadlines, a student cannot progress on her own schedule.}
 
 @item{If reviews are available and presented to students 
 after they submit, the problem is more likely to be fresh in their
@@ -775,8 +781,8 @@ into working memory in order to perform review.}
 
 @item{Synchronous reviewing requires extra scheduling overhead that is likely
 to lengthen assignments for purely logistic reasons.  Asynchronous reviewing
-doesn't require extra scheduling in the assignment, it just changes the
-kind of work students have to do.}
+doesn't require extra scheduling in the assignment, it just changes
+the workflow that students follow.}
 
 ]
 
@@ -792,11 +798,10 @@ assignment.
 
 Whether reviewing is synchronous or asynchronous, there needs to be a
 strategy for assigning students to review
-submissions.  As with other design decisions in @IFPR, any decision has
-tradeoffs and depends on course context and goals.  We identified both a
+submissions.  We identified both a
 number of methods for assigning submissions to students to review, and several
-miscellaneous modifiers that could apply.  We note when a particular strategy
-is more or less appropriate in synchronous or asynchronous settings, as well.
+miscellaneous modifiers that could apply.  We also note when a particular strategy
+is more or less appropriate in synchronous or asynchronous settings.
 
 @itemlist[
   @item{@bold{Random Assignment}:
@@ -830,7 +835,7 @@ There are a number of metrics that could be used to assign reviews with the
 goal of getting more effective feedback for students.  We identified:
 
 @itemlist[
-  @item{@bold{Achievement}: Students could be matched to other students with
+  @item{@bold{Achievement}: Reviewers could be matched to authors with
   similar or different levels of achievement on past assignments (or, if the
   assignment can be evaluated automatically, even on the current assignment).
   Existing research shows that on group work, pairing weak and strong students
@@ -844,7 +849,7 @@ goal of getting more effective feedback for students.  We identified:
   improvement (again, ``weak work'' could be predicted by past achievement of
   students, or by an automatic grading system).}
 
-  @item{@bold{Similarity Between Solutions}: Students may
+  @item{@bold{Similarity Between Solutions}: Reviewers may
   learn more from reviewing a variety of solutions that are different from their
   own.  They may also be more able to review solutions that are similar to
   their own.  Depending on the assignment and learning goals, it could be
@@ -860,8 +865,9 @@ their assigned-by-metric reviewee to submit.
 }
 
 @item{@bold{Student-chosen}:
-Students could also be involved in choosing which submissions, or other
-students, they review.  For example, a simple model could have all submissions
+Reviewers could also be involved in choosing which submissions
+(including by which 
+authors) they review.  For example, a simple model could have all submissions
 go into a publicly-visible pool of submissions, from which students choose
 submissions to review.  The assignment could require that students perform
 some number of reviews, and remove submissions from the pool once they have
@@ -992,7 +998,7 @@ The working group identified several potential roles for rubrics:
     }
 
 @item{@bold{Rubrics for focus}:
-    A rubric can focus students'
+    A rubric can focus reviewers'
     attention on different questions that reflect the goals of an assignment.
     For example, it could prompt 
     code-specific questions (``Is this code well-documented?'', ``Are
@@ -1016,31 +1022,31 @@ The working group identified several potential roles for rubrics:
     }
 
 @item{@bold{Rubrics for reviews of good solutions}:
-    In at least one case of using IFPR in the classroom, students reported not
+    In at least one case of using IFPR in the classroom, reviewers reported not
     knowing what to write when reviewing good
     solutions@~cite["ppkf:iticse:2014"].
     A rubric could explicitly prompt for feedback
     even on good work (e.g. ``What did you like about this submission?'', ``List
     one thing you would change, regardless of correctness'', ``What should the
-    author @emph{not} change in this solution?''), so that students
+    author @emph{not} change in this solution?''), so that reviewers
     don't simply sign off on a solution as good enough without reflecting and
     providing some useful feedback.
 }
 
 @item{@bold{Rubrics for conduct}:
-    Rubrics can guide students towards a professional and appropriate tone for
+    Rubrics can guide reviewers towards a professional and appropriate tone for
     giving feedback, and help frame negative feedback in a constructive way.
     For example, forcing a review to contain comments on the strengths of the
     submission under review can soften other criticism.  When appropriate,
-    rubrics can guide students towards more constructive language -- for
+    rubrics can guide reviewers towards more constructive language -- for
     example, ``This could be done differently'' vs. ``This is wrong''.
     }
 
 @item{@bold{Rubrics for time management}:
-    Open-ended review tasks don't make it clear how much time students should
+    Open-ended review tasks don't make it clear how much time reviewers should
     spend on them.  Just having a specific rubric can make it easier for a
-    student to identify when they are done (and estimate the time themselves).
-    A rubric could even specify the amount of time that a student should
+    reviewer to identify when they are done (and estimate the time themselves).
+    A rubric could even specify the amount of time that a reviewer should
     spend, and how much on each part of the assignment, to ensure that
     reviewing does not take up more time than intended.
     }
@@ -1073,9 +1079,9 @@ or when too much information in a review might distract the author
 from the critical information in a review.
 
 Structure enables certain comparisons between reviews.  
-Inexperienced students may benefit from structure when
+Inexperienced authors may benefit from structure when
 aggregating the feedback of multiple reviews: for example, structure
-could help students 
+could help authors 
 understanding that two or more reviews give
 contradictory advice. Two
 students discussing reviews (that they are making or have
@@ -1168,7 +1174,7 @@ for IFPR, features of peer-review software, and course logistics (such as
 staff size relative to student population).  Many of the issues here
 apply to peer-review in general, rather than only to IFPR.
 
-According to Ramachandran and Gehringer@~cite["rg:auto-assess-rev-lsa"]
+According to Ramachandran and Gehringer@~cite["rg:auto-assess-rev-lsa"],
 reviews consist of (1) summative, (2) problem detection, and (3) advisory
 content.  Meta-reviews can report on each of these three types of contents,
 each of which is valuable in its own way.  While summative contents can
@@ -1177,7 +1183,7 @@ student identify opportunities for improvement, and advisory content points
 out ways in which students might improve.  Meta-reviews can include
 information on which parts of a review were constructive, and which led to
 actual changes.  Meta-reviews written by authors of submissions can also
-include rebuttals to aspects of a review: in IFPR, such rebuttals can arise
+include rebuttals to aspects of a review; in IFPR, such rebuttals can arise
 when students are debating the requirements of an exercise through the review
 process (a healthy outcome relative to the goals of IFPR).  In the case of
 rebuttals and follow-ups, this blurs the line between collaboration and
@@ -1223,7 +1229,7 @@ may have missed something in his review.  This is related to Hamer et al.'s
 work on identifying ``rogue'' students in peer
 assessment@~cite["hmk:2005:australia-ed"], which is focused on identifying
 outliers' impact on grades.  This does run into issues of
-calibration and opinion: just because a student disagrees with the average,
+calibration and opinion; just because a student disagrees with the average,
 it doesn't mean they are wrong!  The outlying reviewer may have understood something the other
 reviewers didn't, in which case comparing his review to an expert's, or to a
 trusted automated process, may be more useful feedback.}
@@ -1273,22 +1279,24 @@ review.
 
 While one generally may prefer to eliminate low-quality contents in reviews, 
 in a pedagogical context receiving some low-quality review contents can be beneficial. 
-While in traditional educational settings students may trust all the feedback they receive from the instructor, 
-in IFPR students have to learn to assess the value of the reviews they receive. 
-They will have to learn to triage review comments into those they will act upon and those they will ignore. 
+While in traditional educational settings authors may trust all the feedback they receive from the instructor, 
+in IFPR authors have to learn to assess the value of the reviews they receive. 
+They will have to learn to separate review comments into those they
+will act upon and those they will ignore, then triage those they wish
+to act upon. 
 Moreover, having a diversity of reviews, 
 maybe even contradictory ones, 
 can be a starting point for valuable discussions in class.
 Having to wade through
 reviews can implicitly train reviewers that they, in turn, should not
 submit ``brain dumps'' of everything they think of, but instead
-provide valuable and concise reviews: that the important metric is
+provide valuable and concise reviews. The important metric is
 actionability, not volume.
 
 Instructors may seek to use meta-reviews to monitor the IFPR process.
 Given the quicker turn-around times inherent to IFPR, such monitoring
 benefits from tool support and structural elements of meta-reviews.
-For example, asking students to rate the reviews they receive on a
+For example, asking authors to rate the reviews they receive on a
 simple Likert scale makes it easy for an instructor to focus on
 potentially problematic reviews without imposing undue burden on the students.
 In some IFPR configurations, software tools that include automatic
@@ -1299,8 +1307,8 @@ improve, prompting the instructor to check on whether the author had
 received useful and actionable advice through reviews.
 
 Meta-reviewing incurs a cost. 
-Whether or not meta-reviews are worth that cost depends on the learning goals: 
-if teaching how to review is important, meta-reviews are essential; 
+Whether meta-reviews are worth that cost depends on the learning goals. 
+If teaching how to review is important, meta-reviews are essential; 
 however if the learning goals focus on artifact production or performance, 
 and if the reviewers are experienced, 
 meta-reviews may be less essential. 
@@ -1357,7 +1365,7 @@ critical writing, in which students often write on different topics or choose
 different positions to represent on the same topic.
 
 One approach is to provide variants of a programming
-problem to different students: 
+problem to different students.
 Zeller@~cite["zeller-read-review-00"] gives each student a variation
 on a theme to avoid students reviewing another who is working on exactly the
 same problem.  Indeed, it is often possible to generate large numbers of
@@ -1381,11 +1389,11 @@ apply it to her own.
 }
 
 @item{@bold{Weighted Submission Grading}:
-There is often value in having students copy parts of other
+There is often value in having reviewers copy parts of other
 submissions that they see in order to improve their own work.  It happens all
 the time in professional software development, and the act of recognizing a
 good solution demonstrates understanding that is far beyond blind plagiarism.
-Students should take things from the examples they see and demonstrate
+Reviewers should take things from the examples they see and demonstrate
 that they learned from them; however, a student has no guarantee that what he is
 seeing is correct, so blindly copying can hurt!
 
@@ -1429,7 +1437,7 @@ the participants), though we gave some attention to peer-assessment
 Kulkarni et al. have shown that, with careful rubric and mechanism
 design, peer
 assessment can produce similar results to TA grading in
-MOOCs@~cite["kwl...:peer-self-assess-mooc"], and Reily et al. report on the
+MOOCs@~cite["kwl...:peer-self-assess-mooc"].  Reily et al. report on the
 accuracy of a combination of peer reviews at assessing programming assignments
 @~cite["reily-aggregate-reviews09"].  Hamer et al. describe a technique for
 deriving grades from weighted averages of peer assessments to identify ``rogue''
@@ -1443,7 +1451,7 @@ Peer assessment changes the motivation structure of @|IFPR|.  For example, a
 student who is afraid of affecting his peers' grades with negative feedback may
 be more hesitant to give that feedback.  In contexts where students are still
 learning to review and give feedback, inaccurate reviews are expected and an
-important part of the learning process: in this case, reviews probably should
+important part of the learning process; in this case, reviews probably should
 not be used for grading purposes.  Using peer review for grading should be
 adopted with care, and practitioners should carefully consider its effects on
 the other design decisions discussed in this report.
@@ -1553,7 +1561,7 @@ for students who are new to the institution or the practice.
 @subsubsection{Types of Anonymity}
 
 Each of the IFPR roles---authors and reviewers---can be anonymous to
-either or both of other students and faculty.  Reasonable arguments
+other students or faculty.  Reasonable arguments
 can be made for each configuration, and different configurations have
 been used in practice.
 
@@ -1588,14 +1596,14 @@ course contexts the assignments could be administered either way.
 
 At the introductory level, students suffer from both confidence and maturity
 problems, making anonymous review an attractive option (at least initially).
-Students will not face personal embarrassment if others see work that they
+Authors will not face personal embarrassment if others see work that they
 are not comfortable showing publicly, and anonymity gives reviewers the
 freedom to be more candid.
 
-In addition, students who know the student under review might make assumptions
-based on the student rather than the submission.  This could even cause
-students who consider themselves weaker to not question incorrect work that
-comes from a supposedly smart student.  Anonymity helps level the playing
+In addition, reviewers who know the author under review might make assumptions
+based on the author rather than the submission.  This could even cause
+authors who consider themselves weaker to not question incorrect work that
+comes from a supposedly smart reviewer.  Anonymity helps level the playing
 field in the face of such preconceptions.
 
 In general the group considers anonymity to be a less jarring initial option
@@ -1631,14 +1639,13 @@ feedback.
 
 @subsubsection{Anonymity and Cultural Considerations}
 
-Anonymity may have cultural connections at several levels: for students who
+Anonymity may have cultural connections at several levels. For students who
 come from a consensus-based national culture@~cite["ghgjh:cult-org"] where
 preserving harmony is a strong value and overt criticism can be considered
 offensive or cause a loss of face, a greater level of anonymity may be
 required at first for students to feel more at ease in speaking their minds.  
-
 A converse cultural aspect may be in operation with non-anonymous
-contributions: if students know the other person, they may be less or more
+contributions; if students know the other person, they may be less or more
 critical a priori, based upon judgements of the peer’s relative status or
 perceived expertise, rather than reviewing the material in its own right.
 
@@ -1689,7 +1696,7 @@ students in charge of the feedback itself.
 Moderation is thus a form of process- rather than content-expertise (akin to
 pedagogical code reviews@~cite["haa:toce:2013"], which are led by an
 expert moderator).  Experts may also act as
-facilitators of group discussion of work or reviews.  Students who are not
+facilitators of group discussion of work or reviews.  Reviewers who are not
 sure of themselves may not contribute much; experts can assist in getting
 students to contribute, and push the idea of review as a
 learning process, in addition to acting as figures of objective authority on
@@ -1701,7 +1708,7 @@ Whether acting as moderators or facilitations,
 expert reviewers can help address cultural issues where
 students devalue the opinions of their peers and overvalue the
 opinions of instructors.  They can also offset deficiencies in the
-knowledge and insight of students who are themselves adjusting to the
+knowledge and insight of reviewers who are themselves adjusting to the
 process of giving informed critiques, and ensure that some
 knowledgeable, high quality feedback is received.
 }
@@ -1796,7 +1803,7 @@ diverse reviews. In many cases, such as for GUI mockups, this is
 highly desirable. Therefore, whether or not a student will face a
 review professionally is not necessary for @IFPR to be useful.
 
-Tests are useful for non-majors to review as they are often
+Test cases are useful for non-majors to review as they are often
 less tangled with complicated ``non-functional aspects'' of the problem such
 as memory management, performance, or code elegance.
 Case study
@@ -1820,7 +1827,7 @@ algorithms.
 Finally, as an important aside, reviewing might help with
 retention especially by removing the stigma of computer science
 being an anti-social, ``inhuman'' subject.
-Humanities people generally read more than they write -- as
+Humanities students generally read more than they write -- as
 reviewing is more like reading, it might feel more comfortable for
 them than programming.  This could be a component of a CS course in the style
 of fine arts, which Barker et al. found to create a better community culture
@@ -1851,11 +1858,11 @@ discussing peer- and problem-based learning in a class in Hong Kong.
 When students are in the role of receiving reviews, instructors should
 require students to demonstrate engagement with the reviews.  Asking
 students to indicate how they used reviews in revising their work is
-one option.  Students may need explicit instructions on how to read
+one option.  Authors may need explicit instructions on how to read
 reviews; this might also help them cope with criticisms.  For some
 students, peer review may be their first time getting negative
 feedback; instructors should make response to review a positive
-activity.  For students whose work was strong and did not yield
+activity.  For authors whose work was strong and did not yield
 actionable reviews, an instructor could ask ``what have you learned
 from looking at others' solutions?''  Hopefully, such activities on a
 few early assignments would help students develop self-reflection
@@ -2165,7 +2172,7 @@ the feedback their own submissions receive.
 Finally, with IFPR, students are compelled to review other students'
 code: they cannot ignore problems and let their partner do the work.  On the other
 hand, in IFPR it may be easier to ignore the advice given than in PP, because
-of the difference in ownership -- it is harder to argue that someone not make
+of the difference in ownership; it is harder to argue that someone not make
 suggested changes to a shared program than to ignore the feedback on one's own
 program.
 
@@ -2305,7 +2312,7 @@ which the students first solve individually and then discuss in
 groups.
 
 Related to our undertaking, the most interesting component of PI is the
-peer discussions that are undertaken after presentation of each
+peer discussions that occur after presentation of each
 concept. This differs from (in-flow) peer review in that there isn't a
 submission in question that students are trying to improve.  The exercises are
 a vehicle for discussion, and the discussion is the end goal, not producing a
