@@ -590,7 +590,7 @@ peer review.
      (list
      @list[(next-study "tirronen-asgn-1")]
      @list{Software Security (MS)}
-	   @list{Implement simple on-line web-app on a strict
+	   @list{Implement simple online web-app on a strict
 			   timetable, then create attack trees for it}
 	   @list{Initial program, attack trees, and secured
 		 application along with review of differences between original and
@@ -1646,7 +1646,7 @@ offensive or cause a loss of face, a greater level of anonymity may be
 required at first for students to feel more at ease in speaking their minds.  
 A converse cultural aspect may be in operation with non-anonymous
 contributions; if students know the other person, they may be less or more
-critical a priori, based upon judgements of the peer’s relative status or
+critical a priori, based upon judgments of the peer’s relative status or
 perceived expertise, rather than reviewing the material in its own right.
 
 At some institutions such as Brown University (where three of the group
@@ -2147,7 +2147,7 @@ The skills required and developed differ between IFPR and in PP.  PP deals
 primarily with the collaborative creation of an artifact.  IFPR focuses also
 on the creation of an artifact, though less collaboratively as students do not
 work face-to-face.  IFPR also focuses on the high-level skill of performing
-reviews, which requires both program comprehension and judgement.  These
+reviews, which requires both program comprehension and judgment.  These
 activities require students to take a higher-level perspective on the task at
 hand, including the difference between understanding one's own code and
 understanding the code of others.  IFPR also forces students to trade off
