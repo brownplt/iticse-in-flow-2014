@@ -17,7 +17,7 @@
           "helpers.rkt")
 
 @;;;; macros for document content
-@(define IFPR "IFPR")
+@(define IFPR (smaller "IFPR"))
 
 @;;;; table generation 
 
@@ -283,10 +283,12 @@ is called a @emph{respondent}.}
 expected to produce reviews for each submission.}
 
 ]
-The figure does not attempt to capture temporal ordering among the
-components of @|IFPR|.  As we shall see, different configurations of
+The figure loosely shows their temporal ordering, with time increasing
+both downward and rightward. The diagram is intentionally ambiguous
+about the overlap of some events because different configurations of
 @IFPR engender different temporal orders of reviewing events across
-students.  
+students. The boxes labeled ``…'' mean there are one or more of
+the box immediately to the left.
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -1135,8 +1137,8 @@ In some situations, non-text artifacts can be effective, as not all
 submissions need to be code.  Code-architecture diagrams can be critiqued and
 marked up with freehand annotations, pictures of the state of a running program
 can be drawn, and code patches can be used to convey
-comments.  This is one case in which the default technology that authors of
-tools for in-flow peer review might choose could be limiting.
+comments. In these cases, however, technology choices can become a
+limitation.
 
 The Informa tool allows students to give live feedback on problems with
 several interfaces that could also be useful for
@@ -1147,7 +1149,7 @@ students highlight portions of code that exhibited certain behavior or had a
 certain feature.  Both of these interfaces go beyond simple text or scalar
 feedback, and can be used to provide richer information in reviews.
 
-Face-to-face reviews are another form, whether solely between
+Reviews can also be conducted face-to-face, whether solely between
 students or moderated by TAs or instructors.  Moderation can make arguments
 more constructive, guide discussion towards relevant points, and make a
 face-to-face meeting less intimidating.  Moderated review moves the process
@@ -1185,10 +1187,9 @@ information on which parts of a review were constructive, and which led to
 actual changes.  Meta-reviews written by authors of submissions can also
 include rebuttals to aspects of a review; in IFPR, such rebuttals can arise
 when students are debating the requirements of an exercise through the review
-process (a healthy outcome relative to the goals of IFPR).  In the case of
-rebuttals and follow-ups, this blurs the line between collaboration and
-review, as students may end up coming to a shared understanding that may not
-have occurred with a single review step.
+process (a healthy outcome relative to the goals of IFPR).  With
+enough iteration of this form, @IFPR more closely resembles
+traditional collaboration rather than peer-reviewing of each others' work.
 
 @subsubsection[#:tag "s:meta-reviewing-types"]{Types of Meta-Reviewing}
 
@@ -1613,13 +1614,14 @@ benefits in the right contexts, and anonymity isn't without its own problems.
 
 @subsubsection{Downsides of Anonymity}
 
-Anonymity can unwittingly enable a
-culture of ‘flaming’ and online harassment to develop among some
-students.  Therefore if reviews are to be done anonymously, policies and
-techniques for reporting abuse and inappropriate behavior should be in
-place -- for example, an anonymous ``Flag Abuse'' button in a Web interface
+Anonymity can unwittingly enable a culture of excessive criticality,
+or even of ``flaming'' and online harassment, to develop among some
+students. The former can probably only be monitored by course
+staff. The latter would require policies and
+techniques for reporting abuse and inappropriate behavior:
+for example, a ``Flag Abuse'' button in a Web interface
 that allows students to bring offensive or inappropriate content to the
-attention of the staff.  In general, the issues with anonymity relate to the
+attention of the staff.  In general, these issues are similar to the
 unsatisfactory aspects of peer assessment schemes in group work that ask group
 members to evaluate relative
 contributions@~cite["Clear:2010:TIM:1721933.1721938"].
@@ -1650,13 +1652,13 @@ critical a priori, based upon judgments of the peer’s relative status or
 perceived expertise, rather than reviewing the material in its own right.
 
 At some institutions such as Brown University (where three of the group
-members have studied @IFPR), full anonymity is already hard to establish,
+members have studied @IFPR), total anonymity is already hard to establish,
 because a robust undergraduate TA program means that students often act as TAs
 for one another independent of peer review, and know about one another’s
 performance.  At Brown, the institutional and student culture makes it
 commonplace to know who is reading your code.
 
-The group debated whether giving students choice in anonymization was a good
+The group debated whether giving students the choice to anonymize was a good
 idea, and concluded that it was not desirable because it
 encouraged hiding attitudes, and may make people justify being more
 objectionably critical because they were allowed to be anonymous.  A further
