@@ -81,7 +81,7 @@ Students are expected to:
 ]
 }
 Peer review clearly has a role to play in developing each of these
-skills. Students are must read and evaluate proposed (partial)
+skills. Students must read and evaluate proposed (partial)
 solutions, try to at least locate (if not offer corrections to)
 errors, offer their explanations for what an artifact is doing
 (especially if it does not match the expectations set by the problem),
@@ -97,7 +97,7 @@ courses and more, and peer review addresses similar underlying learning goals
 of evaluation and explanation of existing work.
 
 This working group explored a particular variant of peer-review called
-@italic{in-flow peer review}@~cite["ppkf:iticse:2014"].  In this
+@italic{in-flow peer review}@~cite["ppkf:iticse:2014"] (@IFPR).  In this
 model, peer review occurs while an assignment is in progress, before
 students submit their work for final grading. Performing peer-review
 in-flow has several potential benefits:
@@ -138,11 +138,11 @@ help students not be led astray by weak or inaccurate reviews.
 Considering the potential learning objectives of @IFPR, these
 challenges seem worth tackling.
 
-This report summarizes activities of a working group around the
+This report summarizes activities of a working group on the
 promises and pitfalls of in-flow peer-review in computer science
 classes.  The group members represented several countries and taught
-various courses at various levels (though the majority taught courses
-related to programming, programming languages, or various aspects of
+various courses at different levels (though the majority taught courses
+related to programming, programming languages, or other aspects of
 software development).  We arrived at several different learning objectives an
 instructor might have for using peer review in a course (@secref["s:goals"])
 that drove our discussion.  In addition, prior to the group's in-person meeting, each
@@ -153,7 +153,7 @@ helped to form the basis of many  of our discussions.
 
 Several assumptions and decisions scoped our work.  We viewed @IFPR as
 a mechanism for achieving certain learning goals, not as a way to
-scale grading (a use of peer-review in
+scale grading (which is a use of peer-review in
 MOOCs@~cite["kwl...:peer-self-assess-mooc"]).  We focused on
 person-to-person reviewing, rather than consider automated assessment
 tools that also provide a form of in-flow feedback to students.  The
@@ -227,12 +227,12 @@ participate comfortably, at the cost of missed opportunities for creating
 cultures of collaboration and professional working behavior.
 (@Secref["s:anon"])}
 
-@item{The role of experts. Experts can play any number of roles from
+@item{The role of experts. Experts can play any number of roles:
 being entirely hands-off and treating this as an entirely student-run
-process (presumably after introducing the process and its purpose) to
-intervening only periodically to constantly monitoring and even
+process (presumably after introducing the process and its purpose);
+intervening periodically; or constantly monitoring and even
 grading the responses. These roles set different tones between
-students regarding expertise and authority, but also help set
+students regarding expertise and authority, but also define
 standards while students are new to the process. (@Secref["s:experts"])}
 
 @item{Suitability for non-majors. While IFPR is easy to justify for
@@ -324,7 +324,7 @@ more in students' roles as recipients of reviews, and have more urgency
 in an in-flow context.  The middle two arise in both roles.  In the context of Bloom's
 taxonomy@~cite["bloom-taxonomy"],
 these skills move students beyond ``remember,'' ``understand,'' and
-``apply'' into ``evaluate''.  They engage students in reflection and
+``apply'' to ``evaluate''.  They engage students in reflection and
 meta-cognitive thinking about their own work, while also requiring
 students to be able to communicate technical issues clearly to others.
 
@@ -379,7 +379,7 @@ objectives, including:
 only expert assessment}
 @item{Providing an additional perspective on how students perceive
 course material, since students express their understanding
-in a way other than just their assignment submissions}
+in a different medium than their assignment submissions}
 @item{Increasing social interaction within computing and programming,
 addressing a common misconception about working in the discipline}
 @item{Fostering engagement of and interaction between students from
@@ -426,6 +426,16 @@ peer review.
 
 @section{Examples of @IFPR}
 
+@(define (study-ref name number)
+  (define ref (format "~a-asgn-~a" name number))
+  (define link
+    (hyperlink
+      (format
+        "https://github.com/brownplt/iticse-in-flow-2014/tree/master/in-flow-assignments/~a/asgn-~a.md"
+        name number)
+      (smaller (url "[link]"))))
+  link)
+
 @(figure* "i:case-studies"
           "Summary of case studies: first-year, second-year and non-majors courses ([*] indicates use in an actual course)"
  @tabular[
@@ -440,7 +450,7 @@ peer review.
      (list
      @list[(next-study "krishnamurthi-asgn-1")]
      @list{Computing for Social Sciences and Humanities (undergrad non-majors)}
-	   @list{Cluster data on voting records (US Senate) to identify senators with similar ideology}
+	   @list{Cluster data on voting records (US Senate) to identify senators with similar ideology @(study-ref "krishnamurthi" "1")}
 	   @list{Code and tests for instructor-defined subsets of overall functionality}
 	   @list{Provide scores from 0 to 100 on each of (a) whether
 			 tests meaningfully capture the assignment
@@ -450,7 +460,7 @@ peer review.
      (list
      @list[(next-study "clarke-asgn-1")]
      @list{CS1}
-	   @list{Write code and assertions for various components of a pinball game}
+	   @list{Write code and assertions for various components of a pinball game @(study-ref "clarke" "1")}
 	   @list{Work so far on subset of functions designated by instructor}
 	   @list{Rate readability and correctness; additional free-form comments}
 	   )
@@ -458,7 +468,7 @@ peer review.
      @list[(next-study "politz-asgn-1")]
      @list{Advanced CS1 with Data Structures}
 	   @list{Design a data structure for incremental and
-			functional updates on trees [*]}
+			functional updates on trees [*] @(study-ref "politz" "1")}
 	   @list{Datatype definition with instances of the data, test cases, complete programs}
 	   @list{Indicate whether (a) data structure can support required operations within
 		     time bounds, (b) interesting examples of
@@ -467,14 +477,14 @@ peer review.
      (list
      @list[(next-study "hauswirth-asgn-1")]
      @list{Programming Fundamentals 2 (2nd semester undergrad)}
-	   @list{In-class clicker assignment to explain control-flow through if-statements [*]}
+	   @list{In-class clicker assignment to explain control-flow through if-statements [*] @(study-ref "hauswirth" "1")}
 	   @list{CFGs for code snippets (drawn through custom software package)}
 	   @list{Provide yes/no assessment of whether CFG is accurate}
 	   )
      (list
      @list[(next-study "wrigstad-asgn-1")]
      @list{Imperative and OO Programming Methodology (2nd year)}
-	   @list{Implement a program that satisfies a student-selected set of learning goals}
+	   @list{Implement a program that satisfies a student-selected set of learning goals @(study-ref "wrigstad" "1")}
 	   @list{Description of learning goals covered by program, program code, and
 			 give presentation on how program achieves goals }
 	   @list{Instructor-provided template on choice of goals, whether program satisfied them, and presentation quality }
@@ -482,7 +492,7 @@ peer review.
      (list
      @list[(next-study "wrigstad-asgn-2")]
      @list{Imperative and OO Programming Methodology (2nd year)}
-	   @list{Implement simple Pong game in model-view-controller style}
+	   @list{Implement simple Pong game in model-view-controller style @(study-ref "wrigstad" "2")}
 	   @list{Tests, two draft implementations, and a final implementation }
 	   @list{Questions about whether key components are present;
 			   whether tests are reasonably complete and
@@ -506,7 +516,7 @@ peer review.
      (list 
      @list[(next-study "tirronen-asgn-2")]
      @list{Introduction to Functional Programming (upper undergrad/MS)}
-	   @list{Implement Boggle (find all valid words in 4x4 grid)}
+	   @list{Implement Boggle (find all valid words in 4x4 grid) @(study-ref "tirronen" "2")}
 	   @list{Decomposition of overall problem into tasks 
 			       (with QuickCheck assertions), tests, code} 
 	   @list{Check decomposition makes sense, presenting
@@ -517,7 +527,7 @@ peer review.
      @list[(next-study "clarke-asgn-2")]
      @list{Advanced Software Design (upper undergrad/MS)}
 	   @list{Design and implement subset of a mobile app+server for a
-			game using iterative development }  
+			game using iterative development @(study-ref "clarke" "2")}  
 	   @list{Design documents so far}
 	   @list{Free-form comments on comprehensibility, quality of
 			   documentation, coverage of use cases,
@@ -528,7 +538,7 @@ peer review.
      (list
      @list[(next-study "clear-asgn-1")]
      @list{Collaborative Computing (MS)}
-	   @list{Collaboratively produce a research article [*]}
+	   @list{Collaboratively produce a research article [*] @(study-ref "clear" "1")}
 	   @list{Drafts of article}
 	   @list{Conference-paper reviewing rubric: questions on
 			    suitability for audience, originality and
@@ -540,7 +550,7 @@ peer review.
      @list[(next-study "fisler-asgn-1")]
      @list{Software Security (upper undergrad/MS)}
 	   @list{Find ways to attack a web-based application
-                 (black-box, then white-box)}
+                 (black-box, then white-box) @(study-ref "fisler" "1")}
 	   @list{Description of strategy to use in attacking
                  the application in black-box fashion.}
 	   @list{Free-form comments on comprehensiveness and
@@ -549,7 +559,7 @@ peer review.
      (list 
      @list[(next-study "fisler-asgn-2")]
      @list{Software Modeling and Verification (upper undergrad/MS)}
-	   @list{Use model checking to find flaws in a protocol}
+	   @list{Use model checking to find flaws in a protocol @(study-ref "fisler" "2")}
 	   @list{Proposed model of the system environment and desired properties that should (not) hold under this model}
 	   @list{Assess whether model conforms to problem and whether
 			model supports/masks the properties provided
@@ -559,7 +569,7 @@ peer review.
      (list 
      @list[(next-study "hauswirth-asgn-2")]
      @list{Software Performance (MS)}
-	   @list{Develop an extension to the Jikes visual debugger}
+	   @list{Develop an extension to the Jikes visual debugger @(study-ref "hauswirth" "2")}
 	   @list{Proposed extension, prototypes, final artifact}
 	   @list{Comment on one thing they particularly like and one
 			 aspect that could be improved; evaluate
@@ -571,7 +581,7 @@ peer review.
      (list 
      @list[(next-study "krishnamurthi-asgn-2")]
      @list{Logic for System Modelling (upper undergrad/MS)}
-	   @list{Write a relational (Alloy) model of an elevator [*]}
+	   @list{Write a relational (Alloy) model of an elevator [*] @(study-ref "krishnamurthi" "2")}
 	   @list{Model of data components, description of desired properties of model, initial model of elevator operations}
 	   @list{Comment on whether components/properties are missing,
                  whether they are reasonable, and whether model is
@@ -581,7 +591,7 @@ peer review.
      @list[(next-study "politz-asgn-2")]
      @list{Programming Languages (upper undergrad/grad)}
 	   @list{Provide a test suite and implementation for a type
-			 checker [*]}
+			 checker [*] @(study-ref "politz" "2")}
 	   @list{Tests first, implementations later
 		 (submission deadlines not synchronized across students, but must occur
 		 in order per student)}
@@ -593,7 +603,7 @@ peer review.
      @list[(next-study "tirronen-asgn-1")]
      @list{Software Security (MS)}
 	   @list{Implement simple online web-app on a strict
-			   timetable, then create attack trees for it}
+			   timetable, then create attack trees for it @(study-ref "tirronen" "1")}
 	   @list{Initial program, attack trees, and secured
 		 application along with review of differences between original and
 		 secured application and results of using static
@@ -616,13 +626,9 @@ describes the submissions that were reviewed, and describes the review
 criteria for submissions.  Assignments with [*] after their descriptions
 have been used in actual courses; the rest are hypothetical uses
 proposed by working group members, based on exercises in their current
-courses.
-
-The source files of the case studies are available at
+courses. The descriptions of the case studies are available at
 @(smaller (url
-"https://github.com/brownplt/iticse-in-flow-2014/tree/master/in-flow-assignments")),
-and there are links for each in @figure-ref["i:case-study-links"] in the
-appendix.
+"https://github.com/brownplt/iticse-in-flow-2014/tree/master/in-flow-assignments")).
 
 
 @;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -2546,42 +2552,3 @@ narrow for us to incorporate more of their recommendations.
 @(generate-bib)
 
 @;@include-section["case-studies.scrbl"]
-
-@section[#:tag "s:appendix"]{Appendix -- Links to Case Study Details}
-
-For readers interested in the details of the case studies summarized
-in @(figure-ref "i:case-studies") and @(figure-ref
-"i:case-studies-cont"), the table in @figure-ref["i:case-study-links"]
-maps case-study numbers (from the leftmost column of the summary
-tables) to filenames within a public git repository.  The repository
-URL is in the figure caption.  Each detailed summary contains notes on
-how the case-study author envisions configuring @IFPR, including
-thoughts on problem staging, rubric design, and grading
-considerations.
-
-@(figure "i:case-study-links"
-         "Links to the full descriptions of case studies on the Web (see
-         https://github.com/brownplt/iticse-in-flow-2014/tree/master/in-flow-assignments)."
-   @tabular[
-      #:style (style #f (list (attributes '((style . "border-collapse: collapse;")))))
-      #:column-properties (list (list (attributes '((style . "border: 1px solid black;")))))
-      (add-width-wrappers
-       (list "1in" "2in")
-       (list
-         (list (list @bold{Study #}) (list @bold{Link}))
-         (study-row "krishnamurthi" 1)
-         (study-row "clarke" 1)
-         (study-row "politz" 1)
-         (study-row "hauswirth" 1)
-         (study-row "wrigstad" 1)
-         (study-row "wrigstad" 2)
-         (study-row "tirronen" 2)
-         (study-row "clarke" 2)
-         (study-row "clear" 1)
-         (study-row "fisler" 1)
-         (study-row "fisler" 2)
-         (study-row "hauswirth" 2)
-         (study-row "krishnamurthi" 2)
-         (study-row "politz" 2)
-         (study-row "tirronen" 1)))
-   ])
