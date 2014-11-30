@@ -433,7 +433,7 @@ peer review.
       (format
         "https://github.com/brownplt/iticse-in-flow-2014/tree/master/in-flow-assignments/~a/asgn-~a.md"
         name number)
-      (smaller (url "[link]"))))
+      (smaller (tt "[link]"))))
   link)
 
 @(figure* "i:case-studies"
