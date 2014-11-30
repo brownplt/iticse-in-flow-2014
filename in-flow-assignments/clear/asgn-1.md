@@ -1,61 +1,27 @@
 # Assignment Name
 
-
-What is the assignment called?
 A snappy codename may be useful for later discussions.
-
 
 Research Project
 
-
 ## Course Context
-
-
-Tell us something about the course:
-what level, what the students know, etc.
-
 
 The course is a Masters level course in Collaborative Computing.  Students should typically have completed a prior undergraduate degree in Computer Science, Information Technology, Information Systems or Computer Engineering.  The student body is typically diverse with a range of local and international students, so assumptions of prior knowledge can be tricky. 
 
-
 ## Assignment
-
-
-What is the assignment asking students to do?
-
 
 Collaboratively produce a research article based on analysis of available primary data from a series of international collaborative trials and using an analytical framework selected from a list prescribed.
 
-
 ## Educational Goals
-
-
-What is the purpose of giving this assignment?
-
 
 To develop skills in research and academic writing based upon linkage of a selected framework(s) from the collaborative computing literature, personal exploration and observations of collaborative trial processes, data and outcomes;
 
-
 To gain insight into the peer review and quality assurance processes for research publications and by participating in those processes as both collaborative contributor and reviewer, produce a sound and credible research article;
-
 
 To examine the theories and concepts related to collaborative computing, shared workspaces, workflow applications, group decision support, global virtual teams, web-based groupware, the supporting technologies and emerging trends.
 
 
 ## Intermediate Stages
-
-
-Identify one or more intermediate stages that would
-yield reviewable artifacts.
-
-
-Each stage should be unambiguous to students.
-(It might be defined by content, time, both, etc.)
-
-
-This is the key to adapting an assignment to
-in-flow peer-review.
-
 
 Deliverable | Due Date | Type of Assessment | Weighting for assignment (out of 110%) | Weighting for paper (out of 70%)
 ------------|----------|--------------------|----------------------------------------|---------------------------------
@@ -73,13 +39,7 @@ Poster session | Wed, 3 Nov | Summative (bonus marks) | 10% | 7%
 
 ## Stage Submissions
 
-
-At each intermediate stage, what would you like
-submitted? Is this an expectation or preference?
-
-
-These are expectations for submissions
-
+These are expectations for submissions:
 
 Proposal
 * Prelim draft
@@ -174,17 +134,6 @@ give to students.
 
 ## Expert Review
 
-
-At each intermediate stage, will there also be
-review by experts (and who are they)?
-
-
-Recall that at each stage, there are two kinds of work:
-a student's submission, and the reviews of that submission
-by peers. Either or both could be considered for review.
-What rubric would you use for the expert review (if any)?
-
-
 Expert review of the proposal submission by the course lecturer/instructor is conducted by draft submission, reading and critique by the lecturer with feedback delivered through a face to face interview against the elements of an indicative process flow diagram (summarised in the list below).
 
 
@@ -203,12 +152,6 @@ Expert review of each draft submission by the course lecturer/instructor is cond
 
 
 ## Grading
-
-
-How do you anticipate the work done at the 
-intermediate stages being assessed?
-(Assume limitless human and computer resources.)
-
 
 Each student (or student pairs’) two reviews at each cycle (four in total) are summatively assessed, applying the guidelines below
 
@@ -250,13 +193,6 @@ Note: Poster assessment criteria will be based on content and presentation of po
 
 
 ## Thoughts
-
-
-Any and all thoughts you have (including whether
-an in-flow peer-review process even makes sense
-for this assignment).
-
-
 
 
 1.  Given the collaborative pedagogical model and the necessity of commitment to
