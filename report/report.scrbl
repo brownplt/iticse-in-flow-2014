@@ -37,7 +37,7 @@
 @abstract{Peer-review is a valuable tool that helps both the reviewee,
 who receives feedback about his work, and the reviewer, who sees
 different potential solutions and improves her ability to critique
-work. @emph{In-flow} peer-review (IFPR) is peer-review done while an
+work. @emph{In-flow} peer-review (@|IFPR|) is peer-review done while an
 assignment is in progress. Peer-review done during this time is likely
 to result in greater motivation for both reviewer and
 reviewee. This working-group report summarizes @IFPR
@@ -90,7 +90,7 @@ presented solutions.  Giving authors the ability to respond to reviews
 further reinforces the quoted principles.
 
 Peer review has uses beyond merely evaluating programs.  Writing benefits from
-peer review, as do other artifacts that aren't just programs, like design
+peer review@~cite["cho-sword"], as do other artifacts that aren't just programs, like design
 diagrams, test suites, formal models, documentation, and presentations.  All
 of these artifacts are also fair game for peer review in computer science
 courses and more, and peer review addresses similar underlying learning goals
@@ -235,7 +235,7 @@ grading the responses. These roles set different tones between
 students regarding expertise and authority, but also define
 standards while students are new to the process. (@Secref["s:experts"])}
 
-@item{Suitability for non-majors. While IFPR is easy to justify for
+@item{Suitability for non-majors. While @IFPR is easy to justify for
 majors because of its correspondence to industrial practice
 (code-reviews), the industrial argument makes less sense for
 non-majors.  Objectives around collaboration and creating standards of
@@ -359,7 +359,7 @@ peer-review in general) are more focused on the reviewer than the
 reviewee.  Nonetheless, many of the theoretical underpinnings of CSPs
 also apply to @IFPR, and thus affect the ideas in this report.
 
-Of course, IFPR also has the potential to interfere with student
+Of course, @IFPR also has the potential to interfere with student
 learning.  Reviewing asks students to switch between very different
 tasks (programming and reviewing); depending on the timing of
 reviewing, this could affect students' cognitive load.  Careful design
@@ -1030,7 +1030,7 @@ The working group identified several potential roles for rubrics:
     }
 
 @item{@bold{Rubrics for reviews of good solutions}:
-    In at least one case of using IFPR in the classroom, reviewers reported not
+    In at least one case of using @IFPR in the classroom, reviewers reported not
     knowing what to write when reviewing good
     solutions@~cite["ppkf:iticse:2014"].
     A rubric could explicitly prompt for feedback
@@ -1178,9 +1178,9 @@ could report on whether the review was constructive or led to changes, course
 staff could formally grade reviews and return comments to the reviewer, or
 third parties could comment on the relative merits across a set of reviews.
 Which model makes sense depends on factors including the learning objectives
-for IFPR, features of peer-review software, and course logistics (such as
+for @|IFPR|, features of peer-review software, and course logistics (such as
 staff size relative to student population).  Many of the issues here
-apply to peer-review in general, rather than only to IFPR.
+apply to peer-review in general, rather than only to @|IFPR|.
 
 According to Ramachandran and Gehringer@~cite["rg:auto-assess-rev-lsa"],
 reviews consist of (1) summative, (2) problem detection, and (3) advisory
@@ -1191,9 +1191,9 @@ student identify opportunities for improvement, and advisory content points
 out ways in which students might improve.  Meta-reviews can include
 information on which parts of a review were constructive, and which led to
 actual changes.  Meta-reviews written by authors of submissions can also
-include rebuttals to aspects of a review; in IFPR, such rebuttals can arise
+include rebuttals to aspects of a review; in @|IFPR|, such rebuttals can arise
 when students are debating the requirements of an exercise through the review
-process (a healthy outcome relative to the goals of IFPR).  With
+process (a healthy outcome relative to the goals of @|IFPR|).  With
 enough iteration of this form, @IFPR more closely resembles
 traditional collaboration rather than peer-reviewing of each others' work.
 
@@ -1287,7 +1287,7 @@ review.
 While one generally may prefer to eliminate low-quality contents in reviews, 
 in a pedagogical context receiving some low-quality review contents can be beneficial. 
 While in traditional educational settings authors may trust all the feedback they receive from the instructor, 
-in IFPR authors have to learn to assess the value of the reviews they receive. 
+in @IFPR authors have to learn to assess the value of the reviews they receive. 
 They will have to learn to separate review comments into those they
 will act upon and those they will ignore, then triage those they wish
 to act upon. 
@@ -1300,13 +1300,13 @@ submit ``brain dumps'' of everything they think of, but instead
 provide valuable and concise reviews. The important metric is
 actionability, not volume.
 
-Instructors may seek to use meta-reviews to monitor the IFPR process.
-Given the quicker turn-around times inherent to IFPR, such monitoring
+Instructors may seek to use meta-reviews to monitor the @IFPR process.
+Given the quicker turn-around times inherent to @IFPR, such monitoring
 benefits from tool support and structural elements of meta-reviews.
 For example, asking authors to rate the reviews they receive on a
 simple Likert scale makes it easy for an instructor to focus on
 potentially problematic reviews without imposing undue burden on the students.
-In some IFPR configurations, software tools that include automatic
+In some @IFPR configurations, software tools that include automatic
 grading could report partial information on whether student
 performance improves following the review phase.  Such information
 would be most useful for identifying cases in which poor work did not
@@ -1337,19 +1337,19 @@ process discussed in @secref["s:process"].  Questions about preventing
 plagiarism, integrating @IFPR with course-level grading, deciding
 where to use anonymity, involving experts, making @IFPR relevant for
 non-majors, engaging students in the process, and identifying software
-needs all guide one's particular configuration of IFPR.  We discuss
+needs all guide one's particular configuration of @|IFPR|.  We discuss
 each of these issues in turn.
 
-@subsection[#:tag "s:plagiarism"]{IFPR and Plagiarism}
+@subsection[#:tag "s:plagiarism"]{@IFPR and Plagiarism}
 
-IFPR, like many course and assignment structures, requires careful mechanism
+@|IFPR|, like many course and assignment structures, requires careful mechanism
 design to ensure that students aren't incentivized towards detrimental
 behavior that lets them get a good grade at the cost of their (or others')
 education.
 
-One of the most immediate problems with IFPR is that, by definition, students
+One of the most immediate problems with @IFPR is that, by definition, students
 are shown one another's work while in the middle of an assignment.  Since the final submission
-happens after students have been exposed to other students' work, the IFPR
+happens after students have been exposed to other students' work, the @IFPR
 educator must determine how to account for this exposure when
 assigning a grade to the final submission.
 
@@ -1381,9 +1381,9 @@ algebra problems and more@~cite["gulwani-algebra-problems"
 "gulwani-geometry-problems"].
 
 A drawback of variation in assignments is that it weakens one of the benefits
-of IFPR -- having students review the same problem they are already thinking about!  Especially
+of @IFPR -- having students review the same problem they are already thinking about!  Especially
 for beginning students, where program comprehension skills are still being
-learned, one goal of IFPR is to lessen the cognitive load of the comprehension
+learned, one goal of @IFPR is to lessen the cognitive load of the comprehension
 task by having the student review code for a problem they already understand.
 If they have to internalize an additional problem description along with new
 code, this puts significantly more overhead into the reviewing process.
@@ -1406,7 +1406,7 @@ seeing is correct, so blindly copying can hurt!
 
 However, wholesale copying (where a student submits an empty file then
 copies the best of what they see) should be discouraged (to say the least!).  In order to
-mitigate this, Politz et al.@~cite["ppkf:iticse:2014"] grade IFPR assignments by assigning heavier
+mitigate this, Politz et al.@~cite["ppkf:iticse:2014"] grade @IFPR assignments by assigning heavier
 weights to initial submissions than to post-review submissions: an initial
 program submission counts for 75% of the grade.  Students can still improve
 the 25%-weighted part of their score based on review feedback and copying
@@ -1430,7 +1430,7 @@ to understand a proposed change to her submitted code.
 
 @subsection{Interaction with Course-Level Grading}
 
-Instructors must determine the extent to which IFPR activities impact
+Instructors must determine the extent to which @IFPR activities impact
 course grades and the mechanisms through which they do so.  
 @Secref["s:intro"] noted Liu and Carless' distinction between
 @emph{peer feedback} and @emph{peer assessment}@~cite["liu-peer-feedback"],
@@ -1567,7 +1567,7 @@ for students who are new to the institution or the practice.
 
 @subsubsection{Types of Anonymity}
 
-Each of the IFPR roles---authors and reviewers---can be anonymous to
+Each of the @IFPR roles---authors and reviewers---can be anonymous to
 other students or faculty.  Reasonable arguments
 can be made for each configuration, and different configurations have
 been used in practice.
@@ -1759,7 +1759,7 @@ the final mark given by the tutor.
 }
 
 @item{@bold{Expert-provided Exemplars and Models}:
-In IFPR the goal is to avoid attaching the idea of constructive review
+In @IFPR the goal is to avoid attaching the idea of constructive review
 to an expert being present. However, an expert can provide models for
 review that students can follow. So one strategy would have experts
 give examples, or be present for some (early) sessions and not
@@ -1783,7 +1783,7 @@ to important aspects of the review itself.
 
 
 
-@subsection[#:tag "s:nonmajors"]{Does IFPR Make Sense for Non-Majors?}
+@subsection[#:tag "s:nonmajors"]{Does @IFPR Make Sense for Non-Majors?}
 
 When instructing computer science majors, reviews of code can be
 motivated by their resemblance to code reviews and similar
@@ -1906,13 +1906,13 @@ rather than one of criticism, judgment, or assessment.
 
 @subsection{Software and Analytics for @IFPR}
 
-Good software tools are key to making IFPR manageable and informative
+Good software tools are key to making @IFPR manageable and informative
 for both students and course staff.  For students, tools that
 integrate reviewing with the IDE used for programming assignments, for
 example, mitigates some of the context switching that the process
 otherwise requires.  For staff, good tools not only manage the
 logistics of the process, but can also be instrumental in producing
-meta-reviews and in monitoring the effectiveness of IFPR.
+meta-reviews and in monitoring the effectiveness of @|IFPR|.
 
 Software
 systems could (1) give basic feedback on review quality by
@@ -1926,7 +1926,7 @@ source code similarity.  Some of these features are more sophisticated
 than those included in current peer-review platforms.
 
 Features for organizing submissions or reviews in various ways could
-help instructors run effective IFPR processes.  
+help instructors run effective @IFPR processes.  
 Software could allow instructors to associate arbitrary tags with each submission or review, 
 such as ``sloppy'' or ``discuss in class,'' ``ignore,'' ``insufficient test
 coverage,'' or ``misunderstood requirement B.''
@@ -1992,7 +1992,7 @@ context).  These are
 two examples of configurations that instructors may wish to make in a
 pedagogic context that are inconsistent with the design of conference
 managers.  HotCRP@~cite["Kohler08"] does support more flexibility anonymity
-handling that most other tools: "selective reviewer anonymity" allows
+handling that most other tools: ``selective reviewer anonymity'' allows
 reviewers to explicitly decide on whether or not to keep their reviews
 anonymous.
 
@@ -2121,18 +2121,18 @@ in which two programmers work together on one computer.  PP involves
 significant (and continuous) in-flow peer feedback, though coding
 together is a rather different activity than writing and responding to
 reviews.  One surface-level difference lies in the number of
-reviewers: IFPR students may receive multiple reviews, whereas comments in PP come from a dedicated
+reviewers: @IFPR students may receive multiple reviews, whereas comments in PP come from a dedicated
 programming partner.  Other interesting differences arise along three
 dimensions: responsibility, skills developed, and dynamics.  To better
-align the practices, we contrast PP with an IFPR model called "mutual
-review" (discussed in @secref["s:reviews"]) in which a pair
+align the practices, we contrast PP with an @IFPR model called @emph{mutual
+review} (discussed in @secref["s:reviews"]) in which a pair
 of students are tasked with reviewing one another's submissions.
 
 @itemlist[
 
 @item{@bold{Responsibility}:
 The key difference between mutual review and PP is that in PP both students
-are responsible for the quality of a @emph{single} artifact, whereas in IFPR
+are responsible for the quality of a @emph{single} artifact, whereas in @IFPR
 each student is responsible for her own artifact. This can naturally
 lead to a significant difference in motivation and responsibility.
 
@@ -2141,45 +2141,45 @@ students of different strengths. In PP, if one student is stronger,
 that student may drive the production
 of the artifact, or even take over the work, without the weaker student having the opportunity
 to participate fully; thus, the weaker student may not benefit from the experience.
-In IFPR, a strong student's assignment (and hence grade) is not affected by the weak student.
+In @|IFPR|, a strong student's assignment (and hence grade) is not affected by the weak student.
 The strong student is in a better position to help the weaker student; although  
 the strong student may receive no beneficial comments, no harm will be done.
-With IFPR, any problems due to mismatched pairings can be alleviated
+With @|IFPR|, any problems due to mismatched pairings can be alleviated
 by assigning multiple reviewers.
 In practice (in several authors' experience), in PP students often work alone even when expected to 
 work collaboratively.
 }
 
 @item{@bold{Skills}:
-The skills required and developed differ between IFPR and in PP.  PP deals
-primarily with the collaborative creation of an artifact.  IFPR focuses also
+The skills required and developed differ between @IFPR and in PP.  PP deals
+primarily with the collaborative creation of an artifact.  @IFPR focuses also
 on the creation of an artifact, though less collaboratively as students do not
-work face-to-face.  IFPR also focuses on the high-level skill of performing
+work face-to-face.  @IFPR also focuses on the high-level skill of performing
 reviews, which requires both program comprehension and judgment.  These
 activities require students to take a higher-level perspective on the task at
 hand, including the difference between understanding one's own code and
-understanding the code of others.  IFPR also forces students to trade off
+understanding the code of others.  @IFPR also forces students to trade off
 work, namely, time spent on their own assignment versus time spent on 
 reviewing. This trade-off is not present in PP.  To continue the analogy with
 academic paper writing and reviewing: PP is more like working as coauthors,
-whereas IFPR is more like the relationship between a journal paper reviewer
-and an author (especially if there are multiple IFPR stages).
+whereas @IFPR is more like the relationship between a journal paper reviewer
+and an author (especially if there are multiple @IFPR stages).
 }
 
 @item{@bold{Dynamics}:
 The difference between solo and shared responsibility for the
-artifact yields different dynamics between PP and IFPR. Due to
+artifact yields different dynamics between PP and @|IFPR|. Due to
 the continuous communication required in PP, students are often
 immediately alerted to problems in program comprehension. In contrast,
-IFPR is separated by both space and time. As a result, programs can
+@IFPR is separated by both space and time. As a result, programs can
 acquire significant accidental complexity. Students realize this, and
 thus learn about the difficulties of producing and reading code, both
 by trying to make sense out of the submissions of others and by seeing
 the feedback their own submissions receive.
 
-Finally, with IFPR, students are compelled to review other students'
+Finally, with @|IFPR|, students are compelled to review other students'
 code: they cannot ignore problems and let their partner do the work.  On the other
-hand, in IFPR it may be easier to ignore the advice given than in PP, because
+hand, in @IFPR it may be easier to ignore the advice given than in PP, because
 of the difference in ownership; it is harder to argue that someone not make
 suggested changes to a shared program than to ignore the feedback on one's own
 program.
@@ -2337,7 +2337,7 @@ artifact.
 Program comprehension is at the same time a prerequisite and a learning goal
 of in-flow peer review of programming assignments.  Students need some ability
 to read code in order to provide a meaningful review to one another, but at
-the same time, IFPR can lessen the cognitive burden of comprehension by having
+the same time, @IFPR can lessen the cognitive burden of comprehension by having
 students review problems that are conceptually close (or identical) to
 something the reader has just encountered.  The degree to which it tends
 toward one direction or another is a function of the experience level of the
