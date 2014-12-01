@@ -1995,7 +1995,7 @@ context).  These are
 two examples of configurations that instructors may wish to make in a
 pedagogic context that are inconsistent with the design of conference
 managers.  HotCRP@~cite["Kohler08"] does support more flexibility anonymity
-handling that most other tools: ``selective reviewer anonymity'' allows
+handling than most other tools: ``selective reviewer anonymity'' allows
 reviewers to explicitly decide on whether or not to keep their reviews
 anonymous.
 
