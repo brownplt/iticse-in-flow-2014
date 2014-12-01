@@ -1,6 +1,10 @@
 #lang racket/base
 
-(require scriblib/autobib scriblib/bibtex racket/list)
+(require
+  scriblib/autobib
+  scriblib/bibtex
+  (only-in srfi/1 every)
+  racket/list)
 
 (provide (all-defined-out))
 
@@ -484,15 +488,44 @@
       #:pages (list 117 175))
     #:date 1984))
 
+(define-citation "t:rer:1998"
+  (make-bib
+    #:author (author-name "Keith" "Topping")
+    #:title "Peer Assessment Between Students in Colleges and Universities"
+    #:location
+      (journal-location "Review of Educational Research"
+        #:volume 68
+        #:number 3
+        #:pages (list 249 276))
+    #:date 1998))
+
+;cho-sword,
+(define-citation "cs:ce:2005"
+  (make-bib
+    #:author
+      (authors
+        (author-name "Kwangsu" "Cho")
+        (author-name "Christian D." "Sun"))
+    #:title "Scaffolded writing and rewriting in the discipline: A web-based reciprocal peer review system"
+    #:location (journal-location "Computers and Education"
+      #:volume 48
+      #:number 3
+      #:pages (list 409 426))
+    #:date 2005))
+
 
 (define-cite autobib-cite _ generate-bib #:style number-style)
 (define-bibtex-cite* "inflow.bib" autobib-cite _ ~cite-id citet-id)
 
+(define (get-bib key)
+  (hash-ref special-keys key))
+
 (define (~cite . keys)
-  (if (> (length keys) 1)
-    (apply ~cite-id keys)
-    (cond
-      [(hash-has-key? special-keys (first keys))
-       (autobib-cite (hash-ref special-keys (first keys)))]
-      [else (~cite-id (first keys))])))
+  (cond
+    [(every (lambda (k) (hash-has-key? special-keys k)) keys)
+     (apply autobib-cite (map (lambda (k) (hash-ref special-keys k)) keys))]
+    [(every bib? keys)
+     (apply autobib-cite keys)]
+    [else
+     (apply ~cite-id keys)]))
 

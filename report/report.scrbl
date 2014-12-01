@@ -8,6 +8,7 @@
 @; Ville said to cite Latham and Locke 1991 (on motivation?) check into it
 
 @(require scribble/core
+          scriblib/autobib
           scriblib/figure
           scribble/decode
           scribble/html-properties
@@ -49,7 +50,7 @@ alleviates some problems while raising associated concerns.}
 @section[#:tag "s:intro"]{In-Flow Peer-Review}
 
 Peer-review has been employed for various reasons in Computer Science
-courses@~cite["topping-peer-review98"]. It is a mechanism for having
+courses@~cite["t:rer:1998"]. It is a mechanism for having
 students read each others' work, learn how to give feedback, and even
 to help with assessment. Indeed, of the six major computational
 thinking skills listed in the current draft of the AP Computer
@@ -90,7 +91,9 @@ presented solutions.  Giving authors the ability to respond to reviews
 further reinforces the quoted principles.
 
 Peer review has uses beyond merely evaluating programs.  Writing benefits from
-peer review@~cite["cho-sword"], as do other artifacts that aren't just programs, like design
+peer review (Topping's review lists several exampes
+@autobib-cite[@in-bib[@get-bib["t:rer:1998"] ", page 261"]]), as do other
+artifacts that aren't just programs, like design
 diagrams, test suites, formal models, documentation, and presentations.  All
 of these artifacts are also fair game for peer review in computer science
 courses and more, and peer review addresses similar underlying learning goals
@@ -673,8 +676,8 @@ choices in the artifacts to be reviewed:
 This approach is the most similar to existing peer grading approaches, where
 an entire deliverable is presented for review.  This mirrors common practice
 in courses where students do peer review of written work, which is
-well-studied in contexts other than computer science@~cite["cho-sword"
-"topping-peer-review98"].  Little extra work in
+well-studied in contexts other than computer science@~cite["cs:ce:2005"
+"t:rer:1998"].  Little extra work in
 assignment design is required to have students review drafts, so this provides
 a low-friction way to adapt an existing assignment for @|IFPR|. One consideration is
 that plagiarism can be more of a problem in programming tasks that are the
@@ -1229,7 +1232,7 @@ be told about the correspondence
 between their evaluation of a submission and those of other students.  For
 example, the SWoRD tool for peer review of writing tells student reviewers, on
 each criterion they reviewed, how they did relative to the average of other
-students' scores@~cite["cho-sword"].  An example of feedback that they show
+students' scores@~cite["cs:ce:2005"].  An example of feedback that they show
 says ``Your ratings were too nice for this set of papers.  Your average rating
 was 6.50 and the group average was 5.23.'' This hints to the reviewer that he
 may have missed something in his review.  This is related to Hamer et al.'s
@@ -1916,7 +1919,7 @@ meta-reviews and in monitoring the effectiveness of @|IFPR|.
 
 Software
 systems could (1) give basic feedback on review quality by
-comparing reviews between students@~cite["cho-sword"] or
+comparing reviews between students@~cite["cs:ce:2005"] or
 through use of machine learning methods@~cite["rg:auto-assess-rev-lsa"], (2)
 aggregate student responses for discussion@~cite["hauswirth-informa"],
 (3) flag students who consistently write certain kinds of reviews
@@ -2110,7 +2113,7 @@ this much code would likely overwhelm lower-level students.
 Pedagogic uses of peer review have a long history that predates
 in-flow reviewing or peer review in computing courses.  A survey of
 this history is beyond the scope of this document, though some relevant
-citations appear in other surveys@~cite["topping-peer-review98"].
+citations appear in other surveys@~cite["t:rer:1998"].
 Here, we focus on more recent work in computing education and
 cognitive aspects of education that bear on in-flow peer review.
 
