@@ -28,7 +28,7 @@
         (author-name "Charles" "Riedesel")
         (author-name "Mara" "Saeli")
         (author-name "Kate" "Sanders")
-        (author-name "Judite" "Sheard"))
+        (author-name "Judithe" "Sheard"))
     #:title
       "Contributing Student Pedagogy"
     #:location
@@ -147,8 +147,9 @@
     #:title "Cultures and Organizations: Software of the Mind"
     #:author
       (authors
-        (author-name "Geert" "Hofstedet")
-        (author-name "Gert Jan" "Hofstede"))
+        (author-name "Geert" "Hofstede")
+        (author-name "Gert Jan" "Hofstede")
+        (author-name "Michael" "Minkov"))
     #:date "2005"
     #:location
       (book-location #:publisher "McGraw-Hill")))

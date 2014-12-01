@@ -1712,7 +1712,7 @@ grading. Facilitation is likely harder to integrate into @IFPR
 configurations in which students submit work and reviews
 asychnronously relative to one another.
 
-Whether acting as moderators or facilitations, 
+Whether acting as moderators or facilitators, 
 expert reviewers can help address cultural issues where
 students devalue the opinions of their peers and overvalue the
 opinions of instructors.  They can also offset deficiencies in the
@@ -1745,7 +1745,7 @@ that was phrased in terms that students could more easily comprehend.
 
 Hamer et al. investigate differences between reviews provided by peers and
 expert tutors on Matlab programming assignments in a peer assessment
-context@~cite["hpld:2014:aehed"].  They main significant difference they find
+context@~cite["hpld:2014:aehed"].  The main significant difference they find
 is that tutors not only write longer feedback, but provide more @emph{specific
 negative} comments about inaccuracies in the program under review.  In
 addition, there were two kinds of feedback in the review
