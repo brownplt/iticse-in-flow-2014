@@ -29,7 +29,7 @@
 @copyrightyear{2014}
 @conferenceinfo["ITiCSE-WGR'14" "June 23 - 25, 2014, Uppsala, Sweden"]
 @copyrightdata["978-1-4503-3406-8/14/06"]
-@doi["http://dx.doi.org/10.1145/2713609.2713612"]
+@doi["2713609.2713612"]
 
 @(authorinfo "Dave Clarke" "Uppsala Universitet" "dave.clarke@it.uu.se")
 @(authorinfo "Tony Clear" "Auckland University of Technology" "tony.clear@aut.ac.nz")
